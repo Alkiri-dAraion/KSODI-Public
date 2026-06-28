@@ -16,6 +16,18 @@ These components are designed for:
 - governance and compliance contexts
 - long-term structural stability analysis
 
+## Observer Role in the v3.5 Direction
+
+In the current v3.5 direction, KSODI Standard-Eval and KSODI-Full are the layers where the external Observer structure is explained and developed.
+
+KSODI-Light belongs to the local agent side: it may guide an agent through user, account, developer, system-prompt or skill-level instructions. Standard-Eval and KSODI-Full belong to the observer side: they are intended to monitor what happens from outside the prompt and across time.
+
+The Observer layer may use existing observability material such as traces, threads, chunks, retrieval records, vector similarity, generation parameters, evaluation signals and tool-call logs. KSODI adds an additional interaction-oriented observation layer around K/S/O/D/I, `Z(t)`, drift, acceleration, interaction coherence and relational or resonance-family structures.
+
+A central challenge is that developers and architects must understand how the selected input, reference space, retrieval context, tool state and operator mapping affect the five KSODI operators. These choices shape `Z(t)` and all later projections, drift metrics, relational gates and visualizations. If the input frame is wrong, the observer may not merely measure badly; it may observe a different system state than intended.
+
+This is why the public 3.3 material should not be used as an implementation reference. The v3.5 line is intended to clarify these layer boundaries before implementation and testing.
+
 ## Variants
 
 ### KSODI Standard-Eval
