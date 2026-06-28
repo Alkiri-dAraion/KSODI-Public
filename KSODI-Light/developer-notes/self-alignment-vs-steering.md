@@ -52,6 +52,37 @@ self-alignment or replaces technical safety methods. It is a prompt-level
 orientation layer that may support more stable feedback behavior when combined
 with suitable observer and control architectures.
 
+## Architecture-Agnostic Does Not Mean Input-Agnostic
+
+KSODI is intended to be architecture-agnostic: it can be discussed across
+chatbots, RAG systems, agent workflows, multi-agent systems, MoE-like settings
+or embodied-agent layers.
+
+However, architecture-agnostic does not mean input-agnostic.
+
+Before implementation or testing, developers and system architects must decide
+very carefully what is allowed to enter the five operators `K`, `S`, `O`, `D`
+and `I`. The selected input frame, reference space, retrieval context, tool
+state, memory boundary, system/developer instruction context and operator
+mapping directly affect all later layers.
+
+If the operator input is chosen poorly, the system may not simply produce a
+weak score. It may observe a different interaction state than intended.
+
+This is especially important for observer-supported agentic systems. The
+Observer can only interpret drift, acceleration, corridor exits, relational
+coherence or recovery feedback meaningfully if the earlier K/S/O/D/I operator
+inputs have been defined with sufficient care.
+
+The revised KSODI 3.5 line, currently under testing and described in the paper
+work, is intended to provide a clearer example of this operator filling for a
+chatbot scenario. The related public guidance will be found under
+Standard-Eval and KSODI-Full after publication of the reviewed v3.5 material.
+
+The corresponding full implementation work, including microservices per
+operator and Kubernetes-based infrastructure, is currently maintained outside
+this public repository and is not yet public.
+
 ## Prompt-Level Score Corridors
 
 KSODI-Light may use rough score corridors such as:
@@ -120,3 +151,10 @@ treated as empirical research questions.
 
 They should be observed over time before becoming normative configuration
 rules.
+
+The public materials may be useful for orientation, training and discussion,
+but formal implementation of KSODI Standard-Eval / Full requires careful layer
+separation and operator-specific design. Public examples may be adapted by
+others, but enterprise or regulated uses should treat the operator filling,
+observer architecture, data boundaries and audit requirements as specialized
+architecture work rather than as a simple copy-and-paste prompt pattern.
