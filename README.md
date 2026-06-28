@@ -73,6 +73,22 @@ to reason about interaction conditions, drift, corridors and coupling in a form
 that remains understandable for humans while remaining compatible with
 machine-readable observation.
 
+## v3.5 Direction: Observer-Supported Agentic Systems
+
+KSODI v3.5 extends the public KSODI-Light idea toward an observer-supported implementation line for agentic systems.
+
+The current work explores how KSODI-Light can guide local agent behavior while a separate Observer layer monitors trajectories, drift, acceleration, retrieval behavior, vector movement and relational coherence. This is not presented as a finished alignment solution. It is an early research and implementation path for making agentic interaction more observable, reviewable and adjustable under human oversight.
+
+In this architecture, KSODI-Light belongs to the agent side: it may be used as a user, account, developer, system-prompt or skill-level layer. KSODI Standard-Eval and KSODI Full belong to the observer side: they are intended to define, explain and build the external Observer structure. The Observer layer makes little sense without Light-using agents or comparable local agent guidance, and Light does not replace formal observer-based monitoring.
+
+A long-term hypothesis is that teams of specialized agents may benefit from observer-supported feedback loops: agents act within their normal role and skill instructions, KSODI-Light supports local reflection and corridor awareness, and the Observer helps detect drift, corridor exits or relational instability across complex traces and vector spaces.
+
+A central implementation challenge is that developers and system architects must remain aware of all relevant layers before building or testing such systems. The choice of input, reference space, retrieval context, tool state and operator mapping directly affects the five KSODI operators and therefore the entire downstream architecture.
+
+In other words: KSODI is not only a scoring surface. It requires careful decisions about what is observed, how input is transformed into K/S/O/D/I, how `Z(t)` is formed, and how later projections, drift metrics, relational gates and visualizations are derived from it.
+
+This work is ongoing and empirical validation is still in progress.
+
 ## Structure
 
 ### KSODI-Light
