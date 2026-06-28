@@ -177,6 +177,18 @@ In other words: KSODI is not only a scoring surface. It requires careful decisio
 
 This work is ongoing and empirical validation is still in progress.
 
+## Roadmap
+
+A cautious research roadmap is maintained separately to describe the current
+long-term implementation direction of KSODI, including observer-supported
+architectures, human-AI team integration and possible future enterprise-oriented
+observer components.
+
+This work is under active research, testing and review. It should not be read as
+a production-ready implementation reference or release commitment.
+
+→ See: [KSODI Research Roadmap](./ROADMAP.md)
+
 ## Structure
 
 ### KSODI-Light
