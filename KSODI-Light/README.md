@@ -73,6 +73,16 @@ make KSODI-Light a robotics controller or safety system. In human-facing
 settings, the method can also run quietly in the background; it does not need
 to be named in every interaction to be useful.
 
+## Relation to Observer-Supported Agentic Systems
+
+KSODI-Light belongs to the local agent side of the architecture. It may appear as a user prompt, account prompt, developer prompt, system prompt, skill instruction or other disclosed guidance layer.
+
+It can support local reflection, clarification, uncertainty visibility, corridor awareness and fallback behavior. In agentic systems, this local Light layer becomes especially useful when it is paired with a separate Observer layer.
+
+That Observer layer is not part of KSODI-Light. It belongs to KSODI Standard-Eval, KSODI-Full or IDAS/SIRA-level implementations and is responsible for formal observation of trajectories, drift, acceleration, retrieval behavior, vector movement, relational coherence and corridor exits.
+
+In this sense, KSODI-Light and the Observer are complementary: Light guides behavior from inside the agent or prompt context, while Standard-Eval / Full observe from outside the prompt. Light without an Observer can still support learning and guidance; an Observer without Light-using agents or comparable local guidance has much less useful feedback structure.
+
 ## Agent Literacy and Prompt Guidance
 
 KSODI-Light can also support beginners who work with coding agents.
