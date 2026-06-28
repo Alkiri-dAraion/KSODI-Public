@@ -73,6 +73,94 @@ to reason about interaction conditions, drift, corridors and coupling in a form
 that remains understandable for humans while remaining compatible with
 machine-readable observation.
 
+## KSODI as a Baseline Radar for Observed Communication
+
+KSODI is not required as a running method for every act of communication.
+People, animals, machines and technical systems can exchange signals without a
+formal KSODI evaluation layer.
+
+However, KSODI becomes relevant whenever communication itself is made an object
+of methodical observation.
+
+This distinction is central. KSODI does not replace communication theory, AI
+observability, explainability, governance frameworks, safety methods or
+domain-specific analysis. It provides a baseline radar for the threshold at
+which an event can be reconstructed as a communicative signal at all.
+
+The minimal question is:
+
+> Can this event be observed as a signal that is contextually situated,
+> structurally recognizable, sufficiently objectifiable, distinct from noise and
+> informationally relevant enough to enter a feedback loop?
+
+In KSODI terms, this means asking whether the five operators are sufficiently
+visible or reconstructable:
+
+- **Context:** Is the signal situated in a meaningful or operational frame?
+- **Structure:** Does it show form, pattern, sequence, rhythm, protocol or
+  rule-like organization?
+- **Objectifiability:** Can it be stabilized, checked, logged, measured,
+  compared or otherwise grounded beyond pure projection?
+- **Distinctness:** Can it be distinguished from noise, other signals or
+  environmental background?
+- **Information Depth:** Does it make a difference for state, action,
+  interpretation, relation or response?
+
+This does not mean that KSODI explains all of communication. It means that KSODI
+marks the observational entry point at which further methods can be applied.
+Shannon-oriented models may examine transmission, channel and noise.
+Watzlawick-oriented views may examine relational and behavioral dynamics.
+Schulz von Thun-oriented views may examine message layers and reception sides.
+Luhmann-oriented views may examine Anschlussfähigkeit, selection and
+autopoietic communication. AI observability may examine traces, logs, tool
+calls, retrievals, vector movement, latency or system health. Explainability
+methods may examine why a model generated, selected, routed or acted in a
+certain way.
+
+KSODI does not replace these layers. It frames the baseline question before and
+around them:
+
+> Is there still an observable communicative handshake, and is it stable enough
+> to remain connectable?
+
+This makes KSODI especially relevant for human-AI interaction, agent-agent
+communication, multi-agent systems, embodied agents, therapy assistants,
+organizational AI teammates and safety-sensitive or governance-sensitive
+systems. In such contexts, the issue is not merely whether a system produces
+output. The issue is whether communication remains contextually anchored,
+structurally coherent, objectifiably grounded, distinct enough to be interpreted
+and informationally useful for the next step.
+
+For simple automation, such as a narrowly scoped device that only follows a
+local floor map or reports a small number of fixed states, a full KSODI Observer
+may be unnecessary. The communication surface is small, autonomy is limited and
+conventional telemetry may be sufficient.
+
+For systems that interact with humans, other agents, organizations, policies,
+tools, memories or changing environments, the relevance increases. The more
+autonomous, relational, safety-sensitive or context-dependent the system
+becomes, the more important it becomes to observe whether the communicative
+handshake remains intact.
+
+In observer-supported architectures, KSODI-Light may support local agent
+behavior through clarification, uncertainty visibility, corridor awareness and
+fallback behavior. KSODI Standard-Eval or KSODI Full may then act as external
+Observer layers that monitor trajectories, drift, acceleration, relational
+coherence and corridor exits across time.
+
+The Observer does not primarily ask whether a task was completed. It asks
+whether communication remains reconstructable, stable and safely connectable. If
+the handshake degrades, the system may need to clarify, slow down, correct,
+escalate, pause or terminate the interaction.
+
+In this sense:
+
+> KSODI is not necessary for every communication as an active procedure, but it
+> is fundamentally relevant for every methodical observation of communication.
+
+It is a baseline radar for signal formation, communicative stability and
+relational drift.
+
 ## v3.5 Direction: Observer-Supported Agentic Systems
 
 KSODI v3.5 extends the public KSODI-Light idea toward an observer-supported implementation line for agentic systems.
