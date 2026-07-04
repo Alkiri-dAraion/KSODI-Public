@@ -17,12 +17,12 @@ IK_rel and the broader R-family of relational observation variants. A revised 3.
 privately and will only be published after final testing and review.
 
 Note:
-The usual implementation setting for KSODI Standard-Eval and KSODI Full uses a two-layer or multi-layer system:
-1. Agent layer (L1): KSODI-Light runs as a system prompt on one or more agents.
-2. Observer layer (L2): KSODI Standard-Eval provides coherence observation for agents, with `R0` / `IK_rel` as the minimum dyadic coherence observation.
-3. Full observer layer (L4): KSODI Full observes full coherence and the resonance-family layer.
-4. KSODI Full with voice layer (L5): KSODI Full plus additional voice, sound and timing observation.
-The observer is usually designed to give the agent feedback when it drifts out of a defined or explainable corridor.
+The usual implementation setting for KSODI Standard-Eval and KSODI Full uses a layered system:
+1. Agent layer (L1): KSODI-Light may run as a reflective working agreement in user/account prompts or as a system prompt on one or more agents.
+2. Observer layer (L2): KSODI Standard-Eval provides numeric observation for monadic agent or interaction-state trajectories.
+3. Relational / Full observer layer (L3): KSODI Full opens relational observation after `R0`, with `R0` / `IK_rel` as the minimum dyadic or n-adic coherence observation and the R-family for broader relational or resonance-family views.
+4. Optional voice / timing overlay layer (L4): KSODI Full plus additional voice, sound, rhythm, takt or pacing observation where such signals are available and versioned.
+The observer is usually designed to give the agent or a human/governance layer feedback when the observed trajectory drifts out of a defined or explainable corridor.
 
 Current line:
 `Z(t)` -> `Delta Z` / `Delta2 Z` -> `IK` as monadic projection -> `R0` as relational gate -> `IK_rel` as relational projection after a stable gate -> `R_geom` as geometric coupling -> `RSigma` / `RSigma(Hangar)` -> optional: `V(t)`, `R_takt`, `R_pace` as timing and voice overlays.
@@ -59,7 +59,7 @@ It is intended to bridge three practical contexts:
 
 - **AI literacy and training:** KSODI-Light gives users, trainers and
   organizations a shared language for context, structure, grounding, clarity
-  and information depth.
+  and information impulse.
 - **Prompt-level agent guidance:** KSODI-Light can be embedded into user,
   account, developer or system-prompt settings as a disclosed reflective
   working agreement with lightweight corridors and fallback behavior.
@@ -82,29 +82,31 @@ formal KSODI evaluation layer.
 However, KSODI becomes relevant whenever communication itself is made an object
 of methodical observation.
 
-This distinction is central. KSODI does not replace communication theory, AI
-observability, explainability, governance frameworks, safety methods or
-domain-specific analysis. It provides a baseline radar for the threshold at
-which an event can be reconstructed as a communicative signal at all.
+This distinction is central. KSODI does not replace communication theory, signal
+theory, AI observability, explainability, governance frameworks, safety methods
+or domain-specific analysis. It provides a baseline radar for the threshold at
+which an event can be reconstructed as an observable communicative signal at
+all.
 
 The minimal question is:
 
 > Can this event be observed as a signal that is contextually situated,
-> structurally recognizable, sufficiently objectifiable, distinct from noise and
-> informationally relevant enough to enter a feedback loop?
+> structurally recognizable, sufficiently grounded, clear enough to be
+> distinguished from noise and informationally relevant enough to enter a
+> feedback loop?
 
 In KSODI terms, this means asking whether the five operators are sufficiently
 visible or reconstructable:
 
-- **Context:** Is the signal situated in a meaningful or operational frame?
-- **Structure:** Does it show form, pattern, sequence, rhythm, protocol or
-  rule-like organization?
-- **Objectifiability:** Can it be stabilized, checked, logged, measured,
-  compared or otherwise grounded beyond pure projection?
-- **Distinctness:** Can it be distinguished from noise, other signals or
-  environmental background?
-- **Information Depth:** Does it make a difference for state, action,
-  interpretation, relation or response?
+- **Observable Context Completeness:** Is the signal situated in a meaningful or operational frame?
+- **Observable Structural Coherence:** Does it show form, pattern, sequence, rhythm, protocol or rule-like organization?
+- **Observable Grounded Objectivity:** Can it be stabilized, checked, logged, measured, compared or otherwise grounded beyond pure projection?
+- **Observable Clarity:** Can it be distinguished from noise, other signals or environmental background in a way that remains operationally connectable?
+- **Observable Information Impulse:** Does it make a difference for state, action, interpretation, relation or response?
+
+These operator names reflect the current research-facing terminology. Shorter
+KSODI-Light terms may still be used in training contexts, but Standard-Eval and
+Full discussions should map them explicitly to the research-facing names.
 
 This does not mean that KSODI explains all of communication. It means that KSODI
 marks the observational entry point at which further methods can be applied.
@@ -123,13 +125,30 @@ around them:
 > Is there still an observable communicative handshake, and is it stable enough
 > to remain connectable?
 
+The KSODI Handshake is a working hypothesis for the transition between monadic
+sendability and receiver-side reconstructability. Sender-side observation is
+described in the K/S/O/D/I direction, while receiver-side reconstruction is
+described in the inverse I/D/O/S/K direction.
+
+This ordering is not claimed as a universal law of communication, nor as an
+established theorem from communication theory or signal theory. It is a KSODI
+working convention derived from empirical interaction observation and cautiously
+related to signal-reception logic: in reception, an informational difference
+must first be noticed before it can be distinguished, grounded, structurally
+reconstructed and situated in context.
+
+The Handshake is therefore not a sixth operator and not a separate score. It is
+the transient, session-bound coupling condition in which an event becomes
+sendable, receivable and feedback-capable. In numeric evaluation, the five
+operators remain separate tuple components.
+
 This makes KSODI especially relevant for human-AI interaction, agent-agent
 communication, multi-agent systems, embodied agents, therapy assistants,
 organizational AI teammates and safety-sensitive or governance-sensitive
 systems. In such contexts, the issue is not merely whether a system produces
 output. The issue is whether communication remains contextually anchored,
-structurally coherent, objectifiably grounded, distinct enough to be interpreted
-and informationally useful for the next step.
+structurally coherent, grounded, clear enough to be interpreted and
+informationally useful for the next step.
 
 For simple automation, such as a narrowly scoped device that only follows a
 local floor map or reports a small number of fixed states, a full KSODI Observer
@@ -223,11 +242,11 @@ License: Commercial / All rights reserved.
 
 KSODI focuses on structured observation across five operators:
 
-- Context  
-- Structure  
-- Objectivity  
-- Clarity  
-- Information Depth  
+- Observable Context Completeness
+- Observable Structural Coherence
+- Observable Grounded Objectivity
+- Observable Clarity
+- Observable Information Impulse
 
 The broader architectural framework integrating KSODI is referred to as IDAS (Interactive Dialog, Analytics & Steering).
 
@@ -258,7 +277,3 @@ implementation.
 
 KSODI 3.5 is the current private reference specification and will only be
 published after final testing and review.
-
----
-
-© 2026 Anne Steinacker-Folkerts & Heiko Folkerts
