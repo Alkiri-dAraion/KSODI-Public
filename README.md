@@ -180,6 +180,27 @@ In this sense:
 It is a baseline radar for signal formation, communicative stability and
 relational drift.
 
+## Why These Five Operators? A Cross-Domain Reading Matrix
+
+The following matrix is not an implementation formula. It is a human-readable orientation aid for understanding why the five operators are observed separately.
+
+KSODI does not claim that LLM chats, horse training, whale song and network traffic are the same kind of thing. It also does not claim to decode every signal system automatically. The generality lives in the schema; the work lives in the instantiation.
+
+| Operator | LLM chat | Horse training | Whale song | Honeypot / network noise |
+| --- | --- | --- | --- | --- |
+| **K - Context** | System prompt, role, goal, format, tools and visible constraints | Environment and situation: arena or trail, position of the human, arousal state, previous lesson | Ocean region, season, group context, depth or migration / mating situation | Network segment, port or service, time-of-day baseline, protocol context |
+| **S - Structure** | Formatting, turn sequence, answer organization, tool workflow | Consistent cue sequence, for example weight, leg and rein; stable order of aids | Unit, phrase, theme or song-like hierarchy; repetition patterns | Handshake conformity, packet sequence, session structure |
+| **O - Grounding** | Retrieval alignment, attribution to documents, logs or tool outputs | Reaction traceable to a given aid; reference is the trained signal repertoire | Comparison with a defined corpus or observation set | Comparison with signatures, IOC databases or baseline traffic |
+| **D - Clarity** | Precise semantics, operational anchors, low dispersion, reconstructable answer | Dosed, unambiguous cue rather than blurred mixed signals | Discriminable sound units against overlapping noise | Distinguishable pattern rather than random bytes; signal-to-noise separation |
+| **I - Information Impulse** | New concept, direction change, useful difference versus mere repetition | New impulse or task versus confirmation of an existing lesson | New variation versus stable repetition | Novel pattern versus known scan noise or expected background traffic |
+| **Reference space R** | System prompt + tools + documents | Training state + repertoire of this horse | Defined corpus / population / observation context | Baseline of this segment + signature or IOC database |
+
+The reference-space row is deliberate: the operators are not filled first. The reference space must be defined first, and only then can the operators be interpreted responsibly.
+
+A similar pattern can therefore mean different things in different domains. High information impulse with weak grounding could mean unsupported novelty in an LLM answer, an unexpected reaction in horse training, a potential variation in whale-song observation or an anomaly in a honeypot trace. The structural pattern may be comparable; the interpretation remains domain-specific.
+
+This is also why purely technical developer metrics are not enough for every audience. Latency, token use, tool-call success, retrieval time and cost are important, but organizations also need to know whether artificial team members remain understandable, grounded, reconstructable, corrigible and safely connectable over time.
+
 ## v3.5 Direction: Observer-Supported Agentic Systems
 
 KSODI v3.5 extends the public KSODI-Light idea toward an observer-supported implementation line for agentic systems.
