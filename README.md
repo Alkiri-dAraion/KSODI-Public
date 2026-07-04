@@ -58,8 +58,8 @@ reducing it to single-prompt quality or model accuracy.
 It is intended to bridge three practical contexts:
 
 - **AI literacy and training:** KSODI-Light gives users, trainers and
-  organizations a shared language for context, structure, grounding, clarity
-  and information impulse.
+  organizations a shared language for context, structure, grounding, signal
+  clarity and information impulse.
 - **Prompt-level agent guidance:** KSODI-Light can be embedded into user,
   account, developer or system-prompt settings as a disclosed reflective
   working agreement with lightweight corridors and fallback behavior.
@@ -91,8 +91,8 @@ all.
 The minimal question is:
 
 > Can this event be observed as a signal that is contextually situated,
-> structurally recognizable, sufficiently grounded, clear enough to be
-> distinguished from noise and informationally relevant enough to enter a
+> structurally recognizable, sufficiently grounded, clear and stable enough to
+> be distinguished from noise, and informationally relevant enough to enter a
 > feedback loop?
 
 In KSODI terms, this means asking whether the five operators are sufficiently
@@ -101,7 +101,7 @@ visible or reconstructable:
 - **Observable Context Completeness:** Is the signal situated in a meaningful or operational frame?
 - **Observable Structural Coherence:** Does it show form, pattern, sequence, rhythm, protocol or rule-like organization?
 - **Observable Grounded Objectivity:** Can it be stabilized, checked, logged, measured, compared or otherwise grounded beyond pure projection?
-- **Observable Clarity:** Can it be distinguished from noise, other signals or environmental background in a way that remains operationally connectable?
+- **Observable Clarity:** Can it be distinguished from noise, remain locally stable or dense enough to be reconstructed, and stay operationally connectable?
 - **Observable Information Impulse:** Does it make a difference for state, action, interpretation, relation or response?
 
 These operator names reflect the current research-facing terminology. Shorter
@@ -147,8 +147,8 @@ communication, multi-agent systems, embodied agents, therapy assistants,
 organizational AI teammates and safety-sensitive or governance-sensitive
 systems. In such contexts, the issue is not merely whether a system produces
 output. The issue is whether communication remains contextually anchored,
-structurally coherent, grounded, clear enough to be interpreted and
-informationally useful for the next step.
+structurally coherent, grounded, discernible and stable enough to be interpreted
+and informationally useful for the next step.
 
 For simple automation, such as a narrowly scoped device that only follows a
 local floor map or reports a small number of fixed states, a full KSODI Observer
