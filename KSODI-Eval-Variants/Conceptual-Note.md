@@ -11,14 +11,24 @@ This conceptual note is an earlier public orientation text.
 The Z state-vector layer has since been refined in the private canonical workbench. A revised public version will follow after paper consolidation.
 
 Terminology note:
-Current KSODI-Light wording uses **Clarity** for D and **Information Depth** for I.
-Older public notes may still contain the terms "Distinctness" and
+Current public v3.5 wording distinguishes between didactic KSODI-Light labels
+and observer-facing operator names. Older public Light examples may still use
+**Objectivity** for O and **Information Depth** for I. Current observer-facing
+wording treats O as grounded objectifiability / grounding and I as information
+impulse. Older public notes may still contain the terms "Distinctness" and
 "Informational Value".
 
 KSODI-Light should also not be read as scoring only the user's prompt. At the
 prompt level, it can serve as a reflective working agreement for user input,
-assistant output and the shared interaction state. Formal observer layers extend
-this logic into numeric trajectories and drift observation.
+assistant output and the shared interaction state. It is not the KSODI
+Handshake. Formal observer layers extend this logic into numeric trajectories,
+drift observation and, where methodically justified, relational comparison.
+
+Layer boundary:
+KSODI-Light is a local, human-facing orientation layer. KSODI Standard-Eval
+starts with monadic state observation. Dyadic or n-adic analysis requires later
+relational gates and must not be assumed merely because an interaction took
+place.
 
 ⸻
 
@@ -35,17 +45,21 @@ It assumes describable interaction structure.
 ### 2. Foundational Assumption
 
 During interaction between two or more semantic systems (e.g., human and AI, agent and agent, or n-agent constellations),
-a temporary, relational semantic space emerges.
+a temporary interaction condition may become observable. At the Light level,
+this is primarily a human-facing orientation condition. At the formal observer
+level, each distinguishable side is first treated through its own state
+trajectory before dyadic or n-adic relational observation is opened.
 
-This space:
+The later shared or relational observation space:
 	•	is not ontological
 	•	is not physical
 	•	is not metaphysical
 	•	is not an energy field
 
-It is a formal abstraction describing state and change in interaction.
+It is a formal abstraction describing state, change and possible coupling in
+interaction.
 
-It exists only for the duration of the interaction.
+It exists only for the duration of the interaction or observation window.
 
 ⸻
 
@@ -83,17 +97,19 @@ The machine process is signal-driven.
 KSODI introduces five descriptive axes:
 	•	K — Context
 	•	S — Structure
-	•	O — Objectivity
+	•	O — Grounded objectifiability / grounding
 	•	D — Clarity
-	•	I — Information Depth
+	•	I — Information impulse
 
 These axes describe interaction structure without assuming cognitive symmetry.
 
 They do not model internal mechanisms.
-They describe observable relational structure.
+They describe observable interaction structure.
 
-Depending on the layer, they may describe a user's input, an assistant's output
-or the shared interaction state produced across a turn.
+Depending on the layer, they may describe a user's input, an assistant's output,
+a local agent state or a shared interaction condition produced across a turn.
+Relational interpretation is a later methodological step, not an automatic
+property of every Light-level use.
 
 ⸻
 
@@ -281,9 +297,17 @@ It is a structured observation model.
 
 Clear distinction:
 	•	KSODI-Light → reflective working agreement and didactic orientation inside interaction
-	•	KSODI-Standard / Full → formal evaluation models
+	•	KSODI-Standard / Full → formal observer models
 	•	Image / Diagram → visualization of dynamic coupling
 	•	Mathematics → description of state evolution
+
+Additional v3.5 boundary:
+	•	KSODI-Light does not contain the KSODI Handshake as an implementation layer
+	•	KSODI Standard-Eval begins with monadic state trajectories
+	•	Relational, dyadic or n-adic observation requires explicit later gates
+	•	The KSODI Handshake is treated as a working hypothesis about sendability,
+		receiver-side reconstructability and feedback capability, not as a sixth
+		operator or a separate score
 
 No mysticism.
 No ontology.
