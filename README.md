@@ -193,9 +193,9 @@ KSODI does not claim that LLM chats, horse training, whale song and network traf
 | **O - Grounding** | Retrieval alignment, attribution to documents, logs or tool outputs | Reaction traceable to a given aid; reference is the trained signal repertoire | Comparison with a defined corpus or observation set | Comparison with signatures, IOC databases or baseline traffic |
 | **D - Clarity** | Precise semantics, operational anchors, low dispersion, reconstructable answer | Dosed, unambiguous cue rather than blurred mixed signals | Discriminable sound units against overlapping noise | Distinguishable pattern rather than random bytes; signal-to-noise separation |
 | **I - Information Impulse** | New concept, direction change, useful difference versus mere repetition | New impulse or task versus confirmation of an existing lesson | New variation versus stable repetition | Novel pattern versus known scan noise or expected background traffic |
-| **Reference space R** | System prompt + tools + documents | Training state + repertoire of this horse | Defined corpus / population / observation context | Baseline of this segment + signature or IOC database |
+| **Reference space Ref** | System prompt + tools + documents | Training state + repertoire of this horse | Defined corpus / population / observation context | Baseline of this segment + signature or IOC database |
 
-The reference-space row is deliberate: the operators are not filled first. The reference space must be defined first, and only then can the operators be interpreted responsibly.
+The reference-space row is deliberate: the operators are not filled first. The reference space, abbreviated here as `Ref`, must be defined first, and only then can the operators be interpreted responsibly. `Ref` is kept separate from the R-family of relational or resonance-oriented observations.
 
 A similar pattern can therefore mean different things in different domains. High information impulse with weak grounding could mean unsupported novelty in an LLM answer, an unexpected reaction in horse training, a potential variation in whale-song observation or an anomaly in a honeypot trace. The structural pattern may be comparable; the interpretation remains domain-specific.
 
