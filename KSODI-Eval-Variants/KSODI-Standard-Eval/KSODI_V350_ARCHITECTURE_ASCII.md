@@ -5,7 +5,9 @@ Status: public orientation sketch for the current v350 direction
 Purpose: show the current layer order before the full v350 Standard-Eval / Full specification is public.
 
 ```text
-Layer 1 - KSODI-Light
+KSODI-Light-Agent
+
+Layer 0 - KSODI-Light
   reflective working agreement / prompt orientation
   may run on its own agent where available
   no external Observer calculation by itself
@@ -13,7 +15,9 @@ Layer 1 - KSODI-Light
         |
         v
 
-Layer 2 - Operators and state vector
+Observer architecture
+
+Layer 1 - Operators
   K0  S0  O0  D0  I0
    |   |   |   |   |
    |   |   |   |   +--> I, Delta I, Delta2 I, ISigma, ISigma(Hangar)
@@ -21,12 +25,16 @@ Layer 2 - Operators and state vector
    |   |   +----------> O, Delta O, Delta2 O, OSigma, OSigma(Hangar)
    |   +--------------> S, Delta S, Delta2 S, SSigma, SSigma(Hangar)
    +------------------> K, Delta K, Delta2 K, KSigma, KSigma(Hangar)
-              |
-              v
-            Z(t)
-              |
-              +--> Delta Z / Delta2 Z
-              +--> ZSigma / ZSigma(Hangar)
+
+        |
+        v
+
+Layer 2 - Z
+  state vector over the operator values
+
+      Z(t)
+      Delta Z / Delta2 Z
+      ZSigma / ZSigma(Hangar)
 
         |
         v
@@ -50,19 +58,27 @@ Layer 4 - R0 / R_0 gate
         |
         v
 
-Layer 5 - IK_rel and R_geom
-  IK_rel:
-    relational coherence projection after stable R0
+Layer 5 - IK_rel
+  relational coherence projection after stable R0
 
-  R_geom:
-    geometric coupling in KSODI state space
-    R_geomSigma / R_geomSigma(Hangar)
-    Delta R_geom / Delta2 R_geom
+      IK_rel
+      Delta IK_rel / Delta2 IK_rel
+      IK_relSigma / IK_relSigma(Hangar)
 
         |
         v
 
-Layer 6 - R_pace
+Layer 6 - R_geom
+  geometric coupling in KSODI state space
+
+      R_geom
+      R_geomSigma / R_geomSigma(Hangar)
+      Delta R_geom / Delta2 R_geom
+
+        |
+        v
+
+Layer 7 - R_pace
   readable-language or sign-visible pacing structure
   only where pacing is made visible inside the interaction
 
@@ -73,11 +89,60 @@ Layer 6 - R_pace
         |
         v
 
-Layer 7 - future signal-media extension
+Layer 8 - future signal-media extension
   not active v350
   later research may include audio recordings, radio,
   Morse-like signals or wave/signal forms
 ```
+
+## Scope And Application Selection
+
+Not every application needs every aggregation, Hangar view, drift value or
+second-order drift value. Select the active observations layer by layer for the
+use case.
+
+For many ordinary applications, the main observation focus may be:
+
+- `Z(t)` and its corridor behavior
+- `IK`
+- `IK_rel` where relational comparison is justified
+- the relevant R-family variants
+- `O0` / reference-space visibility where grounding matters
+
+In adversarial, safety-sensitive or drift-sensitive settings, operator-level
+drift may become important as well. For example, `I` stagnation, bursts or
+oscillation may reveal attack patterns, prompt injection pressure, repetitive
+collapse or missing update-relevant information.
+
+Decision rule: do not enable Sigma / Hangar / Delta / Delta2 everywhere by
+default. Decide per layer, per application field and per concrete use case.
+
+## Weighted Axis Modes
+
+For `IK` and R-family variants, two weighting modes should remain visible:
+
+1. Fixed directed operator axes in the normalized variant, with each operator
+   initially readable as a `0.2` contribution in the five-operator state space.
+2. Interaction-derived axes, where rough corridors are learned or calibrated
+   after Mode 1 observation and then adapted to the application field and use
+   case.
+
+## Future Work: Controller Architecture
+
+Name not final.
+
+The controller architecture must be separated more precisely than the minimal
+v350 Observer architecture. The controller must not collapse back into the
+Observer.
+
+Future direction:
+
+- the governance team defines permitted corridors before deployment, matched
+  to the application case
+- layer feedback can be routed automatically to agents only within those
+  approved corridors
+- Observer outputs should not be fed back in a way that lets the Observer
+  influence itself without a separate control boundary
 
 ## Active v350 Boundary
 
@@ -85,7 +150,7 @@ Layer 7 - future signal-media extension
 - `R0` is the relational gate before relational projection.
 - `IK_rel` is evaluated only after stable `R0`.
 - `R_geom` is the current geometric core term inside the R-family.
-- `R_pace` may remain only as pacing dynamics where explicitly defined.
+- `R_pace` may remain only as readable-language or sign-visible pacing dynamics where explicitly defined.
 - Audio, radio, Morse and wave/signal forms belong to later research, not to the active v350 core.
 
 ## Inactive Terms For v350
