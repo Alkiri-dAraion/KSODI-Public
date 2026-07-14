@@ -2,4 +2,5 @@
 
 Status: historical placeholder, not current implementation guidance
 
-The current v350 I operator is released under `../operators_v350/operator-I_v350.md`.
+The current v350 I operator is released under
+`../../v350/layer-1-operators/operator-I_v350.md`.

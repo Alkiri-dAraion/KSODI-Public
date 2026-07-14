@@ -168,3 +168,19 @@ Takt overlay
 ```
 
 Older public files may contain these terms as historical or deprecated material. They must not be read as current v350 structure.
+
+## Layer Files
+
+- [Canonical v350 operator pointer](./operators_v350_canonical/README.md)
+- [Layer 0 - KSODI-Light-Agent](./v350/layer-0-ksodi-light-agent/README.md)
+- [Layer 1 - Operators](./v350/layer-1-operators/README.md)
+- [Layer 2 - State Vector Z](./v350/layer-2-state-vector-z/README.md)
+- [Layer 3 - IK](./v350/layer-3-ik/README.md)
+- [Layer 4 - R0 Gate](./v350/layer-4-r0-gate/README.md)
+- [Layer 5 - IK_rel](./v350/layer-5-ik-rel/README.md)
+- [Layer 6 - R_geom](./v350/layer-6-r-geom/README.md)
+- [Layer 7 - R_pace](./v350/layer-7-r-pace/README.md)
+- [Layer 8 - Future Signal-Media](./v350/layer-8-future-signal-media/README.md)
+
+Historical 3.3 and deprecated public drafts are preserved under
+[`archive/historical-v33`](./archive/historical-v33/README.md).

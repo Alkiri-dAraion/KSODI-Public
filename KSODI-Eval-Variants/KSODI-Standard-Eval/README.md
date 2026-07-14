@@ -5,9 +5,9 @@
 This folder contains public KSODI Standard-Eval materials for conceptual
 review, discussion and version traceability.
 
-The public 3.3 files are not recommended as an implementation reference. They
-contain known structural issues and are being superseded by a revised private
-reference line.
+The public 3.3 files are archived as historical material. They are not
+recommended as an implementation reference. They contain known structural issues
+and are being superseded by the reviewed v350 line.
 
 ## Role of Standard-Eval
 
@@ -48,15 +48,20 @@ material, not as a complete or tested specification.
 The reviewed v350 line is being released into this public repository step by
 step after private review.
 
-- [`operators_v350`](./operators_v350/README.md) contains reviewed v350
-  operator files as they become public.
+- [`v350`](./v350/README.md) contains the active layer-based public structure.
+- [`operators_v350_canonical`](./operators_v350_canonical/README.md) marks the
+  canonical public v350 operator line and points into the Layer 1 operator
+  files.
+- [`operators_v350`](./operators_v350/README.md) remains as a compatibility
+  pointer for the earlier public v350 operator path.
 - [`KSODI_V350_ARCHITECTURE_ASCII.md`](./KSODI_V350_ARCHITECTURE_ASCII.md)
   gives a compact layer sketch for the current v350 direction.
 
 ## Related folders
 
-- `operators_v3.3` contains public 3.3 operator material.
-- `operators_v350` contains reviewed v350 operator material as it is released.
-- `state-vectors_Z_v3.3` contains public 3.3 state-vector material.
-- `projections_IK_v3.3` contains public 3.3 projection material.
-- `operators_deprecated` preserves earlier draft material for transparency.
+- `v350` contains the current layer-based v350 public structure.
+- `operators_v350_canonical` points to the canonical v350 operator layer.
+- `operators_v350` remains as a compatibility pointer to the v350 operator
+  layer.
+- `archive/historical-v33` preserves public 3.3 operator, state-vector,
+  projection and deprecated draft material for provenance and transparency.

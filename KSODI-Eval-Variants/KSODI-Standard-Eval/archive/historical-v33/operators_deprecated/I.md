@@ -1,9 +1,9 @@
-# Deprecated Projection Draft: IK
+# Deprecated Operator Draft: I
 
 Status: historical draft placeholder
 
 This file is retained only for public version traceability. Earlier visible draft content in this path belonged to exploratory draft material and should not be used as current KSODI Standard-Eval guidance.
 
-Current v350 architecture guidance is maintained in:
+The current released v350 I operator is:
 
-[`../KSODI_V350_ARCHITECTURE_ASCII.md`](../KSODI_V350_ARCHITECTURE_ASCII.md)
+[`../../v350/layer-1-operators/operator-I_v350.md`](../../v350/layer-1-operators/operator-I_v350.md)

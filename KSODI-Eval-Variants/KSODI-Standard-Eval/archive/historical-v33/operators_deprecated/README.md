@@ -6,6 +6,7 @@ This folder preserves public path continuity for earlier exploratory operator dr
 
 Use these files only for version traceability. For the current v350 line, see:
 
-[`../operators_v350`](../operators_v350/README.md)
+[`../../operators_v350_canonical`](../../operators_v350_canonical/README.md)
 
-The older public `operators_v3.3` folder remains historical and should not be used as an implementation reference.
+The older public `operators_v3.3` folder remains historical and should not be
+used as an implementation reference.
