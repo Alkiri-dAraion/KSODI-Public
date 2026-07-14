@@ -351,15 +351,17 @@ Layer 1 - Operators
 Layer 2 - Z
   Z(t), Delta Z, Delta2 Z, ZSigma, ZSigma(Hangar)
 
+From Z, two checks run side by side:
+
 Layer 3 - IK
   monadic interaction coherence projection
   IK, Delta IK, Delta2 IK, IKSigma, IKSigma(Hangar)
 
 Layer 4 - R0 / R_0 gate
-  gate for dyadic or n-adic relational observation
+  gate based on Z-trajectories for dyadic or n-adic relational observation
 
 Layer 5 - IK_rel
-  relational coherence projection after stable R0
+  dyadic / n-adic relational coherence projection after stable R0
 
 Layer 6 - R_geom
   geometric coupling in KSODI state space

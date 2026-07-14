@@ -52,30 +52,25 @@ Layer 2 - Z
       Delta Z / Delta2 Z
       ZSigma / ZSigma(Hangar)
 
-        |
-        v
+        |-------------------------------|
+        v                               v
 
-Layer 3 - IK
-  monadic interaction coherence projection
-  coherence is not resonance
+Layer 3 - IK                    Layer 4 - R0 / R_0 gate
+  monadic interaction             gate based on Z-trajectories:
+  coherence projection            are distinguishable trajectories
+  for each party / entity          stable enough for relational
+  coherence is not resonance      comparison?
 
       IK
       Delta IK / Delta2 IK
       IKSigma / IKSigma(Hangar)
 
-        |
-        v
-
-Layer 4 - R0 / R_0 gate
-  relational gate for dyadic or n-adic observation:
-  are distinguishable trajectories stable enough
-  for relational comparison?
-
-        |
-        v
+                                        |
+                                        v
 
 Layer 5 - IK_rel
-  relational coherence projection after stable R0
+  dyadic / n-adic relational coherence projection
+  only inside the relational branch after stable R0
 
       IK_rel
       Delta IK_rel / Delta2 IK_rel
@@ -163,8 +158,10 @@ Future direction:
 ## Active v350 Boundary
 
 - `IK` is monadic coherence projection, not resonance.
-- `R0` is the relational gate before relational projection.
-- `IK_rel` is evaluated only after stable `R0`.
+- `R0` is evaluated from `Z` and runs in parallel to monadic `IK`; it is not
+  downstream of `IK`.
+- `IK_rel` belongs inside the dyadic / n-adic branch and is evaluated only
+  after stable `R0`.
 - `R_geom` is the current geometric core term inside the R-family.
 - `R_pace` may remain only as readable-language or sign-visible pacing dynamics where explicitly defined.
 - Audio, radio, Morse and wave/signal forms belong to later research, not to the active v350 core.

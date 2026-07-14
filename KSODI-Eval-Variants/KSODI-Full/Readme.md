@@ -19,8 +19,10 @@ This public folder should not be treated as an implementation reference.
 KSODI-Full builds on KSODI Standard-Eval. The five KSODI operators and the
 state-vector layer remain the numeric observation basis.
 
-R0 / R_0 is currently understood as a relational gate: it helps determine
-whether a dyadic or n-adic relational observation is meaningful at all. Without
+R0 / R_0 is currently understood as a relational gate evaluated from
+distinguishable `Z`-trajectories. It runs in parallel to monadic `IK`: first,
+each party or entity can be observed for its own coherence; then `R0` asks
+whether dyadic or n-adic relational observation is meaningful at all. Without
 such a gate, resonance-family observations can become misleading, because a
 system may show apparent resonance while losing coherence, direction or
 comparability.

@@ -123,7 +123,9 @@ First:
 Coherence is not resonance.
 ```
 
-In v3.5, `IK` is treated as interaction coherence projection. It belongs before relational or resonance-family interpretation. The R-family belongs after the relevant relational gate and must not be collapsed back into `IK`.
+In v3.5, `IK` is treated as monadic interaction coherence projection. `R0`
+is evaluated separately from `Z`-based trajectories as the relational gate. The
+R-family belongs after that gate and must not be collapsed back into `IK`.
 
 Second:
 
