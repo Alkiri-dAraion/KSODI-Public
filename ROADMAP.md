@@ -116,6 +116,16 @@ the organization's context:
 - **D - Distinctness**
 - **I - Information Depth**
 
+These short labels describe the working questions at the Light or orientation
+level. In formal observer-facing wording, the measurable side is more specific:
+O asks for **Observable Grounded Objectivity**, because the observer only has
+access to grounding and traceability inside a declared visible reference space.
+D is treated as **Observable Clarity**, including distinctness,
+discernibility, local signal stability and operational connectability. I is
+treated as **Observable Information Impulse**, because information depth has to
+be reconstructed relative to a position, sequence and receiver-side context
+rather than assumed directly.
+
 The broader KSODI mathematics and observer layers may then derive
 organization-specific insights across time, transitions and larger architectural
 spaces.

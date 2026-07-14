@@ -13,10 +13,17 @@ The Z state-vector layer has since been refined in the private canonical workben
 Terminology note:
 Current public v3.5 wording distinguishes between didactic KSODI-Light labels
 and observer-facing operator names. Older public Light examples may still use
-**Objectivity** for O and **Information Depth** for I. Current observer-facing
-wording treats O as grounded objectifiability / grounding and I as information
-impulse. Older public notes may still contain the terms "Distinctness" and
-"Informational Value".
+**Objectivity** or **Objectifiability** for O and **Information Depth** for I.
+Current observer-facing wording treats O as **Observable Grounded Objectivity**,
+D as **Observable Clarity** and I as **Observable Information Impulse**. Older
+public notes may still contain the terms "Distinctness" and "Informational
+Value".
+
+This is not meant as a competing definition. The short labels name the working
+question. The observer-facing names name what can be reconstructed in the
+observable part of communication: grounding within a declared reference space,
+discernible and operationally connectable clarity, and information impulse
+relative to sender-side sequence or receiver-side reconstruction.
 
 KSODI-Light should also not be read as scoring only the user's prompt. At the
 prompt level, it can serve as a reflective working agreement for user input,

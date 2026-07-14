@@ -168,6 +168,13 @@ Five operators describe interaction structure:
 At the KSODI-Light level, these operators can be used as coarse orientation
 signals, for example on a 0-5 scale per operator.
 
+At the formal observer level, the short labels are mapped to the observable
+operator names: **Observable Grounded Objectivity**, **Observable Clarity** and
+**Observable Information Impulse**. This is a relation and placement issue, not
+a competing definition. The observer does not have direct access to objectivity
+or information depth as such; it observes grounding, clarity, impulse and
+reconstructability within a declared context and reference space.
+
 In formal observer layers, operator values may be normalized into numeric
 representations such as:
 
