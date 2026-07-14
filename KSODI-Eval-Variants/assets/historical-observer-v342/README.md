@@ -1,8 +1,8 @@
 # Historical Observer Assets - v3.3 to v3.42 Line
 
-Status: historical implementation artifacts
-Current method status: deprecated as v3.5 specification material
-Purpose: visual evidence of earlier KSODI Observer implementation work and its later methodological correction
+- Status: historical implementation artifacts
+- Current method status: deprecated as v3.5 specification material
+- Purpose: visual evidence of earlier KSODI Observer implementation work and its later methodological correction
 
 ## Scope
 
