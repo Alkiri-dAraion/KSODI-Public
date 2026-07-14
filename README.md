@@ -215,6 +215,8 @@ A central implementation challenge is that developers and system architects must
 
 In other words: KSODI is not only a scoring surface. It requires careful decisions about what is observed, how input is transformed into K/S/O/D/I, how `Z(t)` is formed, and how later projections, drift metrics, relational gates and visualizations are derived from it.
 
+Historical implementation note: earlier KSODI implementation work in the v3.3 to v3.42 period already explored a Kubernetes / microservice-oriented architecture with operator and Observer components. The v3.5 transition does not discard that carrier architecture. It reworks the method layer: `Z(t)` is made explicit, `IK` is separated from the R-family, `R0` is introduced as a relational gate, and source / reference-space visibility is treated more carefully. Older outputs, dashboards or diagrams should therefore be read as historical implementation context rather than as current v3.5 method specifications.
+
 This work is ongoing and empirical validation is still in progress.
 
 ## Roadmap

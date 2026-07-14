@@ -83,6 +83,14 @@ The corresponding full implementation work, including microservices per
 operator and Kubernetes-based infrastructure, is currently maintained outside
 this public repository and is not yet public.
 
+This implementation line is being reviewed against the v3.5 method boundary.
+The carrier architecture is not discarded. The v3.5 transition makes `Z(t)`
+explicit, separates `IK` from the R-family, introduces `R0` as the relational
+gate, and treats source / reference-space visibility more carefully than the
+v3.3 to v3.42 working line. Older architecture notes, dashboards or diagrams
+should therefore be read as historical implementation context unless a later
+v3.5 note marks them as method-aligned.
+
 ## Prompt-Level Score Corridors
 
 KSODI-Light may use rough score corridors such as:
