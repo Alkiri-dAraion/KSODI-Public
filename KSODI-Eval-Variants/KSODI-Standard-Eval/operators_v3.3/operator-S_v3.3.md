@@ -1,2 +1,5 @@
-t.b.d.
-- under review - 
+# Historical v3.3 Placeholder: S
+
+Status: historical placeholder, not current implementation guidance
+
+The current v350 operator line is released separately under `../operators_v350`.

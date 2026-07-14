@@ -1,26 +1,11 @@
-# Deprecation Notice
+# Deprecated Operator Drafts
 
-Draft / superseded by v1.0
-Not normative / not implementation ready
-Variable naming is preliminary
+Status: historical placeholders only
 
-## Operators v0.8 (Draft – Archived Development Stage)
+This folder preserves public path continuity for earlier exploratory operator drafts. The visible draft content has been reduced to placeholders because those files contained draft material that is not suitable as current public Standard-Eval guidance.
 
-This directory contains an earlier developmental version of the KSODI operator structure.
+Use these files only for version traceability. For the current v350 line, see:
 
-Version 0.8 reflects an intermediate conceptual state prior to:
-- the formal separation of KSODI-Light (Explainability),
-- Standard-Eval and Full (Observability, Auditability, optional steering & alignment (under deeper evaluation),
-- the integration of operator Z,
-- the resolution of overlapping operator notation,
-- the introdutcion of a full glossary,
-- clear layer separation and clear definitions - between alignment and observability
-- and the finalized mathematical formalization in our referenced version (v3.3)
+[`../operators_v350`](../operators_v350/README.md)
 
-This version is preserved for transparency and version traceability.
-It does not represent the current implementation-ready or governance-aligned structure of KSODI.
-
-For the refined and structurally separated operator definitions,
-please refer to operators_v3.3. (not openly published and under review 2026-03)
-
-
+The older public `operators_v3.3` folder remains historical and should not be used as an implementation reference.
