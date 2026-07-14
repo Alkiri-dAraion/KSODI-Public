@@ -43,9 +43,20 @@ direction, comparability or stable interaction coherence.
 Public files in this folder should therefore be read as research-oriented
 material, not as a complete or tested specification.
 
+## v350 Preview
+
+The reviewed v350 line is being released into this public repository step by
+step after private review.
+
+- [`operators_v350`](./operators_v350/README.md) contains reviewed v350
+  operator files as they become public.
+- [`KSODI_V350_ARCHITECTURE_ASCII.md`](./KSODI_V350_ARCHITECTURE_ASCII.md)
+  gives a compact layer sketch for the current v350 direction.
+
 ## Related folders
 
 - `operators_v3.3` contains public 3.3 operator material.
+- `operators_v350` contains reviewed v350 operator material as it is released.
 - `state-vectors_Z_v3.3` contains public 3.3 state-vector material.
 - `projections_IK_v3.3` contains public 3.3 projection material.
 - `operators_deprecated` preserves earlier draft material for transparency.

@@ -21,11 +21,11 @@ The usual implementation setting for KSODI Standard-Eval and KSODI Full uses a l
 1. Agent layer (L1): KSODI-Light may run as a reflective working agreement in user/account prompts or as a system prompt on one or more agents.
 2. Observer layer (L2): KSODI Standard-Eval provides numeric observation for monadic agent or interaction-state trajectories.
 3. Relational / Full observer layer (L3): KSODI Full opens relational observation after `R0`, with `R0` / `IK_rel` as the minimum dyadic or n-adic coherence observation and the R-family for broader relational or resonance-family views.
-4. Optional voice / timing overlay layer (L4): KSODI Full plus additional voice, sound, rhythm, takt or pacing observation where such signals are available and versioned.
+4. Optional pacing observation layer (L4): KSODI Full plus `R_pace` where pacing dynamics are explicitly defined and versioned.
 The observer is usually designed to give the agent or a human/governance layer feedback when the observed trajectory drifts out of a defined or explainable corridor.
 
 Current line:
-`Z(t)` -> `Delta Z` / `Delta2 Z` -> `IK` as monadic projection -> `R0` as relational gate -> `IK_rel` as relational projection after a stable gate -> `R_geom` as geometric coupling -> `RSigma` / `RSigma(Hangar)` -> optional: `V(t)`, `R_takt`, `R_pace` as timing and voice overlays.
+`Z(t)` -> `Delta Z` / `Delta2 Z` -> `IK` as monadic projection -> `R0` as relational gate -> `IK_rel` as relational projection after a stable gate -> `R_geom` as geometric coupling -> `RSigma` / `RSigma(Hangar)` -> optional: `R_pace` where pacing dynamics are explicitly defined.
 
 # KSODI Method
 
