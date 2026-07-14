@@ -23,6 +23,10 @@ Standard-Eval focuses on:
 - relational comparability gates
 - drift and stability signals
 
+In the current v3.5 direction, interaction coherence is not resonance. `IK`
+belongs to the coherence/projection layer; resonance-family interpretation
+belongs only after the relevant relational gate.
+
 R0 / R_0 belongs to this gate logic. It is used as an orientation point for
 deciding whether a dyadic or n-adic relational observation is meaningful before
 broader KSODI-Full resonance-family observations are interpreted.

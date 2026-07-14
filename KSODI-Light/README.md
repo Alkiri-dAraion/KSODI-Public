@@ -53,6 +53,31 @@ It supports:
 KSODI-Light does not evaluate correctness and does not judge users.
 It supports learning and clarity.
 
+## Operator Labels in Light and Eval
+
+KSODI-Light uses short, human-facing operator labels because this layer is a
+reflective working agreement for people, trainers and local prompt guidance.
+The short labels name practical working questions:
+
+- Is there enough context?
+- Is the request or response structured?
+- Is it grounded or objectifiable enough for the task?
+- Is it clear and distinguishable enough to continue?
+- Does it add an information impulse?
+
+In the formal Observer layers, these same questions are named more precisely as
+observable reconstruction categories: **Observable Context Completeness**,
+**Observable Structural Coherence**, **Observable Grounded Objectivity**,
+**Observable Clarity** and **Observable Information Impulse**.
+
+The names differ slightly because the layers ask the same questions from
+different positions. Light supports local reflection inside an interaction.
+Standard-Eval and Full observe exposed states, trajectories, reference spaces
+and reconstruction conditions from outside the prompt.
+
+For the observer-facing terminology and v3.5 boundary, see
+[KSODI Standard-Eval & Full](../KSODI-Eval-Variants/README.md).
+
 ## Why This Layer Matters
 
 KSODI-Light is the root layer of the KSODI method. The later observer
@@ -141,7 +166,8 @@ Different tasks may need different corridors:
 
 - creative or science-fiction discussion may allow lower objectivity while
   still requiring clear context and structure,
-- documentation of an image may require high objectivity and distinctness,
+- documentation of an image may require high grounding/objectifiability and
+  clarity/discernibility,
 - legal, medical, safety or governance contexts may require much stricter
   grounding and source boundaries.
 

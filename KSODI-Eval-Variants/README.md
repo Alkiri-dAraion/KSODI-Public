@@ -8,6 +8,33 @@ support a reflective working agreement inside an interaction. Standard-Eval and
 KSODI-Full are intended to observe trajectories, drift, coupling and structural
 stability from outside the prompt.
 
+## Operator Names in Light and Eval
+
+KSODI-Light and KSODI Standard-Eval / Full use slightly different operator
+names because they operate from different positions.
+
+KSODI-Light uses short, human-facing labels for prompt work, training and local
+reflection. They name practical working questions such as context, structure,
+objectifiability, clarity and information impulse.
+
+Standard-Eval and KSODI-Full use observer-facing names because this layer must
+describe what can be reconstructed from exposed interaction states, reference
+spaces, trajectories and audit material:
+
+- **Observable Context Completeness**
+- **Observable Structural Coherence**
+- **Observable Grounded Objectivity**
+- **Observable Clarity**
+- **Observable Information Impulse**
+
+The difference is not a competing definition. It is a layer and viewpoint
+distinction. Light asks from inside the interaction whether the working frame is
+usable. Eval asks from outside the prompt what can be observed, reconstructed,
+compared and monitored.
+
+For the human-facing Light terminology and prompt-level use, see
+[KSODI-Light](../KSODI-Light/README.md).
+
 These components are designed for:
 
 - numeric interaction observation
@@ -73,7 +100,8 @@ Historical Observer visualizations are preserved under
 [`assets/historical-observer-v342`](./assets/historical-observer-v342/README.md).
 They show that implementation and dashboard work already existed in the v3.3 to
 v3.42 line, while also making visible why the v3.5 correction needs a clearer
-reference-space and `O0` interpretation.
+separation between interaction coherence and resonance-family observation, plus
+clearer reference-space and `O0` interpretation.
 
 Until then, this directory should be used for conceptual review, discussion and
 research orientation only.

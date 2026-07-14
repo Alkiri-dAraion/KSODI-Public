@@ -25,6 +25,15 @@ observable part of communication: grounding within a declared reference space,
 discernible and operationally connectable clarity, and information impulse
 relative to sender-side sequence or receiver-side reconstruction.
 
+The sender / receiver distinction is especially important. Sender-side
+description may use the outgoing K/S/O/D/I direction as a working convention:
+context, structure, grounding, clarity and information impulse become
+sendable. Receiver-side reconstruction does not simply read the same sequence
+backward as a score. The receiver first encounters informational difference and
+discernibility before grounding, structure and context can be reconstructed.
+This is why current wording treats I as **Observable Information Impulse**
+rather than generic "information depth".
+
 KSODI-Light should also not be read as scoring only the user's prompt. At the
 prompt level, it can serve as a reflective working agreement for user input,
 assistant output and the shared interaction state. It is not the KSODI
@@ -102,11 +111,11 @@ The machine process is signal-driven.
 ### 5. Shared Descriptive Layer: The Five Operators
 
 KSODI introduces five descriptive axes:
-	•	K — Context
-	•	S — Structure
-	•	O — Grounded objectifiability / grounding
-	•	D — Clarity
-	•	I — Information impulse
+	•	K — Observable Context Completeness
+	•	S — Observable Structural Coherence
+	•	O — Observable Grounded Objectivity
+	•	D — Observable Clarity
+	•	I — Observable Information Impulse
 
 These axes describe interaction structure without assuming cognitive symmetry.
 
@@ -117,6 +126,11 @@ Depending on the layer, they may describe a user's input, an assistant's output,
 a local agent state or a shared interaction condition produced across a turn.
 Relational interpretation is a later methodological step, not an automatic
 property of every Light-level use.
+
+At the Light level, shorter labels such as context, structure,
+objectifiability, clarity and information impulse may still be useful as
+working questions. In Standard-Eval / Full wording, the observable names above
+should be used or explicitly mapped.
 
 ⸻
 
@@ -242,17 +256,17 @@ Structure (S)
 – Rhetorical Structure Theory (Mann & Thompson)
 – Syntax models
 
-Objectivity (O)
+Observable Grounded Objectivity (O)
 – Epistemic logic (Hintikka)
 – Knowledge validation
 – Verification models
 
-Clarity (D)
+Observable Clarity (D)
 – Signal-to-noise ratio (Shannon)
 – Ambiguity research
 – Clarity studies
 
-Information Depth (I)
+Observable Information Impulse (I)
 – Shannon information
 – Entropy and novelty
 – Redundancy analysis
@@ -370,6 +384,11 @@ KSODI could potentially serve as a relational observation layer between agents.
 If each agent interaction produces a describable semantic state vector,
 drift between agents, reinforcement loops, or instability propagation
 might become structurally detectable without inspecting internal weights.
+
+In the current v3.5 direction, this relational reading requires explicit layer
+separation. `IK` describes interaction coherence and must not be treated as
+resonance. Relational or resonance-family interpretation belongs after a
+methodically justified gate such as `R0`.
 
 This remains a working hypothesis.
 
