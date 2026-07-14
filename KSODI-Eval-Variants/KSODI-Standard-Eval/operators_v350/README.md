@@ -11,7 +11,7 @@ The canonical public v350 operator line is here:
 
 The layer-based v350 operator structure is here:
 
-[`../v350/layer-1-operators`](../v350/layer-1-operators/README.md)
+[`../Standard-Eval_v350/layer-1-operators`](../Standard-Eval_v350/layer-1-operators/README.md)
 
 Current released operator:
 
@@ -21,7 +21,7 @@ Current released operator:
 Canonical and Observer-layer locations:
 
 - [`operators_v350_canonical/operator-I_v350.md`](../operators_v350_canonical/operator-I_v350.md)
-- [`v350/layer-1-operators/operator-I_v350.md`](../v350/layer-1-operators/operator-I_v350.md)
+- [`Standard-Eval_v350/layer-1-operators/operator-I_v350.md`](../Standard-Eval_v350/layer-1-operators/operator-I_v350.md)
 
 The older public v3.3 placeholders and deprecated drafts remain available only
 for provenance and version traceability under:
@@ -30,4 +30,4 @@ for provenance and version traceability under:
 
 Architecture overview:
 
-[`../KSODI_V350_ARCHITECTURE_ASCII.md`](../KSODI_V350_ARCHITECTURE_ASCII.md)
+[`../../KSODI_V350_ARCHITECTURE_ASCII.md`](../../KSODI_V350_ARCHITECTURE_ASCII.md)

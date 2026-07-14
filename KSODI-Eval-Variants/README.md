@@ -49,6 +49,17 @@ In the current v3.5 direction, KSODI Standard-Eval and KSODI-Full are the layers
 
 KSODI-Light belongs to the local agent side: it may guide an agent through user, account, developer, system-prompt or skill-level instructions. Standard-Eval and KSODI-Full belong to the observer side: they are intended to monitor what happens from outside the prompt and across time.
 
+The current public v350 architecture sketch is maintained at the Eval-Variants
+root because it spans Standard-Eval and the R-family / KSODI-Full research
+boundary:
+
+[`KSODI_V350_ARCHITECTURE_ASCII.md`](./KSODI_V350_ARCHITECTURE_ASCII.md)
+
+Public implementation-transfer examples are kept separate from the canonical
+method folders. They are orientation aids, not customer implementations:
+
+[`implementation-examples`](./implementation-examples/README.md)
+
 The Observer layer may use existing observability material such as traces, threads, chunks, retrieval records, vector similarity, generation parameters, evaluation signals and tool-call logs. KSODI adds an additional interaction-oriented observation layer around K/S/O/D/I, `Z(t)`, drift, acceleration, interaction coherence and relational or resonance-family structures.
 
 A central challenge is that developers and architects must understand how the selected input, reference space, retrieval context, tool state and operator mapping affect the five KSODI operators. These choices shape `Z(t)` and all later projections, drift metrics, relational gates and visualizations. If the input frame is wrong, the observer may not merely measure badly; it may observe a different system state than intended.
@@ -58,11 +69,12 @@ This is why the public 3.3 material should not be used as an implementation refe
 ## Variants
 
 ### KSODI Standard-Eval
-Model-agnostic numeric evaluation layer.  
-Designed for audit-capable and observable system environments.
+Model-agnostic numeric evaluation layer for monadic observation.
+Designed for operators, `Z`, `IK`, aggregation and Delta / Delta2 views.
 
 ### KSODI-Full
-Extended analytical layer for dynamic interaction patterns, transitions and relational resonance-family structures.  
+Extended analytical layer for relational gates, dyadic / n-adic observation and
+R-family structures such as `R_geom`, `R_pace` and future signal-media work.
 Explanatory and architectural – never decision-making.
 
 ## Intended Use

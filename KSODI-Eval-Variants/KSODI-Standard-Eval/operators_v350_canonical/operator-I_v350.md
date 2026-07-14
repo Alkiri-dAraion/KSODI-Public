@@ -5,7 +5,7 @@ Status: canonical public v350 operator definition, architecture-independent afte
 Scope: method definition for `I0` independent of a specific Observer runtime,
 database layout, orchestration stack or deployment architecture. Observer-layer
 integration is documented separately under
-[`../v350/layer-1-operators/operator-I_v350.md`](../v350/layer-1-operators/operator-I_v350.md).
+[`../Standard-Eval_v350/layer-1-operators/operator-I_v350.md`](../Standard-Eval_v350/layer-1-operators/operator-I_v350.md).
 
 ## 1. Definition
 

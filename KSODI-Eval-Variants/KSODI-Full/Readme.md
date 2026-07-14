@@ -46,4 +46,8 @@ separations between Z, IK, R0, IK_rel and the broader R-family. A revised KSODI
 3.5 reference specification is maintained privately and will only be published
 after final testing and review.
 
+Current public v350 structure:
+
+[`Full_v350`](./Full_v350/README.md)
+
 Thanks for your understanding.

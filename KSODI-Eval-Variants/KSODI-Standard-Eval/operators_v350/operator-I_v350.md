@@ -6,7 +6,7 @@ Canonical method definition:
 [`../operators_v350_canonical/operator-I_v350.md`](../operators_v350_canonical/operator-I_v350.md)
 
 Observer-layer adaptation:
-[`../v350/layer-1-operators/operator-I_v350.md`](../v350/layer-1-operators/operator-I_v350.md)
+[`../Standard-Eval_v350/layer-1-operators/operator-I_v350.md`](../Standard-Eval_v350/layer-1-operators/operator-I_v350.md)
 
 ## 1. Definition
 

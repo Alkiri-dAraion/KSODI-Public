@@ -18,6 +18,6 @@ Do not use this archive as current implementation guidance.
 
 Current public v350 orientation:
 
-- [`v350`](../../v350/README.md)
+- [`Standard-Eval_v350`](../../Standard-Eval_v350/README.md)
 - [`operators_v350_canonical`](../../operators_v350_canonical/README.md)
-- [`KSODI_V350_ARCHITECTURE_ASCII.md`](../../KSODI_V350_ARCHITECTURE_ASCII.md)
+- [`KSODI_V350_ARCHITECTURE_ASCII.md`](../../../KSODI_V350_ARCHITECTURE_ASCII.md)

@@ -21,6 +21,7 @@ Rules:
 Workflow:
 
 1. Review the canonical operator here.
-2. Only after review, adapt it into `../v350/layer-1-operators`.
+2. Only after review, adapt it into `../Standard-Eval_v350/layer-1-operators`.
 3. If the Observer adaptation needs implementation-specific wording, keep that
-   wording in the `v350` layer structure, not in the canonical operator file.
+   wording in the `Standard-Eval_v350` layer structure, not in the canonical
+   operator file.

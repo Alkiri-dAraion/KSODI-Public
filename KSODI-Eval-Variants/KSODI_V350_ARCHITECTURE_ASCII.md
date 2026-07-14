@@ -1,8 +1,24 @@
-# KSODI v350 Architecture Sketch
+# KSODI v350 Eval Architecture Sketch
 
 Status: public orientation sketch for the current v350 direction
 
-Purpose: show the current layer order before the full v350 Standard-Eval / Full specification is public.
+Purpose: show the current layer order shared by the Standard-Eval and Full
+research lines before the full v350 specification is public.
+
+Position: this sketch sits at the `KSODI-Eval-Variants` root because the layer
+order crosses the public Standard-Eval folder and the R-family / KSODI-Full
+research boundary. `KSODI Standard-Eval` and `KSODI-Full` are public-facing
+variant names; the underlying architecture must keep the method boundary
+between operator observation, state vector, coherence projection, relational
+gate and R-family observation visible.
+
+Boundary:
+
+- `KSODI-Light-Agent` is Layer 0 and belongs to the local agent / prompt side.
+- `KSODI Standard-Eval` covers the monadic Observer layers: operators, `Z` and
+  `IK`.
+- `KSODI-Full` covers the relational / dyadic / n-adic layers: `R0`,
+  `IK_rel`, `R_geom`, `R_pace` and future signal-media work.
 
 ```text
 KSODI-Light-Agent
@@ -171,16 +187,16 @@ Older public files may contain these terms as historical or deprecated material.
 
 ## Layer Files
 
-- [Canonical v350 operators](./operators_v350_canonical/README.md)
-- [Layer 0 - KSODI-Light-Agent](./v350/layer-0-ksodi-light-agent/README.md)
-- [Layer 1 - Operators](./v350/layer-1-operators/README.md)
-- [Layer 2 - State Vector Z](./v350/layer-2-state-vector-z/README.md)
-- [Layer 3 - IK](./v350/layer-3-ik/README.md)
-- [Layer 4 - R0 Gate](./v350/layer-4-r0-gate/README.md)
-- [Layer 5 - IK_rel](./v350/layer-5-ik-rel/README.md)
-- [Layer 6 - R_geom](./v350/layer-6-r-geom/README.md)
-- [Layer 7 - R_pace](./v350/layer-7-r-pace/README.md)
-- [Layer 8 - Future Signal-Media](./v350/layer-8-future-signal-media/README.md)
+- [Canonical v350 operators](./KSODI-Standard-Eval/operators_v350_canonical/README.md)
+- [Layer 0 - KSODI-Light-Agent](./KSODI-Light-Agent_v350.md)
+- [Layer 1 - Operators](./KSODI-Standard-Eval/Standard-Eval_v350/layer-1-operators/README.md)
+- [Layer 2 - State Vector Z](./KSODI-Standard-Eval/Standard-Eval_v350/layer-2-state-vector-z/README.md)
+- [Layer 3 - IK](./KSODI-Standard-Eval/Standard-Eval_v350/layer-3-ik/README.md)
+- [Layer 4 - R0 Gate](./KSODI-Full/Full_v350/layer-4-r0-gate/README.md)
+- [Layer 5 - IK_rel](./KSODI-Full/Full_v350/layer-5-ik-rel/README.md)
+- [Layer 6 - R_geom](./KSODI-Full/Full_v350/layer-6-r-geom/README.md)
+- [Layer 7 - R_pace](./KSODI-Full/Full_v350/layer-7-r-pace/README.md)
+- [Layer 8 - Future Signal-Media](./KSODI-Full/Full_v350/layer-8-future-signal-media/README.md)
 
 Historical 3.3 and deprecated public drafts are preserved under
-[`archive/historical-v33`](./archive/historical-v33/README.md).
+[`KSODI-Standard-Eval/archive/historical-v33`](./KSODI-Standard-Eval/archive/historical-v33/README.md).

@@ -6,4 +6,4 @@ This file is retained only for public version traceability. Earlier visible draf
 
 Current v350 architecture guidance separates `R0`, `IK_rel`, `R_geom` and `R_pace`:
 
-[`../../KSODI_V350_ARCHITECTURE_ASCII.md`](../../KSODI_V350_ARCHITECTURE_ASCII.md)
+[`../../../../KSODI_V350_ARCHITECTURE_ASCII.md`](../../../../KSODI_V350_ARCHITECTURE_ASCII.md)

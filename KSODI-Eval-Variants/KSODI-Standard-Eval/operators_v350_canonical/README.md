@@ -13,7 +13,7 @@ conditions apply.
 
 The current Observer-infrastructure adaptation lives separately under:
 
-[`../v350/layer-1-operators`](../v350/layer-1-operators/README.md)
+[`../Standard-Eval_v350/layer-1-operators`](../Standard-Eval_v350/layer-1-operators/README.md)
 
 Released operator:
 
@@ -30,7 +30,7 @@ Working rule:
 
 1. Write and review the canonical operator here first.
 2. Then adapt the reviewed operator into the Observer-layer structure under
-   `../v350/layer-1-operators`.
+   `../Standard-Eval_v350/layer-1-operators`.
 3. Keep implementation-specific terms out of the canonical definition unless
    they are explicitly marked as examples or non-normative notes.
 
