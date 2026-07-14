@@ -22,6 +22,5 @@ Allowed here:
 Guardrail:
 
 Do not turn Observer-infrastructure choices into canonical method definitions,
-and do not pull relational / R-family layers back into Standard-Eval.
-When an operator meaning changes, update the canonical operator first under
-`../operators_v350_canonical`, then adapt the layer file here.
+and do not pull relational / R-family layers back into Standard-Eval. When an
+operator meaning changes, update the corresponding Layer 1 operator file here.

@@ -1,13 +1,8 @@
 # KSODI Operator I0 - Observable Information Impulse v3.50
 
-Status: public v350 Observer-layer adaptation of the canonical I0 operator.
+Status: canonical workbench version v3.50, updated after the 2026-07-04 Fable review. Dynamic / Sigma / Hangar reminders were added for operator-level monitoring alignment.
 
-Layer: KSODI Standard-Eval Observer Layer 1. This file applies the canonical
-`I0` definition to the current v350 Observer structure, including dynamic,
-Sigma and Hangar reminders for operator-level monitoring alignment.
-
-Canonical method definition:
-[`../../operators_v350_canonical/operator-I_v350.md`](../../operators_v350_canonical/operator-I_v350.md)
+Layer: KSODI Standard-Eval operator. Dynamic and windowed variants belong to the Full / Hangar review layers.
 
 ## 1. Definition
 
@@ -69,7 +64,7 @@ RET_k(u_t) = empty
 
 makes the retrieval-based proxy `G_proxy_ret` not applicable. It must not be silently evaluated as `0` or `1`. The final project policy for retrieval-empty handling remains pending review.
 
-Until the retrieval-empty policy is reviewed, implementations must store an explicit flag such as:
+Until Anne reviews the earlier `RET_k = empty` solution, implementations must store an explicit flag such as:
 
 ```text
 retrieval_proxy_status = no_retrieval

@@ -6,4 +6,4 @@ This file is retained only for public version traceability. Earlier visible draf
 
 Current v350 operator material is released separately under:
 
-[`../../operators_v350_canonical`](../../operators_v350_canonical/README.md)
+[`../../Standard-Eval_v350/layer-1-operators`](../../Standard-Eval_v350/layer-1-operators/README.md)

@@ -184,7 +184,6 @@ Older public files may contain these terms as historical or deprecated material.
 
 ## Layer Files
 
-- [Canonical v350 operators](./KSODI-Standard-Eval/operators_v350_canonical/README.md)
 - [Layer 0 - KSODI-Light-Agent](./KSODI-Light-Agent_v350.md)
 - [Layer 1 - Operators](./KSODI-Standard-Eval/Standard-Eval_v350/layer-1-operators/README.md)
 - [Layer 2 - State Vector Z](./KSODI-Standard-Eval/Standard-Eval_v350/layer-2-state-vector-z/README.md)

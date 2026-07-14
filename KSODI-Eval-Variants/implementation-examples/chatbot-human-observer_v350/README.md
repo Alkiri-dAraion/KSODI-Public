@@ -16,7 +16,7 @@ private prompts, proprietary evaluation data or non-public client variants.
 
 Canonical method layer:
 
-- [`KSODI Standard-Eval canonical operators`](../../KSODI-Standard-Eval/operators_v350_canonical/README.md)
+- [`KSODI Standard-Eval Layer 1 operators`](../../KSODI-Standard-Eval/Standard-Eval_v350/layer-1-operators/README.md)
 - [`Standard-Eval_v350`](../../KSODI-Standard-Eval/Standard-Eval_v350/README.md)
 - [`Full_v350`](../../KSODI-Full/Full_v350/README.md)
 

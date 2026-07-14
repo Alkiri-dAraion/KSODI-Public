@@ -53,10 +53,6 @@ step after private review.
 
 - [`Standard-Eval_v350`](./Standard-Eval_v350/README.md) contains the active
   layer-based public Standard-Eval structure.
-- [`operators_v350_canonical`](./operators_v350_canonical/README.md) contains
-  the architecture-independent canonical public v350 operator line.
-- [`operators_v350`](./operators_v350/README.md) remains as a compatibility
-  pointer for the earlier public v350 operator path.
 - [`KSODI_V350_ARCHITECTURE_ASCII.md`](../KSODI_V350_ARCHITECTURE_ASCII.md)
   gives a compact layer sketch for the current v350 direction.
 
@@ -64,9 +60,5 @@ step after private review.
 
 - `Standard-Eval_v350` contains the current monadic layer-based v350 public
   Standard-Eval structure.
-- `operators_v350_canonical` contains the architecture-independent canonical
-  v350 operator line.
-- `operators_v350` remains as a compatibility pointer to the v350 operator
-  layer.
 - `archive/historical-v33` preserves public 3.3 operator, state-vector,
   projection and deprecated draft material for provenance and transparency.
