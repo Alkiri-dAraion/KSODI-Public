@@ -21,8 +21,11 @@ Allowed here:
 - R-family aggregation and Delta / Delta2 views
 - pacing dynamics where explicitly defined
 - unfinished signal-media research notes
+- controlled-action orientation notes, as long as the controller boundary
+  remains explicit
 
 Guardrail:
 
 Do not collapse coherence back into resonance. `IK` remains monadic and belongs
-to Standard-Eval; `R0`, `IK_rel` and the R-family belong here.
+to Standard-Eval; `R0`, `IK_rel` and the R-family belong here. Do not present
+KSODI-Full itself as an automated decision system.

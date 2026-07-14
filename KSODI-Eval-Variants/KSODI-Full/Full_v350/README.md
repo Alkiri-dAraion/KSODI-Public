@@ -19,6 +19,15 @@ KSODI-Full begins where relational comparability becomes the question.
 - [Layer 7 - R_pace](./layer-7-r-pace/README.md)
 - [Layer 8 - Future Signal-Media](./layer-8-future-signal-media/README.md)
 
+## Controlled Action Orientation
+
+KSODI-Full is the public location for action-adjacent orientation material,
+because controlled intervention requires more than monadic Standard-Eval
+observation. It depends on relational gates, governance corridors and a
+separate controller boundary.
+
+- [`KSODI_observability_to_action.md`](./KSODI_observability_to_action.md)
+
 Architecture overview:
 
 [`../../KSODI_V350_ARCHITECTURE_ASCII.md`](../../KSODI_V350_ARCHITECTURE_ASCII.md)

@@ -42,6 +42,10 @@ direction, comparability or stable interaction coherence.
 Public files in this folder should therefore be read as research-oriented
 material, not as a complete or tested specification.
 
+Action-adjacent material such as controlled intervention, policy-defined
+responses or controller boundaries belongs under KSODI-Full, not under
+Standard-Eval.
+
 ## v350 Preview
 
 The reviewed v350 line is being released into this public repository step by
