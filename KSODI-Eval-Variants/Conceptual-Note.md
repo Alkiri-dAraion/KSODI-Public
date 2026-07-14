@@ -336,6 +336,49 @@ No universal formula.
 
 A structural observation framework.
 
+Current v3.5 / v350 architecture sketch:
+
+```text
+Layer 0 - KSODI-Light-Agent
+  local reflective working agreement / prompt orientation
+
+Observer architecture:
+
+Layer 1 - Operators
+  K0 / S0 / O0 / D0 / I0
+  optional per-operator Delta, Delta2, Sigma and Hangar views
+
+Layer 2 - Z
+  Z(t), Delta Z, Delta2 Z, ZSigma, ZSigma(Hangar)
+
+Layer 3 - IK
+  monadic interaction coherence projection
+  IK, Delta IK, Delta2 IK, IKSigma, IKSigma(Hangar)
+
+Layer 4 - R0 / R_0 gate
+  gate for dyadic or n-adic relational observation
+
+Layer 5 - IK_rel
+  relational coherence projection after stable R0
+
+Layer 6 - R_geom
+  geometric coupling in KSODI state space
+
+Layer 7 - R_pace
+  readable-language or sign-visible pacing structure where explicitly defined
+
+Layer 8 - future signal-media extension
+  not active v350; later work may examine audio, radio, Morse or wave signals
+```
+
+Not every application needs every aggregation, Hangar view, drift value or
+second-order drift value. These observations should be selected layer by layer
+for the concrete use case. Many ordinary applications may focus on `Z(t)`,
+`IK`, `IK_rel`, relevant R-family variants and `O0` / reference-space
+visibility. In adversarial or drift-sensitive settings, operator-level drift
+may also become important, for example when `I` stagnation or bursts reveal
+attack pressure, repetitive collapse or missing update-relevant information.
+
 ⸻
 
 ### 15. Final Position
