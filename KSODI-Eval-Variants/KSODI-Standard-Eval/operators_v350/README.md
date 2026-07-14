@@ -5,7 +5,7 @@ Status: compatibility location and pointer to the canonical v350 operator layer
 This folder keeps the original public v350 operator path available for
 continuity.
 
-The canonical public v350 operator pointer is here:
+The canonical public v350 operator line is here:
 
 [`../operators_v350_canonical`](../operators_v350_canonical/README.md)
 
@@ -15,10 +15,12 @@ The layer-based v350 operator structure is here:
 
 Current released operator:
 
-- [`operator-I_v350.md`](./operator-I_v350.md) - `I0`, Observable Information Impulse
+- [`operator-I_v350.md`](./operator-I_v350.md) - legacy compatibility copy of
+  `I0`, Observable Information Impulse
 
-Layer copy:
+Canonical and Observer-layer locations:
 
+- [`operators_v350_canonical/operator-I_v350.md`](../operators_v350_canonical/operator-I_v350.md)
 - [`v350/layer-1-operators/operator-I_v350.md`](../v350/layer-1-operators/operator-I_v350.md)
 
 The older public v3.3 placeholders and deprecated drafts remain available only

@@ -1,10 +1,16 @@
 # Layer 1 - Operators
 
-Status: public v350 operator layer, released operator by operator after private review
+Status: public v350 Observer-layer operator structure, released operator by operator after private review
 
-Canonical public operator pointer:
+Canonical public operator definitions:
 
 [`../../operators_v350_canonical`](../../operators_v350_canonical/README.md)
+
+This folder adapts the canonical operator definitions to the current
+Standard-Eval Observer architecture. It may therefore mention Layer 1 placement,
+operator-level Delta / Delta2, Sigma, Hangar views and monitoring alignment.
+Those infrastructure-adaptation details must not be mistaken for the canonical
+operator definition itself.
 
 Layer 1 contains the five observer-facing KSODI operators:
 

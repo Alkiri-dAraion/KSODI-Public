@@ -1,22 +1,38 @@
 # KSODI Standard-Eval Operators v350 Canonical
 
-Status: canonical public v350 operator pointer
+Status: canonical public v350 operator line
 
-This folder marks the canonical public v350 operator line. The actual v350
-operator files live in the layer-based Standard-Eval structure:
+This folder contains architecture-independent KSODI Standard-Eval operator
+definitions for the v350 line.
+
+Canonical operator definitions must avoid assumptions about a particular
+Observer infrastructure, database layout, orchestration stack, deployment
+boundary or monitoring implementation. They define what the operator means,
+what it observes, which reference spaces are required and which comparability
+conditions apply.
+
+The current Observer-infrastructure adaptation lives separately under:
 
 [`../v350/layer-1-operators`](../v350/layer-1-operators/README.md)
 
 Released operator:
 
-- [`I0 - Observable Information Impulse`](../v350/layer-1-operators/operator-I_v350.md)
+- [`I0 - Observable Information Impulse`](./operator-I_v350.md)
 
 Pending public review:
 
-- [`K0 - Observable Context Completeness`](../v350/layer-1-operators/operator-K_v350.md)
-- [`S0 - Observable Structural Coherence`](../v350/layer-1-operators/operator-S_v350.md)
-- [`O0 - Observable Grounded Objectivity`](../v350/layer-1-operators/operator-O_v350.md)
-- [`D0 - Observable Clarity`](../v350/layer-1-operators/operator-D_v350.md)
+- `K0 - Observable Context Completeness`
+- `S0 - Observable Structural Coherence`
+- `O0 - Observable Grounded Objectivity`
+- `D0 - Observable Clarity`
+
+Working rule:
+
+1. Write and review the canonical operator here first.
+2. Then adapt the reviewed operator into the Observer-layer structure under
+   `../v350/layer-1-operators`.
+3. Keep implementation-specific terms out of the canonical definition unless
+   they are explicitly marked as examples or non-normative notes.
 
 Historical 3.3 and deprecated public drafts are archived separately under:
 

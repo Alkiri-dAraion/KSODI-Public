@@ -49,9 +49,8 @@ The reviewed v350 line is being released into this public repository step by
 step after private review.
 
 - [`v350`](./v350/README.md) contains the active layer-based public structure.
-- [`operators_v350_canonical`](./operators_v350_canonical/README.md) marks the
-  canonical public v350 operator line and points into the Layer 1 operator
-  files.
+- [`operators_v350_canonical`](./operators_v350_canonical/README.md) contains
+  the architecture-independent canonical public v350 operator line.
 - [`operators_v350`](./operators_v350/README.md) remains as a compatibility
   pointer for the earlier public v350 operator path.
 - [`KSODI_V350_ARCHITECTURE_ASCII.md`](./KSODI_V350_ARCHITECTURE_ASCII.md)
@@ -60,7 +59,8 @@ step after private review.
 ## Related folders
 
 - `v350` contains the current layer-based v350 public structure.
-- `operators_v350_canonical` points to the canonical v350 operator layer.
+- `operators_v350_canonical` contains the architecture-independent canonical
+  v350 operator line.
 - `operators_v350` remains as a compatibility pointer to the v350 operator
   layer.
 - `archive/historical-v33` preserves public 3.3 operator, state-vector,

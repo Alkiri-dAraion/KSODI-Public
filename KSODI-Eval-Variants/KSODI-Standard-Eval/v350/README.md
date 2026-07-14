@@ -2,9 +2,18 @@
 
 Status: public v350 structure, released layer by layer after private review
 
-This folder contains the public v350 Standard-Eval layer structure.
+This folder contains the public v350 Standard-Eval Observer-infrastructure
+layer structure.
 
 Only files explicitly marked as released should be treated as current public method material. Placeholder files mark the intended structure and remain pending until the corresponding private review is complete.
+
+The architecture-independent operator definitions live separately under:
+
+[`../operators_v350_canonical`](../operators_v350_canonical/README.md)
+
+This `v350` folder describes how those definitions are placed into the current
+Observer structure: Layer 1 operators, Layer 2 state vector `Z`, monadic `IK`,
+the `R0` gate, relational `IK_rel` and the active R-family layers.
 
 ## Layers
 
@@ -21,4 +30,3 @@ Only files explicitly marked as released should be treated as current public met
 Architecture overview:
 
 [`../KSODI_V350_ARCHITECTURE_ASCII.md`](../KSODI_V350_ARCHITECTURE_ASCII.md)
-

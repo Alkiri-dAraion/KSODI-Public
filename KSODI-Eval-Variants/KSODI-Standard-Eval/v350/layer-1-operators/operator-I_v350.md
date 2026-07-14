@@ -1,8 +1,13 @@
 # KSODI Operator I0 - Observable Information Impulse v3.50
 
-Status: public v350 preview derived from the private canonical workbench version after review. Dynamic / Sigma / Hangar reminders are included for operator-level monitoring alignment.
+Status: public v350 Observer-layer adaptation of the canonical I0 operator.
 
-Layer: KSODI Standard-Eval operator. Dynamic and windowed variants belong to the Full / Hangar review layers.
+Layer: KSODI Standard-Eval Observer Layer 1. This file applies the canonical
+`I0` definition to the current v350 Observer structure, including dynamic,
+Sigma and Hangar reminders for operator-level monitoring alignment.
+
+Canonical method definition:
+[`../../operators_v350_canonical/operator-I_v350.md`](../../operators_v350_canonical/operator-I_v350.md)
 
 ## 1. Definition
 

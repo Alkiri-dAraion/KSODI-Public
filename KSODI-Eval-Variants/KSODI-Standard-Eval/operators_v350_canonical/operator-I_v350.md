@@ -1,12 +1,11 @@
 # KSODI Operator I0 - Observable Information Impulse v3.50
 
-Status: legacy compatibility copy of the public v350 I0 operator.
+Status: canonical public v350 operator definition, architecture-independent after private review.
 
-Canonical method definition:
-[`../operators_v350_canonical/operator-I_v350.md`](../operators_v350_canonical/operator-I_v350.md)
-
-Observer-layer adaptation:
-[`../v350/layer-1-operators/operator-I_v350.md`](../v350/layer-1-operators/operator-I_v350.md)
+Scope: method definition for `I0` independent of a specific Observer runtime,
+database layout, orchestration stack or deployment architecture. Observer-layer
+integration is documented separately under
+[`../v350/layer-1-operators/operator-I_v350.md`](../v350/layer-1-operators/operator-I_v350.md).
 
 ## 1. Definition
 

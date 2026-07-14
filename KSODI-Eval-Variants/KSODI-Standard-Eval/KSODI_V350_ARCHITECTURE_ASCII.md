@@ -171,7 +171,7 @@ Older public files may contain these terms as historical or deprecated material.
 
 ## Layer Files
 
-- [Canonical v350 operator pointer](./operators_v350_canonical/README.md)
+- [Canonical v350 operators](./operators_v350_canonical/README.md)
 - [Layer 0 - KSODI-Light-Agent](./v350/layer-0-ksodi-light-agent/README.md)
 - [Layer 1 - Operators](./v350/layer-1-operators/README.md)
 - [Layer 2 - State Vector Z](./v350/layer-2-state-vector-z/README.md)
