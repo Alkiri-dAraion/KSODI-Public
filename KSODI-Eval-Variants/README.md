@@ -69,6 +69,12 @@ Some public v3.3 files already contain placeholders or preliminary glossary
 notes for Z, IK and R0. These files are not normative and should not be treated
 as a complete or tested specification.
 
+Historical Observer visualizations are preserved under
+[`assets/historical-observer-v342`](./assets/historical-observer-v342/README.md).
+They show that implementation and dashboard work already existed in the v3.3 to
+v3.42 line, while also making visible why the v3.5 correction needs a clearer
+reference-space and `O0` interpretation.
+
 Until then, this directory should be used for conceptual review, discussion and
 research orientation only.
 
