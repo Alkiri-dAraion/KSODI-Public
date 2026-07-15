@@ -39,7 +39,7 @@ Layer 1 - Operators
    |   |   |   |   +--> I, Delta I, Delta2 I, ISigma, ISigma(Hangar)
    |   |   |   +------> D, Delta D, Delta2 D, DSigma, DSigma(Hangar)
    |   |   +----------> O, Delta O, Delta2 O, OSigma, OSigma(Hangar)
-   |   +--------------> S, Delta S, Delta2 S, SSigma, SSigma(Hangar)
+   |   +--------------> S, optional S0_ext/P_dup, Delta S, Delta2 S, SSigma, SSigma(Hangar)
    +------------------> K, Delta K, Delta2 K, KSigma, KSigma(Hangar)
 
         |
