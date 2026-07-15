@@ -347,6 +347,7 @@ Observer architecture:
 Layer 1 - Operators
   K0 / S0 / O0 / D0 / I0
   optional per-operator Delta, Delta2, Sigma and Hangar views
+  S0 may additionally use optional S0_ext / P_dup where explicitly enabled
 
 Layer 2 - Z
   Z(t), Delta Z, Delta2 Z, ZSigma, ZSigma(Hangar)
