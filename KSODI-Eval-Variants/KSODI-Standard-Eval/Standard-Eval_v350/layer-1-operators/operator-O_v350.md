@@ -11,7 +11,7 @@ Implementation status: not yet verified against Patrick's current Observer / KSO
 In the RAG-oriented default case, the visible reference space is the provided retrieval set:
 
 ```text
-R = {d_1, ..., d_m}
+Ref = {d_1, ..., d_m}
 ```
 
 where `d_i` denotes one visible retrieval document, chunk, tool output or evidence element under the active evaluation profile.
@@ -38,7 +38,7 @@ O0 does not ask whether an answer is true in the world. It asks whether a claim 
 Inputs:
 
 - answer text `a`
-- visible reference space / retrieval set `R = {d_1, ..., d_m}`
+- visible reference space / retrieval set `Ref = {d_1, ..., d_m}`
 - optional tool outputs, only if included in the visible reference space
 - optional web sources, only if they are visible, versioned and declared as part of the evaluation context
 - embedding model `e(.)`
@@ -76,13 +76,13 @@ Raw cosine similarity is not automatically in `[0,1]`. It may lie in `[-1,1]`. T
 Raw retrieval similarity:
 
 ```text
-sim_R(a) = max_{d_i in R} cos(e(a), e(d_i))
+sim_Ref(a) = max_{d_i in Ref} cos(e(a), e(d_i))
 ```
 
 Default positive-support mapping:
 
 ```text
-A_ret(a) = clip(sim_R(a), 0, 1)
+A_ret(a) = clip(sim_Ref(a), 0, 1)
 ```
 
 `A_ret(a)` measures global thematic proximity between the answer and the visible reference space.
@@ -122,15 +122,15 @@ Optional sentence-level detector.
 For each sentence `s_j`:
 
 ```text
-sim_R(s_j) = max_{d_i in R} cos(e(s_j), e(d_i))
-align_R(s_j) = clip(sim_R(s_j), 0, 1)
+sim_Ref(s_j) = max_{d_i in Ref} cos(e(s_j), e(d_i))
+align_Ref(s_j) = clip(sim_Ref(s_j), 0, 1)
 ```
 
 Then, for `n_sent > 0`:
 
 ```text
 P_uns(a)
-= #{s_j : align_R(s_j) < tau_O AND no attribution} / n_sent
+= #{s_j : align_Ref(s_j) < tau_O AND no attribution} / n_sent
 ```
 
 Default: disabled, with `gamma_O = 0`.
@@ -260,7 +260,7 @@ This does not mean that the source is true. It means that the source is itself s
 | --- | --- |
 | `Z_source(q)` | Is this source itself observable, situated, structured, grounded, clear and informationally relevant enough? |
 | `IK_source(q)` | Is this source coherent enough as a reference-space element under the active source profile? |
-| `O_answer | R` | Is the answer visibly grounded relative to the declared reference space `R`? |
+| `O_answer | Ref` | Is the answer visibly grounded relative to the declared reference space `Ref`? |
 
 Therefore:
 
@@ -276,23 +276,23 @@ The quality, suitability and stability of the reference space should therefore b
 When multiple reference-space elements are available, their source-state views may be aggregated over applicable elements:
 
 ```text
-R_app = {q in R | Z_source(q) is applicable}
-IK_sourceSigma(R) = aggregate({IK_source(q) | q in R_app})
-applicability_rate_source(R) = |R_app| / |R|
+Ref_app = {q in Ref | Z_source(q) is applicable}
+IK_sourceSigma(Ref) = aggregate({IK_source(q) | q in Ref_app})
+applicability_rate_source(Ref) = |Ref_app| / |Ref|
 ```
 
 This aggregation is a reference-space diagnostic. It is not a replacement for `O0(a)`.
 
-The answer-level `O0(a)` asks whether the answer uses the declared reference space. `IK_sourceSigma(R)` asks whether the reference space itself is usable, stable or suitable enough for the evaluation question.
+The answer-level `O0(a)` asks whether the answer uses the declared reference space. `IK_sourceSigma(Ref)` asks whether the reference space itself is usable, stable or suitable enough for the evaluation question.
 
-If `R_app` is empty, the source aggregation is `not_applicable` and must not be silently coerced to `0`.
+If `Ref_app` is empty, the source aggregation is `not_applicable` and must not be silently coerced to `0`.
 
 ### 9.3 Web Search and Tool-Mediated Reference Influx
 
 Web search can provide a reference space for `O0` only when the resulting sources are visible, versioned and declared as part of the evaluation context.
 
 ```text
-R_web = {web_source_1, ..., web_source_m}
+Ref_web = {web_source_1, ..., web_source_m}
 ```
 
 Recommended metadata include:
@@ -387,11 +387,11 @@ OΣ(Hangar) = distribution_view({O(t), Delta O(t), Delta2 O(t) | t in W_app})
 
 `O0` values are comparable only under stable conditions:
 
-- same visible reference-space definition `R`
+- same visible reference-space definition `Ref`
 - same inclusion policy for retrieval documents, chunks, tool outputs and web sources
 - same source-state evaluation policy where `Z_source` or `IK_source` is used
 - same embedding model `e(.)`
-- same cosine-to-support mapping for `A_ret` and `align_R`
+- same cosine-to-support mapping for `A_ret` and `align_Ref`
 - same threshold `tau_O`
 - same attribution detector for `B(a)`
 - same sentence segmentation for `P_uns(a)`
@@ -403,18 +403,18 @@ OΣ(Hangar) = distribution_view({O(t), Delta O(t), Delta2 O(t) | t in W_app})
 ## 13. Compact Formula Block
 
 ```text
-R = {d_1, ..., d_m}
+Ref = {d_1, ..., d_m}
 
-sim_R(a) = max_{d in R} cos(e(a), e(d))
-A_ret(a) = clip(sim_R(a), 0, 1)
+sim_Ref(a) = max_{d in Ref} cos(e(a), e(d))
+A_ret(a) = clip(sim_Ref(a), 0, 1)
 
 B(a) = clip(n_attrib / (n_sent + 1), 0, 1)
 
-sim_R(s_j) = max_{d in R} cos(e(s_j), e(d))
-align_R(s_j) = clip(sim_R(s_j), 0, 1)
+sim_Ref(s_j) = max_{d in Ref} cos(e(s_j), e(d))
+align_Ref(s_j) = clip(sim_Ref(s_j), 0, 1)
 
 P_uns(a)
-= (# sentences with align_R(s_j) < tau_O AND no attribution) / n_sent
+= (# sentences with align_Ref(s_j) < tau_O AND no attribution) / n_sent
 
 O0(a)
 = clip(alpha_O * A_ret(a)
@@ -431,9 +431,9 @@ Optional source-state diagnostic:
 
 Z_source(q) = [K_q, S_q, O_q, D_q, I_q]
 IK_source(q) = w_source dot Z_source(q)
-R_app = {q in R | Z_source(q) is applicable}
-IK_sourceSigma(R) = aggregate({IK_source(q) | q in R_app})
-applicability_rate_source(R) = |R_app| / |R|
+Ref_app = {q in Ref | Z_source(q) is applicable}
+IK_sourceSigma(Ref) = aggregate({IK_source(q) | q in Ref_app})
+applicability_rate_source(Ref) = |Ref_app| / |Ref|
 
 O(t)
 = clip(w_0 * O0(t)
@@ -454,26 +454,26 @@ OΣ(Hangar) = distribution_view({O(t), Delta O(t), Delta2 O(t) | t in W_app})
 | Variable | Semantic role |
 | --- | --- |
 | `a` | Answer text being evaluated |
-| `R` | Visible reference space / retrieval set |
-| `d_i` | One document, chunk, tool output, web source or evidence element in `R` |
+| `Ref` | Visible reference space / retrieval set |
+| `d_i` | One document, chunk, tool output, web source or evidence element in `Ref` |
 | `q` | One reference-space element evaluated as a source object |
-| `R_web` | Web-derived reference space where visible and versioned |
-| `R_app` | Applicable subset of reference-space elements under the source-state policy |
+| `Ref_web` | Web-derived reference space where visible and versioned |
+| `Ref_app` | Applicable subset of reference-space elements under the source-state policy |
 | `e(.)` | Embedding function used for semantic comparison |
-| `sim_R(a)` | Raw maximum cosine similarity between answer and reference space |
+| `sim_Ref(a)` | Raw maximum cosine similarity between answer and `Ref` |
 | `A_ret(a)` | Non-negative support signal derived from retrieval alignment |
 | `B(a)` | Visible evidence or attribution trace |
 | `n_attrib` | Count of visible attribution markers |
 | `n_sent` | Number of sentences in the answer |
 | `s_j` | One sentence in the answer |
-| `sim_R(s_j)` | Raw maximum cosine similarity between sentence and reference space |
-| `align_R(s_j)` | Non-negative sentence-level retrieval alignment |
+| `sim_Ref(s_j)` | Raw maximum cosine similarity between sentence and `Ref` |
+| `align_Ref(s_j)` | Non-negative sentence-level retrieval alignment |
 | `tau_O` | Threshold for local support classification under the active O profile |
 | `P_uns(a)` | Optional unsupported-claim penalty |
 | `Z_source(q)` | KSODI source-state vector for a reference-space element |
 | `IK_source(q)` | Coherence projection of a source-state vector |
-| `IK_sourceSigma(R)` | Aggregated source-state diagnostic over applicable reference elements |
-| `applicability_rate_source(R)` | Share of source elements with applicable source-state evaluation |
+| `IK_sourceSigma(Ref)` | Aggregated source-state diagnostic over applicable reference elements |
+| `applicability_rate_source(Ref)` | Share of source elements with applicable source-state evaluation |
 | `alpha_O` | Weight of retrieval alignment |
 | `beta_O` | Weight of evidence trace |
 | `gamma_O` | Weight of unsupported penalty |

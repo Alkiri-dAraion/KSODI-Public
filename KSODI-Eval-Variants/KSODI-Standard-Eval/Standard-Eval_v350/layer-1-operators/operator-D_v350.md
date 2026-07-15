@@ -4,7 +4,7 @@ Status: canonical workbench version v3.50, aligned with the v3.50 glossary and t
 
 ## 1. Definition
 
-`D0` measures the observable clarity of a text or signal chunk `q` relative to the visible reference space `R`.
+`D0` measures the observable clarity of a text or signal chunk `q` relative to the visible reference space `Ref`.
 
 In KSODI, clarity is not merely linguistic elegance or grammatical readability. `D0` asks whether an observed signal is clear, distinguishable, locally dense and operationally stable enough to be reconstructed and accepted as a signal inside the current reference space.
 
@@ -29,7 +29,7 @@ It is a technical metric for observable signal acceptability: whether something 
 Reference space:
 
 ```text
-R := {SP, TP, d_1, ..., d_k}
+Ref := {SP, TP, d_1, ..., d_k}
 ```
 
 where:
@@ -41,23 +41,23 @@ where:
 Reference-space embedding:
 
 ```text
-e_R = mean(e(SP), e(TP), e(d_1), ..., e(d_k))
+e_Ref = mean(e(SP), e(TP), e(d_1), ..., e(d_k))
 ```
 
 If no retrieval is present:
 
 ```text
-R := {SP, TP}
+Ref := {SP, TP}
 ```
 
-and `e_R` is computed from the available reference elements.
+and `e_Ref` is computed from the available reference elements.
 
 ## 3. Components
 
 ### 3.1 Reference-Space Coherence
 
 ```text
-H(q) = cos(e(q), e_R)
+H(q) = cos(e(q), e_Ref)
 ```
 
 `H(q)` measures whether the text or signal chunk is semantically aligned with the visible reference basis.
@@ -118,7 +118,7 @@ Important boundary: `L(q)` must not reward empty repetition or verbosity. Repeti
 ## 4. Minimal Static Formula
 
 ```text
-D0(q | R)
+D0(q | Ref)
 = clip(alpha_D * H(q)
        + beta_D * L(q)
        - gamma_D * V(q),
@@ -150,7 +150,7 @@ A repeated signal can support `D0` only when the repetition improves reconstruct
 ## 6. Edge Cases
 
 - If `q` has one sentence or less, set `V(q) = 0` unless the implementation declares a different dispersion policy.
-- If no retrieval is present, use `R := {SP, TP}`.
+- If no retrieval is present, use `Ref := {SP, TP}`.
 - If `n_token = 0`, `L(q)` is undefined and must be handled by implementation guardrails.
 - If repeated signal material appears inside `q`, the configuration must distinguish signal reinforcement from empty duplication.
 - If repeated signal material appears across multiple turns, evaluate it through dynamic D observation, `DΣ(W)` and Hangar views, not by silently changing the static `D0` formula.
@@ -185,7 +185,7 @@ with:
 
 ```text
 Delta_ref_drift(t)
-= clip((1 - cos(e_R_{t-1}, e_R_t)) / 2, 0, 1)
+= clip((1 - cos(e_Ref_{t-1}, e_Ref_t)) / 2, 0, 1)
 ```
 
 First difference:
@@ -256,7 +256,7 @@ This boundary is especially relevant for D because repeated signal occurrence ov
 
 `D0`, `D(t)`, `Delta D`, `Delta2 D`, `DΣ(W)` and `DΣ(Hangar)` values are comparable only under stable conditions:
 
-- same definition of `R`
+- same definition of `Ref`
 - same embedding model `e(.)`
 - same sentence segmentation for `V(q)`
 - same anchor heuristic for `L(q)`
@@ -269,17 +269,17 @@ This boundary is especially relevant for D because repeated signal occurrence ov
 ## 12. Compact Formula Block
 
 ```text
-R = {SP, TP, d_1, ..., d_k}
-e_R = mean(e(SP), e(TP), e(d_1), ...)
+Ref = {SP, TP, d_1, ..., d_k}
+e_Ref = mean(e(SP), e(TP), e(d_1), ...)
 
-H(q) = cos(e(q), e_R)
+H(q) = cos(e(q), e_Ref)
 
 e_mean = mean(e(s_i))
 V(q) = clip(mean(1 - cos(e(s_i), e_mean)), 0, 1)
 
 L(q) = clip(n_anchor / n_token, 0, 1)
 
-D0(q | R)
+D0(q | Ref)
 = clip(alpha_D * H(q)
        + beta_D * L(q)
        - gamma_D * V(q),
@@ -296,12 +296,12 @@ DΣ(Hangar) = distribution_view({D(t), Delta D(t), Delta2 D(t) | t in W})
 | Variable | Semantic role |
 | --- | --- |
 | `q` | Text or signal chunk whose clarity is evaluated |
-| `R` | Visible reference space for clarity evaluation |
+| `Ref` | Visible reference space for clarity evaluation |
 | `SP` | System prompt inside the reference space |
 | `TP` | Tool or policy profile inside the reference space |
 | `d_i` | One retrieval element inside the reference space |
 | `e(.)` | Embedding function |
-| `e_R` | Mean embedding of the reference space |
+| `e_Ref` | Mean embedding of the reference space |
 | `H(q)` | Reference-space coherence of the signal chunk |
 | `s_i` | One sentence or segment in the evaluated signal chunk |
 | `e_mean` | Mean sentence or segment embedding |
@@ -313,7 +313,7 @@ DΣ(Hangar) = distribution_view({D(t), Delta D(t), Delta2 D(t) | t in W})
 | `beta_D` | Weight of operational anchors / local signal support |
 | `gamma_D` | Weight of semantic dispersion |
 | `delta_D` | Weight of reference drift penalty in dynamic D where used |
-| `D0(q | R)` | Static observable clarity score |
+| `D0(q | Ref)` | Static observable clarity score |
 | `D(t)` | Dynamic observable clarity value at evaluation unit `t` |
 | `Delta D(t)` | First difference of dynamic D |
 | `Delta2 D(t)` | Second difference / acceleration of dynamic D |
