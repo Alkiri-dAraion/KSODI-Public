@@ -9,7 +9,7 @@ they belong to monadic Standard-Eval observation.
 Layer 1 contains the five observer-facing KSODI operators:
 
 - [`K0`](./Operator_K_v350.md) - Observable Context Completeness, pending public release
-- [`S0`](./Operator_S_v350.md) - Observable Structural Coherence, pending public release
+- [`S0`](./Operator_S_v350.md) - Observable Structural Coherence, released
 - [`O0`](./Operator_O_v350.md) - Observable Grounded Objectivity, released
 - [`D0`](./Operator_D_v350.md) - Observable Clarity, released
 - [`I0`](./Operator_I_v350.md) - Observable Information Impulse, released

@@ -36,14 +36,14 @@ Released in public Layer 1:
 - `Operator_I_v350.md` - `I0`, Observable Information Impulse
 - `Operator_D_v350.md` - `D0`, Observable Clarity
 - `Operator_O_v350.md` - `O0`, Observable Grounded Objectivity
+- `Operator_S_v350.md` - `S0`, Observable Structural Coherence
 
 Not yet released:
 
-- `S0` - Observable Structural Coherence
 - `K0` - Observable Context Completeness
 
-`S0` and `K0` remain private review items. Do not add public canonical S/K files
-until Anne explicitly releases the corrected private versions.
+`K0` remains a private review item. Do not add the public canonical K0 file
+until Anne explicitly releases the corrected private version.
 
 Architecture guardrail: Standard-Eval is monadic. `Z(t)` feeds both monadic
 `IK` and the relational `R0` gate, but `R0`, `IK_rel` and the R-family belong in
