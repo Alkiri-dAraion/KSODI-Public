@@ -6,4 +6,4 @@ This file is retained only for public version traceability. Earlier visible draf
 
 The current released v350 I operator is:
 
-[`../../../Standard-Eval_v350/layer-1-operators/operator-I_v350.md`](../../../Standard-Eval_v350/layer-1-operators/operator-I_v350.md)
+[`../../../Standard-Eval_v350/layer-1-operators/Operator_I_v350.md`](../../../Standard-Eval_v350/layer-1-operators/Operator_I_v350.md)

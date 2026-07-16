@@ -8,10 +8,10 @@ they belong to monadic Standard-Eval observation.
 
 Layer 1 contains the five observer-facing KSODI operators:
 
-- [`K0`](./operator-K_v350.md) - Observable Context Completeness, pending public release
-- [`S0`](./operator-S_v350.md) - Observable Structural Coherence, pending public release
-- [`O0`](./operator-O_v350.md) - Observable Grounded Objectivity, released
-- [`D0`](./operator-D_v350.md) - Observable Clarity, released
-- [`I0`](./operator-I_v350.md) - Observable Information Impulse, released
+- [`K0`](./Operator_K_v350.md) - Observable Context Completeness, pending public release
+- [`S0`](./Operator_S_v350.md) - Observable Structural Coherence, pending public release
+- [`O0`](./Operator_O_v350.md) - Observable Grounded Objectivity, released
+- [`D0`](./Operator_D_v350.md) - Observable Clarity, released
+- [`I0`](./Operator_I_v350.md) - Observable Information Impulse, released
 
 Operator-level Delta, Delta2, Sigma and Hangar views are not automatically required for every application. They should be selected by use case and layer.

@@ -33,9 +33,9 @@ competing operator folders.
 
 Released in public Layer 1:
 
-- `operator-I_v350.md` - `I0`, Observable Information Impulse
-- `operator-D_v350.md` - `D0`, Observable Clarity
-- `operator-O_v350.md` - `O0`, Observable Grounded Objectivity
+- `Operator_I_v350.md` - `I0`, Observable Information Impulse
+- `Operator_D_v350.md` - `D0`, Observable Clarity
+- `Operator_O_v350.md` - `O0`, Observable Grounded Objectivity
 
 Not yet released:
 

@@ -3,4 +3,4 @@
 Status: historical placeholder, not current implementation guidance
 
 The current v350 I operator is released under
-`../../../Standard-Eval_v350/layer-1-operators/operator-I_v350.md`.
+`../../../Standard-Eval_v350/layer-1-operators/Operator_I_v350.md`.
