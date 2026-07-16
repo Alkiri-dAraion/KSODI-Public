@@ -128,6 +128,27 @@ collapse or missing update-relevant information.
 Decision rule: do not enable Sigma / Hangar / Delta / Delta2 everywhere by
 default. Decide per layer, per application field and per concrete use case.
 
+## Sigma And Hangar Views
+
+`Sigma` means window aggregation inside a given layer. It is not a separate
+main layer in the architecture.
+
+`Sigma(Hangar)` means a distribution or comparison view over windows,
+trajectories, aggregated values or point-cloud-like observation objects. The
+Hangar is therefore an observation view for comparing patterns, not an
+additional metaphysical space and not a second architecture.
+
+In practical terms:
+
+- a single value describes a current state;
+- a sequence describes movement;
+- a window describes a pattern;
+- a Hangar view describes where such patterns sit inside an observation space.
+
+This supports corridor monitoring, anomaly detection, distribution comparison
+and later governance-oriented review without treating single outputs as
+isolated events.
+
 ## Weighted Axis Modes
 
 For `IK` and R-family variants, two weighting modes should remain visible:

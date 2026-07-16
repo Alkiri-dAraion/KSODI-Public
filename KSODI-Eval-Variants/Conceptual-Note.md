@@ -10,6 +10,10 @@ This conceptual note is an earlier public orientation text.
 
 The Z state-vector layer has since been refined in the private canonical workbench. A revised public version will follow after paper consolidation.
 
+Current public architecture orientation:
+[`KSODI_V350_ARCHITECTURE_ASCII.md`](./KSODI_V350_ARCHITECTURE_ASCII.md)
+shows the current v350 layer order shared by Standard-Eval and Full.
+
 Terminology note:
 Current public v3.5 wording distinguishes between didactic KSODI-Light labels
 and observer-facing operator names. Older public Light examples may still use
