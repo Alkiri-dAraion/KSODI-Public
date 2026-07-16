@@ -62,6 +62,8 @@ H(q) = cos(e(q), e_Ref)
 
 `H(q)` measures whether the text or signal chunk is semantically aligned with the visible reference basis.
 
+`H(q)` deliberately retains the sign of cosine similarity. Signals opposed to the visible reference basis therefore reduce observable clarity relative to `Ref`; the final clipping step bounds `D0` to `[0,1]`.
+
 Difference from `O0`:
 
 | Operator | Comparison |
@@ -313,7 +315,7 @@ DΣ(Hangar) = distribution_view({D(t), Delta D(t), Delta2 D(t) | t in W})
 | `beta_D` | Weight of operational anchors / local signal support |
 | `gamma_D` | Weight of semantic dispersion |
 | `delta_D` | Weight of reference drift penalty in dynamic D where used |
-| `D0(q | Ref)` | Static observable clarity score |
+| `D0(q \| Ref)` | Static observable clarity score |
 | `D(t)` | Dynamic observable clarity value at evaluation unit `t` |
 | `Delta D(t)` | First difference of dynamic D |
 | `Delta2 D(t)` | Second difference / acceleration of dynamic D |

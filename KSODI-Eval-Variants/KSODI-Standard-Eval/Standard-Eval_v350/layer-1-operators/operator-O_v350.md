@@ -1,6 +1,6 @@
 # KSODI Operator O0 - Observable Grounded Objectivity v3.50
 
-Status: canonical workbench review candidate v3.50, based on `KSODI_Operator _O_v33.md`, the 2026-07-04 Fable review and the v3.50 glossary line.
+Status: public v3.50 reference release; private canonical workbench origin retained, based on `KSODI_Operator_O_v33.md`, the 2026-07-04 Fable review and the v3.50 glossary line.
 
 Implementation status: not yet verified against Patrick's current Observer / KSODI-Light implementation. Patrick's implementation is known to still reflect the older v3.3 line and must be compared before this file is treated as an implementation profile for the Kubernetes / chatbot Observer stack.
 
@@ -260,7 +260,7 @@ This does not mean that the source is true. It means that the source is itself s
 | --- | --- |
 | `Z_source(q)` | Is this source itself observable, situated, structured, grounded, clear and informationally relevant enough? |
 | `IK_source(q)` | Is this source coherent enough as a reference-space element under the active source profile? |
-| `O_answer | Ref` | Is the answer visibly grounded relative to the declared reference space `Ref`? |
+| `O_answer \| Ref` | Is the answer visibly grounded relative to the declared reference space `Ref`? |
 
 Therefore:
 

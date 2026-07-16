@@ -318,11 +318,11 @@ Z_I_internal_t = (I_a(t) - mu_W) / (sigma_W + epsilon_stab)
 | `e(.)` | Embedding function |
 | `e_Ref_t` | Mean embedding of the turn-specific reference space |
 | `d_cos(x, y)` | Normalized cosine distance in `[0,1]` |
-| `J_dir_norm(q | Ref_t)` | Normalized directional impulse relative to reference space |
-| `G_info(q | Ref_t)` | Conceptual relational information content |
-| `G_proxy_ret(q | Ref_t)` | Auditable retrieval-based proxy for information content |
+| `J_dir_norm(q \| Ref_t)` | Normalized directional impulse relative to reference space |
+| `G_info(q \| Ref_t)` | Conceptual relational information content |
+| `G_proxy_ret(q \| Ref_t)` | Auditable retrieval-based proxy for information content |
 | `eta` | Mixture weight between information content and directional impulse |
-| `I0(q | Ref_t)` | Static information impulse in `[0,1]` |
+| `I0(q \| Ref_t)` | Static information impulse in `[0,1]` |
 | `I(t)` | Dynamic information impulse value |
 | `Delta I(t)` | First difference of dynamic I over time |
 | `Delta2 I(t)` | Second difference / acceleration of dynamic I |
