@@ -41,11 +41,11 @@ Released in public Layer 1:
 
 Released in public Layer 2:
 
-- `Z_Vektor.md` - KSODI State Vector Z
+- `Z_Vektor_v350.md` - KSODI State Vector Z
 
 Released in public Layer 3:
 
-- `IK.md` - monadic Interaction Coherence Projection
+- `IK_v350.md` - monadic Interaction Coherence Projection
 
 Architecture guardrail: Standard-Eval is monadic. `Z(t)` feeds both monadic
 `IK` and the relational `R0` gate, but `R0`, `IK_rel` and the R-family belong in

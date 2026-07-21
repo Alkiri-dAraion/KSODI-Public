@@ -207,8 +207,8 @@ Older public files may contain these terms as historical or deprecated material.
 
 - [Layer 0 - KSODI-Light-Agent](./KSODI-Light-Agent_v350.md)
 - [Layer 1 - Operators](./KSODI-Standard-Eval/Standard-Eval_v350/layer-1-operators/README.md)
-- [Layer 2 - State Vector Z](./KSODI-Standard-Eval/Standard-Eval_v350/layer-2-state-vector-z/README.md)
-- [Layer 3 - IK](./KSODI-Standard-Eval/Standard-Eval_v350/layer-3-ik/README.md)
+- [Layer 2 - State Vector Z](./KSODI-Standard-Eval/Standard-Eval_v350/layer-2-state-vector-z_v350/README.md)
+- [Layer 3 - IK](./KSODI-Standard-Eval/Standard-Eval_v350/layer-3-ik_v350/README.md)
 - [Layer 4 - R0 Gate](./KSODI-Full/Full_v350/layer-4-r0-gate/README.md)
 - [Layer 5 - IK_rel](./KSODI-Full/Full_v350/layer-5-ik-rel/README.md)
 - [Layer 6 - R_geom](./KSODI-Full/Full_v350/layer-6-r-geom/README.md)
