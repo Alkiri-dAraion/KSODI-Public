@@ -345,8 +345,9 @@ The R-family belongs to the Full layer. In the active v3.50 boundary it may incl
 
 - `R_geom`: geometric coupling of dyadic or n-adic trajectories in the KSODI state space
 - `R_pace`: readable-language or sign-visible pacing dynamics where explicitly defined
-- `RSigma`: aggregated resonance behavior over an observation window
-- `RSigma(Hangar)`: distribution of resonance patterns inside an observation space
+- `R_geomSigma`: aggregated geometric-coupling behavior over an observation window
+- `R_geomSigma(Hangar)`: distribution of geometric-coupling patterns inside an observation space
+- `R_paceSigma`: optional pacing aggregation where pacing dynamics are explicitly defined
 
 Audio, radio, Morse, waveform, `R_takt`, `R_freq` and voice-related terms are
 future signal-media research or historical wording, not active v3.50 core
@@ -423,7 +424,8 @@ Other window views remain in their own method context:
 
 - `IKSigma` belongs to the projection layer.
 - `IK_relSigma` belongs to the relational projection layer after stable `R0`.
-- `R0Sigma` and `RSigma` belong to the relational / R-family layer.
+- `R0Sigma`, `R_geomSigma` and optional `R_paceSigma` belong to the relational
+  / R-family layer.
 
 The released shared Hangar method note is maintained separately at the
 Eval-Variants root:
@@ -521,5 +523,6 @@ else:
 | `R-family` | Relational and resonance observation family, not a single scalar score |
 | `R_geom` | Geometric coupling of dyadic or n-adic trajectories |
 | `R_pace` | Pacing dynamics over time |
-| `RSigma` | Aggregated resonance behavior over an observation window |
-| `RSigma(Hangar)` | Distribution of resonance patterns inside an observation space |
+| `R_geomSigma` | Window aggregation of geometric coupling where `R_geom` is enabled |
+| `R_geomSigma(Hangar)` | Hangar distribution view of geometric-coupling patterns |
+| `R_paceSigma` | Optional pacing aggregation where pacing dynamics are explicitly defined |

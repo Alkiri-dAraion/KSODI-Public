@@ -2,6 +2,12 @@
 //TODO:
 Export korrigieren, fehlende Annahmen ergänzen, Vollständigkeit prüfen
 ```
+
+> Archiv-Hinweis v3.50: Diese Datei ist historisches Prior-Work-Material aus
+> der frueheren R-/Hangar-Linie. Sie ist keine aktuelle v3.50-Spezifikation.
+> Fuer die aktuelle Sigma-/Hangar-Einordnung siehe
+> `KSODI-Eval-Variants/Hangar_350.md`.
+
 # SKIZZE: KSODI-Mathematik – Formeln zu $R$ und $(H(R)$ #
 <p align="center">
 <br>Anne & Elkim<br>

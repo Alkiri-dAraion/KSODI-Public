@@ -31,7 +31,8 @@ Current line:
 `Z(t)` -> `Delta Z` / `Delta2 Z` -> parallel checks: `IK` as monadic
 projection per party / entity and `R0` as relational gate over distinguishable
 trajectories -> `IK_rel` as relational projection only after a stable gate ->
-`R_geom` as geometric coupling -> `RSigma` / `RSigma(Hangar)` -> optional:
+`R_geom` as geometric coupling -> `R_geomSigma` /
+`R_geomSigma(Hangar)` where window or Hangar views are enabled -> optional:
 `R_pace` where pacing dynamics are explicitly defined.
 
 # KSODI Method
