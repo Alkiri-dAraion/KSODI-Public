@@ -121,6 +121,12 @@ KSODI Full denotes the relational and resonance observation family. It is not a 
 
 The branch begins with R₀, because R₀ checks whether two or more monadic trajectories can meaningfully be related at all.
 
+In this note, `RΣ` and `RΣ(Hangar)` are generic R-family Sigma labels. They do
+not introduce a separate active v3.50 Sigma layer. In concrete v3.50 files, the
+R-family Sigma view must be named by its branch, for example `R_geomΣ` /
+`R_geomΣ(Hangar)` or `R_paceΣ` / `R_paceΣ(Hangar)` where pacing dynamics are
+explicitly defined.
+
 ---
 
 ## 4. Monadisch vs dyadisch
@@ -173,6 +179,10 @@ RΣ(W)
 ```
 
 where W is a defined observation window.
+
+Here `RΣ(W)` is only a family-level placeholder for branch-specific relational
+aggregations such as `R_geomΣ(W)` or `R_paceΣ(W)`. The implementation or
+release file must use the branch-specific name.
 
 Where applicability masks are used, a Sigma value must declare the active
 window policy:
@@ -595,6 +605,10 @@ IKΣ
 IK_relΣ
 RΣ
 ```
+
+In this compact list, `RΣ` means the R-family aggregation slot. It must be
+resolved into branch-specific names such as `R_geomΣ` and, where applicable,
+`R_paceΣ` before implementation or formal release wording.
 
 The reason is methodological discipline.
 
