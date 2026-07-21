@@ -1,6 +1,6 @@
 [![KSODI + IDAS Concept][banner-image]](https://github.com/Alkiri-dAraion/KSODI-Methode)
 
-[banner-image]: https://raw.githubusercontent.com/Alkiri-dAraion/KSODI-Methode/main/assets/images/ksodi-lab-banner.png
+[banner-image]: ./assets_images/ksodi-lab-banner.png
 
 ________________________________________________________________
 

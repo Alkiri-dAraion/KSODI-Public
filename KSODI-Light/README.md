@@ -25,7 +25,7 @@ Special thanks to Benjamin Gage-Prater for early RAG testing and feedback, and t
 **Multidisciplinary collaborators** are invited to explore KSODI (CSOCI in English) in the context of user experience enhancement and preference-based suitability.
 <br>
 
-[cc-by-image]: https://raw.githubusercontent.com/Alkiri-dAraion/KSODI-Methode/main/assets/images/ksodi-lab-banner.png
+[cc-by-image]: ../assets_images/ksodi-lab-banner.png
 
 
 # KSODI-Light
