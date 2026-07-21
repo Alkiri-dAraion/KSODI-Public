@@ -8,7 +8,10 @@
 
 This conceptual note is an earlier public orientation text.
 
-The Z state-vector layer has since been refined in the private canonical workbench. A revised public version will follow after paper consolidation.
+The public v350 Standard-Eval line now contains all five Layer-1 operators and
+the Layer-2 state vector `Z`. The monadic `IK` projection, relational gate
+`R0`, `IK_rel` and the R-family remain outside this note's current public
+reference scope until their separate review and release decisions are complete.
 
 Current public architecture orientation:
 [`KSODI_V350_ARCHITECTURE_ASCII.md`](./KSODI_V350_ARCHITECTURE_ASCII.md)
