@@ -37,6 +37,8 @@ Released in public Layer 1:
 - `Operator_I_v350.md` - `I0`, Observable Information Impulse
 - `Operator_D_v350.md` - `D0`, Observable Clarity
 - `Operator_O_v350.md` - `O0`, Observable Grounded Objectivity
+- `O_Source-Need-Gate_v350.md` - `O0` source-need / reference-space
+  applicability companion note
 - `Operator_S_v350.md` - `S0`, Observable Structural Coherence
 
 Released in public Layer 2:

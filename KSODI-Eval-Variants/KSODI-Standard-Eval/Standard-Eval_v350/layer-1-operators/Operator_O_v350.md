@@ -69,6 +69,11 @@ State-vector note:
 
 For human-readable reporting, applicable operators may be normalized over the active component set, but this must be reported as an applicability-aware view, not as if the missing `O0` value had been observed.
 
+Companion note:
+
+[`O_Source-Need-Gate_v350.md`](./O_Source-Need-Gate_v350.md) records the public
+v3.50 source-need / reference-space applicability gate for `O0`.
+
 ## 3. Components
 
 ### 3.1 Retrieval Alignment
