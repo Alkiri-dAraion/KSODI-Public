@@ -389,6 +389,21 @@ visibility. In adversarial or drift-sensitive settings, operator-level drift
 may also become important, for example when `I` stagnation or bursts reveal
 attack pressure, repetitive collapse or missing update-relevant information.
 
+Sigma is not a separate main layer in the v350 architecture. It means
+window aggregation inside the relevant layer. `Sigma(Hangar)` means a
+distribution or comparison view over such windows, trajectories or aggregated
+values. Generic R-family shorthand such as `RΣ` must be resolved into
+branch-specific terms such as `R_geomSigma` or `R_paceSigma` in concrete
+v350 files and implementations.
+
+For `O0`, source need and reference-space visibility must be declared before
+grounding is interpreted. No-source-needed, source-optional,
+source-required-but-missing, source-visible and
+source-unavailable-to-external-Observer cases must not collapse into the same
+`O = 0` reading.
+See the public companion note:
+[`O_Source-Need-Gate_v350.md`](./KSODI-Standard-Eval/Standard-Eval_v350/layer-1-operators/O_Source-Need-Gate_v350.md).
+
 ⸻
 
 ### 15. Final Position
