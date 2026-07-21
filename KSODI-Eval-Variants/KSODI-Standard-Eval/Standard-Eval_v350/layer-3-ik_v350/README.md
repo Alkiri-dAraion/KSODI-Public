@@ -9,3 +9,7 @@ Potential views include `Delta IK`, `Delta2 IK`, `IKSigma` and `IKSigma(Hangar)`
 Released file:
 
 - [`IK_v350.md`](./IK_v350.md) - KSODI IK, monadic interaction coherence projection
+
+Shared Sigma / Hangar method note:
+
+[`../../../Hangar_350.md`](../../../Hangar_350.md)

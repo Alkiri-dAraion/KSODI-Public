@@ -14,6 +14,7 @@ Released file:
 
 - [`Z_Vektor_v350.md`](./Z_Vektor_v350.md) - KSODI State Vector Z, released together with public `K0`
 
-Hangar views are mentioned as optional state-space views. Detailed Hangar
-method notes are maintained separately and should only be linked where released
-for the relevant public scope.
+Hangar views are mentioned as optional state-space views. The released shared
+Hangar method note is maintained at the Eval-Variants root:
+
+[`../../../Hangar_350.md`](../../../Hangar_350.md)

@@ -425,12 +425,10 @@ Other window views remain in their own method context:
 - `IK_relSigma` belongs to the relational projection layer after stable `R0`.
 - `R0Sigma` and `RSigma` belong to the relational / R-family layer.
 
-The detailed Hangar method note is maintained separately and should be linked
-only where released for the relevant public or private scope:
+The released shared Hangar method note is maintained separately at the
+Eval-Variants root:
 
-```text
-Hangar.md
-```
+[`Hangar_350.md`](../../../Hangar_350.md)
 
 ## 12. Storage Principle
 

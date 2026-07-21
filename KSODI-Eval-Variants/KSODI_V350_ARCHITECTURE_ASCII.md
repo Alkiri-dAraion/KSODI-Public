@@ -214,6 +214,7 @@ Older public files may contain these terms as historical or deprecated material.
 - [Layer 6 - R_geom](./KSODI-Full/Full_v350/layer-6-r-geom/README.md)
 - [Layer 7 - R_pace](./KSODI-Full/Full_v350/layer-7-r-pace/README.md)
 - [Layer 8 - Future Signal-Media](./KSODI-Full/Full_v350/layer-8-future-signal-media/README.md)
+- [Shared Sigma / Hangar Method Note](./Hangar_350.md)
 
 Historical 3.3 and deprecated public drafts are preserved under
 [`KSODI-Standard-Eval/archive_historical-v33`](./KSODI-Standard-Eval/archive_historical-v33/README.md).
