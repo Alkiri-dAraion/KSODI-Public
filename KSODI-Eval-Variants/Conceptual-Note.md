@@ -8,9 +8,9 @@
 
 This conceptual note is an earlier public orientation text.
 
-The public v350 Standard-Eval line now contains all five Layer-1 operators and
-the Layer-2 state vector `Z`. The monadic `IK` projection, relational gate
-`R0`, `IK_rel` and the R-family remain outside this note's current public
+The public v350 Standard-Eval line now contains all five Layer-1 operators, the
+Layer-2 state vector `Z` and the Layer-3 monadic `IK` projection. Relational
+gate `R0`, `IK_rel` and the R-family remain outside this note's current public
 reference scope until their separate review and release decisions are complete.
 
 Current public architecture orientation:
