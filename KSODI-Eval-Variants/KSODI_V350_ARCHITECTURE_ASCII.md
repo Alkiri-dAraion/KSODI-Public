@@ -216,4 +216,4 @@ Older public files may contain these terms as historical or deprecated material.
 - [Layer 8 - Future Signal-Media](./KSODI-Full/Full_v350/layer-8-future-signal-media/README.md)
 
 Historical 3.3 and deprecated public drafts are preserved under
-[`KSODI-Standard-Eval/archive/historical-v33`](./KSODI-Standard-Eval/archive/historical-v33/README.md).
+[`KSODI-Standard-Eval/archive_historical-v33`](./KSODI-Standard-Eval/archive_historical-v33/README.md).

@@ -64,5 +64,5 @@ projection.
 
 - `Standard-Eval_v350` contains the current monadic layer-based v350 public
   Standard-Eval structure.
-- `archive/historical-v33` preserves public 3.3 operator, state-vector,
+- `archive_historical-v33` preserves public 3.3 operator, state-vector,
   projection and deprecated draft material for provenance and transparency.
