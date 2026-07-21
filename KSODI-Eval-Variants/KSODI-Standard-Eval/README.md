@@ -51,6 +51,10 @@ Standard-Eval.
 The reviewed v350 line is being released into this public repository step by
 step after private review.
 
+As of 2026-07-21, the public v350 Standard-Eval release contains all five
+Layer-1 operators and the Layer-2 state vector `Z`. The monadic `IK` projection
+remains pending.
+
 - [`Standard-Eval_v350`](./Standard-Eval_v350/README.md) contains the active
   layer-based public Standard-Eval structure.
 - [`KSODI_V350_ARCHITECTURE_ASCII.md`](../KSODI_V350_ARCHITECTURE_ASCII.md)

@@ -25,7 +25,7 @@ Do not turn Observer-infrastructure choices into canonical method definitions,
 and do not pull relational / R-family layers back into Standard-Eval. When an
 operator meaning changes, update the corresponding Layer 1 operator file here.
 
-## Current Public State - 2026-07-14
+## Current Public State - 2026-07-21
 
 The public v350 Standard-Eval structure has been consolidated under this
 folder. Public canonical operator files belong in Layer 1, not in separate
@@ -33,17 +33,19 @@ competing operator folders.
 
 Released in public Layer 1:
 
+- `Operator_K_v350.md` - `K0`, Observable Context Completeness
 - `Operator_I_v350.md` - `I0`, Observable Information Impulse
 - `Operator_D_v350.md` - `D0`, Observable Clarity
 - `Operator_O_v350.md` - `O0`, Observable Grounded Objectivity
 - `Operator_S_v350.md` - `S0`, Observable Structural Coherence
 
+Released in public Layer 2:
+
+- `Z_Vektor.md` - KSODI State Vector Z
+
 Not yet released:
 
-- `K0` - Observable Context Completeness
-
-`K0` remains a private review item. Do not add the public canonical K0 file
-until Anne explicitly releases the corrected private version.
+- `IK` - monadic Interaction Coherence Projection
 
 Architecture guardrail: Standard-Eval is monadic. `Z(t)` feeds both monadic
 `IK` and the relational `R0` gate, but `R0`, `IK_rel` and the R-family belong in

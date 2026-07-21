@@ -7,6 +7,10 @@ monadic observation.
 
 Only files explicitly marked as released should be treated as current public method material. Placeholder files mark the intended structure and remain pending until the corresponding private review is complete.
 
+Current release state: Layer 1 operators `K0`, `S0`, `O0`, `D0` and `I0` are
+released. Layer 2 `Z` is released. Layer 3 `IK` remains a public placeholder
+until the private review and release decision are complete.
+
 This `Standard-Eval_v350` folder describes how the canonical operator
 definitions are placed into the monadic Observer structure: Layer 1 operators,
 Layer 2 state vector `Z` and Layer 3 monadic `IK`.
