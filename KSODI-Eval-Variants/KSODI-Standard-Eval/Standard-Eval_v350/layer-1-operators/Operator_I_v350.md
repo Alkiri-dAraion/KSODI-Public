@@ -1,6 +1,6 @@
 # KSODI Operator I0 - Observable Information Impulse v3.50
 
-Status: canonical workbench version v3.50, updated after the 2026-07-04 Fable review. Dynamic / Sigma / Hangar reminders were added for operator-level monitoring alignment.
+Status: public v3.50 reference release; private canonical workbench origin retained, updated after the 2026-07-04 Fable review. Dynamic / Sigma / Hangar reminders were added for operator-level monitoring alignment.
 
 Layer: KSODI Standard-Eval operator. Static `I0` belongs to Layer 1. Operator-level Delta / Delta2, Sigma and Hangar views may observe information-impulse movement over time. Relational feedback and controller logic belong outside the static Layer-1 operator definition.
 

@@ -1,6 +1,6 @@
 # KSODI Operator D0 - Observable Clarity v3.50
 
-Status: canonical workbench version v3.50, aligned with the v3.50 glossary and the 2026-07-04 D-operator clarification.
+Status: public v3.50 reference release; private canonical workbench origin retained, aligned with the v3.50 glossary and the 2026-07-04 D-operator clarification.
 
 Layer: KSODI Standard-Eval operator. Static `D0` belongs to Layer 1. Operator-level Delta / Delta2, Sigma and Hangar views may observe clarity, discernibility and signal-density movement over time. Relational feedback and controller logic belong outside the static Layer-1 operator definition.
 
@@ -97,6 +97,10 @@ V(q)
 High `V(q)` indicates semantic jumpiness, ambiguity, fragmentation or internal dispersion.
 
 Because cosine can be negative, `1 - cos(...)` can exceed `1`; therefore clipping is required.
+
+Notation boundary: `V(q)` and dynamic `V(t)` in the D operator denote semantic
+dispersion only. They are unrelated to the historical Voice/Takt label `V(t)`,
+which is not an active v3.50 term.
 
 ### 3.3 Operational Anchors
 
