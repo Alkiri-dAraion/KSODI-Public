@@ -2,10 +2,10 @@
 
 ## Public orientation note
 
-This folder reflects an earlier public KSODI-Full orientation. It is preserved
-for conceptual review, discussion and version traceability.
+This folder is the public orientation entry for the KSODI-Full v350 research
+structure. It supports conceptual review, discussion and version traceability.
 
-The current private workbench separates the following layers more carefully:
+The current architecture separates the following layers:
 
 - interaction state observation
 - interaction coherence
@@ -16,16 +16,18 @@ This public folder should not be treated as an implementation reference.
 
 ## Relation to Standard-Eval
 
-KSODI-Full builds on KSODI Standard-Eval. The five KSODI operators and the
-state-vector layer remain the numeric observation basis.
+KSODI-Full builds on KSODI Standard-Eval. The complete monadic Standard-Eval
+line is `K/S/O/D/I -> Z -> IK` and ends with `IK`.
 
-R0 / R_0 is currently understood as a relational gate evaluated from
-distinguishable `Z`-trajectories. It runs in parallel to monadic `IK`: first,
-each party or entity can be observed for its own coherence; then `R0` asks
-whether dyadic or n-adic relational observation is meaningful at all. Without
-such a gate, resonance-family observations can become misleading, because a
-system may show apparent resonance while losing coherence, direction or
-comparability.
+After `Z`, the architecture branches. `R0 / R_0` is the relational gate
+evaluated from distinguishable `Z`-trajectories in parallel to monadic `IK`.
+Only after a stable `R0` does `IK_rel` open the relational projection branch,
+followed by the further R-family. `R0`, `IK_rel` and the further R-family are
+not part of Standard-Eval.
+
+Without such a gate, relational or resonance-family observations can become
+misleading, because a system may show apparent resonance while losing
+coherence, direction or comparability.
 
 ## Current research direction
 
@@ -44,9 +46,11 @@ used as an automated decision system.
 ## Status
 
 Public KSODI 3.3 materials contain known structural issues and unresolved
-separations between Z, IK, R0, IK_rel and the broader R-family. A revised KSODI
-3.5 reference specification is maintained privately and will only be published
-after final testing and review.
+separations between `Z`, `IK`, `R0`, `IK_rel` and the broader R-family. In the
+current public v3.5 release, the complete monadic Standard-Eval line through
+`IK` is published. The relational KSODI-Full layers beginning with `R0` and
+`IK_rel` remain a separately staged research structure until their individual
+release status is stated explicitly.
 
 Current public v350 structure:
 
