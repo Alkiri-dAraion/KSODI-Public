@@ -78,12 +78,15 @@ the respective layers are released for implementation and testing.
 
 ### KSODI Standard-Eval
 Model-agnostic numeric evaluation layer for monadic observation.
-Designed for operators, `Z`, `IK`, aggregation and Delta / Delta2 views.
+Its complete line is `K/S/O/D/I -> Z -> IK`; Standard-Eval ends with `IK`.
 
 ### KSODI-Full
-Research structure for relational gates, dyadic / n-adic observation and
-further R-family branches. These layers are released separately and must not be
-inferred to be current merely because their folder structure is public.
+After `Z`, the architecture branches in parallel from monadic `IK` to the
+separate relational / Full line: `R0` gates relational comparison, `IK_rel`
+follows only after a stable gate, and the further R-family follows thereafter.
+`R0`, `IK_rel` and the further R-family are not part of Standard-Eval. These
+layers are released separately and must not be inferred to be current merely
+because their folder structure is public.
 Explanatory and architectural – never decision-making.
 
 ## Intended Use
@@ -99,13 +102,13 @@ These variants are intended for:
 
 KSODI v3.5 is being published in successive stages. The current public release
 contains the five operator definitions `K0`, `S0`, `O0`, `D0` and `I0`,
-the `O0` source-need / reference-space applicability companion note, and the
-monadic state vector `Z(t)` (`Z_vec`).
+the `O0` source-need / reference-space applicability companion note, the
+monadic state vector `Z(t)` (`Z_vec`) and the monadic `IK` projection.
 
-Monadic `IK` and the relational layers beginning with `R0` and `IK_rel`
-remain outside the current public v3.5 release. Public folders or orientation
-files for later layers describe the intended research structure; their presence
-does not by itself mark those layers as released.
+The relational layers beginning with `R0` and `IK_rel` remain outside the
+current public v3.5 release. Public folders or orientation files for later
+layers describe the intended research structure; their presence does not by
+itself mark those layers as released.
 
 Earlier v3.3 and v3.42 materials are preserved in clearly marked historical
 archives for transparency and provenance. They are not current implementation
