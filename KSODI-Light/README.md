@@ -15,23 +15,27 @@ Anne Steinacker-Folkerts, Heiko Folkerts, and Silke Honerkamp is licensed under 
 To view a copy of this license, visit [![CC BY 4.0][cc-by-shield]][cc-by] .
 
 
-## Contributions
+## Acknowledgements
 
-Developers are welcome to contribute code, provide feedback, or implement the method in their own systems. Pull requests are appreciated.  
 Special thanks to Benjamin Gage-Prater for early RAG testing and feedback, and to Patrick Barthelmäs for platform and integration support, including the [KSODI-Light-Agent PoC (GitHub)](https://github.com/blackbaddl13/r-KSODI-POC).
-
-## Invitation for Research & Feedback
-
-**Multidisciplinary collaborators** are invited to explore KSODI (CSOCI in English) in the context of user experience enhancement and preference-based suitability.
-<br>
 
 [cc-by-image]: ../assets_images/ksodi-lab-banner.png
 
 
 # KSODI-Light
 
-KSODI-Light is the human-facing and prompt-level variant of the KSODI
-observation model.
+## Publication Status — KSODI v3.5
+
+KSODI v3.5 is being published to this repository in successive stages. The five
+operator definitions `K0`, `S0`, `O0`, `D0` and `I0`, together with the
+monadic state vector `Z(t)` (`Z_vec`), have been published and form the current
+v3.5 release. Further components will follow as their publication proceeds.
+
+Earlier v3.3 and v3.42 materials are retained in clearly marked historical
+archives. They are not current implementation guidance.
+
+KSODI-Light is the human-facing and prompt-level entry variant of the KSODI
+method.
 
 It can be used as a **reflective working agreement** between user and
 assistant. In that sense, KSODI-Light does not only reflect the user's prompt.
@@ -80,8 +84,8 @@ For the observer-facing terminology and v3.5 boundary, see
 
 ## Why This Layer Matters
 
-KSODI-Light is the root layer of the KSODI method. The later observer
-architecture grew from the same practical question: how can humans and machines
+KSODI-Light is the human-facing and prompt-level entry variant of the KSODI
+method. The later observer architecture grew from the same practical question: how can humans and machines
 notice missing context, weak structure, insufficient grounding, unclear wording
 or low informational movement before an interaction becomes unusable?
 
@@ -95,8 +99,9 @@ multi-agent systems or embodied-agent interaction layers, KSODI-Light can
 provide local orientation while Standard-Eval or KSODI-Full observer layers
 monitor trajectories, drift and coupling from outside the prompt. This does not
 make KSODI-Light a robotics controller or safety system. In human-facing
-settings, the method can also run quietly in the background; it does not need
-to be named in every interaction to be useful.
+settings, its use should be disclosed at the applicable user, account,
+developer, system or application level; it does not need to be named again in
+every interaction.
 
 ## Relation to Observer-Supported Agentic Systems
 
@@ -106,7 +111,10 @@ It can support local reflection, clarification, uncertainty visibility, corridor
 
 That Observer layer is not part of KSODI-Light. It belongs to KSODI Standard-Eval, KSODI-Full or IDAS/SIRA-level implementations and is responsible for formal observation of trajectories, drift, acceleration, retrieval behavior, vector movement, relational coherence and corridor exits.
 
-In this sense, KSODI-Light and the Observer are complementary: Light guides behavior from inside the agent or prompt context, while Standard-Eval / Full observe from outside the prompt. Light without an Observer can still support learning and guidance; an Observer without Light-using agents or comparable local guidance has much less useful feedback structure.
+KSODI-Light and the Observer can each be used independently. When combined,
+Light provides local reflective guidance, while Standard-Eval or KSODI-Full
+provides external, auditable observation and feedback. An Observer may also
+evaluate interactions whose participants do not use KSODI-Light.
 
 ## Agent Literacy and Prompt Guidance
 
@@ -123,7 +131,7 @@ and lightweight agent prompts without publishing private personal instructions:
   [KSODI-Light Steering, Self-Alignment and Observer-Based Monitoring](./developer-notes/self-alignment-vs-steering.md)
 - Method orientation:
   [KSODI-Light Method Comparison](./KSODI%20method%20comparison-EN.md)
-  and [KSODI / CSOCI Terminology](./KSODI-CSOCI_EN.md)
+  and [KSODI Terminology](./KSODI-CSOCI_EN.md)
 
 The guidance examples are not hidden system prompts. They are public,
 copy-and-paste-ready orientation prompts for user accounts, training contexts
