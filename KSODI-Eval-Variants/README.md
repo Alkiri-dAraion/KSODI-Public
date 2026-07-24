@@ -120,18 +120,21 @@ They document implementation and dashboard work from the v3.3 to v3.42 line
 and help explain the later separation between interaction coherence, relational
 comparability and R-family observation.
 
-## License
+## Licence
 
-Commercial license only.  
-All rights reserved.
+The published method documentation and method materials in this directory are
+covered by the repository-wide [Creative Commons Attribution 4.0 International
+licence](../LICENSE.md), unless a file or subfolder explicitly states otherwise.
 
-No usage, distribution or modification is permitted  
-without prior written agreement from the copyright holders.
+Reuse, adaptation, forks, experimentation and commercial use are permitted under
+CC BY 4.0. Appropriate attribution must be retained, changes must be indicated
+and the licence and source must be referenced as required by the licence.
 
-For licensing inquiries, please contact:
-ksodi@thevoid.email
+A separately published software implementation is a distinct work and may use
+its own software licence. See the root [Licensing section](../README.md#licensing)
+and [Licence Decision History](../LICENSE_HISTORY.md).
 
 ---
 
 © 2026 Anne Steinacker-Folkerts & Heiko Folkerts
-All rights reserved
+Licensed under CC BY 4.0
