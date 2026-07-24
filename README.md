@@ -1,20 +1,20 @@
-[![KSODI + IDAS Concept][banner-image]](https://github.com/Alkiri-dAraion/KSODI-Methode)
+[![KSODI + IDAS Concept][banner-image]](https://github.com/Alkiri-dAraion/KSODI-Public)
 
 [banner-image]: ./assets_images/ksodi-lab-banner.png
 
 ________________________________________________________________
 
-⚠️ This documentation includes hypothesis-oriented material (written in the conditional / Konjunktiv), reflecting ongoing empirical exploration of the KSODI model.  
+⚠️ This documentation includes hypothesis-oriented material (written in the conditional / Konjunktiv), reflecting ongoing empirical exploration of the KSODI method.
 
-⚠️ **Research-only notice:** The public KSODI Standard-Eval / Full materials in
-this repository are provided for conceptual review, discussion and research
-orientation only. They should not be used as an implementation reference. The
-public 3.3 materials contain known structural issues, including an objectivity
-operator behavior that can make measurement collapse to 0 / not measurable when
-no external data source or web access is connected, as well as ambiguities in
-variable handling and the unresolved public separation between Z, IK, R0,
-IK_rel and the broader R-family of relational observation variants. A revised 3.5 reference specification is maintained
-privately and will only be published after final testing and review.
+⚠️ **Publication status — KSODI v3.5:** The current v3.5 line is being
+published in successive stages. The five operator definitions `K0`, `S0`,
+`O0`, `D0` and `I0`, together with the monadic state vector `Z(t)`
+(`Z_vec`), have been published and form the current v3.5 release. Further
+components retain their own publication status as the release proceeds.
+
+Earlier v3.3 and v3.42 materials are preserved in clearly marked historical
+archives for transparency and provenance. They are not current implementation
+guidance.
 
 Note:
 The usual implementation setting for KSODI Standard-Eval and KSODI Full uses a layered system:
@@ -27,7 +27,7 @@ The usual implementation setting for KSODI Standard-Eval and KSODI Full uses a l
 4. Optional pacing observation layer (L4): KSODI Full plus `R_pace` where pacing dynamics are explicitly defined and versioned.
 The observer is usually designed to give the agent or a human/governance layer feedback when the observed trajectory drifts out of a defined or explainable corridor.
 
-Current line:
+v3.5 research architecture beyond the current release:
 `Z(t)` -> `Delta Z` / `Delta2 Z` -> parallel checks: `IK` as monadic
 projection per party / entity and `R0` as relational gate over distinguishable
 trajectories -> `IK_rel` as relational projection only after a stable gate ->
@@ -37,8 +37,9 @@ trajectories -> `IK_rel` as relational projection only after a stable gate ->
 
 # KSODI Method
 
-KSODI is a structured observation model for human-AI, agent-agent and n-agent interaction structures, focussing on explainable governance and observability.
-It is part of the IDAS-Framework.
+KSODI is a structured observation method for human-AI, agent-agent and n-agent
+interaction structures, focussing on explainable governance and observability.
+It is embedded in the IDAS framework.
 
 → See: [KSODI-IDAS-SIRA_Framework](./KSODI-IDAS-SIRA_Framework.md)
 
@@ -50,12 +51,16 @@ therefore requires explicit definitions. Multilingual discussion, including
 French and Chinese perspectives, also helped sharpen the distinctions between
 the dimensions.
 
-The framework separates explainability, observability and advanced interaction analysis (with optional steering) into clearly defined layers - such as interaction states, interaction coherence and relational resonance-family observations - over time.
+Within IDAS, KSODI separates explainability, observability and advanced
+interaction analysis (with optional steering) into clearly defined layers, such
+as interaction states, interaction coherence and relational R-family
+observations over time.
 
 KSODI does **not** evaluate people, personalities or intentions.  
 It respects maximum privacy and operates exclusively on observable interaction states.
 
-The framework is organized into clearly separated components with different purposes and licenses.
+This repository is organized into clearly separated components with different
+purposes and licenses.
 
 ## Where KSODI Fits
 
@@ -87,8 +92,8 @@ KSODI is not required as a running method for every act of communication.
 People, animals, machines and technical systems can exchange signals without a
 formal KSODI evaluation layer.
 
-However, KSODI becomes relevant whenever communication itself is made an object
-of methodical observation.
+KSODI offers a structured baseline radar when communication is made an object
+of methodical observation through these five operators.
 
 This distinction is central. KSODI does not replace communication theory, signal
 theory, AI observability, explainability, governance frameworks, safety methods
@@ -116,8 +121,10 @@ These operator names reflect the current research-facing terminology. Shorter
 KSODI-Light terms may still be used in training contexts, but Standard-Eval and
 Full discussions should map them explicitly to the research-facing names.
 
-This does not mean that KSODI explains all of communication. It means that KSODI
-marks the observational entry point at which further methods can be applied.
+This does not mean that KSODI explains all communication or defines its only
+possible observational entry point. When the five-operator schema is selected,
+KSODI can establish a structured baseline from which further methods may be
+applied.
 Shannon-oriented models may examine transmission, channel and noise.
 Watzlawick-oriented views may examine relational and behavioral dynamics.
 Schulz von Thun-oriented views may examine message layers and reception sides.
@@ -180,13 +187,10 @@ whether communication remains reconstructable, stable and safely connectable. If
 the handshake degrades, the system may need to clarify, slow down, correct,
 escalate, pause or terminate the interaction.
 
-In this sense:
-
-> KSODI is not necessary for every communication as an active procedure, but it
-> is fundamentally relevant for every methodical observation of communication.
-
-It is a baseline radar for signal formation, communicative stability and
-relational drift.
+In this sense, KSODI is not necessary for every communication as an active
+procedure. Where its five-operator schema is selected, it can serve as a
+baseline radar for signal formation, communicative stability and relational
+drift.
 
 ## Why These Five Operators? A Cross-Domain Reading Matrix
 
@@ -215,7 +219,14 @@ KSODI v3.5 extends the public KSODI-Light idea toward an observer-supported impl
 
 The current work explores how KSODI-Light can guide local agent behavior while a separate Observer layer monitors trajectories, drift, acceleration, retrieval behavior, vector movement and relational coherence. This is not presented as a finished alignment solution. It is an early research and implementation path for making agentic interaction more observable, reviewable and adjustable under human oversight.
 
-In this architecture, KSODI-Light belongs to the agent side: it may be used as a user, account, developer, system-prompt or skill-level layer. KSODI Standard-Eval and KSODI Full belong to the observer side: they are intended to define, explain and build the external Observer structure. The Observer layer makes little sense without Light-using agents or comparable local agent guidance, and Light does not replace formal observer-based monitoring.
+In this architecture, KSODI-Light belongs to the agent side: it may be used as
+a user, account, developer, system-prompt or skill-level layer. KSODI
+Standard-Eval and KSODI Full belong to the observer side: they are intended to
+define, explain and build the external Observer structure. KSODI-Light and the
+Observer can each be used independently. When combined, Light provides local
+reflective guidance while the Observer provides external, auditable observation
+and feedback. An Observer may also evaluate interactions whose participants do
+not use KSODI-Light.
 
 A long-term hypothesis is that teams of specialized agents may benefit from observer-supported feedback loops: agents act within their normal role and skill instructions, KSODI-Light supports local reflection and corridor awareness, and the Observer helps detect drift, corridor exits or relational instability across complex traces and vector spaces.
 
@@ -259,10 +270,10 @@ License: Creative Commons Attribution 4.0 (CC BY 4.0)
 ### KSODI Standard-Eval & KSODI Full
 Evaluation-oriented and governance-capable variants.  
 Designed for numeric observability, drift detection and system-level stability monitoring with optional steering.
-The public materials are not intended for implementation. KSODI 3.5 is the
-current private reference specification described in the paper draft and is
-intended to resolve known 3.3 ambiguities between interaction coherence and
-relational resonance-family observation.
+KSODI v3.5 is being published in successive stages. The five operator
+definitions and the monadic state vector `Z(t)` (`Z_vec`) form the current
+public release. Later monadic and relational structures remain outside the
+current release until their status is stated explicitly.
 → See: [KSODI-Eval-Variants](./KSODI-Eval-Variants)
 
 License: Commercial / All rights reserved.
@@ -302,9 +313,8 @@ For licensing inquiries, integration, whitelabeling or enterprise adoptions plea
 ksodi@thevoid.email with details on intended use case.
 
 
-The public KSODI 3.3 materials are preserved for transparency and research
-orientation, but contain known structural issues and should not be used for
-implementation.
+The public KSODI v3.3 and v3.42 materials are preserved in historical archives
+for transparency and provenance. They are not current implementation guidance.
 
-KSODI 3.5 is the current private reference specification and will only be
-published after final testing and review.
+KSODI v3.5 is being published in successive stages. The current public release
+extends through the monadic state vector `Z(t)` (`Z_vec`).
