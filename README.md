@@ -49,6 +49,11 @@ therefore requires explicit definitions. Multilingual discussion, including
 French and Chinese perspectives, also helped sharpen the distinctions between
 the dimensions.
 
+`CSOCI` may appear only as an English translation mnemonic for the five
+KSODI-Light labels. It is not an alternative method name, a separate English
+version or an independent provenance line. The method remains `KSODI` in every
+language. See the [KSODI English Translation Table](./KSODI-Light/KSODI-CSOCI_EN.md).
+
 Within IDAS, KSODI separates explainability, observability and advanced
 interaction analysis (with optional steering) into clearly defined layers, such
 as interaction states, interaction coherence and relational R-family
