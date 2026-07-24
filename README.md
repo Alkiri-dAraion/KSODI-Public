@@ -8,9 +8,10 @@ ________________________________________________________________
 
 ⚠️ **Publication status — KSODI v3.5:** The current v3.5 line is being
 published in successive stages. The five operator definitions `K0`, `S0`,
-`O0`, `D0` and `I0`, together with the monadic state vector `Z(t)`
-(`Z_vec`), have been published and form the current v3.5 release. Further
-components retain their own publication status as the release proceeds.
+`O0`, `D0` and `I0`, the monadic state vector `Z(t)` (`Z_vec`) and the
+monadic interaction-coherence projection `IK` have been published and form the
+current v3.5 release. Further components retain their own publication status as
+the release proceeds.
 
 Earlier v3.3 and v3.42 materials are preserved in clearly marked historical
 archives for transparency and provenance. They are not current implementation
@@ -19,15 +20,12 @@ guidance.
 Note:
 The usual implementation setting for KSODI Standard-Eval and KSODI Full uses a layered system:
 1. Agent layer (L1): KSODI-Light may run as a reflective working agreement in user/account prompts or as a system prompt on one or more agents.
-2. Observer layer (L2): KSODI Standard-Eval provides numeric observation for monadic agent or interaction-state trajectories.
-3. Relational / Full observer layer (L3): KSODI Full evaluates `R0` from
-   `Z`-based trajectories in parallel to monadic `IK`; only after stable `R0`
-   does `IK_rel` open the dyadic or n-adic coherence branch, followed by the
-   R-family for broader relational or resonance-family views.
+2. Observer layer (L2): KSODI Standard-Eval provides the complete monadic evaluation line: `K/S/O/D/I -> Z -> IK`. Standard-Eval ends with `IK`.
+3. Relational / Full observer layer (L3): after `Z`, the architecture branches. KSODI Full evaluates `R0` from distinguishable `Z`-based trajectories in parallel to monadic `IK`; only after stable `R0` does `IK_rel` open the dyadic or n-adic coherence branch, followed by the further R-family. `R0`, `IK_rel` and the further R-family are not part of Standard-Eval.
 4. Optional pacing observation layer (L4): KSODI Full plus `R_pace` where pacing dynamics are explicitly defined and versioned.
 The observer is usually designed to give the agent or a human/governance layer feedback when the observed trajectory drifts out of a defined or explainable corridor.
 
-v3.5 research architecture beyond the current release:
+v3.5 architecture across the current release and the further research line:
 `Z(t)` -> `Delta Z` / `Delta2 Z` -> parallel checks: `IK` as monadic
 projection per party / entity and `R0` as relational gate over distinguishable
 trajectories -> `IK_rel` as relational projection only after a stable gate ->
@@ -271,9 +269,10 @@ License: Creative Commons Attribution 4.0 (CC BY 4.0)
 Evaluation-oriented and governance-capable variants.  
 Designed for numeric observability, drift detection and system-level stability monitoring with optional steering.
 KSODI v3.5 is being published in successive stages. The five operator
-definitions and the monadic state vector `Z(t)` (`Z_vec`) form the current
-public release. Later monadic and relational structures remain outside the
-current release until their status is stated explicitly.
+definitions, the monadic state vector `Z(t)` (`Z_vec`) and monadic `IK` form the
+current public Standard-Eval release. Relational structures beginning with
+`R0` and `IK_rel` remain outside the current release until their status is
+stated explicitly.
 → See: [KSODI-Eval-Variants](./KSODI-Eval-Variants)
 
 License: Commercial / All rights reserved.
@@ -317,4 +316,5 @@ The public KSODI v3.3 and v3.42 materials are preserved in historical archives
 for transparency and provenance. They are not current implementation guidance.
 
 KSODI v3.5 is being published in successive stages. The current public release
-extends through the monadic state vector `Z(t)` (`Z_vec`).
+extends through the monadic interaction-coherence projection `IK`, which closes
+the Standard-Eval line.
