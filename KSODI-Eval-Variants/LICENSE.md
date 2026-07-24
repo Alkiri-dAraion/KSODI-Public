@@ -1,8 +1,7 @@
-(C) Copyright 2026 Anne Steinacker-Folkerts and Heiko Folkerts
+# Licence Notice — KSODI Standard-Eval & KSODI-Full
 
-All rights reserved.
+The published method documentation and method materials in this folder are covered by the repository-wide [Creative Commons Attribution 4.0 International licence](../LICENSE.md), unless a file or subfolder explicitly states otherwise.
 
-The material in this folder and its subfolders may not be used, copied, used, modified, distributed, published, sublicensed or commercialy exploited without prior written permission form the authors.
+This notice supersedes the former active all-rights-reserved notice. The previous wording has been preserved verbatim, together with the reason for both decisions, in the repository's [Licence Decision History](../LICENSE_HISTORY.md).
 
-For licence inquiries please contact:
-ksodi@thevoid.email
+A separately published software implementation is a distinct work and may use its own software licence.
