@@ -8,10 +8,17 @@
 
 This conceptual note is an earlier public orientation text.
 
-The current public v3.5 release contains all five Layer-1 operators and the
-Layer-2 monadic state vector `Z(t)` (`Z_vec`). Layer-3 monadic `IK`, the
-relational gate `R0`, `IK_rel` and the further R-family remain outside the
-current public release until their separate release decisions are complete.
+The current public v3.5 release contains the complete monadic Standard-Eval
+line: all five Layer-1 operators, the Layer-2 state vector `Z(t)` (`Z_vec`) and
+the Layer-3 monadic interaction-coherence projection `IK`. Standard-Eval ends
+with `IK`.
+
+After `Z`, the architecture branches. The separate relational / Full branch
+evaluates `R0` from distinguishable `Z`-trajectories in parallel to monadic
+`IK`. Only after a stable `R0` does `IK_rel` open the relational projection
+branch, followed by the further R-family. `R0`, `IK_rel` and the further
+R-family are not part of Standard-Eval and remain outside the current public
+release until their separate release decisions are complete.
 
 Current public architecture orientation:
 [`KSODI_V350_ARCHITECTURE_ASCII.md`](./KSODI_V350_ARCHITECTURE_ASCII.md)
@@ -48,10 +55,10 @@ Handshake. Formal observer layers extend this logic into numeric trajectories,
 drift observation and, where methodically justified, relational comparison.
 
 Layer boundary:
-KSODI-Light is a local, human-facing orientation layer. KSODI Standard-Eval
-starts with monadic state observation. Dyadic or n-adic analysis requires later
-relational gates and must not be assumed merely because an interaction took
-place.
+KSODI-Light is a local, human-facing orientation layer. KSODI Standard-Eval is
+the complete monadic line `K/S/O/D/I -> Z -> IK` and ends with `IK`. After `Z`,
+dyadic or n-adic analysis opens separately through `R0`; it must not be assumed
+merely because an interaction took place.
 
 ⸻
 
@@ -327,8 +334,8 @@ Clear distinction:
 
 Additional v3.5 boundary:
 	•	KSODI-Light does not contain the KSODI Handshake as an implementation layer
-	•	KSODI Standard-Eval begins with monadic state trajectories
-	•	Relational, dyadic or n-adic observation requires explicit later gates
+	•	KSODI Standard-Eval comprises the monadic line `K/S/O/D/I -> Z -> IK`
+	•	Relational, dyadic or n-adic observation begins separately with the `R0` gate and does not belong to Standard-Eval
 	•	The KSODI Handshake is treated as a working hypothesis about sendability,
 		receiver-side reconstructability and feedback capability, not as a sixth
 		operator or a separate score
