@@ -1,6 +1,6 @@
 # KSODI Standard-Eval & Full
 
-This directory contains the evaluation-oriented variants of the KSODI framework.
+This directory contains the evaluation-oriented variants of the KSODI method.
 
 These variants extend the same K/S/O/D/I operator logic that appears in
 KSODI-Light, but they do so as formal observer-oriented layers. KSODI-Light can
@@ -70,7 +70,9 @@ The Observer layer may use existing observability material such as traces, threa
 
 A central challenge is that developers and architects must understand how the selected input, reference space, retrieval context, tool state and operator mapping affect the five KSODI operators. These choices shape `Z(t)` and all later projections, drift metrics, relational gates and visualizations. If the input frame is wrong, the observer may not merely measure badly; it may observe a different system state than intended.
 
-This is why the public 3.3 material should not be used as an implementation reference. The v3.5 line is intended to clarify these layer boundaries before implementation and testing.
+This is why the historical public v3.3 material should not be used as an
+implementation reference. The v3.5 line clarifies these layer boundaries before
+the respective layers are released for implementation and testing.
 
 ## Variants
 
@@ -79,8 +81,9 @@ Model-agnostic numeric evaluation layer for monadic observation.
 Designed for operators, `Z`, `IK`, aggregation and Delta / Delta2 views.
 
 ### KSODI-Full
-Extended analytical layer for relational gates, dyadic / n-adic observation and
-R-family structures such as `R_geom`, `R_pace` and future signal-media work.
+Research structure for relational gates, dyadic / n-adic observation and
+further R-family branches. These layers are released separately and must not be
+inferred to be current merely because their folder structure is public.
 Explanatory and architectural – never decision-making.
 
 ## Intended Use
@@ -92,37 +95,27 @@ These variants are intended for:
 - regulated domains
 - continuous, autonomous or multi-agent AI systems
 
-## Transparency
+## Publication Status — KSODI v3.5
 
-Earlier operator drafts (e.g. v0.8) are preserved for transparency.
-They reflect exploratory stages and are not representative of the current implementation architecture.
+KSODI v3.5 is being published in successive stages. The current public release
+contains the five operator definitions `K0`, `S0`, `O0`, `D0` and `I0`,
+the `O0` source-need / reference-space applicability companion note, and the
+monadic state vector `Z(t)` (`Z_vec`).
 
-The public KSODI 3.3 materials are also not recommended as an implementation
-reference. They contain known structural issues, including:
+Monadic `IK` and the relational layers beginning with `R0` and `IK_rel`
+remain outside the current public v3.5 release. Public folders or orientation
+files for later layers describe the intended research structure; their presence
+does not by itself mark those layers as released.
 
-- an objectivity operator behavior where measurement can collapse to 0 / not
-  measurable when no external data source or web access is connected
-- ambiguous or duplicated variable handling in parts of the public draft
-- unresolved public separation between Z, IK, R0, IK_rel and the R-family of relational observation variants
-
-A revised KSODI 3.5 reference specification is currently maintained privately
-and described in the current paper draft. It refines the separation between
-interaction coherence, relational comparability and resonance-family observation and will only be published after final
-testing and review.
-
-Some public v3.3 files already contain placeholders or preliminary glossary
-notes for Z, IK and R0. These files are not normative and should not be treated
-as a complete or tested specification.
+Earlier v3.3 and v3.42 materials are preserved in clearly marked historical
+archives for transparency and provenance. They are not current implementation
+guidance.
 
 Historical Observer visualizations are preserved under
 [`archive_assets_historical-observer-v342`](./archive_assets_historical-observer-v342/README.md).
-They show that implementation and dashboard work already existed in the v3.3 to
-v3.42 line, while also making visible why the v3.5 correction needs a clearer
-separation between interaction coherence and resonance-family observation, plus
-clearer reference-space and `O0` interpretation.
-
-Until then, this directory should be used for conceptual review, discussion and
-research orientation only.
+They document implementation and dashboard work from the v3.3 to v3.42 line
+and help explain the later separation between interaction coherence, relational
+comparability and R-family observation.
 
 ## License
 
