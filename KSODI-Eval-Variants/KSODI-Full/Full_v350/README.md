@@ -1,9 +1,13 @@
 # KSODI-Full v350
 
-Status: public v350 KSODI-Full structure, released layer by layer after private review
+Status: public v350 KSODI-Full research structure; not part of the current
+v3.5 method release
 
-This folder contains the public v350 KSODI-Full structure for relational,
-dyadic and n-adic observation after the monadic Standard-Eval layers.
+This folder maps the intended relational, dyadic and n-adic KSODI-Full research
+structure after the monadic Standard-Eval layers. Its public folders and linked
+orientation files do not by themselves mark a layer as released. Components
+become current public v3.5 method material only when their release status is
+stated explicitly.
 
 Standard-Eval provides the operator, `Z` and monadic `IK` basis:
 
