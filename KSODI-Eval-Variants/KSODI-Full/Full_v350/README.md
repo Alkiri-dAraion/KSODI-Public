@@ -9,11 +9,15 @@ orientation files do not by themselves mark a layer as released. Components
 become current public v3.5 method material only when their release status is
 stated explicitly.
 
-Standard-Eval provides the operator, `Z` and monadic `IK` basis:
+Standard-Eval provides the complete monadic line `K/S/O/D/I -> Z -> IK`
+and ends with `IK`:
 
 [`../../KSODI-Standard-Eval/Standard-Eval_v350`](../../KSODI-Standard-Eval/Standard-Eval_v350/README.md)
 
-KSODI-Full begins where relational comparability becomes the question.
+After `Z`, the architecture branches. KSODI-Full evaluates `R0` from
+distinguishable `Z`-trajectories in parallel to monadic `IK`. Stable `R0` gates
+`IK_rel`, followed by the further R-family. `R0`, `IK_rel` and the further
+R-family are not part of Standard-Eval.
 
 ## Layers
 
