@@ -147,8 +147,14 @@ For v3.5, this means:
 
 ## Publication Boundary
 
-These assets are public as historical artifacts, not as a release of the private v3.5 reference specification.
+These assets are public as historical artifacts. They are not part of the
+current v3.5 method release.
 
-They may be cited as evidence that implementation and visualization work existed before the v3.5 correction. They should not be used as implementation guidance for current KSODI Standard-Eval or KSODI-Full work.
+They may be cited as evidence that implementation and visualization work
+existed before the v3.5 correction. They should not be used as implementation
+guidance for current KSODI Standard-Eval or KSODI-Full work.
 
-The current v3.5 line is being prepared separately and will clarify the operator definitions, state-vector handling, projection layers, relational gate and R-family boundaries before public release.
+The v3.5 line is now being published in successive stages. The five operator
+definitions and the monadic state vector `Z(t)` (`Z_vec`) form the current
+public release. Further monadic and relational components retain their own
+publication status as the release proceeds.
