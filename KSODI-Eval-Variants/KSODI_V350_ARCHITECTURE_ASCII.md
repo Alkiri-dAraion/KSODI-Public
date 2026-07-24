@@ -2,10 +2,10 @@
 
 Status: public orientation sketch for the v350 research architecture
 
-Current release boundary: the public v3.5 method release extends through Layer 2,
-the monadic state vector `Z(t)` (`Z_vec`). Later layers remain visible here as
-staged research structure; their presence in this sketch does not mark them as
-released.
+Current release boundary: the public v3.5 method release extends through Layer 3,
+the monadic interaction-coherence projection `IK`, which closes Standard-Eval.
+Later relational layers remain visible here as staged research structure; their
+presence in this sketch does not mark them as released.
 
 Purpose: show the intended layer order shared by the Standard-Eval and Full
 research lines while keeping release status separate from architectural
@@ -21,11 +21,14 @@ gate and R-family observation visible.
 Boundary:
 
 - `KSODI-Light-Agent` is Layer 0 and belongs to the local agent / prompt side.
-- `KSODI Standard-Eval` maps the monadic Observer layers: operators, `Z` and
-  `IK`. The current public release extends through `Z`.
-- `KSODI-Full` maps the relational / dyadic / n-adic research structure
-  beginning with `R0` and `IK_rel`. Public folder presence does not imply
-  release.
+- `KSODI Standard-Eval` maps the complete monadic Observer line:
+  `K/S/O/D/I -> Z -> IK`. It ends with `IK`, and the current public release
+  includes that complete line.
+- After `Z`, the architecture branches. `KSODI-Full` evaluates `R0` from
+  distinguishable `Z`-trajectories in parallel to monadic `IK`. Stable `R0`
+  gates `IK_rel`, followed by the further R-family. `R0`, `IK_rel` and the
+  further R-family are not part of Standard-Eval. Public folder presence does
+  not imply release.
 - Pace, Voice and Takt belong to an optional overlay research layer. They are
   not prerequisites for the monadic or relational core.
 
@@ -188,12 +191,15 @@ Future direction:
 
 ## Core Sequence And Optional Research Boundary
 
-- The current public v3.5 method release extends through `Z(t)` (`Z_vec`).
-- `IK` is the intended monadic coherence projection, not resonance.
+- The current public v3.5 method release includes the complete monadic
+  Standard-Eval line `K/S/O/D/I -> Z -> IK`.
+- `IK` is the intended monadic coherence projection, not resonance, and closes
+  Standard-Eval.
 - `R0` is evaluated from `Z` and runs in parallel to monadic `IK`; it is not
   downstream of `IK`.
 - `IK_rel` belongs inside the dyadic / n-adic branch and is evaluated only
   after stable `R0`.
+- `R0`, `IK_rel` and the further R-family are not part of Standard-Eval.
 - `R_geom` remains a research term inside the further R-family.
 - Pace, Voice and Takt remain optional overlay research. They are neither core
   prerequisites nor part of the current public v3.5 method release.
