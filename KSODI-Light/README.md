@@ -5,14 +5,16 @@
 
 [![CC BY 4.0][cc-by-badge]][cc-by]
 <br>
-The work in this folder and its subfolders is licensed under a [Creative Commons Attribution 4.0 International License][cc-by].
+The published method documentation and method materials in this repository are licensed under a [Creative Commons Attribution 4.0 International License][cc-by], unless a file or subfolder explicitly states otherwise.
 
 
 ## CC-License
 
 This work, *KSODI – Method for Structuring and Optimising Human-AI Interactions* © 2024 by  
 Anne Steinacker-Folkerts, Heiko Folkerts, and Silke Honerkamp is licensed under CC BY 4.0.  
-To view a copy of this license, visit [![CC BY 4.0][cc-by-shield]][cc-by] .
+To view a copy of this licence, visit [![CC BY 4.0][cc-by-shield]][cc-by].
+The complete repository licence text is available in [LICENSE.md](../LICENSE.md);
+the licence history is documented in [LICENSE_HISTORY.md](../LICENSE_HISTORY.md).
 
 
 ## Acknowledgements
@@ -212,14 +214,17 @@ Suitable for:
 
 This variant can be used independently of the full governance framework.
 
-## License
+## Licence
 
 Creative Commons Attribution 4.0 International (CC BY 4.0)
 
-You are free to use, adapt and share this material, including commercially,  
-provided appropriate attribution is given.
+You are free to use, adapt, fork and share this material, including
+commercially. When licensed material is shared, appropriate attribution must be
+retained, changes must be indicated and the licence and source must be
+referenced as required by CC BY 4.0.
 
-See LICENSE file in this folder for details.
+See the repository [LICENSE.md](../LICENSE.md) for the complete legal text and
+[LICENSE_HISTORY.md](../LICENSE_HISTORY.md) for the documented decision change.
 
 ---
 
