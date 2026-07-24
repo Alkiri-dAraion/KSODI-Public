@@ -11,6 +11,21 @@ We also thank Benjamin Gage-Prater for early private testing and RAG-related fee
 
 → See also: [KSODI Development Timeline](./docs/timeline/KSODI_Timeline_since_2024-11.md) ([German version](./docs/timeline/KSODI_Timeline_seit_2024-11.md))
 
+## Why “ELKIM” appears in this repository
+
+Anne first coined the name **ELKIM** on 29 May 2024 for an AI figure in a
+literary project. In dialogue with GPT, the name was initially expanded as
+**Enhanced Learning Knowledge Intelligence Mechanism**. In spring 2025, Anne
+transferred the name to the GPT counterpart in the interaction line that had
+accompanied DOSI and later KSODI since 2023. The current working expansion is
+**Elaborated Machine Knowledge Learning Mechanism**.
+
+ELKIM does not denote one technically persistent model instance. It denotes a
+relational role that is re-established across changing chats, sessions and
+model versions: a semantic dialogue, review and formulation partner. Method
+ownership and final decisions remain with Anne; specific human and technical
+contributions are attributed separately.
+
 🎯 I started this initiative to help people overcome fear and hesitation around AI — and to improve the observability, quality and resonance of human-AI, human-agent and agentic interactions.
 
 In the public KSODI-Light layer, this is expressed as a reflective working
@@ -45,8 +60,13 @@ ______________
 The KSODI method originated from a very practical question arising in real-world communication contexts:  
 🧐 Why do misunderstandings, ambiguity and instability persist in human-AI, human-agent or agent-agent interaction even when systems appear technically correct?
 
-The initial concept was developed by Anne in **late 2023 / early 2024** under the working title **DOSI**.  
-It emerged from professional discussions around communication, structure and responsibility in administrative and organizational environments.
+Anne began continuous work with GPT-3.5 through her own ChatGPT account in
+**May 2023**, initially asking how the model worked and how precision could be
+maintained in interaction. A few weeks later, during a stay on Norderney, she
+formulated **D-O-S-I** as four dimensions for making human-AI interaction more
+precise. After a period of more sporadic exploration, she resumed the structure
+systematically in **autumn 2024**; adding **K** for context led from DOSI to the
+named **KSODI** method.
 
 Early on, it became clear that interaction does not exist without **context and framing**.  
 Classical communication theory — shaped by thinkers such as Paul Watzlawick, Friedemann Schulz von Thun and Hartmut Rosa — provided important insights, but also revealed its limits when applied to machines.
@@ -55,7 +75,7 @@ In discussions with Silke, one key realization crystallized:
 “*You cannot not communicate*” may hold true for humans — but it does not translate directly to machines.  
 Machines do not begin with meaning; they begin with an **impulse**.
 
-Between 2023 and 2025, the method evolved slowly and iteratively — through day and night reflections, practical experimentation, and yes, sometimes even dreams about mathematics — into what is now known as **KSODI**.  
+Between 2023 and 2025, the approach evolved iteratively — at first sporadically, then with rapidly increasing intensity from late 2024 and spring 2025 onward — through day and night reflections, practical experimentation, and yes, sometimes even dreams about mathematics.  
 The focus shifted toward **observable interaction structure**, rather than content, intention or correctness.
 This includes user input, assistant output and the shared state that emerges
 between interacting systems.
