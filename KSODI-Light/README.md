@@ -138,7 +138,7 @@ and lightweight agent prompts without publishing private personal instructions:
   [KSODI-Light Steering, Self-Alignment and Observer-Based Monitoring](./developer-notes/self-alignment-vs-steering.md)
 - Method orientation:
   [KSODI-Light Method Comparison](./KSODI%20method%20comparison-EN.md)
-  and [KSODI Terminology](./KSODI-CSOCI_EN.md)
+  and the [KSODI English Translation Table](./KSODI-CSOCI_EN.md)
 
 The guidance examples are not hidden system prompts. They are public,
 copy-and-paste-ready orientation prompts for user accounts, training contexts
