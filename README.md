@@ -58,7 +58,10 @@ KSODI does **not** evaluate people, personalities or intentions.
 It respects maximum privacy and operates exclusively on observable interaction states.
 
 This repository is organized into clearly separated components with different
-purposes and licenses.
+purposes. Published method documentation and method materials are covered by the
+repository-wide CC BY 4.0 licence unless a file or subfolder explicitly states
+otherwise. Separately published implementation code is a distinct work and may
+use its own software licence.
 
 ## Where KSODI Fits
 
@@ -261,7 +264,7 @@ state across a turn. Formal observer-based monitoring belongs to Standard-Eval,
 KSODI-Full or IDAS/SIRA-level implementations.
 → See: [KSODI-Light](./KSODI-Light)
 
-License: Creative Commons Attribution 4.0 (CC BY 4.0)
+Licence: [Creative Commons Attribution 4.0 International (CC BY 4.0)](./LICENSE.md)
 
 ---
 
@@ -275,7 +278,7 @@ current public Standard-Eval release. Relational structures beginning with
 stated explicitly.
 → See: [KSODI-Eval-Variants](./KSODI-Eval-Variants)
 
-License: Commercial / All rights reserved.
+Licence: [Creative Commons Attribution 4.0 International (CC BY 4.0)](./LICENSE.md)
 
 ---
 
@@ -302,15 +305,52 @@ For the project origin note and personal context, see:
 
 ## Licensing
 
-This repository contains components under different licenses.  
-Each folder contains its own LICENSE file.
+The published KSODI method documentation and method materials in this repository
+are licensed under the [Creative Commons Attribution 4.0 International licence
+(CC BY 4.0)](./LICENSE.md), unless a file or subfolder explicitly states
+otherwise.
 
-Unless explicitly stated otherwise in a subfolder license,  
-all rights are reserved.
+CC BY 4.0 permits reuse, copying, sharing, adaptation, forks, experimentation
+and commercial use. When licensed material is shared, the licence requires
+appropriate attribution, a reference to the licence, a source link where
+reasonably practicable and an indication of whether changes were made. It does
+not permit an adaptation to imply endorsement or official status.
 
-For licensing inquiries, integration, whitelabeling or enterprise adoptions please contact:
-ksodi@thevoid.email with details on intended use case.
+A practical attribution form is:
 
+> KSODI method by Anne Steinacker-Folkerts and Heiko Folkerts, with contributors
+> as listed in [Contributors.md](./Contributors.md). Source:
+> [KSODI-Public](https://github.com/Alkiri-dAraion/KSODI-Public). Licensed under
+> [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). Changes, if any,
+> should be identified.
+
+Where an individual file identifies additional creators or attribution parties,
+that information must also be retained as required by CC BY 4.0.
+
+Research, testing, forks, adaptations and contributions are welcome. Returning
+changes or research results to this repository is encouraged but is not a
+condition of CC BY 4.0.
+
+### Method documentation and implementation code
+
+This repository defines and documents the KSODI method and gives implementation
+orientation. Executable implementations are separate works and may use software
+licences.
+
+As of July 2026, a beta implementation of KSODI Standard-Eval is expected in
+approximately two to three months, possibly sooner, in
+[Patrick Barthelmäs's GitHub account](https://github.com/blackbaddl13). The
+implementation is currently expected to use the MIT License. Its own repository
+and licence file will be authoritative when it is published.
+
+The earlier decision to limit CC BY 4.0 to KSODI-Light while reserving the Eval
+variants is preserved and explained in
+[LICENSE_HISTORY.md](./LICENSE_HISTORY.md). The current decision separates the
+attribution-based licence for method documentation from the software licence for
+implementation code.
+
+For questions about attribution, integration or enterprise use, contact:
+ksodi@thevoid.email.
 
 The public KSODI v3.3 and v3.42 materials are preserved in historical archives
 for transparency and provenance. They are not current implementation guidance.
