@@ -22,13 +22,15 @@ Standard-Eval focuses on:
 - interaction coherence
 - drift and stability signals
 
-In the current v3.5 direction, interaction coherence is not resonance. `IK`
-belongs to the monadic coherence/projection layer. Relational gates and
-resonance-family interpretation belong to KSODI-Full.
+In the current v3.5 direction, interaction coherence is not resonance. The
+complete monadic Standard-Eval line is `K/S/O/D/I -> Z -> IK`; Standard-Eval
+ends with `IK`.
 
-R0 / R_0 belongs to KSODI-Full gate logic. It is used as an orientation point
-for deciding whether a dyadic or n-adic relational observation is meaningful
-before broader resonance-family observations are interpreted.
+After `Z`, the architecture branches. `R0 / R_0` belongs to KSODI-Full gate
+logic and is evaluated from distinguishable `Z`-trajectories in parallel to
+monadic `IK`. Only after a stable `R0` does `IK_rel` open the relational
+projection branch, followed by the further R-family. `R0`, `IK_rel` and the
+further R-family are not part of Standard-Eval.
 
 ## Current research direction
 
