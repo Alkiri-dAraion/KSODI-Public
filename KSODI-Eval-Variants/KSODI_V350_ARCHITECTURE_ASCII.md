@@ -1,9 +1,15 @@
 # KSODI v350 Eval Architecture Sketch
 
-Status: public orientation sketch for the current v350 direction
+Status: public orientation sketch for the v350 research architecture
 
-Purpose: show the current layer order shared by the Standard-Eval and Full
-research lines before the full v350 specification is public.
+Current release boundary: the public v3.5 method release extends through Layer 2,
+the monadic state vector `Z(t)` (`Z_vec`). Later layers remain visible here as
+staged research structure; their presence in this sketch does not mark them as
+released.
+
+Purpose: show the intended layer order shared by the Standard-Eval and Full
+research lines while keeping release status separate from architectural
+orientation.
 
 Position: this sketch sits at the `KSODI-Eval-Variants` root because the layer
 order crosses the public Standard-Eval folder and the R-family / KSODI-Full
@@ -15,10 +21,13 @@ gate and R-family observation visible.
 Boundary:
 
 - `KSODI-Light-Agent` is Layer 0 and belongs to the local agent / prompt side.
-- `KSODI Standard-Eval` covers the monadic Observer layers: operators, `Z` and
-  `IK`.
-- `KSODI-Full` covers the relational / dyadic / n-adic layers: `R0`,
-  `IK_rel`, `R_geom`, `R_pace` and future signal-media work.
+- `KSODI Standard-Eval` maps the monadic Observer layers: operators, `Z` and
+  `IK`. The current public release extends through `Z`.
+- `KSODI-Full` maps the relational / dyadic / n-adic research structure
+  beginning with `R0` and `IK_rel`. Public folder presence does not imply
+  release.
+- Pace, Voice and Takt belong to an optional overlay research layer. They are
+  not prerequisites for the monadic or relational core.
 
 ```text
 KSODI-Light-Agent
@@ -89,9 +98,9 @@ Layer 6 - R_geom
         |
         v
 
-Layer 7 - R_pace
+Layer 7 - optional Pace overlay research
   readable-language or sign-visible pacing structure
-  only where pacing is made visible inside the interaction
+  only where pacing is made visible and explicitly defined
 
       R_pace
       R_paceSigma / R_paceSigma(Hangar)
@@ -100,10 +109,11 @@ Layer 7 - R_pace
         |
         v
 
-Layer 8 - future signal-media extension
-  not active v350
-  later research may include audio recordings, radio,
-  Morse-like signals or wave/signal forms
+Layer 8 - optional Voice / Takt and signal-media research
+  future-work line associated with v3.60
+  may include voice, timing, audio recordings, radio,
+  Morse-like signals or other wave/signal forms
+  not part of the current public v3.5 method release
 ```
 
 ## Scope And Application Selection
@@ -176,20 +186,23 @@ Future direction:
 - Observer outputs should not be fed back in a way that lets the Observer
   influence itself without a separate control boundary
 
-## Active v350 Boundary
+## Core Sequence And Optional Research Boundary
 
-- `IK` is monadic coherence projection, not resonance.
+- The current public v3.5 method release extends through `Z(t)` (`Z_vec`).
+- `IK` is the intended monadic coherence projection, not resonance.
 - `R0` is evaluated from `Z` and runs in parallel to monadic `IK`; it is not
   downstream of `IK`.
 - `IK_rel` belongs inside the dyadic / n-adic branch and is evaluated only
   after stable `R0`.
-- `R_geom` is the current geometric core term inside the R-family.
-- `R_pace` may remain only as readable-language or sign-visible pacing dynamics where explicitly defined.
-- Audio, radio, Morse and wave/signal forms belong to later research, not to the active v350 core.
+- `R_geom` remains a research term inside the further R-family.
+- Pace, Voice and Takt remain optional overlay research. They are neither core
+  prerequisites nor part of the current public v3.5 method release.
+- The optional signal-media Observer work is associated with the v3.60
+  future-work line.
 
-## Inactive Terms For v350
+## Deprecated Identifiers
 
-Do not use these as active v350 terms:
+Do not use these legacy identifiers as current v3.5 core terms:
 
 ```text
 R_phase
@@ -197,11 +210,11 @@ R_struc
 R_struct
 R_takt
 R_freq
-Voice overlay
-Takt overlay
 ```
 
-Older public files may contain these terms as historical or deprecated material. They must not be read as current v350 structure.
+Voice, Takt and Pace as optional overlays must not be conflated with those
+legacy R-family identifiers. Older public files may contain the deprecated terms
+as historical material.
 
 ## Layer Files
 
@@ -212,8 +225,8 @@ Older public files may contain these terms as historical or deprecated material.
 - [Layer 4 - R0 Gate](./KSODI-Full/Full_v350/layer-4-r0-gate/README.md)
 - [Layer 5 - IK_rel](./KSODI-Full/Full_v350/layer-5-ik-rel/README.md)
 - [Layer 6 - R_geom](./KSODI-Full/Full_v350/layer-6-r-geom/README.md)
-- [Layer 7 - R_pace](./KSODI-Full/Full_v350/layer-7-r-pace/README.md)
-- [Layer 8 - Future Signal-Media](./KSODI-Full/Full_v350/layer-8-future-signal-media/README.md)
+- [Layer 7 - Optional Pace Overlay Research](./KSODI-Full/Full_v350/layer-7-r-pace/README.md)
+- [Layer 8 - Optional Voice / Takt and Signal-Media Research](./KSODI-Full/Full_v350/layer-8-future-signal-media/README.md)
 - [Shared Sigma / Hangar Method Note](./Hangar_350.md)
 
 Historical 3.3 and deprecated public drafts are preserved under
