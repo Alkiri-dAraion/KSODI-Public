@@ -1,6 +1,6 @@
 ## KSODI – Conceptual Note
 
-# A Structural Observation Model for Human-AI and Agentic Interaction
+# A Structural Observation Method for Human-AI and Agentic Interaction
 
 ⸻
 
@@ -8,10 +8,10 @@
 
 This conceptual note is an earlier public orientation text.
 
-The public v350 Standard-Eval line now contains all five Layer-1 operators, the
-Layer-2 state vector `Z` and the Layer-3 monadic `IK` projection. Relational
-gate `R0`, `IK_rel` and the R-family remain outside this note's current public
-reference scope until their separate review and release decisions are complete.
+The current public v3.5 release contains all five Layer-1 operators and the
+Layer-2 monadic state vector `Z(t)` (`Z_vec`). Layer-3 monadic `IK`, the
+relational gate `R0`, `IK_rel` and the further R-family remain outside the
+current public release until their separate release decisions are complete.
 
 Current public architecture orientation:
 [`KSODI_V350_ARCHITECTURE_ASCII.md`](./KSODI_V350_ARCHITECTURE_ASCII.md)
@@ -67,7 +67,8 @@ It assumes describable interaction structure.
 
 ### 2. Foundational Assumption
 
-During interaction between two or more semantic systems (e.g., human and AI, agent and agent, or n-agent constellations),
+During interaction between two or more distinguishable participants or systems
+(e.g., human and AI, agent and agent, or n-agent constellations),
 a temporary interaction condition may become observable. At the Light level,
 this is primarily a human-facing orientation condition. At the formal observer
 level, each distinguishable side is first treated through its own state
@@ -141,78 +142,73 @@ should be used or explicitly mapped.
 
 ⸻
 
-### 6. Formal Minimal Representation
+### 6. Observer-Side Minimal Representation
 
-For the minimal illustrative case, we consider two systems:
-	•	H = human semantic system
-	•	M = machine semantic system
+For the minimal illustrative case, we consider two distinguishable sides:
+	•	H = human-side observable interaction trajectory
+	•	M = machine-side observable interaction trajectory
 
-This H/M notation is an example. The same abstraction may be generalized to distinguishable systems A/B or to n-agent constellations where each participant produces an observable state trajectory.
+This H/M notation is an example. The same abstraction may be generalized to
+systems A/B or to n-agent constellations.
 
-Each has an internal semantic state
-(Z from the German word Zustand = “state”):
+For each side, the Observer reconstructs a state vector:
 
 Z_H(t), \quad Z_M(t)
 
-The user interface (UI) is not a cognitive space.
-It is a coupling function:
+These vectors do not represent internal cognitive, semantic or model states.
+They summarize what is observable under the declared operator definitions,
+reference spaces and observation profile.
 
-C : Z_H \leftrightarrow Z_M
+The user interface (UI) is neither a cognitive space nor a direct coupling
+between internal states. Interaction becomes observable through exchanged
+signals and subsequent events:
 
-Interaction results in mutual state change.
+U_{H\rightarrow M}(t), \quad U_{M\rightarrow H}(t)
 
-Note:
-U_H(t) and U_M(t) denote incoming signals.
-These signals may carry varying degrees of informational difference.
-The degree of informational value is later evaluated using the KSODI operator I, but the signals themselves are not identical with that operator.
+The Observer may update each reconstructed trajectory when new observable
+material becomes available:
 
-The state transitions are formally expressed as:
+Z_i(t+1) = g_i\bigl(Z_i(t), U_i^{obs}(t+1), Ref_i(t+1)\bigr)
 
-Z_H(t+1) = f_H(Z_H(t), U_M(t))
+This equation describes an observer-side reconstruction step. It does not claim
+access to an entity's internal mechanism or an internal state transition.
 
-Z_M(t+1) = f_M(Z_M(t), U_H(t))
-
-Where:
-	•	U_H(t) = input from human
-	•	U_M(t) = input from machine
-
-This forms a coupled dynamical system.
+The exchanged signals may carry varying degrees of informational difference.
+Their observable information impulse is evaluated through the KSODI operator
+`I`; the signals themselves are not identical with that operator.
 
 No teleology.
 No predefined target state.
-Only state evolution.
+Only observable state evolution under a declared observation profile.
 
 ⸻
 
-### 7. The Semantic State Vector
+### 7. The Observable State Vector
 
-To avoid symbol collision with derived quantities such as IK or R,
-KSODI defines a semantic state vector:
+To avoid symbol collision with derived quantities such as `IK` or the
+R-family, KSODI defines the observer-side state vector:
 
 \mathbf{Z}(t) = (K(t), S(t), O(t), D(t), I(t))
 
-This is not a new operator.
-It is a state representation.
-
-\mathbf{Z}(t) represents the current interaction state within the five-dimensional descriptive space.
+This is not a new operator and not a representation of an internal semantic
+state. It is the reconstructed interaction state within the five-dimensional
+KSODI observation space.
 
 ⸻
 
 ### 8. Dynamic Description
 
-If a semantic space exists, it must change over time.
-
-Therefore the following are meaningful:
+When observable states are reconstructed over time, the following become
+meaningful:
 	•	Current state:
 \mathbf{Z}(t)
-	•	First derivative (direction of change):
-\frac{d\mathbf{Z}}{dt}
-	•	Second derivative (change of direction / stability):
-\frac{d^2\mathbf{Z}}{dt^2}
+	•	First difference:
+\Delta\mathbf{Z}(t)
+	•	Second difference:
+\Delta^2\mathbf{Z}(t)
 
-This is not a physical claim.
-
-It is a minimal formal description of change.
+These are descriptions of observable change, not physical claims and not
+measurements of hidden cognition.
 
 ⸻
 
@@ -304,7 +300,7 @@ It proposes operational sufficiency.
 
 ### 13. No Esoteric Space
 
-The semantic space in KSODI is a formal abstraction.
+The KSODI observation space is a formal abstraction.
 
 It is:
 	•	relational
@@ -317,7 +313,7 @@ It is not:
 	•	an energy domain
 	•	a metaphysical ontology
 
-It is a structured observation model.
+It is part of a structured observation method.
 
 ⸻
 
@@ -325,7 +321,7 @@ It is a structured observation model.
 
 Clear distinction:
 	•	KSODI-Light → reflective working agreement and didactic orientation inside interaction
-	•	KSODI-Standard / Full → formal observer models
+	•	KSODI Standard-Eval / Full → formal observer layers of the method
 	•	Image / Diagram → visualization of dynamic coupling
 	•	Mathematics → description of state evolution
 
@@ -341,7 +337,7 @@ No mysticism.
 No ontology.
 No universal formula.
 
-A structural observation framework.
+A structural observation method embedded in the IDAS framework.
 
 Current v3.5 / v350 architecture sketch:
 
@@ -426,9 +422,10 @@ These implications remain hypothetical and are currently under experimental eval
 
 16.1 Human–Machine and Human–Agent Interaction
 
-If interaction can be described dynamically through the state vector \mathbf{Z}(t),
+If observable interaction trajectories can be described dynamically through
+the state vector \mathbf{Z}(t),
 KSODI may provide a structured lens for observing:
-	•	early semantic drift in long conversations
+	•	early interaction drift in long conversations
 	•	decreasing contextual coherence
 	•	loss of informational density
 	•	ambiguity accumulation
@@ -449,9 +446,10 @@ In systems where multiple agents interact
 
 KSODI could potentially serve as a relational observation layer between agents.
 
-If each agent interaction produces a describable semantic state vector,
-drift between agents, reinforcement loops, or instability propagation
-might become structurally detectable without inspecting internal weights.
+If each agent interaction produces a reconstructable observable state vector,
+drift between agents, reinforcement loops or instability propagation might
+become structurally detectable without inspecting internal weights or claiming
+access to internal states.
 
 In the current v3.5 direction, this relational reading requires explicit layer
 separation. `IK` describes interaction coherence and must not be treated as
@@ -472,7 +470,7 @@ Instead of asking:
 	•	Is this answer correct?
 
 One might ask:
-	•	How did the semantic state evolve?
+	•	How did the observable interaction state evolve?
 	•	Did clarity increase or decrease?
 	•	Is directional stability weakening?
 
@@ -480,7 +478,8 @@ One might ask:
 
 16.4 Governance and Observability
 
-If semantic drift is detectable through first and second derivatives of \mathbf{Z}(t),
+If interaction drift is detectable through first and second differences of
+\mathbf{Z}(t),
 KSODI might provide a minimal formal layer for:
 	•	early anomaly detection
 	•	interaction monitoring
@@ -515,49 +514,52 @@ This is the bridge between KSODI-Light, Standard-Eval, KSODI-Full and IDAS/SIRA.
 
 ### 17. From Visual Interaction to Formal Description
 
-The two diagrams below represent the same structural assumption
-at different levels of abstraction.
+A visual representation should keep three objects separate:
+
+	•	the distinguishable participants or systems
+	•	the exchanged, observable signals and events
+	•	the Observer that reconstructs separate `Z_i(t)` trajectories
 
 [Image Placeholder – Visual Representation]
 
-(Insert intuitive interaction diagram here.)
+(Insert an interaction diagram that preserves these boundaries.)
 
-This illustration represents the interaction as a dynamic coupling
-between two semantic systems.
-The UI acts as a structural interface, not as a cognitive space.
+The UI acts as a structural interface through which signals may become
+observable. It is not a cognitive space and does not provide direct access to
+internal states.
 
 ⸻
 
 [Image Placeholder – Minimal Formal Representation]
 
-(Insert minimal technical diagram here.)
+(Insert a minimal observer-side diagram.)
 
-The same interaction can be represented as a coupled dynamical system:
+The minimal description is:
 
-Z_H(t), \quad Z_M(t)
+U_{H\rightarrow M}(t), U_{M\rightarrow H}(t)
+\longrightarrow Observer
+\longrightarrow Z_H(t), Z_M(t)
 
-connected via C,
-with observable state evolution
-\frac{d\mathbf{Z}}{dt}
+The trajectories remain monadic at this point. Relational evaluation opens only
+through the separately defined gate `R0`, followed where justified by
+`IK_rel`.
 
 ⸻
 
 ### 18. Final Clarification
 
-The semantic space in KSODI is:
-	•	relational
+The KSODI observation space is:
 	•	temporary
 	•	functional
 	•	model-based
+	•	monadic before any relational branch is opened
 
-The two diagrams are not two different theories.
-
-They are two representations of the same structural assumption:
-
-Interaction can be described as the dynamic coupling of two semantic state systems.
+Visual and formal diagrams are two representations of the same methodological
+assumption: interaction can be observed through exposed signals and separately
+reconstructed trajectories without treating those trajectories as internal
+semantic states.
 
 ⸻
 
-Formal mathematical definitions of the KSODI interaction
-observability model will be published in a forthcoming
-technical paper.
+Formal definitions beyond the current public v3.5 release will be published
+with their respective method layers.
