@@ -595,7 +595,8 @@ if R0(t) >= theta_R0_stable:
 else:
     IK_rel(t) = not_applicable
 
-R0Sigma(W) = aggregate({R0(t) | t in W})
+W_app = {t in W | R0(t) != not_applicable}
+R0Sigma(W) = aggregate({R0(t) | t in W_app})
 R0Sigma(Hangar) = distribution({R0Sigma(W_i)})
 ```
 
