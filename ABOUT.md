@@ -75,7 +75,7 @@ In discussions with Silke, one key realization crystallized:
 “*You cannot not communicate*” may hold true for humans — but it does not translate directly to machines.  
 Machines do not begin with meaning; they begin with an **impulse**.
 
-Between 2023 and 2025, the approach evolved iteratively — at first sporadically, then with rapidly increasing intensity from late 2024 and spring 2025 onward — through day and night reflections, practical experimentation, and yes, sometimes even dreams about mathematics.  
+Between 2023 and 2025, the approach evolved iteratively — at first sporadically, then with rapidly increasing intensity from late 2024 and spring 2025 onward — through day and night reflections, practical experimentation, and yes, sometimes even dreams about mathematics.
 The focus shifted toward **observable interaction structure**, rather than content, intention or correctness.
 This includes user input, assistant output and the shared state that emerges
 between interacting systems.
