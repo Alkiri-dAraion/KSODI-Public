@@ -547,30 +547,50 @@ extensions in future Layer-8 work.
 
 ---
 
-### 10.8 R_full
+### 10.8 R-family boundary
 
-R_fullΣ is useful.
+`R_full` is a family label for the relational / Full branch, not a single
+scalar, operator, projection or independently aggregable layer.
 
-R_fullΣ aggregates combined relational and resonance-family behavior. R_full is the family label for the Full layer, not a single scalar score.
+Therefore there is no canonical generic `R_fullΣ` or `R_fullΣ(Hangar)` in
+v3.50. Aggregation must be resolved through the concrete branch that is being
+observed.
 
-R_fullΣ(Hangar) is useful.
+Current or research-facing branch-specific examples include:
 
-It shows distribution patterns of full resonance across windows, sessions or participant constellations.
+```text
+R0Σ
+IK_relΣ
+R_geomΣ
+R_paceΣ
+future signal-media Sigma views where explicitly defined
+```
+
+and their corresponding Hangar views:
+
+```text
+R0Σ(Hangar)
+IK_relΣ(Hangar)
+R_geomΣ(Hangar)
+R_paceΣ(Hangar)
+future signal-media Hangar views where explicitly defined
+```
 
 Relevant metrics:
 
 ```text
-ΔR_full
-Δ²R_full
-resonance drift
-resonance acceleration
+branch-specific drift
+branch-specific acceleration
 window stability
 dyadic or n-adic dispersion
 ```
 
 Use case:
 
-R_fullΣ and R_fullΣ(Hangar) show whether an interaction field remains coupled, becomes unstable or moves into another coupling pattern. They do not by themselves decide whether the coupling is desirable.
+The Hangar may compare branch-specific relational patterns across windows,
+sessions or participant constellations. It must not collapse the R-family back
+into a generic combined resonance score unless a separate, explicitly versioned
+composition function has been defined.
 
 ---
 
@@ -634,7 +654,7 @@ v3.50 deployment.
 | R_geom | dyadic / n-adic | yes | yes | yes | yes |
 | future signal-media extension | dyadic / n-adic or signal-specific | research | research | research | research |
 | R_pace | dyadic / n-adic timing | yes | maybe / yes | yes | yes |
-| R_full | dyadic / n-adic | yes | yes | yes | yes |
+| R-family branch | dyadic / n-adic | branch-specific only | branch-specific only | branch-specific only | branch-specific only |
 | RΣ | dyadic / n-adic aggregation | already Sigma | yes | yes | yes |
 | RΣ(Hangar) | dyadic / n-adic distribution | already Sigma(Hangar) | yes | yes | yes |
 

@@ -10,8 +10,9 @@ ________________________________________________________________
 published in successive stages. The five operator definitions `K0`, `S0`,
 `O0`, `D0` and `I0`, the monadic state vector `Z(t)` (`Z_vec`) and the
 monadic interaction-coherence projection `IK` have been published and form the
-current v3.5 release. Further components retain their own publication status as
-the release proceeds.
+current Standard-Eval release. The relational `R0` gate has been published
+separately as KSODI-Full Layer 4. Further components retain their own
+publication status as the release proceeds.
 
 Earlier v3.3 and v3.42 materials are preserved in clearly marked historical
 archives for transparency and provenance. They are not current implementation
@@ -278,9 +279,9 @@ Evaluation-oriented and governance-capable variants.
 Designed for numeric observability, drift detection and system-level stability monitoring with optional steering.
 KSODI v3.5 is being published in successive stages. The five operator
 definitions, the monadic state vector `Z(t)` (`Z_vec`) and monadic `IK` form the
-current public Standard-Eval release. Relational structures beginning with
-`R0` and `IK_rel` remain outside the current release until their status is
-stated explicitly.
+current public Standard-Eval release. The relational `R0` gate is released
+separately as KSODI-Full Layer 4. `IK_rel` and later R-family layers remain
+outside the current release until their own status is stated explicitly.
 → See: [KSODI-Eval-Variants](./KSODI-Eval-Variants)
 
 Licence: [Creative Commons Attribution 4.0 International (CC BY 4.0)](./LICENSE.md)
@@ -360,6 +361,7 @@ ksodi@thevoid.email.
 The public KSODI v3.3 and v3.42 materials are preserved in historical archives
 for transparency and provenance. They are not current implementation guidance.
 
-KSODI v3.5 is being published in successive stages. The current public release
-extends through the monadic interaction-coherence projection `IK`, which closes
-the Standard-Eval line.
+KSODI v3.5 is being published in successive stages. The current public
+Standard-Eval release extends through the monadic interaction-coherence
+projection `IK`, which closes the Standard-Eval line. The relational `R0` gate
+is released separately as KSODI-Full Layer 4.

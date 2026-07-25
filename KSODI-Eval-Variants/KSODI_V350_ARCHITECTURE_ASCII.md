@@ -2,9 +2,10 @@
 
 Status: public orientation sketch for the v350 research architecture
 
-Current release boundary: the public v3.5 method release extends through Layer 3,
-the monadic interaction-coherence projection `IK`, which closes Standard-Eval.
-Later relational layers remain visible here as staged research structure; their
+Current release boundary: the public v3.5 Standard-Eval release extends through
+Layer 3, the monadic interaction-coherence projection `IK`, which closes
+Standard-Eval. `R0` is released separately as KSODI-Full Layer 4. Later
+relational layers remain visible here as staged research structure; their
 presence in this sketch does not mark them as released.
 
 Purpose: show the intended layer order shared by the Standard-Eval and Full
@@ -28,7 +29,8 @@ Boundary:
   distinguishable `Z`-trajectories in parallel to monadic `IK`. Stable `R0`
   gates `IK_rel`, followed by the further R-family. `R0`, `IK_rel` and the
   further R-family are not part of Standard-Eval. Public folder presence does
-  not imply release.
+  not imply release. `R0` is released separately as the public Layer 4 gate;
+  `IK_rel` and later R-family layers remain staged.
 - Pace, Voice and Takt belong to an optional overlay research layer. They are
   not prerequisites for the monadic or relational core.
 
@@ -192,14 +194,16 @@ Future direction:
 ## Core Sequence And Optional Research Boundary
 
 - The current public v3.5 method release includes the complete monadic
-  Standard-Eval line `K/S/O/D/I -> Z -> IK`.
+  Standard-Eval line `K/S/O/D/I -> Z -> IK` and the separately released
+  KSODI-Full `R0` gate.
 - `IK` is the intended monadic coherence projection, not resonance, and closes
   Standard-Eval.
 - `R0` is evaluated from `Z` and runs in parallel to monadic `IK`; it is not
   downstream of `IK`.
 - `IK_rel` belongs inside the dyadic / n-adic branch and is evaluated only
   after stable `R0`.
-- `R0`, `IK_rel` and the further R-family are not part of Standard-Eval.
+- `R0`, `IK_rel` and the further R-family are not part of Standard-Eval. `R0`
+  is released separately; `IK_rel` and later R-family layers remain staged.
 - `R_geom` remains a research term inside the further R-family.
 - Pace, Voice and Takt remain optional overlay research. They are neither core
   prerequisites nor part of the current public v3.5 method release.

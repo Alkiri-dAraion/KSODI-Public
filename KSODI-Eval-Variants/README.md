@@ -84,9 +84,9 @@ Its complete line is `K/S/O/D/I -> Z -> IK`; Standard-Eval ends with `IK`.
 After `Z`, the architecture branches in parallel from monadic `IK` to the
 separate relational / Full line: `R0` gates relational comparison, `IK_rel`
 follows only after a stable gate, and the further R-family follows thereafter.
-`R0`, `IK_rel` and the further R-family are not part of Standard-Eval. These
-layers are released separately and must not be inferred to be current merely
-because their folder structure is public.
+`R0`, `IK_rel` and the further R-family are not part of Standard-Eval. `R0` is
+released separately as the public Layer 4 gate. `IK_rel` and later layers must
+not be inferred to be current merely because their folder structure is public.
 Explanatory and architectural – never decision-making.
 
 ## Intended Use
@@ -103,12 +103,12 @@ These variants are intended for:
 KSODI v3.5 is being published in successive stages. The current public release
 contains the five operator definitions `K0`, `S0`, `O0`, `D0` and `I0`,
 the `O0` source-need / reference-space applicability companion note, the
-monadic state vector `Z(t)` (`Z_vec`) and the monadic `IK` projection.
+monadic state vector `Z(t)` (`Z_vec`), the monadic `IK` projection and the
+relational `R0` gate.
 
-The relational layers beginning with `R0` and `IK_rel` remain outside the
-current public v3.5 release. Public folders or orientation files for later
-layers describe the intended research structure; their presence does not by
-itself mark those layers as released.
+`R0` is released as the first KSODI-Full layer, outside Standard-Eval. `IK_rel`
+and later R-family layers remain staged research until their own release status
+states otherwise.
 
 Earlier v3.3 and v3.42 materials are preserved in clearly marked historical
 archives for transparency and provenance. They are not current implementation

@@ -31,8 +31,9 @@ Special thanks to Benjamin Gage-Prater for early RAG testing and feedback, and t
 KSODI v3.5 is being published to this repository in successive stages. The five
 operator definitions `K0`, `S0`, `O0`, `D0` and `I0`, the monadic state vector
 `Z(t)` (`Z_vec`) and the monadic interaction-coherence projection `IK` have
-been published and form the current v3.5 release. Further components will
-follow as their publication proceeds.
+been published and form the current Standard-Eval release. The relational `R0`
+gate has been released separately as KSODI-Full Layer 4. Further components
+will follow as their publication proceeds.
 
 KSODI Standard-Eval is the complete monadic line `K/S/O/D/I -> Z -> IK` and
 ends with `IK`. After `Z`, the separate relational / Full branch evaluates
