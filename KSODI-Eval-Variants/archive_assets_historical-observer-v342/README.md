@@ -18,7 +18,7 @@ The underlying implementation and infrastructure work shown by these historical 
 
 See also:
 
-- [Contributors - Technical implementation and infrastructure](../../../Contributors.md#technical-implementation-and-infrastructure)
+- [Contributors - Technical implementation and infrastructure](../../Contributors.md#technical-implementation-and-infrastructure)
 - [KSODI-Light-Agent PoC by Patrick Barthelmäs](https://github.com/blackbaddl13/r-KSODI-POC)
 
 These images are included here as historical KSODI implementation artifacts and as visual material for explaining the later v3.5 method correction. Their inclusion does not change the repository's authorship and contribution boundaries.

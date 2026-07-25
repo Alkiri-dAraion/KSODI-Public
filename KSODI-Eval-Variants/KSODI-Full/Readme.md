@@ -48,9 +48,9 @@ used as an automated decision system.
 Public KSODI 3.3 materials contain known structural issues and unresolved
 separations between `Z`, `IK`, `R0`, `IK_rel` and the broader R-family. In the
 current public v3.5 release, the complete monadic Standard-Eval line through
-`IK` is published. The relational KSODI-Full layers beginning with `R0` and
-`IK_rel` remain a separately staged research structure until their individual
-release status is stated explicitly.
+`IK` is published. `R0` is also published separately as the KSODI-Full Layer 4
+gate. `IK_rel` and later R-family layers remain a separately staged research
+structure until their individual release status is stated explicitly.
 
 Current public v350 structure:
 
