@@ -23,21 +23,35 @@ Earlier v3.3 and v3.42 materials are preserved in clearly marked historical
 archives for transparency and provenance. They are not current implementation
 guidance.
 
-Note:
-The usual implementation setting for KSODI Standard-Eval and KSODI Full uses a layered system:
-1. Agent layer (L1): KSODI-Light may run as a reflective working agreement in user/account prompts or as a system prompt on one or more agents.
-2. Observer layer (L2): KSODI Standard-Eval provides the complete monadic evaluation line: `K/S/O/D/I -> Z -> IK`. Standard-Eval ends with `IK`.
-3. Relational / Full observer layer (L3): after `Z`, the architecture branches. KSODI Full evaluates `R0` from distinguishable `Z`-based trajectories in parallel to monadic `IK`; only after stable `R0` does `IK_rel` open the dyadic or n-adic coherence branch, followed by the further R-family. `R0`, `IK_rel` and the further R-family are not part of Standard-Eval.
-4. Optional pacing observation layer (L4): KSODI Full plus `R_pace` where pacing dynamics are explicitly defined and versioned.
-The observer is usually designed to give the agent or a human/governance layer feedback when the observed trajectory drifts out of a defined or explainable corridor.
+## KSODI v3.5 Layer Map
 
-v3.5 architecture across the current release and the further research line:
-`Z(t)` -> `Delta Z` / `Delta2 Z` -> parallel checks: `IK` as monadic
-projection per party / entity and `R0` as relational gate over distinguishable
-trajectories -> `IK_rel` as relational projection only after a stable gate ->
-`R_geom` as geometric coupling -> `R_geomSigma` /
-`R_geomSigma(Hangar)` where window or Hangar views are enabled -> optional:
-`R_pace` where pacing dynamics are explicitly defined.
+The canonical v3.5 architecture uses one layer map across the public release
+and the staged research line. `KSODI-Light` is the local, prompt-facing entry
+layer. It is not the larger or complete KSODI system. Standard-Eval and
+KSODI-Full are the observer-oriented method layers built on the same K/S/O/D/I
+logic.
+
+Current public release boundary: Standard-Eval is public through Layer 3
+(`K/S/O/D/I -> Z -> IK`). `R0` is public separately as the KSODI-Full Layer 4
+relational gate. Layer 5 and later remain staged unless their own release
+status says otherwise.
+
+| Layer | Name | Public status | Role |
+| --- | --- | --- | --- |
+| 0 | KSODI-Light | public | Local reflective working agreement for users, prompts, training and agent guidance. |
+| 1 | K/S/O/D/I operators | public | Observer-facing operator definitions for context, structure, grounding, clarity and information impulse. |
+| 2 | `Z(t)` / `Z_vec` | public | Monadic state vector over the five operator values. |
+| 3 | `IK` | public | Monadic interaction-coherence projection; closes Standard-Eval. |
+| 4 | `R0` / `R_0` gate | public | Relational comparability gate over distinguishable `Z`-trajectories; not a coupling or resonance score. |
+| 5 | `IK_rel` | private / staged | Relational coherence projection after stable `R0`. |
+| 6 | `R_geom` | private / staged | Geometric coupling in KSODI state space. |
+| 7 | `R_pace` | private / staged | Optional pacing overlay where pacing dynamics are explicitly defined. |
+| 8 | Future signal-media layer | future research | Voice, Takt, audio, radio, Morse-like or other signal-media work; not part of the current v3.5 release. |
+
+Implementation shortcuts such as "agent layer" or "observer layer" may appear
+in older notes, but the table above is the current public orientation map. For
+the fuller architecture sketch, see
+[KSODI v350 Eval Architecture Sketch](./KSODI-Eval-Variants/KSODI_V350_ARCHITECTURE_ASCII.md).
 
 # KSODI Method
 
