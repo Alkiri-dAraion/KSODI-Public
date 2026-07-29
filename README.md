@@ -9,6 +9,9 @@ ________________________________________________________________
 Legacy links using the former repository name `KSODI-Methode` may redirect here;
 please cite and link the canonical `KSODI-Public` URL.
 
+New to KSODI? Start with
+[Which KSODI Variant Do I Need?](./WHICH_KSODI.md).
+
 ⚠️ This documentation includes hypothesis-oriented material (written in the conditional / Konjunktiv), reflecting ongoing empirical exploration of the KSODI method.
 
 ⚠️ **Publication status — KSODI v3.5:** The current v3.5 line is being
@@ -52,6 +55,14 @@ Implementation shortcuts such as "agent layer" or "observer layer" may appear
 in older notes, but the table above is the current public orientation map. For
 the fuller architecture sketch, see
 [KSODI v350 Eval Architecture Sketch](./KSODI-Eval-Variants/KSODI_V350_ARCHITECTURE_ASCII.md).
+
+Mini note on `Hangar`: in KSODI, a Hangar view is not the whole private mental
+space of a person or agent. It is a method term for the observable or
+reconstructable projection space in which stored interaction states,
+trajectories, distributions, drift paths or point clouds can be compared over
+time. The term emerged during the method's development and is kept because it
+names a layer for which there is no exact established replacement in the
+current KSODI context.
 
 # KSODI Method
 
