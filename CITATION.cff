@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use or cite KSODI, please cite the canonical public repository."
+title: "KSODI Method"
+version: "3.5"
+date-released: "2026-07-29"
+authors:
+  - family-names: "Steinacker-Folkerts"
+    given-names: "Anne"
+  - family-names: "Folkerts"
+    given-names: "Heiko"
+repository-code: "https://github.com/Alkiri-dAraion/KSODI-Public"
+url: "https://github.com/Alkiri-dAraion/KSODI-Public"
+license: "CC-BY-4.0"

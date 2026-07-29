@@ -1,5 +1,10 @@
 About us
 
+Canonical public repository:
+[Alkiri-dAraion/KSODI-Public](https://github.com/Alkiri-dAraion/KSODI-Public).
+Older social or archive links using the former repository name `KSODI-Methode`
+may redirect here; `KSODI-Public` is the current repository name to cite.
+
 👋 Hi, I’m Anne Steinacker-Folkerts ("Alkiri-dAraion" in TESO). I came up with the idea for this project and am developing it together with Heiko Folkerts (IT security specialist, Dipl.-Ing. information technology) and - in the early phases in 2023/24 and again while preparing the paper - Silke Honerkamp (Dipl.-Pädagogin, DCG coach, with over 30 years of training experience in special environments) — along with important technical, reflective and testing support from friends.
 
 ✨ I’m an experienced IT-trainer, AI-Consultant and Governance-Admin with over 30 years of professional (national and international) teaching and project experience. My background spans roles as a GPOP team coach (Hogrefe-licensed), senior financial consultant, project leader, management board member, sales director, head of marketing and communications, speaker, and founder — with more than 10,000 people trained across business, government, education, and sports. I also hold the German advanced vocational qualification Pferdewirtschaftsmeisterin (DQR/EQF level 6; Bachelor Professional level) and have over 35 years of experience in training both people and animals.

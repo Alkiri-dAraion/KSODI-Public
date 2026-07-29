@@ -39,7 +39,9 @@ Wenn Ihr gerne mit formalen Systemen, dynamischen Prozessen oder rekursiven Denk
 
 Willkommen in KSODI. Der Einstieg ist einfach – die Tiefe überraschend. 
 
-* Die GitHub-Version ist öffentlich: https://github.com/Alkiri-dAraion/KSODI-Methode 
+* Die GitHub-Version ist öffentlich: https://github.com/Alkiri-dAraion/KSODI-Methode
+  (archival repository name; current canonical public repository:
+  https://github.com/Alkiri-dAraion/KSODI-Public)
 * Dort findet Ihr grundlegenden Input zur Methode. Und ja – wir waren 2 Monate schneller als Mircosoft 
 mit seinen „Wie verbessere ich die Nutzeranfragen – Interface im Copilot.
 

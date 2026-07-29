@@ -4,6 +4,11 @@
 
 ________________________________________________________________
 
+**Canonical repository:** The current public KSODI method repository is
+[Alkiri-dAraion/KSODI-Public](https://github.com/Alkiri-dAraion/KSODI-Public).
+Legacy links using the former repository name `KSODI-Methode` may redirect here;
+please cite and link the canonical `KSODI-Public` URL.
+
 ⚠️ This documentation includes hypothesis-oriented material (written in the conditional / Konjunktiv), reflecting ongoing empirical exploration of the KSODI method.
 
 ⚠️ **Publication status — KSODI v3.5:** The current v3.5 line is being
