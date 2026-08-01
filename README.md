@@ -13,8 +13,6 @@ New to KSODI? Start with
 [Which KSODI Variant Do I Need?](./WHICH_KSODI.md).
 For a compact architecture overview, see
 [KSODI Architecture](./ARCHITECTURE.md).
-AI agents and automated tools should read [AGENTS.md](./AGENTS.md) before
-summarizing or citing this repository.
 
 ⚠️ This documentation includes hypothesis-oriented material (written in the conditional / Konjunktiv), reflecting ongoing empirical exploration of the KSODI method.
 
@@ -25,6 +23,9 @@ monadic interaction-coherence projection `IK` have been published and form the
 current Standard-Eval release. The relational `R0` gate has been published
 separately as KSODI-Full Layer 4. Further components retain their own
 publication status as the release proceeds.
+
+AI agents and automated tools should read [AGENTS.md](./AGENTS.md) before
+summarizing or citing this repository.
 
 Earlier v3.3 and v3.42 materials are preserved in clearly marked historical
 archives for transparency and provenance. They are not current implementation

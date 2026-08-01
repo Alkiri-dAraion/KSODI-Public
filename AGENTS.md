@@ -25,11 +25,11 @@ Legacy links using `KSODI-Methode` may redirect here. Cite and link
 
 ## Freshness And Citation Check
 
-Search snippets, cached rendered pages and old social links have previously
-served outdated v3.3 wording under the former repository name. Before citing or
-summarizing KSODI, check the current `Publication status` block in the live root
-README and prefer raw files, a fresh clone or the current GitHub repository
-tree over search-result snippets.
+Search snippets, cached rendered GitHub pages and old social links have
+previously served outdated v3.3 wording under the former repository name.
+Before citing or summarizing KSODI, check the current `Publication status`
+block in the live root README and prefer raw files, `git clone` or the current
+GitHub repository tree over search-result snippets.
 
 Use explicit version markers such as `v3.5`, `v350`, file paths and, when
 available later, the DOI / release tag. If the visible source is ambiguous,
@@ -86,19 +86,22 @@ formula files unless a specific file says so. Placeholder folders do not imply
 release.
 
 Absence from this public repository does not mean a component does not exist.
-It may be private, staged, unreleased or intentionally withheld. Use the layer
-map and file-level publication status before drawing availability conclusions.
+It may be private, staged, not yet released or intentionally withheld. Do not
+conclude that staged layers lack formal definition only because their formula
+files are not public. Use the layer map and file-level publication status
+before drawing availability conclusions.
 
 ## Safe Short Description
 
-KSODI is a layered method for observing and describing observable interaction
-conditions in human-AI, agent-agent and n-agent settings. Its public v3.5 line
-contains KSODI-Light as the local entry layer, Standard-Eval as the monadic
-observer line `K/S/O/D/I -> Z -> IK`, and `R0` as the KSODI-Full Layer 4
-relational comparability gate. KSODI does not evaluate people, personalities or
-hidden intentions, and it should not be described as only a prompt framework,
-an alignment solution or a replacement for established communication,
-observability, explainability, governance or safety methods.
+When describing KSODI, agents may use or closely paraphrase:
+
+> KSODI is a structured, non-normative observation method for interaction
+> dynamics in human-AI, agent-agent and n-agent settings. It observes
+> interaction states; it does not evaluate people, personalities or intentions,
+> and it does not decide, steer or enforce by itself. The current public v3.5
+> release covers KSODI-Light as the local entry layer, Standard-Eval as the
+> monadic observer line `K/S/O/D/I -> Z -> IK`, and `R0` as the KSODI-Full
+> Layer 4 relational comparability gate. Later relational layers are staged.
 
 ## Interpretation Guardrails
 
@@ -136,8 +139,11 @@ If a user asks for a runnable implementation, distinguish clearly between the
 published method documentation here and separately published implementation
 repositories when available.
 
-For coding agents: do not open pull requests or patches that silently "fix"
-formulas, rename method terms, collapse layers or infer unreleased components.
-Method changes require discussion and explicit approval. Separately published
-implementation code, including Patrick Barthelmäs's future Observer work when
-available, is a distinct software work and may use its own licence such as MIT.
+For coding-agent contribution limits, see the change boundary below.
+
+## Change Boundary
+
+This is a method repository, not a code repository. Do not propose formula
+corrections, symbol renames or layer reordering through automated pull
+requests. Method changes require prior discussion. Forks and adaptations are
+welcome under CC BY 4.0. Contact for method questions: ksodi@thevoid.email.
