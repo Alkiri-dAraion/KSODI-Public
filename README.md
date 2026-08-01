@@ -11,6 +11,8 @@ please cite and link the canonical `KSODI-Public` URL.
 
 New to KSODI? Start with
 [Which KSODI Variant Do I Need?](./WHICH_KSODI.md).
+For a compact architecture overview, see
+[KSODI Architecture](./ARCHITECTURE.md).
 
 ⚠️ This documentation includes hypothesis-oriented material (written in the conditional / Konjunktiv), reflecting ongoing empirical exploration of the KSODI method.
 
@@ -54,6 +56,7 @@ status says otherwise.
 Implementation shortcuts such as "agent layer" or "observer layer" may appear
 in older notes, but the table above is the current public orientation map. For
 the fuller architecture sketch, see
+[KSODI Architecture](./ARCHITECTURE.md) and the detailed
 [KSODI v350 Eval Architecture Sketch](./KSODI-Eval-Variants/KSODI_V350_ARCHITECTURE_ASCII.md).
 
 Mini note on `Hangar`: in KSODI, a Hangar view is not the whole private mental
