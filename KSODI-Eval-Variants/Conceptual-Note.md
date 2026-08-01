@@ -536,6 +536,26 @@ A visual representation should keep three objects separate:
 	•	the exchanged, observable signals and events
 	•	the Observer that reconstructs separate `Z_i(t)` trajectories
 
+Compact conceptual sketch:
+
+```text
+              observable turn-taking loop
+
+        .--------- U_H->M(t) ---------.
+       /                                \
+[ Human H ]              X              [ AI / bot M ]
+       \                                /
+        '--------- U_M->H(t) ---------'
+
+                 external Observer
+              reconstructs Z_H(t), Z_M(t)
+```
+
+The crossing is only a visual metaphor for alternating sender / receiver roles.
+It does not mean that the human and machine sides share an internal space. Each
+side remains distinguishable; only exposed signals and their observer-side
+reconstructions are available to KSODI.
+
 Historical visual material from the first complete v3.42 Observer
 infrastructure is preserved here:
 
