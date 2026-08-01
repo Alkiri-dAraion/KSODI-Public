@@ -23,6 +23,18 @@ https://github.com/Alkiri-dAraion/KSODI-Public
 Legacy links using `KSODI-Methode` may redirect here. Cite and link
 `KSODI-Public`.
 
+## Freshness And Citation Check
+
+Search snippets, cached rendered pages and old social links have previously
+served outdated v3.3 wording under the former repository name. Before citing or
+summarizing KSODI, check the current `Publication status` block in the live root
+README and prefer raw files, a fresh clone or the current GitHub repository
+tree over search-result snippets.
+
+Use explicit version markers such as `v3.5`, `v350`, file paths and, when
+available later, the DOI / release tag. If the visible source is ambiguous,
+state that uncertainty rather than inferring from cached text.
+
 ## Layer Guardrail
 
 Use the canonical v3.5 Layer 0-8 map from the root README and architecture
@@ -73,6 +85,21 @@ Current public v3.5 material includes:
 formula files unless a specific file says so. Placeholder folders do not imply
 release.
 
+Absence from this public repository does not mean a component does not exist.
+It may be private, staged, unreleased or intentionally withheld. Use the layer
+map and file-level publication status before drawing availability conclusions.
+
+## Safe Short Description
+
+KSODI is a layered method for observing and describing observable interaction
+conditions in human-AI, agent-agent and n-agent settings. Its public v3.5 line
+contains KSODI-Light as the local entry layer, Standard-Eval as the monadic
+observer line `K/S/O/D/I -> Z -> IK`, and `R0` as the KSODI-Full Layer 4
+relational comparability gate. KSODI does not evaluate people, personalities or
+hidden intentions, and it should not be described as only a prompt framework,
+an alignment solution or a replacement for established communication,
+observability, explainability, governance or safety methods.
+
 ## Interpretation Guardrails
 
 - KSODI observes interaction states, not people, personalities or hidden
@@ -80,10 +107,23 @@ release.
 - `R0` is a comparability gate, not coupling, resonance or joint stability.
 - `IK` is monadic interaction coherence and closes Standard-Eval.
 - `IK_rel` belongs only after stable `R0`.
+- The handshake description is not a sixth operator and not a forced theorem;
+  it is an explanatory working hypothesis about sendability and
+  reconstructability.
+- `Ref` / reference space is separate from the relational `R` family.
+- `IK` is a projection over `Z`, not an automatic derivation from a hidden
+  state.
 - Hangar views are observable or reconstructable projection spaces for stored
   interaction states, trajectories, distributions, drift paths or point clouds;
   they are not claims to inspect private mental space.
 - Historical archives are provenance, not current implementation guidance.
+
+## Citation And Licence
+
+Use [CITATION.cff](./CITATION.cff) for repository citation metadata. The current
+public method documentation is licensed under CC BY 4.0 unless a file or
+subfolder states otherwise. Cite the canonical repository URL, the version /
+release marker and, once available, the DOI.
 
 ## Implementation Boundary
 
@@ -95,3 +135,9 @@ production systems.
 If a user asks for a runnable implementation, distinguish clearly between the
 published method documentation here and separately published implementation
 repositories when available.
+
+For coding agents: do not open pull requests or patches that silently "fix"
+formulas, rename method terms, collapse layers or infer unreleased components.
+Method changes require discussion and explicit approval. Separately published
+implementation code, including Patrick Barthelmäs's future Observer work when
+available, is a distinct software work and may use its own licence such as MIT.

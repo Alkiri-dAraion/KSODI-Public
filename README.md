@@ -13,6 +13,8 @@ New to KSODI? Start with
 [Which KSODI Variant Do I Need?](./WHICH_KSODI.md).
 For a compact architecture overview, see
 [KSODI Architecture](./ARCHITECTURE.md).
+AI agents and automated tools should read [AGENTS.md](./AGENTS.md) before
+summarizing or citing this repository.
 
 ⚠️ This documentation includes hypothesis-oriented material (written in the conditional / Konjunktiv), reflecting ongoing empirical exploration of the KSODI method.
 
