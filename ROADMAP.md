@@ -130,6 +130,34 @@ The broader KSODI mathematics and observer layers may then derive
 organization-specific insights across time, transitions and larger architectural
 spaces.
 
+## Governance Boundary Between Light, Observer and Controller
+
+KSODI-Light, KSODI Eval-Variants and any later controller architecture must
+remain clearly separated.
+
+KSODI-Light is local guidance for reflection, prompting, training and
+interaction hygiene. It may help a participant notice missing context, weak
+structure, insufficient grounding, unclear wording or low information movement
+from inside the working frame.
+
+KSODI Standard-Eval and KSODI-Full are external observer-oriented method layers.
+They should reconstruct exposed states, trajectories, drift and relational
+conditions from outside the prompt or local agent role. This separation matters
+because a participant cannot fully observe the frame that already shapes its
+own perception, available context, tools, retrieval state and permitted action
+space.
+
+A later controller must therefore be treated as a third role, not as the
+Observer itself. A controller may route approved feedback, escalation or
+intervention decisions, but only under explicit policy boundaries. It must not
+silently collapse KSODI-Light, Observer output and action control into one
+self-observing loop.
+
+This is a governance boundary, not merely a software pattern: the agent or user
+inside an environment is always affected by that environment's known frame. The
+Observer and any future controller must preserve enough distance, auditability
+and human oversight for the observation to remain meaningful.
+
 ## Human-AI team integration
 
 One major direction is the safe integration of artificial agents into human

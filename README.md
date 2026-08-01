@@ -62,10 +62,12 @@ status says otherwise.
 | 8 | Future signal-media layer | future research | Voice, rhythm/timing, audio, radio, Morse-like or other signal-media work; historical `Takt` labels are not active v3.5 terms. |
 
 Implementation shortcuts such as "agent layer" or "observer layer" may appear
-in older notes, but the table above is the current public orientation map. For
-the fuller architecture sketch, see
-[KSODI Architecture](./ARCHITECTURE.md) and the detailed
-[KSODI v350 Eval Architecture Sketch](./KSODI-Eval-Variants/KSODI_V350_ARCHITECTURE_ASCII.md).
+in older notes, but the table above is the current public orientation map.
+
+For a compact visual `KSODI-Standard-Eval` and `KSODI-Full` layer sketch, see
+the [KSODI v350 Eval Architecture Sketch](./KSODI-Eval-Variants/KSODI_V350_ARCHITECTURE_ASCII.md).
+For the fuller architecture orientation, see
+[KSODI Architecture](./ARCHITECTURE.md).
 
 Mini note on `Hangar`: in KSODI, a Hangar view is not the whole private mental
 space of a person or agent. It is a method term for the observable or
