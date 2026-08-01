@@ -38,17 +38,18 @@ The revised private reference line distinguishes monadic observation layers
 from dyadic and n-adic relational observation layers.
 
 This distinction matters for agentic systems: a human-machine, agent-agent or
-n-agent interaction may look active or even resonant while still lacking shared
-direction, comparability or stable interaction coherence.
+n-agent interaction may look active or even resonant while still lacking
+observable direction, comparability or stable interaction coherence.
 
-Public files in this folder should therefore be read as research-oriented
-material, not as a complete or tested specification.
+Public files in this folder should therefore be read as public method
+documentation for the released monadic Standard-Eval line, not as a complete
+software implementation or empirical validation claim.
 
 Action-adjacent material such as controlled intervention, policy-defined
 responses or controller boundaries belongs under KSODI-Full, not under
 Standard-Eval.
 
-## v350 Preview
+## v350 Public Release
 
 The reviewed v350 line is being released into this public repository step by
 step after private review.

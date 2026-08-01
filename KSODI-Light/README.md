@@ -229,5 +229,5 @@ See the repository [LICENSE.md](../LICENSE.md) for the complete legal text and
 
 ---
 
-© 2026 Anne Steinacker-Folkerts & Heiko Folkerts
+© 2026 Anne Steinacker-Folkerts, Heiko Folkerts and Silke Honerkamp
 Licensed under CC-BY-4.0

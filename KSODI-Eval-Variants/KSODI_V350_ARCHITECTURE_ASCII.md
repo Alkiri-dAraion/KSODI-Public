@@ -31,7 +31,8 @@ Boundary:
   further R-family are not part of Standard-Eval. Public folder presence does
   not imply release. `R0` is released separately as the public Layer 4 gate;
   `IK_rel` and later R-family layers remain staged.
-- Pace, Voice and Takt belong to an optional overlay research layer. They are
+- Pace, Voice and rhythm/timing belong to an optional overlay research layer.
+  Historical `Takt` labels are not active v3.5 core terms. These overlays are
   not prerequisites for the monadic or relational core.
 
 ```text
@@ -114,7 +115,7 @@ Layer 7 - optional Pace overlay research
         |
         v
 
-Layer 8 - optional Voice / Takt and signal-media research
+Layer 8 - optional Voice / rhythm/timing and signal-media research
   future-work line associated with v3.60
   may include voice, timing, audio recordings, radio,
   Morse-like signals or other wave/signal forms
@@ -205,7 +206,8 @@ Future direction:
 - `R0`, `IK_rel` and the further R-family are not part of Standard-Eval. `R0`
   is released separately; `IK_rel` and later R-family layers remain staged.
 - `R_geom` remains a research term inside the further R-family.
-- Pace, Voice and Takt remain optional overlay research. They are neither core
+- Pace, Voice and rhythm/timing remain optional overlay research. Historical
+  `Takt` labels are not active v3.5 core terms. These overlays are neither core
   prerequisites nor part of the current public v3.5 method release.
 - The optional signal-media Observer work is associated with the v3.60
   future-work line.
@@ -222,9 +224,9 @@ R_takt
 R_freq
 ```
 
-Voice, Takt and Pace as optional overlays must not be conflated with those
-legacy R-family identifiers. Older public files may contain the deprecated terms
-as historical material.
+Voice, rhythm/timing and Pace as optional overlays must not be conflated with
+those legacy R-family identifiers. Older public files may contain `Takt` or the
+deprecated terms as historical material.
 
 ## Layer Files
 
@@ -236,7 +238,7 @@ as historical material.
 - [Layer 5 - IK_rel](./KSODI-Full/Full_v350/layer-5-ik-rel/README.md)
 - [Layer 6 - R_geom](./KSODI-Full/Full_v350/layer-6-r-geom/README.md)
 - [Layer 7 - Optional Pace Overlay Research](./KSODI-Full/Full_v350/layer-7-r-pace/README.md)
-- [Layer 8 - Optional Voice / Takt and Signal-Media Research](./KSODI-Full/Full_v350/layer-8-future-signal-media/README.md)
+- [Layer 8 - Optional Voice / Rhythm-Timing and Signal-Media Research](./KSODI-Full/Full_v350/layer-8-future-signal-media/README.md)
 - [Shared Sigma / Hangar Method Note](./Hangar_350.md)
 
 Historical 3.3 and deprecated public drafts are preserved under

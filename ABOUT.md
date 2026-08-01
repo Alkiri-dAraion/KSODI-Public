@@ -14,7 +14,7 @@ We thank Patrick Barthelmäs for substantial technical implementation and infras
 
 We also thank Benjamin Gage-Prater for early private testing and RAG-related feedback in March 2025. His contribution helped observe how KSODI-Light changed response behavior in a controlled RAG setting, but it was limited to early testing and feedback rather than ongoing implementation or authorship.
 
-→ See also: [KSODI Development Timeline](./docs/timeline/KSODI_Timeline_since_2024-11.md) ([German version](./docs/timeline/KSODI_Timeline_seit_2024-11.md))
+→ See also: [KSODI Development Timeline](./docs/timeline/KSODI_Timeline_since_2023-05.md) ([German version](./docs/timeline/KSODI_Timeline_seit_2023-05.md))
 
 ## Why “ELKIM” appears in this repository
 
@@ -82,8 +82,8 @@ Machines do not begin with meaning; they begin with an **impulse**.
 
 Between 2023 and 2025, the approach evolved iteratively — at first sporadically, then with rapidly increasing intensity from late 2024 and spring 2025 onward — through day and night reflections, practical experimentation, and yes, sometimes even dreams about mathematics.
 The focus shifted toward **observable interaction structure**, rather than content, intention or correctness.
-This includes user input, assistant output and the shared state that emerges
-between interacting systems.
+This includes user input, assistant output and the observable interaction state
+reconstructed from distinguishable contributions between interacting systems.
 
 A central insight during this phase was that meaningful evaluation requires stepping back from both:
 - a purely developer-centric signal perspective, and
@@ -105,7 +105,9 @@ while humans think and communicate in the opposite direction (**K → S → O �
 
 🤓 This realization led to a fundamental clarification:  
 Neither classical communication theory nor signal theory alone is sufficient.  
-KSODI only works when the relevant perspectives are used **together**, in the right direction, and within a shared internal geometry — the *semantic KSODI space* between interacting systems.
+KSODI only works when the relevant perspectives are used **together**, in the
+right direction, and within a defined observation geometry — the *semantic
+KSODI space* used to compare interaction traces between systems.
 
 The next question followed naturally:  
 What if intention, direction and target space could be described — even with reduced precision — within a **five-dimensional observation space**?

@@ -59,7 +59,7 @@ status says otherwise.
 | 5 | `IK_rel` | private / staged | Relational coherence projection after stable `R0`. |
 | 6 | `R_geom` | private / staged | Geometric coupling in KSODI state space. |
 | 7 | `R_pace` | private / staged | Optional pacing overlay where pacing dynamics are explicitly defined. |
-| 8 | Future signal-media layer | future research | Voice, Takt, audio, radio, Morse-like or other signal-media work; not part of the current v3.5 release. |
+| 8 | Future signal-media layer | future research | Voice, rhythm/timing, audio, radio, Morse-like or other signal-media work; historical `Takt` labels are not active v3.5 terms. |
 
 Implementation shortcuts such as "agent layer" or "observer layer" may appear
 in older notes, but the table above is the current public orientation map. For
@@ -342,8 +342,8 @@ KSODI focuses on structured observation across five operators:
 The broader architectural framework integrating KSODI is referred to as IDAS (Interactive Dialog, Analytics & Steering).
 
 For a public development and contribution overview, see:
-[KSODI Development Timeline](./docs/timeline/KSODI_Timeline_since_2024-11.md)
-([German version](./docs/timeline/KSODI_Timeline_seit_2024-11.md))
+[KSODI Development Timeline](./docs/timeline/KSODI_Timeline_since_2023-05.md)
+([German version](./docs/timeline/KSODI_Timeline_seit_2023-05.md))
 
 For the project origin note and personal context, see:
 [ABOUT.md](./ABOUT.md)

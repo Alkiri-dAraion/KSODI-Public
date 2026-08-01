@@ -30,7 +30,7 @@ Current public boundary:
 | 5 | `IK_rel` | staged | Relational coherence projection after stable `R0`. |
 | 6 | `R_geom` | staged | Geometric coupling in KSODI state space. |
 | 7 | `R_pace` | staged | Optional pacing overlay where pacing dynamics are explicitly defined. |
-| 8 | Future signal-media layer | future research | Voice, Takt, audio, radio, Morse-like or other signal-media work. |
+| 8 | Future signal-media layer | future research | Voice, rhythm/timing, audio, radio, Morse-like or other signal-media work; historical `Takt` labels are not active v3.5 terms. |
 
 ## Method Position
 

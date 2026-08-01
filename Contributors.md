@@ -13,6 +13,9 @@ with Heiko Folkerts.
 
 Silke Honerkamp contributed important pedagogical, reflective and practical
 perspectives in early phases in 2023/24 and again while preparing the paper.
+For the public KSODI-Light layer, she is also named in the layer-specific
+licence notice because her early contribution included practical discussion
+and refinement of the operator labels and their use.
 
 ## Technical implementation and infrastructure
 
@@ -24,4 +27,4 @@ We also thank Benjamin Gage-Prater for early private testing and RAG-related fee
 
 ## Timeline
 
-See also: [KSODI Development Timeline](./docs/timeline/KSODI_Timeline_since_2024-11.md) ([German version](./docs/timeline/KSODI_Timeline_seit_2024-11.md)).
+See also: [KSODI Development Timeline](./docs/timeline/KSODI_Timeline_since_2023-05.md) ([German version](./docs/timeline/KSODI_Timeline_seit_2023-05.md)).

@@ -1,7 +1,7 @@
 # KSODI-Light Reflective Working Agreement Example
 
 This example is for users who want feedback on a request, an assistant answer
-or the shared state of the current turn.
+or the visible working frame of the current turn.
 
 It is meant to improve clarity and fit, not to judge the user or the assistant.
 
@@ -10,8 +10,8 @@ It is meant to improve clarity and fit, not to judge the user or the assistant.
 ```md
 Use KSODI-Light as a reflective working agreement.
 
-Please review my request, your answer, or the shared state of this turn with
-KSODI-Light before continuing.
+Please review my request, your answer, or the visible working frame of this
+turn with KSODI-Light before continuing.
 
 Use K/S/O/D/I:
 
