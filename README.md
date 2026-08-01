@@ -108,9 +108,10 @@ It respects maximum privacy and operates exclusively on observable interaction s
 
 This repository is organized into clearly separated components with different
 purposes. Published method documentation and method materials are covered by the
-repository-wide CC BY 4.0 licence unless a file or subfolder explicitly states
-otherwise. Separately published implementation code is a distinct work and may
-use its own software licence.
+CC BY 4.0 licence for this repository unless a file or subfolder explicitly
+states otherwise. This does not assign a licence to separately published
+software implementations, which are distinct works with their own repository
+licence.
 
 ## Where KSODI Fits
 
@@ -354,10 +355,10 @@ For the project origin note and personal context, see:
 
 ## Licensing
 
-The published KSODI method documentation and method materials in this repository
-are licensed under the [Creative Commons Attribution 4.0 International licence
-(CC BY 4.0)](./LICENSE.md), unless a file or subfolder explicitly states
-otherwise.
+The published KSODI method documentation and method materials in this
+repository are licensed under the [Creative Commons Attribution 4.0
+International licence (CC BY 4.0)](./LICENSE.md), unless a file or subfolder in
+this repository explicitly states otherwise.
 
 CC BY 4.0 permits reuse, copying, sharing, adaptation, forks, experimentation
 and commercial use. When licensed material is shared, the licence requires
@@ -382,9 +383,15 @@ condition of CC BY 4.0.
 
 ### Method documentation and implementation code
 
-This repository defines and documents the KSODI method and gives implementation
-orientation. Executable implementations are separate works and may use software
-licences.
+This repository defines and documents the KSODI method. It may include a very
+small observer-orientation note or minimal implementation guidance, but
+implementation is not the focus of this repository and such material should not
+be treated as a production-ready software implementation.
+
+Executable implementations are separate software works with their own
+repository and licence. Their licence does not follow automatically from this
+method repository, and this repository's CC BY 4.0 licence does not determine
+the licence of those external software works.
 
 As of July 2026, a beta implementation of KSODI Standard-Eval is expected in
 approximately two to three months, possibly sooner, in

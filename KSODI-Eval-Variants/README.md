@@ -123,16 +123,19 @@ comparability and R-family observation.
 ## Licence
 
 The published method documentation and method materials in this directory are
-covered by the repository-wide [Creative Commons Attribution 4.0 International
-licence](../LICENSE.md), unless a file or subfolder explicitly states otherwise.
+covered by the [Creative Commons Attribution 4.0 International
+licence](../LICENSE.md) for this repository, unless a file or subfolder in this
+repository explicitly states otherwise.
 
 Reuse, adaptation, forks, experimentation and commercial use are permitted under
 CC BY 4.0. Appropriate attribution must be retained, changes must be indicated
 and the licence and source must be referenced as required by the licence.
 
-A separately published software implementation is a distinct work and may use
-its own software licence. See the root [Licensing section](../README.md#licensing)
-and [Licence Decision History](../LICENSE_HISTORY.md).
+A separately published software implementation is a distinct work with its own
+repository and software licence. The licence of implementation repositories
+does not follow automatically from this method directory. See the root
+[Licensing section](../README.md#licensing) and [Licence Decision
+History](../LICENSE_HISTORY.md).
 
 ---
 

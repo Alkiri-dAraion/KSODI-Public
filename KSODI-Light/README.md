@@ -5,7 +5,7 @@
 
 [![CC BY 4.0][cc-by-badge]][cc-by]
 <br>
-The published method documentation and method materials in this repository are licensed under a [Creative Commons Attribution 4.0 International License][cc-by], unless a file or subfolder explicitly states otherwise.
+The published method documentation and method materials in this repository are licensed under a [Creative Commons Attribution 4.0 International License][cc-by], unless a file or subfolder in this repository explicitly states otherwise. Separately published software implementations are distinct works with their own repository licences.
 
 
 ## CC-License
