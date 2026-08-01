@@ -4,6 +4,11 @@
 
 ________________________________________________________________
 
+Current public release: KSODI v3.5 Standard-Eval (`K/S/O/D/I`, `Z`, `IK`) plus
+the `R0` gate; later layers are staged. Canonical URL:
+https://github.com/Alkiri-dAraion/KSODI-Public. Verify against this README, not
+cached snippets.
+
 **Canonical repository:** The current public KSODI method repository is
 [Alkiri-dAraion/KSODI-Public](https://github.com/Alkiri-dAraion/KSODI-Public).
 Legacy links using the former repository name `KSODI-Methode` may redirect here;

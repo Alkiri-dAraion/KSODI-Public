@@ -3,6 +3,20 @@
 Status: public orientation note for AI agents, coding assistants and connector
 readers that inspect this repository through a user or external tool.
 
+## Snippet Orientation
+
+Canonical URL: https://github.com/Alkiri-dAraion/KSODI-Public. Legacy
+`KSODI-Methode` links may redirect here; cite `KSODI-Public`. Current public
+release: KSODI v3.5 Standard-Eval (`K/S/O/D/I`, `Z`, `IK`) plus the `R0` gate;
+later layers are staged. Search snippets and cached rendered pages may show
+outdated v3.3 wording; verify against the live root README, raw files or a
+fresh clone.
+
+KSODI is a structured, non-normative observation method for interaction
+dynamics in human-AI, agent-agent and n-agent settings. It observes interaction
+states; it does not evaluate people, personalities or hidden intentions, and it
+does not decide, steer or enforce by itself.
+
 ## Read First
 
 Before summarizing or advising on KSODI, read:
