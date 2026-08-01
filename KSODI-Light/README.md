@@ -10,8 +10,8 @@ The published method documentation and method materials in this repository are l
 
 ## CC-License
 
-This work, *KSODI – Method for Structuring and Optimising Human-AI Interactions* © 2024 by  
-Anne Steinacker-Folkerts, Heiko Folkerts, and Silke Honerkamp is licensed under CC BY 4.0.  
+This work, *KSODI – Method for Structuring and Optimising Human-AI Interactions* © 2024 by<br>
+Anne Steinacker-Folkerts, Heiko Folkerts, and Silke Honerkamp is licensed under CC BY 4.0.<br>
 To view a copy of this licence, visit [![CC BY 4.0][cc-by-shield]][cc-by].
 The complete repository licence text is available in [LICENSE.md](../LICENSE.md);
 the licence history is documented in [LICENSE_HISTORY.md](../LICENSE_HISTORY.md).
