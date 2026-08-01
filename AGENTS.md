@@ -9,8 +9,9 @@ Canonical URL: https://github.com/Alkiri-dAraion/KSODI-Public. Legacy
 `KSODI-Methode` links may redirect here; cite `KSODI-Public`. Current public
 release: KSODI v3.5 Standard-Eval (`K/S/O/D/I`, `Z`, `IK`) plus the `R0` gate;
 later layers are staged. Search snippets and cached rendered pages may show
-outdated v3.3 wording; verify against the live root README, raw files or a
-fresh clone.
+outdated v3.3 wording; historical v3.42 Observer images are provenance, not
+current v3.5 implementation guidance. Verify against the live root README, raw
+files or a fresh clone.
 
 KSODI is a structured, non-normative observation method for interaction
 dynamics in human-AI, agent-agent and n-agent settings. It observes interaction
@@ -133,7 +134,8 @@ When describing KSODI, agents may use or closely paraphrase:
 - Hangar views are observable or reconstructable projection spaces for stored
   interaction states, trajectories, distributions, drift paths or point clouds;
   they are not claims to inspect private mental space.
-- Historical archives are provenance, not current implementation guidance.
+- Historical archives and v3.42 Observer assets are provenance, not current
+  implementation guidance.
 
 ## Citation And Licence
 
