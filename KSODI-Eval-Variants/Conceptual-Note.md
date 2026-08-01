@@ -536,9 +536,21 @@ A visual representation should keep three objects separate:
 	•	the exchanged, observable signals and events
 	•	the Observer that reconstructs separate `Z_i(t)` trajectories
 
-[Image Placeholder – Visual Representation]
+Historical visual material from the first complete v3.42 Observer
+infrastructure is preserved here:
 
-(Insert an interaction diagram that preserves these boundaries.)
+- [Historical Observer Assets - v3.3 to v3.42 Line](./archive_assets_historical-observer-v342/README.md)
+- [score heatmap example](./archive_assets_historical-observer-v342/images/ksodi-metrics-841280d3_Score_Heatmap.png)
+- [operator radar example](./archive_assets_historical-observer-v342/images/ksodi-metrics-841280d3_Operator_Profile__Radar_.png)
+- [scores over time example](./archive_assets_historical-observer-v342/images/ksodi-metrics-841280d3_Scores_Over_Time.png)
+- [3D IK trajectory example](./archive_assets_historical-observer-v342/images/ksodi-metrics-841280d3_3D_IK_Trajectory.png)
+
+These images are historical work artifacts, not current v3.5 diagrams. They
+are valuable because observing the first full infrastructure helped clarify why
+`Z(t)`, `IK` and the later R-family must be separated, why missing or invisible
+data sources require explicit handling rather than silent `O0 = 0`
+interpretation, and why normalization, masking and applicability policies must
+be specified more carefully.
 
 The UI acts as a structural interface through which signals may become
 observable. It is not a cognitive space and does not provide direct access to
@@ -546,9 +558,7 @@ internal states.
 
 ⸻
 
-[Image Placeholder – Minimal Formal Representation]
-
-(Insert a minimal observer-side diagram.)
+Minimal observer-side representation:
 
 The minimal description is:
 

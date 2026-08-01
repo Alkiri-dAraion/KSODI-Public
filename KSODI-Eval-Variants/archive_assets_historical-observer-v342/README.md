@@ -27,13 +27,17 @@ These images are included here as historical KSODI implementation artifacts and 
 
 The images are useful because they show both implementation progress and central reasons for the v3.5 correction.
 
-They demonstrate that the implementation was already producing observable operator views, but the method layer still needed sharper separation between:
+They demonstrate that the first complete historical Observer infrastructure was
+already producing observable operator views, but the method layer still needed
+sharper separation between:
 
 - `Z(t)` as explicit state vector
 - `IK` as interaction coherence projection
 - `R0` as relational gate
 - the broader R-family as relational / resonance-family observation
 - the visible reference space required for `O0`
+- applicability, masking and normalization rules for values that should not be
+  compared or interpreted as ordinary zeros
 
 The most important methodological correction is that coherence is not resonance.
 
@@ -141,6 +145,7 @@ For v3.5, this means:
 - `R0` must decide whether relational comparison is stable enough before later R-family interpretation
 - missing sources must not silently become a model-quality failure
 - `O0 = 0` and `O0 = not_applicable` must be distinguished carefully
+- normalization and masking policies must be explicit before values are compared across windows, projections or relational branches
 - the Observer may only claim grounding relative to sources, retrieval chunks, graph objects, tool outputs or metadata that are visible to it
 - source-state diagnostics must be separated from answer grounding
 - implementation dashboards must be interpreted together with the data boundary that produced them
@@ -154,7 +159,8 @@ They may be cited as evidence that implementation and visualization work
 existed before the v3.5 correction. They should not be used as implementation
 guidance for current KSODI Standard-Eval or KSODI-Full work.
 
-The v3.5 line is now being published in successive stages. The five operator
-definitions and the monadic state vector `Z(t)` (`Z_vec`) form the current
-public release. Further monadic and relational components retain their own
-publication status as the release proceeds.
+The v3.5 line is now being published in successive stages. The current public
+release contains the five operator definitions, the monadic state vector
+`Z(t)` (`Z_vec`), the monadic `IK` projection, the shared Hangar / Sigma note
+and the separate public `R0` gate. `IK_rel` and later R-family components retain
+their own publication status as the release proceeds.
