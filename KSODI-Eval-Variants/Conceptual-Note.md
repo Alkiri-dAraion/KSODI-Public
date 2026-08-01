@@ -16,9 +16,10 @@ with `IK`.
 After `Z`, the architecture branches. The separate relational / Full branch
 evaluates `R0` from distinguishable `Z`-trajectories in parallel to monadic
 `IK`. Only after a stable `R0` does `IK_rel` open the relational projection
-branch, followed by the further R-family. `R0`, `IK_rel` and the further
-R-family are not part of Standard-Eval and remain outside the current public
-release until their separate release decisions are complete.
+branch, followed by the further R-family. `R0` is not part of Standard-Eval,
+but it is published separately as the current public KSODI-Full Layer 4 gate.
+`IK_rel` and the further R-family remain staged until their separate release
+decisions are complete.
 
 Current public architecture orientation:
 [`KSODI_V350_ARCHITECTURE_ASCII.md`](./KSODI_V350_ARCHITECTURE_ASCII.md)

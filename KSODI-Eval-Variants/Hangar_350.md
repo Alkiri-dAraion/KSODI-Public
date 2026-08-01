@@ -124,7 +124,10 @@ The relational branch observes dyadic or n-adic trajectory coupling.
 
 KSODI Full denotes the relational and resonance observation family. It is not a single scalar score.
 
-The branch begins with R₀, because R₀ checks whether two or more monadic trajectories can meaningfully be related at all.
+The branch begins with
+[`R0`](./KSODI-Full/Full_v350/layer-4-r0-gate/R0_Relational-Gate.md),
+because R₀ checks whether two or more monadic trajectories can meaningfully be
+related at all.
 
 In this note, `RΣ` and `RΣ(Hangar)` are generic R-family Sigma labels. They do
 not introduce a separate active v3.50 Sigma layer. In concrete v3.50 files, the
