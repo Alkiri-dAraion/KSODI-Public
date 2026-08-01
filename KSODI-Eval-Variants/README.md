@@ -70,9 +70,10 @@ The Observer layer may use existing observability material such as traces, threa
 
 A central challenge is that developers and architects must understand how the selected input, reference space, retrieval context, tool state and operator mapping affect the five KSODI operators. These choices shape `Z(t)` and all later projections, drift metrics, relational gates and visualizations. If the input frame is wrong, the observer may not merely measure badly; it may observe a different system state than intended.
 
-This is why the historical public v3.3 material should not be used as an
-implementation reference. The v3.5 line clarifies these layer boundaries before
-the respective layers are released for implementation and testing.
+This is why the historical public v3.3 material and the later v3.42 working /
+implementation line should not be used as current implementation references.
+The v3.5 line clarifies these layer boundaries before the respective layers are
+released for implementation and testing.
 
 ## Variants
 

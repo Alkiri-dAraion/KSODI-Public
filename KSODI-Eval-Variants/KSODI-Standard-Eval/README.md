@@ -5,9 +5,10 @@
 This folder contains public KSODI Standard-Eval materials for conceptual
 review, discussion and version traceability.
 
-The public 3.3 files are archived as historical material. They are not
-recommended as an implementation reference. They contain known structural issues
-and are being superseded by the reviewed v350 line.
+The public 3.3 files and the later v3.42 working / implementation line are
+historical material. They are not recommended as current implementation
+references. They contain or reveal known structural issues and are superseded
+by the reviewed v350 line.
 
 ## Role of Standard-Eval
 
@@ -69,3 +70,7 @@ projection.
   Standard-Eval structure.
 - `archive_historical-v33` preserves public 3.3 operator, state-vector,
   projection and deprecated draft material for provenance and transparency.
+- The historical v3.42 Observer assets are preserved separately under
+  [`../archive_assets_historical-observer-v342`](../archive_assets_historical-observer-v342/README.md).
+  They document implementation and dashboard work from the v3.3 to v3.42 line,
+  not current v350 implementation guidance.

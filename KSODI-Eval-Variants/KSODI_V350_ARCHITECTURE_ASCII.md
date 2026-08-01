@@ -243,3 +243,5 @@ deprecated terms as historical material.
 
 Historical 3.3 and deprecated public drafts are preserved under
 [`KSODI-Standard-Eval/archive_historical-v33`](./KSODI-Standard-Eval/archive_historical-v33/README.md).
+Historical v3.42 Observer assets are preserved under
+[`archive_assets_historical-observer-v342`](./archive_assets_historical-observer-v342/README.md).
