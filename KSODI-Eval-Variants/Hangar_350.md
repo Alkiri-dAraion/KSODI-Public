@@ -48,6 +48,11 @@ The transient coupling zone between participants belongs to the handshake /
 interaction process. The Hangar preserves comparable traces after such
 interaction has produced observable signals.
 
+In turn-taking, the receiver of one observable contribution may become the next
+sender. The Hangar may compare the resulting traces across windows, but it does
+not merge the participants' inner processing spaces into a shared internal
+Hangar.
+
 ---
 
 ## 2. Simple and Complex Observation Views

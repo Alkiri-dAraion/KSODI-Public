@@ -45,6 +45,11 @@ context, structure, grounding, clarity and information impulse become
 sendable. Receiver-side reconstruction does not simply read the same sequence
 backward as a score. The receiver first encounters informational difference and
 discernibility before grounding, structure and context can be reconstructed.
+If the receiver answers, that receiver becomes the next sender: outgoing
+sendability is again described in K/S/O/D/I direction, while the next receiving
+side reconstructs through I/D/O/S/K. This alternating role change belongs to
+the observable interaction process; it is not a sixth operator, not a shared
+inner space and not a Controller step.
 This is why current wording treats I as **Observable Information Impulse**
 rather than generic "information depth".
 
@@ -339,6 +344,10 @@ Additional v3.5 boundary:
 	•	The KSODI Handshake is treated as a working hypothesis about sendability,
 		receiver-side reconstructability and feedback capability, not as a sixth
 		operator or a separate score
+	•	In turn-taking, the receiver may become the next sender; KSODI therefore
+		separates outgoing K/S/O/D/I sendability from incoming I/D/O/S/K
+		reconstruction without claiming access to either participant's inner
+		Hangar
 
 No mysticism.
 No ontology.
