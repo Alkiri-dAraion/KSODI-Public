@@ -36,6 +36,13 @@ Earlier v3.3 and v3.42 materials are preserved in clearly marked historical
 archives for transparency and provenance. They are not current implementation
 guidance.
 
+Historical Observer evidence: KSODI has already been explored in a complete
+v3.42 Observer infrastructure with dashboards, heatmaps, trajectory views and
+comparison views. The public image archive is useful as evidence that the
+method can be operationalized, while also showing why the v3.5 method layer now
+separates `Z(t)`, `IK`, `R0` and later R-family work more carefully. See the
+[Historical Observer Assets](./KSODI-Eval-Variants/archive_assets_historical-observer-v342/README.md).
+
 ## KSODI v3.5 Layer Map
 
 The canonical v3.5 architecture uses one layer map across the public release
@@ -285,7 +292,7 @@ A central implementation challenge is that developers and system architects must
 
 In other words: KSODI is not only a scoring surface. It requires careful decisions about what is observed, how input is transformed into K/S/O/D/I, how `Z(t)` is formed, and how later projections, drift metrics, relational gates and visualizations are derived from it.
 
-Historical implementation note: earlier KSODI implementation work in the v3.3 to v3.42 period already explored a Kubernetes / microservice-oriented architecture with operator and Observer components. The v3.5 transition does not discard that carrier architecture. It reworks the method layer: `Z(t)` is made explicit, `IK` is separated from the R-family because coherence is not resonance, `R0` is introduced as a relational gate, and source / reference-space visibility is treated more carefully. Older outputs, dashboards or diagrams should therefore be read as historical implementation context rather than as current v3.5 method specifications.
+Historical implementation note: earlier KSODI implementation work in the v3.3 to v3.42 period already explored a Kubernetes / microservice-oriented architecture with operator and Observer components. Selected historical dashboards and visual outputs are preserved in the [Historical Observer Assets](./KSODI-Eval-Variants/archive_assets_historical-observer-v342/README.md). The v3.5 transition does not discard that carrier architecture. It reworks the method layer: `Z(t)` is made explicit, `IK` is separated from the R-family because coherence is not resonance, `R0` is introduced as a relational gate, and source / reference-space visibility is treated more carefully. Older outputs, dashboards or diagrams should therefore be read as historical implementation context rather than as current v3.5 method specifications.
 
 This work is ongoing and empirical validation is still in progress.
 
