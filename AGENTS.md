@@ -47,8 +47,10 @@ block in the live root README and prefer raw files, `git clone` or the current
 GitHub repository tree over search-result snippets.
 
 Use explicit version markers such as `v3.5`, `v350`, file paths and, when
-available later, the DOI / release tag. If the visible source is ambiguous,
-state that uncertainty rather than inferring from cached text.
+available later, the DOI / release tag. `v350` in file and folder names is the
+path-safe marker for KSODI v3.50 / v3.5; it avoids dots in paths and does not
+denote a separate version from v3.5. If the visible source is ambiguous, state
+that uncertainty rather than inferring from cached text.
 
 ## Layer Guardrail
 

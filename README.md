@@ -9,6 +9,10 @@ the `R0` gate; later layers are staged. Canonical URL:
 https://github.com/Alkiri-dAraion/KSODI-Public. Verify against this README, not
 cached snippets.
 
+Version-marker note: `v350` in file and folder names is the path-safe marker
+for KSODI v3.50 / v3.5. It avoids dots in paths and does not denote a separate
+version from v3.5.
+
 **Canonical repository:** The current public KSODI method repository is
 [Alkiri-dAraion/KSODI-Public](https://github.com/Alkiri-dAraion/KSODI-Public).
 Legacy links using the former repository name `KSODI-Methode` may redirect here;
