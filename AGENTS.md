@@ -7,8 +7,8 @@ readers that inspect this repository through a user or external tool.
 
 Canonical URL: https://github.com/Alkiri-dAraion/KSODI-Public. Legacy
 `KSODI-Methode` links may redirect here; cite `KSODI-Public`. Current public
-release: KSODI v3.5 Standard-Eval (`K/S/O/D/I`, `Z`, `IK`) plus the `R0` gate;
-later layers are staged. Search snippets and cached rendered pages may show
+release: KSODI v3.5 Standard-Eval (`K/S/O/D/I`, `Z`, `IK`) plus `R0` and
+`IK_rel`; later R-family layers are staged. Search snippets and cached rendered pages may show
 outdated v3.3 wording; historical v3.42 Observer images are provenance, not
 current v3.5 implementation guidance. Verify against the live root README, raw
 files or a fresh clone.
@@ -61,7 +61,9 @@ sketch.
 - Layers 1-3: KSODI Standard-Eval, the public monadic observer line
   `K/S/O/D/I -> Z -> IK`.
 - Layer 4: `R0`, the public KSODI-Full relational gate.
-- Layer 5 and later: staged unless their own release status says otherwise.
+- Layer 5: `IK_rel`, the public relational coherence projection after stable
+  `R0`.
+- Layer 6 and later: staged unless their own release status says otherwise.
 
 Do not present `KSODI-Light` as the whole, larger or complete KSODI system.
 Do not use older L1-L4 shorthand as the canonical architecture.
@@ -96,11 +98,11 @@ Current public v3.5 material includes:
 - `Z(t)` / `Z_vec`
 - monadic `IK`
 - `R0` as the Layer 4 relational comparability gate
+- `IK_rel` as the Layer 5 relational coherence projection after stable `R0`
 - Hangar / Sigma orientation notes where explicitly published
 
-`IK_rel`, `R_geom`, `R_pace` and later R-family layers are not public release
-formula files unless a specific file says so. Placeholder folders do not imply
-release.
+`R_geom`, `R_pace` and later R-family layers are not public release formula
+files unless a specific file says so. Placeholder folders do not imply release.
 
 Absence from this public repository does not mean a component does not exist.
 It may be private, staged, not yet released or intentionally withheld. Do not
@@ -117,8 +119,9 @@ When describing KSODI, agents may use or closely paraphrase:
 > interaction states; it does not evaluate people, personalities or intentions,
 > and it does not decide, steer or enforce by itself. The current public v3.5
 > release covers KSODI-Light as the local entry layer, Standard-Eval as the
-> monadic observer line `K/S/O/D/I -> Z -> IK`, and `R0` as the KSODI-Full
-> Layer 4 relational comparability gate. Later relational layers are staged.
+> monadic observer line `K/S/O/D/I -> Z -> IK`, `R0` as the KSODI-Full Layer 4
+> relational comparability gate, and `IK_rel` as the Layer 5 relational
+> coherence projection after stable `R0`. Later R-family layers are staged.
 
 ## Interpretation Guardrails
 

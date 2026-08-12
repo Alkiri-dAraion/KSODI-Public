@@ -5,7 +5,7 @@
 ________________________________________________________________
 
 Current public release: KSODI v3.5 Standard-Eval (`K/S/O/D/I`, `Z`, `IK`) plus
-the `R0` gate; later layers are staged. Canonical URL:
+the `R0` gate and `IK_rel`; later R-family layers are staged. Canonical URL:
 https://github.com/Alkiri-dAraion/KSODI-Public. Verify against this README, not
 cached snippets.
 
@@ -57,8 +57,8 @@ logic.
 
 Current public release boundary: Standard-Eval is public through Layer 3
 (`K/S/O/D/I -> Z -> IK`). `R0` is public separately as the KSODI-Full Layer 4
-relational gate. Layer 5 and later remain staged unless their own release
-status says otherwise.
+relational gate, and `IK_rel` is public as Layer 5. Layer 6 and later remain
+staged unless their own release status says otherwise.
 
 | Layer | Name | Public status | Role |
 | --- | --- | --- | --- |
@@ -67,7 +67,7 @@ status says otherwise.
 | 2 | `Z(t)` / `Z_vec` | public | Monadic state vector over the five operator values. |
 | 3 | `IK` | public | Monadic interaction-coherence projection; closes Standard-Eval. |
 | 4 | `R0` / `R_0` gate | public | Relational comparability gate over distinguishable `Z`-trajectories; not a coupling or resonance score. |
-| 5 | `IK_rel` | private / staged | Relational coherence projection after stable `R0`. |
+| 5 | `IK_rel` | public | Relational coherence projection after stable `R0`. |
 | 6 | `R_geom` | private / staged | Geometric coupling in KSODI state space. |
 | 7 | `R_pace` | private / staged | Optional pacing overlay where pacing dynamics are explicitly defined. |
 | 8 | Future signal-media layer | future research | Voice, rhythm/timing, audio, radio, Morse-like or other signal-media work; historical `Takt` labels are not active v3.5 terms. |
@@ -335,8 +335,9 @@ Designed for numeric observability, drift detection and system-level stability m
 KSODI v3.5 is being published in successive stages. The five operator
 definitions, the monadic state vector `Z(t)` (`Z_vec`) and monadic `IK` form the
 current public Standard-Eval release. The relational `R0` gate is released
-separately as KSODI-Full Layer 4. `IK_rel` and later R-family layers remain
-outside the current release until their own status is stated explicitly.
+separately as KSODI-Full Layer 4, and `IK_rel` is released as KSODI-Full Layer
+5. `R_geom`, `R_pace` and later R-family layers remain outside the current
+release until their own status is stated explicitly.
 → See: [KSODI-Eval-Variants](./KSODI-Eval-Variants)
 
 Licence: [Creative Commons Attribution 4.0 International (CC BY 4.0)](./LICENSE.md)

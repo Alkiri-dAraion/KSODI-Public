@@ -86,8 +86,9 @@ After `Z`, the architecture branches in parallel from monadic `IK` to the
 separate relational / Full line: `R0` gates relational comparison, `IK_rel`
 follows only after a stable gate, and the further R-family follows thereafter.
 `R0`, `IK_rel` and the further R-family are not part of Standard-Eval. `R0` is
-released separately as the public Layer 4 gate. `IK_rel` and later layers must
-not be inferred to be current merely because their folder structure is public.
+released separately as the public Layer 4 gate, and `IK_rel` is released as the
+public Layer 5 relational coherence projection. Later R-family layers must not
+be inferred to be current merely because their folder structure is public.
 Explanatory and architectural – never decision-making.
 
 ## Intended Use
@@ -108,8 +109,9 @@ monadic state vector `Z(t)` (`Z_vec`), the monadic `IK` projection and the
 relational `R0` gate.
 
 `R0` is released as the first KSODI-Full layer, outside Standard-Eval. `IK_rel`
-and later R-family layers remain staged research until their own release status
-states otherwise.
+is released as the second public KSODI-Full layer. `R_geom`, `R_pace` and later
+R-family layers remain staged research until their own release status states
+otherwise.
 
 Earlier v3.3 and v3.42 materials are preserved in clearly marked historical
 archives for transparency and provenance. They are not current implementation

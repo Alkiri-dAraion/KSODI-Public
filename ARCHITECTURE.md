@@ -15,8 +15,9 @@ Current public boundary:
 
 - Standard-Eval is public through Layer 3: `K/S/O/D/I -> Z -> IK`.
 - `R0` is public separately as KSODI-Full Layer 4.
-- `IK_rel`, `R_geom`, `R_pace` and later signal-media work remain staged unless
-  their own release status says otherwise.
+- `IK_rel` is public separately as KSODI-Full Layer 5.
+- `R_geom`, `R_pace` and later signal-media work remain staged unless their own
+  release status says otherwise.
 
 ## Layer Map
 
@@ -27,7 +28,7 @@ Current public boundary:
 | 2 | `Z(t)` / `Z_vec` | public | State vector over the five operator values. |
 | 3 | `IK` | public | Monadic interaction-coherence projection; closes Standard-Eval. |
 | 4 | `R0` / `R_0` gate | public | Relational comparability gate over distinguishable `Z`-trajectories. |
-| 5 | `IK_rel` | staged | Relational coherence projection after stable `R0`. |
+| 5 | `IK_rel` | public | Relational coherence projection after stable `R0`. |
 | 6 | `R_geom` | staged | Geometric coupling in KSODI state space. |
 | 7 | `R_pace` | staged | Optional pacing overlay where pacing dynamics are explicitly defined. |
 | 8 | Future signal-media layer | future research | Voice, rhythm/timing, audio, radio, Morse-like or other signal-media work; historical `Takt` labels are not active v3.5 terms. |
@@ -60,8 +61,11 @@ Layer 3: IK
 Layer 4: R0
    relational comparability gate
 
-Layer 5+: IK_rel -> R_geom -> R_pace -> future signal-media work
-   staged relational / R-family research
+Layer 5: IK_rel
+   relational coherence projection after stable R0
+
+Layer 6+: R_geom -> R_pace -> future signal-media work
+   staged R-family research
 ```
 
 For choosing the right entry point, see

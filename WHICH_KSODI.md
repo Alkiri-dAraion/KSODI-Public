@@ -52,9 +52,9 @@ Layer 1 operators, Layer 2 `Z(t)` and Layer 3 `IK`.
 
 Use **KSODI-Full** if your system has distinguishable interaction sides and you
 need to decide whether relational comparison is methodically meaningful. The
-public v3.5 Full release currently includes `R0` as Layer 4. `IK_rel`,
-`R_geom`, `R_pace` and later R-family work remain staged unless their own
-release status states otherwise.
+public v3.5 Full release currently includes `R0` as Layer 4 and `IK_rel` as
+Layer 5. `R_geom`, `R_pace` and later R-family work remain staged unless their
+own release status states otherwise.
 
 ## Implementation Status
 
@@ -83,6 +83,6 @@ executable code.
    - [KSODI Standard-Eval](./KSODI-Eval-Variants/KSODI-Standard-Eval/README.md)
      for monadic numeric observation.
    - [KSODI-Full](./KSODI-Eval-Variants/KSODI-Full/Full_v350/README.md) for
-     relational gates and later staged relational layers.
+     relational gates, `IK_rel` and later staged R-family layers.
 4. Treat historical archives as provenance, not current implementation
    guidance.

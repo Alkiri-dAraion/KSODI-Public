@@ -18,8 +18,9 @@ evaluates `R0` from distinguishable `Z`-trajectories in parallel to monadic
 `IK`. Only after a stable `R0` does `IK_rel` open the relational projection
 branch, followed by the further R-family. `R0` is not part of Standard-Eval,
 but it is published separately as the current public KSODI-Full Layer 4 gate.
-`IK_rel` and the further R-family remain staged until their separate release
-decisions are complete.
+`IK_rel` is published separately as the current public KSODI-Full Layer 5
+relational coherence projection. The further R-family remains staged until
+separate release decisions are complete.
 
 Current public architecture orientation:
 [`KSODI_V350_ARCHITECTURE_ASCII.md`](./KSODI_V350_ARCHITECTURE_ASCII.md)
