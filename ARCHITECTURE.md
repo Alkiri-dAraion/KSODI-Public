@@ -59,14 +59,18 @@ Layer 1: K/S/O/D/I
 Layer 2: Z(t)
    state vector
 
-Layer 3: IK
-   monadic coherence projection
+After Z(t), KSODI branches:
 
-Layer 4: R0
-   relational comparability gate
+   Layer 3: IK
+      monadic coherence projection
 
-Layer 5: IK_rel
-   relational coherence projection after stable R0
+   Layer 4: R0
+      relational comparability gate
+
+Only after stable R0:
+
+   Layer 5: IK_rel
+      relational coherence projection
 
 Layer 6+: R_geom -> R_pace -> future signal-media work
    staged R-family research
