@@ -1,4 +1,4 @@
-# Historical Observer Assets - v3.3 to v3.42 Line
+# Historical Observer Assets - v3.3 Implementation / v3.42 Transition Context
 
 - Status: historical implementation artifacts
 - Current method status: deprecated as v3.5 specification material
@@ -8,7 +8,10 @@
 
 This folder preserves selected visual artifacts from earlier KSODI Observer infrastructure work.
 
-The images belong to the v3.3 to v3.42 implementation line. They show that an Observer-oriented implementation path already existed, including operator scoring, heatmaps, trajectory plots, drift views and comparison views.
+The images belong to Patrick Barthelmaes's historical v3.3 implementation
+state and were later used as v3.42 / v3.5 transition evidence. They show that
+an Observer-oriented implementation path already existed, including operator
+scoring, heatmaps, trajectory plots, drift views and comparison views.
 
 They are not current v3.5 method specifications.
 
@@ -34,6 +37,7 @@ sharper separation between:
 - `Z(t)` as explicit state vector
 - `IK` as interaction coherence projection
 - `R0` as relational gate
+- `IK_rel` as relational coherence projection after stable `R0`
 - the broader R-family as relational / resonance-family observation
 - the visible reference space required for `O0`
 - applicability, masking and normalization rules for values that should not be
@@ -41,13 +45,16 @@ sharper separation between:
 
 The most important methodological correction is that coherence is not resonance.
 
-In the older line, interaction coherence, relational comparability and resonance-family observation were still too close to each other. The v3.5 line separates them more sharply:
+In the older v3.3 implementation line, `IK` and resonance-family material were
+still mixed in the reported projection, and `Z(t)` was only implicit in the
+implementation path. The v3.5 line separates them more sharply:
 
 ```text
 Z(t)  = observable interaction state
 IK    = interaction coherence projection
 R0    = relational gate
-R-family = relational / resonance-family observation after the gate
+IK_rel = relational coherence projection after stable R0
+R-family = further relational / resonance-family observation after the gate
 ```
 
 The most important visible O-pattern is that `O0` often appears as `0.00` or fully red in the heatmaps while other operators such as `K0` and `D0` remain active.
@@ -98,6 +105,8 @@ Relevant examples:
 ### IK and Evolution Views
 
 The 3D trajectory and evolution surface views are historical artifacts for the earlier projection and visualization approach. They are useful for documenting implementation progress, but they should not be read as final v3.5 separation of `Z(t)`, `IK`, `R0`, `IK_rel` and the R-family.
+In particular, the label `IK` in these historical images may still carry mixed
+IK / resonance-family semantics from the v3.3 implementation state.
 
 Relevant examples:
 
@@ -128,8 +137,9 @@ Coherence is not resonance.
 ```
 
 In v3.5, `IK` is treated as monadic interaction coherence projection. `R0`
-is evaluated separately from `Z`-based trajectories as the relational gate. The
-R-family belongs after that gate and must not be collapsed back into `IK`.
+is evaluated separately from distinguishable `Z`-based trajectories as the
+relational gate. `IK_rel` follows only after stable `R0`. The later R-family
+belongs after that gate and must not be collapsed back into `IK`.
 
 Second:
 
@@ -162,5 +172,6 @@ guidance for current KSODI Standard-Eval or KSODI-Full work.
 The v3.5 line is now being published in successive stages. The current public
 release contains the five operator definitions, the monadic state vector
 `Z(t)` (`Z_vec`), the monadic `IK` projection, the shared Hangar / Sigma note
-and the separate public `R0` gate. `IK_rel` and later R-family components retain
-their own publication status as the release proceeds.
+and the separate public `R0` gate and `IK_rel` relational projection. Later
+R-family components retain their own publication status as the release
+proceeds.

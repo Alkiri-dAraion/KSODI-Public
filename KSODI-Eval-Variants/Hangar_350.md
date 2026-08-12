@@ -120,7 +120,9 @@ Z(t)
 
 The IK branch observes monadic projection and coherence dynamics.
 
-The relational branch observes dyadic or n-adic trajectory coupling.
+The relational branch first observes dyadic or n-adic comparability and
+relational projection. Later R-family layers may observe trajectory coupling
+where their own branch definitions are released.
 
 KSODI Full denotes the relational and resonance observation family. It is not a single scalar score.
 
@@ -675,7 +677,8 @@ The five operators construct the observable state vector Z.
 Z enables two branches:
 
 1. The IK branch observes monadic coherence projection.
-2. The KSODI Full relational branch observes dyadic or n-adic trajectory coupling.
+2. The KSODI Full relational branch observes dyadic or n-adic comparability,
+   relational projection and, in later R-family layers, trajectory coupling.
 
 Sigma is needed wherever single-turn values are insufficient.
 

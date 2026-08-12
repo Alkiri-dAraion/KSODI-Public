@@ -557,10 +557,10 @@ does not mean that the human and machine sides share an internal space. Each
 side remains distinguishable; only exposed signals and their observer-side
 reconstructions are available to KSODI.
 
-Historical visual material from the first complete v3.42 Observer
-infrastructure is preserved here:
+Historical visual material from the first complete v3.3 Observer
+implementation is preserved here:
 
-- [Historical Observer Assets - v3.3 to v3.42 Line](./archive_assets_historical-observer-v342/README.md)
+- [Historical Observer Assets - v3.3 Implementation / v3.42 Transition Context](./archive_assets_historical-observer-v342/README.md)
 - [score heatmap example](./archive_assets_historical-observer-v342/images/ksodi-metrics-841280d3_Score_Heatmap.png)
 - [operator radar example](./archive_assets_historical-observer-v342/images/ksodi-metrics-841280d3_Operator_Profile__Radar_.png)
 - [scores over time example](./archive_assets_historical-observer-v342/images/ksodi-metrics-841280d3_Scores_Over_Time.png)
@@ -568,10 +568,10 @@ infrastructure is preserved here:
 
 These images are historical work artifacts, not current v3.5 diagrams. They
 are valuable because observing the first full infrastructure helped clarify why
-`Z(t)`, `IK` and the later R-family must be separated, why missing or invisible
-data sources require explicit handling rather than silent `O0 = 0`
-interpretation, and why normalization, masking and applicability policies must
-be specified more carefully.
+`Z(t)` must be explicit, why `IK`, `R0`, `IK_rel` and the later R-family must be
+separated, why missing or invisible data sources require explicit handling
+rather than silent `O0 = 0` interpretation, and why normalization, masking and
+applicability policies must be specified more carefully.
 
 The UI acts as a structural interface through which signals may become
 observable. It is not a cognitive space and does not provide direct access to

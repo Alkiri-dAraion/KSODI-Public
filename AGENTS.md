@@ -65,6 +65,10 @@ sketch.
   `R0`.
 - Layer 6 and later: staged unless their own release status says otherwise.
 
+Sequence guardrail: after `Z(t)`, monadic `IK` and relational `R0` are separate
+branches. Do not rewrite the method as `Z -> IK -> R0`. `R0` gates `IK_rel`;
+later R-family layers follow only after their own release status is explicit.
+
 Do not present `KSODI-Light` as the whole, larger or complete KSODI system.
 Do not use older L1-L4 shorthand as the canonical architecture.
 

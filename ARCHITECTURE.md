@@ -19,6 +19,10 @@ Current public boundary:
 - `R_geom`, `R_pace` and later signal-media work remain staged unless their own
   release status says otherwise.
 
+After `Z(t)`, the architecture branches: `IK` is the monadic projection, while
+`R0` is evaluated in parallel as the relational comparability gate over
+distinguishable `Z`-trajectories. `R0` is not calculated from `IK`.
+
 ## Layer Map
 
 | Layer | Name | Status | Meaning |

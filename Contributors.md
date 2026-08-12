@@ -69,16 +69,18 @@ We thank Patrick Barthelmäs for substantial technical implementation and
 infrastructure work around KSODI, including the
 [KSODI-Light-Agent PoC](https://github.com/blackbaddl13/r-KSODI-POC) and later
 work toward the first full implementation of KSODI-Standard Eval & KSODI Full
-in the first officially referenced V2.3 line.
+in a separately versioned implementation line.
 
 Patrick is also acknowledged as an important contributor to the R-family
 development context. His developer-side reflection on resonance / tonality, the
 early Observer implementation with Kubernetes-style separation of operator
 services, controlled local infrastructure, vector and graph database contexts,
-and the historical v3.42 visualizations helped reveal the need to separate
-interaction coherence from resonance. The mathematical method definitions in
-this repository remain Anne's responsibility unless a specific concept states
-otherwise.
+and the historical visualizations of the v3.3 implementation helped reveal the
+need to separate interaction coherence from resonance. In that implementation
+state, `IK` and resonance-family material were still mixed in the reported
+projection, and `Z(t)` existed only implicitly in the implementation path. The
+mathematical method definitions in this repository remain Anne's responsibility
+unless a specific concept states otherwise.
 
 Executable implementations are separate software works. Published
 implementations are expected to live in Patrick's repository context and to use
