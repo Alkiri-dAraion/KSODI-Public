@@ -7,13 +7,33 @@ KSODI has three practical entry points. You do not need all of them for every
 use case. Choose the smallest variant that fits the observable interaction you
 want to work with.
 
+For the complete Layer 0-8 topology, branch point after `Z(t)` and current
+publication boundary, see the root
+[KSODI v350 Architecture Sketch](./KSODI_V350_ARCHITECTURE_ASCII.md).
+
 ## Quick Choice
 
-| If you want to... | Start with | Why |
-| --- | --- | --- |
-| Learn the method, improve prompting or create a shared reflection language | [KSODI-Light](./KSODI-Light/README.md) | Light is the human-facing entry layer for users, trainers, teams and simple agent guidance. |
-| Observe one interaction trajectory numerically | [KSODI Standard-Eval](./KSODI-Eval-Variants/KSODI-Standard-Eval/README.md) | Standard-Eval observes a monadic line: one party, agent or interaction-state trajectory through `K/S/O/D/I -> Z -> IK`. |
-| Compare distinguishable trajectories in a relational setting | [KSODI-Full](./KSODI-Eval-Variants/KSODI-Full/Full_v350/README.md) | Full begins where relational comparability matters: `R0` checks whether distinguishable `Z`-trajectories can be compared before later relational projections are used. |
+| If you want to... | Start with | Canonical layers | Required infrastructure | Effect / function |
+| --- | --- | --- | --- | --- |
+| Learn the method, improve prompting or create a shared reflection language | [KSODI-Light](./KSODI-Light/README.md) | Layer 0 | No special infrastructure. It can be used in one chat, through an account prompt or embedded in a developer / system prompt on any suitable model or platform. | Prompt improvement, reflective self-alignment, lightweight local steering and agent guidance. |
+| Observe one interaction trajectory numerically | [KSODI Standard-Eval](./KSODI-Eval-Variants/KSODI-Standard-Eval/README.md) | Layers 1-3 | A separate Observer architecture that reconstructs and evaluates observable states and trajectories. | Pure observability across the monadic line `K/S/O/D/I -> Z -> IK`, including drift, stability and monadic coherence. |
+| Compare distinguishable trajectories in a relational setting | [KSODI-Full](./KSODI-Eval-Variants/KSODI-Full/Full_v350/README.md) | Layers 4-8; currently public through Layer 5 | An Observer architecture with distinguishable `Z`-trajectories, declared reference spaces and observation windows. | Pure relational observability beginning with the `R0` Handshake gate, followed by `IK_rel` and the further R-family. |
+
+## Architecture Boundary
+
+KSODI-Full begins methodically at Layer 4, but it consumes distinguishable
+`Z`-trajectories produced through Layers 1 and 2. After `Z(t)`, the architecture
+branches: monadic `IK` is Layer 3, while relational `R0` is evaluated in
+parallel as Layer 4. `R0` is not calculated from `IK`.
+
+KSODI Standard-Eval and KSODI-Full are observability architectures. They do not
+decide, intervene or steer by themselves. Automated alignment, feedback routing
+or intervention requires a separate Controller architecture with declared
+governance corridors. This Controller architecture remains a Future-Work
+publication line.
+
+Prompt-level self-alignment and lightweight local steering in KSODI-Light must
+not be confused with system-level Controller steering.
 
 ## What The Words Mean
 
@@ -82,8 +102,8 @@ executable code.
 ## Minimal Reading Path
 
 1. Read this guide.
-2. Read the root [README](./README.md) for the public release boundary and
-   layer map.
+2. Read the root [architecture sketch](./KSODI_V350_ARCHITECTURE_ASCII.md) for
+   the canonical Layer 0-8 map, branch point and publication boundary.
 3. Choose one branch:
    - [KSODI-Light](./KSODI-Light/README.md) for learning, training and prompt
      guidance.
