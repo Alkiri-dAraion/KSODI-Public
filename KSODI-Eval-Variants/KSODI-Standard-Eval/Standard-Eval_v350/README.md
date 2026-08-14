@@ -33,7 +33,7 @@ Relational gates, dyadic / n-adic views and the R-family belong to
 
 Architecture overview:
 
-[`../../KSODI_V350_ARCHITECTURE_ASCII.md`](../../KSODI_V350_ARCHITECTURE_ASCII.md)
+[`../../../KSODI_V350_ARCHITECTURE_ASCII.md`](../../../KSODI_V350_ARCHITECTURE_ASCII.md)
 
 Shared Sigma / Hangar method note:
 
