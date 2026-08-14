@@ -50,6 +50,34 @@ assistant. In that sense, KSODI-Light does not only reflect the user's prompt.
 It can also reflect assistant output, feedback from the user and the shared
 interaction state across a turn.
 
+## Reflective, Dyadic and Lightweight-Steering Boundary
+
+KSODI-Light is a reflective, dyadically situated self-alignment layer for
+human-AI, agent-agent or other distinguishable interaction sides.
+
+It can support lightweight internal steering. For example, a participant may
+be instructed to name an operator, ask for clarification or adjust its own
+contribution when a declared context-specific threshold is not reached.
+
+When both interaction sides know and use the KSODI-Light frame, each side may
+reflect on and adjust its own contribution. This creates reciprocal,
+dyadically situated self-steering within a shared working agreement.
+
+When KSODI-Light is implemented only on the agent side, the steering remains
+local and asymmetric. The interaction is still dyadic, but the reflective
+method is not necessarily shared by both participants. Whether this improves
+interaction quality must be observed empirically and must not be assumed from
+prompt compliance alone.
+
+KSODI-Light does not rank or evaluate persons. Its thresholds are
+context-specific orientation and intervention points, not universal quality
+standards.
+
+Dyadic use at the Light level does not mean formal dyadic measurement.
+KSODI-Light does not calculate R0, IK_rel or R-family components. Formal
+observation of trajectories, drift, acceleration and relational effects
+belongs to Standard-Eval, KSODI-Full and an external Observer architecture.
+
 It supports:
 
 - clearer prompt formulation
