@@ -65,6 +65,61 @@ For the formal Handshake and coupling boundary, see
 
 ---
 
+### 1.2 Why Five Operator Values Define a Five-Dimensional Observation Space
+
+A coordinate space does not require physical directions. It requires a
+declared set of distinguishable numerical coordinates.
+
+One normalized value can be shown on a line. Two values locate a point in a
+square, and three values locate a point in a cube. KSODI assigns five
+normalized values to one explicitly identified, source-attributed observable
+event:
+
+```text
+Phi(e) = (K(e), S(e), O(e), D(e), I(e)) in [0,1]^5
+```
+
+The Cartesian product `[0,1]^5` is mathematically a five-dimensional
+hypercube. It represents the complete formal range of possible KSODI operator
+combinations under one declared evaluation profile.
+
+This does not mean that the five operators are statistically independent,
+physically spatial or empirically uncorrelated. Context, structure, grounding,
+clarity and information impulse may influence one another. Their distinction
+means that they remain separately defined observation coordinates. Correlation
+changes the distribution of observed points inside the space; it does not
+remove the coordinate system.
+
+The hypercube is the formal value domain. KSODI does not assume that all
+possible coordinate combinations occur empirically. Observed events may occupy
+only a restricted, clustered, correlated or curved region inside that domain.
+
+One source-attributed event produces one observable point. A sequence of
+comparable points from the same declared trajectory produces a path. Several
+trajectories or observation windows may form point clouds. The Hangar is the
+Observer-side comparison view for these attributable points, paths, windows
+and distributions.
+
+Every monadic state change is assigned to one declared entity or trajectory by
+default:
+
+```text
+Delta Z_A(k) = Z_A(k) - Z_A(k - 1)
+```
+
+There is no implicit shared `Delta Z_AB`. If two or more trajectories are
+meant, the participating trajectories and the relational evaluation must be
+declared explicitly through exchange, reply, pair or n-adic metadata.
+Relational layers compare or relate distinguishable trajectory-local states
+and movements; they do not create one mixed monadic state.
+
+If one or more operators are not applicable, the missing coordinates must not
+be replaced by zero. The resulting observation is a masked or partial
+projection, not a complete point in the five-dimensional hypercube.
+
+For the cross-layer source-attribution and implementation boundary, see
+[KSODI Implementation Guardrails](../IMPLEMENTATION_GUARDRAILS.md).
+
 ## 2. Simple and Complex Observation Views
 
 KSODI distinguishes between human-readable projection views and richer
