@@ -61,7 +61,7 @@ projection.
 
 - [`Standard-Eval_v350`](./Standard-Eval_v350/README.md) contains the active
   layer-based public Standard-Eval structure.
-- [`KSODI_V350_ARCHITECTURE_ASCII.md`](../KSODI_V350_ARCHITECTURE_ASCII.md)
+- [`KSODI_V350_ARCHITECTURE_ASCII.md`](../../KSODI_V350_ARCHITECTURE_ASCII.md)
   gives a compact layer sketch for the current v350 direction.
 
 ## Related folders
