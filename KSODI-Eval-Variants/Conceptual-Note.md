@@ -23,7 +23,7 @@ relational coherence projection. The further R-family remains staged until
 separate release decisions are complete.
 
 Current public architecture orientation:
-[`KSODI_V350_ARCHITECTURE_ASCII.md`](./KSODI_V350_ARCHITECTURE_ASCII.md)
+[`KSODI_V350_ARCHITECTURE_ASCII.md`](../KSODI_V350_ARCHITECTURE_ASCII.md)
 shows the current v350 layer order shared by Standard-Eval and Full.
 
 Terminology note:
