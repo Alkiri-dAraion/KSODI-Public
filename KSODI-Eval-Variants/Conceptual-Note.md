@@ -187,6 +187,12 @@ Z_i(t+1) = g_i\bigl(Z_i(t), U_i^{obs}(t+1), Ref_i(t+1)\bigr)
 This equation describes an observer-side reconstruction step. It does not claim
 access to an entity's internal mechanism or an internal state transition.
 
+The exchanged sequence forms a shared observable interaction space, not a
+shared mind. Individual signals may remain attributable to their emitting side,
+while the longitudinal relational ordering created through response,
+reconstruction and supplementation cannot be reduced to either participant
+alone. Private thoughts and internal states remain separate and unobserved.
+
 The exchanged signals may carry varying degrees of informational difference.
 Their observable information impulse is evaluated through the KSODI operator
 `I`; the signals themselves are not identical with that operator.
@@ -343,9 +349,12 @@ Additional v3.5 boundary:
 	•	KSODI-Light does not contain the KSODI Handshake as an implementation layer
 	•	KSODI Standard-Eval comprises the monadic line `K/S/O/D/I -> Z -> IK`
 	•	Relational, dyadic or n-adic observation begins separately with the `R0` gate and does not belong to Standard-Eval
-	•	The KSODI Handshake is treated as a working hypothesis about sendability,
-		receiver-side reconstructability and feedback capability, not as a sixth
-		operator or a separate score
+	•	`R0` is the numeric SYN/ACK-like Handshake boundary of relational
+		observation; the analogy is functional, not a literal TCP or OSI mapping
+	•	The Handshake is not a sixth operator or a separate score beside `R0`
+	•	`R0` is not coupling; sustained strong coupling requires high
+		`IK_rel` together with high branch-specific R-family evidence across a
+		declared observation window
 	•	In turn-taking, the receiver may become the next sender; KSODI therefore
 		separates outgoing K/S/O/D/I sendability from incoming I/D/O/S/K
 		reconstruction without claiming access to either participant's inner
