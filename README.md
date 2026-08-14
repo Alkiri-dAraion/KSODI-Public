@@ -21,7 +21,9 @@ please cite and link the canonical `KSODI-Public` URL.
 New to KSODI? Start with
 [Which KSODI Variant Do I Need?](./WHICH_KSODI.md).
 For a compact architecture overview, see
-[KSODI Architecture](./ARCHITECTURE.md).
+[KSODI Architecture](./ARCHITECTURE.md). Before implementing or evaluating
+stored trajectories, read the
+[KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md).
 
 ⚠️ This documentation includes hypothesis-oriented material (written in the conditional / Konjunktiv), reflecting ongoing empirical exploration of the KSODI method.
 
@@ -94,17 +96,22 @@ monadic `IK` from relational `R0`. `R0` is evaluated from distinguishable
 `Z`-trajectories in parallel to monadic `IK`; it is not downstream of `IK`.
 Only stable `R0` gates `IK_rel`, followed by later R-family layers.
 
-| Layer | Name | Public status | Role |
-| --- | --- | --- | --- |
-| 0 | KSODI-Light | public | Local reflective working agreement for users, prompts, training and agent guidance. |
-| 1 | K/S/O/D/I operators | public | Observer-facing operator definitions for context, structure, grounding, clarity and information impulse. |
-| 2 | `Z(t)` / `Z_vec` | public | Monadic state vector over the five operator values. |
-| 3 | `IK` | public | Monadic interaction-coherence projection; closes Standard-Eval. |
-| 4 | `R0` / `R_0` gate | public | Relational comparability gate over distinguishable `Z`-trajectories; not a coupling or resonance score. |
-| 5 | `IK_rel` | public | Relational coherence projection after stable `R0`. |
-| 6 | `R_geom` | private / staged | Geometric coupling in KSODI state space. |
-| 7 | `R_pace` | private / staged | Optional pacing overlay where pacing dynamics are explicitly defined. |
-| 8 | Future signal-media layer | future research | Voice, rhythm/timing, audio, radio, Morse-like or other signal-media work; historical `Takt` labels are not active v3.5 terms. |
+| Layer | Variant | Component | Public status | Role |
+| --- | --- | --- | --- | --- |
+| 0 | [KSODI-Light](./KSODI-Light/README.md) | Local reflective layer | public | Reflective working agreement for users, prompts, training and agent guidance. |
+| 1 | [KSODI Standard-Eval](./KSODI-Eval-Variants/KSODI-Standard-Eval/README.md) | K/S/O/D/I operators | public | Observer-facing operator definitions for context, structure, grounding, clarity and information impulse. |
+| 2 | [KSODI Standard-Eval](./KSODI-Eval-Variants/KSODI-Standard-Eval/README.md) | `Z(t)` / `Z_vec` | public | Monadic state vector over the five operator values. |
+| 3 | [KSODI Standard-Eval](./KSODI-Eval-Variants/KSODI-Standard-Eval/README.md) | `IK` | public | Monadic interaction-coherence projection; closes Standard-Eval. |
+| 4 | [KSODI-Full](./KSODI-Eval-Variants/KSODI-Full/Full_v350/README.md) | `R0` / `R_0` gate | public | Relational comparability gate over distinguishable `Z`-trajectories; not a coupling or resonance score. |
+| 5 | [KSODI-Full](./KSODI-Eval-Variants/KSODI-Full/Full_v350/README.md) | `IK_rel` | public | Relational coherence projection after stable `R0`. |
+| 6 | [KSODI-Full](./KSODI-Eval-Variants/KSODI-Full/Full_v350/README.md) | `R_geom` | private / staged | Geometric coupling in KSODI state space. |
+| 7 | [KSODI-Full](./KSODI-Eval-Variants/KSODI-Full/Full_v350/README.md) | `R_pace` | private / staged | Optional pacing overlay where pacing dynamics are explicitly defined. |
+| 8 | [KSODI-Full](./KSODI-Eval-Variants/KSODI-Full/Full_v350/README.md) | Future signal-media layer | future research | Voice, rhythm/timing, audio, radio, Morse-like or other signal-media work; historical `Takt` labels are not active v3.5 terms. |
+
+The variant assignment and the publication status are separate. A layer may
+belong to KSODI-Full while its formula or implementation material remains
+staged. Before building from any layer, read the
+[KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md).
 
 ## What the Observer Sees — A Conceptual Projection
 

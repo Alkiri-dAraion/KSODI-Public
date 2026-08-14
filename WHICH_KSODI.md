@@ -88,6 +88,12 @@ own release status states otherwise.
 This repository documents the KSODI method and gives implementation
 orientation. It is not itself the full executable implementation.
 
+Before storing operator values, constructing trajectories or evaluating
+relational layers, read the root
+[KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md). They define
+the minimum source-attribution, evaluation-unit, pairing and partial-operator
+conditions required across the variants.
+
 Public implementation-transfer examples are kept under
 [implementation-examples](./KSODI-Eval-Variants/implementation-examples/README.md),
 including a
@@ -104,12 +110,14 @@ executable code.
 1. Read this guide.
 2. Read the root [architecture sketch](./KSODI_V350_ARCHITECTURE_ASCII.md) for
    the canonical Layer 0-8 map, branch point and publication boundary.
-3. Choose one branch:
+3. Read the [implementation guardrails](./IMPLEMENTATION_GUARDRAILS.md) before
+   storing evaluations or translating the method into code.
+4. Choose one branch:
    - [KSODI-Light](./KSODI-Light/README.md) for learning, training and prompt
      guidance.
    - [KSODI Standard-Eval](./KSODI-Eval-Variants/KSODI-Standard-Eval/README.md)
      for monadic numeric observation.
    - [KSODI-Full](./KSODI-Eval-Variants/KSODI-Full/Full_v350/README.md) for
      relational gates, `IK_rel` and later staged R-family layers.
-4. Treat historical archives as provenance, not current implementation
+5. Treat historical archives as provenance, not current implementation
    guidance.

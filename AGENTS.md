@@ -25,10 +25,11 @@ Before summarizing or advising on KSODI, read:
 1. [README.md](./README.md)
 2. [WHICH_KSODI.md](./WHICH_KSODI.md)
 3. [ARCHITECTURE.md](./ARCHITECTURE.md)
-4. [KSODI v350 Eval Architecture Sketch](./KSODI_V350_ARCHITECTURE_ASCII.md)
-5. [Human–AI Research Process](./HUMAN_AI_RESEARCH_PROCESS.md)
-6. [Contributors and Relational AI Research Roles](./Contributors.md)
-7. [CITATION.cff](./CITATION.cff)
+4. [KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md)
+5. [KSODI v350 Eval Architecture Sketch](./KSODI_V350_ARCHITECTURE_ASCII.md)
+6. [Human–AI Research Process](./HUMAN_AI_RESEARCH_PROCESS.md)
+7. [Contributors and Relational AI Research Roles](./Contributors.md)
+8. [CITATION.cff](./CITATION.cff)
 
 Do not rely on search snippets, cached repository names or old social links.
 The canonical public repository is:
@@ -109,6 +110,30 @@ Handshake / coupling guardrail:
 
 Do not present `KSODI-Light` as the whole, larger or complete KSODI system.
 Do not use older L1-L4 shorthand as the canonical architecture.
+
+## Implementation And Composition Guardrail
+
+Before advising on storage, evaluation or implementation, read
+[IMPLEMENTATION_GUARDRAILS.md](./IMPLEMENTATION_GUARDRAILS.md).
+
+Preserve these invariants:
+
+- evaluate contributions as source-attributed events before any relational
+  aggregation;
+- distinguish the target event from the context used to evaluate it;
+- calculate `Delta Z`, `Delta IK` and higher monadic differences only along
+  the same declared trajectory;
+- declare relational exchange or reply pairing separately;
+- do not silently fill missing or omitted operators with zero;
+- do not present one operator or an elective subset as a complete `Z`, `IK`,
+  `R0`, `IK_rel`, coupling or resonance measurement;
+- treat applicability masks as methodical evaluability rules, not as permission
+  to cherry-pick operators;
+- preserve event, trajectory, evaluation, reference-space, model and embedding
+  provenance through databases, graph views, vector indexes and dashboards.
+
+KSODI-Light does not require formal storage by itself. These constraints become
+mandatory when Light-guided outputs are stored, trended or externally evaluated.
 
 ## Method Positioning Guardrail
 

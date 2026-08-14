@@ -26,6 +26,11 @@ Current public architecture orientation:
 [`KSODI_V350_ARCHITECTURE_ASCII.md`](../KSODI_V350_ARCHITECTURE_ASCII.md)
 shows the current v350 layer order shared by Standard-Eval and Full.
 
+Before implementing the conceptual model, read the root
+[KSODI Implementation Guardrails](../IMPLEMENTATION_GUARDRAILS.md). They define
+the source-attribution, evaluation-unit, trajectory, pairing and partial-
+operator conditions that the conceptual descriptions presuppose.
+
 Terminology note:
 Current public v3.5 wording distinguishes between didactic KSODI-Light labels
 and observer-facing operator names. Older public Light examples may still use
