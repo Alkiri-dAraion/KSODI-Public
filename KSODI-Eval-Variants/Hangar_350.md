@@ -44,14 +44,24 @@ compares traces of what has actually become externally observable.
 KSODI observes runway traffic, never the inside of the hangar.
 ```
 
-The transient coupling zone between participants belongs to the handshake /
-interaction process. The Hangar preserves comparable traces after such
-interaction has produced observable signals.
+The transient Handshake / interaction space between participants belongs to
+the interaction process. It is not the canonical Hangar. `R0` opens relational
+observation of a declared constellation; it does not establish coupling.
 
-In turn-taking, the receiver of one observable contribution may become the next
-sender. The Hangar may compare the resulting traces across windows, but it does
-not merge the participants' inner processing spaces into a shared internal
-Hangar.
+Individual signals may remain attributable to their emitting side. Across a
+sufficiently long and stable interaction, their reciprocal ordering may form a
+shared observable relational pattern. Strong coupling requires sustained high
+`IK_rel` together with sustained high branch-specific R-family evidence under
+a declared policy. The resulting relational ordering belongs to the shared
+observable interaction space and cannot be reduced to either participant alone.
+
+The Hangar preserves comparable traces, windows, trajectories and distributions
+after interaction has produced observable signals. In turn-taking, the receiver
+of one contribution may become the next sender, but the Hangar does not merge
+the participants' inner processing spaces, thoughts or internal states.
+
+For the formal Handshake and coupling boundary, see
+[`R0_Relational-Gate.md`](./KSODI-Full/Full_v350/layer-4-r0-gate/R0_Relational-Gate.md).
 
 ---
 
