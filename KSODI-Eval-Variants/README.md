@@ -53,7 +53,7 @@ The current public v350 architecture sketch is maintained at the Eval-Variants
 root because it spans Standard-Eval and the R-family / KSODI-Full research
 boundary:
 
-[`KSODI_V350_ARCHITECTURE_ASCII.md`](./KSODI_V350_ARCHITECTURE_ASCII.md)
+[`KSODI_V350_ARCHITECTURE_ASCII.md`](../KSODI_V350_ARCHITECTURE_ASCII.md)
 
 The shared v350 method note for Sigma, Sigma(Hangar), drift and distribution
 views is also maintained at the Eval-Variants root because it spans
