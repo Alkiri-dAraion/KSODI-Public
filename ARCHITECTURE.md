@@ -1,8 +1,8 @@
 # KSODI Architecture
 
 Status: public root orientation sketch for first-time readers, crawlers and AI
-agents. The detailed architecture sketch remains
-[KSODI_V350_ARCHITECTURE_ASCII.md](./KSODI-Eval-Variants/KSODI_V350_ARCHITECTURE_ASCII.md).
+agents. The canonical detailed architecture sketch is
+[KSODI_V350_ARCHITECTURE_ASCII.md](./KSODI_V350_ARCHITECTURE_ASCII.md).
 
 ## Short Version
 
