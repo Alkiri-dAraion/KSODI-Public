@@ -114,9 +114,7 @@ IMAGE ASSET PENDING
 After `assets_images/ksodi-observer-projection-space.png` has been uploaded,
 replace this complete comment block with:
 
-![Conceptual KSODI Observer projection: distinguishable cyan and gold signal
-streams are sampled by a passive Observer and reconstructed as a violet
-holographic state-space projection.](./assets_images/ksodi-observer-projection-space.png)
+![Conceptual KSODI Observer projection with distinct cyan and gold signal streams, passive sampling and a violet holographic state-space reconstruction.](./assets_images/ksodi-observer-projection-space.png)
 -->
 
 > **Conceptual visualization, not a measurement plot.** The image is an
