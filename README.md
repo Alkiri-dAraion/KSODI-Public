@@ -106,6 +106,15 @@ Only stable `R0` gates `IK_rel`, followed by later R-family layers.
 | 7 | `R_pace` | private / staged | Optional pacing overlay where pacing dynamics are explicitly defined. |
 | 8 | Future signal-media layer | future research | Voice, rhythm/timing, audio, radio, Morse-like or other signal-media work; historical `Takt` labels are not active v3.5 terms. |
 
+> **Horse-and-rider analogy:** A rider sitting on a horse establishes a
+> concrete dyadic situation, but not coupling. `R0` is the SYN/ACK-like
+> Handshake gate that opens relational observation. Only sustained high
+> `IK_rel` together with sustained high, branch-specific R-family signals can
+> support the observation of strong coupling. Horse and rider may still gallop
+> past the arena exit together: coupling strength does not determine intended
+> direction, task fit or alignment. See the
+> [R0 relational gate](./KSODI-Eval-Variants/KSODI-Full/Full_v350/layer-4-r0-gate/R0_Relational-Gate.md).
+
 Implementation shortcuts such as "agent layer" or "observer layer" may appear
 in older notes, but the table above is the current public orientation map.
 
@@ -120,7 +129,8 @@ reconstructable projection space in which stored interaction states,
 trajectories, distributions, drift paths or point clouds can be compared over
 time. The term emerged during the method's development and is kept because it
 names a layer for which there is no exact established replacement in the
-current KSODI context.
+current KSODI context. The Hangar stores observer-side traces and distributions; it is
+not the transient shared observable interaction space itself.
 
 # KSODI Method
 
@@ -248,10 +258,12 @@ related to signal-reception logic: in reception, an informational difference
 must first be noticed before it can be distinguished, grounded, structurally
 reconstructed and situated in context.
 
-The Handshake is therefore not a sixth operator and not a separate score. It is
-the transient, session-bound coupling condition in which an event becomes
-sendable, receivable and feedback-capable. In numeric evaluation, the five
-operators remain separate tuple components.
+The Handshake is therefore not a sixth operator and not a separate score
+beside `R0`. In v3.5, `R0` is the numeric SYN/ACK-like Handshake boundary:
+it checks whether declared, distinguishable trajectories are stable enough for
+relational observation to be opened. It is not coupling and does not mark the
+beginning of coupling. In numeric evaluation, the five operators remain
+separate tuple components.
 
 This makes KSODI especially relevant for human-AI interaction, agent-agent
 communication, multi-agent systems, embodied agents, therapy assistants,
