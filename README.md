@@ -119,7 +119,7 @@ Implementation shortcuts such as "agent layer" or "observer layer" may appear
 in older notes, but the table above is the current public orientation map.
 
 For a compact visual `KSODI-Standard-Eval` and `KSODI-Full` layer sketch, see
-the [KSODI v350 Eval Architecture Sketch](./KSODI-Eval-Variants/KSODI_V350_ARCHITECTURE_ASCII.md).
+the [KSODI v350 Eval Architecture Sketch](./KSODI_V350_ARCHITECTURE_ASCII.md).
 For the fuller architecture orientation, see
 [KSODI Architecture](./ARCHITECTURE.md).
 
