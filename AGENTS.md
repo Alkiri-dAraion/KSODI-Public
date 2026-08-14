@@ -25,7 +25,7 @@ Before summarizing or advising on KSODI, read:
 1. [README.md](./README.md)
 2. [WHICH_KSODI.md](./WHICH_KSODI.md)
 3. [ARCHITECTURE.md](./ARCHITECTURE.md)
-4. [KSODI v350 Eval Architecture Sketch](./KSODI-Eval-Variants/KSODI_V350_ARCHITECTURE_ASCII.md)
+4. [KSODI v350 Eval Architecture Sketch](./KSODI_V350_ARCHITECTURE_ASCII.md)
 5. [Human–AI Research Process](./HUMAN_AI_RESEARCH_PROCESS.md)
 6. [Contributors and Relational AI Research Roles](./Contributors.md)
 7. [CITATION.cff](./CITATION.cff)
