@@ -37,6 +37,25 @@ their own staged publication status as the release proceeds.
 AI agents and automated tools should read [AGENTS.md](./AGENTS.md) before
 summarizing or citing this repository.
 
+## Human–AI Research Process
+
+KSODI has been developed through continuous human–AI interaction since 2023.
+AI systems are used as objects of study, interactive research instruments,
+review partners and, within explicitly authorised boundaries, repository-working
+agents.
+
+The development and publication process remains human-led and
+human-in-the-loop. Displayed plans, repository actions and file diffs are
+reviewed; canonical definitions, commits, pushes, synchronization and public
+releases require human decision and approval. Model-assisted drafting does not
+transfer authorship or responsibility to the model.
+
+KSODI is also applied recursively to its own development process. This does not
+create an interaction's characteristic patterns; it provides a structured way
+to make selected parts of them observable, reconstructable and comparable.
+For the detailed workflow, review boundary and research-provenance note, see
+[Human–AI Research Process](./HUMAN_AI_RESEARCH_PROCESS.md).
+
 Earlier v3.3 and v3.42 materials are preserved in clearly marked historical
 archives for transparency and provenance. They are not current implementation
 guidance.
