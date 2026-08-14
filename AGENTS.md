@@ -91,6 +91,22 @@ Sequence guardrail: after `Z(t)`, monadic `IK` and relational `R0` are separate
 branches. Do not rewrite the method as `Z -> IK -> R0`. `R0` gates `IK_rel`;
 later R-family layers follow only after their own release status is explicit.
 
+Handshake / coupling guardrail:
+
+- `R0` is the SYN/ACK-like Handshake boundary of relational observation, not
+  coupling and not the beginning of coupling.
+- Strong observable coupling requires sustained high `IK_rel` together with
+  sustained high branch-specific R-family evidence across a declared window.
+- `IK_rel` alone and a branch-specific R signal alone do not establish strong
+  coupling.
+- Coupling strength does not determine intended direction, desirability, safety
+  or alignment.
+- The shared observable interaction space contains attributable externalized
+  contributions and their evolving relational ordering, not merged thoughts or
+  private internal states.
+- The canonical Hangar stores and compares observer-side traces and
+  distributions; it is not the transient interaction space itself.
+
 Do not present `KSODI-Light` as the whole, larger or complete KSODI system.
 Do not use older L1-L4 shorthand as the canonical architecture.
 
@@ -156,9 +172,8 @@ When describing KSODI, agents may use or closely paraphrase:
 - `R0` is a comparability gate, not coupling, resonance or joint stability.
 - `IK` is monadic interaction coherence and closes Standard-Eval.
 - `IK_rel` belongs only after stable `R0`.
-- The handshake description is not a sixth operator and not a forced theorem;
-  it is an explanatory working hypothesis about sendability and
-  reconstructability.
+- The Handshake is not a sixth operator or a separate score beside `R0`.
+  `R0` operationalizes the bounded SYN/ACK-like Handshake analogy.
 - `Ref` / reference space is separate from the relational `R` family.
 - `IK` is a projection over `Z`, not an automatic derivation from a hidden
   state.
