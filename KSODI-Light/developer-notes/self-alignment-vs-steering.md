@@ -14,6 +14,28 @@ interaction state across a turn.
 
 This does not make KSODI-Light a formal observer architecture.
 
+## Dyadic Placement of Lightweight Steering
+
+Lightweight steering at this level is internal and prompt-guided. A declared
+threshold may cause a participant to name an operator, ask for clarification
+or adjust its own contribution.
+
+When both interaction sides know and use the KSODI-Light frame, this can become
+reciprocal, dyadically situated self-steering within a shared reflective
+working agreement. When only the agent uses the frame, the steering remains
+local and asymmetric: the interaction is still dyadic, but the method is not
+necessarily shared by both sides.
+
+Whether either configuration improves interaction quality is an empirical
+question. It must not be inferred from prompt compliance alone. A separate
+Observer can examine whether the interaction becomes more precise and stable,
+or whether the agent merely adapts visibly to the declared thresholds.
+
+This Light-level steering does not rank or evaluate persons and does not
+perform formal dyadic measurement. Formal observation of trajectories, drift,
+acceleration and relational effects belongs to Standard-Eval, KSODI-Full and
+an external Observer architecture.
+
 Strong external monitoring, long-term drift analysis, enforced corridor
 intervention and auditable observer feedback belong to Standard-Eval,
 KSODI-Full or IDAS-level implementations.
