@@ -29,6 +29,13 @@ ends with `IK`.
 `Dyadic` means that two distinguishable trajectories are compared, for example
 human and chatbot, agent A and agent B, or user side and system side.
 
+KSODI-Light may be used within a dyadic interaction and may support
+reciprocal or asymmetric lightweight self-steering. At the Light level,
+"dyadic" describes the interaction setting and the placement of reflection; it
+does not mean that KSODI-Light performs formal dyadic measurement. Formal
+numerical comparison of distinguishable trajectories belongs to KSODI-Full and
+begins at the R0 gate.
+
 `N-adic` means that more than two distinguishable trajectories are involved,
 for example a multi-agent system, a human team with AI support, or a larger
 agentic workflow.
