@@ -37,6 +37,20 @@ distinguishable `Z`-trajectories. `R0` is not calculated from `IK`.
 | 7 | `R_pace` | staged | Optional pacing overlay where pacing dynamics are explicitly defined. |
 | 8 | Future signal-media layer | future research | Voice, rhythm/timing, audio, radio, Morse-like or other signal-media work; historical `Takt` labels are not active v3.5 terms. |
 
+## Handshake and Coupling Boundary
+
+`R0` is the SYN/ACK-like Handshake boundary of relational observation. The
+Observer declares the pair or group; `R0` checks whether its distinguishable
+trajectories are stable enough for relational observation. It is not coupling
+and does not mark the beginning of coupling.
+
+Strong observable coupling requires sustained high `IK_rel` together with
+sustained high branch-specific R-family evidence across a declared observation
+window. Coupling strength does not determine intended direction, desirability
+or alignment. See the
+[R0 relational gate](./KSODI-Eval-Variants/KSODI-Full/Full_v350/layer-4-r0-gate/R0_Relational-Gate.md)
+and [Hangar note](./KSODI-Eval-Variants/Hangar_350.md).
+
 ## Method Position
 
 KSODI is a baseline radar for observable communication. It does not replace
