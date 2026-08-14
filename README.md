@@ -44,6 +44,14 @@ AI systems are used as objects of study, interactive research instruments,
 review partners and, within explicitly authorised boundaries, repository-working
 agents.
 
+The foundational applicability and feasibility insight emerged exclusively
+through sustained work in the ChatGPT app through early 2025. Broader
+cross-model work followed as a human-curated, manually supervised multi-agent
+setting for reflection, review, comparison and implementation feedback. The
+models do not determine the method by vote and do not operate as an autonomous
+agent swarm. See [Contributors](./Contributors.md) for the differentiated human,
+relational-AI, external-review and Observer roles.
+
 The development and publication process remains human-led and
 human-in-the-loop. Displayed plans, repository actions and file diffs are
 reviewed; canonical definitions, commits, pushes, synchronization and public
