@@ -26,6 +26,73 @@ through an `eval_pair_id`, shared scope, shared evaluation unit or other
 versioned pairing metadata. `R0` does not discover the pair. It only checks
 whether the declared pair or group is stable enough for later relational layers.
 
+## 1.1 Handshake and Coupling Boundary
+
+`R0` is the SYN/ACK-like Handshake boundary of relational observation. The
+analogy is functional and bounded: KSODI does not implement TCP and does not
+map `R0` one-to-one onto an OSI layer.
+
+The Observer declares the pair or group independently. `R0` then checks only
+whether the distinguishable trajectories are currently available and stable
+enough for relational observation to be opened.
+
+`R0` is not coupling and does not mark the beginning of coupling. An open or
+persistently open gate establishes only an available comparison basis.
+
+After stable `R0`, `IK_rel` may examine relational projection compatibility.
+Branch-specific R-family components may examine geometric, pacing or other
+explicitly defined relational dynamics. Strong observable coupling requires a
+sustained conjunction across a declared observation window:
+
+```text
+stable R0
+AND sustained high IK_rel
+AND sustained high branch-specific R
+-> strong observable coupling
+```
+
+This is a semantic observation rule, not a new universal scalar formula.
+`IK_rel` alone does not establish strong coupling. A branch-specific R signal
+alone does not establish strong coupling. The active R component, aggregation
+window, applicability policy and thresholds must be declared and versioned.
+
+Coupling strength does not determine whether the coupled movement is desirable,
+correct, safe or aligned with an intended direction. Those questions require
+their own reference frame, corridors and observation criteria.
+
+### Bounded Example: Horse and Rider
+
+Consider a horse and a rider.
+
+The fact that the rider is mounted establishes the concrete dyadic situation:
+two distinguishable participants are present within one declared observation
+episode. This alone does not establish coupling.
+
+`R0` asks whether the distinguishable trajectories of horse and rider are
+sufficiently available and stable for relational observation to be opened. An
+open `R0` therefore means that horse and rider can now be observed as a
+declared and sufficiently stable dyadic constellation. It does not mean that
+they are already coupled.
+
+Only across a sufficiently long observation window can reciprocal adjustments
+become visible as a relational pattern, for example through balance, movement,
+aids and responses. Sustained high `IK_rel` together with sustained high
+branch-specific R-family signals may support the observation of strong
+coupling: horse and rider do not merely occupy the same constellation but
+coordinate closely enough to perform a difficult task together.
+
+They may nevertheless show sustained high `IK_rel` and high branch-specific R
+signals while galloping past the arena exit together. The coupling may be
+strong; the intended direction remains a separate question.
+
+Individual contributions remain attributable where the observation design
+allows it. The longitudinal relational ordering belongs to the shared
+observable interaction space and cannot be reduced to either participant alone.
+Private thoughts and internal states are neither mixed nor transferred.
+
+The analogy is explanatory only. It does not replace the formal `R0`
+definition or define a universal coupling threshold.
+
 ## 2. Position in the KSODI Architecture
 
 The five KSODI operators are calculated first:
@@ -232,8 +299,11 @@ If both normalized drift magnitudes are `0`, then `R0 = 1`. This means the gate 
 
 If two trajectories are static but unrelated, `R0` can still open by design.
 This does not prove connection. It only says that the declared trajectories are
-stable enough for later relational checks. Coupling is evaluated later by
-`IK_rel`, `R_geom`, `R_pace` or other explicitly defined R-family components.
+stable enough for later relational checks. Relational analysis continues later through `IK_rel` and explicitly
+defined R-family components. `IK_rel` examines relational projection
+compatibility; sustained strong coupling requires its conjunction with
+sustained high branch-specific R-family evidence under a declared window and
+policy.
 
 Under the dyadic L1 default with valid normalization, clipping should not bind.
 It is retained as a defensive guard against implementation or policy violations.
