@@ -106,6 +106,57 @@ Only stable `R0` gates `IK_rel`, followed by later R-family layers.
 | 7 | `R_pace` | private / staged | Optional pacing overlay where pacing dynamics are explicitly defined. |
 | 8 | Future signal-media layer | future research | Voice, rhythm/timing, audio, radio, Morse-like or other signal-media work; historical `Takt` labels are not active v3.5 terms. |
 
+## What the Observer Sees — A Conceptual Projection
+
+<!--
+IMAGE ASSET PENDING
+
+After `assets_images/ksodi-observer-projection-space.png` has been uploaded,
+replace this complete comment block with:
+
+![Conceptual KSODI Observer projection: distinguishable cyan and gold signal
+streams are sampled by a passive Observer and reconstructed as a violet
+holographic state-space projection.](./assets_images/ksodi-observer-projection-space.png)
+-->
+
+> **Conceptual visualization, not a measurement plot.** The image is an
+> explanatory metaphor for observable traces, declared reference conditions and
+> observer-side reconstruction. It is not a literal rendering of a
+> five-dimensional space.
+
+Imagine two distinguishable systems — represented here by a spacecraft and
+Earth — exchanging signals. Their internal states do not merge, and neither
+signal becomes the property of the other participant. The cyan and gold streams
+remain source-attributable. What becomes observable is their externalized
+sequence, timing, movement and relational ordering.
+
+The separate Observer samples these exposed traces without acting as a
+Controller. It does not decide, intervene or send instructions into the
+exchange. The violet holographic form represents an observer-side projection
+of reconstructed `Z(t)` states, trajectories and selected higher-dimensional
+relations. It is not a physical object between the interacting systems, and it
+is not the declared reference space itself.
+
+The surrounding scene illustrates that every projection remains embedded in a
+larger observation context. Channel conditions, timing, tools, sources,
+environment and other relevant material must be declared through the applicable
+reference-space and evaluation profile before the projection can be interpreted
+responsibly. Architecture-agnostic method roles do not make the Observer
+input-agnostic.
+
+`R0` establishes only whether distinguishable trajectories are stable enough
+for relational comparison. Later layers examine relational coherence and
+observable coupling. The displayed traces can be inspected. The reconstructed
+whole remains a model.
+
+For the formal topology, see the
+[current Layer 0-8 architecture](./KSODI_V350_ARCHITECTURE_ASCII.md). For
+historical implemented K/S/O/D/I heatmaps, radar profiles, trajectory views and
+drift visualizations, see the
+[Historical Observer Assets](./KSODI-Eval-Variants/archive_assets_historical-observer-v342/README.md).
+Those outputs document earlier implementation work and the transition into
+v3.5; they are not current v3.5 specification diagrams.
+
 > **Horse-and-rider analogy:** A rider sitting on a horse establishes a
 > concrete dyadic situation, but not coupling. `R0` is the SYN/ACK-like
 > Handshake gate that opens relational observation. Only sustained high
