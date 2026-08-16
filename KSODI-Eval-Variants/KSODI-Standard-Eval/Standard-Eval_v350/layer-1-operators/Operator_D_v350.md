@@ -1,7 +1,5 @@
 # KSODI Operator D0 - Observable Clarity v3.50
 
-Status: public v3.50 reference release; private canonical workbench origin retained, aligned with the v3.50 glossary and the 2026-07-04 D-operator clarification.
-
 Layer: KSODI Standard-Eval operator. Static `D0` belongs to Layer 1. Operator-level Delta / Delta2, Sigma and Hangar views may observe clarity, discernibility and signal-density movement over time. Relational feedback and controller logic belong outside the static Layer-1 operator definition.
 
 ## 1. Definition
