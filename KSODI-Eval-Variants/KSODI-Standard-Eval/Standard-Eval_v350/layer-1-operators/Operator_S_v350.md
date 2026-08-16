@@ -1,7 +1,5 @@
 # KSODI Operator S0 - Observable Structural Coherence v3.50
 
-Status: public v3.50 reference release; private canonical workbench origin retained, lifted from the v3.42 S operator after the Fable / ELKIM / VSELKIM review line.
-
 Layer: KSODI Standard-Eval operator. Static `S0` belongs to Layer 1. Operator-level Delta / Delta2, Sigma and Hangar views may observe structural movement over time. Relational patterning belongs only after the relational gate in KSODI-Full.
 
 ## 1. Definition
