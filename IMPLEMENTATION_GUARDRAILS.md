@@ -32,6 +32,34 @@ A KSODI implementation must preserve the following distinctions:
 These are method invariants, not preferences of one database product or
 implementation stack.
 
+### Monadic default, dyadic only after explicit pairing
+
+KSODI v3.50 keeps the monadic and dyadic layers methodologically separate.
+
+- Operator values and state movement remain monadic unless a pairing rule is
+  explicitly declared.
+- A contribution from entity `A` and a contribution from entity `B` remain
+  separate trajectories unless the implementation defines a relational pair,
+  exchange or comparison step.
+- A visible context relation does not collapse separate entities into one
+  shared state.
+- The predecessor for local movement must stay inside the same trajectory.
+
+In practical terms:
+
+```text
+Delta Z_A(k) = Z_A(k) - Z_A(k - 1)
+Delta Z_B(l) = Z_B(l) - Z_B(l - 1)
+```
+
+A response from `B` after `A` is not automatically a monadic state transition
+for `A` or `B`. It is only a relational exchange when a pairing map is
+explicitly declared.
+
+This rule matters for implementation and for all later relational layers such
+as `R0`, `IK_rel` and the R-family. The same distinction must remain visible in
+stored records, projections, vector views and analytical queries.
+
 ## 2. Evaluation Unit and Identity Contract
 
 Each externally observable contribution must be retained as its own event

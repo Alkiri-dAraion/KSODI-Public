@@ -31,6 +31,13 @@ Before implementing the conceptual model, read the root
 the source-attribution, evaluation-unit, trajectory, pairing and partial-
 operator conditions that the conceptual descriptions presuppose.
 
+Implementation guardrail for the operator layer:
+Operator `I` remains monadic by default. It measures observable information
+impulse relative to a declared baseline or to the immediately preceding event in
+the same trajectory. Dyadic or n-adic comparison opens only after an explicit
+pairing or exchange rule has been declared. Shared context does not imply a
+shared internal state or a merged event trajectory.
+
 Terminology note:
 Current public v3.5 wording distinguishes between didactic KSODI-Light labels
 and observer-facing operator names. Older public Light examples may still use

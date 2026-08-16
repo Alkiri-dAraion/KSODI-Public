@@ -4,6 +4,55 @@ Status: public v3.50 reference release; private canonical workbench origin retai
 
 Layer: KSODI Standard-Eval operator. Static `I0` belongs to Layer 1. Operator-level Delta / Delta2, Sigma and Hangar views may observe information-impulse movement over time. Relational feedback and controller logic belong outside the static Layer-1 operator definition.
 
+## 0. What Operator I is and what it does
+
+`I` answers a narrow question: does this contribution create an observable information difference relative to the baseline declared for the current evaluation?
+
+This is not a score for truth, intelligence, value, morality, quality or personal worth. It is not the same as saying a contribution is “better,” “deeper,” or “more correct.” It is a measurement of observable informational movement.
+
+For readers who do not want to start with the formula, the short version is this:
+
+- does the contribution add new information?
+- does it compress or redirect information already present?
+- does it meaningfully change the informational situation in a way a receiver must notice and account for?
+- does it differ from the immediate previous contribution of the same source trajectory?
+
+If the answer is “not much,” the value may stay low even when the contribution is useful, stable, polite or deliberately conservative. A low value is not a failure. It may indicate confirmation, repair, repetition or anchoring.
+
+### 0.1 Monadic by default, dyadic only after explicit pairing
+
+`I` is a monadic operator by default. It is computed for one source event, one entity or one observable trajectory, relative to a declared baseline.
+
+This is the central implementation rule:
+
+- a contribution from entity `A` remains a contribution of `A`
+- a contribution from entity `B` remains a contribution of `B`
+- they are separate monadic trajectories unless a separate relational rule explicitly declares a pair or exchange
+
+A conversation can share a space and still contain multiple distinct trajectories. A human question and an AI answer may share the same thread, exchange ID or reply relation without becoming one merged event or one merged state.
+
+The formulas below therefore assume that the target event and its predecessor stay within the same declared trajectory unless a distinct dyadic or n-adic comparison is explicitly opened.
+
+### 0.2 Why the formula matters
+
+The formula is only valid if the semantic boundary is valid. The semantic boundary comes first:
+
+- the target event must remain attached to one `entity_id` and one `trajectory_id`
+- local movement must be measured only against the same trajectory's predecessor
+- cross-entity comparison cannot be silently treated as a monadic difference
+- profile changes like `I_ref` vs `I_seq` must stay visible as different projections
+- `not_applicable` must not be silently encoded as `0`
+
+This is exactly why the file distinguishes reference-relative and same-trajectory sequential profiles, and why implementation should preserve source identity and trajectory identity before any relational evaluation is attempted.
+
+### 0.3 Minimal practical reading
+
+In plain terms, Operator I asks:
+
+> Compared with the declared baseline or the immediately prior step in the same source trajectory, did this contribution create a visible information change?
+
+That is the core of the operator. The rest of the file turns that question into a usable, auditable and mathematically comparable method without collapsing trajectory-local movement into a dyadic relation or treating trajectories as interchangeable entities.
+
 ## 1. Definition
 
 `I0` measures the observable information impulse of a chunk `q` relative to a turn-specific reference space `Ref_t`.
