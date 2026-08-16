@@ -1,9 +1,5 @@
 # KSODI Operator O0 - Observable Grounded Objectivity v3.50
 
-Status: public v3.50 reference release; private canonical workbench origin retained, based on `KSODI_Operator_O_v33.md`, the 2026-07-04 Fable review and the v3.50 glossary line.
-
-Implementation status: not yet verified against Patrick's current Observer / KSODI-Light implementation. Patrick's implementation is known to still reflect the older v3.3 line and must be compared before this file is treated as an implementation profile for the Kubernetes / chatbot Observer stack.
-
 Layer: KSODI Standard-Eval operator. Static `O0` belongs to Layer 1. Operator-level Delta / Delta2, Sigma and Hangar views may observe grounding, traceability and applicability movement over time. Relational feedback and controller logic belong outside the static Layer-1 operator definition.
 
 ## 1. Definition
