@@ -13,6 +13,33 @@ Purpose: show the intended layer order shared by the Standard-Eval and Full
 research lines while keeping release status separate from architectural
 orientation.
 
+## Canonical Source and Trajectory Boundary
+
+All five Layer-1 operators are strictly monadic and source-attributed. Each
+static value belongs to one identified event in one declared trajectory.
+Temporal comparisons use only comparable positions within that same
+trajectory. A visible context, reference space or measurement basis may contain
+material from outside the trajectory where the operator profile permits it;
+this does not merge sources or create a relational value.
+
+```text
+e_A(k)
+  -> K_A / S_A / O_A / D_A / I_A
+  -> Z_A(k)
+       |-> IK_A(k)
+       +-> R0(A,B,...) -> IK_rel -> R-family
+```
+
+`A` and `B` remain distinguishable through Layer 1, `Z` and monadic `IK`.
+Relational interpretation begins only at the separately declared `R0` gate.
+
+Layer-1 operators may be inspected individually through monadic trajectory,
+projection or aggregation views. After stable `R0`, explicitly defined
+operator-specific relational comparison views may be added. These are optional
+diagnostics and are neither complete `Z`, canonical `IK`, `IK_rel` nor
+resonance. A projection of one operator must not be reported as full `IK`, and
+one operator-specific relational signal is not by itself an R-family result.
+
 Position: this is the canonical root-level architecture sketch. It spans the
 public Standard-Eval folder and the R-family / KSODI-Full research boundary. `KSODI Standard-Eval` and `KSODI-Full` are public-facing
 variant names; the underlying architecture must keep the method boundary

@@ -8,6 +8,22 @@ Layer: KSODI Full Layer 4 gate for monadic-to-dyadic or n-adic comparability aft
 
 ## 1. Definition
 
+The source boundary before this gate is:
+
+```text
+e_A(k)
+  -> K_A / S_A / O_A / D_A / I_A
+  -> Z_A(k)
+       |-> IK_A(k)
+       +-> R0(A,B,...) -> IK_rel -> R-family
+```
+
+All Layer-1 operator values, `Z_A` and `IK_A` remain monadic and
+source-attributed. Temporal comparisons before `R0` use only comparable
+positions within the same declared trajectory. `A` and `B` remain separate;
+their relation is neither imported into an operator nor represented as a
+merged state.
+
 `R0` is the minimal relational gate for dyadic or n-adic analysis.
 
 It checks whether two or more monadic trajectories are stable enough to be meaningfully compared.
@@ -129,6 +145,10 @@ else:
 ```
 
 This prevents KSODI from assigning relational coherence or resonance where no stable shared movement basis has been established.
+
+After stable `R0`, a method may define operator-specific relational comparison
+views where they are useful. Such a partial view is not canonical `IK_rel` and
+does not by itself establish resonance or a complete R-family result.
 
 ## 3. Eval Scope
 

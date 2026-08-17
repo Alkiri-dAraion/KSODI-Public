@@ -8,6 +8,25 @@ The cross-layer data, trajectory and composition conditions are defined in the
 
 ## Short Version
 
+All five Layer-1 operators are strictly monadic and source-attributed. Each
+static value belongs to one identified event in one declared trajectory, and
+temporal comparisons use only comparable positions within that same
+trajectory. A declared context or reference space may include visible material
+from outside the trajectory without merging sources or creating a relational
+value.
+
+```text
+e_A(k)
+  -> K_A / S_A / O_A / D_A / I_A
+  -> Z_A(k)
+       |-> IK_A(k)
+       +-> R0(A,B,...) -> IK_rel -> R-family
+```
+
+`A` and `B` remain distinguishable through the operators, `Z` and monadic
+`IK`. Relational interpretation begins only at the separately declared `R0`
+gate.
+
 KSODI v3.5 uses one canonical Layer 0-8 map. `KSODI-Light` is the local
 prompt-facing entry layer, not the whole or larger KSODI system.
 Standard-Eval and KSODI-Full are the observer-oriented method layers for
@@ -24,6 +43,13 @@ Current public boundary:
 After `Z(t)`, the architecture branches: `IK` is the monadic projection, while
 `R0` is evaluated in parallel as the relational comparability gate over
 distinguishable `Z`-trajectories. `R0` is not calculated from `IK`.
+
+Layer-1 operators may be inspected individually through monadic trajectory,
+projection or aggregation views. After stable `R0`, explicitly defined
+operator-specific relational comparison views may be added. These are optional
+diagnostics and are neither complete `Z`, canonical `IK`, `IK_rel` nor
+resonance. A one-operator projection must not be reported as full `IK`, and one
+operator-specific relational signal is not by itself an R-family result.
 
 ## Layer Map
 

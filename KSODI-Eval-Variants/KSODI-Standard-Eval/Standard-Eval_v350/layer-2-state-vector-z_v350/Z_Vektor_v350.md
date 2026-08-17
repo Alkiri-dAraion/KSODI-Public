@@ -10,6 +10,26 @@ placeholder.
 
 ## 1. Definition
 
+Canonical source boundary:
+
+```text
+e_A(k)
+  -> K_A / S_A / O_A / D_A / I_A
+  -> Z_A(k)
+       |-> IK_A(k)
+       +-> R0(A,B,...) -> IK_rel -> R-family
+```
+
+Every component of `Z_A(k)` remains attached to the same identified target
+event and declared monadic trajectory. Temporal operator comparisons and
+`Delta Z_A` use only comparable positions within that trajectory. Context or
+reference material admitted by an operator profile does not become another
+source component of `Z_A`.
+
+`Z_A` and `Z_B` remain distinguishable. Their parallel availability does not
+create `Z_AB`; relational interpretation begins only at a separately declared
+`R0` gate.
+
 The state vector `Z_t` describes the observable state of an interaction at turn `t` or evaluation unit `t`.
 
 It is composed of the five normalized KSODI operator values:
@@ -139,6 +159,11 @@ The IK branch observes monadic projection and coherence dynamics.
 The `R0` gate and the later relational branch observe dyadic or n-adic trajectory coupling.
 
 The R-family denotes the relational and resonance observation family. It is not a single scalar score.
+
+Individual Layer-1 components may receive optional monadic trajectory,
+projection or aggregation views. After stable `R0`, separately defined
+operator-specific relational comparison views may also be used. None of these
+partial views is complete `Z`, canonical `IK`, `IK_rel` or resonance.
 
 `R0` runs after `Z` and in parallel to monadic `IK`. It is not downstream of
 `IK`. Relational projection begins only after `R0`, because `R0` checks whether
