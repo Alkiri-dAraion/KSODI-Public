@@ -115,32 +115,33 @@ staged. Before building from any layer, read the
 
 ## What the Observer Sees — A Conceptual Projection
 
-<!--
-IMAGE ASSET PENDING
-
-After `assets_images/ksodi-observer-projection-space.png` has been uploaded,
-replace this complete comment block with:
-
-![Conceptual KSODI Observer projection with distinct cyan and gold signal streams, passive sampling and a violet holographic state-space reconstruction.](./assets_images/ksodi-observer-projection-space.png)
--->
+![Conceptual KSODI Observer projection: Earth and a spacecraft exchange distinct source-attributed signal streams while a separate Observer samples the traces and projects reconstructed states into a violet state-space model.](./assets_images/ksodi-observer-projection-space.png)
 
 > **Conceptual visualization, not a measurement plot.** The image is an
 > explanatory metaphor for observable traces, declared reference conditions and
 > observer-side reconstruction. It is not a literal rendering of a
 > five-dimensional space.
 
-Imagine two distinguishable systems — represented here by a spacecraft and
-Earth — exchanging signals. Their internal states do not merge, and neither
-signal becomes the property of the other participant. The cyan and gold streams
-remain source-attributable. What becomes observable is their externalized
-sequence, timing, movement and relational ordering.
+Imagine two distinguishable entities — represented here by the lower spacecraft
+and Earth — exchanging signals as a declared dyad. The exchange makes a
+relational observation basis possible; it does not by itself establish
+coupling. Their internal states do not merge, and neither signal becomes the
+property of the other participant. The cyan and gold streams remain
+source-attributable. What becomes observable is their externalized sequence,
+timing, movement and relational ordering.
 
-The separate Observer samples these exposed traces without acting as a
-Controller. It does not decide, intervene or send instructions into the
-exchange. The violet holographic form represents an observer-side projection
-of reconstructed `Z(t)` states, trajectories and selected higher-dimensional
-relations. It is not a physical object between the interacting systems, and it
-is not the declared reference space itself.
+The upper spacecraft represents a separate Observer. It samples the exposed
+traces without acting as a Controller: it does not decide, intervene or send
+instructions into the exchange. The Observer is not automatically a third
+participant in the evaluated dyad. It becomes part of an n-adic evaluation only
+if its own attributable events or signals are explicitly included in the
+declared evaluation unit.
+
+The violet tesseract-like form represents an observer-side projection of
+reconstructed `Z(t)` states, trajectories and selected higher-dimensional
+relations. It is a visual shadow metaphor for the five-coordinate KSODI state
+space, not a literal geometric rendering. It is neither a physical object
+between the interacting entities nor the declared reference space itself.
 
 The surrounding scene illustrates that every projection remains embedded in a
 larger observation context. Channel conditions, timing, tools, sources,
@@ -149,10 +150,11 @@ reference-space and evaluation profile before the projection can be interpreted
 responsibly. Architecture-agnostic method roles do not make the Observer
 input-agnostic.
 
-`R0` establishes only whether distinguishable trajectories are stable enough
-for relational comparison. Later layers examine relational coherence and
-observable coupling. The displayed traces can be inspected. The reconstructed
-whole remains a model.
+Each attributable signal event and source-local trajectory is evaluated
+monadically before relational comparison. `R0` establishes only whether
+distinguishable trajectories are stable enough for that comparison. Later
+layers examine relational coherence and observable coupling. The displayed
+traces can be inspected. The reconstructed whole remains a model.
 
 For the formal topology, see the
 [current Layer 0-8 architecture](./KSODI_V350_ARCHITECTURE_ASCII.md). For
@@ -162,12 +164,24 @@ drift visualizations, see the
 Those outputs document earlier implementation work and the transition into
 v3.5; they are not current v3.5 specification diagrams.
 
-> **Horse-and-rider analogy:** A rider sitting on a horse establishes a
-> concrete dyadic situation, but not coupling. `R0` is the SYN/ACK-like
-> Handshake gate that opens relational observation. Only sustained high
-> `IK_rel` together with sustained high, branch-specific R-family signals can
-> support the observation of strong coupling. Horse and rider may still gallop
-> past the arena exit together: coupling strength does not determine intended
+> **Horse-and-rider analogy — monadic, dyadic and n-adic:** Horse and rider
+> remain distinguishable entities. Their attributable events and source-local
+> trajectories can each be observed monadically. When they are declared as a
+> pair, the rider sitting on the horse establishes a concrete dyadic situation
+> and enables signal exchange through movement, balance and rider aids such as
+> seat, weight, legs and reins. Neither contact nor signal exchange proves
+> coupling. Only mutually observable adjustment over time can support the
+> investigation of a coupling pattern. Harmonious joint execution is one
+> possible coordinated expression; it is not established by contact alone.
+>
+> `R0` is the SYN/ACK-like Handshake gate that opens relational observation.
+> Only sustained high `IK_rel` together with sustained high, branch-specific
+> R-family signals can support the observation of strong coupling. A trainer or
+> other Observer watching from outside does not automatically turn the dyad
+> into a triad. The basis becomes n-adic only when a third or further entity's
+> attributable contributions and relations are explicitly included. Even
+> strong coupling is not automatically good: horse and rider may still gallop
+> past the arena exit together. Coupling strength does not determine intended
 > direction, task fit or alignment. See the
 > [R0 relational gate](./KSODI-Eval-Variants/KSODI-Full/Full_v350/layer-4-r0-gate/R0_Relational-Gate.md).
 
@@ -190,8 +204,9 @@ not the transient shared observable interaction space itself.
 
 # KSODI Method
 
-KSODI is a structured observation method for human-AI, agent-agent and n-agent
-interaction structures, focussing on explainable governance and observability.
+KSODI is a structured observation method for interaction structures involving
+distinguishable entities, focussing on explainable governance and
+observability.
 It is embedded in the IDAS framework.
 
 → See: [KSODI-IDAS-SIRA_Framework](./KSODI-IDAS-SIRA_Framework.md)
@@ -226,9 +241,10 @@ licence.
 
 ## Where KSODI Fits
 
-KSODI is a layered method for making human-AI, human-agent and agent-agent
-interaction quality observable, discussable and steering-supportive without
-reducing it to single-prompt quality or model accuracy.
+KSODI is a layered method for making observable events and distinct entity
+trajectories within interactions observable, discussable and, where enabled,
+steering-supportive, without reducing interaction observation to single-prompt
+quality or model accuracy.
 
 It is intended to bridge three practical contexts:
 
