@@ -164,26 +164,69 @@ drift visualizations, see the
 Those outputs document earlier implementation work and the transition into
 v3.5; they are not current v3.5 specification diagrams.
 
-> **Horse-and-rider analogy — monadic, dyadic and n-adic:** Horse and rider
-> remain distinguishable entities. Their attributable events and source-local
-> trajectories can each be observed monadically. When they are declared as a
-> pair, the rider sitting on the horse establishes a concrete dyadic situation
-> and enables signal exchange through movement, balance and rider aids such as
-> seat, weight, legs and reins. Neither contact nor signal exchange proves
-> coupling. Only mutually observable adjustment over time can support the
-> investigation of a coupling pattern. Harmonious joint execution is one
-> possible coordinated expression; it is not established by contact alone.
+> **Dancer-and-dance-group analogy — monadic coherence, relational coherence
+> and resonance:** One dancer's attributable movements form a source-local
+> trajectory that can be observed monadically. The observer can ask whether that
+> dancer's own movement sequence remains coherent within the declared
+> choreography, independently of any other dancer.
 >
-> `R0` is the SYN/ACK-like Handshake gate that opens relational observation.
-> Only sustained high `IK_rel` together with sustained high, branch-specific
-> R-family signals can support the observation of strong coupling. A trainer or
-> other Observer watching from outside does not automatically turn the dyad
-> into a triad. The basis becomes n-adic only when a third or further entity's
-> attributable contributions and relations are explicitly included. Even
-> strong coupling is not automatically good: horse and rider may still gallop
-> past the arena exit together. Coupling strength does not determine intended
-> direction, task fit or alignment. See the
+> Sharing a room, time and music does not by itself create an evaluated dyad.
+> Two people dancing independently at opposite ends of a nightclub may share
+> all three environmental conditions without interacting or having their
+> trajectories paired. `R0` is the SYN/ACK-like Handshake gate that tests
+> whether explicitly paired, distinguishable trajectories provide a stable
+> basis for relational comparison. It does not create the relation, and it is
+> not itself a coupling or resonance score. See the
 > [R0 relational gate](./KSODI-Eval-Variants/KSODI-Full/Full_v350/layer-4-r0-gate/R0_Relational-Gate.md).
+>
+> In a declared duet, each dancer may perform the correct choreography and
+> therefore remain coherent within their own monadic trajectory while the pair
+> is out of rhythm, out of time or only loosely synchronized. Relational
+> coherence becomes observable through the evolving coordination between the
+> two distinguishable trajectories; it is not guaranteed by two individually
+> coherent performances.
+>
+> Resonance is the stronger, sustained pattern in this analogy. A pair or group
+> may appear to move as one visible unit while every dancer remains a
+> distinguishable entity. Rhythm, timing, movement, spatial relation, mutual
+> adjustment and the shared situation develop together across time. Music,
+> floor, room and other environmental conditions belong to the declared context
+> or reference conditions: a mismatch or change in them can alter or disrupt
+> the observed pattern. Sharing any one of these conditions alone is not
+> resonance.
+>
+> A dance group becomes n-adic only when the additional dancers and the relevant
+> relations among their attributable movements are explicitly included in the
+> declared evaluation unit. A choreographer, teacher or audience member remains
+> outside that evaluated group unless their own signals or contributions are
+> explicitly included. The apparent visual unity is an explanatory image, not
+> by itself a numeric proof of resonance. A methodical resonance claim would
+> require the applicable later R-family evidence across a declared window.
+> Neither coherence, coupling nor resonance establishes quality, desirability
+> or correct direction: a duet or an entire ensemble can execute the wrong
+> choreography with remarkable precision.
+
+> **Industrial-robot analogy:** Imagine two robots in a machine hall, observed
+> by a machine setter or technician. Each robot's attributable work cycles,
+> signals and movements form a source-local trajectory that can be evaluated
+> monadically. Physical proximity, use of the same machine or observation by the
+> same person does not by itself create a dyad. If one robot stands on one side
+> of a machine and another on the other side while each independently stamps
+> parts without a declared dependency, they remain two separately observed
+> production trajectories even when their cycle times happen to be similar.
+>
+> A dyadic evaluation basis becomes possible when the robots are explicitly
+> paired within one declared process flow — for example, when one positions or
+> transfers a workpiece and the other performs the next operation, with each
+> action depending observably on the other's timing or signal. Repeated mutual
+> adjustment may then support the observation of coordination or coupling over
+> time. The machine setter remains an external Observer unless their commands,
+> interventions or other attributable contributions are explicitly included in
+> the evaluation unit. Adding further robots makes the basis n-adic only when
+> their contributions and relations are declared as part of the evaluated
+> process. Even exact coordination does not establish quality or safety: a
+> perfectly synchronized production line can manufacture the wrong part or
+> follow the wrong program.
 
 Implementation shortcuts such as "agent layer" or "observer layer" may appear
 in older notes, but the table above is the current public orientation map.
