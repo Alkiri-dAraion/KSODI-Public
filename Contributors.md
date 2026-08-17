@@ -306,8 +306,8 @@ respective human contribution.
 - **Patrick Barthelmäs** worked initially mainly with GPT-4o, later with Claude
   Code and Fable, under KSODI-Light. His broader implementation-side collection
   of models and model-supported tools is referred to as **Yarvis**.
-- **Silke Honerkamp** used GPT-free and specialised models in the Gileath
-  environment under KSODI-Light, especially in pedagogical, communication and
+- **Silke Honerkamp** used ChatGPT and other models as part of her investigations
+  under KSODI-Light, especially in pedagogical, communication and
   application-oriented contexts.
 
 The resulting human contributions remain attributed to Heiko, Patrick and
