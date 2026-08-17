@@ -337,7 +337,7 @@ IK_shared(t) = w dot Zbar_AB(t)
 ```
 
 Terminology note: `H_AB(t)` is a transient shared set, not a Hangar observation
-space. Final naming remains subject to the ELKIM semantic pass.
+space.
 
 Componentwise mean is taken over the shared active set:
 
