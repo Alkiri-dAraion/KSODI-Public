@@ -1,6 +1,6 @@
 ## KSODI – Conceptual Note
 
-# A Structural Observation Method for Human-AI and Agentic Interaction
+# A Structural Observation Method for Interaction Between Distinguishable Entities
 
 ⸻
 
@@ -32,11 +32,15 @@ the source-attribution, evaluation-unit, trajectory, pairing and partial-
 operator conditions that the conceptual descriptions presuppose.
 
 Implementation guardrail for the operator layer:
-Operator `I` remains monadic by default. It measures observable information
-impulse relative to a declared baseline or to the immediately preceding event in
-the same trajectory. Dyadic or n-adic comparison opens only after an explicit
-pairing or exchange rule has been declared. Shared context does not imply a
-shared internal state or a merged event trajectory.
+All five Layer-1 operators are strictly monadic and source-attributed. Each
+static value belongs to one identified event in one declared trajectory.
+Temporal comparisons use only comparable positions within that same
+trajectory. Static Operator `I` measures observable information impulse
+relative to its declared visible reference baseline. A direct
+event-to-predecessor information comparison is an optional source-local
+diagnostic, not a competing I coordinate and not `Delta I`. Dyadic or n-adic
+comparison opens only after an explicit pairing and the `R0` gate. Shared
+context does not imply a shared internal state or a merged event trajectory.
 
 Terminology note:
 Current public v3.5 wording distinguishes between didactic KSODI-Light labels
@@ -51,7 +55,7 @@ This is not meant as a competing definition. The short labels name the working
 question. The observer-facing names name what can be reconstructed in the
 observable part of communication: grounding within a declared reference space,
 discernible and operationally connectable clarity, and information impulse
-relative to sender-side sequence or receiver-side reconstruction.
+relative to a declared visible information baseline.
 
 The sender / receiver distinction is especially important. Sender-side
 description may use the outgoing K/S/O/D/I direction as a working convention:
@@ -83,11 +87,14 @@ merely because an interaction took place.
 
 ### 1. Central Clarification
 
-Human and machine processes are not symmetric.
-They are, however, structurally compatible.
+KSODI begins with distinguishable entities `A`, `B`, or an explicitly declared
+n-adic set. It does not require those entities to be human, artificial,
+biological or technical.
 
 KSODI does not assume identical cognition.
-It assumes describable interaction structure.
+It assumes only that attributable events and trajectories can be described
+under a declared observation profile. Human–AI interaction is one application
+of this abstraction, not its definition.
 
 ⸻
 
@@ -113,7 +120,10 @@ It exists only for the duration of the interaction or observation window.
 
 ⸻
 
-### 3. Human Perspective
+### 3. Human–AI Application Example: Human Perspective
+
+The following human and machine perspectives illustrate one application
+domain. They do not define the entity-neutral operator architecture.
 
 A human enters interaction from an already existing context.
 
@@ -128,7 +138,7 @@ The human process is context-originating.
 
 ⸻
 
-### 4. Machine Perspective
+### 4. Human–AI Application Example: Machine Perspective
 
 An AI system processes interaction in a signal-driven manner.
 
@@ -156,10 +166,12 @@ These axes describe interaction structure without assuming cognitive symmetry.
 They do not model internal mechanisms.
 They describe observable interaction structure.
 
-Depending on the layer, they may describe a user's input, an assistant's output,
-a local agent state or a shared interaction condition produced across a turn.
-Relational interpretation is a later methodological step, not an automatic
-property of every Light-level use.
+Depending on the layer, they may describe a user's input, an assistant's
+output, a local agent event or another attributable entity event. At the formal
+Standard-Eval layer, they never describe a merged shared state. A shared
+interaction condition may be discussed as Light-level orientation or examined
+later through explicitly relational layers, but it is not a Layer-1 operator
+target.
 
 At the Light level, shorter labels such as context, structure,
 objectifiability, clarity and information impulse may still be useful as
@@ -169,6 +181,21 @@ should be used or explicitly mapped.
 ⸻
 
 ### 6. Observer-Side Minimal Representation
+
+The canonical entity-neutral source boundary is:
+
+```text
+e_A(k)
+  -> K_A / S_A / O_A / D_A / I_A
+  -> Z_A(k)
+       |-> IK_A(k)
+       +-> R0(A,B,...) -> IK_rel -> R-family
+```
+
+Entity `B` is reconstructed through its own corresponding event and trajectory
+records. `A` and `B` remain distinguishable through Layer 1, `Z` and monadic
+`IK`; their relation is neither imported into an operator nor represented as a
+merged `Z_AB` state.
 
 For the minimal illustrative case, we consider two distinguishable sides:
 	•	H = human-side observable interaction trajectory
@@ -200,10 +227,11 @@ This equation describes an observer-side reconstruction step. It does not claim
 access to an entity's internal mechanism or an internal state transition.
 
 The exchanged sequence forms a shared observable interaction space, not a
-shared mind. Individual signals may remain attributable to their emitting side,
-while the longitudinal relational ordering created through response,
-reconstruction and supplementation cannot be reduced to either participant
-alone. Private thoughts and internal states remain separate and unobserved.
+shared mind. Individual signals remain attributable to their emitting side.
+After explicit pairing and stable `R0`, the longitudinal ordering created
+through response, reconstruction and supplementation may be investigated as a
+relational pattern that is not reducible to either trajectory alone. Private
+thoughts and internal states remain separate and unobserved.
 
 The exchanged signals may carry varying degrees of informational difference.
 Their observable information impulse is evaluated through the KSODI operator
@@ -220,11 +248,13 @@ Only observable state evolution under a declared observation profile.
 To avoid symbol collision with derived quantities such as `IK` or the
 R-family, KSODI defines the observer-side state vector:
 
-\mathbf{Z}(t) = (K(t), S(t), O(t), D(t), I(t))
+\mathbf{Z}_A(k) = (K_A(k), S_A(k), O_A(k), D_A(k), I_A(k))
 
 This is not a new operator and not a representation of an internal semantic
-state. It is the reconstructed interaction state within the five-dimensional
-KSODI observation space.
+state. It is the reconstructed state of one identified event in one declared
+monadic trajectory within the five-dimensional KSODI observation space. A
+parallel `Z_B(m)` remains a separate state; there is no implicit shared
+`Z_AB`.
 
 ⸻
 
@@ -233,18 +263,19 @@ KSODI observation space.
 When observable states are reconstructed over time, the following become
 meaningful:
 	•	Current state:
-\mathbf{Z}(t)
+\mathbf{Z}_A(k)
 	•	First difference:
-\Delta\mathbf{Z}(t)
+\Delta\mathbf{Z}_A(k)
 	•	Second difference:
-\Delta^2\mathbf{Z}(t)
+\Delta^2\mathbf{Z}_A(k)
 
 These are descriptions of observable change, not physical claims and not
-measurements of hidden cognition.
+measurements of hidden cognition. The predecessor used by each difference must
+come from the same declared trajectory `A` under a compatible configuration.
 
 ⸻
 
-### 9. No Metric of Truth
+### 9. No Metric of General Correctness or Universal Validity
 
 KSODI does not define:
 	•	right vs. wrong
@@ -264,9 +295,11 @@ Observation without normative enforcement.
 
 A space is mathematically a set of variables sufficient to describe a state.
 
-KSODI does not claim that five dimensions are necessary.
+KSODI does not claim that five dimensions are necessary or universally
+sufficient.
 
-It proposes that five dimensions are operationally sufficient to describe interaction structure in a stable and observable way.
+It proposes them as a minimal operational basis whose sufficiency must be
+evaluated for the declared observation purpose and application domain.
 
 They are:
 	•	not mystical
@@ -335,10 +368,11 @@ It proposes operational sufficiency.
 The KSODI observation space is a formal abstraction.
 
 It is:
-	•	relational
+	•	trajectory-based at its monadic foundation
 	•	temporary
 	•	functional
 	•	model-based
+	•	open to relational analysis only after `R0`
 
 It is not:
 	•	a physical field
@@ -354,7 +388,7 @@ It is part of a structured observation method.
 Clear distinction:
 	•	KSODI-Light → reflective working agreement and didactic orientation inside interaction
 	•	KSODI Standard-Eval / Full → formal observer layers of the method
-	•	Image / Diagram → visualization of dynamic coupling
+	•	Image / Diagram → visualization of attributable trajectories and, after `R0`, possible relational coupling
 	•	Mathematics → description of state evolution
 
 Additional v3.5 boundary:
@@ -392,7 +426,7 @@ Layer 1 - Operators
   S0 may additionally use optional S0_ext / P_dup where explicitly enabled
 
 Layer 2 - Z
-  Z(t), Delta Z, Delta2 Z, ZSigma, ZSigma(Hangar)
+  Z_A(k), Delta Z_A, Delta2 Z_A, Z_A Sigma, Z_A Sigma(Hangar)
 
 From Z, two checks run side by side:
 
@@ -415,6 +449,14 @@ Layer 7 - R_pace
 Layer 8 - future signal-media extension
   not active v350; later work may examine audio, radio, Morse or wave signals
 ```
+
+Layer-1 operators may be inspected individually through monadic trajectory,
+projection or aggregation views. After stable `R0`, explicitly defined
+operator-specific relational comparison views may also be used. These are
+optional diagnostics and are neither complete `Z`, canonical `IK`, `IK_rel`
+nor resonance. A projection of one operator must not be reported as full `IK`,
+and one operator-specific relational signal is not by itself an R-family
+result.
 
 Not every application needs every aggregation, Hangar view, drift value or
 second-order drift value. These observations should be selected layer by layer
@@ -455,14 +497,16 @@ in a minimal, theory-compatible, non-normative way.
 ### 16. Possible Implications and Fields of Application
 
 If the assumptions described above hold under further empirical validation,
-KSODI could offer value in several domains related to LLM-based interaction systems.
+KSODI could offer value in several domains involving observable interaction
+between distinguishable entities. LLM-based systems are one prominent
+application family.
 
 These implications remain hypothetical and are currently under experimental evaluation within custom-built architectures.
 
 16.1 Human–Machine and Human–Agent Interaction
 
 If observable interaction trajectories can be described dynamically through
-the state vector \mathbf{Z}(t),
+source-attributed state vectors such as \mathbf{Z}_A(k),
 KSODI may provide a structured lens for observing:
 	•	early interaction drift in long conversations
 	•	decreasing contextual coherence
@@ -483,7 +527,9 @@ This could be relevant for:
 In systems where multiple agents interact
 (e.g., RAG architectures, MoE configurations, or tool-using chains),
 
-KSODI could potentially serve as a relational observation layer between agents.
+KSODI could potentially support a relational observation layer between agents
+after their monadic state trajectories have been reconstructed separately and
+`R0` has opened comparability.
 
 If each agent interaction produces a reconstructable observable state vector,
 drift between agents, reinforcement loops or instability propagation might
@@ -518,7 +564,7 @@ One might ask:
 16.4 Governance and Observability
 
 If interaction drift is detectable through first and second differences of
-\mathbf{Z}(t),
+source-attributed \mathbf{Z}_A(k) trajectories,
 KSODI might provide a minimal formal layer for:
 	•	early anomaly detection
 	•	interaction monitoring
@@ -544,7 +590,7 @@ The relevant question is therefore not only:
 It is also:
 	•	Which interaction condition changed?
 	•	Which corridor was left?
-	•	Which coupling became unstable?
+	•	Where relational analysis is open, which coupling became unstable?
 	•	Which uncertainty became visible or remained hidden?
 
 This is the bridge between KSODI-Light, Standard-Eval, KSODI-Full and IDAS/SIRA.
@@ -589,7 +635,8 @@ implementation is preserved here:
 
 These images are historical work artifacts, not current v3.5 diagrams. They
 are valuable because observing the first full infrastructure helped clarify why
-`Z(t)` must be explicit, why `IK`, `R0`, `IK_rel` and the later R-family must be
+source-attributed `Z_A(k)` and `Z_B(m)` must remain explicit, why `IK`, `R0`,
+`IK_rel` and the later R-family must be
 separated, why missing or invisible data sources require explicit handling
 rather than silent `O0 = 0` interpretation, and why normalization, masking and
 applicability policies must be specified more carefully.
