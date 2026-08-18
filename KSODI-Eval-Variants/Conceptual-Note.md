@@ -1,15 +1,19 @@
-## KSODI – Conceptual Note
-
-# A Structural Observation Method for Interaction Between Distinguishable Entities
+# KSODI – Conceptual Note: A Structural Observation Method for Interaction Between Distinguishable Entities
 
 ⸻
 
 ### Version Note
 
-This conceptual note is an earlier public orientation text.
+This file provides public conceptual orientation. Canonical definitions remain
+in the linked, versioned method files.
+
+Public synchronization note: the architecture-level clarifications below may
+precede the pending public mirror of the privately reviewed Layer-1 operator
+files. Until that mirror is released, the linked public operator files remain
+the file-level public definitions.
 
 The current public v3.5 release contains the complete monadic Standard-Eval
-line: all five Layer-1 operators, the Layer-2 state vector `Z(t)` (`Z_vec`) and
+line: all five Layer-1 operators, the Layer-2 state vector `Z(t)` and
 the Layer-3 monadic interaction-coherence projection `IK`. Standard-Eval ends
 with `IK`.
 
@@ -24,7 +28,9 @@ separate release decisions are complete.
 
 Current public architecture orientation:
 [`KSODI_V350_ARCHITECTURE_ASCII.md`](../KSODI_V350_ARCHITECTURE_ASCII.md)
-shows the current v350 layer order shared by Standard-Eval and Full.
+is the authoritative topology for the current v350 layer order shared by
+Standard-Eval and Full. The longer copy later in this note is explanatory and
+must not override that root architecture file.
 
 Before implementing the conceptual model, read the root
 [KSODI Implementation Guardrails](../IMPLEMENTATION_GUARDRAILS.md). They define
@@ -73,7 +79,7 @@ rather than generic "information depth".
 
 KSODI-Light should also not be read as scoring only the user's prompt. At the
 prompt level, it can serve as a reflective working agreement for user input,
-assistant output and the shared interaction state. It is not the KSODI
+assistant output and the observable interaction condition. It is not the KSODI
 Handshake. Formal observer layers extend this logic into numeric trajectories,
 drift observation and, where methodically justified, relational comparison.
 
@@ -120,39 +126,25 @@ It exists only for the duration of the interaction or observation window.
 
 ⸻
 
-### 3. Human–AI Application Example: Human Perspective
+### 3. Human–Chatbot Application Example
 
-The following human and machine perspectives illustrate one application
-domain. They do not define the entity-neutral operator architecture.
+The following bounded example illustrates one application domain. It does not
+define the entity-neutral operator architecture.
 
-A human enters interaction from an already existing context.
+```text
+Entity H emits source-attributed event e_H(k).
+Entity M later emits source-attributed event e_M(m).
+```
 
-Thoughts:
-	1.	emerge from context
-	2.	become structured
-	3.	are internally contrasted with memory or knowledge
-	4.	become condensed
-	5.	are expressed in communicable form
-
-The human process is context-originating.
-
-⸻
-
-### 4. Human–AI Application Example: Machine Perspective
-
-An AI system processes interaction in a signal-driven manner.
-
-An incoming signal:
-	1.	is tokenized or vectorized
-	2.	compared to learned patterns
-	3.	probabilistically continued
-	4.	integrated into contextual state
-
-The machine process is signal-driven.
+The events may share an `exchange_id` and may reference one another through
+`reply_to_event_id`. They retain separate event, entity and trajectory
+identities. KSODI evaluates the exposed contributions and declared measurement
+conditions; it does not reconstruct the human's thought process or the
+machine's internal computation.
 
 ⸻
 
-### 5. Shared Descriptive Layer: The Five Operators
+### 4. Shared Descriptive Layer: The Five Operators
 
 KSODI introduces five descriptive axes:
 	•	K — Observable Context Completeness
@@ -180,7 +172,7 @@ should be used or explicitly mapped.
 
 ⸻
 
-### 6. Observer-Side Minimal Representation
+### 5. Observer-Side Minimal Representation
 
 The canonical entity-neutral source boundary is:
 
@@ -218,13 +210,21 @@ signals and subsequent events:
 
 U_{H\rightarrow M}(t), \quad U_{M\rightarrow H}(t)
 
-The Observer may update each reconstructed trajectory when new observable
-material becomes available:
+When a new source-attributed event becomes observable, its static state is
+reconstructed from event-bound, operator-specific measurement bases and
+profiles:
 
-Z_i(t+1) = g_i\bigl(Z_i(t), U_i^{obs}(t+1), Ref_i(t+1)\bigr)
+```text
+e_i(k+1)
+  -> operator-specific measurement bases and profiles
+  -> K_i(k+1) / S_i(k+1) / O_i(k+1) / D_i(k+1) / I_i(k+1)
+  -> Z_i(k+1)
+```
 
-This equation describes an observer-side reconstruction step. It does not claim
-access to an entity's internal mechanism or an internal state transition.
+The previous `Z_i(k)` is not silently inserted into the static operator values
+of the new event, and the five operators do not share one universal `Ref`.
+Previous comparable states enter only when explicitly calculating source-local
+differences, trajectory windows or other declared diagnostics.
 
 The exchanged sequence forms a shared observable interaction space, not a
 shared mind. Individual signals remain attributable to their emitting side.
@@ -243,7 +243,7 @@ Only observable state evolution under a declared observation profile.
 
 ⸻
 
-### 7. The Observable State Vector
+### 6. The Observable State Vector
 
 To avoid symbol collision with derived quantities such as `IK` or the
 R-family, KSODI defines the observer-side state vector:
@@ -258,7 +258,7 @@ parallel `Z_B(m)` remains a separate state; there is no implicit shared
 
 ⸻
 
-### 8. Dynamic Description
+### 7. Dynamic Description
 
 When observable states are reconstructed over time, the following become
 meaningful:
@@ -275,7 +275,7 @@ come from the same declared trajectory `A` under a compatible configuration.
 
 ⸻
 
-### 9. No Metric of General Correctness or Universal Validity
+### 8. No Metric of General Correctness or Universal Validity
 
 KSODI does not define:
 	•	right vs. wrong
@@ -291,15 +291,26 @@ Observation without normative enforcement.
 
 ⸻
 
-### 10. Why Five Dimensions Are Legitimate
+### 9. Why Five Dimensions Are Legitimate
 
-A space is mathematically a set of variables sufficient to describe a state.
+When all five coordinates are applicable, the ordered tuple
 
-KSODI does not claim that five dimensions are necessary or universally
-sufficient.
+```text
+Z_A(k) = (K_A(k), S_A(k), O_A(k), D_A(k), I_A(k))
+```
 
-It proposes them as a minimal operational basis whose sufficiency must be
-evaluated for the declared observation purpose and application domain.
+defines one point in the normalized five-dimensional coordinate state space
+`[0,1]^5`. Five scalar coordinates therefore produce a five-dimensional
+hypercube representation.
+
+This construction does not imply that the operators are statistically
+independent, mathematically orthogonal or universally sufficient. If one
+coordinate is not applicable, the schema remains five-coordinate, but no
+complete numeric point in `[0,1]^5` exists for that evaluation record.
+
+KSODI proposes the five coordinates as a minimal operational basis whose
+sufficiency must be evaluated for the declared observation purpose and
+application domain.
 
 They are:
 	•	not mystical
@@ -310,9 +321,12 @@ They are descriptive variables.
 
 ⸻
 
-### 11. Theoretical Anchoring
+### 10. Theoretical Anchoring
 
-Each operator connects to established research traditions:
+The following traditions provide conceptual points of contact. KSODI does not
+claim to operationalize their established constructs directly unless a
+specific operator profile states and validates such a mapping. The references
+named here require a dedicated source and citation check before DOI release.
 
 Context (K)
 – Pragmatics (Morris)
@@ -326,24 +340,25 @@ Structure (S)
 
 Observable Grounded Objectivity (O)
 – Epistemic logic (Hintikka)
-– Knowledge validation
-– Verification models
+– Evidence representation and traceability
+– Verification-oriented models
 
 Observable Clarity (D)
-– Signal-to-noise ratio (Shannon)
+– Signal observability and reconstruction
+– Signal-to-noise traditions as a conceptual point of contact
 – Ambiguity research
 – Clarity studies
 
 Observable Information Impulse (I)
-– Shannon information
-– Entropy and novelty
+– Information theory as a conceptual point of contact
+– Difference, novelty and update description
 – Redundancy analysis
 
 KSODI aligns with these traditions without replacing them.
 
 ⸻
 
-### 12. Origin of the Five Operators
+### 11. Origin of the Five Operators
 
 The five operators were not derived from formal proof.
 
@@ -355,7 +370,14 @@ They emerged inductively from:
 
 They began as working hypotheses.
 
-They proved repeatedly useful in describing interaction drift, ambiguity, stabilization, and breakdown.
+They were repeatedly used as working descriptors during method development and
+helped structure observations of drift, ambiguity, stabilization and
+breakdown. Their diagnostic and predictive value beyond simpler baselines
+remains subject to empirical validation.
+
+The reported interaction corpora, communication training and human–animal
+experience explain the inductive origin of the five operators; they do not by
+themselves validate the mathematics or establish general empirical efficacy.
 
 KSODI does not claim exclusivity.
 It does not claim completeness.
@@ -363,7 +385,7 @@ It proposes operational sufficiency.
 
 ⸻
 
-### 13. No Esoteric Space
+### 12. No Esoteric Space
 
 The KSODI observation space is a formal abstraction.
 
@@ -383,7 +405,7 @@ It is part of a structured observation method.
 
 ⸻
 
-### 14. Conceptual Separation
+### 13. Conceptual Separation
 
 Clear distinction:
 	•	KSODI-Light → reflective working agreement and didactic orientation inside interaction
@@ -422,8 +444,9 @@ Observer architecture:
 
 Layer 1 - Operators
   K0 / S0 / O0 / D0 / I0
-  optional per-operator Delta, Delta2, Sigma and Hangar views
+  optional source-local per-operator Delta, Delta2, Sigma and Hangar views
   S0 may additionally use optional S0_ext / P_dup where explicitly enabled
+  partial K0_observable is separately labelled and never complete K0 or complete-Z K
 
 Layer 2 - Z
   Z_A(k), Delta Z_A, Delta2 Z_A, Z_A Sigma, Z_A Sigma(Hangar)
@@ -441,49 +464,61 @@ Layer 5 - IK_rel
   dyadic / n-adic relational coherence projection after stable R0
 
 Layer 6 - R_geom
-  geometric coupling in KSODI state space
+  staged geometric-coupling branch; not an active public v3.5 formula
 
 Layer 7 - R_pace
-  readable-language or sign-visible pacing structure where explicitly defined
+  staged pacing branch; not an active public v3.5 formula
 
 Layer 8 - future signal-media extension
   not active v350; later work may examine audio, radio, Morse or wave signals
 ```
 
 Layer-1 operators may be inspected individually through monadic trajectory,
-projection or aggregation views. After stable `R0`, explicitly defined
-operator-specific relational comparison views may also be used. These are
-optional diagnostics and are neither complete `Z`, canonical `IK`, `IK_rel`
-nor resonance. A projection of one operator must not be reported as full `IK`,
-and one operator-specific relational signal is not by itself an R-family
-result.
+projection or aggregation views. This public v3.5 line activates no
+operator-specific relational comparison. Proposed post-`R0` partial
+operator-comparison views belong to v3.60 Future Work and would remain neither
+complete `Z`, canonical `IK_rel` nor resonance. A projection of one operator
+must not be reported as full `IK`, and one operator-specific relational signal
+would not by itself establish an R-family result.
+
+A specialized operator-only relational path that bypasses complete `Z` and the
+current Z-based `R0` gate is likewise not defined in public v3.5. It belongs to
+v3.60 Future Work and requires its own pairing, applicability and comparability
+contract.
 
 Not every application needs every aggregation, Hangar view, drift value or
 second-order drift value. These observations should be selected layer by layer
 for the concrete use case. Many ordinary applications may focus on `Z(t)`,
-`IK`, `IK_rel`, relevant R-family variants and `O0` / reference-space
+`IK`, `IK_rel`, separately released R-family variants and `O0` / reference-space
 visibility. In adversarial or drift-sensitive settings, operator-level drift
-may also become important, for example when `I` stagnation or bursts reveal
-attack pressure, repetitive collapse or missing update-relevant information.
+may also identify anomaly candidates requiring interpretation. For example,
+`I` stagnation or bursts may accompany repetition, failure to add information
+relative to the declared baseline or possible adversarial pressure; they do not
+establish an attack by themselves.
 
 Sigma is not a separate main layer in the v350 architecture. It means
 window aggregation inside the relevant layer. `Sigma(Hangar)` means a
 distribution or comparison view over such windows, trajectories or aggregated
-values. Generic R-family shorthand such as `RΣ` must be resolved into
+values. Static values, first differences and second differences retain
+separate types, applicability sets and provenance; a valid static value is not
+discarded merely because no predecessor exists for `Delta` or `Delta2`.
+Generic R-family shorthand such as `RΣ` must be resolved into
 branch-specific terms such as `R_geomSigma` or `R_paceSigma` in concrete
 v350 files and implementations.
 
 For `O0`, source need and reference-space visibility must be declared before
-grounding is interpreted. No-source-needed, source-optional,
-source-required-but-missing, source-visible and
-source-unavailable-to-external-Observer cases must not collapse into the same
-`O = 0` reading.
+grounding is interpreted. The gate distinguishes whether reference material is
+not expected / not required, optional or required and whether the declared
+reference space is available, visible to the evaluator and admissible for the
+evaluation. Missing, invisible, inadmissible or non-required states must not
+collapse into the same `O = 0` reading. The preferred cross-operator visibility
+state is `not_visible_to_evaluator`.
 See the public companion note:
 [`O_Source-Need-Gate_v350.md`](./KSODI-Standard-Eval/Standard-Eval_v350/layer-1-operators/O_Source-Need-Gate_v350.md).
 
 ⸻
 
-### 15. Final Position
+### 14. Final Position
 
 KSODI is an attempt to formalize recurring interaction patterns.
 
@@ -494,7 +529,7 @@ in a minimal, theory-compatible, non-normative way.
 
 ⸻
 
-### 16. Possible Implications and Fields of Application
+### 15. Possible Implications and Fields of Application
 
 If the assumptions described above hold under further empirical validation,
 KSODI could offer value in several domains involving observable interaction
@@ -503,15 +538,16 @@ application family.
 
 These implications remain hypothetical and are currently under experimental evaluation within custom-built architectures.
 
-16.1 Human–Machine and Human–Agent Interaction
+15.1 Human–Machine and Human–Agent Interaction
 
 If observable interaction trajectories can be described dynamically through
 source-attributed state vectors such as \mathbf{Z}_A(k),
 KSODI may provide a structured lens for observing:
 	•	early interaction drift in long conversations
-	•	decreasing contextual coherence
-	•	loss of informational density
-	•	ambiguity accumulation
+	•	decreasing context completeness or context provisioning
+	•	stagnation or change in observable information impulse
+	•	changes in observable clarity or reconstruction conditions that may
+		require interpretation
 
 This could be relevant for:
 	•	AI literacy education
@@ -522,19 +558,21 @@ This could be relevant for:
 
 ⸻
 
-16.2 Agent–Agent, Multi-Agent and Autonomous Systems
+15.2 Agent–Agent, Multi-Agent and Autonomous Systems
 
-In systems where multiple agents interact
-(e.g., RAG architectures, MoE configurations, or tool-using chains),
+In multi-agent workflows, tool-using agent chains or other architectures that
+expose distinguishable source-attributed events,
 
 KSODI could potentially support a relational observation layer between agents
 after their monadic state trajectories have been reconstructed separately and
 `R0` has opened comparability.
 
-If each agent interaction produces a reconstructable observable state vector,
-drift between agents, reinforcement loops or instability propagation might
-become structurally detectable without inspecting internal weights or claiming
-access to internal states.
+If each declared entity emits reconstructable source-attributed events, drift
+between their observable trajectories, reinforcement loops or instability
+propagation might become structurally detectable without inspecting internal
+weights or claiming access to internal states. RAG and MoE components are not
+automatically agent entities; they enter this example only where the
+architecture exposes and declares them as distinguishable interaction sources.
 
 In the current v3.5 direction, this relational reading requires explicit layer
 separation. `IK` describes interaction coherence and must not be treated as
@@ -545,7 +583,7 @@ This remains a working hypothesis.
 
 ⸻
 
-16.3 Model-as-Judge and Moderation Contexts
+15.3 Model-as-Judge and Moderation Contexts
 
 In evaluation scenarios where one model assesses another,
 KSODI could function as a non-normative structural descriptor rather than a ranking metric.
@@ -561,22 +599,26 @@ One might ask:
 
 ⸻
 
-16.4 Governance and Observability
+15.4 Governance and Observability
 
 If interaction drift is detectable through first and second differences of
 source-attributed \mathbf{Z}_A(k) trajectories,
 KSODI might provide a minimal formal layer for:
 	•	early anomaly detection
 	•	interaction monitoring
-	•	non-invasive governance observation
+	•	observer-side governance support
 
-without storing full prompts or enforcing optimization goals.
+It may support longer-term observation with reduced raw-language retention
+where the evaluation and governance profile permits derived records to be used
+safely. Raw and derived records may both remain sensitive or personal; reduced
+retention is not automatic anonymity. KSODI observation does not itself enforce
+optimization goals.
 
 This would require systematic empirical validation.
 
 ⸻
 
-16.5 From Logs to Interaction Conditions
+15.5 From Logs to Interaction Conditions
 
 KSODI should not be reduced to log monitoring or prompt scoring.
 
@@ -597,7 +639,7 @@ This is the bridge between KSODI-Light, Standard-Eval, KSODI-Full and IDAS/SIRA.
 
 ⸻
 
-### 17. From Visual Interaction to Formal Description
+### 16. From Visual Interaction to Formal Description
 
 A visual representation should keep three objects separate:
 
@@ -661,7 +703,7 @@ through the separately defined gate `R0`, followed where justified by
 
 ⸻
 
-### 18. Final Clarification
+### 17. Final Clarification
 
 The KSODI observation space is:
 	•	temporary
