@@ -51,8 +51,9 @@ GitHub repository tree over search-result snippets.
 
 Superseded root-README snapshots are preserved under
 `docs/archive/root-readme/`, superseded roadmap snapshots under
-`docs/archive/roadmap/`, and superseded root-architecture snapshots under
-`docs/archive/architecture/`, for provenance. They retain historical wording and
+`docs/archive/roadmap/`, superseded root-architecture snapshots under
+`docs/archive/architecture/`, and superseded Hangar notes under
+`docs/archive/hangar/`, for provenance. They retain historical wording and
 may contain root-relative links that do not resolve from the archive folder.
 Do not use archived files as current method, release or navigation guidance;
 the live root `README.md` and `ROADMAP.md` remain canonical.
@@ -118,8 +119,13 @@ Handshake / coupling guardrail:
 - The shared observable interaction space contains attributable externalized
   contributions and their evolving relational ordering, not merged thoughts or
   private internal states.
-- The canonical Hangar stores and compares observer-side traces and
-  distributions; it is not the transient interaction space itself.
+- The canonical Hangar stores and compares typed Observer-side traces and
+  attributable distributions; it is not the transient interaction space itself.
+- Every Hangar view declares its object type, entity and trajectory identity,
+  index/window policy, profile, applicability and provenance.
+- Sigma and Hangar are selected views inside a layer or branch, not mandatory
+  intermediate layers. Do not implement a generic `RΣ` or `RΣ(Hangar)` as one
+  R-family scalar.
 
 Do not present `KSODI-Light` as the whole, larger or complete KSODI system.
 Do not use older L1-L4 shorthand as the canonical architecture.
