@@ -219,6 +219,27 @@ This example describes observable reconstruction. It does not claim access to
 either entity's internal processing, and it does not turn a shared codebook
 into a merged state or a relational KSODI value.
 
+#### 3.2 Two-Robot Example
+
+Two robots may operate in the same hall, share a task and remain completely
+distinguishable:
+
+```text
+Robot A emits attributable control and movement events on trajectory A.
+Robot B emits attributable control and movement events on trajectory B.
+A shared work area does not create one mixed Z_AB.
+```
+
+The robots may match execution timing while their KSODI state-space
+trajectories diverge, or show similar state-space movement under different
+timing patterns. This is why relational coherence, geometric coupling and pace
+remain separate parallel questions after stable `R0`. Physical position is
+not automatically `R_geom`; it becomes relevant only where an application
+profile explicitly maps spatial observation into the relational feature basis.
+
+The example illustrates architecture, not empirical validation. It does not
+claim that biological, linguistic and robotic interaction are equivalent.
+
 ⸻
 
 ### 4. Source-Local Descriptive Basis: The Five Operators
@@ -239,6 +260,23 @@ impose a causal or serial calculation chain. Their role-relative positions in
 sender-side KSODI and receiver-side IDOSK describe process orientation, not
 formula dependency.
 
+Index identity remains part of that boundary:
+
+```text
+n        = global event index in the observable event stream
+k_A      = local position inside trajectory A
+k_B      = local position inside trajectory B
+j        = declared relational exchange or paired-evaluation index
+
+pi(j) = (k_A(j), k_B(j))
+```
+
+Compact monadic formulas may use `k` when the trajectory is already explicit.
+Existing formulas that use `t` must declare whether it represents a
+timestamp, implementation step or legacy paired-evaluation index and map it to
+the canonical identities. It must not silently create a common predecessor
+across distinguishable trajectories.
+
 Depending on the layer, they may describe a user's input, an assistant's
 output, a local agent event or another attributable entity event. At the formal
 Standard-Eval layer, they never describe a merged shared state. A shared
@@ -258,12 +296,21 @@ should be used or explicitly mapped.
 The canonical entity-neutral source boundary is:
 
 ```text
-e_A(k)
-  -> K_A / S_A / O_A / D_A / I_A
-  -> Z_A(k)
-       |-> IK_A(k)
-       +-> R0(A,B,...) -> IK_rel -> R-family
+e_A(k_A) -> K_A/S_A/O_A/D_A/I_A -> Z_A(k_A) -> IK_A(k_A)
+e_B(k_B) -> K_B/S_B/O_B/D_B/I_B -> Z_B(k_B) -> IK_B(k_B)
+
+T_A ----\
+         +--> R0(j | pi, p_R0)
+T_B ----/          |
+                   | if stable
+                   +--> IK_rel(j)
+                   +--> R_geom(j)  [staged]
+                   +--> R_pace(j)  [staged, optional]
 ```
+
+`IK_rel`, `R_geom` and `R_pace` are parallel post-`R0` research
+branches with separate inputs and profiles. Their layer numbers do not make
+one branch the formula input of the next.
 
 Entity `B` is reconstructed through its own corresponding event and trajectory
 records. `A` and `B` remain distinguishable through Layer 1, `Z` and monadic
@@ -279,7 +326,7 @@ systems A/B or to n-agent constellations.
 
 For each side, the Observer reconstructs a state vector:
 
-Z_H(t), \quad Z_M(t)
+Z_H(k_H), \quad Z_M(k_M)
 
 These vectors do not represent internal cognitive, semantic or model states.
 They summarize what is observable under the declared operator definitions,
@@ -289,7 +336,7 @@ The user interface (UI) is neither a cognitive space nor a direct coupling
 between internal states. Interaction becomes observable through exchanged
 signals and subsequent events:
 
-U_{H\rightarrow M}(t), \quad U_{M\rightarrow H}(t)
+U_{H\rightarrow M}(j), \quad U_{M\rightarrow H}(j)
 
 When a new source-attributed event becomes observable, its static state is
 reconstructed from event-bound, operator-specific measurement bases and
