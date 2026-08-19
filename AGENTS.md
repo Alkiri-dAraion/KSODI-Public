@@ -306,3 +306,21 @@ identical internal meaning, acknowledgement, causality or a later quantitative
 R-family result. Preserve the bounded Human–Chatbot, unknown Morse-like signal
 and robot examples when explaining these distinctions.
 
+## Layer-1 Reader and Audit Boundary
+
+Use the public
+[`layer-1-operators/README.md`](./KSODI-Eval-Variants/KSODI-Standard-Eval/Standard-Eval_v350/layer-1-operators/README.md)
+as the entry surface for the released operators.
+
+Keep three orders distinct: coordinate order `(K,S,O,D,I)`, preferred
+sender-side formation `K -> S -> O -> D -> I`, and preferred iterative
+receiver-side reconstruction `I -> D -> O -> S -> K`. None is a universal
+causal execution chain or a proof of hidden internal processing.
+
+Every substantive operator explanation preserves source-attributed monadic
+values, comparability before movement claims, and the explicit `R0` boundary.
+Use bounded Human–Chatbot and second-domain examples; Morse-like signals and
+robots are preferred recurring examples where applicable. Repetition remains
+visible at event and sequence levels even when one static information value is
+low.
+
