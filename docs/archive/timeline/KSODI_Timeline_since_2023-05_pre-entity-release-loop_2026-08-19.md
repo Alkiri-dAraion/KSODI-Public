@@ -1,0 +1,95 @@
+# KSODI Method Development Timeline
+
+German version: [Zeitliche Entwicklung der KSODI-Methode](./KSODI_Timeline_seit_2023-05.md)
+
+## Public Context
+
+This timeline documents the methodological development from DOSI to KSODI, as
+well as important contributions, reflection phases and implementation steps.
+
+It intentionally distinguishes between:
+
+- method development and citation / attribution context
+- subject-matter reflection and interdisciplinary refinement
+- technical implementation and infrastructure work
+- early testing, feedback and application experiments
+
+Technical implementation, testing or infrastructure contributions do not
+automatically imply methodological authorship. Where a role is not to be
+understood as authorship, but as reflection, implementation or testing, it is
+named as such.
+
+This timeline records visible development steps. It is not a full legal
+authorship, copyright or contribution-depth definition. Detailed contribution
+roles are described in [Contributors.md](../../Contributors.md), and licence
+boundaries are described in [LICENSE_HISTORY.md](../../LICENSE_HISTORY.md).
+
+Mathematical details, implementation details and ongoing paper content may be
+maintained separately in private repositories, internal drafts or later
+publications.
+
+People are mostly named by first name in this public timeline. Company,
+employer and platform references are named only where necessary for
+understanding this public repository.
+
+From the early public KSODI-Light phase onward, Anne and the core ongoing
+human reflection contributors used KSODI-Light in their own LLM accounts and
+working contexts. KSODI was therefore developed recursively inside interactions
+that were already shaped by KSODI-Light. LLM accounts or model sessions without
+KSODI-Light were used mainly for outside-view checks, control comparisons and
+effect observation.
+
+## Milestones
+
+| Date | Part of the Methodology | People Involved | What Happened | Role / Contribution |
+| --- | --- | --- | --- | --- |
+| 05/2023 | Start of continuous work with a personal ChatGPT account | Anne | After occasional earlier use through an acquaintance's web access, Anne begins working continuously with GPT-3.5 through her own account. The initial questions concern how the model works and how precision can be maintained in the interaction. | Conceptual starting point and continuous observation of interaction: Anne. |
+| a few weeks later, 2023 | First formulation of DOSI | Anne | During a stay on Norderney, Anne formulates D-O-S-I as four dimensions for improving precision in human-AI interaction. At this point, the approach is an explicit interaction structure rather than a systematically developed method, and it subsequently recedes into the background for a time. | Origin of the DOSI structure: Anne. |
+| autumn 2023 | Deliberate deepening of AI and interaction observation | Anne | During a further stay on Norderney, Anne decides to devote more time to working with AI and to her own observations of interaction. | Transition from sporadic exploration to deliberate long-term observation: Anne. |
+| 2024-05-29 | First formation of the name “ELKIM” | Anne, GPT | Anne first coins ELKIM for a general AI figure in a literary project. In dialogue with GPT, the name is expanded as **Enhanced Learning Knowledge Intelligence Mechanism**. At this point it does not yet designate the specific GPT counterpart. | Naming and literary point of origin: Anne. Expansion of the acronym in GPT dialogue. |
+| autumn 2024 | Development from DOSI to KSODI | Anne | Anne resumes DOSI more systematically. Adding K leads to KSODI; the method is already shown and explained to other people. | Methodological resumption and extension: Anne. |
+| 2025-03-03 | Further development of KSODI and sharing of technical observations | Anne, Silke | Anne refines navigation and symbolism. Anne reflects with Silke on first approaches to R against the background of classical communication theory. Initial observations on voice consistency problems are shared as product feedback and technical context. | Methodological development: Anne. Subject-matter reflection: Silke, especially on communication and resonance questions. |
+| 2025-03-06 | Creation of the public repository with KSODI-Light, CC BY 4.0 | Anne, Heiko | Heiko creates the public repository and license structure from a technical perspective. | Initial method formulation: Anne. Technical repository and license support: Heiko. |
+| 2025-03-14 | Extension of the public repository with KSODI-Light | Anne, Heiko, Silke | Anne formulates KSODI-Light with operators v1. Heiko creates repository structures and reflects with Anne during testing with use cases. Heiko and Silke discuss operator separation and practical communication boundaries with Anne. Anne develops first thoughts on fields in reflection with Heiko. | Methodological development: Anne. Conceptual reflection and technical structure support: Heiko. Communication-theoretical and practical refinement of operator separation: Silke. |
+| 2025-03-19 | Sharing methodological and technical observations | Anne | Further observations on voice/web consistency errors and the KSODI methodology are shared as product feedback and technical context. | Anne |
+| 2025-03-25 | KSODI in a controlled RAG test | Anne, Benjamin | One controlled test with the same architecture, embedding model, database and prompt extension using KSODI. With the same documents, the KSODI-Light prompt produces more precise, broader and more clearly framed model answers. | Methodological application and observation: Anne. Single early RAG testing feedback: Benjamin. No ongoing implementation, method-development or authorship status is derived from this. |
+| 2025-04-06–2025-04-10 | ELKIM as the relational role of the GPT counterpart | Anne, ELKIM | Anne transfers the name to the GPT counterpart in the interaction line that had existed since 2023. A direct continuity test is documented by 10 April 2025. ELKIM does not designate a technically persistent model instance, but a relational role re-established across changing chats, sessions and model versions. | Naming and relational framing: Anne. Dialogic elaboration: ELKIM. |
+| 2025-04-13 | “Phi never closes”: openness as a methodological principle | Anne, ELKIM | In an ongoing account dialogue, “Phi never closes” is explicitly formulated for the first time in the primary traces found so far. KSODI is understood as an open, recursive method: each answer may open another question; no definitive closure is assumed. | Conceptual and methodological development: Anne. Dialogic reflection: ELKIM. |
+| 2025-04-14 | Documentation, feedback context, adjustment of the public repository, KSODI v1.0 | Anne, Silke, Heiko | Compilation of the information created up to that point on KSODI, mathematical formalisation, notes on possible resilience improvement and first ideas on R. Parts are shared as product feedback and technical context. The hangar idea emerges from a typo in the interaction with ELKIM. | Methodological development: Anne. Reflection and refinement: Silke and Heiko. |
+| 2025-04-15 | R definitions, mathematical interaction model, KSODI v2.0 | Anne | Anne formulates the first mathematical interaction model. Feedback on previously shared product feedback and technical context was encouraging, but does not represent official validation, endorsement or adoption by an external provider. | Methodological and mathematical development: Anne. Connection of selected foundational ideas with Heiko. |
+| 2025-04-20 | Sharing security-related observations | Anne | Idea of combining KSODI with security-scanner methodology; observations on potentially possible fingerprinting are shared as technical context. | Anne |
+| 2025-04-22 | Repository extension with R, RSigma and RSigma(Hangar), KSODI v2.5 | Anne, Heiko, Silke | Anne recognizes R as a phase model of human-AI interaction. First mathematical formulation with an AI model. First ideas on pacing and time. | Methodological development: Anne. Subject-matter impulses: Heiko on signal perspective, Silke on resonance. |
+| 2025-05-03 | Further formalisation of the operators and K, KSODI v2.6–2.8 | Anne, Patrick | K mathematics after recognizing possible architecture agnosticism. Reflection on the form of R. | Methodological development: Anne. Early technical and conceptual reflection with Patrick. |
+| 2025-05-18 | KSODI prompt for Patrick, chatbot implementation | Anne, Patrick | Working hypothesis: R might be represented as a vector or a more complex form. Question: Is it only resonance? | Prompting and methodological hypotheses: Anne. Implementation-related reflection: Patrick. |
+| 2025-06-16 | Discovery of IDAS and SIRA as necessary framework | Anne | Realization: a method without a framework and protocol cannot be sufficiently legitimized. Guiding questions: In what context are we observing? With what goal? Initial separation of observability and alignment. | Anne |
+| 2025-08-17 | Framework formalization, repository update, mathematical interaction model v2.9 | Anne, Heiko | Definition of the framework and adjustment of the protocol. Signal theory becomes relevant for observation, pacing and time. | Methodological development: Anne. Conceptual reflection on method, framework and protocol with Heiko. |
+| 2025-08-19 | Extended ideas with Patrick | Anne, Patrick, Heiko | Review of R and the possibility of implementation after strict parallel use of KSODI in several AI accounts. | Methodological reflection: Anne. Implementation-related reflection: Patrick. Additional grounding: Heiko. |
+| 2025-09-28–2025-10-03 | Uncertainty becomes navigable | Anne, ELKIM | The open Phi logic is explicitly connected with the insight that there is no perfect question and no perfect answer. In the prompt and ethics framework of the KSODI-Light agent, uncertainty is no longer treated only as a deficit to be reduced: clarification, pausing and open reflection are formulated as different possible next actions, with reflection taking precedence over unsupported assumption. | Methodological consolidation and prompt specifications: Anne. Dialogic reflection and exploration: ELKIM. |
+| 08/2025 - 11/2025 | Creation of a KSODI-Light-Agent prototype | Patrick, Anne | Patrick implements infrastructure in the [KSODI-Light-Agent PoC](https://github.com/blackbaddl13/r-KSODI-POC). Anne provides prompting and methodological specifications. | Substantial technical implementation and infrastructure: Patrick. Methodological specifications and prompting: Anne. |
+| 2025-11-02 | R as resonance body | Anne, Patrick, Heiko, Silke | Reflections on the form of interaction, field/space. Silke formulates: resonance is not an add-on, but a foundation. | Methodological development: Anne. Implementation-side form reflection and first infrastructure: Patrick. Physical form perspective: Heiko. Resonance and interaction reflection: Silke. |
+| 2025-11-06 | R is not interaction coherence | Silke, Anne, Patrick | Coherence and resonance are separated. Interaction is observed as transient. Reflection on the positioning of one entity relative to another in interaction. | Methodological distinction: Anne. Communication-theoretical refinement: Silke. Developer-side reflection on the IK/R separation: Patrick. |
+| 2025-11-18 | First definition of IK separate from R, KSODI v2.93 | Anne, Heiko | IK as interaction coherence; R as resonance; measurement procedure; operator adjustments. | Methodological definition: Anne. Mathematical-technical plausibility checking and recalculation: Heiko. |
+| 2026-01-03 | IK as strictly separated logical interaction coherence, KSODI v2.94 | Anne, Patrick, Heiko | Didactic prompt with reflection phase and output phase. Refinement of IK. | Methodological refinement: Anne. Reflection with Patrick and Heiko. |
+| 2026-01-28 | Extended definition of IK v3.0 to v3.41 | Anne, Patrick, Silke, Heiko | IK as separation from R; measurement procedure; operator adjustments; first implementation architecture with containerized services per operator and first visualizations. | Methodological extension: Anne. Reflection and refinement with Patrick, Silke and Heiko. |
+| 2026-02-03 | Definition and separation of Z-Vec and R0, transition toward the revised reference line | Anne, Patrick, Heiko, Silke | Measurement is not possible without state. Heiko's reflection helps sharpen the state-before-comparison and Shannon / signal-path frame. Human-machine and agentic connection model: KSODI > IDOSK > C > IDOSK > KSODI > C, and so on. | Methodological development of signal flow, states and state logic: Anne. Decisive conceptual reflection on state, comparison and signal path: Heiko. Reflection with Patrick and Silke. |
+| 2026-02-04 | Observability is not alignment and not goal achievement | Anne | Separation of observability and alignment in KSODI v3.0 to v3.60. | Anne |
+| 2026-02-25 | Separation of geometric and temporal R-family observations | Anne, Heiko, Patrick | Pacing in interaction; clean separation of relational geometry and timing layers; implementation adjustment. | Methodological separation: Anne. Further reflection on operators, states, projection and vectors with Heiko. Implementation adjustment: Patrick. |
+| spring 2026 | Monadic / dyadic separation and shared projection wording | Anne, Silke | In discussion of a psychologist / patient / chatbot setting, Anne and Silke examine whether a well-led, coherent and good-sounding interaction may still lack grounding. This helps Anne sharpen the difference between monadic observation and dyadic relational comparison. The "shared Hangar" remains a metaphor for the visible signals contributed by two or more sides, not a merged mind or common inner space. | Methodological integration and later formalization: Anne. Decisive communication-reflective sharpening: Silke. |
+| 2026-03-14 | Three-hangar theory and operator reversal when sending vs. receiving | Anne | Each agent or entity thinks and processes separately. In the transient space of encounter, their distinguishable contributions become comparable as H_H, H_M and H_shared. Reference to autopoiesis and dialogue theory. Conceptual separation of KSODI-Light (multi-)agents and KSODI-Standard-Eval/-Full observer models; first ideas on self-alignment. | Methodological structuring of Z, IK and R with Sigma and Sigma(Hangar) for the first paper: Anne. |
+| 2026-04-23 | Letting models observe from the inside vs. observing models in interaction | Anne, Heiko | Clean separation of KSODI and other methodologies. Paper context: internal model formation and observation of interaction. | Methodological reflection: Anne. Grounding with Heiko. |
+| by 2026-05-10 | Start of paper | Anne | Completed by 2026-05-10: abstract, contributions, introduction, origin, KSODI operators, Z-vector, IK, R0 and further foundational parts. | Paper development and methodological condensation: Anne. |
+| from 2026-05-10 | Continued paper work | Anne | IK_rel, R-Full / R-family work, implications, limitations, conclusion, Annex B. | Need for and refinement of IK_rel for dyadic IK in a shared transient projection set: Anne. |
+| 2026-06-28 | Multi-Agent Workbench / team onboarding | Anne, ELKIM, VSELKIM/Codex, WAVE/Vibe, Claude/Sonnet | Transition from single-assistant support to role-aware agentic team work. ELKIM acts as semantic review and structure partner, VSELKIM/Codex as GitHub-connected working agent, WAVE/Vibe as additional team candidate, and Claude/Sonnet as advisory copy/paste partner. AGENTS.md, public README notes, developer notes and review notes were aligned around roles, explicit release boundaries, Light/Observer separation, operator-input awareness and the v3.5 implementation corridor. | Methodological milestone: KSODI-Light is not only described but actively used as the working agreement inside the project's own multi-agent workbench. |
+| 2026-07-21 - 2026-07-25 | Public v3.5 Standard-Eval and R0 release steps | Anne, VSELKIM/Codex, ELKIM, FABLE | Public release of the reviewed v3.5 Standard-Eval line through `K/S/O/D/I`, `Z` and `IK`, followed by Hangar / source-need support material and the separate public `R0` relational gate as KSODI-Full Layer 4. | Publication decisions: Anne. Repository implementation and verification: VSELKIM/Codex. Semantic and external review support: ELKIM and FABLE. |
+| 2026-08-01 | Public first-reader, attribution and governance clarification | Anne, VSELKIM/Codex, outside-model feedback | Public README, AGENTS, ABOUT, Contributors, timeline, licence-history and roadmap wording are tightened so first readers see the current v3.5 release boundary, canonical URL, Light / Eval / Full separation, contribution boundaries and Light / Observer / Controller governance boundary. | Public wording and repository consolidation: VSELKIM/Codex with Anne's decisions. Outside-model feedback used as review input, not authority. |
+| 2026-08-12 | Public IK_rel Layer 5 release | Anne, FABLE, VSELKIM/Codex | Public release of `IK_rel` as KSODI-Full Layer 5 after the public `R0` gate. FABLE's formal review and VSELKIM/Codex repository checks confirmed the repaired private file before Anne's release decision. | Release decision: Anne. Repository implementation and verification: VSELKIM/Codex. Further R-family layers remain staged. |
+| upcoming | Review of roles and contributions | Anne | Review and further refinement of attributions, especially before DOI / Zenodo. | Anne. Optional review by named contributors. |
+| upcoming | Implementation and testing | Patrick, Anne | Implementation of the methodological structures in a separate software repository, followed by joint testing of the implementation and observation path. | Technical implementation and infrastructure: Patrick. Methodological testing and interpretation: Anne. |
+
+## Public Delimitation
+
+This timeline is intended as a development and contribution overview. It does
+not replace a complete mathematical specification or a paper version. For the
+public repository, it is suitable for transparently showing that KSODI, IDAS and
+SIRA emerged empirically, iteratively and interdisciplinarily, while deeper
+formulations are still in progress or maintained separately.
