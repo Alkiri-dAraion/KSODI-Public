@@ -284,3 +284,25 @@ approved corridors. Reduced vectors, trajectories, graphs and Hangar views may
 still contain sensitive or identifiable information and require normal data
 governance.
 
+## IDAS / SIRA Orientation Boundary
+
+Use [`KSODI-IDAS-SIRA_Framework.md`](./KSODI-IDAS-SIRA_Framework.md) as the
+canonical public orientation note for the relationship among KSODI-Light,
+Observer, SIRA, IDAS and the future Controller.
+
+Do not collapse these systems. KSODI-Light is independently usable. The
+Standard-Eval / KSODI-Full Observer is separately usable without a Controller.
+A later Controller depends on declared Observer findings, authorization and
+approved governance corridors and remains separate from Observer and observed
+entities.
+
+The reflective and productive interaction phases are application orientations,
+not ontological limits on what can be observed. Any observation requires a
+declared purpose, attributable entities, trajectory boundaries and data
+governance.
+
+In SIRA, Resonance means testing observable response fit. It does not verify
+identical internal meaning, acknowledgement, causality or a later quantitative
+R-family result. Preserve the bounded Human–Chatbot, unknown Morse-like signal
+and robot examples when explaining these distinctions.
+
