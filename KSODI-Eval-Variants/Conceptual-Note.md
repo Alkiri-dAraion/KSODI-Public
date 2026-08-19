@@ -63,17 +63,41 @@ observable part of communication: grounding within a declared reference space,
 discernible and operationally connectable clarity, and information impulse
 relative to a declared visible information baseline.
 
-The sender / receiver distinction is especially important. Sender-side
-description may use the outgoing K/S/O/D/I direction as a working convention:
-context, structure, grounding, clarity and information impulse become
-sendable. Receiver-side reconstruction does not simply read the same sequence
-backward as a score. The receiver first encounters informational difference and
-discernibility before grounding, structure and context can be reconstructed.
-If the receiver answers, that receiver becomes the next sender: outgoing
-sendability is again described in K/S/O/D/I direction, while the next receiving
-side reconstructs through I/D/O/S/K. This alternating role change belongs to
-the observable interaction process; it is not a sixth operator, not a shared
-inner space and not a Controller step.
+Sender and receiver are exchange-relative roles. KSODI distinguishes the
+canonical coordinate representation from two directed process topologies:
+
+```text
+canonical state coordinates:  Z_A(k) = (K_A(k), S_A(k), O_A(k), D_A(k), I_A(k))
+sender-side formation:        K -> S -> O -> D -> I
+receiver-side reconstruction: I -> D -> O -> S -> K
+```
+
+The five Layer-1 coordinates remain independently evaluable under their own
+measurement bases and profiles. Their canonical order in `Z` is not a causal
+calculation chain.
+
+The sender-side path describes how context-bound material may be structured,
+grounded, transformed into a channel-appropriate form and emitted as an
+observable information impulse. The receiver-side path is a preferred first
+direction of reconstruction: notice an observable difference, establish
+distinguishability, check available sources or reference spaces, examine
+structure and place the result into context.
+
+With an established convention, practical reconstruction may be abbreviated
+or processed in parallel. Without a shared code, failed grounding may reopen
+segmentation, structural analysis, source checking and contextual hypotheses.
+IDOSK is therefore iterative, inductive and recursive rather than one
+irreversible pass. It does not claim that a human, animal or machine performs
+the five operations internally in this serial order.
+
+A carrier event is not identical with its `I` value. Encoding, compression or
+channel adaptation may affect `D`, but they are not `D` themselves. If no
+target event becomes observable under the declared detector profile, the
+result is not a forced `I = 0` or `D = 0`. Repeated events also remain
+attributable: low new static information relative to a baseline does not erase
+recurrence, stagnation, burst or oscillation patterns that may matter for
+contact-attempt, anomaly or attack review.
+
 This is why current wording treats I as **Observable Information Impulse**
 rather than generic "information depth".
 
@@ -113,16 +137,17 @@ this is primarily a human-facing orientation condition. At the formal observer
 level, each distinguishable side is first treated through its own state
 trajectory before dyadic or n-adic relational observation is opened.
 
-The later shared or relational observation space:
+A later relational observation instance:
 	•	is not ontological
 	•	is not physical
 	•	is not metaphysical
 	•	is not an energy field
 
-It is a formal abstraction describing state, change and possible coupling in
-interaction.
-
-It exists only for the duration of the interaction or observation window.
+It is a formal construction for describing possible relations between
+distinguishable, separately reconstructed trajectories after the required
+gate. The method and its observation space do not cease to exist when one
+interaction ends. A concrete relational instance is defined only for its
+declared interaction or observation window.
 
 ⸻
 
@@ -142,9 +167,61 @@ identities. KSODI evaluates the exposed contributions and declared measurement
 conditions; it does not reconstruct the human's thought process or the
 machine's internal computation.
 
+#### 3.1 Morse Signal and Unknown-Code Example
+
+A second bounded example removes language and cognitive symmetry from the
+picture:
+
+```text
+Entity A emits a source-attributed sequence of pulses and pauses.
+Entity B observes candidate carrier events under a declared detector profile.
+The events and trajectories of A and B remain distinguishable.
+```
+
+If both sides use an established Morse convention, decoding can be rapid. If
+the convention is unknown, Entity B may still notice recurrent differences,
+test whether pulses and pauses are distinguishable, compare them with available
+codebooks or source traces, examine their temporal structure and gradually
+place a reconstructed pattern into context.
+
+This gives the receiver-side preferred direction:
+
+```text
+I -> D -> O -> S -> K
+```
+
+The direction is recursive. Failed source or codebook matching may reopen
+segmentation and structural analysis; a revised structure may in turn change
+which sources or contexts are plausible. No single pass guarantees successful
+decoding.
+
+The corresponding sender-side formation can be described as:
+
+```text
+K -> S -> O -> D -> I
+```
+
+Context-bound material is organized under a code or structural convention,
+may be grounded in declared source material, is transformed into a
+channel-appropriate and distinguishable form, and is emitted as an observable
+carrier event with a profile-specific information impulse.
+
+The convention need not be shared for a signal to become an object of
+investigation. It must be sufficiently shared or successfully inferred for
+rapid and reliable decoding. Repetition must not be discarded: one repeated
+event may add little new static information relative to the declared baseline,
+while its recurrence may still indicate a contact attempt, protocol pattern,
+anomaly or attack candidate. Those interpretations belong to trajectory and
+window analysis; repetition does not automatically increase the event's static
+`I` value.
+
+This example describes observable reconstruction. It does not claim access to
+either entity's internal processing, and it does not turn a shared codebook
+into a merged state or a relational KSODI value.
+
 ⸻
 
-### 4. Shared Descriptive Layer: The Five Operators
+### 4. Source-Local Descriptive Basis: The Five Operators
 
 KSODI introduces five descriptive axes:
 	•	K — Observable Context Completeness
@@ -153,10 +230,14 @@ KSODI introduces five descriptive axes:
 	•	D — Observable Clarity
 	•	I — Observable Information Impulse
 
-These axes describe interaction structure without assuming cognitive symmetry.
+Each axis describes one observable property of one source-attributed target
+event under its own declared measurement basis and profile. Together, the five
+applicable values form the monadic state vector `Z_A(k)`.
 
-They do not model internal mechanisms.
-They describe observable interaction structure.
+They do not model internal mechanisms, and their coordinate order does not
+impose a causal or serial calculation chain. Their role-relative positions in
+sender-side KSODI and receiver-side IDOSK describe process orientation, not
+formula dependency.
 
 Depending on the layer, they may describe a user's input, an assistant's
 output, a local agent event or another attributable entity event. At the formal
@@ -226,10 +307,12 @@ of the new event, and the five operators do not share one universal `Ref`.
 Previous comparable states enter only when explicitly calculating source-local
 differences, trajectory windows or other declared diagnostics.
 
-The exchanged sequence forms a shared observable interaction space, not a
-shared mind. Individual signals remain attributable to their emitting side.
-After explicit pairing and stable `R0`, the longitudinal ordering created
-through response, reconstruction and supplementation may be investigated as a
+The exchanged sequence forms a shared observation corpus or declared window,
+not a shared state and not a shared mind. Individual signals remain
+attributable to their emitting side. Shared material may be visible in the
+measurement basis without merging target events or trajectories. Only after
+explicit pairing and stable `R0` may the longitudinal ordering created
+through response, reconstruction and supplementation be investigated as a
 relational pattern that is not reducible to either trajectory alone. Private
 thoughts and internal states remain separate and unobserved.
 
@@ -417,16 +500,21 @@ Additional v3.5 boundary:
 	•	KSODI-Light does not contain the KSODI Handshake as an implementation layer
 	•	KSODI Standard-Eval comprises the monadic line `K/S/O/D/I -> Z -> IK`
 	•	Relational, dyadic or n-adic observation begins separately with the `R0` gate and does not belong to Standard-Eval
-	•	`R0` is the numeric SYN/ACK-like Handshake boundary of relational
-		observation; the analogy is functional, not a literal TCP or OSI mapping
+	•	`R0` is the numeric Handshake boundary of relational observation;
+		a SYN/ACK analogy is functional, not a literal TCP or OSI mapping, and
+		a technical acknowledgement of receipt is not identical with the
+		Z-trajectory comparability gate
 	•	The Handshake is not a sixth operator or a separate score beside `R0`
 	•	`R0` is not coupling; sustained strong coupling requires high
 		`IK_rel` together with high branch-specific R-family evidence across a
 		declared observation window
 	•	In turn-taking, the receiver may become the next sender; KSODI therefore
-		separates outgoing K/S/O/D/I sendability from incoming I/D/O/S/K
-		reconstruction without claiming access to either participant's inner
-		Hangar
+		distinguishes sender-side `K -> S -> O -> D -> I` formation from the
+		receiver-side preferred `I -> D -> O -> S -> K` reconstruction
+		direction without changing stable entity identity
+	•	The two directed paths are recursive process descriptions, not the
+		calculation order of `Z`, not a sixth operator and not a claim about
+		either participant's inner Hangar
 
 No mysticism.
 No ontology.
@@ -520,12 +608,14 @@ See the public companion note:
 
 ### 14. Final Position
 
-KSODI is an attempt to formalize recurring interaction patterns.
+KSODI is an attempt to formalize recurring observable interaction patterns.
 
-It does not claim to define the structure of reality.
+It does not claim to define the structure of reality, infer hidden internal
+processing or establish causality from temporal sequence or correlation alone.
 
-It describes how interaction changes over time
-in a minimal, theory-compatible, non-normative way.
+It describes observable change within source-attributed trajectories and,
+only after an explicit gate, relational patterns between distinguishable
+trajectories in a minimal, theory-compatible and non-normative way.
 
 ⸻
 
@@ -715,6 +805,12 @@ Visual and formal diagrams are two representations of the same methodological
 assumption: interaction can be observed through exposed signals and separately
 reconstructed trajectories without treating those trajectories as internal
 semantic states.
+
+The sender-side and receiver-side paths explain how observable material may be
+formed and reconstructed. They do not erase the monadic source boundary.
+Temporal succession, repeated co-occurrence or increasing proximity may
+motivate further observation, but they do not by themselves establish that one
+entity caused the observed change in another. Correlation is not causation.
 
 ⸻
 
