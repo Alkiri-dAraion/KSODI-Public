@@ -123,11 +123,20 @@ relational question about those already distinguishable trajectories.
 
 ### Unknown Morse-like signal
 
-A repeated pulse can become observable before its emitter, convention or
-meaning is known. Standard-Eval can track the provisionally attributed signal
-trajectory. Full becomes relevant only when a second distinguishable trajectory
-and an explicit pairing or constellation exist. A reply edge is not proof of
-acknowledgement or successful decoding.
+A single provisionally attributable pulse or pulse sequence can already be
+examined with Standard-Eval. One identified signal event requires neither a
+predecessor nor a second trajectory: the Observer can evaluate the applicable
+Layer-1 coordinates and, where the complete basis is available, construct its
+monadic `Z` and optional `IK`. Repeated pulses may form one source-local
+trajectory and support drift, window and anomaly observation. This can be
+relevant for security-oriented detection and reconstruction even while the
+emitter, convention or meaning remain unknown.
+
+KSODI-Full is not triggered merely because a second trajectory exists. It
+becomes applicable only when the observation question explicitly compares two
+or more distinguishable trajectories through a declared pairing or
+constellation and the `R0` gate. A reply edge is not proof of acknowledgement,
+successful decoding, coupling or attack.
 
 ### Robots
 
