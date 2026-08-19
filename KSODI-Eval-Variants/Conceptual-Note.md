@@ -7,10 +7,10 @@
 This file provides public conceptual orientation. Canonical definitions remain
 in the linked, versioned method files.
 
-Public synchronization note: the architecture-level clarifications below may
-precede the pending public mirror of the privately reviewed Layer-1 operator
-files. Until that mirror is released, the linked public operator files remain
-the file-level public definitions.
+Public synchronization note: this conceptual orientation and the current
+public Operator I include the retrieval-state clarification adopted on
+2026-08-19. Other linked public operator files remain the file-level public
+definitions until each separately reviewed replacement is explicitly released.
 
 The current public v3.5 release contains the complete monadic Standard-Eval
 line: all five Layer-1 operators, the Layer-2 state vector `Z(t)` and
@@ -650,6 +650,22 @@ collapse into the same `O = 0` reading. The preferred cross-operator visibility
 state is `not_visible_to_evaluator`.
 See the public companion note:
 [`O_Source-Need-Gate_v350.md`](./KSODI-Standard-Eval/Standard-Eval_v350/layer-1-operators/O_Source-Need-Gate_v350.md).
+
+For `I`, retrieval is one possible reference operation, not communication
+itself and not a prerequisite for every profile. Where retrieval is used,
+missing, not-requested, unavailable, empty, inadmissible and
+admissible-available outcomes must retain separate types. `RET_A(k) = ∅`
+(the `empty` state in plain-text notation) is reserved for a completed
+operation that returned no candidate elements; it does not describe a
+communication-free state. A non-empty raw retrieval result may still yield no
+admitted reference material.
+
+If a declared I profile requires retrieval, every state other than
+admissible-available interrupts that reference-dependent evaluation path for
+the current event. If no admissible basis can later be reconstructed and no
+separately declared non-retrieval profile applies, the reference-dependent I
+value remains non-reconstructable for that event. It is `not_applicable`, not
+numeric zero, and does not establish that no signal or communication occurred.
 
 ⸻
 
