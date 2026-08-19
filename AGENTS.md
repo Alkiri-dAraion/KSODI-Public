@@ -259,3 +259,28 @@ This is a method repository, not a code repository. Do not propose formula
 corrections, symbol renames or layer reordering through automated pull
 requests. Method changes require prior discussion. Forks and adaptations are
 welcome under CC BY 4.0. Contact for method questions: ksodi@thevoid.email.
+
+## Implementation Guardrail Contract
+
+For cross-layer implementation work, use
+[`IMPLEMENTATION_GUARDRAILS.md`](./IMPLEMENTATION_GUARDRAILS.md) as the
+canonical public contract.
+
+Preserve stable entity identity and store sender / receiver only as
+exchange-relative roles. Keep global event index `n`, source-local trajectory
+indices `k_A` / `k_B`, relational evaluation index `j` and explicit pairing
+map `pi(j)` distinct. Coordinate order `(K,S,O,D,I)` is not a causal execution
+order.
+
+Do not derive relational values from adjacency or shared context. `R0` requires
+distinguishable trajectories and an explicit pairing or constellation rule.
+After stable `R0`, `IK_rel`, staged `R_geom` and staged optional `R_pace`
+remain parallel branch calculations with their own bases, applicability rules
+and versioned profiles.
+
+Observer outputs do not authorize steering. A later Controller remains a
+separate governed system that depends on declared Observer findings and
+approved corridors. Reduced vectors, trajectories, graphs and Hangar views may
+still contain sensitive or identifiable information and require normal data
+governance.
+
