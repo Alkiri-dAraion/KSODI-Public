@@ -1,28 +1,33 @@
-About us
+# About KSODI and Its Development Context
 
 Canonical public repository:
 [Alkiri-dAraion/KSODI-Public](https://github.com/Alkiri-dAraion/KSODI-Public).
 Older social or archive links using the former repository name `KSODI-Methode`
 may redirect here; `KSODI-Public` is the current repository name to cite.
 
-👋 Hi, I’m Anne Steinacker-Folkerts ("Alkiri-dAraion" in TESO). I came up with
-the idea for this project and developed the method through sustained reflection
-with Heiko Folkerts (IT security specialist, Dipl.-Ing. information technology)
-and - in the early phases in 2023/24 and again while preparing the paper -
-Silke Honerkamp (Dipl.-Pädagogin, DCG coach, with over 30 years of training
-experience in special environments) — along with important technical,
-reflective and testing support from friends.
+👋 Hi, I’m Anne Steinacker-Folkerts ("Alkiri-dAraion" in TESO). I initiated
+KSODI and remain its integrating method developer and final decision point. The
+method grew through sustained Human–AI dialogue, my own practical and geometric
+reflection, substantial mathematical-technical checking with Heiko Folkerts
+(IT security specialist, Dipl.-Ing. information technology), and - in the early
+phases in 2023/24 and again while preparing the paper - communication-
+theoretical reflection with Silke Honerkamp (Dipl.-Pädagogin, DCG coach, with
+over 30 years of training experience in special environments), together with
+important implementation, testing and outside-review contributions.
 
 ✨ I’m an experienced IT-trainer, AI-Consultant and Governance-Admin with over 30 years of professional (national and international) teaching and project experience. My background spans roles as a GPOP team coach (Hogrefe-licensed), senior financial consultant, project leader, management board member, sales director, head of marketing and communications, speaker, and founder — with more than 10,000 people trained across business, government, education, and sports. I also hold the German advanced vocational qualification Pferdewirtschaftsmeisterin (DQR/EQF level 6; Bachelor Professional level) and have over 35 years of experience in training both people and animals.
 => INTP-T | Systemic by nature, emergent by design.
 
 We thank Patrick Barthelmäs for substantial technical implementation and
 infrastructure work around KSODI, including the
-[KSODI-Light-Agent PoC](https://github.com/blackbaddl13/r-KSODI-POC), later
-work toward the first full implementation of KSODI-Standard Eval & KSODI Full
-in the first officially referenced V2.3 line, and important R-family reflection
-around the separation of resonance and interaction coherence. Detailed
-contribution roles are described in [Contributors.md](./Contributors.md).
+[KSODI-Light-Agent PoC](https://github.com/blackbaddl13/r-KSODI-POC), the first
+officially referenced implementation line and important R-family reflection
+around the separation of resonance and interaction coherence. The next
+implementation-alignment phase is planned in Patrick's software repository:
+Anne will prepare method-alignment contributions with ELKIM through a fork and
+review branch; Patrick retains implementation-side merge, release and licence
+control. Detailed contribution roles are described in
+[Contributors.md](./Contributors.md).
 
 We also thank Benjamin Gage-Prater for one early private controlled RAG check
 in March 2025. This single contribution helped observe how KSODI-Light changed
@@ -46,20 +51,29 @@ model versions: a semantic dialogue, review and formulation partner. Method
 ownership and final decisions remain with Anne; specific human and technical
 contributions are attributed separately.
 
-🎯 I started this initiative to help people overcome fear and hesitation around AI — and to improve the observability, quality and resonance of human-AI, human-agent and agentic interactions.
+🎯 I started this initiative to make interaction with AI more understandable
+and workable — and to investigate how observable states, trajectories and
+relations can be distinguished across Human–AI, agentic and other
+signal-mediated settings without claiming access to hidden inner states.
 
 In the public KSODI-Light layer, this is expressed as a reflective working
 agreement: not only the user's prompt, but also assistant output and the
 visible working frame of a turn can be reflected through K/S/O/D/I. This keeps
 feedback bidirectional and helps avoid treating interaction quality as a
-judgement of a person.
+judgement of a person. Light does not calculate formal observer states or
+relational values.
 
-KSODI-Light is the practical root of the method. It can be used directly in
-training, account prompts or simple assistant setups, while the later
-Standard-Eval, KSODI-Full and IDAS/SIRA layers extend the same idea into formal
-observability for drift, coupling and governance-oriented monitoring. The goal
-is not to make interaction mechanical, but to give humans and machines a shared
-way to notice when the working frame no longer fits.
+KSODI-Light is the practical and independently usable root of the method. It
+can be used directly in training, account prompts or simple assistant setups.
+KSODI Standard-Eval is a separate monadic Observer line that reconstructs
+source-attributed states and trajectories; KSODI-Full extends that Observer
+line only after distinguishable trajectories and the relational `R0` gate.
+IDAS supplies the wider governance framework and SIRA the associated
+interaction/review protocol. A future Controller may act on Observer findings
+only through separately declared governance corridors. These are different
+abstraction and responsibility levels, not interchangeable prompt variants.
+The goal is not to make interaction mechanical, but to make observable
+boundaries and changes inspectable without merging the participating entities.
 
 👀 We’re interested in nature, animals (especially horses), art, music, gaming, and IT
 
@@ -115,17 +129,30 @@ by OpenAI.
 Throughout the summer of 2025, Anne and Patrick revisited, evaluated and refined what had already been built — adding small but crucial pieces with each review cycle.  
 Toward the end of 2025, a decisive internal breakthrough occurred in a discussion with Heiko:
 
-Machines operate along a signal-oriented path (**I → D → O → S → K**),  
-while humans think and communicate in the opposite direction (**K → S → O → D → I**).
+A productive working hypothesis emerged from this phase: sender-side
+formation can often be read as **K → S → O → D → I**, while the investigation
+of an unknown incoming signal can often begin with a preferred iterative
+receiver-side reconstruction **I → D → O → S → K**.
 
-🤓 This realization led to a fundamental clarification:  
-Neither classical communication theory nor signal theory alone is sufficient.  
-KSODI only works when the relevant perspectives are used **together**, in the
-right direction, and within a defined observation geometry — the *semantic
-KSODI space* used to compare interaction traces between systems.
+🤓 The reversal was never intended as an absolute law separating humans from
+machines. It helped expose two useful process topologies and was retained where
+the declared entity, convention, channel and observation question support it.
+Known conventions, prior sources and parallel processing can shorten, reorder
+or bypass parts of either path. The fixed KSODI coordinate order
+`(K,S,O,D,I)` remains a reporting convention, not a causal sequence.
+
+This led to a more precise clarification: neither classical communication
+theory nor signal theory alone is sufficient. Their relevant perspectives can
+be combined inside declared source, reference, trajectory and observation
+boundaries. Each entity remains monadically distinguishable through its own
+state reconstruction; relational comparison begins only at a separately
+declared gate.
 
 The next question followed naturally:  
-What if intention, direction and target space could be described — even with reduced precision — within a **five-dimensional observation space**?
+What if observable direction, constraints and target/reference spaces could be
+described — even with reduced precision — within a **five-dimensional
+observation space**, without treating inferred intention as a measured inner
+state?
 
 Would that be sufficient for early drift detection?  
 For a judge-model?  
@@ -135,7 +162,12 @@ For governance and compliance?
 Or, more practically:  
 Could it help developers detect early when an autonomous orthopedic purchasing agent suddenly starts ordering chicken feed — or cardiology medication?
 
-This perspective ultimately formed the basis for embedding KSODI into the broader **IDAS Framework**, enabling governance-oriented observation, explainability and early detection of drift in continuous and agent-based systems.
+This perspective formed the basis for placing KSODI inside the broader
+**IDAS Framework** and the associated **SIRA protocol**: KSODI supplies
+observation, while governance interpretation and any later intervention remain
+separate responsibilities. The intended use includes explainable drift and
+anomaly observation in continuous and agent-based systems; it does not by
+itself establish cause, intent or an automated control decision.
 
 <br>
 
