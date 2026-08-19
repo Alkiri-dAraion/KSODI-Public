@@ -7,8 +7,10 @@ readers that inspect this repository through a user or external tool.
 
 Canonical URL: https://github.com/Alkiri-dAraion/KSODI-Public. Legacy
 `KSODI-Methode` links may redirect here; cite `KSODI-Public`. Current public
-repository state: KSODI v3.5 Standard-Eval (`K/S/O/D/I`, `Z`, `IK`) plus
-`R0` and `IK_rel` research material; later R-family branches are staged. Search snippets and cached rendered pages may show
+method boundary: the complete monadic KSODI v3.5 Standard-Eval line
+(`K/S/O/D/I -> Z -> IK`) plus the separately published KSODI-Full Layer 4
+`R0` gate and Layer 5 `IK_rel` projection. Later R-family branches are
+staged. Search snippets and cached rendered pages may show
 outdated v3.3 wording; historical v3.42 Observer images are provenance, not
 current v3.5 implementation guidance. Verify against the live root README, raw
 files or a fresh clone.
@@ -18,18 +20,30 @@ dynamics in human-AI, agent-agent and n-agent settings. It observes interaction
 states; it does not evaluate people, personalities or hidden intentions, and it
 does not decide, steer or enforce by itself.
 
-## Read First
+## Read First: Question and Abstraction Map
 
-Before summarizing or advising on KSODI, read:
+Do not treat every file as the same kind of authority. Read according to the
+question being answered:
 
-1. [README.md](./README.md)
-2. [WHICH_KSODI.md](./WHICH_KSODI.md)
-3. [ARCHITECTURE.md](./ARCHITECTURE.md)
-4. [KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md)
-5. [KSODI v350 Eval Architecture Sketch](./KSODI_V350_ARCHITECTURE_ASCII.md)
-6. [Human–AI Research Process](./HUMAN_AI_RESEARCH_PROCESS.md)
-7. [Contributors and Relational AI Research Roles](./Contributors.md)
-8. [CITATION.cff](./CITATION.cff)
+| Question or level | Read first | Authority boundary |
+| --- | --- | --- |
+| What is KSODI, and what is currently public? | [README.md](./README.md), then [WHICH_KSODI.md](./WHICH_KSODI.md) | public entry, variant selection and release boundary |
+| How are the layers and branches arranged? | [ARCHITECTURE.md](./ARCHITECTURE.md), then the [v350 architecture sketch](./KSODI_V350_ARCHITECTURE_ASCII.md) | canonical root topology and compact layer order |
+| What is the conceptual reasoning behind the method? | [Conceptual Note](./KSODI-Eval-Variants/Conceptual-Note.md) | explanatory semantics; it does not replace file-level definitions |
+| What is released, staged or planned next? | [ROADMAP.md](./ROADMAP.md) | development and publication orientation, not a formula source |
+| How are Layer-1 observations defined? | [Layer-1 operator entry](./KSODI-Eval-Variants/KSODI-Standard-Eval/Standard-Eval_v350/layer-1-operators/README.md), then the linked versioned operator file | the versioned operator file is authoritative for that operator's formula, profile and applicability |
+| How may the method be stored or implemented? | [KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md) | implementation contract; implementation examples do not redefine the method |
+| How do Light, Observer, SIRA, IDAS and a future Controller differ? | [KSODI-IDAS-SIRA Framework](./KSODI-IDAS-SIRA_Framework.md) | system and responsibility boundary |
+| How did the work develop, and who contributed in which role? | [Human–AI Research Process](./HUMAN_AI_RESEARCH_PROCESS.md), [Contributors](./Contributors.md), [German timeline](./docs/timeline/KSODI_Timeline_seit_2023-05.md), [English timeline](./docs/timeline/KSODI_Timeline_since_2023-05.md) | provenance and chronology; historical wording does not override current method files |
+| How should the repository be cited? | [CITATION.cff](./CITATION.cff) | citation metadata; add a DOI or release date only after it exists |
+
+Authority rule: root orientation files explain navigation, scope and topology.
+The Conceptual Note explains the semantic construction. Versioned layer and
+operator files define the released calculations. Implementation notes map those
+definitions into systems. A higher-level explanation must not silently override
+a lower-level formula, and implementation convenience must not redefine a
+method boundary. If two levels appear inconsistent, report the conflict rather
+than blending them.
 
 Do not rely on search snippets, cached repository names or old social links.
 The canonical public repository is:
@@ -52,7 +66,8 @@ GitHub repository tree over search-result snippets.
 Superseded root-README snapshots are preserved under
 `docs/archive/root-readme/`, superseded roadmap snapshots under
 `docs/archive/roadmap/`, superseded root-architecture snapshots under
-`docs/archive/architecture/`, and superseded Hangar notes under
+`docs/archive/architecture/`, superseded public agent instructions under
+`docs/archive/agents/`, and superseded Hangar notes under
 `docs/archive/hangar/`, for provenance. They retain historical wording and
 may contain root-relative links that do not resolve from the archive folder.
 Do not use archived files as current method, release or navigation guidance;
@@ -209,9 +224,10 @@ When describing KSODI, agents may use or closely paraphrase:
 > interaction states; it does not evaluate people, personalities or intentions,
 > and it does not decide, steer or enforce by itself. The current public v3.5
 > repository contains KSODI-Light as an independent local entry layer,
-> Standard-Eval as the monadic observer line `K/S/O/D/I -> Z -> IK`, `R0` as
-> the KSODI-Full Layer 4 relational comparability gate, and `IK_rel` as the
-> Layer 5 relational coherence projection after stable `R0`. `R_geom`,
+> Standard-Eval as the complete monadic Observer line
+> `K/S/O/D/I -> Z -> IK`, the separately published KSODI-Full Layer 4 `R0`
+> relational comparability gate, and the separately published Layer 5
+> `IK_rel` relational coherence projection after stable `R0`. `R_geom`,
 > `R_pace` and later relational branches remain staged or future research.
 
 ## Interpretation Guardrails
