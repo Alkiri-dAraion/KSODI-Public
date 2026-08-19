@@ -5,11 +5,18 @@
 
 ## Why this roadmap exists
 
-KSODI began as a method for making human-AI interaction more observable,
-discussable and explainable.
+KSODI began in sustained human-AI interaction work. The method has since been
+abstracted beyond that origin: it observes source-attributed events and
+trajectories of distinguishable entities wherever an applicable carrier,
+measurement basis and observation profile can be declared.
+
+Human-AI interaction remains an important and accessible application case. It
+is not the boundary of the method. Depending on the domain, an entity may be a
+human, an artificial agent, a machine, an animal, an organization or another
+distinguishable signal-producing or signal-processing unit.
 
 The current public repository focuses on the methodological layer, KSODI-Light
-and cautious public orientation toward observer-supported agentic systems.
+and cautious public orientation toward observer-supported systems.
 
 This roadmap describes the current research and implementation direction of
 KSODI in a more explicit way.
@@ -19,11 +26,42 @@ is not a final architecture specification.
 
 It is a transparent statement of direction.
 
+## Abstraction and dependency boundaries
+
+The roadmap separates five levels that must not be collapsed:
+
+| Level | Question | Boundary |
+| --- | --- | --- |
+| Observed reality | Which attributable event from which entity is observed? | Entity identity, target event, source and trajectory remain distinguishable. Sender and receiver are exchange-relative roles, not permanent entity types. |
+| Monadic method representation | How is one entity's attributable event reconstructed? | Applicable `K/S/O/D/I` values form `Z_A(k)`; monadic `IK_A(k)` and monadic drift remain inside the same declared trajectory. |
+| Relational observation | When may distinguishable trajectories be compared? | Relational interpretation begins only at separately declared `R0(A,B,...)`. Stable `R0` gates `IK_rel`; later R-family work requires its own release and evidence boundary. |
+| Operational architecture | Where do local guidance, observation and intervention belong? | KSODI-Light and an Observer may each operate independently. A future Controller depends on declared Observer findings and approved governance corridors while remaining separate from the Observer. |
+| Domain instantiation | How is the general schema made usable here? | Each application defines its own targets, carriers, profiles, visible reference spaces, windows and governance conditions. Similar patterns do not make different domains numerically interchangeable. |
+
+The canonical coordinate order `Z_A(k) = (K_A,S_A,O_A,D_A,I_A)` is not a
+causal calculation chain. Sender-side formation may be described as
+`K -> S -> O -> D -> I`; receiver-side reconstruction may use
+`I -> D -> O -> S -> K` as a preferred iterative direction. These
+role-relative process descriptions do not merge the entities or replace the
+independent operator definitions.
+
+In a human-chatbot setting, one human contribution and one chatbot contribution
+remain separate target events with separate source-local trajectories. A reply
+link may declare a possible relation; only `R0` determines whether the
+distinguishable trajectories are stable enough for relational comparison.
+
+The same boundary applies outside language. Two industrial robots may share a
+machine hall, timing system and production goal while their work cycles remain
+separate monadic trajectories. They form an evaluated dyad only where a process
+relation is explicitly declared and the required trajectory evidence is
+available. Shared surroundings alone do not create relational coherence.
+
 ## Core direction
 
 A long-term direction of KSODI is the exploration of deployable
-observer-supported components for environments in which artificial agents
-interact with:
+observer-supported components for environments in which distinguishable
+entities produce, receive or transform observable signals. Application cases
+include artificial agents interacting with:
 
 - humans,
 - teams,
@@ -34,9 +72,16 @@ interact with:
 - governance structures,
 - and other agents.
 
-The goal is not to monitor people as persons. The goal is to observe whether
-communication, task context and process transitions remain connectable,
-reviewable and stable across hybrid human-agent environments.
+The goal is not to monitor living beings as persons, infer hidden internal
+states or assign one entity's observations to another. The goal is to observe
+whether attributable events and source-local trajectories remain
+reconstructable, reviewable and stable, and whether separately declared
+relations remain comparable across hybrid environments.
+
+Entity identity remains stable across an observation. Sender and receiver are
+roles relative to a particular exchange and may reverse in the next event.
+Shared context, platform, task or timing does not by itself merge sources,
+trajectories or evaluation units.
 
 In other words:
 
@@ -78,25 +123,35 @@ prompts, tools and human review points interact.
 
 ## Current methodological assumption
 
-The current KSODI line assumes that many communication and drift problems do not
-arise only inside a single model or a single system. They often arise:
+The current KSODI line assumes that communication and drift problems may arise
+inside one source-local trajectory or across a separately declared relation.
+They are not presumed to arise from a merged interaction state.
 
-- between systems,
-- between humans and agents,
-- between prompts and workflows,
-- between document transformations,
-- between local corrections and downstream effects,
-- and between different governance islands inside the same organization.
+Potential observation points include:
 
-For that reason, KSODI is being developed as a method that can observe
-communicative states and transitions across different architectural layers.
+- transitions between systems,
+- exchanges between humans and agents,
+- prompt-to-workflow transformations,
+- document transformations,
+- local corrections and their downstream effects,
+- and boundaries between governance functions inside one organization.
+
+These examples name possible observation settings. They do not define the
+entities automatically. A workflow, prompt, document, tool, organization and
+human may occupy different methodological roles: target event, carrier,
+context, source material, observed entity, Observer input or governance
+condition. Each role must be declared for the selected use case.
+
+For that reason, KSODI is being developed as a method that first reconstructs
+attributable monadic states and trajectories across architectural layers.
+Relational comparison opens only after the participating trajectories remain
+distinguishable and satisfy the separately declared `R0` gate.
 
 ## Intended future implementation pattern
 
-A future KSODI-based observer deployment would not start by applying a universal
-score to everything.
-
-It would begin with an observation question.
+A future KSODI-based Observer deployment would not start by applying a
+universal score to everything. It would begin with a bounded observation
+question and an explicitly declared evaluation unit.
 
 Examples:
 
@@ -107,61 +162,84 @@ Examples:
 - Where do we need earlier visibility before a problem becomes a compliance or
   process failure?
 
-Only after this question is defined can the five KSODI operators be mapped into
-the organization's context:
+Before calculation, the deployment must identify at least:
 
-- **K - Context**
-- **S - Structure**
-- **O - Objectifiability**
-- **D - Distinctness**
-- **I - Information Depth**
+- the attributable target event `e_A(k)`,
+- the source entity `A` and its declared trajectory,
+- the carrier and detector conditions,
+- context material that informs evaluation without becoming the target event,
+- operator-specific measurement profiles,
+- and visible reference spaces where the operator definition requires them.
 
-These short labels describe the working questions at the Light or orientation
-level. In formal observer-facing wording, the measurable side is more specific:
-O asks for **Observable Grounded Objectivity**, because the observer only has
-access to grounding and traceability inside a declared visible reference space.
-D is treated as **Observable Clarity**, including distinctness,
-discernibility, local signal stability and operational connectability. I is
-treated as **Observable Information Impulse**, because information depth has to
-be reconstructed relative to a position, sequence and receiver-side context
-rather than assumed directly.
+Only then can the five observer-facing KSODI operators be reconstructed:
 
-The broader KSODI mathematics and observer layers may then derive
-organization-specific insights across time, transitions and larger architectural
-spaces.
+- **K — Observable Context Completeness**
+- **S — Observable Structural Coherence**
+- **O — Observable Grounded Objectivity**
+- **D — Observable Clarity**
+- **I — Observable Information Impulse**
+
+KSODI-Light uses shorter, human-facing working questions: Is there enough
+context? Is the contribution structured? Is it sufficiently grounded or
+objectifiable for the task? Is it clear and distinguishable enough to continue?
+Does it add an information impulse? These are reflective prompts, not alternate
+formal operator definitions.
+
+For one entity and one attributable event, the monadic path is:
+
+```text
+e_A(k) -> K_A(k) / S_A(k) / O_A(k) / D_A(k) / I_A(k)
+       -> Z_A(k)
+       -> IK_A(k)
+```
+
+Applicable operator values are reconstructed under their own measurement bases
+and profiles. `Delta Z`, `Delta IK` and other monadic changes compare only
+comparable positions inside the same declared trajectory.
+
+Relational observation is a separate branch. `R0(A,B,...)` checks whether
+distinguishable `Z`-trajectories are stable enough for comparison. It does not
+create the relation, merge the sources or establish coupling. Only stable
+`R0` gates `IK_rel`; later R-family constructs require their own declared
+status, profiles and observation windows.
+
+The broader KSODI mathematics and Observer layers may then derive
+domain-specific findings across time, transitions and larger architectural
+spaces. Cross-domain use preserves the schema, not automatic numeric
+comparability.
 
 ## Governance Boundary Between Light, Observer and Controller
 
-KSODI-Light, KSODI Eval-Variants and any later controller architecture must
-remain clearly separated.
+KSODI-Light, the Observer architecture and any future Controller are separate
+method and governance roles. They are not interchangeable deployment names.
 
 KSODI-Light is local guidance for reflection, prompting, training and
-interaction hygiene. It may help a participant notice missing context, weak
-structure, insufficient grounding, unclear wording or low information movement
-from inside the working frame.
+interaction hygiene. It may be used independently, with or without an external
+Observer. It supports work inside the locally available frame; it does not
+perform formal Observer calculation.
 
-KSODI Standard-Eval and KSODI-Full are external observer-oriented method layers.
-They should reconstruct exposed states, trajectories, drift and relational
-conditions from outside the prompt or local agent role. This separation matters
-because a participant cannot fully observe the frame that already shapes its
-own perception, available context, tools, retrieval state and permitted action
-space.
+KSODI Standard-Eval and KSODI-Full are external observer-oriented method
+layers. An Observer may evaluate interactions whose participants do not use
+KSODI-Light, and it may operate without a Controller. In that case it
+reconstructs and reports attributable states, trajectories, drift and
+separately gated relational conditions. It does not decide, intervene or steer.
 
-A later controller must therefore be treated as a third role, not as the
-Observer itself. A controller may route approved feedback, escalation or
-intervention decisions, but only under explicit policy boundaries. It must not
-silently collapse KSODI-Light, Observer output and action control into one
-self-observing loop.
+A future Controller is not a standalone KSODI variant. It depends on declared
+Observer findings, explicit policy authority and pre-approved governance
+corridors. It may route feedback, escalation or intervention decisions while
+remaining architecturally separate from the Observer and from the observed
+entities.
 
-This is a governance boundary, not merely a software pattern: the agent or user
-inside an environment is always affected by that environment's known frame. The
-Observer and any future controller must preserve enough distance, auditability
-and human oversight for the observation to remain meaningful.
+This is a governance boundary, not merely a software pattern. Observer output
+must not be fed back through an undeclared loop that lets the Observer alter
+the conditions it then evaluates. Human responsibility, auditability, access
+control and intervention authority remain separately declared.
 
 ## Human-AI team integration
 
-One major direction is the safe integration of artificial agents into human
-teams.
+One major application direction is the safe integration of artificial agents
+into human teams. It is an application of the entity-general method, not its
+ontological boundary.
 
 This does **not** mean that KSODI is intended for employee surveillance. It
 means that KSODI may help organizations observe whether communication between
@@ -205,11 +283,17 @@ But it may also:
 - overlook artefacts,
 - or create downstream drift through a local fix.
 
-KSODI therefore treats human oversight itself as part of the observable
-interaction system.
+A human reviewer is not automatically part of the evaluated relation. Human
+oversight becomes observable KSODI material only where a specific intervention
+is included as an attributable target event with its own source and trajectory
+identity. Otherwise, the human remains an external reviewer, decision-maker or
+Controller.
 
 The aim is not to remove human judgement. The aim is to make it easier to
-observe whether an intervention improves or weakens communicative connectability.
+observe whether explicitly included interventions are followed by stronger or
+weaker communicative connectability. Temporal succession and correlation may
+motivate investigation; they do not establish that the intervention caused the
+change.
 
 ## Privacy and data minimisation direction
 
@@ -229,6 +313,11 @@ rely primarily on reduced observation data such as:
 - aggregation windows,
 - corridor events,
 - and audit metadata.
+
+Reduced observation data is not automatically anonymous or harmless.
+Operator vectors, trajectories, timestamps, provenance and relational metadata
+may remain sensitive or personally identifiable when they can be linked to an
+entity, account, role or workflow.
 
 This means:
 
@@ -261,7 +350,8 @@ Possible future examples may include:
 - drift trajectories,
 - heatmaps,
 - workflow transition views,
-- multi-agent coherence views,
+- multi-agent views that preserve source-local trajectories and open
+  relational projections only after stable `R0`,
 - or cross-platform communication diagnostics.
 
 These are research directions, not currently announced deliverables.
@@ -283,17 +373,20 @@ reducing the method to a simplistic dashboard metaphor.
 
 The work is ongoing.
 
-Internal testing and architectural exploration have produced promising
-intermediate results, especially around:
+Historical implementation work and practice-based use have produced
+substantive intermediate observations, especially around:
 
 - KSODI-Light,
 - observer-supported architectures,
 - separation of local agent guidance and external observation,
 - and the application of KSODI to communicative drift across different contexts.
 
+These observations support feasibility and further investigation. They are not
+controlled proof of universal performance or causal effectiveness.
+
 However:
 
-- no production-ready enterprise observer image is currently announced,
+- no production-ready enterprise Observer implementation is currently announced,
 - no fixed public release date is defined,
 - and further testing, documentation, security review and validation are still
   required.
@@ -308,9 +401,10 @@ replacement for governance, compliance, observability or explainability.
 
 Its intended role is narrower and more specific:
 
-> KSODI is being developed as a method for observing communicative
-> connectability, signal quality and drift across human-agent and agent-agent
-> interaction structures.
+> KSODI is being developed as a method for observing source-attributed events,
+> communicative connectability and drift across distinguishable entity
+> trajectories. Human-agent and agent-agent interactions are important
+> application cases, not the boundary of the method.
 
 ## Current public/public-private separation
 
@@ -330,7 +424,9 @@ KSODI remains a research-driven method under active refinement.
 
 The current roadmap reflects a careful direction:
 
-- preserve methodological clarity,
+- preserve entity, event, source and trajectory identity,
+- keep method, relational observation, operational architecture and domain
+  instantiation distinguishable,
 - avoid overclaiming,
 - support responsible integration of artificial agents,
 - maintain human reviewability,
