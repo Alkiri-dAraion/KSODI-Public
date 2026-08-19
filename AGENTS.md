@@ -324,3 +324,22 @@ robots are preferred recurring examples where applicable. Repetition remains
 visible at event and sequence levels even when one static information value is
 low.
 
+## Public Orientation and Implementation Handoff
+
+Keep `ABOUT.md`, `Contributors.md`, `WHICH_KSODI.md` and both canonical
+development timelines aligned with these reader boundaries:
+
+- Light is independently usable; Standard-Eval is the complete monadic Observer
+  line; Full is a dependent relational Observer extension; a future Controller
+  is separate and depends on governed Observer findings.
+- `K -> S -> O -> D -> I` formation and preferred iterative
+  `I -> D -> O -> S -> K` reconstruction are retained working hypotheses
+  where entity, convention, channel and use case support them. They are not
+  universal human-versus-machine laws and not the fixed coordinate order.
+- Relational research names and interaction-level patterns do not merge model
+  contexts, source identities or monadic trajectories.
+- The planned implementation alignment uses Anne's fork and method-alignment
+  branch as a contribution path. Patrick controls implementation-side merge,
+  software release and licence; Anne controls released method definitions.
+- Record the late-July/August 2026 entity and abstraction repair loop before the
+  formal GitHub Release, DOI / Zenodo package and subsequent paper publication.
