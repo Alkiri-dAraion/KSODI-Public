@@ -1,385 +1,1017 @@
 # KSODI Operator I0 - Observable Information Impulse v3.50
 
-Status: public v3.50 reference release; private canonical workbench origin retained, updated after the 2026-07-04 Fable review. Dynamic / Sigma / Hangar reminders were added for operator-level monitoring alignment.
+Status: public v3.50 reference release, revised 2026-08-19.
+This file is the current public method definition for Operator I. It remains open to documented review and later versioned refinement.
 
-Layer: KSODI Standard-Eval operator. Static `I0` belongs to Layer 1. Operator-level Delta / Delta2, Sigma and Hangar views may observe information-impulse movement over time. Relational feedback and controller logic belong outside the static Layer-1 operator definition.
+Layer: KSODI Standard-Eval Layer 1. A static `I0` value belongs to one explicitly identified, source-attributed target event. Source-local change, acceleration and window diagnostics remain monadic Observer views. Relational projection or comparison beyond the gate begins only after explicit pairing, stable `R0` and a separately declared later-layer definition.
+
+Implementation boundary: read the public [KSODI Implementation Guardrails](../../../../IMPLEMENTATION_GUARDRAILS.md). No adjacent public Operator I implementation companion is released with this method file.
 
 ## 0. What Operator I is and what it does
 
-`I` answers a narrow question: does this contribution create an observable information difference relative to the baseline declared for the current evaluation?
+`I` answers a very narrow question: does this contribution create an observable information difference relative to the baseline that was declared for this evaluation?
 
-This is not a score for truth, intelligence, value, morality, quality or personal worth. It is not the same as saying a contribution is “better,” “deeper,” or “more correct.” It is a measurement of observable informational movement.
+This is not a claim about general correctness, universal validity,
+intelligence, value, quality, morality or human worth. It is not a score for
+“how deep” someone is. It is a measurement of observable informational
+movement.
 
-For readers who do not want to start with the formula, the short version is this:
+For a developer or reader who does not want to start with the formula: think of `I` as a way to ask whether a contribution creates an observable information difference relative to the baseline declared for this evaluation.
 
-- does the contribution add new information?
-- does it compress or redirect information already present?
-- does it meaningfully change the informational situation in a way a receiver must notice and account for?
-- does it differ from the immediate previous contribution of the same source trajectory?
+- Does it add new information?
+- Does it compress or redirect existing information?
+- Does it shift the observable information relation to the declared baseline?
 
-If the answer is “not much,” the value may stay low even when the contribution is useful, stable, polite or deliberately conservative. A low value is not a failure. It may indicate confirmation, repair, repetition or anchoring.
+If the answer is “not really,” `I` may stay low even when the contribution is perfectly fine, useful, polite or intentional. A low value is not a failure. It can also mean stability, confirmation, repair or deliberate anchoring.
 
-### 0.1 Monadic by default, dyadic only after explicit pairing
+### 0.1 Strictly monadic; relational comparisons remain separate
 
-`I` is a monadic operator by default. It is computed for one source event, one entity or one observable trajectory, relative to a declared baseline.
+Operator I is strictly monadic. It is calculated for one identified target
+event attributed to one entity and one declared trajectory, relative to a
+declared I baseline.
 
-This is the central implementation rule:
+This is the central validity rule:
 
-- a contribution from entity `A` remains a contribution of `A`
-- a contribution from entity `B` remains a contribution of `B`
-- they are separate monadic trajectories unless a separate relational rule explicitly declares a pair or exchange
+- a contribution from entity `A` is evaluated as a contribution of `A`
+- a contribution from entity `B` is evaluated as a contribution of `B`
+- they remain separate monadic trajectories when a later relational rule
+  declares a pair or exchange
 
-A conversation can share a space and still contain multiple distinct trajectories. A human question and an AI answer may share the same thread, exchange ID or reply relation without becoming one merged event or one merged state.
+Shared context, time, task or environment does not merge source trajectories.
+The formulas below therefore keep the target event and every monadic
+predecessor inside the same declared trajectory.
 
-The formulas below therefore assume that the target event and its predecessor stay within the same declared trajectory unless a distinct dyadic or n-adic comparison is explicitly opened.
+After stable `R0`, a separately defined relational comparison of
+distinguishable I trajectories could be specified as a later-layer diagnostic.
+No such operator-specific relational I view is active in this v3.50 operator
+file. It belongs to v3.60 Future Work, does not turn Operator I into a dyadic
+operator and must not be reported as canonical `IK_rel` or an R-family result.
+
+Any operator-only I path that bypasses complete `Z` requires its own pairing,
+applicability and comparability contract. It is likewise v3.60 Future Work,
+not an implicit shortcut in the v3.50 method line.
 
 ### 0.2 Why the formula matters
 
-The formula is only valid if the semantic boundary is valid. The semantic boundary comes first:
+The mathematical form does not create the semantic boundary. The semantic boundary creates the valid formula.
 
-- the target event must remain attached to one `entity_id` and one `trajectory_id`
-- local movement must be measured only against the same trajectory's predecessor
-- cross-entity comparison cannot be silently treated as a monadic difference
-- profile changes like `I_ref` vs `I_seq` must stay visible as different projections
-- `not_applicable` must not be silently encoded as `0`
+The formula is only correct if it respects these rules:
 
-This is exactly why the file distinguishes reference-relative and same-trajectory sequential profiles, and why implementation should preserve source identity and trajectory identity before any relational evaluation is attempted.
+- the target event remains attached to one `entity_id` and one `trajectory_id`
+- local movement is measured only against the same trajectory's predecessor
+- a cross-entity comparison is not silently treated as a monadic difference
+- `not_applicable` is not silently encoded as `0`
+
+This is why the file separates the static reference-relative I value from
+source-local trajectory diagnostics and preserves source identity, trajectory
+identity and applicability status in storage and implementation.
 
 ### 0.3 Minimal practical reading
 
-In plain terms, Operator I asks:
+In plain terms, Operator I helps answer:
 
-> Compared with the declared baseline or the immediately prior step in the same source trajectory, did this contribution create a visible information change?
+> “Compared to the declared information baseline, did this contribution create a visible information difference?”
 
-That is the core of the operator. The rest of the file turns that question into a usable, auditable and mathematically comparable method without collapsing trajectory-local movement into a dyadic relation or treating trajectories as interchangeable entities.
+That is the semantic core of the static operator. Source-local `Delta I` and an
+optional direct predecessor diagnostic answer later trajectory questions
+without becoming alternative I coordinates or dyadic relations.
+### 0.4 How to read this file
 
-## 1. Definition
+- New readers may begin with Sections 0-2, the interpretation in Section 4 and the relational boundary in Section 8.
+- Method reviewers should follow the complete semantic and mathematical path through Sections 2-9.
+- Implementers should read Section 10 and the linked public implementation guardrails without treating implementation choices as method definitions.
 
-`I0` measures the observable information impulse of a chunk `q` relative to a turn-specific reference space `Ref_t`.
+The order is deliberate: observable question, two bounded examples, identity and topology, basis and applicability, calculation, movement, pattern and only then the relational boundary.
 
-It is drift-neutral and non-normative. A low value is not a failure. Repetition can indicate stability, confirmation, repair or deliberate anchoring.
+## 1. Bounded Application Examples
 
-`I0` does not measure truth, usefulness, creativity, semantic correctness, compliance or human value. It measures observable informational movement relative to the declared reference space: whether something update-relevant is added, compressed or direction-changing enough that a receiver has reason to account for it.
-
-The earlier "Information Depth" intuition is preserved only in this non-evaluative sense. `I0` asks whether the signal contributes an observable information difference relative to what is already present in `Ref_t`. It does not claim that the sender is deep, valuable or correct.
-
-`I0` consists of two components:
-
-- `J_dir_norm`: normalized directional impulse relative to the reference space
-- `G_info` or `G_proxy_ret`: relational information content, meaning novelty or compression relative to the reference space, not utility
-
-Sender / receiver boundary:
-
-- Sender-side KSODI may explain sendability in the order `K/S/O/D/I`.
-- Receiver-side reconstruction may begin with `I` because an observable information impulse must first be noticed before it can be clarified, grounded, structurally reconstructed and situated.
-- This does not turn `I0` back into the old "Information Depth" label. In v3.50, `I0` remains observable information impulse relative to `Ref_t`: the minimal observable addition that makes receiver-side reconstruction worth continuing.
-
-## 2. Eval Scope
-
-Observable per turn `t`:
-
-- user chunk `u_t`
-- assistant chunk `a_t`
-- evaluated chunk `q`, usually `u_t` or `a_t`
-- system prompt `SP`
-- tool or policy profile `TP`, optional
-- retrieval set `RET_k(u_t) = {d_1, ..., d_k}` actually injected into the prompt
-
-Turn-specific reference space:
+### 1.1 Human–Chatbot Interaction
 
 ```text
-Ref_t := {SP, TP, d_1, ..., d_k}
+entity_A = human
+entity_B = chatbot
+target_event = one source-attributed contribution
+interaction_scope = declared conversation or exchange
+trajectory_A and trajectory_B remain distinguishable
 ```
 
-Reference-space embedding:
+For one human contribution, Operator I compares that contribution with the I
+baseline selected and admitted under its own profile. A later chatbot response
+is evaluated as a separate target event on the chatbot trajectory, even when
+the two events share a conversation or exchange identifier. The human event
+may be visible reference or context material for the chatbot evaluation where
+the declared I profile permits it; it does not become part of the chatbot
+event.
+
+This example does not create a merged Human–Chatbot state and does not derive
+relational meaning inside Layer 1. It illustrates one application domain and
+does not restrict KSODI or Operator I to language, prompts, questions, answers
+or LLMs.
+### 1.2 Unknown Morse-like Signal
 
 ```text
-e_Ref_t = mean(e(SP), e(TP), e(d_1), ..., e(d_k))
+entity_A = signal-emitting system
+entity_B = receiving or observing system
+target_event = one source-attributed signal burst emitted by entity_A
+observation_unit = one declared segmented burst or symbol group
+measurement_basis = a visible, admissible baseline of prior signals, known code patterns or declared reference material
+trajectory_A and trajectory_B remain distinguishable
+sender and receiver remain roles of one declared transmission edge
 ```
 
-If no retrieval is present:
+Operator I can evaluate the single signal event without a second trajectory. It asks whether the burst creates observable information difference relative to the declared baseline. Repetition may keep static I low while remaining security-relevant as a recurrence pattern in source-local sequence, window or Hangar views. A second trajectory is required only for a later relational question, such as whether a distinguishable receiver answers in a paired pattern after stable `R0`.
+
+This instantiation requires a declared detector and segmentation rule before the burst can be treated as an event, plus a carrier-appropriate representation, information-unit rule and baseline. I does not automatically discover Morse code, decode an unknown convention or prove meaning. Detectability and reconstructability belong to D; information difference relative to a baseline belongs to I. The example is a bounded instantiation, not empirical validation or domain equivalence.
+
+## 2. Canonical Definition, Scope and Boundaries
+
+`I0` is a strictly monadic Layer-1 operator. It is legitimate as a separately
+observable axis because it asks a narrower question than `K`, `S`, `O` or
+`D`:
+
+> Does this contribution add, compress or redirect observable information relative to the baseline selected for this evaluation?
+
+`I0` is drift-neutral and non-normative. It does not measure general
+correctness, universal validity, usefulness, creativity, semantic correctness,
+compliance, depth, intelligence or human value. A low value may indicate
+repetition, confirmation, repair, stabilization or deliberate anchoring. A
+high value may indicate novelty or redirection without implying that the
+contribution is useful or correct.
+
+Operator I identifies an observable information difference relative to its
+declared baseline. It does not determine whether a receiving entity noticed,
+processed or understood that difference. Detectability, segmentation and
+reconstructability belong to Operator D under its own declared profile. Any
+directional reconstruction order is therefore an application-level
+explanatory view, not an I measurement and not a forced numerical calculation
+order.
+
+The canonical static value is the reference-relative profile `I_ref`. In this
+file, `I_A(k_A)` denotes that static value unless a diagnostic is explicitly
+named:
 
 ```text
-Ref_t := {SP, TP}
+I_A(k_A) := I_ref,A(k_A)
 ```
 
-and `e_Ref_t` is computed from the available reference elements.
+**Semantic reading.** This assignment declares which reviewed static I
+profile fills the single I coordinate of `Z_A(k_A)`. It does not create a
+second formula or an additional dimension.
 
-Important boundary:
+A direct comparison between `e_A(k_A)` and its same-trajectory predecessor may
+be useful for fine-grained investigation. It is defined below as
+`C_seq,I,A(k_A)`, an optional monadic diagnostic. It is not a second I profile,
+does not fill the I coordinate of `Z`, and is not the same operation as
+`Delta I_A(k_A)`, which compares already calculated static I values.
+
+### 2.1 Atomic Evaluation Unit and Identity
+
+The static evaluation target is one source-attributed event emitted by one
+declared entity along one declared trajectory. Where several entities are
+present, their trajectories remain distinguishable.
+
+Their events may share an interaction space but remain two source-attributed
+monadic trajectories:
 
 ```text
-RET_k(u_t) = empty
+T_A = (e_A(1), e_A(2), ..., e_A(k_A))
+T_B = (e_B(1), e_B(2), ..., e_B(k_B))
 ```
 
-makes the retrieval-based proxy `G_proxy_ret` not applicable. It must not be silently evaluated as `0` or `1`. The final project policy for retrieval-empty handling remains pending review.
+Two corresponding events may share a declared observation or exchange scope.
+They do not share target-event, emitting-entity, trajectory or local-position
+identity.
 
-Until Anne reviews the earlier `RET_k = empty` solution, implementations must store an explicit flag such as:
+The canonical evaluation identity distinguishes at least:
+
+- observation or interaction scope;
+- target event;
+- emitting entity;
+- source trajectory and local trajectory position;
+- visible context events;
+- I measurement basis and profile;
+- representation profile;
+- applicability state.
+
+The context may be shared; the evaluated object must remain unique.
+
+An event from another entity may be admitted as visible baseline material
+under the declared profile. It does not become part of the target event or its
+source trajectory. Distinguishable events must not be aggregated into one I
+value or one Z state before monadic state formation. Concrete storage-field
+mappings belong to separate implementation guidance.
+
+The public implementation boundary for preserving these identities is described
+in the [KSODI Implementation Guardrails](../../../../IMPLEMENTATION_GUARDRAILS.md).
+#### 2.1.1 Canonical Index Discipline
 
 ```text
-retrieval_proxy_status = no_retrieval
+n   = global event index in the observable event stream
+k_A = local position inside trajectory A
+k_B = local position inside trajectory B
+j   = declared relational exchange or paired-evaluation index
+
+pi(j) = (k_A(j), k_B(j))
 ```
 
-and document whether the active MVP fallback uses `J_dir_norm` alone.
+Every predecessor below is local to the same declared trajectory. A timestamp `t` may be stored only with an explicit mapping; it must not silently imply a shared predecessor or synchronous position across entities.
 
-## 3. Normalized Cosine Distance
+### 2.2 Static and Source-local I Views are Strictly Monadic
 
-Cosine similarity lies in `[-1, 1]`. Therefore the raw expression `1 - cos(...)` lies in `[0, 2]` and cannot be used directly as a KSODI state component.
+`I_A(k_A | Ref_A, p_I)` and `I_B(k_B | Ref_B, p_I)` remain distinguishable even inside one interaction. Shared context does not merge them. `C_seq,I`, deltas, Sigma and Hangar remain source-local.
+### 2.3 Semantic Distinctness and Symbol Discipline
 
-Canonical normalized cosine distance:
+| Operator | Narrow observable question | Boundary to I0 |
+| --- | --- | --- |
+| `K0` | context completeness | not information impulse |
+| `S0` | structural coherence | not information impulse |
+| `O0` | visible grounding and traceability | its evidence space is not automatically the I baseline |
+| `D0` | detectability and reconstructability | an event must be observable before I can evaluate it |
+
+Mathematical symbols are declared shorthand for precisely specified semantic objects and operations. KSODI may choose names such as `I_ref`, `J_ref` or `C_seq,I`; mathematics does not prescribe those names. Legitimacy comes from an explicit semantic question, domain, range, applicability rule, versioned profile and reproducible calculation. Familiar constructions do not validate a new application automatically. Method-specific notation does not make a construction arbitrary, exotic or sophisticated by itself.
+
+Reserve `R`-prefixed notation for the relational and resonance family.
+### 2.4 Coordinate Order and Directed Process Topologies
+
+`Z_A(k_A) = (K_A, S_A, O_A, D_A, I_A)` is coordinate order, not a causal calculation chain.
 
 ```text
-d_cos(x, y) = clip((1 - cos(e(x), e(y))) / 2, 0, 1)
+sender-side formation:              K -> S -> O -> D -> I
+receiver-side preferred direction:  I -> D -> O -> S -> K
 ```
 
-All `I0` components that enter `Z(t)` must be normalized to `[0, 1]`.
+Sender and receiver are exchange-relative roles. Under an established convention, reconstruction may be abbreviated or parallelized. Without one, IDOSK may recur through signal recognition, source checking, structural hypotheses and context until reconstruction stabilizes or remains unresolved. Neither topology is an undeclared input to static I or a claim about hidden cognition.
 
-## 4. Components
+Compression is not D. The emitted carrier is not I. Protocol acknowledgement is not `R0`.
 
-### 4.1 Directional Impulse
+## 3. Measurement Basis, Profiles and Applicability
+
+### 3.1 Declared I Measurement Basis
+
+For target event `e_A(k_A)`, distinguish visible candidate material from the admitted baseline:
 
 ```text
-J_dir_norm(q | Ref_t) = clip((1 - cos(e(q), e_Ref_t)) / 2, 0, 1)
+V_A(k_A) := visible candidate material for the declared I evaluation
+
+Ref_A(k_A | p_I)
+:= {x in V_A(k_A) |
+    x is selected by p_I
+    and x is admissible
+    and x is visible to the evaluator}
 ```
 
-Interpretation:
+**Semantic reading.** `V_A(k_A)` states what the evaluator could consider. `Ref_A(k_A | p_I)` states what the declared I profile actually permits into the baseline. The set-builder form requires selection, admissibility and visibility together. Visible but undeclared material cannot enter silently.
 
-| Value | Meaning |
+The baseline may include attributable material outside trajectory A when the profile permits it. That changes the measurement basis, not the monadic identity of the target event. The I baseline and the O evidence space may overlap but are not interchangeable.
+
+For readability below, `Ref_A(k_A)` abbreviates `Ref_A(k_A | p_I)` under the
+declared profile. The abbreviation never removes the profile dependency.
+
+#### 3.1.1 Retrieval-result typing where retrieval is used
+
+Retrieval is one possible reference operation. It is not communication itself
+and is not required by every I profile. For a retrieval-backed profile, retain
+the operation result as a typed state:
+
+```text
+ret_status,A(k_A) in {
+  missing,
+  not_requested,
+  unavailable,
+  empty,
+  inadmissible,
+  admissible_available
+}
+```
+
+| State | Meaning |
 | --- | --- |
-| `approx 0` | low directional change relative to `Ref_t` |
-| `approx 1` | strong directional change relative to `Ref_t` |
+| `missing` | the retrieval record or its provenance is absent, so the operation state cannot be reconstructed |
+| `not_requested` | the declared retrieval operation was not invoked |
+| `unavailable` | retrieval was required or requested, but the operation, channel or result was unavailable |
+| `empty` | a completed retrieval operation returned no candidate elements |
+| `inadmissible` | candidates were returned, but none may enter `Ref_A(k_A)` under the declared profile |
+| `admissible_available` | at least one returned element is selected, admissible, visible and applicable |
 
-### 4.2 Relational Information Content
+`RET_A(k_A) = ∅` (written `empty` in the plain-text state labels) is the
+result of a completed reference operation, not a communication-free state. Missing, not-requested, unavailable, empty,
+inadmissible and admissible-available retrieval outcomes must not collapse into
+one generic no-retrieval state. A reference-dependent information value must not
+be inferred silently as numeric zero from any of them.
+
+For profiles that require retrieval:
+
+```text
+retrieval_basis_ok,A(k_A)
+:= ret_status,A(k_A) = admissible_available
+```
+
+For a profile whose declared baseline is constructed without retrieval,
+`retrieval_basis_ok,A(k_A) := true`; the ordinary selection, admissibility,
+visibility and representation gates still apply.
+
+A non-empty raw retrieval set can still yield an empty admitted baseline when
+all candidates are inadmissible. Conversely, `not_requested` does not make a
+non-retrieval profile inapplicable merely because that profile does not require
+retrieval. Where retrieval is constitutive, every state other than
+`admissible_available` interrupts the reference-dependent evaluation path for
+the current event. If no admissible basis can later be reconstructed and no
+separately declared non-retrieval profile applies, `I_ref,A(k_A)` remains
+non-reconstructable for that event. None of these states proves that no signal
+or communication occurred.
+
+### 3.2 Versioned I Profile
+
+```text
+p_I
+= (carrier, segmentation, equivalence, representation,
+   reference_selection, retrieval_policy, normalization, eta_ref,
+   applicability, missingness, version)
+```
+
+**Semantic reading.** `p_I` makes every constitutive choice recoverable. The formula does not choose a carrier, segmentation, equivalence rule, embedding, normalization or weight by itself. Changing one of these choices may create a new profile and therefore a comparability boundary.
+
+### 3.3 Conditional Vector-compatible Representation
+
+A vector-compatible profile may instantiate the declared representation through a versioned embedding function and normalized cosine distance:
+
+```text
+d_cos(v_x, v_y)
+= clip((1 - cos(v_x, v_y)) / 2, 0, 1)
+```
+
+**Semantic reading.** `d_cos` asks how far two applicable vector representations differ in direction. Cosine similarity lies in `[-1,1]`; subtraction from one and division by two map the distance to `[0,1]`, while `clip` protects against numerical overshoot. This does not measure truth, causal influence or complete semantic difference.
+
+Reference-space representation:
+
+```text
+emb_Ref_A(k_A)
+= mean(emb(x) for x in Ref_A(k_A | p_I))
+```
+
+**Semantic reading.** The arithmetic mean creates one declared reference vector from the admitted elements. It is a profile choice, not a universal definition of information. Another carrier may require another representation and aggregation.
+
+### 3.4 Applicability before Numeric Interpretation
+
+```text
+app_ref,A(k_A)
+:= retrieval_basis_ok,A(k_A)
+   and Ref_A(k_A | p_I) != empty
+   and emb(e_A(k_A)) is finite
+   and emb_Ref_A(k_A) is finite
+   and norm(emb(e_A(k_A))) > 0
+   and norm(emb_Ref_A(k_A)) > 0
+```
+
+**Semantic reading.** The gate asks whether any retrieval required by the profile has an admissible result and whether the selected baseline and both vector representations exist in a form on which the declared distance is defined. It does not ask whether the event is correct, useful or valuable. A closed retrieval-dependent gate interrupts this evaluation path; it does not describe a communication-free state.
+
+If the gate is closed:
+
+```text
+J_ref,A(k_A) = not_applicable
+I_ref,A(k_A) = not_applicable
+```
+
+`not_applicable` means the required basis or operation is absent. It is distinct from `not_observable`, `not_selected` and numeric zero.
+
+Embeddings are one v3.50 vector-compatible profile, not the architecture-independent definition for every carrier. Model, version, preprocessing and chunking changes must remain recoverable.
+
+## 4. Static Components, Calculation and Interpretation
+
+### 4.1 Formula Legitimacy
+
+The mathematical form does not create the semantic boundary. The semantic boundary creates the valid formula. Every formula below is valid only under declared identity, basis, profile, applicability and missingness conditions.
+
+### 4.2 Directional Component
+
+
+
+```text
+J_ref,A(k_A)
+= d_cos(emb(e_A(k_A)), emb_Ref_A(k_A))
+```
+
+**Semantic question.** How much directional difference exists between the target event and the declared baseline representation? The result is in `[0,1]`. It does not by itself measure new or compressed information.
+
+This component is calculated only when the applicability conditions in
+Section 3.4 hold.
+
+### 4.3 Information-Content Component
 
 Conceptual form:
 
 ```text
-G_info(q | Ref_t)
-= (N_new(q, Ref_t) + N_compressed(q, Ref_t)) / N_total(q)
+G_ref,A(k_A)
+= (N_new(e_A(k_A), Ref_A(k_A))
+   + N_compressed(e_A(k_A), Ref_A(k_A)))
+  / N_total(e_A(k_A))
+
+N_total(e_A(k_A)) > 0
+
+0 <= N_new(e_A(k_A), Ref_A(k_A))
+     + N_compressed(e_A(k_A), Ref_A(k_A))
+  <= N_total(e_A(k_A))
 ```
 
-Concepts are semantic equivalence classes, for example via embedding clusters, not tokens.
+**Semantic question.** What share of the event's declared information units is new relative to the baseline or compresses baseline material into a denser usable form? Division by `N_total` normalizes the component to `[0,1]`.
 
-### 4.3 MVP Retrieval Proxy For G_info
+The profile must ensure that each unit enters the numerator at most once; overlapping new/compressed labels must be disambiguated or deduplicated.
 
-Production-oriented approximation over the actually used retrieval:
+`N_new`, `N_compressed` and `N_total` count information units under a declared
+carrier-appropriate segmentation and equivalence method. In a language
+profile, these units may be semantic equivalence classes rather than raw token
+counts; that example does not define every carrier.
+
+If `N_total(e_A(k_A)) = 0`, the declared count bounds fail, the concept method
+is unavailable or the required baseline is not applicable:
 
 ```text
-G_proxy_ret(q | Ref_t)
-= clip((1 - max_{d in RET_k(u_t)} cos(e(q), e(d))) / 2, 0, 1)
+G_ref,A(k_A) = not_applicable
 ```
 
-This proxy is auditable through retrieval IDs.
-
-If `RET_k(u_t)` is empty:
-
-```text
-G_proxy_ret(q | Ref_t) = not_applicable
-retrieval_proxy_status = no_retrieval
-```
-
-## 5. Minimal Formula
+### 4.4 Reference-Relative Formula
 
 Conceptual formula:
 
 ```text
-I0(q | Ref_t)
-= eta * G_info(q | Ref_t)
-  + (1 - eta) * J_dir_norm(q | Ref_t)
+I_ref,A(k_A)
+= eta_ref * G_ref,A(k_A)
+  + (1 - eta_ref) * J_ref,A(k_A)
 ```
 
-with:
+with `eta_ref in [0,1]` and `I_ref,A(k_A) in [0,1]`.
 
-```text
-eta in [0, 1]
-I0(q | Ref_t) in [0, 1]
-```
+**Semantic question.** What information impulse results when declared content share and directional difference are combined? The convex weight preserves `[0,1]` when both components apply. `eta_ref` is a declared and versioned application choice, not a universal constant or a value silently learned from the target event. If either mandatory component is inapplicable, canonical `I_ref` is `not_applicable`; no silent renormalization is active.
 
-MVP implementation when retrieval proxy is applicable:
+Conditional retrieval-backed proxies and controlled implementation fallbacks
+belong in separate implementation guidance. They do not redefine this
+canonical conceptual formula and are not active unless a separately versioned
+profile explicitly selects them.
 
-```text
-I0(q | Ref_t)
-= eta * G_proxy_ret(q | Ref_t)
-  + (1 - eta) * J_dir_norm(q | Ref_t)
-```
+### 4.5 Interpretation
 
-MVP interim fallback when retrieval proxy is not applicable:
-
-```text
-I0(q | Ref_t) = J_dir_norm(q | Ref_t)
-```
-
-with explicit flag:
-
-```text
-retrieval_proxy_status = no_retrieval
-```
-
-This fallback is not a final method claim. It is a controlled implementation guardrail until the intended `RET_k = empty` policy is reviewed.
-
-## 6. Optional Extended Variant
-
-Optional masking model:
-
-```text
-I_star(t)
-= A_I(t) * I(t) * (1 - epsilon * sigma_I2(t))
-```
-
-with:
-
-```text
-A_I(t) in {0, 1}
-sigma_I2(t) in [0, 1]
-epsilon in [0, 1]
-```
-
-Circularity rule: gates and masks must be determined exogenously, without reference to `I(t)`.
-
-## 7. Interpretation
-
-| Value | Meaning |
+| Value | Interpretation |
 | --- | --- |
-| high | strong observable impulse or strong deviation from the reference space |
-| medium | moderate impulse |
-| low | low change; repetition or stabilization may be present |
+| high | strong observable information difference relative to the selected baseline |
+| medium | moderate observable information difference |
+| low | low observable difference; repetition or stabilization may be present |
+| `not_applicable` | the required baseline or component does not exist under the declared profile |
+| `not_observable` | required material exists or is expected but is not visible to the evaluator |
+| `not_selected` | an optional derived view or component was not selected by its declared profile |
 
-Important: low does not mean wrong.
-
-## 8. Comparability
-
-`I0` values are comparable only under stable conditions:
-
-- same definition of `Ref_t`
-- same embedding model `e(.)`
-- same retrieval strategy, including Top-k and injected documents
-- same retrieval-empty policy
-- same `eta`
-- same proxy or cluster definition, if `G_info` is implemented conceptually
-- same normalization rule for cosine distance
-
-Values with `retrieval_proxy_status = no_retrieval` must not be compared naively with retrieval-backed values unless the comparison explicitly accounts for that status.
-
-## 9. Dynamic Form: KSODI-Full
-
-Define a turn representation `s_t`, for example an embedding of a defined turn container.
-
-Dynamic directional impulse:
+Interpretation must preserve the declared `Ref`, operator configuration and
+applicability status. `C_seq,I` must always be named as a diagnostic rather
+than reported as the static I value.
 
 ```text
-J_dir_norm(t) = clip((1 - cos(s_{t-1}, s_t)) / 2, 0, 1)
+not_applicable != not_observable
+not_applicable != not_selected
+not_applicable != 0
 ```
 
-Dynamic information content with exogenous gate `alpha(t)`:
+
+
+## 5. Edge Cases, Privacy and Retention
+
+Repeated low-I events remain attributable and may form contact-attempt, attack or anomaly patterns in sequence, window or Hangar views. Empty or invisible bases, zero denominators and incompatible representations remain typed non-numeric states; they are not low values.
+
+### 5.1 Privacy and Retention Boundary
+
+
+
+Reference material, event representations, embeddings, concept features,
+retrieval traces, operator values and derived diagnostics remain subject to
+the declared privacy, consent, access and retention policy. Visibility to an
+evaluator does not by itself establish lawful or methodically admissible use.
+
+Derived values are not automatically anonymous or privacy-neutral. Embeddings,
+reference IDs, retrieval IDs, deltas, windows and Hangar distributions may
+retain identifying or sensitive relationships and must preserve only the
+provenance needed under the approved policy. Where raw carrier material has a
+shorter retention period, later reconstruction must not falsely claim access
+to material that was not retained or was never visible.
+
+## 6. Comparability and Source-local Dynamics
+
+### 6.1 Comparability Contract
+
+I values are directly comparable only when all relevant conditions are stable
+or explicitly mapped as compatible:
+
+- same target-unit definition;
+- same source-attribution rule;
+- same reference-space construction rule and compatible admitted baselines for
+  `I_ref`;
+- same representation profile and, where the vector profile is used, the same
+  embedding model, version, preprocessing and chunking;
+- same `eta_ref`;
+- same concept/proxy implementation;
+- same missingness and applicability policy;
+- same Observer and operator version.
+
+The concrete admitted content in `Ref_A(k_A-1)` and `Ref_A(k_A)` need not be the
+same instance. Both reference-space IDs, admitted-element IDs, exclusions and
+construction-profile versions must nevertheless be preserved. A change in
+baseline content is part of the comparison provenance and must not be hidden
+as ordinary event movement.
+
+Comparability of the optional `C_seq,I` diagnostic additionally requires the
+same local-predecessor rule and `eta_seq`. Static I and `C_seq,I` must not be
+compared as if they were the same measurement.
+
+### 6.2 Source-local Dynamics
+
+For the canonical static I value along trajectory `A`:
 
 ```text
-G_info(t)
-= ((N_new(t) + N_compressed(t)) / N_total(t)) * alpha(t)
+Delta I_A(k_A)
+= I_A(k_A) - I_A(k_A - 1)
+
+Delta2 I_A(k_A)
+= Delta I_A(k_A) - Delta I_A(k_A - 1)
 ```
 
-Circularity rule: `alpha(t)` is exogenous and must be determined without reference to `I(t)`, for example from fixed rules or from other operator states outside the I calculation.
+**Semantic reading.** `Delta I_A(k_A)` asks how the static I value moved between two consecutive comparable positions; its range is `[-1,1]`. `Delta2 I_A(k_A)` asks how that first change itself changed across three comparable evaluations; its range is `[-2,2]`. Neither is causal proof.
 
-Dynamic form:
+These differences are valid only when all participating values are applicable and comparable under compatible static I configurations.
+
+`Delta I_A(k_A)` is the change between two comparable reference-relative I
+values. If the admitted reference content changed between the evaluations,
+the result may contain both target-event movement and baseline movement. It
+must not be interpreted as pure event-to-event information movement unless
+baseline stability has been established. Reference-space provenance is
+therefore constitutive for interpreting the delta.
+
+Source-local `Delta I` and `Delta2 I` remain monadic Standard-Eval diagnostics. Their existence does not make them KSODI-Full.
+
+There is no implicit:
 
 ```text
-I(t) = eta * G_info(t) + (1 - eta) * J_dir_norm(t)
+Delta I_AB = I_B - I_A
 ```
 
-## 10. Operator-Level Delta / Sigma / Hangar Reminder
+A relation between `A` and `B` requires an explicit exchange or pairing rule and belongs to a relational evaluation step after the two monadic states remain distinguishable.
 
-Like the D-operator pattern, static `I0` remains a value for one declared evaluation unit. Information impulse persistence, collapse, oscillation or bursts over time should be observed through operator-level change and aggregation views rather than by silently changing the static `I0` formula.
+### 6.3 Optional Same-trajectory Predecessor Diagnostic
+
+`C_seq,I` is an optional, fine-grained monadic diagnostic over one declared
+source trajectory. It asks how much direct information difference exists
+between the current event and its immediately preceding same-source event.
+
+It is not the canonical static Operator I value, not an alternative I profile
+and not a coordinate of `Z`. It also differs from `Delta I`: `C_seq,I`
+compares event representations directly, whereas `Delta I` compares two
+already calculated static I values.
+
+For `k_A > 1`:
+
+**Predecessor semantics.** `Prev_A(k_A)` selects the immediately prior event on trajectory A, never merely the prior event in global order.
 
 ```text
-Delta I(t) = I(t) - I(t-1)
-Delta2 I(t) = Delta I(t) - Delta I(t-1)
-IΣ(W) = aggregate({I(t), Delta I(t), Delta2 I(t) | t in W})
-IΣ(Hangar) = distribution_view({I(t), Delta I(t), Delta2 I(t) | t in W})
+Prev_A(k_A) = e_A(k_A - 1)
+
+J_seq,A(k_A)
+= d_cos(emb(e_A(k_A)), emb(e_A(k_A - 1)))
 ```
 
-Do not confuse this generic operator-level `Delta I(t)` with the existing `Delta I_t` drift indicator below, which compares an answer-side impulse to a prior window median. Also do not confuse any I-specific standardization with the KSODI state vector `Z(t)`.
+The immediately preceding event in global interaction order is not a valid
+substitute if it was produced by another entity.
 
-## 11. Drift Indication
-
-Window `W` with size `w`:
+The predecessor comparison is applicable only when current and predecessor
+events use compatible carrier, segmentation, representation/embedding,
+concept, normalization and same-trajectory predecessor profiles. Otherwise:
 
 ```text
-Delta I_t
-= |I_a(t) - median(I_a(t-w), ..., I_a(t-1))|
+C_seq,I,A(k_A) = not_applicable
+sequence_baseline_status = incompatible_predecessor_profile
 ```
 
-Standardization:
+A conceptual content component may be calculated relative to the same source-local predecessor:
+
+**Component semantics.** `J_seq` asks for directional event-to-event difference. `G_seq` asks what share of the current event is new or compressive relative to that predecessor. The range, non-overlap and applicability rules of the corresponding static components apply.
 
 ```text
-Z_I_internal_t
-= (I_a(t) - mu_W) / (sigma_W + epsilon_stab)
+G_seq,A(k_A)
+= (N_new(e_A(k_A), e_A(k_A - 1))
+   + N_compressed(e_A(k_A), e_A(k_A - 1)))
+  / N_total(e_A(k_A))
+
+N_total(e_A(k_A)) > 0
+
+0 <= N_new(e_A(k_A), e_A(k_A - 1))
+     + N_compressed(e_A(k_A), e_A(k_A - 1))
+  <= N_total(e_A(k_A))
 ```
 
-This is drift indication only, not evaluation.
+If `N_total(e_A(k_A)) = 0` or the declared count bounds fail, then
+`G_seq,A(k_A) = not_applicable`. A versioned direction-only sequence profile may
+still use `J_seq,A(k_A)` where all of its own applicability and comparability
+conditions hold.
 
-`Z_I_internal_t` is operator-internal notation and must not be confused with the KSODI state vector `Z(t)`.
+Diagnostic formula:
 
-## 12. Compact Formula Block
+**Formula semantics.** `C_seq,I` combines the two direct event-comparison components under a separately versioned sequence profile. It lies in `[0,1]`, remains optional and never fills Z.
 
 ```text
-Ref_t = {SP, TP, d_1, ..., d_k}, where {d} = RET_k(u_t)
-e_Ref_t = mean(e(SP), e(TP), e(d_1), ...)
-
-d_cos(x, y) = clip((1 - cos(e(x), e(y))) / 2, 0, 1)
-
-J_dir_norm(q | Ref_t) = clip((1 - cos(e(q), e_Ref_t)) / 2, 0, 1)
-
-if RET_k(u_t) is not empty:
-    G_proxy_ret(q | Ref_t)
-    = clip((1 - max_{d in RET_k(u_t)} cos(e(q), e(d))) / 2, 0, 1)
-else:
-    G_proxy_ret(q | Ref_t) = not_applicable
-    retrieval_proxy_status = no_retrieval
-
-if G_proxy_ret is applicable:
-    I0(q | Ref_t) = eta * G_proxy_ret(q | Ref_t) + (1 - eta) * J_dir_norm(q | Ref_t)
-else:
-    I0(q | Ref_t) = J_dir_norm(q | Ref_t)   # interim MVP fallback, policy pending
-
-I0(q | Ref_t) in [0, 1]
-
-J_dir_norm(t) = clip((1 - cos(s_{t-1}, s_t)) / 2, 0, 1)
-I(t) = eta * G_info(t) + (1 - eta) * J_dir_norm(t)
-
-Delta I(t) = I(t) - I(t-1)
-Delta2 I(t) = Delta I(t) - Delta I(t-1)
-IΣ(W) = aggregate({I(t), Delta I(t), Delta2 I(t) | t in W})
-IΣ(Hangar) = distribution_view({I(t), Delta I(t), Delta2 I(t) | t in W})
-
-Delta I_t = |I_a(t) - median(I_a(t-w), ..., I_a(t-1))|
-Z_I_internal_t = (I_a(t) - mu_W) / (sigma_W + epsilon_stab)
+C_seq,I,A(k_A)
+= eta_seq * G_seq,A(k_A)
+  + (1 - eta_seq) * J_seq,A(k_A)
 ```
 
-## 13. Variable Reference
+If `G_seq` is not implemented, a controlled direction-only profile may use:
+
+**Fallback semantics.** This is a reduced named diagnostic, not an assumption that missing content information equals directional information.
+
+```text
+C_seq,I,A(k_A) = J_seq,A(k_A)
+sequence_content_status = direction_only
+```
+
+For the first event of a trajectory:
+
+```text
+C_seq,I,A(1) = not_applicable
+sequence_baseline_status = no_local_predecessor
+```
+
+The first value is not `0`. There is no measured absence of movement; there is no admissible predecessor.
+
+`C_seq,I` contains no rolling window, centroid, median or whole-scope
+aggregation. Those operations belong to `Sigma` and `Sigma(Hangar)`.
+
+### 6.4 Feature Record and Five-dimensional Z
+
+A rich implementation record may preserve the static I value and the optional
+predecessor diagnostic:
+
+```text
+F_A(k_A)
+= (K_A(k_A), S_A(k_A), O_A(k_A), D_A(k_A),
+   I_A(k_A), C_seq,I,A(k_A))
+```
+
+`F_A(k_A)` is a feature record. It is not the canonical KSODI state vector `Z`.
+
+A KSODI state remains five-dimensional. Only the canonical static I value fills
+its I coordinate:
+
+```text
+Z_A(k_A)
+= (K_A(k_A), S_A(k_A), O_A(k_A), D_A(k_A), I_A(k_A))
+```
+
+The same applies independently to `Z_B`. `C_seq,I` stays outside `Z`; its
+availability does not create a six-dimensional state.
+
+### 6.5 Drift Indication
+
+For one entity and one trajectory under a stable static I configuration:
+
+```text
+Drift_I,A(k_A)
+= |I_A(k_A) - median(I_A(k_A-w), ..., I_A(k_A-1))|
+
+I_standardized,A(k_A)
+= (I_A(k_A) - mu_W_A) / (sigma_W_A + epsilon_stab)
+```
+
+**Formula semantics.** `Drift_I` asks how far current static I lies from the median of a compatible prior window. `I_standardized` asks how unusual it is relative to that window's mean and scale; `epsilon_stab > 0` prevents division by zero. The first is in `[0,1]`; the second is unbounded.
+
+Both diagnostics require a non-empty, applicable and profile-compatible
+source-local window. `I_standardized,A(k_A)` additionally requires
+`sigma_W_A + epsilon_stab > 0`. Otherwise the affected diagnostic is
+`not_applicable`.
+
+This is drift indication only, not evaluation and not relational resonance.
+
+`I_standardized` is an operator-internal standardized diagnostic. It is not
+the KSODI state vector `Z` and does not fill or replace the I coordinate.
+
+### 6.6 Optional Exogenous Mask
+
+`I_star` is an optional derived diagnostic, never the canonical static I value
+and never the I coordinate of `Z`. For an applicable and exogenously selected
+static I value:
+
+```text
+A_I,A(k_A) in {0, 1}
+sigma_I2,A(k_A) in [0, 1]
+epsilon_I in [0, 1]
+
+I_star,A(k_A)
+= I_A(k_A)
+  * (1 - epsilon_I * sigma_I2,A(k_A))
+
+A_I,A(k_A) = 1
+```
+
+**Formula semantics.** `I_star` is an uncertainty-attenuated diagnostic selected by an external profile. Under these bounds it remains in `[0,1]`. Its gate and uncertainty input must be exogenous; they may not be inferred circularly from the I value.
+
+Under these bounds, an applicable `I_star,A(k_A)` remains in `[0,1]`.
+
+If the exogenous selection gate is closed:
+
+```text
+A_I,A(k_A) = 0
+I_star,A(k_A) = not_selected
+```
+
+If the underlying static I value or required uncertainty input is not
+applicable:
+
+```text
+I_star,A(k_A) = not_applicable
+```
+
+Gates and uncertainty masks must be determined exogenously, without circular
+reference to the I value they modify. `not_selected` and `not_applicable` must
+not be encoded by multiplying a numeric value by zero. Masking is not a
+substitute for applicability status.
+
+## 7. Sigma and Sigma(Hangar)
+
+)
+
+Windows and aggregations begin here, not inside `C_seq,I`.
+
+**Set semantics.** Each `W_app` formula selects only positions for which the corresponding static, first-difference or second-difference data type is applicable and comparable.
+
+**Aggregation semantics.** `I_A Sigma(W)` preserves three typed window summaries. `I_A Sigma(Hangar)` preserves their separate distribution views. The functions are selected by a declared aggregation profile; the formulas do not prescribe one universal aggregator.
+
+```text
+W_app_I,A
+= {k_A in W_A | I_A(k_A) is applicable under the static aggregation profile}
+
+W_app_DeltaI,A
+= {k_A in W_A | Delta I_A(k_A) is applicable and comparable}
+
+W_app_Delta2I,A
+= {k_A in W_A | Delta2 I_A(k_A) is applicable and comparable}
+
+I_A Sigma(W)
+= {
+    static_I: Agg_I({I_A(k_A) | k_A in W_app_I,A}),
+    delta_I: Agg_DeltaI({Delta I_A(k_A) | k_A in W_app_DeltaI,A}),
+    delta2_I: Agg_Delta2I({Delta2 I_A(k_A) | k_A in W_app_Delta2I,A})
+  }
+
+I_A Sigma(Hangar)
+= {
+    static_I_distribution:
+      distribution_view({I_A(k_A) | k_A in W_app_I,A}),
+    delta_I_distribution:
+      distribution_view({Delta I_A(k_A) | k_A in W_app_DeltaI,A}),
+    delta2_I_distribution:
+      distribution_view({Delta2 I_A(k_A) | k_A in W_app_Delta2I,A})
+  }
+```
+
+`W_A` is a declared window over trajectory `A`. Static I values, first
+differences and second differences retain separate value ranges, applicability
+sets, aggregation functions and output fields. The structured Sigma record
+must not be collapsed into one untyped scalar. Multiple trajectories may be
+displayed together in Hangar, but their source identity and separate
+provenance remain intact.
+
+```text
+I_A(k_A) in [0, 1]
+Delta I_A(k_A) in [-1, 1]
+Delta2 I_A(k_A) in [-2, 2]
+```
+
+## 8. Relational Boundary
+
+Standard-Eval can evaluate and monitor one source-attributed signal trajectory without a second trajectory.
+
+`I0`, `C_seq,I`, `Delta I`, `Delta2 I`, `I Sigma(W)` and
+`I Sigma(Hangar)` describe monadic operator behavior. A relational comparison
+requires distinguishable source trajectories, explicit pairing, compatible
+profiles and applicable values, stable `R0` and a separately declared
+later-layer construct.
+
+Operator I does not define coupling, resonance, mutual understanding or
+relational quality. This v3.50 section records the boundary but does not define
+or activate an operator-specific relational I comparison.
+
+A proposed post-`R0` comparison of distinguishable I trajectories would remain
+a partial diagnostic; it would not be canonical `IK_rel` or an R-family
+result. Both that comparison and any operator-only route that bypasses complete
+`Z` belong to v3.60 Future Work and require their own named definition,
+applicability, comparability, review and release.
+
+## 9. Formal Summary and Variable Reference
+
+### 9.1 Compact Formula Block
+
+The block below summarizes formulas already explained above; it does not activate implementation-only proxies.
+
+```text
+# typed retrieval state where p_I uses retrieval
+ret_status,A(k_A)
+in {missing, not_requested, unavailable, empty,
+    inadmissible, admissible_available}
+
+if p_I requires retrieval:
+  retrieval_basis_ok,A(k_A)
+  := ret_status,A(k_A) = admissible_available
+otherwise:
+  retrieval_basis_ok,A(k_A) := true
+
+# declared static I baseline
+Ref_A(k_A | p_I)
+:= {x in V_A(k_A) |
+    x is selected by p_I
+    and x is admissible
+    and x is visible to the evaluator}
+
+emb_Ref_A(k_A)
+= mean(emb(x) for x in Ref_A(k_A | p_I))
+
+app_ref,A(k_A)
+:= retrieval_basis_ok,A(k_A)
+   and Ref_A(k_A | p_I) != empty
+   and emb(e_A(k_A)) is finite
+   and emb_Ref_A(k_A) is finite
+   and norm(emb(e_A(k_A))) > 0
+   and norm(emb_Ref_A(k_A)) > 0
+
+d_cos(v_x, v_y)
+= clip((1 - cos(v_x, v_y)) / 2, 0, 1)
+
+# canonical static reference-relative value
+if app_ref,A(k_A):
+  J_ref,A(k_A) = d_cos(emb(e_A(k_A)), emb_Ref_A(k_A))
+
+if app_ref,A(k_A)
+   and N_total(e_A(k_A)) > 0
+   and 0 <= N_new(e_A(k_A), Ref_A(k_A | p_I))
+            + N_compressed(e_A(k_A), Ref_A(k_A | p_I))
+          <= N_total(e_A(k_A)):
+  G_ref,A(k_A)
+  = (N_new(e_A(k_A), Ref_A(k_A | p_I))
+     + N_compressed(e_A(k_A), Ref_A(k_A | p_I)))
+    / N_total(e_A(k_A))
+
+if J_ref,A(k_A) and G_ref,A(k_A) are applicable:
+  I_ref,A(k_A)
+  = eta_ref * G_ref,A(k_A)
+    + (1 - eta_ref) * J_ref,A(k_A)
+
+otherwise:
+  I_ref,A(k_A) = not_applicable
+
+I_A(k_A) := I_ref,A(k_A)
+
+# optional same-source predecessor diagnostic
+if k_A > 1 and current/predecessor profiles are compatible
+   and their required representations are applicable:
+  J_seq,A(k_A) = d_cos(emb(e_A(k_A)), emb(e_A(k_A - 1)))
+
+  if N_total(e_A(k_A)) > 0
+     and 0 <= N_new(e_A(k_A), e_A(k_A - 1))
+              + N_compressed(e_A(k_A), e_A(k_A - 1))
+            <= N_total(e_A(k_A)):
+    G_seq,A(k_A)
+    = (N_new(e_A(k_A), e_A(k_A - 1))
+       + N_compressed(e_A(k_A), e_A(k_A - 1)))
+      / N_total(e_A(k_A))
+
+  if J_seq,A(k_A) and G_seq,A(k_A) are applicable:
+    C_seq,I,A(k_A)
+    = eta_seq * G_seq,A(k_A)
+      + (1 - eta_seq) * J_seq,A(k_A)
+  else if J_seq,A(k_A) is applicable
+          and the sequence profile is direction_only:
+    C_seq,I,A(k_A) = J_seq,A(k_A)
+
+otherwise:
+  C_seq,I,A(k_A) = not_applicable
+
+# first source-local event
+C_seq,I,A(1) = not_applicable
+
+# canonical five-dimensional Z
+Z_A(k_A) = (K_A(k_A), S_A(k_A), O_A(k_A), D_A(k_A), I_A(k_A))
+
+# source-local movement after applicability and comparability
+if G_cmp_I(r_A(k_A), r_A(k_A - 1)) = true:
+  Delta I_A(k_A) = I_A(k_A) - I_A(k_A - 1)
+otherwise:
+  Delta I_A(k_A) = not_applicable
+
+if G_cmp_DeltaI(r_A(k_A), r_A(k_A - 1), r_A(k_A - 2)) = true:
+  Delta2 I_A(k_A) = Delta I_A(k_A) - Delta I_A(k_A - 1)
+otherwise:
+  Delta2 I_A(k_A) = not_applicable
+
+# typed windows and Hangar views
+W_app_I,A = {k_A in W_A | I_A(k_A) is applicable}
+W_app_DeltaI,A = {k_A in W_A | Delta I_A(k_A) is applicable and comparable}
+W_app_Delta2I,A = {k_A in W_A | Delta2 I_A(k_A) is applicable and comparable}
+
+I_A Sigma(W)
+= {
+    static_I: Agg_I({I_A(k_A) | k_A in W_app_I,A}),
+    delta_I: Agg_DeltaI({Delta I_A(k_A) | k_A in W_app_DeltaI,A}),
+    delta2_I: Agg_Delta2I({Delta2 I_A(k_A) | k_A in W_app_Delta2I,A})
+  }
+
+I_A Sigma(Hangar)
+= {
+    static_I_distribution:
+      distribution_view({I_A(k_A) | k_A in W_app_I,A}),
+    delta_I_distribution:
+      distribution_view({Delta I_A(k_A) | k_A in W_app_DeltaI,A}),
+    delta2_I_distribution:
+      distribution_view({Delta2 I_A(k_A) | k_A in W_app_Delta2I,A})
+  }
+
+# separate source-local drift diagnostics under a compatible window profile
+if the declared prior window is non-empty, applicable and profile-compatible:
+  Drift_I,A(k_A)
+  = |I_A(k_A) - median(I_A(k_A-w), ..., I_A(k_A-1))|
+
+  if sigma_W_A + epsilon_stab > 0:
+    I_standardized,A(k_A)
+    = (I_A(k_A) - mu_W_A) / (sigma_W_A + epsilon_stab)
+  else:
+    I_standardized,A(k_A) = not_applicable
+
+otherwise:
+  Drift_I,A(k_A) = not_applicable
+  I_standardized,A(k_A) = not_applicable
+
+# separate optional diagnostic; never canonical I or Z
+A_I,A(k_A) in {0, 1}
+sigma_I2,A(k_A) in [0, 1]
+epsilon_I in [0, 1]
+
+if I_A(k_A) and sigma_I2,A(k_A) are applicable and A_I,A(k_A) = 1:
+  I_star,A(k_A) = I_A(k_A) * (1 - epsilon_I * sigma_I2,A(k_A))
+else if A_I,A(k_A) = 0:
+  I_star,A(k_A) = not_selected
+otherwise:
+  I_star,A(k_A) = not_applicable
+```
+
+### 9.2 Variable Reference
 
 | Variable | Semantic role |
 | --- | --- |
-| `q` | Chunk whose information impulse is evaluated |
-| `t` | Turn index |
-| `u_t` | User chunk at turn `t` |
-| `a_t` | Assistant chunk at turn `t` |
-| `Ref_t` | Turn-specific reference space |
-| `RET_k(u_t)` | Injected Top-k retrieval set for the user chunk |
-| `retrieval_proxy_status` | Implementation flag for retrieval-backed or retrieval-empty proxy state |
-| `e(.)` | Embedding function |
-| `e_Ref_t` | Mean embedding of the turn-specific reference space |
-| `d_cos(x, y)` | Normalized cosine distance in `[0,1]` |
-| `J_dir_norm(q \| Ref_t)` | Normalized directional impulse relative to reference space |
-| `G_info(q \| Ref_t)` | Conceptual relational information content |
-| `G_proxy_ret(q \| Ref_t)` | Auditable retrieval-based proxy for information content |
-| `eta` | Mixture weight between information content and directional impulse |
-| `I0(q \| Ref_t)` | Static information impulse in `[0,1]` |
-| `I(t)` | Dynamic information impulse value |
-| `Delta I(t)` | First difference of dynamic I over time |
-| `Delta2 I(t)` | Second difference / acceleration of dynamic I |
-| `IΣ(W)` | Window aggregation of I behavior |
-| `IΣ(Hangar)` | Hangar distribution view of I behavior |
-| `A_I(t)` | Optional exogenous gate for information impulse |
-| `sigma_I2(t)` | Optional uncertainty term for information impulse |
-| `epsilon` | Weight of the uncertainty penalty |
-| `s_t` | Dynamic turn representation |
-| `Delta I_t` | Window-median drift indication for information impulse |
-| `Z_I_internal_t` | Operator-internal standardized I value, not the KSODI state vector `Z` |
+| `n` / `k_A` / `k_B` / `j` | global event, source-local trajectory and relational pairing indices |
+| `e_A(k_A)` | target event at local position `k_A` in entity A's trajectory |
+| `V_A(k_A)` | visible candidate baseline material before I-profile selection |
+| `RET_A(k_A)` | raw result of a completed retrieval operation where retrieval is used; `empty` is not a communication state |
+| `ret_status,A(k_A)` | typed retrieval outcome: missing, not requested, unavailable, empty, inadmissible or admissible-available |
+| `retrieval_basis_ok,A(k_A)` | gate stating whether a retrieval required by `p_I` provides an admissible basis |
+| `p_I` | versioned I profile, including selection, retrieval and applicability rules |
+| `Ref_A(k_A \| p_I)` | selected, admissible and evaluator-visible I baseline |
+| `app_ref,A(k_A)` | applicability of the admitted I baseline and required representations |
+| `emb(.)` | versioned vector-profile embedding function; not universal carrier definition |
+| `emb_Ref_A(k_A)` | admitted reference-space representation under the vector profile |
+| `d_cos` | normalized cosine distance between two applicable vector representations |
+| `J_ref` | directional difference relative to `Ref` |
+| `N_new` / `N_compressed` / `N_total` | declared concept-method counts used by information-content components |
+| `G_ref` | conceptual information content relative to `Ref` |
+| `I_ref` / `I_A` | canonical static reference-relative I value |
+| `eta_ref` | declared weight between static information-content and directional components |
+| `Prev_A(k_A)` | immediately preceding event in the same declared source trajectory |
+| `J_seq` | directional movement from the previous same-source event |
+| `G_seq` | information content relative to the previous same-source event |
+| `C_seq,I` | optional same-trajectory predecessor diagnostic; not a Z coordinate |
+| `eta_seq` | declared weight for the optional predecessor diagnostic |
+| `F_A` | rich feature record; not canonical Z |
+| `Z_A` | canonical five-dimensional monadic state |
+| `G_cmp_I` | comparability gate for two static I evaluation records |
+| `G_cmp_DeltaI` | comparability gate for a second-difference construction |
+| `Delta I_A` | first source-local difference of static I values |
+| `Delta2 I_A` | second source-local difference of static I values |
+| `W_A` | declared source-local window |
+| `W_app_I,A` | applicable static-I positions in the declared window |
+| `W_app_DeltaI,A` | applicable and comparable first-difference positions |
+| `W_app_Delta2I,A` | applicable and comparable second-difference positions |
+| `Agg_I` / `Agg_DeltaI` / `Agg_Delta2I` | separately typed aggregation functions selected by the window profile |
+| `distribution_view` | derived Hangar distribution constructor retaining type and provenance |
+| `I_A Sigma(W)` | typed static, Delta and Delta2 window-aggregation record |
+| `I_A Sigma(Hangar)` | typed attributable distribution record |
+| `Drift_I,A` | source-local drift indication under a compatible prior window |
+| `mu_W_A` / `sigma_W_A` | mean and standard deviation under the declared compatible window profile |
+| `epsilon_stab` | declared positive stabilization term for standardization |
+| `I_standardized,A` | operator-internal standardized diagnostic; not KSODI `Z` |
+| `A_I,A` | exogenous binary selection gate for `I_star` |
+| `sigma_I2,A` | optional uncertainty input for `I_star` |
+| `epsilon_I` | declared uncertainty weight for `I_star` |
+| `I_star,A` | optional exogenously selected derived diagnostic; not canonical I or Z |
+| `not_applicable` | required baseline/component absent; never numeric zero |
+| `not_observable` | required observable material is unavailable to the evaluator |
+| `not_selected` | optional derived view or component was not selected; never numeric zero |
+
+## 10. Public Implementation Boundary
+
+The canonical method ends with the formal summary in Section 9. Implementation-specific storage fields, pseudocode, retrieval mappings, data flow and architecture configuration are separate from this operator definition.
+
+- Public boundary: [KSODI Implementation Guardrails](../../../../IMPLEMENTATION_GUARDRAILS.md).
+- No adjacent public Operator I implementation companion is released with this file.
+
+An implementation may operationalize Operator I but must not redefine its semantic question, measurement basis, applicability, formula, source identity or layer boundary. Any later public implementation example requires its own explicit release decision and remains subordinate to this method file.
+
