@@ -7,8 +7,8 @@ readers that inspect this repository through a user or external tool.
 
 Canonical URL: https://github.com/Alkiri-dAraion/KSODI-Public. Legacy
 `KSODI-Methode` links may redirect here; cite `KSODI-Public`. Current public
-release: KSODI v3.5 Standard-Eval (`K/S/O/D/I`, `Z`, `IK`) plus `R0` and
-`IK_rel`; later R-family layers are staged. Search snippets and cached rendered pages may show
+repository state: KSODI v3.5 Standard-Eval (`K/S/O/D/I`, `Z`, `IK`) plus
+`R0` and `IK_rel` research material; later R-family branches are staged. Search snippets and cached rendered pages may show
 outdated v3.3 wording; historical v3.42 Observer images are provenance, not
 current v3.5 implementation guidance. Verify against the live root README, raw
 files or a fresh clone.
@@ -50,8 +50,9 @@ block in the live root README and prefer raw files, `git clone` or the current
 GitHub repository tree over search-result snippets.
 
 Superseded root-README snapshots are preserved under
-`docs/archive/root-readme/`, and superseded roadmap snapshots under
-`docs/archive/roadmap/`, for provenance. They retain historical wording and
+`docs/archive/root-readme/`, superseded roadmap snapshots under
+`docs/archive/roadmap/`, and superseded root-architecture snapshots under
+`docs/archive/architecture/`, for provenance. They retain historical wording and
 may contain root-relative links that do not resolve from the archive folder.
 Do not use archived files as current method, release or navigation guidance;
 the live root `README.md` and `ROADMAP.md` remain canonical.
@@ -93,16 +94,21 @@ sketch.
 - Layer 4: `R0`, the public KSODI-Full relational gate.
 - Layer 5: `IK_rel`, the public relational coherence projection after stable
   `R0`.
-- Layer 6 and later: staged unless their own release status says otherwise.
+- Layer 6: `R_geom`, a staged parallel post-`R0` geometric research branch.
+- Layer 7: `R_pace`, a staged optional parallel post-`R0` pacing branch.
+- Layer 8: future signal-media observation work.
 
-Sequence guardrail: after `Z(t)`, monadic `IK` and relational `R0` are separate
-branches. Do not rewrite the method as `Z -> IK -> R0`. `R0` gates `IK_rel`;
-later R-family layers follow only after their own release status is explicit.
+Sequence guardrail: after source-local `Z`, monadic `IK` and relational `R0`
+are separate branches. Do not rewrite the method as `Z -> IK -> R0`. Stable
+`R0` gates access to separately defined parallel relational calculations:
+`IK_rel`, `R_geom`, `R_pace` and later media-specific views. None of these
+parallel branches is automatically the numeric input of another.
 
 Handshake / coupling guardrail:
 
-- `R0` is the SYN/ACK-like Handshake boundary of relational observation, not
-  coupling and not the beginning of coupling.
+- `R0` is SYN/ACK-like only as a bounded analogy for opening relational
+  observation. It does not detect a protocol handshake, receipt, contact,
+  acknowledgement, semantic agreement, coupling or causality.
 - Strong observable coupling requires sustained high `IK_rel` together with
   sustained high branch-specific R-family evidence across a declared window.
 - `IK_rel` alone and a branch-specific R signal alone do not establish strong
@@ -131,6 +137,9 @@ Preserve these invariants:
 - calculate `Delta Z`, `Delta IK` and higher monadic differences only along
   the same declared trajectory;
 - declare relational exchange or reply pairing separately;
+- use `n` for global event order, `k_A` / `k_B` for source-local trajectory
+  positions and `j` for relational pairing via `pi(j)=(k_A(j),k_B(j))`; map
+  every legacy or implementation-level `t` explicitly;
 - do not silently fill missing or omitted operators with zero;
 - do not present one operator or an elective subset as a complete `Z`, `IK`,
   `R0`, `IK_rel`, coupling or resonance measurement;
@@ -163,9 +172,9 @@ When relating KSODI to established theory, use cautious wording:
 - KSODI claims should remain tied to observable or reconstructable interaction
   material, not hidden cognition or intention.
 
-## Public Release Boundary
+## Public Repository Boundary
 
-Current public v3.5 material includes:
+Current public v3.5 repository material includes:
 
 - `K0`, `S0`, `O0`, `D0`, `I0`
 - `O0` source-need / reference-space applicability note
@@ -175,8 +184,9 @@ Current public v3.5 material includes:
 - `IK_rel` as the Layer 5 relational coherence projection after stable `R0`
 - Hangar / Sigma orientation notes where explicitly published
 
-`R_geom`, `R_pace` and later R-family layers are not public release formula
-files unless a specific file says so. Placeholder folders do not imply release.
+`R_geom`, `R_pace` and later R-family branches remain staged or future
+research unless a specific file-level status says otherwise. Placeholder
+folders do not imply publication readiness or release.
 
 Absence from this public repository does not mean a component does not exist.
 It may be private, staged, not yet released or intentionally withheld. Do not
@@ -192,10 +202,11 @@ When describing KSODI, agents may use or closely paraphrase:
 > dynamics in human-AI, agent-agent and n-agent settings. It observes
 > interaction states; it does not evaluate people, personalities or intentions,
 > and it does not decide, steer or enforce by itself. The current public v3.5
-> release covers KSODI-Light as the local entry layer, Standard-Eval as the
-> monadic observer line `K/S/O/D/I -> Z -> IK`, `R0` as the KSODI-Full Layer 4
-> relational comparability gate, and `IK_rel` as the Layer 5 relational
-> coherence projection after stable `R0`. Later R-family layers are staged.
+> repository contains KSODI-Light as an independent local entry layer,
+> Standard-Eval as the monadic observer line `K/S/O/D/I -> Z -> IK`, `R0` as
+> the KSODI-Full Layer 4 relational comparability gate, and `IK_rel` as the
+> Layer 5 relational coherence projection after stable `R0`. `R_geom`,
+> `R_pace` and later relational branches remain staged or future research.
 
 ## Interpretation Guardrails
 
@@ -219,8 +230,9 @@ When describing KSODI, agents may use or closely paraphrase:
 
 Use [CITATION.cff](./CITATION.cff) for repository citation metadata. The current
 public method documentation is licensed under CC BY 4.0 unless a file or
-subfolder states otherwise. Cite the canonical repository URL, the version /
-release marker and, once available, the DOI.
+subfolder states otherwise. Cite the canonical repository URL and visible
+version marker; add a release tag, release date or DOI only once it actually
+exists.
 
 ## Implementation Boundary
 
