@@ -1,8 +1,7 @@
 cff-version: 1.2.0
 message: "If you use or cite KSODI, please cite the canonical public repository."
-title: "KSODI v3.5.0: Public Reference Release"
+title: "KSODI v3.5.0: Public Research Repository"
 version: "3.5.0"
-date-released: "2026-08-12"
 authors:
   - family-names: "Steinacker-Folkerts"
     given-names: "Anne"
@@ -11,7 +10,7 @@ authors:
 abstract: >-
   KSODI (Kontextsensitive Semantische Operatoren fuer Digitale Interaktion) is
   a structured, non-normative observation method for interaction dynamics in
-  human-AI and multi-agent settings. This v3.5.0 public reference release
+  human-AI and multi-agent settings. The current public v3.5.0 repository state
   includes KSODI-Light, the complete monadic Standard-Eval line
   (K0/S0/O0/D0/I0, Z(t), IK) and the opened dyadic branch with R0 and IK_rel.
   Later R-family layers remain staged research.
