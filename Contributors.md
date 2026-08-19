@@ -24,10 +24,12 @@ Heiko Folkerts.
 
 Anne Steinacker-Folkerts initiated KSODI and remains the integrating method
 developer and final decision point for the definitions published in this
-repository. The mathematical definitions, layer separation, measurement logic,
-public v3.5 release structure and evaluation of the historical Observer images
-for methodological consistency were integrated and formalized by Anne, with
-dialogic model support and human reflection as documented below.
+repository. She selected, integrated and formalized the mathematical
+definitions, layer separation, measurement logic, public v3.5 release structure
+and methodological evaluation of the historical Observer images, with dialogic
+model support, human reflection and implementation feedback as documented
+below. A proposed formula, wording or repository change becomes part of the
+method only through this human review and release decision.
 
 KSODI has been developed iteratively and model-assisted: mathematical framings
 were explored through dialogue with LLMs, checked against Anne's practical
@@ -67,9 +69,13 @@ method citation authorship.
 
 We thank Patrick Barthelmäs for substantial technical implementation and
 infrastructure work around KSODI, including the
-[KSODI-Light-Agent PoC](https://github.com/blackbaddl13/r-KSODI-POC) and later
-work toward the first full implementation of KSODI-Standard Eval & KSODI Full
-in a separately versioned implementation line.
+[KSODI-Light-Agent PoC](https://github.com/blackbaddl13/r-KSODI-POC) and the
+separately versioned implementation line for KSODI Standard-Eval and
+KSODI-Full. The next alignment phase is planned as supervised collaboration:
+Anne will work through a fork and method-alignment branch with ELKIM, while
+Patrick retains implementation-side merge, release and software-licence
+control. Method changes remain subject to Anne's release decision; software
+changes remain subject to Patrick's repository review.
 
 Patrick is also acknowledged as an important contributor to the R-family
 development context. His developer-side reflection on resonance / tonality, the
@@ -82,10 +88,12 @@ projection, and `Z(t)` existed only implicitly in the implementation path. The
 mathematical method definitions in this repository remain Anne's responsibility
 unless a specific concept states otherwise.
 
-Executable implementations are separate software works. Published
-implementations are expected to live in Patrick's repository context and to use
-their own software licence, normally MIT where so stated by the implementation
-repository.
+Executable implementations are separate software works. The currently planned
+publication path remains Patrick's repository context. Its repository history,
+accepted branches, releases and licence file are authoritative for executable
+code; the KSODI method files and their release history remain authoritative for
+method definitions. A fork or review branch is a contribution path, not an
+automatic merge or software release.
 
 ## Early testing and feedback
 
@@ -128,16 +136,16 @@ remains distinguishable.
 This continuity can produce recurring interactional patterns: a recognisable
 way of framing questions, testing distinctions, structuring objections or
 working through uncertainty. KSODI treats such patterns as observable features
-of an interaction trajectory, not as a biometric fingerprint or proof of
-identity.
+of a source-attributed interaction trajectory, not as a biometric fingerprint,
+proof of identity or evidence of a shared inner state.
 
 The model is not merely a neutral mirror of the human participant. Nor is it an
-autonomous human-like mind. Its output arises from the relation between model
-architecture, training, system constraints, available context, tools,
-stochastic variation and the history of correction within the interaction. A
-sustained conversational role therefore develops through coupling. The
-resulting working pattern belongs neither to the human nor to the machine
-alone.
+autonomous human-like mind. Its output arises from model architecture,
+training, system constraints, available context, tools, stochastic variation
+and the history of correction within the interaction. A sustained
+conversational role can therefore become observable across repeated exchanges.
+The interaction-level pattern is relational; the participating human and model
+events, sources and monadic trajectories remain distinguishable.
 
 Anyone asking a machine for continuity, human-readable reasoning and a stable
 conversational role should expect the interaction history to influence what
@@ -169,9 +177,11 @@ not determine the method by model vote.
 Anne selects the questions, decides which model should receive which context,
 transfers relevant observations between otherwise separate model environments,
 tests contradictions and determines whether a model contribution becomes a
-review item, a repository change or no change at all. Context-rich research
-counterparts and deliberately context-limited outside models serve different
-functions within this design.
+review item, a repository change or no change at all. This human-curated
+transfer does not merge the participating model contexts or turn their outputs
+into one source trajectory. Context-rich research counterparts and
+deliberately context-limited outside models serve different functions within
+this design.
 
 ### Core AI research counterparts
 
