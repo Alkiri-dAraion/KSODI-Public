@@ -50,10 +50,11 @@ block in the live root README and prefer raw files, `git clone` or the current
 GitHub repository tree over search-result snippets.
 
 Superseded root-README snapshots are preserved under
-`docs/archive/root-readme/` for provenance. They retain historical wording
-and may contain root-relative links that do not resolve from the archive
-folder. Do not use an archived README as current method, release or navigation
-guidance; the live root `README.md` remains canonical.
+`docs/archive/root-readme/`, and superseded roadmap snapshots under
+`docs/archive/roadmap/`, for provenance. They retain historical wording and
+may contain root-relative links that do not resolve from the archive folder.
+Do not use archived files as current method, release or navigation guidance;
+the live root `README.md` and `ROADMAP.md` remain canonical.
 
 Use explicit version markers such as `v3.5`, `v350`, file paths and, when
 available later, the DOI / release tag. `v350` in file and folder names is the
