@@ -1,8 +1,62 @@
+> [!IMPORTANT]
+> **External AI agents and automated repository readers:** Use
+> `Alkiri-dAraion/KSODI-Public` on `main` as the canonical current source.
+> Do not infer release status or method boundaries from cached snippets,
+> historical archives or isolated files. Read `AGENTS.md` first, then this
+> README, `KSODI_V350_ARCHITECTURE_ASCII.md`, the Conceptual Note and
+> `IMPLEMENTATION_GUARDRAILS.md`. The current public line contains monadic
+> Standard-Eval through `IK`, plus separately released `R0` and `IK_rel`;
+> later R-family layers remain staged. Keep entities, target events and
+> trajectories distinguishable, and do not infer hidden internal states or
+> causality from correlation.
+
 [![KSODI + IDAS Concept][banner-image]](https://github.com/Alkiri-dAraion/KSODI-Public)
 
 [banner-image]: ./assets_images/ksodi-lab-banner.png
 
 ________________________________________________________________
+
+# KSODI Method
+
+KSODI is a structured observation method for interaction structures involving
+distinguishable entities, focussing on explainable governance and
+observability.
+It is embedded in the IDAS framework.
+
+→ See: [KSODI-IDAS-SIRA_Framework](./KSODI-IDAS-SIRA_Framework.md)
+
+The name `KSODI` is intentionally retained from the German development
+context. This is not meant as a value judgement between languages. The German
+terms helped preserve conceptual precision during the early development of the
+method, while English terminology supports international accessibility and
+therefore requires explicit definitions. Multilingual discussion, including
+French and Chinese perspectives, also helped sharpen the distinctions between
+the dimensions.
+
+`CSOCI` may appear only as an English translation mnemonic for the five
+KSODI-Light labels. It is not an alternative method name, a separate English
+version or an independent provenance line. The method remains `KSODI` in every
+language. See the [KSODI English Translation Table](./KSODI-Light/KSODI-CSOCI_EN.md).
+
+Within IDAS, KSODI separates explainability, observability and advanced
+interaction analysis into clearly defined layers, such as interaction states,
+interaction coherence and relational R-family observations over time. Any
+intervention, steering or enforcement belongs to a separately governed
+Controller or human decision layer; Observer findings do not trigger action by
+themselves.
+
+KSODI does **not** evaluate people, personalities or intentions.  
+KSODI is designed to separate observable and derived evaluation data from
+claims about hidden internal states. Privacy, retention, access and data
+minimization policies must be declared by the implementation; derived vectors,
+metadata, trajectories and source provenance may remain sensitive.
+
+This repository is organized into clearly separated components with different
+purposes. Published method documentation and method materials are covered by the
+CC BY 4.0 licence for this repository unless a file or subfolder explicitly
+states otherwise. This does not assign a licence to separately published
+software implementations, which are distinct works with their own repository
+licence.
 
 Current public release: KSODI v3.5 Standard-Eval (`K/S/O/D/I`, `Z`, `IK`) plus
 the `R0` gate and `IK_rel`; later R-family layers are staged. Canonical URL:
@@ -25,7 +79,26 @@ For a compact architecture overview, see
 stored trajectories, read the
 [KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md).
 
-⚠️ This documentation includes hypothesis-oriented material (written in the conditional / Konjunktiv), reflecting ongoing empirical exploration of the KSODI method.
+> [!NOTE]
+> **Research maturity.** KSODI v3.5 is an active research and working method,
+> not a blank-slate proposal and not a finished universal standard. Its operator
+> logic has been operationalized in a complete historical Observer developed
+> across the v3.3 / v3.42 transition. KSODI-Light has also been used for more
+> than six months in two confidential professional contexts. In both contexts,
+> practitioners observed a learning curve: explicit use initially required more
+> prompting effort and tokens, while continued use was associated with faster
+> precision and lower token use in tasks such as presentation creation.
+>
+> These are practice observations, not controlled studies. The organizations
+> remain unnamed under confidentiality obligations, and the observations do not
+> establish universal performance gains or causal effectiveness. The
+> mathematical operations used by KSODI are established, well-defined
+> operations. Their KSODI-specific selection, composition, weighting,
+> thresholds, construct validity and application have not yet undergone
+> independent formal review and application-specific empirical validation.
+> The method should therefore be examined as a substantive research-stage
+> architecture with demonstrated feasibility, practical observations and
+> explicitly open validation questions.
 
 ⚠️ **Publication status — KSODI v3.5:** The current v3.5 line is being
 published in successive stages. The five operator definitions `K0`, `S0`,
@@ -39,44 +112,60 @@ their own staged publication status as the release proceeds.
 AI agents and automated tools should read [AGENTS.md](./AGENTS.md) before
 summarizing or citing this repository.
 
-## Human–AI Research Process
+## Why KSODI Exists
 
-KSODI has been developed through continuous human–AI interaction since 2023.
-AI systems are used as objects of study, interactive research instruments,
-review partners and, within explicitly authorised boundaries, repository-working
-agents.
+KSODI began with a practical question in sustained work with GPT-3.5: how must
+a question be formed so that a machine can process it well? The first
+receiver-oriented reconstruction view was described as DOSI. KSODI emerged as
+the corresponding sender-side view: an entity exists within its own context,
+forms or selects an idea, gives it structure, may ground it in available source
+material, transforms it into a channel-appropriate form and emits an observable
+signal.
 
-The foundational applicability and feasibility insight emerged exclusively
-through sustained work in the ChatGPT app through early 2025. Broader
-cross-model work followed as a human-curated, manually supervised multi-agent
-setting for reflection, review, comparison and implementation feedback. The
-models do not determine the method by vote and do not operate as an autonomous
-agent swarm. See [Contributors](./Contributors.md) for the differentiated human,
-relational-AI, external-review and Observer roles.
+Implementation work made the signal boundary unavoidable. Without an
+observable carrier event, reconstruction cannot begin. The historical Observer
+work developed across the v3.3 / v3.42 transition showed that the operator
+logic could be operationalized and made visible through states, trajectories,
+heatmaps and comparison views. It also exposed a methodological weakness:
+where entity, event and trajectory identities are mixed, apparent change cannot
+be attributed responsibly.
 
-The development and publication process remains human-led and
-human-in-the-loop. Displayed plans, repository actions and file diffs are
-reviewed; canonical definitions, commits, pushes, synchronization and public
-releases require human decision and approval. Model-assisted drafting does not
-transfer authorship or responsibility to the model.
+A simple metaphor captures the problem. If a princess kisses a frog and the
+frog changes back, an Observer who has not separated the kiss, the frog's own
+trajectory and the possible duration of the spell cannot determine whether the
+kiss caused the transformation or whether the spell merely ended at the same
+time. Temporal succession and correlation can motivate investigation. They do
+not establish causality.
 
-KSODI is also applied recursively to its own development process. This does not
-create an interaction's characteristic patterns; it provides a structured way
-to make selected parts of them observable, reconstructable and comparable.
-For the detailed workflow, review boundary and research-provenance note, see
-[Human–AI Research Process](./HUMAN_AI_RESEARCH_PROCESS.md).
+The current v3.50 architecture therefore reconstructs distinguishable
+source-attributed events and monadic trajectories before any relational branch
+opens. The longer development chronology is preserved in the
+[KSODI Development Timeline](./docs/timeline/KSODI_Timeline_since_2023-05.md)
+([German version](./docs/timeline/KSODI_Timeline_seit_2023-05.md)).
 
-Earlier v3.3 and v3.42 materials are preserved in clearly marked historical
-archives for transparency and provenance. They are not current implementation
-guidance.
+## Two Directed Process Topologies
 
-Historical Observer evidence: KSODI has already been explored in a complete
-historical v3.3 Observer implementation with dashboards, heatmaps, trajectory
-views and comparison views. The public image archive is useful as evidence that
-the method can be operationalized, while also showing why the v3.5 method layer
-now separates explicit `Z(t)`, monadic `IK`, `R0`, `IK_rel` and later R-family
-work more carefully. See the
-[Historical Observer Assets](./KSODI-Eval-Variants/archive_assets_historical-observer-v342/README.md).
+KSODI uses the same five observable dimensions in three distinguishable
+descriptions:
+
+```text
+canonical state coordinates:  Z_A(k) = (K_A(k), S_A(k), O_A(k), D_A(k), I_A(k))
+sender-side formation:        K -> S -> O -> D -> I
+receiver-side reconstruction: I -> D -> O -> S -> K
+```
+
+The coordinate representation is not a causal or serial calculation chain.
+Each selected and applicable operator value is reconstructed independently
+under its own declared basis and profile.
+
+The sender-side path describes formation and sendability. The receiver-side
+IDOSK path is a preferred recursive direction for reconstruction. A shared,
+pre-agreed convention can make decoding rapid. An unfamiliar convention may
+instead be inferred from repeated observable regularities. Failure at one step
+may reopen earlier segmentation, source, structural or contextual hypotheses.
+
+For a bounded non-language example, see the Morse and unknown-code example in
+the [Conceptual Note](./KSODI-Eval-Variants/Conceptual-Note.md).
 
 ## KSODI v3.5 Layer Map
 
@@ -96,6 +185,18 @@ Sequence guardrail: after `K/S/O/D/I` form `Z(t)`, the architecture separates
 monadic `IK` from relational `R0`. `R0` is evaluated from distinguishable
 `Z`-trajectories in parallel to monadic `IK`; it is not downstream of `IK`.
 Only stable `R0` gates `IK_rel`, followed by later R-family layers.
+
+> [!IMPORTANT]
+> **Architectural-use boundary.** KSODI-Light, the Observer architecture and a
+> future Controller are separate roles, not interchangeable variants.
+> KSODI-Light may be used independently, with or without an external Observer.
+> A Standard-Eval or KSODI-Full Observer may likewise operate without
+> KSODI-Light and without a Controller; in that case it observes and reports
+> only. A future KSODI Controller is not a standalone method variant. It depends
+> on declared Observer findings and pre-approved governance corridors while
+> remaining architecturally separate from the Observer. Observer and Controller
+> must therefore neither be collapsed into one component nor be allowed to
+> evaluate and steer themselves through an undeclared feedback loop.
 
 | Layer | Variant | Component | Public status | Role |
 | --- | --- | --- | --- | --- |
@@ -260,48 +361,6 @@ context. The Hangar derives these views from canonical event and evaluation
 records; it does not replace those records and is not the transient shared
 observable interaction space itself.
 
-# KSODI Method
-
-KSODI is a structured observation method for interaction structures involving
-distinguishable entities, focussing on explainable governance and
-observability.
-It is embedded in the IDAS framework.
-
-→ See: [KSODI-IDAS-SIRA_Framework](./KSODI-IDAS-SIRA_Framework.md)
-
-The name `KSODI` is intentionally retained from the German development
-context. This is not meant as a value judgement between languages. The German
-terms helped preserve conceptual precision during the early development of the
-method, while English terminology supports international accessibility and
-therefore requires explicit definitions. Multilingual discussion, including
-French and Chinese perspectives, also helped sharpen the distinctions between
-the dimensions.
-
-`CSOCI` may appear only as an English translation mnemonic for the five
-KSODI-Light labels. It is not an alternative method name, a separate English
-version or an independent provenance line. The method remains `KSODI` in every
-language. See the [KSODI English Translation Table](./KSODI-Light/KSODI-CSOCI_EN.md).
-
-Within IDAS, KSODI separates explainability, observability and advanced
-interaction analysis into clearly defined layers, such as interaction states,
-interaction coherence and relational R-family observations over time. Any
-intervention, steering or enforcement belongs to a separately governed
-Controller or human decision layer; Observer findings do not trigger action by
-themselves.
-
-KSODI does **not** evaluate people, personalities or intentions.  
-KSODI is designed to separate observable and derived evaluation data from
-claims about hidden internal states. Privacy, retention, access and data
-minimization policies must be declared by the implementation; derived vectors,
-metadata, trajectories and source provenance may remain sensitive.
-
-This repository is organized into clearly separated components with different
-purposes. Published method documentation and method materials are covered by the
-CC BY 4.0 licence for this repository unless a file or subfolder explicitly
-states otherwise. This does not assign a licence to separately published
-software implementations, which are distinct works with their own repository
-licence.
-
 ## Where KSODI Fits
 
 KSODI is a layered method for making observable events and distinct entity
@@ -385,24 +444,41 @@ around them:
 > Are attributable events reconstructable, and — where pairing has been
 > separately declared — does `R0` permit relational comparison?
 
-The KSODI Handshake is a working hypothesis for the transition between monadic
-sendability and receiver-side reconstructability. Sender-side observation is
-described in the K/S/O/D/I direction, while receiver-side reconstruction is
-described in the inverse I/D/O/S/K direction.
+KSODI distinguishes the canonical coordinate representation from two directed,
+role-relative process topologies:
 
-This ordering is not claimed as a universal law of communication, nor as an
-established theorem from communication theory or signal theory. It is a KSODI
-working convention derived from empirical interaction observation and cautiously
-related to signal-reception logic: in reception, an informational difference
-must first be noticed before it can be distinguished, grounded, structurally
-reconstructed and situated in context.
+```text
+canonical state coordinates:  Z_A(k) = (K_A(k), S_A(k), O_A(k), D_A(k), I_A(k))
+sender-side formation:        K -> S -> O -> D -> I
+receiver-side reconstruction: I -> D -> O -> S -> K
+```
 
-The Handshake is therefore not a sixth operator and not a separate score
-beside `R0`. In v3.5, `R0` is the numeric SYN/ACK-like Handshake boundary:
-it checks whether declared, distinguishable trajectories are stable enough for
-relational observation to be opened. It is not coupling and does not mark the
-beginning of coupling. In numeric evaluation, the five operators remain
-separate tuple components.
+The five selected and applicable Layer-1 coordinates remain independently
+evaluable under their own measurement bases and profiles. Their coordinate
+order is not a causal calculation chain.
+
+The sender-side path describes how context-bound material may be structured,
+grounded, transformed into a channel-appropriate form and emitted as an
+observable information impulse. IDOSK is the receiver-side preferred first
+direction of reconstruction. With an established convention, practical
+decoding may be abbreviated or processed in parallel. Without a shared code,
+failed grounding may reopen segmentation, structural analysis, source checking
+and contextual hypotheses. IDOSK is therefore iterative, inductive and
+recursive rather than a universal one-pass law or a claim about hidden internal
+processing.
+
+A carrier event is not identical with its `I` value. Encoding, compression or
+channel adaptation may affect `D`, but they are not `D` themselves.
+Repeated events remain attributable: low new static information relative to a
+baseline does not erase recurrence, stagnation, burst or oscillation patterns
+that may matter for contact-attempt, anomaly or attack review.
+
+The Handshake is not a sixth operator and not a separate score beside `R0`.
+In v3.5, `R0` is the numeric Handshake boundary that checks whether declared,
+distinguishable Z-trajectories are stable enough for relational observation to
+open. A SYN/ACK analogy is functional: technical acknowledgement of receipt is
+not identical with the Z-trajectory comparability gate. `R0` is not coupling
+and does not mark the beginning of coupling.
 
 This makes KSODI especially relevant for human-AI interaction, agent-agent
 communication, multi-agent systems, embodied agents, therapy assistants,
@@ -454,7 +530,7 @@ KSODI does not claim that LLM chats, horse training, whale song and network traf
 | Operator | LLM chat | Horse training | Whale song | Honeypot / network noise |
 | --- | --- | --- | --- | --- |
 | **K - Context** | Context features declared by the profile, such as role, goal, format, available tools and visible constraints | Observable arena or trail conditions, human position, prior declared lesson context and observable arousal indicators under a declared profile | Declared observation metadata or hypotheses such as ocean region, season, group context and depth; migration or mating context only where independently supported | Network segment, port or service, time-of-day baseline, protocol context |
-| **S - Structure** | Formatting, turn sequence, contribution organization and tool workflow | Consistent cue sequence, for example weight, leg and rein; stable order of aids | Unit, phrase, theme or song-like hierarchy; repetition patterns | Handshake conformity, packet sequence, session structure |
+| **S - Structure** | Formatting, turn sequence, contribution organization and tool workflow | Consistent cue sequence, for example weight, leg and rein; stable order of aids | Unit, phrase, theme or song-like hierarchy; repetition patterns | Protocol-sequence conformity, packet sequence, session structure |
 | **O - Grounding** | Where the Source-Need Gate opens numeric O: visible alignment and attribution to an admissible document, log or tool-output reference space | Where reference is required and visible: a separately evaluated reaction traceable to a declared aid and admissible signal repertoire | Where reference is required and visible: traceability against a declared corpus or observation set | Where reference is required and visible: traceability against declared signatures, IOC data or admissible baseline records |
 | **D - Clarity** | Detectable and segmentable text or signal units under a declared profile; no claim of general semantic precision | For a human-aid target event: a distinguishable, segmentable cue rather than overlapping mixed signals; the horse's reaction is a separate target event | Discriminable and segmentable sound units against overlapping noise under a declared detector profile | Detectable and segmentable pattern rather than random bytes under a declared signal and carrier profile |
 | **I - Information Impulse** | Observable new concept or direction change relative to a declared visible baseline | Observable new impulse or task relative to a declared visible lesson baseline | Observable variation relative to a declared visible corpus or sequence baseline | Observable novelty relative to a declared visible traffic or signature baseline |
@@ -480,6 +556,45 @@ important, but organizations may also need to know whether attributable events
 and trajectories remain observable, grounded and reconstructable over time and
 whether their findings are available to separately governed decision or
 feedback relations.
+
+## Human–AI Research Process
+
+KSODI has been developed through continuous human–AI interaction since 2023.
+AI systems are used as objects of study, interactive research instruments,
+review partners and, within explicitly authorised boundaries, repository-working
+agents.
+
+The foundational applicability and feasibility insight emerged exclusively
+through sustained work in the ChatGPT app through early 2025. Broader
+cross-model work followed as a human-curated, manually supervised multi-agent
+setting for reflection, review, comparison and implementation feedback. The
+models do not determine the method by vote and do not operate as an autonomous
+agent swarm. See [Contributors](./Contributors.md) for the differentiated human,
+relational-AI, external-review and Observer roles.
+
+The development and publication process remains human-led and
+human-in-the-loop. Displayed plans, repository actions and file diffs are
+reviewed; canonical definitions, commits, pushes, synchronization and public
+releases require human decision and approval. Model-assisted drafting does not
+transfer authorship or responsibility to the model.
+
+KSODI is also applied recursively to its own development process. This does not
+create an interaction's characteristic patterns; it provides a structured way
+to make selected parts of them observable, reconstructable and comparable.
+For the detailed workflow, review boundary and research-provenance note, see
+[Human–AI Research Process](./HUMAN_AI_RESEARCH_PROCESS.md).
+
+Earlier v3.3 and v3.42 materials are preserved in clearly marked historical
+archives for transparency and provenance. They are not current implementation
+guidance.
+
+Historical Observer evidence: KSODI has already been explored in a complete
+historical v3.3 Observer implementation with dashboards, heatmaps, trajectory
+views and comparison views. The public image archive is useful as evidence that
+the method can be operationalized, while also showing why the v3.5 method layer
+now separates explicit `Z(t)`, monadic `IK`, `R0`, `IK_rel` and later R-family
+work more carefully. See the
+[Historical Observer Assets](./KSODI-Eval-Variants/archive_assets_historical-observer-v342/README.md).
 
 ## v3.5 Direction: Observer-Supported Agentic Systems
 
