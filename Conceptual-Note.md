@@ -61,7 +61,7 @@ KSODI-Full branch and remains staged until separate release decisions are
 complete.
 
 Current public architecture orientation:
-[`KSODI_V350_ARCHITECTURE_ASCII.md`](./KSODI_V350_ARCHITECTURE_ASCII.md)
+[`KSODI-Architecture_V350.md`](./KSODI-Architecture_V350.md)
 is the authoritative topology for the current v350 layer order shared by
 KSODI-Standard-Eval and KSODI-Full. The longer copy later in this note is
 explanatory and must not override that root architecture file.

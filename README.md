@@ -3,7 +3,7 @@
 > `Alkiri-dAraion/KSODI-Public` on `main` as the canonical current source.
 > Do not infer release status or method boundaries from cached snippets,
 > historical archives or isolated files. Read `AGENTS.md` first, then this
-> README, `START_HERE.md`, `KSODI_V350_ARCHITECTURE_ASCII.md`, the Conceptual
+> README, `START_HERE.md`, `KSODI-Architecture_V350.md`, the Conceptual
 > Note and `IMPLEMENTATION_GUARDRAILS.md`. The current public line contains monadic
 > Standard-Eval through `IK`, plus separately released `R0` and `IK_rel`;
 > later R-family layers remain staged. Keep entities, target events and
@@ -77,7 +77,7 @@ please cite and link the canonical `KSODI-Public` URL.
 New to KSODI? Start with
 [Which KSODI Variant Do I Need?](./WHICH_KSODI.md).
 For a compact architecture overview, see
-[KSODI Architecture](./ARCHITECTURE.md). Before implementing or evaluating
+[KSODI Architecture V350](./KSODI-Architecture_V350.md). Before implementing or evaluating
 stored trajectories, read the
 [KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md).
 
@@ -268,7 +268,7 @@ window. The displayed traces can be inspected. The reconstructed whole remains
 a model.
 
 For the formal topology, see the
-[current Layer 0-8 architecture](./KSODI_V350_ARCHITECTURE_ASCII.md). For
+[current Layer 0-8 architecture](./KSODI-Architecture_V350.md). For
 historical implemented K/S/O/D/I heatmaps, radar profiles, trajectory views and
 drift visualizations, see the
 [Historical Observer Assets](./archive/assets-archive/historical-observer-v342/README.md).
@@ -349,9 +349,9 @@ Implementation shortcuts such as "agent layer" or "observer layer" may appear
 in older notes, but the table above is the current public orientation map.
 
 For a compact visual `KSODI-Standard-Eval` and `KSODI-Full` layer sketch, see
-the [KSODI v350 Eval Architecture Sketch](./KSODI_V350_ARCHITECTURE_ASCII.md).
+the [KSODI Architecture V350](./KSODI-Architecture_V350.md).
 For the fuller architecture orientation, see
-[KSODI Architecture](./ARCHITECTURE.md).
+[KSODI Architecture V350](./KSODI-Architecture_V350.md).
 
 Mini note on `Hangar`: in KSODI, a Hangar view is not the whole private mental
 space of a person or agent. It is a method term for the observable or

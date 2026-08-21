@@ -5,6 +5,10 @@
 This folder is the public orientation entry for the KSODI-Full v350 research
 structure. It supports conceptual review, discussion and version traceability.
 
+The shared structural and method boundary with KSODI-Standard-Eval is
+documented in the root
+[KSODI-Standard-Eval / KSODI-Full Transition V350](../KSODI-Standard-Eval_Full-Transition_V350.md).
+
 The current architecture separates the following layers:
 
 - interaction state observation

@@ -1,12 +1,24 @@
-# KSODI v350 Eval Architecture Sketch
+# KSODI Architecture V350
 
-Status: canonical public root-level orientation sketch for the current v3.5
+Status: single canonical public architecture for the current KSODI v3.5 / v3.50
 research repository state. Public visibility does not by itself mark a formal
 reference release.
+
+Filename marker: `_V350` denotes KSODI v3.5 / v3.50. It is a path-safe version
+marker, not a separate release or method variant.
 
 Purpose: show the architecture, inputs and methodological need of each layer
 while preserving source identity, role-relative process directions and the
 boundary between monadic and relational observation.
+
+Product boundary: KSODI-Standard-Eval is the monadic trajectory-observation
+line through `IK_A(k)`. KSODI-Full begins with dyadic observation at `R_0` and
+contains `IK_rel` after stable `R_0`, followed by the application-specific
+Layer 6–8 extensions. The two source trajectories remain distinguishable.
+
+Read this architecture together with the
+[KSODI-Standard-Eval / KSODI-Full Transition V350](./KSODI-Standard-Eval_Full-Transition_V350.md)
+and the [KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md).
 
 Reading rule: layer numbers show architectural position and research
 organization. They do not automatically mean that the value of one layer is
@@ -18,11 +30,11 @@ input or dependency; parallel branches remain separate calculations.
 ```text
 independently usable                      independently usable
 
-+--------------------------+             +---------------------------+
-| KSODI-Light              |             | Observer method           |
-| local reflection         |             | Standard-Eval / Full      |
-| prompt / agent guidance  |             | observable reconstruction |
-+--------------------------+             +---------------------------+
++--------------------------+             +----------------------------+
+| KSODI-Light              |             | Observer method            |
+| local reflection         |             | KSODI-Standard-Eval /      |
+| prompt / agent guidance  |             | KSODI-Full                 |
++--------------------------+             +----------------------------+
            no required arrow between these two entry points
                                                   |
                                                   | declared findings,
@@ -36,7 +48,7 @@ independently usable                      independently usable
 ```
 
 `KSODI-Light -> Observer -> Controller` is not one mandatory pipeline.
-KSODI-Light needs no external Observer calculation. Standard-Eval and
+KSODI-Light needs no external Observer calculation. KSODI-Standard-Eval and
 KSODI-Full do not require Light. A future Controller requires a separate
 Observer and governance boundary; it must not collapse into the Observer or
 the observed entity.
@@ -297,7 +309,7 @@ Future Controller
 ```
 
 The current public repository state contains the complete monadic
-Standard-Eval line and public `R0` and `IK_rel` research material. `R_geom`,
+KSODI-Standard-Eval line and public `R0` and `IK_rel` research material. `R_geom`,
 `R_pace` and later signal-media work remain staged or future research unless a
 file-level status explicitly changes. Folder presence is not a release claim.
 
@@ -366,9 +378,9 @@ Controller policies are already known.
 
 ## 12. Observer and Controller Boundary
 
-Standard-Eval and KSODI-Full specify Observer-oriented calculations. A deployed
-Observer implementation reconstructs and evaluates observable states and
-trajectories. It does not decide, intervene or steer by itself.
+KSODI-Standard-Eval and KSODI-Full specify Observer-oriented calculations. A
+deployed Observer implementation reconstructs and evaluates observable states
+and trajectories. It does not decide, intervene or steer by itself.
 
 Prompt-level reflection and lightweight local steering in KSODI-Light must not
 be confused with system-level Controller intervention.
@@ -430,7 +442,63 @@ R_freq
 Pace and future voice, rhythm/timing or signal-media work must not be
 conflated with those deprecated identifiers.
 
-## 15. Layer Files
+## 15. Compact Companion Views
+
+The following compact sketches are retained from the earlier root orientation
+because they provide useful shorter views of relationships shown in greater
+detail above. They introduce no additional components or dependencies.
+
+Directed process readings:
+
+```text
+sender-side formation:
+K -> S -> O -> D -> I
+
+receiver-side preferred iterative reconstruction:
+I -> D -> O -> S -> K
+```
+
+Compact coordinate view:
+
+```text
+Z_A(k) = (K_A(k), S_A(k), O_A(k), D_A(k), I_A(k))
+```
+
+Compact monadic Observer line:
+
+```text
+e_A(k_A)
+   |
+   v
+K_A / S_A / O_A / D_A / I_A
+   |  five separately defined observable coordinates
+   v
+Z_A(k_A)
+   |  retains the complete source-local state vector
+   v
+IK_A(k_A)
+      optional monadic coherence projection for this entity and trajectory
+```
+
+Compact relational gate and branch view:
+
+```text
+T_A = {Z_A(k_A), Delta Z_A(k_A), ...}
+T_B = {Z_B(k_B), Delta Z_B(k_B), ...}
+
+pi(j) = (k_A(j), k_B(j))
+
+T_A ----\
+         +--> R0(j | pi, profile_R0)
+T_B ----/          |
+                   | only when the gate is stable
+                   +--> IK_rel(j)
+                   +--> R_geom(j)   [staged]
+                   +--> R_pace(j)   [staged, optional]
+                   +--> later signal-media views [future research]
+```
+
+## 16. Layer Files
 
 - [Layer 0 - KSODI-Light](./KSODI-Light/developer-notes/KSODI-Light-Agent-v350-Bridge.md)
 - [Layer 1 - Operators](./KSODI-Standard-Eval/layer-1-operators/README.md)

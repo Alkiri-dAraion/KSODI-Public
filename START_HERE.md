@@ -23,7 +23,8 @@ For orientation and implementation boundaries, continue with:
 
 - [Which KSODI Do I Need?](./WHICH_KSODI.md)
 - [Conceptual Note](./Conceptual-Note.md)
-- [KSODI Architecture](./ARCHITECTURE.md)
+- [KSODI-Standard-Eval / KSODI-Full Transition V350](./KSODI-Standard-Eval_Full-Transition_V350.md)
+- [KSODI Architecture V350](./KSODI-Architecture_V350.md)
 - [KSODI Hangar V350](./KSODI-Hangar_V350.md) — the shared observer-side
   comparison space for trajectories, windows, distributions and point clouds
 - [Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md)

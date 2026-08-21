@@ -28,7 +28,7 @@ question being answered:
 | Question or level | Read first | Authority boundary |
 | --- | --- | --- |
 | What is KSODI, and what is currently public? | [README.md](./README.md), then [WHICH_KSODI.md](./WHICH_KSODI.md) | public entry, variant selection and release boundary |
-| How are the layers and branches arranged? | [ARCHITECTURE.md](./ARCHITECTURE.md), then the [v350 architecture sketch](./KSODI_V350_ARCHITECTURE_ASCII.md) | canonical root topology and compact layer order |
+| How are the layers and branches arranged? | [KSODI Architecture V350](./KSODI-Architecture_V350.md) | canonical root topology, dependencies and layer order |
 | What is the conceptual reasoning behind the method? | [Conceptual Note](./Conceptual-Note.md) | explanatory semantics; it does not replace file-level definitions |
 | What is released, staged or planned next? | [ROADMAP.md](./ROADMAP.md) | development and publication orientation, not a formula source |
 | How are Layer-1 observations defined? | [Layer-1 operator entry](./KSODI-Standard-Eval/layer-1-operators/README.md), then the linked versioned operator file | the versioned operator file is authoritative for that operator's formula, profile and applicability |

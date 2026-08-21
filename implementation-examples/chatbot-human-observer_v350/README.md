@@ -65,4 +65,4 @@ source-separated trajectories, `R0`, `IK_rel` or later relational layers.
 
 Architecture overview:
 
-[`../../KSODI_V350_ARCHITECTURE_ASCII.md`](../../KSODI_V350_ARCHITECTURE_ASCII.md)
+[`../../KSODI-Architecture_V350.md`](../../KSODI-Architecture_V350.md)

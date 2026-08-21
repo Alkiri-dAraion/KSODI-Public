@@ -146,7 +146,7 @@ method.
 
 Read together with:
 
-- [root architecture](../../ARCHITECTURE.md)
+- [root architecture](../../KSODI-Architecture_V350.md)
 - [conceptual note](../../Conceptual-Note.md)
 - [shared Hangar method note](../../KSODI-Hangar_V350.md)
 - [implementation guardrails](../../IMPLEMENTATION_GUARDRAILS.md)

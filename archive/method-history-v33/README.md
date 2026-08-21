@@ -20,4 +20,4 @@ Current public v350 orientation:
 
 - [`KSODI-Standard-Eval`](../../KSODI-Standard-Eval/README.md)
 - [`KSODI-Standard-Eval/layer-1-operators`](../../KSODI-Standard-Eval/layer-1-operators/README.md)
-- [`KSODI_V350_ARCHITECTURE_ASCII.md`](../../KSODI_V350_ARCHITECTURE_ASCII.md)
+- [`KSODI-Architecture_V350.md`](../../KSODI-Architecture_V350.md)

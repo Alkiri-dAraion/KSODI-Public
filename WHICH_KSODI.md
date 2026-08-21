@@ -20,7 +20,7 @@ distinguishable.
 
 For the complete Layer 0-8 topology, branch point after `Z` and current
 publication boundary, see the root
-[KSODI v350 Architecture Sketch](./KSODI_V350_ARCHITECTURE_ASCII.md).
+[KSODI Architecture V350](./KSODI-Architecture_V350.md).
 
 ## Quick Choice
 
@@ -174,7 +174,7 @@ for the released method.
 
 1. Read this guide and identify the actual question: reflection, monadic
    observation or relational comparison.
-2. Read the root [architecture sketch](./KSODI_V350_ARCHITECTURE_ASCII.md) for
+2. Read the root [KSODI Architecture V350](./KSODI-Architecture_V350.md) for
    the Layer 0-8 map, branch point, dependencies and publication boundary.
 3. Choose the correct entry:
    - [KSODI-Light](./KSODI-Light/README.md) for an independently usable

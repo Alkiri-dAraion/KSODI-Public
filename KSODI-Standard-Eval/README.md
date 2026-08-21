@@ -5,6 +5,10 @@
 This folder contains public KSODI Standard-Eval materials for conceptual
 review, discussion and version traceability.
 
+The shared structural and method boundary with KSODI-Full is documented in
+the root
+[KSODI-Standard-Eval / KSODI-Full Transition V350](../KSODI-Standard-Eval_Full-Transition_V350.md).
+
 The public 3.3 files and the later v3.42 working / implementation line are
 historical material. They are not recommended as current implementation
 references. They contain or reveal known structural issues and are superseded
@@ -65,7 +69,7 @@ projection.
   [`layer-2-state-vector-z_v350/`](./layer-2-state-vector-z_v350/README.md) and
   [`layer-3-ik_v350/`](./layer-3-ik_v350/README.md) contain the current
   layer-based public KSODI-Standard-Eval structure.
-- [`KSODI_V350_ARCHITECTURE_ASCII.md`](../KSODI_V350_ARCHITECTURE_ASCII.md)
+- [`KSODI-Architecture_V350.md`](../KSODI-Architecture_V350.md)
   gives a compact layer sketch for the current v350 direction.
 
 ## Related folders
