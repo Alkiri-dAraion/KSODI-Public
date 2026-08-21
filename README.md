@@ -5,10 +5,11 @@
 > historical archives or isolated files. Read `AGENTS.md` first, then this
 > README, `START_HERE.md`, `KSODI-Architecture_V350.md`, the Conceptual
 > Note and `IMPLEMENTATION_GUARDRAILS.md`. The current public line contains monadic
-> Standard-Eval through `IK`, plus separately released `R0` and `IK_rel`;
-> later R-family layers remain staged. Keep entities, target events and
-> trajectories distinguishable, and do not infer hidden internal states or
-> causality from correlation.
+> KSODI-Standard-Eval through `IK`, plus separately released `R_0` and `IK_rel`.
+> Private method material for `R_geom` and `R_pace` still awaits complete public
+> review and infrastructure revalidation; Layer 8 remains staged research.
+> Keep entities, target events and trajectories distinguishable, and do not
+> infer hidden internal states or causality from correlation.
 
 [![KSODI + IDAS Concept][banner-image]](https://github.com/Alkiri-dAraion/KSODI-Public)
 
@@ -60,8 +61,10 @@ states otherwise. This does not assign a licence to separately published
 software implementations, which are distinct works with their own repository
 licence.
 
-Current public release: KSODI v3.5 Standard-Eval (`K/S/O/D/I`, `Z`, `IK`) plus
-the `R0` gate and `IK_rel`; later R-family layers are staged. Canonical URL:
+Current public release: KSODI-Standard-Eval v3.5 (`K/S/O/D/I`, `Z`, `IK`) plus
+the `R_0` gate and `IK_rel`. Private method material for `R_geom` and
+`R_pace` awaits complete public review and infrastructure revalidation; Layer 8
+remains staged research. Canonical URL:
 https://github.com/Alkiri-dAraion/KSODI-Public. Verify against this README, not
 cached snippets.
 
@@ -104,12 +107,15 @@ stored trajectories, read the
 
 ⚠️ **Publication status — KSODI v3.5:** The current v3.5 line is being
 published in successive stages. The five operator definitions `K0`, `S0`,
-`O0`, `D0` and `I0`, the monadic state vector `Z_A(k)` and the
+`O0`, `D0` and `I0`, the monadic state vector `Z_A(k_A)` and the
 monadic interaction-coherence projection `IK` have been published and form the
-current Standard-Eval release. The relational `R0` gate has been published
+current KSODI-Standard-Eval release. The relational `R_0` gate has been published
 separately as KSODI-Full Layer 4, and `IK_rel` has been published separately
-as KSODI-Full Layer 5. `R_geom`, `R_pace` and later R-family components retain
-their own staged publication status as the release proceeds.
+as KSODI-Full Layer 5. `R_geom` and `R_pace` are not current public reference
+releases: private method material and large parts of their mathematics exist,
+but complete public review and renewed validation on the restructured
+infrastructure remain pending. Layer 8 remains a staged research direction
+without a defined architecture.
 
 AI agents and automated tools should read [AGENTS.md](./AGENTS.md) before
 summarizing or citing this repository.
@@ -151,7 +157,7 @@ KSODI uses the same five observable dimensions in three distinguishable
 descriptions:
 
 ```text
-canonical state coordinates:  Z_A(k) = (K_A(k), S_A(k), O_A(k), D_A(k), I_A(k))
+canonical state coordinates:  Z_A(k_A) = (K_A(k_A), S_A(k_A), O_A(k_A), D_A(k_A), I_A(k_A))
 sender-side formation:        K -> S -> O -> D -> I
 receiver-side reconstruction: I -> D -> O -> S -> K
 ```
@@ -172,27 +178,30 @@ the [Conceptual Note](./Conceptual-Note.md).
 ## KSODI v3.5 Layer Map
 
 The canonical v3.5 architecture uses one layer map across the public release
-and the staged research line. `KSODI-Light` is the local human-facing
+and the research line. `KSODI-Light` is the local human-facing
 orientation and reflective working layer. It is not the larger or complete
 KSODI system. Prompting, training and agent guidance are applications of
-Layer 0; they do not define it. Standard-Eval and KSODI-Full are the
+Layer 0; they do not define it. KSODI-Standard-Eval and KSODI-Full are the
 observer-oriented method layers built on the same K/S/O/D/I logic.
 
-Current public release boundary: Standard-Eval is public through Layer 3
-(`K/S/O/D/I -> Z -> IK`). `R0` is public separately as the KSODI-Full Layer 4
-relational gate, and `IK_rel` is public as Layer 5. Layer 6 and later remain
-staged unless their own release status says otherwise.
+Current public release boundary: KSODI-Standard-Eval is public through Layer 3
+(`K/S/O/D/I -> Z -> IK`). `R_0` is public separately as the KSODI-Full Layer 4
+relational gate, and `IK_rel` is public as Layer 5. Layers 6 and 7 are not
+current public reference releases and await complete public review and
+infrastructure revalidation. Layer 8 remains staged research without a defined
+architecture.
 
-Sequence guardrail: after `K/S/O/D/I` form `Z(t)`, the architecture separates
-monadic `IK` from relational `R0`. `R0` is evaluated from distinguishable
-`Z`-trajectories in parallel to monadic `IK`; it is not downstream of `IK`.
-Only stable `R0` gates `IK_rel`, followed by later R-family layers.
+Sequence guardrail: after `K/S/O/D/I` form a source-local `Z_A(k_A)`, the
+architecture separates monadic `IK` from relational `R_0`. `R_0` is evaluated
+from distinguishable `Z`-trajectories in parallel to monadic `IK`; it is not
+downstream of `IK`.
+Only stable `R_0` gates `IK_rel`, followed by later R-family layers.
 
 > [!IMPORTANT]
 > **Architectural-use boundary.** KSODI-Light, the Observer architecture and a
 > future Controller are separate roles, not interchangeable variants.
 > KSODI-Light may be used independently, with or without an external Observer.
-> A Standard-Eval or KSODI-Full Observer may likewise operate without
+> A KSODI-Standard-Eval or KSODI-Full Observer may likewise operate without
 > KSODI-Light and without a Controller; in that case it observes and reports
 > only. A future KSODI Controller is not a standalone method variant. It depends
 > on declared Observer findings and pre-approved governance corridors while
@@ -203,18 +212,19 @@ Only stable `R0` gates `IK_rel`, followed by later R-family layers.
 | Layer | Variant | Component | Public status | Role |
 | --- | --- | --- | --- | --- |
 | 0 | [KSODI-Light](./KSODI-Light/README.md) | Local reflective layer | public | Human-facing orientation and reflective working layer; prompting, training and agent guidance are applications. |
-| 1 | [KSODI Standard-Eval](./KSODI-Standard-Eval/README.md) | K/S/O/D/I operators | public | Observer-facing operator definitions for context, structure, grounding, clarity and information impulse. |
-| 2 | [KSODI Standard-Eval](./KSODI-Standard-Eval/README.md) | `Z_A(k)` | public | Monadic state vector over the five operator values for one attributable target event. |
-| 3 | [KSODI Standard-Eval](./KSODI-Standard-Eval/README.md) | `IK` | public | Monadic interaction-coherence projection; closes Standard-Eval. |
-| 4 | [KSODI-Full](./KSODI-Full/README.md) | `R0` / `R_0` gate | public | Relational comparability gate over distinguishable `Z`-trajectories; not a coupling or resonance score. |
-| 5 | [KSODI-Full](./KSODI-Full/README.md) | `IK_rel` | public | Relational coherence projection after stable `R0`. |
-| 6 | [KSODI-Full](./KSODI-Full/README.md) | `R_geom` | private / staged | Geometric coupling in KSODI state space. |
-| 7 | [KSODI-Full](./KSODI-Full/README.md) | `R_pace` | private / staged | Optional pacing overlay where pacing dynamics are explicitly defined. |
-| 8 | [KSODI-Full](./KSODI-Full/README.md) | Future signal-media layer | future research | Voice, rhythm/timing, audio, radio, Morse-like or other signal-media work; historical `Takt` labels are not active v3.5 terms. |
+| 1 | [KSODI-Standard-Eval](./KSODI-Standard-Eval/README.md) | K/S/O/D/I operators | public | Observer-facing operator definitions for context, structure, grounding, clarity and information impulse. |
+| 2 | [KSODI-Standard-Eval](./KSODI-Standard-Eval/README.md) | `Z_A(k_A)` | public | Monadic state vector over the five operator values for one attributable target event. |
+| 3 | [KSODI-Standard-Eval](./KSODI-Standard-Eval/README.md) | `IK` | public | Monadic interaction-coherence projection; closes KSODI-Standard-Eval. |
+| 4 | [KSODI-Full](./KSODI-Full/README.md) | `R_0` gate | public | Relational comparability gate over distinguishable `Z`-trajectories; not a coupling or resonance score. |
+| 5 | [KSODI-Full](./KSODI-Full/README.md) | `IK_rel` | public | Relational coherence projection after stable `R_0`. |
+| 6 | [KSODI-Full](./KSODI-Full/README.md) | `R_geom` | private; review pending | Geometric coupling in KSODI state space; private material exists and awaits complete public review and infrastructure revalidation. |
+| 7 | [KSODI-Full](./KSODI-Full/README.md) | `R_pace` | private; review pending | Optional pacing overlay where pacing dynamics are explicitly defined; private material exists and awaits complete public review and infrastructure revalidation. |
+| 8 | [KSODI-Full](./KSODI-Full/README.md) | Future signal-media layer | staged research | Voice, rhythm/timing, audio, radio, Morse-like or other signal-media questions without a defined Layer-8 architecture; historical `Takt` labels are not active v3.5 terms. |
 
 The variant assignment and the publication status are separate. A layer may
 belong to KSODI-Full while its formula or implementation material remains
-staged. Before building from any layer, read the
+outside the current public reference release. Before building from any layer,
+read the
 [KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md).
 
 ## What the Observer Sees — A Conceptual Projection
@@ -228,7 +238,7 @@ staged. Before building from any layer, read the
 
 Imagine two distinguishable entities — represented here by the lower spacecraft
 and Earth — exchanging signals under an explicitly declared pairing. The
-pairing identifies a possible relational evaluation basis. `R0` then checks
+pairing identifies a possible relational evaluation basis. `R_0` then checks
 whether the required distinguishable trajectory movements are available and
 sufficiently stable for later relational evaluation; neither exchange nor
 pairing establishes coupling. Shared context, task, time, channel or
@@ -245,7 +255,7 @@ if its own attributable events or signals are explicitly included in the
 declared evaluation unit.
 
 The violet tesseract-like form represents an observer-side projection of
-reconstructed monadic `Z_A(k)` states, trajectory views and separately gated
+reconstructed monadic `Z_A(k_A)` states, trajectory views and separately gated
 relational projections. It is a visual shadow metaphor for the five-coordinate
 KSODI state space, not a literal geometric rendering. It is neither a physical
 object between the interacting entities nor any operator's declared
@@ -259,9 +269,9 @@ where applicable before the projection can be interpreted responsibly.
 Architecture-agnostic method roles do not make the Observer input-agnostic.
 
 Each attributable signal event and source-local trajectory is evaluated
-monadically before relational comparison. `R0` establishes only whether
+monadically before relational comparison. `R_0` establishes only whether
 distinguishable trajectories are stable enough for that comparison. `IK_rel`
-examines relational coherence after stable `R0`. Observable coupling or
+examines relational coherence after stable `R_0`. Observable coupling or
 resonance claims require the applicable branch-specific R-family construct to
 have been separately released, declared and evaluated across its required
 window. The displayed traces can be inspected. The reconstructed whole remains
@@ -278,14 +288,14 @@ v3.5; they are not current v3.5 specification diagrams.
 > **Dancer-and-dance-group analogy — monadic coherence, relational coherence
 > and resonance:** One dancer's attributable movements form a source-local
 > trajectory that can be observed monadically. Each attributable target event
-> can be represented by its own five-coordinate `Z_A(k)` state, and monadic `IK`
+> can be represented by its own five-coordinate `Z_A(k_A)` state, and monadic `IK`
 > projects that complete applicable state. Neither projection determines that
 > the choreography is correct or that the performance fulfils an external task.
 >
 > Sharing a room, time and music does not by itself create an evaluated dyad.
 > Two people dancing independently at opposite ends of a nightclub may share
 > all three environmental conditions without interacting or having their
-> trajectories paired. `R0` is the SYN/ACK-like Handshake gate that tests
+> trajectories paired. `R_0` is the SYN/ACK-like Handshake gate that tests
 > whether explicitly paired, distinguishable trajectories provide a stable
 > basis for relational comparison. It does not create the relation, and it is
 > not itself a coupling or resonance score. See the
@@ -379,7 +389,7 @@ It is intended to bridge three practical contexts:
 - **Prompt-level agent guidance:** KSODI-Light can be embedded into user,
   account, developer or system-prompt settings as a disclosed reflective
   working agreement with lightweight corridors and fallback behavior.
-- **AI observability and governance:** KSODI Standard-Eval, KSODI Full and
+- **AI observability and governance:** KSODI-Standard-Eval, KSODI-Full and
   IDAS/SIRA-level implementations extend the same operator logic into numeric
   Observer layers for drift, corridor exits and longer-term interaction
   monitoring. Relational or coupling claims remain subject to their own gates,
@@ -424,8 +434,9 @@ not itself change a numerical formula or file-level release status.
 - **Observable Information Impulse:** Does the target event contain an observable information impulse relative to its declared visible reference baseline?
 
 These operator names reflect the current research-facing terminology. Shorter
-KSODI-Light terms may still be used in training contexts, but Standard-Eval and
-Full discussions should map them explicitly to the research-facing names.
+KSODI-Light terms may still be used in training contexts, but
+KSODI-Standard-Eval and KSODI-Full discussions should map them explicitly to
+the research-facing names.
 
 This does not mean that KSODI explains all communication or defines its only
 possible observational entry point. When the five-operator schema is selected,
@@ -444,13 +455,13 @@ KSODI does not replace these layers. It frames the baseline question before and
 around them:
 
 > Are attributable events reconstructable, and — where pairing has been
-> separately declared — does `R0` permit relational comparison?
+> separately declared — does `R_0` permit relational comparison?
 
 KSODI distinguishes the canonical coordinate representation from two directed,
 role-relative process topologies:
 
 ```text
-canonical state coordinates:  Z_A(k) = (K_A(k), S_A(k), O_A(k), D_A(k), I_A(k))
+canonical state coordinates:  Z_A(k_A) = (K_A(k_A), S_A(k_A), O_A(k_A), D_A(k_A), I_A(k_A))
 sender-side formation:        K -> S -> O -> D -> I
 receiver-side reconstruction: I -> D -> O -> S -> K
 ```
@@ -475,11 +486,11 @@ Repeated events remain attributable: low new static information relative to a
 baseline does not erase recurrence, stagnation, burst or oscillation patterns
 that may matter for contact-attempt, anomaly or attack review.
 
-The Handshake is not a sixth operator and not a separate score beside `R0`.
-In v3.5, `R0` is the numeric Handshake boundary that checks whether declared,
+The Handshake is not a sixth operator and not a separate score beside `R_0`.
+In v3.5, `R_0` is the numeric Handshake boundary that checks whether declared,
 distinguishable Z-trajectories are stable enough for relational observation to
 open. A SYN/ACK analogy is functional: technical acknowledgement of receipt is
-not identical with the Z-trajectory comparability gate. `R0` is not coupling
+not identical with the Z-trajectory comparability gate. `R_0` is not coupling
 and does not mark the beginning of coupling.
 
 This makes KSODI especially relevant for human-AI interaction, agent-agent
@@ -503,7 +514,7 @@ handshake remains intact.
 
 In observer-supported architectures, KSODI-Light may support local agent
 behavior through clarification, uncertainty visibility, corridor awareness and
-fallback behavior. KSODI Standard-Eval or KSODI Full may then act as external
+fallback behavior. KSODI-Standard-Eval or KSODI-Full may then act as external
 Observer layers that monitor trajectories, drift, acceleration, relational
 coherence and corridor exits across time.
 
@@ -594,8 +605,8 @@ Historical Observer evidence: KSODI has already been explored in a complete
 historical v3.3 Observer implementation with dashboards, heatmaps, trajectory
 views and comparison views. The public image archive is useful as evidence that
 the method can be operationalized, while also showing why the v3.5 method layer
-now separates explicit `Z(t)`, monadic `IK`, `R0`, `IK_rel` and later R-family
-work more carefully. See the
+now separates explicit source-local `Z_A(k_A)`, monadic `IK`, `R_0`, `IK_rel`
+and later R-family work more carefully. See the
 [Historical Observer Assets](./archive/assets-archive/historical-observer-v342/README.md).
 
 ## v3.5 Direction: Observer-Supported Agentic Systems
@@ -611,9 +622,9 @@ oversight. Adjustment or intervention remains a separate human or Controller
 function.
 
 In this architecture, KSODI-Light belongs to the agent side: it may be used as
-a user, account, developer, system-prompt or skill-level layer. KSODI
-Standard-Eval and KSODI Full belong to the observer side: they are intended to
-define, explain and build the external Observer structure. KSODI-Light and the
+a user, account, developer, system-prompt or skill-level layer.
+KSODI-Standard-Eval and KSODI-Full belong to the observer side: they are
+intended to define, explain and build the external Observer structure. KSODI-Light and the
 Observer can each be used independently. When combined, Light provides local
 reflective guidance while the Observer provides external, auditable findings
 that may inform a separately governed human decision or Controller layer. An
@@ -635,7 +646,10 @@ applicability conditions. Inputs, context scope, structural profile, detector
 and carrier profile, visible reference space, retrieval context and tool state
 must be mapped only where the respective operator definition permits them.
 
-In other words: KSODI is not only a scoring surface. It requires careful decisions about what is observed, how input is transformed into K/S/O/D/I, how `Z(t)` is formed, and how later projections, drift metrics, relational gates and visualizations are derived from it.
+In other words: KSODI is not only a scoring surface. It requires careful
+decisions about what is observed, how input is transformed into K/S/O/D/I,
+how a source-local `Z_A(k_A)` is formed, and how later projections, drift
+metrics, relational gates and visualizations are derived from it.
 
 Historical implementation note: earlier KSODI implementation work around the
 v3.3 method state already explored a Kubernetes / microservice-oriented
@@ -643,8 +657,9 @@ architecture with operator and Observer components. Selected historical
 dashboards and visual outputs are preserved in the
 [Historical Observer Assets](./archive/assets-archive/historical-observer-v342/README.md).
 The v3.5 transition does not discard that carrier architecture. It reworks the
-method layer: `Z(t)` is made explicit, `IK` is separated from the R-family
-because coherence is not resonance, `R0` is introduced as a relational gate,
+method layer: source-local `Z_A(k_A)` is made explicit, `IK` is separated from
+the R-family because coherence is not resonance, `R_0` is introduced as a
+relational gate,
 `IK_rel` is separated from later coupling / resonance layers, and source /
 reference-space visibility is treated more carefully. Older outputs,
 dashboards or diagrams should therefore be read as historical implementation
@@ -676,24 +691,25 @@ embedded by agent creators in developer/system-prompt configurations.
 KSODI-Light can support reflection on attributable user input, assistant output
 and the observable interaction condition across a turn. It does not create a
 formal merged shared state. Formal observer-based monitoring belongs to
-Standard-Eval, KSODI-Full or IDAS/SIRA-level implementations.
+KSODI-Standard-Eval, KSODI-Full or IDAS/SIRA-level implementations.
 → See: [KSODI-Light](./KSODI-Light)
 
 Licence: [Creative Commons Attribution 4.0 International (CC BY 4.0)](./LICENSE.md)
 
 ---
 
-### KSODI Standard-Eval & KSODI Full
+### KSODI-Standard-Eval & KSODI-Full
 Observer-oriented variants that may provide inputs to separately governed
 human decision or Controller layers.
 Designed for numeric observability, drift detection and declared relational
 monitoring without performing steering or enforcement by themselves.
 KSODI v3.5 is being published in successive stages. The five operator
-definitions, the monadic state vector `Z_A(k)` and monadic `IK` form the
-current public Standard-Eval release. The relational `R0` gate is released
+definitions, the monadic state vector `Z_A(k_A)` and monadic `IK` form the
+current public KSODI-Standard-Eval release. The relational `R_0` gate is released
 separately as KSODI-Full Layer 4, and `IK_rel` is released as KSODI-Full Layer
-5. `R_geom`, `R_pace` and later R-family layers remain outside the current
-release until their own status is stated explicitly.
+5. `R_geom` and `R_pace` remain outside the current public reference release
+while complete public review and infrastructure revalidation are pending.
+Layer 8 remains staged research without a defined architecture.
 → See: [KSODI-Standard-Eval](./KSODI-Standard-Eval/README.md) and
 [KSODI-Full](./KSODI-Full/README.md)
 
@@ -778,7 +794,7 @@ The public KSODI v3.3 and v3.42 materials are preserved in historical archives
 for transparency and provenance. They are not current implementation guidance.
 
 KSODI v3.5 is being published in successive stages. The current public
-Standard-Eval release extends through the monadic interaction-coherence
-projection `IK`, which closes the Standard-Eval line. The relational `R0` gate
-is released separately as KSODI-Full Layer 4, and `IK_rel` is released
+KSODI-Standard-Eval release extends through the monadic interaction-coherence
+projection `IK`, which closes the KSODI-Standard-Eval line. The relational
+`R_0` gate is released separately as KSODI-Full Layer 4, and `IK_rel` is released
 separately as KSODI-Full Layer 5.
