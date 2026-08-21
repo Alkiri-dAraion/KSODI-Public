@@ -15,7 +15,11 @@ It is an **explicit statement of responsibility** regarding the observation, eva
 
 ## Core ethical position
 
-KSODI and IDAS are **observation frameworks**, not control systems.
+KSODI-Standard-Eval and KSODI-Full are **Observer-oriented method scopes**,
+not control systems. KSODI-Light is a reflective working layer and does not
+perform formal Observer calculations. IDAS and SIRA may frame separately
+governed transitions from observation toward possible action, but neither a
+KSODI finding nor an IDAS/SIRA relation authorizes action by itself.
 
 They are designed to:
 
@@ -29,6 +33,24 @@ They are **not** designed to:
 * enforce behavior,
 * judge people,
 * or replace human responsibility.
+
+## Method and observation boundaries
+
+The ethical boundary follows the method architecture:
+
+* **KSODI-Standard-Eval** observes one source-attributed monadic trajectory
+  through `K/S/O/D/I`, `Z_A(k)` and optional `IK_A(k)`.
+* **KSODI-Full** begins with dyadic or explicitly declared n-adic observation
+  at `R_0`. The contributing trajectories remain distinguishable.
+* A stable `R_0` permits defined relational observation; it does not prove
+  acknowledgement, shared meaning, coupling, intent or causality.
+* An **Observer** reconstructs and reports observable findings. A Controller,
+  intervention or other action requires a separate architecture, authority,
+  policy and audit trail.
+
+Shared context, interaction or infrastructure must never be used to silently
+merge distinct people, agents, events or trajectories into one observed
+entity.
 
 ---
 
@@ -74,7 +96,8 @@ KSODI and IDAS address these risks by:
 * observing interaction structure over time,
 * detecting early signs of drift,
 * supporting human-in-the-loop oversight,
-* and enabling intervention **before harm occurs**.
+* and providing evidence to authorized human or governed decision processes
+  **before harm occurs**.
 
 Responsibility always remains with:
 
@@ -90,12 +113,13 @@ A central ethical principle of KSODI is:
 
 > **Observation must never silently turn into control.**
 
-Therefore:
+Therefore, ethically admissible use:
 
-* KSODI does not operate covertly,
-* does not infer hidden intentions,
-* does not profile individuals,
-* and does not act without human awareness.
+* must not deploy KSODI covertly,
+* must not present inferred hidden intentions as observations,
+* must not use KSODI for hidden profiling of individuals,
+* and must not turn findings into action without declared authority and
+  accountable governance.
 
 All measurements are:
 
@@ -107,21 +131,30 @@ All measurements are:
 
 ## Privacy and data minimization
 
-Ethical AI governance requires restraint.
+Ethical AI governance requires restraint. KSODI does not require indiscriminate
+access to all available content. The minimum required observation basis depends
+on the declared operator, profile and application.
 
-KSODI and IDAS:
+Depending on that basis, an Observer may need access to observable
+contributions, declared context or reference material, source attribution and
+technical metadata before it can construct numeric indicators, trajectories or
+relational views. Raw language and reference material may contain personal,
+confidential or otherwise sensitive information. Derived scores, embeddings,
+vectors, trajectories and Hangar views are not automatically anonymous or
+harmless merely because they no longer contain the original text.
 
-* do not require access to chat content,
-* do not store semantic meaning,
-* do not analyze personal data.
+Every implementation should therefore:
 
-They operate on:
+* collect only the data required for its declared observation purpose,
+* keep raw material only where necessary and for a declared retention period,
+* preserve provenance, access controls and deletion responsibilities,
+* disclose what is observed and how findings may be used,
+* keep observed data, Observer findings and later Controller actions distinct,
+* and apply the relevant governance and legal requirements of its deployment
+  context.
 
-* numeric indicators,
-* temporal patterns,
-* and structural change.
-
-This minimizes harm while maximizing insight.
+KSODI evaluates observable material. It does not provide direct access to
+private thoughts, hidden internal states or unexposed model processes.
 
 ---
 
@@ -180,4 +213,3 @@ and **long before** harm.
 
 Observation, transparency and humility
 are the foundations of responsible human–AI, human-agent and agentic interaction.
-
