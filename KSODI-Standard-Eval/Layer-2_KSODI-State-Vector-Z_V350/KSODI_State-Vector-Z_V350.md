@@ -453,7 +453,7 @@ Other window views remain in their own method context:
   / R-family layer.
 
 The released shared Hangar method note is maintained separately at the
-Eval-Variants root:
+repository root:
 
 [`KSODI-Hangar_V350.md`](../../KSODI-Hangar_V350.md)
 
