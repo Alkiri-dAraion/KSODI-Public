@@ -84,9 +84,11 @@ remains staged research. Canonical URL:
 https://github.com/Alkiri-dAraion/KSODI-Public. Verify against this README, not
 cached snippets.
 
-Version-marker note: `v350` in file and folder names is the path-safe marker
-for KSODI v3.50 / v3.5. It avoids dots in paths and does not denote a separate
-version from v3.5.
+Version-marker note: `V350` in current canonical file and folder names is the
+path-safe marker for KSODI Version 3.50 / 3.5. More generally, uppercase
+`VXYZ` expresses `Version X.YZ`. Historical archives may retain their original
+lowercase or older markers; those names are provenance, not a separate version
+system or method.
 
 New to KSODI? Start with
 [Which KSODI Variant Do I Need?](./WHICH_KSODI.md).

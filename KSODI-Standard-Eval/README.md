@@ -63,7 +63,7 @@ As of 2026-07-21, the public v350 Standard-Eval release contains all five
 Layer-1 operators, the Layer-2 state vector `Z` and the Layer-3 monadic `IK`
 projection.
 
-- [`KSODI-Standard-Eval-v350-Release.md`](./KSODI-Standard-Eval-v350-Release.md)
+- [`KSODI-Standard-Eval-Release_V350.md`](./KSODI-Standard-Eval-Release_V350.md)
   records the active v3.5 release boundary.
 - [`Layer-1_KSODI-Operators_V350/`](./Layer-1_KSODI-Operators_V350/README.md),
   [`Layer-2_KSODI-State-Vector-Z_V350/`](./Layer-2_KSODI-State-Vector-Z_V350/README.md) and
