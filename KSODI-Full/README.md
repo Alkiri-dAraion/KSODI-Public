@@ -60,7 +60,7 @@ individual release status is stated explicitly.
 
 Current public v3.5 release boundary:
 
-[`KSODI-Full-v350-Release.md`](./KSODI-Full-v350-Release.md)
+[`KSODI-Full-Release_V350.md`](./KSODI-Full-Release_V350.md)
 
 The historical Observer images are preserved as important transition evidence
 for both KSODI-Standard-Eval and KSODI-Full:

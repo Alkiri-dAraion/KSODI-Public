@@ -127,8 +127,8 @@ all-rights-reserved status and were later released as method documentation
 under CC BY 4.0. Their mirrored transition notes point to the authoritative
 repository licence and history:
 
-- [KSODI-Standard-Eval licence transition](./KSODI-Standard-Eval/LICENCE_TRANSITION_NOTE.md)
-- [KSODI-Full licence transition](./KSODI-Full/LICENCE_TRANSITION_NOTE.md)
+- [KSODI-Standard-Eval licence transition](./KSODI-Standard-Eval/KSODI-License-Transition-Note_V342-to-V350.md)
+- [KSODI-Full licence transition](./KSODI-Full/KSODI-License-Transition-Note_V342-to-V350.md)
 - [Repository licence](./LICENSE.md)
 - [Licence decision history](./LICENSE_HISTORY.md)
 

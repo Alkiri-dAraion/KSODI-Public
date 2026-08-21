@@ -24,11 +24,11 @@ R-family layers remain separately staged.
 
 ## Layers
 
-- [Layer 4 - R0 Gate](./layer-4-r0-gate/README.md)
-- [Layer 5 - IK_rel](./layer-5-ik-rel/README.md)
-- [Layer 6 - R_geom](./layer-6-r-geom/README.md)
-- [Layer 7 - R_pace](./layer-7-r-pace/README.md)
-- [Layer 8 - Future Signal-Media](./layer-8-future-signal-media/README.md)
+- [Layer 4 - R_0 Relational Gate](./Layer-4_KSODI-Relational-Gate-R_0_V350/README.md)
+- [Layer 5 - Dyadic Relational Coherence IK_rel](./Layer-5_KSODI-Dyadic-Relational-Coherence-IK_rel_V350/README.md)
+- [Layer 6 - Geometric Coupling R_geom](./Layer-6_KSODI-Geometric-Coupling-R_geom_V350/README.md)
+- [Layer 7 - Pacing R_pace](./Layer-7_KSODI-Pacing-R_pace_V350/README.md)
+- [Layer 8 - Staged Signal-Media Research](./Layer-8_KSODI-Signal-Media_Staged-Research/README.md)
 
 ## Controlled Action Orientation
 
@@ -37,7 +37,7 @@ because controlled intervention requires more than monadic Standard-Eval
 observation. It depends on relational gates, governance corridors and a
 separate controller boundary.
 
-- [`KSODI_observability_to_action.md`](./KSODI_observability_to_action.md)
+- [`KSODI_Observability-to-Controlled-Action_V350.md`](./KSODI_Observability-to-Controlled-Action_V350.md)
 
 Architecture overview:
 

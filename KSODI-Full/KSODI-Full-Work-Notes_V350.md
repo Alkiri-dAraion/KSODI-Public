@@ -45,7 +45,7 @@ Current architecture correction:
 - future voice / audio / wave / signal-media work remains Layer 8 and is not
   current v3.50 canon.
 
-`KSODI_observability_to_action.md` belongs under Full because its action/control
+`KSODI_Observability-to-Controlled-Action_V350.md` belongs under KSODI-Full because its action/control
 orientation cannot be supported by Standard-Eval alone. Keep controller logic
 separate from Observer scoring and do not present Full as an automated decision
 system.

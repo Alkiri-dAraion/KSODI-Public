@@ -8,7 +8,7 @@ relational branch, not in the monadic `IK` branch.
 
 Released method file:
 
-- [`IK_rel_v350.md`](./IK_rel_v350.md)
+- [`KSODI_Dyadic-Relational-Coherence-IK_rel_V350.md`](./KSODI_Dyadic-Relational-Coherence-IK_rel_V350.md)
 
 Potential views include `Delta IK_rel`, `Delta2 IK_rel`, `IK_relSigma` and
 `IK_relSigma(Hangar)`, where the use case requires them.

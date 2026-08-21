@@ -73,7 +73,7 @@ of one contribution may become the next sender, but the Hangar does not merge
 the participants' inner processing spaces, thoughts or internal states.
 
 For the formal Handshake and coupling boundary, see
-[`R0_Relational-Gate.md`](./KSODI-Full/layer-4-r0-gate/R0_Relational-Gate.md).
+[`KSODI_Relational-Gate-R_0_V350.md`](./KSODI-Full/Layer-4_KSODI-Relational-Gate-R_0_V350/KSODI_Relational-Gate-R_0_V350.md).
 
 ---
 

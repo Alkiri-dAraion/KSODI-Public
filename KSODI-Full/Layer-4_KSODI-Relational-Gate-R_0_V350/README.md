@@ -11,4 +11,4 @@ be collapsed into `IK`.
 
 Released method file:
 
-[`R0_Relational-Gate.md`](./R0_Relational-Gate.md)
+[`KSODI_Relational-Gate-R_0_V350.md`](./KSODI_Relational-Gate-R_0_V350.md)
