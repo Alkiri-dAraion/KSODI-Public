@@ -1,6 +1,6 @@
-# Layer 1 - Operators
+# Layer 1 — KSODI Operators
 
-Status: canonical public v3.50 Standard-Eval operator line. All five operator
+Status: canonical public v3.50 KSODI-Standard-Eval operator line. All five operator
 files are released as public method documentation. Release status does not
 turn optional views into mandatory calculations or make staged later research
 operational.
@@ -9,6 +9,19 @@ operational.
 
 Layer 1 observes one explicitly identified, source-attributed target event at a
 time. Each applicable static operator produces one scalar coordinate:
+
+```text
+(K, S, O, D, I) =
+(Context Completeness,
+ Structural Coherence,
+ Grounded Objectivity,
+ Clarity,
+ Information Impulse)
+```
+
+Each name denotes an observable operator dimension: Observable Context
+Completeness, Observable Structural Coherence, Observable Grounded
+Objectivity, Observable Clarity and Observable Information Impulse.
 
 ```text
 e_A(k_A)
@@ -23,8 +36,9 @@ they do not change the source identity or layer of the static value.
 
 Entity `A` and Entity `B` remain distinguishable. Sender and receiver are
 roles inside a declared exchange, not stable entity types. Relational
-comparison begins only at the separately declared `R0` gate after complete,
-distinguishable `Z` trajectories and an explicit pairing rule are available.
+comparison begins only at the separately declared `R_0` gate after sufficiently
+established, distinguishable monadic `Z` trajectories under a declared
+observation window and an explicit pairing rule are available.
 
 ## Operators and companion
 
@@ -48,7 +62,7 @@ reasoning dependency while preserving the operator's own semantics:
 5. static components, calculation and interpretation;
 6. comparability before source-local `Delta` and `Delta2`;
 7. typed window and Hangar views;
-8. explicit boundary to `R0` and later relational layers;
+8. explicit boundary to `R_0` and later relational layers;
 9. compact formal summary and variable reference;
 10. separation between the public method and implementation material.
 
@@ -118,7 +132,7 @@ itself prove acknowledgement, meaning, intent, attack or causal coupling.
 Two robots may exchange well-formed signals while their spatial trajectories
 diverge, or remain geometrically close while their response pace separates.
 This motivates keeping staged `R_geom` and optional staged `R_pace` as
-parallel later research branches after stable `R0`. Neither is a Layer-1
+parallel later research branches after stable `R_0`. Neither is a Layer-1
 operator, motion controller or physical safety system.
 
 ## Indices, comparability and optional views
@@ -155,9 +169,9 @@ Read together with:
 ## Layer boundary
 
 Layer 1 ends with attributable operator observations. The complete monadic
-Standard-Eval line continues through `Z` and monadic `IK`. `R0` is a
+KSODI-Standard-Eval line continues through `Z` and monadic `IK`. `R_0` is a
 separate gate based on distinguishable `Z` trajectories plus an explicit
-pairing or constellation rule. After stable `R0`, `IK_rel`, staged
+pairing or constellation rule. After stable `R_0`, `IK_rel`, staged
 `R_geom` and optional staged `R_pace` remain parallel branch calculations
 with their own bases and profiles.
 
