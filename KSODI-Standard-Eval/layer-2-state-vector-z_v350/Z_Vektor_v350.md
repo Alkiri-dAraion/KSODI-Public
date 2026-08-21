@@ -455,7 +455,7 @@ Other window views remain in their own method context:
 The released shared Hangar method note is maintained separately at the
 Eval-Variants root:
 
-[`Hangar_350.md`](../../../Hangar_350.md)
+[`Hangar_350.md`](../../KSODI-Eval-Variants/Hangar_350.md)
 
 ## 12. Storage Principle
 

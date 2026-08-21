@@ -13,7 +13,7 @@ v3.5 method material only when their release status is stated explicitly.
 Standard-Eval provides the complete monadic line `K/S/O/D/I -> Z -> IK`
 and ends with `IK`:
 
-[`../../KSODI-Standard-Eval/Standard-Eval_v350`](../../KSODI-Standard-Eval/Standard-Eval_v350/README.md)
+[`KSODI-Standard-Eval`](../KSODI-Standard-Eval/README.md)
 
 After `Z`, the architecture branches. KSODI-Full evaluates `R0` from
 distinguishable `Z`-trajectories in parallel to monadic `IK`. Stable `R0` gates
@@ -41,8 +41,8 @@ separate controller boundary.
 
 Architecture overview:
 
-[`../../../KSODI_V350_ARCHITECTURE_ASCII.md`](../../../KSODI_V350_ARCHITECTURE_ASCII.md)
+[`../KSODI_V350_ARCHITECTURE_ASCII.md`](../KSODI_V350_ARCHITECTURE_ASCII.md)
 
 Shared Sigma / Hangar method note:
 
-[`../../Hangar_350.md`](../../Hangar_350.md)
+[`../KSODI-Eval-Variants/Hangar_350.md`](../KSODI-Eval-Variants/Hangar_350.md)

@@ -116,7 +116,8 @@ Standard-Eval and Full observe exposed states, trajectories, reference spaces
 and reconstruction conditions from outside the prompt.
 
 For the observer-facing terminology and v3.5 boundary, see
-[KSODI Standard-Eval & Full](../KSODI-Eval-Variants/README.md).
+[KSODI-Standard-Eval](../KSODI-Standard-Eval/README.md) and
+[KSODI-Full](../KSODI-Full/README.md).
 
 ## Why This Layer Matters
 

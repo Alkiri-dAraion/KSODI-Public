@@ -27,8 +27,8 @@ publication boundary, see the root
 | Question / purpose | Start with | Abstraction level | Dependency and infrastructure | What it provides |
 | --- | --- | --- | --- | --- |
 | “How can I formulate, reflect or improve this interaction?” | [KSODI-Light](./KSODI-Light/README.md) | Layer 0: reflective language and local guidance | Independently usable. No external Observer is required; it can be used in one chat, an account prompt or a suitable developer/system prompt. | Prompt improvement, reflective self-alignment, lightweight local steering and a shared K/S/O/D/I vocabulary. No formal state or relational calculation. |
-| “What is observably happening in this one identified source trajectory?” | [KSODI Standard-Eval](./KSODI-Eval-Variants/KSODI-Standard-Eval/README.md) | Layers 1-3: monadic numeric observation | Requires a separate Observer architecture, source attribution, event and trajectory records, declared bases and profiles. | Per-source `K/S/O/D/I -> Z_A(k_A) -> IK_A(k_A)`, including optional typed drift, window and Hangar views. |
-| “Are two or more distinguishable trajectories eligible for relational comparison, and what can then be observed?” | [KSODI-Full](./KSODI-Eval-Variants/KSODI-Full/Full_v350/README.md) | Layers 4-8: relational Observer extension; currently public through Layer 5 | Not standalone. It consumes distinguishable Layer-1/2 trajectories, an explicit pairing or constellation, reference spaces, windows and policy/profile declarations. | The `R0` comparability gate, then public `IK_rel` and separately staged parallel R-family branches. Passing `R0` does not itself prove coupling, meaning or causality. |
+| “What is observably happening in this one identified source trajectory?” | [KSODI Standard-Eval](./KSODI-Standard-Eval/README.md) | Layers 1-3: monadic numeric observation | Requires a separate Observer architecture, source attribution, event and trajectory records, declared bases and profiles. | Per-source `K/S/O/D/I -> Z_A(k_A) -> IK_A(k_A)`, including optional typed drift, window and Hangar views. |
+| “Are two or more distinguishable trajectories eligible for relational comparison, and what can then be observed?” | [KSODI-Full](./KSODI-Full/README.md) | Layers 4-8: relational Observer extension; currently public through Layer 5 | Not standalone. It consumes distinguishable Layer-1/2 trajectories, an explicit pairing or constellation, reference spaces, windows and policy/profile declarations. | The `R0` comparability gate, then public `IK_rel` and separately staged parallel R-family branches. Passing `R0` does not itself prove coupling, meaning or causality. |
 
 ## The Four Responsibility Levels
 
@@ -179,9 +179,9 @@ for the released method.
 3. Choose the correct entry:
    - [KSODI-Light](./KSODI-Light/README.md) for an independently usable
      reflective working method;
-   - [KSODI Standard-Eval](./KSODI-Eval-Variants/KSODI-Standard-Eval/README.md)
+   - [KSODI Standard-Eval](./KSODI-Standard-Eval/README.md)
      for the complete monadic Observer line;
-   - [KSODI-Full](./KSODI-Eval-Variants/KSODI-Full/Full_v350/README.md) only as
+   - [KSODI-Full](./KSODI-Full/README.md) only as
      a relational extension of distinguishable monadic trajectories.
 4. Read the [implementation guardrails](./IMPLEMENTATION_GUARDRAILS.md) before
    storing evaluations or translating the Observer method into code.

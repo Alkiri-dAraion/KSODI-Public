@@ -18,6 +18,6 @@ Do not use this archive as current implementation guidance.
 
 Current public v350 orientation:
 
-- [`Standard-Eval_v350`](../../KSODI-Eval-Variants/KSODI-Standard-Eval/Standard-Eval_v350/README.md)
-- [`Standard-Eval_v350/layer-1-operators`](../../KSODI-Eval-Variants/KSODI-Standard-Eval/Standard-Eval_v350/layer-1-operators/README.md)
+- [`KSODI-Standard-Eval`](../../KSODI-Standard-Eval/README.md)
+- [`KSODI-Standard-Eval/layer-1-operators`](../../KSODI-Standard-Eval/layer-1-operators/README.md)
 - [`KSODI_V350_ARCHITECTURE_ASCII.md`](../../KSODI_V350_ARCHITECTURE_ASCII.md)

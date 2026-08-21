@@ -61,7 +61,7 @@ This is a separate comparison map. It does not replace the monadic identity mode
 Use the notes in this folder together with:
 
 - [KSODI Implementation Guardrails](../../../IMPLEMENTATION_GUARDRAILS.md)
-- [Operator I v3.50](../../../KSODI-Eval-Variants/KSODI-Standard-Eval/Standard-Eval_v350/layer-1-operators/Operator_I_v350.md)
-- [KSODI Standard-Eval README](../../KSODI-Standard-Eval/README.md)
+- [Operator I v3.50](../../../KSODI-Standard-Eval/layer-1-operators/Operator_I_v350.md)
+- [KSODI Standard-Eval README](../../../KSODI-Standard-Eval/README.md)
 
 This folder is intended as a practical location for implementation guidance, not as a replacement for the canonical method definitions.

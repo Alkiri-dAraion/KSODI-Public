@@ -54,8 +54,13 @@ is published separately as KSODI-Full Layer 5. `R_geom`, `R_pace` and later
 R-family layers remain a separately staged research structure until their
 individual release status is stated explicitly.
 
-Current public v350 structure:
+Current public v3.5 release boundary:
 
-[`Full_v350`](./Full_v350/README.md)
+[`KSODI-Full-v350-Release.md`](./KSODI-Full-v350-Release.md)
+
+The historical Observer images are preserved as important transition evidence
+for both KSODI-Standard-Eval and KSODI-Full:
+
+[`historical-observer-v342`](../archive/assets-archive/historical-observer-v342/README.md)
 
 Thanks for your understanding.

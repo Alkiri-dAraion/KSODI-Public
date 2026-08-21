@@ -170,14 +170,14 @@ question, observation profile and use case.
 | Layer | Variant | Component | Repository status | Meaning |
 | --- | --- | --- | --- | --- |
 | 0 | [KSODI-Light](./KSODI-Light/README.md) | Local reflective layer | public | Independently usable working agreement for learning, prompting, training and agent guidance. |
-| 1 | [KSODI Standard-Eval](./KSODI-Eval-Variants/KSODI-Standard-Eval/README.md) | `K/S/O/D/I` | public | Five source-attributed monadic observation coordinates. |
-| 2 | [KSODI Standard-Eval](./KSODI-Eval-Variants/KSODI-Standard-Eval/README.md) | `Z` | public | Complete state vector over the five operator coordinates for one entity and trajectory position. |
-| 3 | [KSODI Standard-Eval](./KSODI-Eval-Variants/KSODI-Standard-Eval/README.md) | `IK` | public | Monadic coherence projection; closes Standard-Eval. |
-| 4 | [KSODI-Full](./KSODI-Eval-Variants/KSODI-Full/Full_v350/README.md) | `R0` / `R_0` | public | Relational applicability, compatibility and stability gate over distinguishable trajectories. |
-| 5 | [KSODI-Full](./KSODI-Eval-Variants/KSODI-Full/Full_v350/README.md) | `IK_rel` | public | Relational coherence projection after stable `R0`. |
-| 6 | [KSODI-Full](./KSODI-Eval-Variants/KSODI-Full/Full_v350/README.md) | `R_geom` | staged | Parallel post-`R0` research branch for geometric coupling in KSODI state space. |
-| 7 | [KSODI-Full](./KSODI-Eval-Variants/KSODI-Full/Full_v350/README.md) | `R_pace` | staged | Parallel optional post-`R0` research branch for explicitly defined pacing. |
-| 8 | [KSODI-Full](./KSODI-Eval-Variants/KSODI-Full/Full_v350/README.md) | Signal-media views | future research | Voice, rhythm/timing, audio, radio, Morse-like or other signal-media observation under media-specific profiles. |
+| 1 | [KSODI Standard-Eval](./KSODI-Standard-Eval/README.md) | `K/S/O/D/I` | public | Five source-attributed monadic observation coordinates. |
+| 2 | [KSODI Standard-Eval](./KSODI-Standard-Eval/README.md) | `Z` | public | Complete state vector over the five operator coordinates for one entity and trajectory position. |
+| 3 | [KSODI Standard-Eval](./KSODI-Standard-Eval/README.md) | `IK` | public | Monadic coherence projection; closes Standard-Eval. |
+| 4 | [KSODI-Full](./KSODI-Full/README.md) | `R0` / `R_0` | public | Relational applicability, compatibility and stability gate over distinguishable trajectories. |
+| 5 | [KSODI-Full](./KSODI-Full/README.md) | `IK_rel` | public | Relational coherence projection after stable `R0`. |
+| 6 | [KSODI-Full](./KSODI-Full/README.md) | `R_geom` | staged | Parallel post-`R0` research branch for geometric coupling in KSODI state space. |
+| 7 | [KSODI-Full](./KSODI-Full/README.md) | `R_pace` | staged | Parallel optional post-`R0` research branch for explicitly defined pacing. |
+| 8 | [KSODI-Full](./KSODI-Full/README.md) | Signal-media views | future research | Voice, rhythm/timing, audio, radio, Morse-like or other signal-media observation under media-specific profiles. |
 
 The current public repository state contains the complete monadic
 Standard-Eval line together with public `R0` and `IK_rel` research material.

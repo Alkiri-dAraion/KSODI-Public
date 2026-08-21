@@ -17,4 +17,4 @@ Released file:
 Hangar views are mentioned as optional state-space views. The released shared
 Hangar method note is maintained at the Eval-Variants root:
 
-[`../../../Hangar_350.md`](../../../Hangar_350.md)
+[`../../KSODI-Eval-Variants/Hangar_350.md`](../../KSODI-Eval-Variants/Hangar_350.md)

@@ -146,11 +146,11 @@ method.
 
 Read together with:
 
-- [root architecture](../../../../ARCHITECTURE.md)
-- [conceptual note](../../../Conceptual-Note.md)
-- [shared Hangar method note](../../../Hangar_350.md)
-- [implementation guardrails](../../../../IMPLEMENTATION_GUARDRAILS.md)
-- [public implementation examples](../../../implementation-examples/README.md)
+- [root architecture](../../ARCHITECTURE.md)
+- [conceptual note](../../KSODI-Eval-Variants/Conceptual-Note.md)
+- [shared Hangar method note](../../KSODI-Eval-Variants/Hangar_350.md)
+- [implementation guardrails](../../IMPLEMENTATION_GUARDRAILS.md)
+- [public implementation examples](../../KSODI-Eval-Variants/implementation-examples/README.md)
 
 ## Layer boundary
 

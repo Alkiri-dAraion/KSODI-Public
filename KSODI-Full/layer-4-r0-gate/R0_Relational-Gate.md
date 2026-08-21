@@ -573,7 +573,7 @@ When `R0(t)` or `R0(t-1)` is `not_applicable`, the corresponding delta is
 transition marker.
 
 For broader Sigma / Hangar policy, use the shared public method note
-[`Hangar_350.md`](../../../Hangar_350.md).
+[`Hangar_350.md`](../../KSODI-Eval-Variants/Hangar_350.md).
 
 ## 13. Edge Cases
 

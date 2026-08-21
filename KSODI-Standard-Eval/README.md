@@ -59,18 +59,22 @@ As of 2026-07-21, the public v350 Standard-Eval release contains all five
 Layer-1 operators, the Layer-2 state vector `Z` and the Layer-3 monadic `IK`
 projection.
 
-- [`Standard-Eval_v350`](./Standard-Eval_v350/README.md) contains the active
-  layer-based public Standard-Eval structure.
-- [`KSODI_V350_ARCHITECTURE_ASCII.md`](../../KSODI_V350_ARCHITECTURE_ASCII.md)
+- [`KSODI-Standard-Eval-v350-Release.md`](./KSODI-Standard-Eval-v350-Release.md)
+  records the active v3.5 release boundary.
+- [`layer-1-operators/`](./layer-1-operators/README.md),
+  [`layer-2-state-vector-z_v350/`](./layer-2-state-vector-z_v350/README.md) and
+  [`layer-3-ik_v350/`](./layer-3-ik_v350/README.md) contain the current
+  layer-based public KSODI-Standard-Eval structure.
+- [`KSODI_V350_ARCHITECTURE_ASCII.md`](../KSODI_V350_ARCHITECTURE_ASCII.md)
   gives a compact layer sketch for the current v350 direction.
 
 ## Related folders
 
-- `Standard-Eval_v350` contains the current monadic layer-based v350 public
-  Standard-Eval structure.
-- [`method-history-v33`](../../archive/method-history-v33/README.md) preserves public 3.3 operator, state-vector,
+- The Layer 1-3 folders contain the current monadic v3.5 public
+  KSODI-Standard-Eval structure.
+- [`method-history-v33`](../archive/method-history-v33/README.md) preserves public 3.3 operator, state-vector,
   projection and deprecated draft material for provenance and transparency.
 - The historical v3.42 Observer assets are preserved separately under
-  [`historical-observer-v342`](../../archive/assets-archive/historical-observer-v342/README.md).
+  [`historical-observer-v342`](../archive/assets-archive/historical-observer-v342/README.md).
   They document implementation and dashboard work from the v3.3 to v3.42 line,
   not current v350 implementation guidance.

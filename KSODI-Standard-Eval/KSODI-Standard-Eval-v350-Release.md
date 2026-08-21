@@ -18,12 +18,12 @@ distinguishable `Z`-trajectories in parallel to monadic `IK`. Stable `R0` gates
 `IK_rel`, followed by the further R-family. `R0`, `IK_rel` and the further
 R-family are not part of Standard-Eval.
 
-This `Standard-Eval_v350` folder describes how the canonical operator
-definitions are placed into the monadic Observer structure: Layer 1 operators,
+This release note describes how the canonical operator definitions are placed
+into the monadic KSODI-Standard-Eval Observer structure: Layer 1 operators,
 Layer 2 state vector `Z` and Layer 3 monadic `IK`.
 
 Relational gates, dyadic / n-adic views and the R-family belong to
-[`../../KSODI-Full/Full_v350`](../../KSODI-Full/Full_v350/README.md).
+[`KSODI-Full`](../KSODI-Full/README.md).
 
 ## Layers
 
@@ -33,8 +33,8 @@ Relational gates, dyadic / n-adic views and the R-family belong to
 
 Architecture overview:
 
-[`../../../KSODI_V350_ARCHITECTURE_ASCII.md`](../../../KSODI_V350_ARCHITECTURE_ASCII.md)
+[`../KSODI_V350_ARCHITECTURE_ASCII.md`](../KSODI_V350_ARCHITECTURE_ASCII.md)
 
 Shared Sigma / Hangar method note:
 
-[`../../Hangar_350.md`](../../Hangar_350.md)
+[`../KSODI-Eval-Variants/Hangar_350.md`](../KSODI-Eval-Variants/Hangar_350.md)

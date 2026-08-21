@@ -1,6 +1,15 @@
-# KSODI Standard-Eval & Full
+# Cross-Cutting KSODI Materials — Transitional Location
 
-This directory contains the evaluation-oriented variants of the KSODI method.
+KSODI-Standard-Eval and KSODI-Full now live as separate top-level method
+folders beside KSODI-Light:
+
+- [KSODI-Standard-Eval](../KSODI-Standard-Eval/README.md)
+- [KSODI-Full](../KSODI-Full/README.md)
+
+This transitional directory retains cross-cutting notes, implementation
+examples and special materials until their final root-level placement is
+reviewed. It is no longer a parent category for the three KSODI method
+variants.
 
 These variants extend the same K/S/O/D/I operator logic that appears in
 KSODI-Light, but they do so as formal observer-oriented layers. KSODI-Light can
@@ -49,9 +58,8 @@ In the current v3.5 direction, KSODI Standard-Eval and KSODI-Full are the layers
 
 KSODI-Light belongs to the local agent side: it may guide an agent through user, account, developer, system-prompt or skill-level instructions. Standard-Eval and KSODI-Full belong to the observer side: they are intended to monitor what happens from outside the prompt and across time.
 
-The current public v350 architecture sketch is maintained at the Eval-Variants
-root because it spans Standard-Eval and the R-family / KSODI-Full research
-boundary:
+The canonical public v350 architecture sketch is maintained at the repository
+root because it spans KSODI-Standard-Eval and the KSODI-Full research boundary:
 
 [`KSODI_V350_ARCHITECTURE_ASCII.md`](../KSODI_V350_ARCHITECTURE_ASCII.md)
 
@@ -77,11 +85,11 @@ released for implementation and testing.
 
 ## Variants
 
-### KSODI Standard-Eval
+### [KSODI-Standard-Eval](../KSODI-Standard-Eval/README.md)
 Model-agnostic numeric evaluation layer for monadic observation.
 Its complete line is `K/S/O/D/I -> Z -> IK`; Standard-Eval ends with `IK`.
 
-### KSODI-Full
+### [KSODI-Full](../KSODI-Full/README.md)
 After `Z`, the architecture branches in parallel from monadic `IK` to the
 separate relational / Full line: `R0` gates relational comparison, `IK_rel`
 follows only after a stable gate, and the further R-family follows thereafter.

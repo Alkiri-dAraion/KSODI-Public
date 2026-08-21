@@ -433,14 +433,14 @@ conflated with those deprecated identifiers.
 ## 15. Layer Files
 
 - [Layer 0 - KSODI-Light](./KSODI-Eval-Variants/KSODI-Light-Agent_v350.md)
-- [Layer 1 - Operators](./KSODI-Eval-Variants/KSODI-Standard-Eval/Standard-Eval_v350/layer-1-operators/README.md)
-- [Layer 2 - State Vector Z](./KSODI-Eval-Variants/KSODI-Standard-Eval/Standard-Eval_v350/layer-2-state-vector-z_v350/README.md)
-- [Layer 3 - IK](./KSODI-Eval-Variants/KSODI-Standard-Eval/Standard-Eval_v350/layer-3-ik_v350/README.md)
-- [Layer 4 - R0 Gate](./KSODI-Eval-Variants/KSODI-Full/Full_v350/layer-4-r0-gate/README.md)
-- [Layer 5 - IK_rel](./KSODI-Eval-Variants/KSODI-Full/Full_v350/layer-5-ik-rel/README.md)
-- [Layer 6 - R_geom](./KSODI-Eval-Variants/KSODI-Full/Full_v350/layer-6-r-geom/README.md)
-- [Layer 7 - Optional Pace Research](./KSODI-Eval-Variants/KSODI-Full/Full_v350/layer-7-r-pace/README.md)
-- [Layer 8 - Signal-Media Research](./KSODI-Eval-Variants/KSODI-Full/Full_v350/layer-8-future-signal-media/README.md)
+- [Layer 1 - Operators](./KSODI-Standard-Eval/layer-1-operators/README.md)
+- [Layer 2 - State Vector Z](./KSODI-Standard-Eval/layer-2-state-vector-z_v350/README.md)
+- [Layer 3 - IK](./KSODI-Standard-Eval/layer-3-ik_v350/README.md)
+- [Layer 4 - R0 Gate](./KSODI-Full/layer-4-r0-gate/README.md)
+- [Layer 5 - IK_rel](./KSODI-Full/layer-5-ik-rel/README.md)
+- [Layer 6 - R_geom](./KSODI-Full/layer-6-r-geom/README.md)
+- [Layer 7 - Optional Pace Research](./KSODI-Full/layer-7-r-pace/README.md)
+- [Layer 8 - Signal-Media Research](./KSODI-Full/layer-8-future-signal-media/README.md)
 - [Shared Sigma / Hangar Method Note](./KSODI-Eval-Variants/Hangar_350.md)
 - [Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md)
 

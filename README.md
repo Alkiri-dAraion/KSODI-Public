@@ -201,14 +201,14 @@ Only stable `R0` gates `IK_rel`, followed by later R-family layers.
 | Layer | Variant | Component | Public status | Role |
 | --- | --- | --- | --- | --- |
 | 0 | [KSODI-Light](./KSODI-Light/README.md) | Local reflective layer | public | Human-facing orientation and reflective working layer; prompting, training and agent guidance are applications. |
-| 1 | [KSODI Standard-Eval](./KSODI-Eval-Variants/KSODI-Standard-Eval/README.md) | K/S/O/D/I operators | public | Observer-facing operator definitions for context, structure, grounding, clarity and information impulse. |
-| 2 | [KSODI Standard-Eval](./KSODI-Eval-Variants/KSODI-Standard-Eval/README.md) | `Z_A(k)` | public | Monadic state vector over the five operator values for one attributable target event. |
-| 3 | [KSODI Standard-Eval](./KSODI-Eval-Variants/KSODI-Standard-Eval/README.md) | `IK` | public | Monadic interaction-coherence projection; closes Standard-Eval. |
-| 4 | [KSODI-Full](./KSODI-Eval-Variants/KSODI-Full/Full_v350/README.md) | `R0` / `R_0` gate | public | Relational comparability gate over distinguishable `Z`-trajectories; not a coupling or resonance score. |
-| 5 | [KSODI-Full](./KSODI-Eval-Variants/KSODI-Full/Full_v350/README.md) | `IK_rel` | public | Relational coherence projection after stable `R0`. |
-| 6 | [KSODI-Full](./KSODI-Eval-Variants/KSODI-Full/Full_v350/README.md) | `R_geom` | private / staged | Geometric coupling in KSODI state space. |
-| 7 | [KSODI-Full](./KSODI-Eval-Variants/KSODI-Full/Full_v350/README.md) | `R_pace` | private / staged | Optional pacing overlay where pacing dynamics are explicitly defined. |
-| 8 | [KSODI-Full](./KSODI-Eval-Variants/KSODI-Full/Full_v350/README.md) | Future signal-media layer | future research | Voice, rhythm/timing, audio, radio, Morse-like or other signal-media work; historical `Takt` labels are not active v3.5 terms. |
+| 1 | [KSODI Standard-Eval](./KSODI-Standard-Eval/README.md) | K/S/O/D/I operators | public | Observer-facing operator definitions for context, structure, grounding, clarity and information impulse. |
+| 2 | [KSODI Standard-Eval](./KSODI-Standard-Eval/README.md) | `Z_A(k)` | public | Monadic state vector over the five operator values for one attributable target event. |
+| 3 | [KSODI Standard-Eval](./KSODI-Standard-Eval/README.md) | `IK` | public | Monadic interaction-coherence projection; closes Standard-Eval. |
+| 4 | [KSODI-Full](./KSODI-Full/README.md) | `R0` / `R_0` gate | public | Relational comparability gate over distinguishable `Z`-trajectories; not a coupling or resonance score. |
+| 5 | [KSODI-Full](./KSODI-Full/README.md) | `IK_rel` | public | Relational coherence projection after stable `R0`. |
+| 6 | [KSODI-Full](./KSODI-Full/README.md) | `R_geom` | private / staged | Geometric coupling in KSODI state space. |
+| 7 | [KSODI-Full](./KSODI-Full/README.md) | `R_pace` | private / staged | Optional pacing overlay where pacing dynamics are explicitly defined. |
+| 8 | [KSODI-Full](./KSODI-Full/README.md) | Future signal-media layer | future research | Voice, rhythm/timing, audio, radio, Morse-like or other signal-media work; historical `Takt` labels are not active v3.5 terms. |
 
 The variant assignment and the publication status are separate. A layer may
 belong to KSODI-Full while its formula or implementation material remains
@@ -287,7 +287,7 @@ v3.5; they are not current v3.5 specification diagrams.
 > whether explicitly paired, distinguishable trajectories provide a stable
 > basis for relational comparison. It does not create the relation, and it is
 > not itself a coupling or resonance score. See the
-> [R0 relational gate](./KSODI-Eval-Variants/KSODI-Full/Full_v350/layer-4-r0-gate/R0_Relational-Gate.md).
+> [R0 relational gate](./KSODI-Full/layer-4-r0-gate/R0_Relational-Gate.md).
 >
 > In a declared duet, each dancer's attributable movement trajectory may remain
 > structurally coherent under its declared profile while the pair is out of
@@ -692,7 +692,8 @@ current public Standard-Eval release. The relational `R0` gate is released
 separately as KSODI-Full Layer 4, and `IK_rel` is released as KSODI-Full Layer
 5. `R_geom`, `R_pace` and later R-family layers remain outside the current
 release until their own status is stated explicitly.
-→ See: [KSODI-Eval-Variants](./KSODI-Eval-Variants)
+→ See: [KSODI-Standard-Eval](./KSODI-Standard-Eval/README.md) and
+[KSODI-Full](./KSODI-Full/README.md)
 
 Licence: [Creative Commons Attribution 4.0 International (CC BY 4.0)](./LICENSE.md)
 
