@@ -19,3 +19,9 @@ instruction frame.
 It is not the same as an external KSODI observer. Observer-based monitoring
 evaluates trajectories from outside the prompt, records drift over time and
 belongs to Standard-Eval, KSODI-Full or IDAS/SIRA-level implementations.
+
+Related developer note:
+
+- [KSODI-Light-Agent v350 Bridge](./KSODI-Light-Agent-v350-Bridge.md) — places
+  the prompt-oriented agent role within the v350 architecture and points to
+  the separate public proof-of-concept implementation.

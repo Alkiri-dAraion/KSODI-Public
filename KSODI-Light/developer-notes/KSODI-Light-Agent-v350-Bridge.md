@@ -10,7 +10,7 @@ Layer 1.
 
 Related public material:
 
-[`../KSODI-Light`](../KSODI-Light/README.md)
+[`KSODI-Light`](../README.md)
 
 ## Public Proof of Concept
 

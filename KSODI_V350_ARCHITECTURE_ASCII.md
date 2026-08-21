@@ -432,7 +432,7 @@ conflated with those deprecated identifiers.
 
 ## 15. Layer Files
 
-- [Layer 0 - KSODI-Light](./KSODI-Eval-Variants/KSODI-Light-Agent_v350.md)
+- [Layer 0 - KSODI-Light](./KSODI-Light/developer-notes/KSODI-Light-Agent-v350-Bridge.md)
 - [Layer 1 - Operators](./KSODI-Standard-Eval/layer-1-operators/README.md)
 - [Layer 2 - State Vector Z](./KSODI-Standard-Eval/layer-2-state-vector-z_v350/README.md)
 - [Layer 3 - IK](./KSODI-Standard-Eval/layer-3-ik_v350/README.md)
