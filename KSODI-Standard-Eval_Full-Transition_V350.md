@@ -124,13 +124,12 @@ comparability and further R-family observation.
 
 KSODI-Standard-Eval and KSODI-Full were initially held under an
 all-rights-reserved status and were later released as method documentation
-under CC BY 4.0. Their mirrored transition notes point to the authoritative
+under CC BY 4.0. The central transition note points to the authoritative
 repository licence and history:
 
-- [KSODI-Standard-Eval licence transition](./KSODI-Standard-Eval/KSODI-License-Transition-Note_V342-to-V350.md)
-- [KSODI-Full licence transition](./KSODI-Full/KSODI-License-Transition-Note_V342-to-V350.md)
-- [Repository licence](./LICENSE.md)
-- [Licence decision history](./LICENSE_HISTORY.md)
+- [KSODI licence transition from V342 to V350](./KSODI-License-Transition-Note_V342-to-V350.md)
+- [Repository licence](https://github.com/Alkiri-dAraion/KSODI-Public/blob/main/LICENSE.md)
+- [Licence decision history](https://github.com/Alkiri-dAraion/KSODI-Public/blob/main/LICENSE_HISTORY.md)
 
 Separately published software implementations are distinct works and retain
 the licence declared in their own repositories.

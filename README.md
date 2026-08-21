@@ -796,7 +796,8 @@ and licence will be authoritative when published.
 
 The earlier decision to limit CC BY 4.0 to KSODI-Light while reserving the Eval
 variants is preserved and explained in
-[LICENSE_HISTORY.md](./LICENSE_HISTORY.md). The current decision separates the
+[KSODI Licence Transition Note V342 to V350](./KSODI-License-Transition-Note_V342-to-V350.md)
+and in greater detail in [LICENSE_HISTORY.md](./LICENSE_HISTORY.md). The current decision separates the
 attribution-based licence for method documentation from the software licence for
 implementation code.
 
