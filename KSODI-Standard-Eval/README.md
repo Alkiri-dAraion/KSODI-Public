@@ -67,7 +67,7 @@ projection.
   records the active v3.5 release boundary.
 - [`Layer-1_KSODI-Operators_V350/`](./Layer-1_KSODI-Operators_V350/README.md),
   [`Layer-2_KSODI-State-Vector-Z_V350/`](./Layer-2_KSODI-State-Vector-Z_V350/README.md) and
-  [`layer-3-ik_v350/`](./layer-3-ik_v350/README.md) contain the current
+  [`Layer-3_KSODI-Monadic-Interaction-Coherence-IK_V350/`](./Layer-3_KSODI-Monadic-Interaction-Coherence-IK_V350/README.md) contain the current
   layer-based public KSODI-Standard-Eval structure.
 - [`KSODI-Architecture_V350.md`](../KSODI-Architecture_V350.md)
   gives a compact layer sketch for the current v350 direction.

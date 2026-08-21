@@ -47,7 +47,7 @@ Released in public Layer 2:
 
 Released in public Layer 3:
 
-- `IK_v350.md` - monadic Interaction Coherence Projection
+- `KSODI_Monadic-Interaction-Coherence-IK_V350.md` - monadic Interaction Coherence Projection
 
 Architecture guardrail: Standard-Eval is monadic. `Z(t)` feeds both monadic
 `IK` and the relational `R0` gate, but `R0`, `IK_rel` and the R-family belong in

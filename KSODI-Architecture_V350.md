@@ -503,7 +503,7 @@ T_B ----/          |
 - [Layer 0 - KSODI-Light](./KSODI-Light/developer-notes/KSODI-Light-Agent-Bridge_V350.md)
 - [Layer 1 - Operators](./KSODI-Standard-Eval/Layer-1_KSODI-Operators_V350/README.md)
 - [Layer 2 - State Vector Z](./KSODI-Standard-Eval/Layer-2_KSODI-State-Vector-Z_V350/README.md)
-- [Layer 3 - IK](./KSODI-Standard-Eval/layer-3-ik_v350/README.md)
+- [Layer 3 - Monadic Interaction Coherence IK](./KSODI-Standard-Eval/Layer-3_KSODI-Monadic-Interaction-Coherence-IK_V350/README.md)
 - [Layer 4 - R0 Gate](./KSODI-Full/layer-4-r0-gate/README.md)
 - [Layer 5 - IK_rel](./KSODI-Full/layer-5-ik-rel/README.md)
 - [Layer 6 - R_geom](./KSODI-Full/layer-6-r-geom/README.md)
