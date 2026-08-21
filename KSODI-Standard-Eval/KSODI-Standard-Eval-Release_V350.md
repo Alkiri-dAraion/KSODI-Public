@@ -9,9 +9,11 @@ Only files explicitly marked as released should be treated as current public met
 
 Current release state: Layer 1 operators `K0`, `S0`, `O0`, `D0` and `I0`
 are released. The `O0` source-need / reference-space applicability companion
-note is released. Layer 2, the monadic state vector `Z(t)` (`Z_vec`), and Layer
-3, the monadic interaction-coherence projection `IK`, are released. `IK` closes
-the Standard-Eval line.
+note and the separately reviewed conditional D0/I0 implementation companions
+are released. These companions do not redefine their operators or establish a
+mandatory production stack. Layer 2, the monadic state vector `Z(t)` (`Z_vec`),
+and Layer 3, the monadic interaction-coherence projection `IK`, are released.
+`IK` closes the Standard-Eval line.
 
 After `Z`, the separate relational / Full branch evaluates `R0` from
 distinguishable `Z`-trajectories in parallel to monadic `IK`. Stable `R0` gates

@@ -5,7 +5,7 @@ This file is the current public method definition for Operator I. It remains ope
 
 Layer: KSODI Standard-Eval Layer 1. A static `I0` value belongs to one explicitly identified, source-attributed target event. Source-local change, acceleration and window diagnostics remain monadic Observer views. Relational projection or comparison beyond the gate begins only after explicit pairing, stable `R0` and a separately declared later-layer definition.
 
-Implementation boundary: read the public [KSODI Implementation Guardrails](../../IMPLEMENTATION_GUARDRAILS.md). No adjacent public Operator I implementation companion is released with this method file.
+Implementation boundary: read the public [KSODI Implementation Guardrails](../../IMPLEMENTATION_GUARDRAILS.md) and the adjacent [Operator I Implementation Companion](./KSODI_Operator-I_Implementation-Companion_V350.md). The companion is conditional implementation guidance; this method file remains authoritative.
 
 ## 0. What Operator I is and what it does
 
@@ -1011,6 +1011,6 @@ otherwise:
 The canonical method ends with the formal summary in Section 9. Implementation-specific storage fields, pseudocode, retrieval mappings, data flow and architecture configuration are separate from this operator definition.
 
 - Public boundary: [KSODI Implementation Guardrails](../../IMPLEMENTATION_GUARDRAILS.md).
-- No adjacent public Operator I implementation companion is released with this file.
+- Released conditional implementation companion: [KSODI Operator I Implementation Companion](./KSODI_Operator-I_Implementation-Companion_V350.md).
 
-An implementation may operationalize Operator I but must not redefine its semantic question, measurement basis, applicability, formula, source identity or layer boundary. Any later public implementation example requires its own explicit release decision and remains subordinate to this method file.
+The companion operationalizes one Conversation-/Retrieval-oriented profile; it does not narrow the carrier-neutral method or make that profile mandatory. An implementation may operationalize Operator I but must not redefine its semantic question, measurement basis, applicability, formula, source identity or layer boundary. If the companion and this method appear to differ, this method controls and the mismatch must remain visible until reviewed.
