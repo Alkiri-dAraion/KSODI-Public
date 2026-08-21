@@ -157,9 +157,9 @@ the minimum source-attribution, evaluation-unit, pairing, applicability and
 partial-operator conditions required across the Observer variants.
 
 Public implementation-transfer examples are kept under
-[implementation-examples](./KSODI-Eval-Variants/implementation-examples/README.md),
+[implementation-examples](./implementation-examples/README.md),
 including a
-[human-chatbot Observer setting](./KSODI-Eval-Variants/implementation-examples/chatbot-human-observer_v350/README.md).
+[human-chatbot Observer setting](./implementation-examples/chatbot-human-observer_v350/README.md).
 These examples explain transfer logic but are not production systems.
 
 The next implementation-alignment phase is planned in

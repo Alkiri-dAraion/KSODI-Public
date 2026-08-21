@@ -150,7 +150,7 @@ Read together with:
 - [conceptual note](../../KSODI-Eval-Variants/Conceptual-Note.md)
 - [shared Hangar method note](../../KSODI-Eval-Variants/Hangar_350.md)
 - [implementation guardrails](../../IMPLEMENTATION_GUARDRAILS.md)
-- [public implementation examples](../../KSODI-Eval-Variants/implementation-examples/README.md)
+- [public implementation examples](../../implementation-examples/README.md)
 
 ## Layer boundary
 

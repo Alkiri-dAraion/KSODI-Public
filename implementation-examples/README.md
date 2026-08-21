@@ -6,7 +6,7 @@ This folder keeps public examples that show how the canonical KSODI v350 method
 can be transferred into a concrete observable setting.
 
 Before using any example, read the root
-[KSODI Implementation Guardrails](../../IMPLEMENTATION_GUARDRAILS.md). Every
+[KSODI Implementation Guardrails](../IMPLEMENTATION_GUARDRAILS.md). Every
 example must preserve source-attributed evaluation units, local monadic
 trajectory order, explicit relational pairing and the boundary between
 individual operators and complete KSODI projections.

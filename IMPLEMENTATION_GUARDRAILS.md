@@ -338,7 +338,7 @@ Before treating an implementation as v3.50-compatible, verify:
     assumed anonymous?
 
 Public transfer examples are available under
-[implementation-examples](./KSODI-Eval-Variants/implementation-examples/README.md).
+[implementation-examples](./implementation-examples/README.md).
 They are orientation aids, not production systems.
 
 ---

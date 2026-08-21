@@ -16,9 +16,9 @@ private prompts, proprietary evaluation data or non-public client variants.
 
 Canonical method layer:
 
-- [`KSODI-Standard-Eval Layer 1 operators`](../../../KSODI-Standard-Eval/layer-1-operators/README.md)
-- [`KSODI-Standard-Eval`](../../../KSODI-Standard-Eval/README.md)
-- [`KSODI-Full`](../../../KSODI-Full/README.md)
+- [`KSODI-Standard-Eval Layer 1 operators`](../../KSODI-Standard-Eval/layer-1-operators/README.md)
+- [`KSODI-Standard-Eval`](../../KSODI-Standard-Eval/README.md)
+- [`KSODI-Full`](../../KSODI-Full/README.md)
 
 Example application layer:
 
@@ -31,7 +31,7 @@ Example application layer:
 ## Required Event Separation
 
 This example presupposes the root
-[KSODI Implementation Guardrails](../../../IMPLEMENTATION_GUARDRAILS.md).
+[KSODI Implementation Guardrails](../../IMPLEMENTATION_GUARDRAILS.md).
 
 Human-side and chatbot-side contributions are retained as distinguishable
 events before K/S/O/D/I evaluation. They share a conversation and may share an
@@ -65,4 +65,4 @@ source-separated trajectories, `R0`, `IK_rel` or later relational layers.
 
 Architecture overview:
 
-[`../../../KSODI_V350_ARCHITECTURE_ASCII.md`](../../../KSODI_V350_ARCHITECTURE_ASCII.md)
+[`../../KSODI_V350_ARCHITECTURE_ASCII.md`](../../KSODI_V350_ARCHITECTURE_ASCII.md)

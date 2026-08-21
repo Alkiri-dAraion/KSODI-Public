@@ -72,7 +72,7 @@ Standard-Eval and KSODI-Full:
 Public implementation-transfer examples are kept separate from the canonical
 method folders. They are orientation aids, not customer implementations:
 
-[`implementation-examples`](./implementation-examples/README.md)
+[`implementation-examples`](../implementation-examples/README.md)
 
 The Observer layer may use existing observability material such as traces, threads, chunks, retrieval records, vector similarity, generation parameters, evaluation signals and tool-call logs. KSODI adds an additional interaction-oriented observation layer around K/S/O/D/I, `Z(t)`, drift, acceleration, interaction coherence and relational or resonance-family structures.
 
