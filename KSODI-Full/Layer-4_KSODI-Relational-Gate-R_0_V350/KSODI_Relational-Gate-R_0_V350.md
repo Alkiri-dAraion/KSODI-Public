@@ -1,10 +1,15 @@
-# KSODI R0 - Relational Gate / Monadic-to-Dyadic Gate v3.50
+# KSODI R_0 - Relational Gate / Monadic-to-Dyadic Gate v3.50
 
 Status: public v3.50 reference release; lifted from the private canonical
 workbench after the 2026-07-04 Fable review, Fable's 2026-07-19 R0 alignment
 pass and the 2026-07-25 R0 public-release decision.
 
 Layer: KSODI Full Layer 4 gate for monadic-to-dyadic or n-adic comparability after `Z`.
+
+Naming convention: `R_0` is the canonical textual and filename label,
+preserving the original mathematical subscript. The legacy and code-compatible
+form `R0` used throughout existing formulas denotes the same gate and does not
+name a separate method element.
 
 ## 1. Definition
 

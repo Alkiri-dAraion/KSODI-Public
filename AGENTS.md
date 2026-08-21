@@ -46,6 +46,11 @@ method provenance.
 
 ## Canonical Version Markers And Semantic Paths
 
+Canonical gate naming: `R_0` is the path-safe textual label for the relational
+gate and preserves the original mathematical subscript. Legacy prose, formulas
+and code identifiers may use `R0`; both labels denote the same Layer-4 gate.
+Never reconstruct them as separate method elements.
+
 For current canonical method files and folders, use the uppercase path marker
 `VXYZ` to express `Version X.YZ`. Examples:
 
