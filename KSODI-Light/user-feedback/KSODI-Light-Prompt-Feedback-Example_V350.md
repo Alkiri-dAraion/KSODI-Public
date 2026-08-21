@@ -56,11 +56,13 @@ K + S + O + D + I = 0-25
 ```
 
 The score does not judge the user or the assistant. It indicates how usable the
-current request, answer or shared interaction state is for structured machine
-processing in the given task context.
+current request, answer or visible shared working frame is for structured
+machine processing in the given task context. It does not represent a merged
+interaction state.
 
 ## Boundary
 
-This feedback example does not perform Standard-Eval, Full evaluation or
-observer-based monitoring. It only helps user and assistant keep the current
-interaction clearer, more useful and better aligned with the task.
+This feedback example does not perform evaluation under KSODI-Standard-Eval or
+KSODI-Full and does not perform observer-based monitoring. It only helps user
+and assistant keep the current interaction clearer, more useful and better
+aligned with the task.

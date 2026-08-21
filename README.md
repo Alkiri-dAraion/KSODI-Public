@@ -25,7 +25,7 @@ distinguishable entities, focussing on explainable governance and
 observability.
 It is embedded in the IDAS framework.
 
-→ See: [KSODI-IDAS-SIRA_Framework](./KSODI-IDAS-SIRA_Framework.md)
+→ See: [KSODI-IDAS-SIRA-Framework_V342](./KSODI-IDAS-SIRA-Framework_V342.md)
 
 The name `KSODI` is intentionally retained from the German development
 context. This is not meant as a value judgement between languages. The German
@@ -38,7 +38,7 @@ the dimensions.
 `CSOCI` may appear only as an English translation mnemonic for the five
 KSODI-Light labels. It is not an alternative method name, a separate English
 version or an independent provenance line. The method remains `KSODI` in every
-language. See the [KSODI English Translation Table](./KSODI-Light/KSODI-CSOCI_EN.md).
+language. See the [KSODI English Translation Table](./KSODI-Light/KSODI-Light-English-Translation-Table_V350.md).
 
 Within IDAS, KSODI separates explainability, observability and advanced
 interaction analysis into clearly defined layers, such as interaction states,

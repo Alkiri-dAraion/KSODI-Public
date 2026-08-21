@@ -91,7 +91,7 @@ simple and didactic.
 
 ---
 
-## Evaluation Logic in KSODI-Light (0-25)
+## Optional Orientation Logic in KSODI-Light (0-25)
 
 Each KSODI dimension may be reflected on a **0-5 scale**:
 
@@ -113,9 +113,10 @@ The score is:
 
 Its purpose is **didactic**, not evaluative.
 
-It indicates how usable the current request, answer or shared interaction
-state is for structured machine processing in the given task context. It does
-not evaluate the person asking or the assistant as a personality.
+It indicates how usable the current request, answer or visible shared working
+frame is for structured machine processing in the given task context. It does
+not define a merged interaction state and does not evaluate the person asking
+or the assistant as a personality.
 
 It helps users:
 
@@ -148,14 +149,15 @@ not as universal KSODI-Light rules.
 
 KSODI-Light operates **inside the interaction**.
 
-The normalized mathematical representation of KSODI (0-1 space, derivatives,
-IK, R0, IK_rel and R-family observations) is **not required** at this level.
+The normalized mathematical representation of KSODI (`[0,1]` space,
+derivatives, `IK_A(k)`, `R_0`, `IK_rel` and R-family observations) is **not
+required** at this level.
 
 Those models belong to:
 
 - observability and monitoring tools,
 - audit, governance and research contexts,
-- formal Standard-Eval / Full work.
+- formal KSODI-Standard-Eval / KSODI-Full work.
 
 They intentionally remain **outside** this user/account prompt example.
 
@@ -251,11 +253,12 @@ At this level, they describe ordinary interaction experience:
 - Does the user and assistant interaction stay oriented toward the same task?
 - Does clarification improve the shared frame?
 
-KSODI-Light does **not** calculate IK, R0, IK_rel or the R-family.
+KSODI-Light does **not** calculate `IK_A(k)`, `R_0`, `IK_rel` or the R-family.
 
-Those concepts belong to Standard-Eval / Full and are currently being refined
-as formal observation layers. In KSODI-Light, they may be mentioned as research
-context, but they should not be presented as finished Light-level measurements.
+`IK_A(k)` belongs to the current public KSODI-Standard-Eval line. `R_0` and
+`IK_rel` belong to the current public KSODI-Full line; later R-family elements
+remain staged. In KSODI-Light, these components may be mentioned as method
+context, but they must not be presented as Light-level measurements.
 
 ---
 

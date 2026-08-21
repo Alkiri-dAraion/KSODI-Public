@@ -3,7 +3,7 @@
 This note compares KSODI-Light with common prompting methods.
 
 It is intended as public orientation material under CC BY 4.0. It does not
-define the formal Standard-Eval or KSODI-Full mathematics.
+define the formal KSODI-Standard-Eval or KSODI-Full mathematics.
 
 ## Short Comparison Matrix
 
@@ -52,6 +52,10 @@ the intended task.
 
 KSODI-Light can also define an expected quality corridor, for example:
 
+The current public Light convention is ascending: `0` means not usable for the
+declared task and `5` means fully usable. It is a coarse orientation scale, not
+a formal Observer coordinate.
+
 ```text
 K=4, S=4, O=3, D=4, I=4
 ```
@@ -68,7 +72,7 @@ Examples:
 
 The corridor should be disclosed and adapted to the domain.
 
-## Boundary to Standard-Eval and KSODI-Full
+## Boundary to KSODI-Standard-Eval and KSODI-Full
 
 KSODI-Light operates at prompt and interaction level.
 
@@ -81,9 +85,10 @@ Formal observer architectures may add:
 - drift observation,
 - corridor movement over time,
 - dyadic or n-adic comparison,
-- audit and governance feedback.
+- auditable findings that may support separately governed human or Controller
+  feedback.
 
-Those functions belong to Standard-Eval, KSODI-Full or IDAS/SIRA-level
+Those functions belong to KSODI-Standard-Eval, KSODI-Full or IDAS/SIRA-level
 implementations.
 
 ## Practical Reading

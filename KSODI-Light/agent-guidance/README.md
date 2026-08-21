@@ -32,4 +32,4 @@ observer. It gives the human and the agent a shared language for noticing when
 the collaboration frame needs adjustment.
 
 Formal monitoring, long-term drift analysis and auditable observer feedback
-belong to Standard-Eval, KSODI-Full or IDAS/SIRA-level implementations.
+belong to KSODI-Standard-Eval, KSODI-Full or IDAS/SIRA-level implementations.

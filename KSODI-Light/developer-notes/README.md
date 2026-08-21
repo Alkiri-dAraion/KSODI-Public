@@ -11,17 +11,17 @@ At this level, KSODI-Light may define:
 - clarification rules,
 - domain-dependent objectivity or grounding requirements.
 - bidirectional feedback rules for user input, assistant output and the shared
-  interaction state.
+  visible working frame.
 
 This is prompt-level steering. It can guide an assistant from inside its
 instruction frame.
 
 It is not the same as an external KSODI observer. Observer-based monitoring
 evaluates trajectories from outside the prompt, records drift over time and
-belongs to Standard-Eval, KSODI-Full or IDAS/SIRA-level implementations.
+belongs to KSODI-Standard-Eval, KSODI-Full or IDAS/SIRA-level implementations.
 
 Related developer note:
 
-- [KSODI-Light-Agent v350 Bridge](./KSODI-Light-Agent-v350-Bridge.md) — places
-  the prompt-oriented agent role within the v350 architecture and points to
-  the separate public proof-of-concept implementation.
+- [KSODI-Light-Agent V350 Bridge](./KSODI-Light-Agent-Bridge_V350.md) — places
+  the prompt-oriented agent role within the KSODI Architecture V350 and points
+  to the separate public proof-of-concept implementation.

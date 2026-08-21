@@ -36,7 +36,7 @@ method name nevertheless remains `KSODI`.
 
 The English labels are functional translations, not claims that the Light and
 Observer layers use identical wording. KSODI-Light uses accessible labels for
-reflection, training and prompt guidance. Standard-Eval and KSODI-Full use the
+reflection, training and prompt guidance. KSODI-Standard-Eval and KSODI-Full use the
 more precise observer-facing reconstruction labels shown in the final column.
 
 ## Recommended reference

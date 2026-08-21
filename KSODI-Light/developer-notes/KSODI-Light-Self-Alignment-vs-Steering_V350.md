@@ -9,8 +9,8 @@ expectations, score corridors or fallback rules are embedded into a user,
 account, developer or system prompt.
 
 At this level, KSODI-Light is best understood as a reflective working
-agreement. It may apply to user input, assistant output or the shared
-interaction state across a turn.
+agreement. It may apply to user input, assistant output or the visible shared
+working frame across a turn. It does not construct a merged interaction state.
 
 This does not make KSODI-Light a formal observer architecture.
 
@@ -32,13 +32,14 @@ Observer can examine whether the interaction becomes more precise and stable,
 or whether the agent merely adapts visibly to the declared thresholds.
 
 This Light-level steering does not rank or evaluate persons and does not
-perform formal dyadic measurement. Formal observation of trajectories, drift,
-acceleration and relational effects belongs to Standard-Eval, KSODI-Full and
-an external Observer architecture.
+perform formal dyadic measurement. Formal monadic observation of trajectories,
+drift and acceleration belongs to KSODI-Standard-Eval. Dyadic relational
+observation begins separately in KSODI-Full at `R_0`.
 
-Strong external monitoring, long-term drift analysis, enforced corridor
-intervention and auditable observer feedback belong to Standard-Eval,
-KSODI-Full or IDAS-level implementations.
+Strong external monitoring and long-term drift analysis may belong to
+KSODI-Standard-Eval, KSODI-Full or IDAS-level Observer implementations.
+Enforced corridor intervention and feedback require a separately governed
+human or Controller action boundary.
 
 ## Light-Level Self-Alignment
 
@@ -96,20 +97,20 @@ Observer can only interpret drift, acceleration, corridor exits, relational
 coherence or recovery feedback meaningfully if the earlier K/S/O/D/I operator
 inputs have been defined with sufficient care.
 
-The revised KSODI 3.5 line, currently under testing and described in the paper
-work, is intended to provide a clearer example of this operator filling for a
-chatbot scenario. The related public guidance will be found under
-Standard-Eval and KSODI-Full after publication of the reviewed v3.5 material.
+The revised KSODI v3.5 line provides a clearer public method boundary for this
+operator filling in a chatbot scenario. The reviewed public guidance is
+available under KSODI-Standard-Eval and KSODI-Full.
 
 The corresponding full implementation work, including microservices per
 operator and Kubernetes-based infrastructure, is currently maintained outside
 this public repository and is not yet public.
 
 This implementation line is being reviewed against the v3.5 method boundary.
-The carrier architecture is not discarded. The v3.5 transition makes `Z(t)`
-explicit, separates `IK` from the R-family because coherence is not resonance,
-introduces `R0` as the relational gate, and treats source / reference-space
-visibility more carefully than the v3.3 to v3.42 working line. Older
+The carrier architecture is not discarded. The v3.5 transition makes
+`Z_A(k)` explicit, separates monadic `IK_A(k)` from the R-family because
+coherence is not resonance, introduces `R_0` as the relational gate, and
+treats source / reference-space visibility more carefully than the v3.3 to
+v3.42 working line. Older
 architecture notes, dashboards or diagrams should therefore be read as
 historical implementation context unless a later v3.5 note marks them as
 method-aligned.
@@ -117,6 +118,11 @@ method-aligned.
 ## Prompt-Level Score Corridors
 
 KSODI-Light may use rough score corridors such as:
+
+The current public Light convention is ascending from `0` (not usable for the
+declared task) to `5` (fully usable). It must remain explicitly separate from
+formal normalized Observer coordinates and from adaptations using another
+declared polarity.
 
 ```text
 K=4, S=4, O=3, D=4, I=4
@@ -140,20 +146,22 @@ answering.
 At this level, the agent is being guided by prompt instructions. It is not yet
 being formally audited by an external KSODI observer.
 
-## Observer-Based Steering
+## Observer-Supported Governed Feedback
 
-Observer-based steering would be different.
+An Observer may produce findings that support separately governed feedback or
+steering, but the Observer does not steer by itself.
 
 It may involve:
 
-- defined IK corridors,
+- defined `IK_A(k)` corridors,
 - explicit fallback thresholds,
 - drift detection,
 - external feedback to an agent,
 - escalation to a human or governance layer.
 
-Such mechanisms require formal observation logic and should be described as
-Standard-Eval, KSODI-Full or IDAS-level functionality.
+The observation logic may belong to KSODI-Standard-Eval, KSODI-Full or IDAS.
+Feedback, fallback enforcement or escalation additionally requires an explicit
+human or Controller policy, responsibility boundary and audit trail.
 
 ## Target Groups
 
@@ -184,7 +192,7 @@ They should be observed over time before becoming normative configuration
 rules.
 
 The public materials may be useful for orientation, training and discussion,
-but formal implementation of KSODI Standard-Eval / Full requires careful layer
+but formal implementation of KSODI-Standard-Eval / KSODI-Full requires careful layer
 separation and operator-specific design. Public examples may be adapted by
 others, but enterprise or regulated uses should treat the operator filling,
 observer architecture, data boundaries and audit requirements as specialized
