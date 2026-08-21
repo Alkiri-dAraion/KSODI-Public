@@ -21,7 +21,7 @@ the licence history is documented in [LICENSE_HISTORY.md](../LICENSE_HISTORY.md)
 
 Special thanks to Benjamin Gage-Prater for early RAG testing and feedback, and to Patrick Barthelmäs for platform and integration support, including the [KSODI-Light-Agent PoC (GitHub)](https://github.com/blackbaddl13/r-KSODI-POC).
 
-[cc-by-image]: ../assets_images/ksodi-lab-banner.png
+[cc-by-image]: ../assets/ksodi-lab-banner.png
 
 
 # KSODI-Light

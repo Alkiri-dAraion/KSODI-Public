@@ -118,7 +118,7 @@ archives for transparency and provenance. They are not current implementation
 guidance.
 
 Historical Observer visualizations are preserved under
-[`archive_assets_historical-observer-v342`](./archive_assets_historical-observer-v342/README.md).
+[`historical-observer-v342`](../archive/assets-archive/historical-observer-v342/README.md).
 They document implementation and dashboard work from the v3.3 to v3.42 line
 and help explain the later separation between interaction coherence, relational
 comparability and R-family observation.

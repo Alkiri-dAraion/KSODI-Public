@@ -68,9 +68,9 @@ projection.
 
 - `Standard-Eval_v350` contains the current monadic layer-based v350 public
   Standard-Eval structure.
-- `archive_historical-v33` preserves public 3.3 operator, state-vector,
+- [`method-history-v33`](../../archive/method-history-v33/README.md) preserves public 3.3 operator, state-vector,
   projection and deprecated draft material for provenance and transparency.
 - The historical v3.42 Observer assets are preserved separately under
-  [`../archive_assets_historical-observer-v342`](../archive_assets_historical-observer-v342/README.md).
+  [`historical-observer-v342`](../../archive/assets-archive/historical-observer-v342/README.md).
   They document implementation and dashboard work from the v3.3 to v3.42 line,
   not current v350 implementation guidance.

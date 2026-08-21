@@ -12,7 +12,7 @@
 
 [![KSODI + IDAS Concept][banner-image]](https://github.com/Alkiri-dAraion/KSODI-Public)
 
-[banner-image]: ./assets_images/ksodi-lab-banner.png
+[banner-image]: ./assets/ksodi-lab-banner.png
 
 ________________________________________________________________
 
@@ -217,7 +217,7 @@ staged. Before building from any layer, read the
 
 ## What the Observer Sees — A Conceptual Projection
 
-![Conceptual KSODI Observer projection: Earth and a spacecraft exchange distinct source-attributed signal streams while a separate Observer samples the traces and projects reconstructed states into a violet state-space model.](./assets_images/ksodi-observer-projection-space.png)
+![Conceptual KSODI Observer projection: Earth and a spacecraft exchange distinct source-attributed signal streams while a separate Observer samples the traces and projects reconstructed states into a violet state-space model.](./assets/ksodi-observer-projection-space.png)
 
 > **Conceptual visualization, not a measurement plot.** The image is an
 > explanatory metaphor for observable traces, operator-specific measurement
@@ -269,7 +269,7 @@ For the formal topology, see the
 [current Layer 0-8 architecture](./KSODI_V350_ARCHITECTURE_ASCII.md). For
 historical implemented K/S/O/D/I heatmaps, radar profiles, trajectory views and
 drift visualizations, see the
-[Historical Observer Assets](./KSODI-Eval-Variants/archive_assets_historical-observer-v342/README.md).
+[Historical Observer Assets](./archive/assets-archive/historical-observer-v342/README.md).
 Those outputs document earlier implementation work and the transition into
 v3.5; they are not current v3.5 specification diagrams.
 
@@ -594,7 +594,7 @@ views and comparison views. The public image archive is useful as evidence that
 the method can be operationalized, while also showing why the v3.5 method layer
 now separates explicit `Z(t)`, monadic `IK`, `R0`, `IK_rel` and later R-family
 work more carefully. See the
-[Historical Observer Assets](./KSODI-Eval-Variants/archive_assets_historical-observer-v342/README.md).
+[Historical Observer Assets](./archive/assets-archive/historical-observer-v342/README.md).
 
 ## v3.5 Direction: Observer-Supported Agentic Systems
 
@@ -639,7 +639,7 @@ Historical implementation note: earlier KSODI implementation work around the
 v3.3 method state already explored a Kubernetes / microservice-oriented
 architecture with operator and Observer components. Selected historical
 dashboards and visual outputs are preserved in the
-[Historical Observer Assets](./KSODI-Eval-Variants/archive_assets_historical-observer-v342/README.md).
+[Historical Observer Assets](./archive/assets-archive/historical-observer-v342/README.md).
 The v3.5 transition does not discard that carrier architecture. It reworks the
 method layer: `Z(t)` is made explicit, `IK` is separated from the R-family
 because coherence is not resonance, `R0` is introduced as a relational gate,

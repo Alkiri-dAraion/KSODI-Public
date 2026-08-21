@@ -822,11 +822,11 @@ reconstructions are available to KSODI.
 Historical visual material from the first complete v3.3 Observer
 implementation is preserved here:
 
-- [Historical Observer Assets - v3.3 Implementation / v3.42 Transition Context](./archive_assets_historical-observer-v342/README.md)
-- [score heatmap example](./archive_assets_historical-observer-v342/images/ksodi-metrics-841280d3_Score_Heatmap.png)
-- [operator radar example](./archive_assets_historical-observer-v342/images/ksodi-metrics-841280d3_Operator_Profile__Radar_.png)
-- [scores over time example](./archive_assets_historical-observer-v342/images/ksodi-metrics-841280d3_Scores_Over_Time.png)
-- [3D IK trajectory example](./archive_assets_historical-observer-v342/images/ksodi-metrics-841280d3_3D_IK_Trajectory.png)
+- [Historical Observer Assets - v3.3 Implementation / v3.42 Transition Context](../archive/assets-archive/historical-observer-v342/README.md)
+- [score heatmap example](../archive/assets-archive/historical-observer-v342/images/ksodi-metrics-841280d3_Score_Heatmap.png)
+- [operator radar example](../archive/assets-archive/historical-observer-v342/images/ksodi-metrics-841280d3_Operator_Profile__Radar_.png)
+- [scores over time example](../archive/assets-archive/historical-observer-v342/images/ksodi-metrics-841280d3_Scores_Over_Time.png)
+- [3D IK trajectory example](../archive/assets-archive/historical-observer-v342/images/ksodi-metrics-841280d3_3D_IK_Trajectory.png)
 
 These images are historical work artifacts, not current v3.5 diagrams. They
 are valuable because observing the first full infrastructure helped clarify why

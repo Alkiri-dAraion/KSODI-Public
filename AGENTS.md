@@ -64,11 +64,11 @@ block in the live root README and prefer raw files, `git clone` or the current
 GitHub repository tree over search-result snippets.
 
 Superseded root-README snapshots are preserved under
-`docs/archive/root-readme/`, superseded roadmap snapshots under
-`docs/archive/roadmap/`, superseded root-architecture snapshots under
-`docs/archive/architecture/`, superseded public agent instructions under
-`docs/archive/agents/`, and superseded Hangar notes under
-`docs/archive/hangar/`, for provenance. They retain historical wording and
+`archive/document-snapshots/root-readme/`, superseded roadmap snapshots under
+`archive/document-snapshots/roadmap/`, superseded root-architecture snapshots
+under `archive/document-snapshots/architecture/`, superseded public agent
+instructions under `archive/document-snapshots/agents/`, and superseded Hangar
+notes under `archive/document-snapshots/hangar/`, for provenance. They retain historical wording and
 may contain root-relative links that do not resolve from the archive folder.
 Do not use archived files as current method, release or navigation guidance;
 the live root `README.md` and `ROADMAP.md` remain canonical.

@@ -445,6 +445,6 @@ conflated with those deprecated identifiers.
 - [Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md)
 
 Historical v3.3 and deprecated public drafts remain under
-[`archive_historical-v33`](./KSODI-Eval-Variants/KSODI-Standard-Eval/archive_historical-v33/README.md).
+[`method-history-v33`](./archive/method-history-v33/README.md).
 Historical v3.42 Observer assets remain under
-[`archive_assets_historical-observer-v342`](./KSODI-Eval-Variants/archive_assets_historical-observer-v342/README.md).
+[`historical-observer-v342`](./archive/assets-archive/historical-observer-v342/README.md).
