@@ -27,8 +27,8 @@ Relational gates, dyadic / n-adic views and the R-family belong to
 
 ## Layers
 
-- [Layer 1 - Operators](./layer-1-operators/README.md)
-- [Layer 2 - State Vector Z](./layer-2-state-vector-z_v350/README.md)
+- [Layer 1 - Operators](./Layer-1_KSODI-Operators_V350/README.md)
+- [Layer 2 - State Vector Z](./Layer-2_KSODI-State-Vector-Z_V350/README.md)
 - [Layer 3 - IK](./layer-3-ik_v350/README.md)
 
 Architecture overview:

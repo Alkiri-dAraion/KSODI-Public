@@ -305,7 +305,7 @@ Drift describes movement in state space, not answer quality.
 - same embedding model where operators use embeddings
 - same retrieval configuration where relevant
 - same `Ref` definition where reference-space logic is used
-- same [`O0` source-need gate policy](../layer-1-operators/O_Source-Need-Gate_v350.md)
+- same [`O0` source-need gate policy](../Layer-1_KSODI-Operators_V350/KSODI_Operator-O_Source-Need-Gate_V350.md)
 - same weighting choices inside operators
 - same evaluation-unit granularity
 - same ordering of components in `Z_t`

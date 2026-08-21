@@ -28,13 +28,13 @@ distinguishable `Z` trajectories and an explicit pairing rule are available.
 
 ## Operators and companion
 
-- [`K0`](./Operator_K_v350.md) — Observable Context Completeness
-- [`S0`](./Operator_S_v350.md) — Observable Structural Coherence
-- [`O0`](./Operator_O_v350.md) — Observable Grounded Objectivity
-  - [`O` Source-Need Gate](./O_Source-Need-Gate_v350.md) — applicability and
+- [`K0`](./KSODI_Operator-K_Observable-Context-Completeness_V350.md) — Observable Context Completeness
+- [`S0`](./KSODI_Operator-S_Observable-Structural-Coherence_V350.md) — Observable Structural Coherence
+- [`O0`](./KSODI_Operator-O_Observable-Grounded-Objectivity_V350.md) — Observable Grounded Objectivity
+  - [`O` Source-Need Gate](./KSODI_Operator-O_Source-Need-Gate_V350.md) — applicability and
     source-need companion; not a sixth operator
-- [`D0`](./Operator_D_v350.md) — Observable Clarity
-- [`I0`](./Operator_I_v350.md) — Observable Information Impulse
+- [`D0`](./KSODI_Operator-D_Observable-Clarity_V350.md) — Observable Clarity
+- [`I0`](./KSODI_Operator-I_Observable-Information-Impulse_V350.md) — Observable Information Impulse
 
 ## Reader path inside each operator
 

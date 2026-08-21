@@ -684,7 +684,7 @@ evaluation. Missing, invisible, inadmissible or non-required states must not
 collapse into the same `O = 0` reading. The preferred cross-operator visibility
 state is `not_visible_to_evaluator`.
 See the public companion note:
-[`O_Source-Need-Gate_v350.md`](./KSODI-Standard-Eval/layer-1-operators/O_Source-Need-Gate_v350.md).
+[`KSODI_Operator-O_Source-Need-Gate_V350.md`](./KSODI-Standard-Eval/Layer-1_KSODI-Operators_V350/KSODI_Operator-O_Source-Need-Gate_V350.md).
 
 For `I`, retrieval is one possible reference operation, not communication
 itself and not a prerequisite for every profile. Where retrieval is used,

@@ -33,17 +33,17 @@ competing operator folders.
 
 Released in public Layer 1:
 
-- `Operator_K_v350.md` - `K0`, Observable Context Completeness
-- `Operator_I_v350.md` - `I0`, Observable Information Impulse
-- `Operator_D_v350.md` - `D0`, Observable Clarity
-- `Operator_O_v350.md` - `O0`, Observable Grounded Objectivity
-- `O_Source-Need-Gate_v350.md` - `O0` source-need / reference-space
+- `KSODI_Operator-K_Observable-Context-Completeness_V350.md` - `K0`, Observable Context Completeness
+- `KSODI_Operator-I_Observable-Information-Impulse_V350.md` - `I0`, Observable Information Impulse
+- `KSODI_Operator-D_Observable-Clarity_V350.md` - `D0`, Observable Clarity
+- `KSODI_Operator-O_Observable-Grounded-Objectivity_V350.md` - `O0`, Observable Grounded Objectivity
+- `KSODI_Operator-O_Source-Need-Gate_V350.md` - `O0` source-need / reference-space
   applicability companion note
-- `Operator_S_v350.md` - `S0`, Observable Structural Coherence
+- `KSODI_Operator-S_Observable-Structural-Coherence_V350.md` - `S0`, Observable Structural Coherence
 
 Released in public Layer 2:
 
-- `Z_Vektor_v350.md` - KSODI State Vector Z
+- `KSODI_State-Vector-Z_V350.md` - KSODI State Vector Z
 
 Released in public Layer 3:
 

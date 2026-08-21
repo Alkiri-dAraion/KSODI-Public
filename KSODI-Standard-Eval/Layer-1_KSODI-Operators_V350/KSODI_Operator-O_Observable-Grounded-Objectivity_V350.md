@@ -67,7 +67,7 @@ For human-readable reporting, applicable operators may be normalized over the ac
 
 Companion note:
 
-[`O_Source-Need-Gate_v350.md`](./O_Source-Need-Gate_v350.md) records the public
+[`KSODI_Operator-O_Source-Need-Gate_V350.md`](./KSODI_Operator-O_Source-Need-Gate_V350.md) records the public
 v3.50 source-need / reference-space applicability gate for `O0`.
 
 ## 3. Components

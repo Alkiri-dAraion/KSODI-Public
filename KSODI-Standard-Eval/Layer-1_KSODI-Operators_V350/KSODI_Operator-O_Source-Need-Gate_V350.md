@@ -1,6 +1,6 @@
 # KSODI O Source-Need Gate v3.50
 
-Status: public v3.50 companion note for `Operator_O_v350.md`; private workbench origin retained.
+Status: public v3.50 companion note for `KSODI_Operator-O_Observable-Grounded-Objectivity_V350.md`; private workbench origin retained.
 
 Implementation status: method note only. This file is not an implementation profile and does not define a production detector by itself.
 
@@ -253,7 +253,7 @@ Avoid retaining long-term unless explicitly justified:
 
 ## 9. Canonical Boundary
 
-This note does not replace `Operator_O_v350.md`.
+This note does not replace `KSODI_Operator-O_Observable-Grounded-Objectivity_V350.md`.
 
 It clarifies the semantic gate that decides when `O0` is applicable and how O-missingness should be interpreted.
 

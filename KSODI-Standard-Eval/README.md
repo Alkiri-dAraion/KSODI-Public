@@ -65,8 +65,8 @@ projection.
 
 - [`KSODI-Standard-Eval-v350-Release.md`](./KSODI-Standard-Eval-v350-Release.md)
   records the active v3.5 release boundary.
-- [`layer-1-operators/`](./layer-1-operators/README.md),
-  [`layer-2-state-vector-z_v350/`](./layer-2-state-vector-z_v350/README.md) and
+- [`Layer-1_KSODI-Operators_V350/`](./Layer-1_KSODI-Operators_V350/README.md),
+  [`Layer-2_KSODI-State-Vector-Z_V350/`](./Layer-2_KSODI-State-Vector-Z_V350/README.md) and
   [`layer-3-ik_v350/`](./layer-3-ik_v350/README.md) contain the current
   layer-based public KSODI-Standard-Eval structure.
 - [`KSODI-Architecture_V350.md`](../KSODI-Architecture_V350.md)

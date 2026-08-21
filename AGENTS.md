@@ -31,7 +31,7 @@ question being answered:
 | How are the layers and branches arranged? | [KSODI Architecture V350](./KSODI-Architecture_V350.md) | canonical root topology, dependencies and layer order |
 | What is the conceptual reasoning behind the method? | [Conceptual Note](./Conceptual-Note.md) | explanatory semantics; it does not replace file-level definitions |
 | What is released, staged or planned next? | [ROADMAP.md](./ROADMAP.md) | development and publication orientation, not a formula source |
-| How are Layer-1 observations defined? | [Layer-1 operator entry](./KSODI-Standard-Eval/layer-1-operators/README.md), then the linked versioned operator file | the versioned operator file is authoritative for that operator's formula, profile and applicability |
+| How are Layer-1 observations defined? | [Layer-1 operator entry](./KSODI-Standard-Eval/Layer-1_KSODI-Operators_V350/README.md), then the linked versioned operator file | the versioned operator file is authoritative for that operator's formula, profile and applicability |
 | How may the method be stored or implemented? | [KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md) | implementation contract; implementation examples do not redefine the method |
 | How do Light, Observer, SIRA, IDAS and a future Controller differ? | [KSODI-IDAS-SIRA Framework](./KSODI-IDAS-SIRA-Framework_V342.md) | system and responsibility boundary |
 | How did the work develop, and who contributed in which role? | [Human–AI Research Process](./HUMAN_AI_RESEARCH_PROCESS.md), [Contributors](./Contributors.md), [German timeline](./docs/timeline/KSODI_Timeline_seit_2023-05.md), [English timeline](./docs/timeline/KSODI_Timeline_since_2023-05.md) | provenance and chronology; historical wording does not override current method files |
@@ -325,7 +325,7 @@ and robot examples when explaining these distinctions.
 ## Layer-1 Reader and Audit Boundary
 
 Use the public
-[`layer-1-operators/README.md`](./KSODI-Standard-Eval/layer-1-operators/README.md)
+[`Layer-1_KSODI-Operators_V350/README.md`](./KSODI-Standard-Eval/Layer-1_KSODI-Operators_V350/README.md)
 as the entry surface for the released operators.
 
 Keep three orders distinct: coordinate order `(K,S,O,D,I)`, preferred

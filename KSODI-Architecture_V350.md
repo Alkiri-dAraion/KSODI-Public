@@ -501,8 +501,8 @@ T_B ----/          |
 ## 16. Layer Files
 
 - [Layer 0 - KSODI-Light](./KSODI-Light/developer-notes/KSODI-Light-Agent-Bridge_V350.md)
-- [Layer 1 - Operators](./KSODI-Standard-Eval/layer-1-operators/README.md)
-- [Layer 2 - State Vector Z](./KSODI-Standard-Eval/layer-2-state-vector-z_v350/README.md)
+- [Layer 1 - Operators](./KSODI-Standard-Eval/Layer-1_KSODI-Operators_V350/README.md)
+- [Layer 2 - State Vector Z](./KSODI-Standard-Eval/Layer-2_KSODI-State-Vector-Z_V350/README.md)
 - [Layer 3 - IK](./KSODI-Standard-Eval/layer-3-ik_v350/README.md)
 - [Layer 4 - R0 Gate](./KSODI-Full/layer-4-r0-gate/README.md)
 - [Layer 5 - IK_rel](./KSODI-Full/layer-5-ik-rel/README.md)
