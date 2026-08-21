@@ -1,5 +1,9 @@
 # KSODI — From Observability to Controlled Action
 
+Status: conceptual V350 action-adjacent orientation note. This file is not a
+canonical operator definition, an implementation profile or a Controller
+policy. Its examples are illustrative and do not validate a deployment.
+
 ## KSODI × Autonomous Agents  
 ### Why Structured Observability Beats Code vs. Chaos
 
@@ -58,30 +62,34 @@ Without monitoring, long interaction chains can gradually drift away from their 
 
 # Operator Drift
 
-KSODI makes structural interaction changes visible.
+KSODI supports declared observation of structural interaction changes.
 
 The framework does **not prove correctness or truth**.  
-Instead, it detects when **interaction structure deteriorates**.
+It can make declared changes in observable interaction structure available for
+review. Whether a change counts as deterioration is a separate interpretive or
+policy judgment.
 
 ## Two Scales
 
-| Layer | Scale |
+| Layer | Scale and role |
 |------|------|
-KSODI-Light | 0–5 (human-facing prompt clarity) |
-KSODI-Standard-Eval | 0.0–1.0 (numeric operator space) |
+KSODI-Light | 0–5 per K/S/O/D/I orientation dimension in the local prompt-facing layer |
+KSODI-Standard-Eval | `[0,1]` per applicable formal operator coordinate under a declared profile |
 
-Approximate mapping:
-KSODI-Light ≈ 5 × KSODI-Standard
-
-
-Light provides explainability.  
-Standard-Eval provides observability.
+These scales are not direct rescalings of one another. A KSODI-Light value must
+not be converted into a formal KSODI-Standard-Eval coordinate by multiplying or
+dividing by five. KSODI-Light provides local orientation; KSODI-Standard-Eval
+provides formal monadic observation.
 
 ---
 
 ## Example Scenario
 
 Customer support agent handling a support case.
+
+The following 0–5 values are an illustrative KSODI-Light orientation. The
+displayed mean is an explicitly chosen presentation aid, not a formal
+KSODI-Standard-Eval result, `Z`, `IK`, `R_0` or `IK_rel` calculation.
 
 ### Without Interaction Monitoring
 
@@ -100,18 +108,24 @@ incorrect guidance, missed escalation, unnecessary cost.
 
 ### With KSODI Observability
 
+This second table illustrates an external policy and Controller responding to
+Observer-side reports. KSODI itself neither selects the threshold nor performs
+the intervention. The post-intervention values are hypothetical rather than a
+claim that KSODI caused or verified restoration.
+
 | Turns | K | S | O | D | I | Light Score | System Signal |
 |------|------|------|------|------|------|------|------|
 1–3 | 5 | 5 | 5 | 5 | 5 | 5.0 | Stable |
 4–7 | 4 | 5 | 4 | 5 | 4 | 4.4 | Early structural drift |
 8 | 3 | 4 | 3 | 4 | 3 | 3.4 | Threshold warning |
-9 | 2 | 3 | 2 | 3 | 2 | 2.4 | Policy-defined intervention |
-10–20 | 5 | 5 | 5 | 5 | 5 | 5.0 | Interaction restored |
+9 | 2 | 3 | 2 | 3 | 2 | 2.4 | External policy-defined intervention |
+10–20 | 5 | 5 | 5 | 5 | 5 | 5.0 | Hypothetical post-intervention state |
 
 Key point:
 
 KSODI does not determine what is correct.  
-It signals when **interaction structure becomes unstable**.
+An Observer may report declared structural changes. Interpretation and any
+response remain separate responsibilities.
 
 ---
 
@@ -179,16 +193,13 @@ O | missing evidence |
 D | unclear desired outcome |
 I | incomplete information |
 
-Example Standard-Eval:
-K = 0.4
-S = 0.6
-O = 0.3
-D = 0.5
-I = 0.4
+Illustrative formal orientation:
 
-Result:
-Average ≈ 0.44
-Light ≈ 2.2
+Under a declared KSODI-Standard-Eval profile, each applicable operator would
+produce its own `[0,1]` coordinate for one source-attributed target event. The
+coordinates jointly form `Z_A(k_A)`. They must not be averaged and relabeled as
+KSODI-Light or `IK`; monadic `IK_A(k_A)` requires its separately defined,
+versioned projection.
 
 Possible policy response:
 
@@ -207,9 +218,9 @@ KSODI is primarily designed to improve **interaction observability and structura
 
 The framework:
 
-• does not reconstruct private information  
-• does not access external data sources  
-• does not perform cross-account inference
+• does not authorize inference about hidden intentions or private internal states
+• has no independent data access; an implementation may evaluate only its declared visible reference space
+• does not authorize undeclared cross-account inference
 
 If similar interaction patterns appear across systems, this results from:
 
@@ -227,4 +238,5 @@ Autonomous systems already operate in production environments.
 
 As autonomy increases, **interaction monitoring becomes essential**.
 
-KSODI provides a **minimal, implementation-agnostic observability framework** for analyzing interaction structure in language-driven systems.
+KSODI provides a **structured, implementation-agnostic observation method**
+for analyzing observable interaction structure in language-driven systems.

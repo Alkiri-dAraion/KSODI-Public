@@ -1,8 +1,8 @@
-# Layer 4 - R0 / R_0 Gate
+# Layer 4 — KSODI Relational Gate (`R_0`)
 
 Status: public v3.50 reference release
 
-`R0` is the relational gate for dyadic or n-adic observation. It is evaluated
+`R_0` is the relational gate for dyadic or n-adic observation. It is evaluated
 from distinguishable `Z`-trajectories and runs in parallel to monadic `IK`.
 
 It asks whether distinguishable trajectories are stable enough for relational
