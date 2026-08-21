@@ -441,7 +441,7 @@ conflated with those deprecated identifiers.
 - [Layer 6 - R_geom](./KSODI-Full/layer-6-r-geom/README.md)
 - [Layer 7 - Optional Pace Research](./KSODI-Full/layer-7-r-pace/README.md)
 - [Layer 8 - Signal-Media Research](./KSODI-Full/layer-8-future-signal-media/README.md)
-- [Shared Sigma / Hangar Method Note](./KSODI-Eval-Variants/Hangar_350.md)
+- [Shared Sigma / Hangar Method Note](./KSODI-Hangar_V350.md)
 - [Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md)
 
 Historical v3.3 and deprecated public drafts remain under

@@ -67,7 +67,7 @@ The shared v350 method note for Sigma, Sigma(Hangar), drift and distribution
 views is also maintained at the Eval-Variants root because it spans
 Standard-Eval and KSODI-Full:
 
-[`Hangar_350.md`](./Hangar_350.md)
+[`KSODI-Hangar_V350.md`](../KSODI-Hangar_V350.md)
 
 Public implementation-transfer examples are kept separate from the canonical
 method folders. They are orientation aids, not customer implementations:

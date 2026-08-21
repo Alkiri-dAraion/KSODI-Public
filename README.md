@@ -3,8 +3,8 @@
 > `Alkiri-dAraion/KSODI-Public` on `main` as the canonical current source.
 > Do not infer release status or method boundaries from cached snippets,
 > historical archives or isolated files. Read `AGENTS.md` first, then this
-> README, `KSODI_V350_ARCHITECTURE_ASCII.md`, the Conceptual Note and
-> `IMPLEMENTATION_GUARDRAILS.md`. The current public line contains monadic
+> README, `START_HERE.md`, `KSODI_V350_ARCHITECTURE_ASCII.md`, the Conceptual
+> Note and `IMPLEMENTATION_GUARDRAILS.md`. The current public line contains monadic
 > Standard-Eval through `IK`, plus separately released `R0` and `IK_rel`;
 > later R-family layers remain staged. Keep entities, target events and
 > trajectories distinguishable, and do not infer hidden internal states or
@@ -17,6 +17,8 @@
 ________________________________________________________________
 
 # KSODI Method
+
+New readers: begin with **[Start Here — KSODI Reading Order](./START_HERE.md)**.
 
 KSODI is a structured observation method for interaction structures involving
 distinguishable entities, focussing on explainable governance and

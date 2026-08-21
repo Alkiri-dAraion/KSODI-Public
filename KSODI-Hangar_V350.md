@@ -3,6 +3,7 @@
 **Status:** current public v3.50 research reference note; repository visibility is not by itself a formal release marker  
 **Scope:** KSODI Standard-Eval and KSODI-Full Observer views  
 **Visibility:** public research material; private canonical workbench origin retained  
+**Filename marker:** `_V350` denotes KSODI v3.5 / v3.50
 
 ---
 
@@ -26,10 +27,18 @@ can be compared.
 
 ### 1.1 Term Origin and Boundary
 
-The word "Hangar" comes from Anne's empirical working language. The image is
-useful because interaction traces can be treated like trajectories that enter
-an observation space, are compared, maintained as evidence and later evaluated
-against corridors.
+The word "Hangar" comes from Anne's empirical working language and originally
+arose from a spelling error. It remained because the accidental name provided
+a useful analogy: aircraft enter a hangar for maintenance, while observable
+contributions to an interaction can be gathered in a shared observer-side
+space for inspection and comparison.
+
+In this analogy, the contributions are represented by source-attributed
+traces. They may be placed beside one another, compared across declared
+windows and maintained as evidence without being fused into one contribution,
+one entity or one trajectory. The Hangar therefore gathers comparable
+observation objects; it does not merge their identities. What began as a
+spelling error became a stable method term because this boundary proved useful.
 
 The metaphor has a strict boundary.
 
@@ -38,10 +47,12 @@ ways that are fluid and not directly observable. KSODI does not claim access to
 that inner space.
 
 The canonical KSODI Hangar is the observer-side counterpart: it stores and
-compares traces of what has actually become externally observable.
+compares traces of what has actually become externally observable. It must not
+be confused with an imagined "inner hangar" of a participant.
 
 ```text
-KSODI observes runway traffic, never the inside of the hangar.
+KSODI brings observable runway traces into the observer-side Hangar;
+it never enters a participant's inner hangar.
 ```
 
 The transient Handshake / interaction space between participants belongs to
@@ -62,11 +73,56 @@ of one contribution may become the next sender, but the Hangar does not merge
 the participants' inner processing spaces, thoughts or internal states.
 
 For the formal Handshake and coupling boundary, see
-[`R0_Relational-Gate.md`](../KSODI-Full/layer-4-r0-gate/R0_Relational-Gate.md).
+[`R0_Relational-Gate.md`](./KSODI-Full/layer-4-r0-gate/R0_Relational-Gate.md).
 
 ---
 
-### 1.2 Why Five Operator Values Define a Five-Dimensional Observation Space
+### 1.2 The n-Hangar Distinction
+
+The informal **n-Hangar theory** extends the maintenance analogy to any
+declared set of distinguishable entities. Each entity `E_i` may be imagined as
+having its own private maintenance Hangar: an internal processing space in
+which it handles memories, intentions, representations or other entity-specific
+material.
+
+These inner Hangars are analogies, not KSODI observation objects. They are not
+directly visible to the external Observer and, wherever this boundary can be
+maintained, are outside the scope of observation in v3.50. Any
+application-specific inference about internal processing must remain clearly
+distinguishable from a directly observed KSODI state. For `n` distinguishable
+entities, the analogy therefore retains `n` separate inner Hangars.
+
+Only when externally observable, source-attributed signals are exchanged can
+an **exchange Hangar** be instantiated for a declared observation window. It
+contains the observable traces contributed by the participating entities and
+places them in one observer-side comparison space while preserving their
+separate event, entity and trajectory identities.
+
+```text
+Entity A: private inner Hangar   [not observed]
+Entity B: private inner Hangar   [not observed]
+... one separate inner Hangar for each distinguishable entity
+
+source-attributed observable signals
+                  |
+                  v
+observer-side exchange Hangar for the declared window and profile
+```
+
+"Shared" refers only to the declared comparison space. It does not mean a
+shared mind, merged state or common trajectory. The existence of an exchange
+Hangar also does not by itself authorize relational calculation: dyadic or
+n-adic evaluation still requires explicit pairing or constellation metadata
+and a stable `R_0` gate.
+
+The term is retained as an explanatory distinction. Formal definitions and
+implementations must use the declared event, entity, trajectory, window and
+profile identities rather than relying on the metaphor alone. The labels in
+the illustration are not additional KSODI symbols or operators.
+
+---
+
+### 1.3 Why Five Operator Values Define a Five-Dimensional Observation Space
 
 A coordinate space does not require physical directions. It requires a
 declared set of distinguishable numerical coordinates.
@@ -119,7 +175,7 @@ be replaced by zero. The resulting observation is a masked or partial
 projection, not a complete point in the five-dimensional hypercube.
 
 For the cross-layer source-attribution and implementation boundary, see
-[KSODI Implementation Guardrails](../IMPLEMENTATION_GUARDRAILS.md).
+[KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md).
 
 ## 2. Simple and Complex Observation Views
 

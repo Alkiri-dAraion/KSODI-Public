@@ -12,4 +12,4 @@ Released file:
 
 Shared Sigma / Hangar method note:
 
-[`../../KSODI-Eval-Variants/Hangar_350.md`](../../KSODI-Eval-Variants/Hangar_350.md)
+[`../../KSODI-Hangar_V350.md`](../../KSODI-Hangar_V350.md)
