@@ -11,7 +11,7 @@ Read this document together with:
 
 - [KSODI Architecture](./ARCHITECTURE.md)
 - [Which KSODI Variant Do I Need?](./WHICH_KSODI.md)
-- [KSODI Conceptual Note](./KSODI-Eval-Variants/Conceptual-Note.md)
+- [KSODI Conceptual Note](./Conceptual-Note.md)
 - [Agent Instructions](./AGENTS.md)
 
 ## 1. Core Invariants

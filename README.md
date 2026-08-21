@@ -165,7 +165,7 @@ instead be inferred from repeated observable regularities. Failure at one step
 may reopen earlier segmentation, source, structural or contextual hypotheses.
 
 For a bounded non-language example, see the Morse and unknown-code example in
-the [Conceptual Note](./KSODI-Eval-Variants/Conceptual-Note.md).
+the [Conceptual Note](./Conceptual-Note.md).
 
 ## KSODI v3.5 Layer Map
 

@@ -12,28 +12,62 @@ public Operator I include the retrieval-state clarification adopted on
 2026-08-19. Other linked public operator files remain the file-level public
 definitions until each separately reviewed replacement is explicitly released.
 
-The current public v3.5 release contains the complete monadic Standard-Eval
-line: all five Layer-1 operators, the Layer-2 state vector `Z(t)` and
-the Layer-3 monadic interaction-coherence projection `IK`. Standard-Eval ends
-with `IK`.
+### KSODI-Light: Human-Facing Entry Layer
 
-After `Z`, the architecture branches. The separate relational / Full branch
-evaluates `R0` from distinguishable `Z`-trajectories in parallel to monadic
-`IK`. Only after a stable `R0` does `IK_rel` open the relational projection
-branch, followed by the further R-family. `R0` is not part of Standard-Eval,
-but it is published separately as the current public KSODI-Full Layer 4 gate.
-`IK_rel` is published separately as the current public KSODI-Full Layer 5
-relational coherence projection. The further R-family remains staged until
-separate release decisions are complete.
+[KSODI-Light](./KSODI-Light/README.md) is the compact, human-facing entry into
+the same KSODI method. It uses the five K/S/O/D/I working questions as a
+reflective agreement for observable interaction, without constructing numeric
+operator trajectories or opening relational observation. It is not a second
+method, not the KSODI Handshake and not an abbreviated implementation of the
+formal Observer architecture. KSODI-Standard-Eval and KSODI-Full extend this
+shared conceptual basis into explicitly defined observer layers.
+
+From this point onward, the note describes the formal observer-side KSODI
+method published as **KSODI-Standard-Eval** and **KSODI-Full**. Here, an
+external Observer evaluates observable, source-attributed events and
+reconstructs operator values and trajectories from them. This requires
+corresponding observation infrastructure that can preserve event, entity and
+trajectory identity, apply declared measurement profiles and retain the
+provenance needed for later comparison. The method defines the observation
+logic and boundaries; it does not prescribe one specific software stack.
+
+KSODI-Standard-Eval begins with the ordered five-operator tuple
+`(K, S, O, D, I)`:
+
+- `K` — **Observable Context Completeness**
+- `S` — **Observable Structural Coherence**
+- `O` — **Observable Grounded Objectivity**
+- `D` — **Observable Clarity**
+- `I` — **Observable Information Impulse**
+
+Each applicable value belongs to one identified event in one declared monadic
+trajectory. Layer 2 represents these Layer-1 operator values as the state
+vector `Z_A(k)`. The current public v3.5 KSODI-Standard-Eval line continues
+from `Z_A(k)` to the Layer-3 monadic interaction-coherence projection
+`IK_A(k)` and ends with `IK_A(k)`.
+
+This is the product boundary: **KSODI-Standard-Eval is monadic trajectory
+observation through and including `IK_A(k)`. KSODI-Full begins with dyadic
+observation at `R_0`.** It compares two distinguishable monadic
+`Z`-trajectories without merging their event, entity or trajectory identities.
+
+After `Z`, the architecture therefore branches. The KSODI-Full Layer 4 gate
+`R_0` evaluates whether the two distinguishable `Z`-trajectories support
+relational observation, in parallel to their monadic `IK_A(k_A)` and
+`IK_B(k_B)` projections. Only after a stable `R_0` does the KSODI-Full Layer 5
+projection `IK_rel` open. Both `R_0` and `IK_rel` are dyadic and belong to
+KSODI-Full, not KSODI-Standard-Eval. The further R-family follows within the
+KSODI-Full branch and remains staged until separate release decisions are
+complete.
 
 Current public architecture orientation:
-[`KSODI_V350_ARCHITECTURE_ASCII.md`](../KSODI_V350_ARCHITECTURE_ASCII.md)
+[`KSODI_V350_ARCHITECTURE_ASCII.md`](./KSODI_V350_ARCHITECTURE_ASCII.md)
 is the authoritative topology for the current v350 layer order shared by
-Standard-Eval and Full. The longer copy later in this note is explanatory and
-must not override that root architecture file.
+KSODI-Standard-Eval and KSODI-Full. The longer copy later in this note is
+explanatory and must not override that root architecture file.
 
 Before implementing the conceptual model, read the root
-[KSODI Implementation Guardrails](../IMPLEMENTATION_GUARDRAILS.md). They define
+[KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md). They define
 the source-attribution, evaluation-unit, trajectory, pairing and partial-
 operator conditions that the conceptual descriptions presuppose.
 
@@ -108,10 +142,11 @@ Handshake. Formal observer layers extend this logic into numeric trajectories,
 drift observation and, where methodically justified, relational comparison.
 
 Layer boundary:
-KSODI-Light is a local, human-facing orientation layer. KSODI Standard-Eval is
-the complete monadic line `K/S/O/D/I -> Z -> IK` and ends with `IK`. After `Z`,
-dyadic or n-adic analysis opens separately through `R0`; it must not be assumed
-merely because an interaction took place.
+KSODI-Light is a local, human-facing orientation layer. KSODI-Standard-Eval is
+the complete monadic line `K/S/O/D/I -> Z_A(k) -> IK_A(k)` and ends with
+`IK_A(k)`. KSODI-Full begins with dyadic observation at `R_0`; its relational
+projection `IK_rel` opens only after `R_0` is stable. Dyadic analysis must not
+be assumed merely because an interaction took place.
 
 ⸻
 
@@ -649,7 +684,7 @@ evaluation. Missing, invisible, inadmissible or non-required states must not
 collapse into the same `O = 0` reading. The preferred cross-operator visibility
 state is `not_visible_to_evaluator`.
 See the public companion note:
-[`O_Source-Need-Gate_v350.md`](../KSODI-Standard-Eval/layer-1-operators/O_Source-Need-Gate_v350.md).
+[`O_Source-Need-Gate_v350.md`](./KSODI-Standard-Eval/layer-1-operators/O_Source-Need-Gate_v350.md).
 
 For `I`, retrieval is one possible reference operation, not communication
 itself and not a prerequisite for every profile. Where retrieval is used,
@@ -822,11 +857,11 @@ reconstructions are available to KSODI.
 Historical visual material from the first complete v3.3 Observer
 implementation is preserved here:
 
-- [Historical Observer Assets - v3.3 Implementation / v3.42 Transition Context](../archive/assets-archive/historical-observer-v342/README.md)
-- [score heatmap example](../archive/assets-archive/historical-observer-v342/images/ksodi-metrics-841280d3_Score_Heatmap.png)
-- [operator radar example](../archive/assets-archive/historical-observer-v342/images/ksodi-metrics-841280d3_Operator_Profile__Radar_.png)
-- [scores over time example](../archive/assets-archive/historical-observer-v342/images/ksodi-metrics-841280d3_Scores_Over_Time.png)
-- [3D IK trajectory example](../archive/assets-archive/historical-observer-v342/images/ksodi-metrics-841280d3_3D_IK_Trajectory.png)
+- [Historical Observer Assets - v3.3 Implementation / v3.42 Transition Context](./archive/assets-archive/historical-observer-v342/README.md)
+- [score heatmap example](./archive/assets-archive/historical-observer-v342/images/ksodi-metrics-841280d3_Score_Heatmap.png)
+- [operator radar example](./archive/assets-archive/historical-observer-v342/images/ksodi-metrics-841280d3_Operator_Profile__Radar_.png)
+- [scores over time example](./archive/assets-archive/historical-observer-v342/images/ksodi-metrics-841280d3_Scores_Over_Time.png)
+- [3D IK trajectory example](./archive/assets-archive/historical-observer-v342/images/ksodi-metrics-841280d3_3D_IK_Trajectory.png)
 
 These images are historical work artifacts, not current v3.5 diagrams. They
 are valuable because observing the first full infrastructure helped clarify why
