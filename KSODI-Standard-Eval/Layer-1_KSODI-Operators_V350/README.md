@@ -43,6 +43,9 @@ observation window and an explicit pairing rule are available.
 ## Operators and companion
 
 - [`K0`](./KSODI_Operator-K_Observable-Context-Completeness_V350.md) — Observable Context Completeness
+  - [`K0` Implementation Companion](./KSODI_Operator-K_Implementation-Companion_V350.md) — conditional
+    profile-oriented operationalization; not a sixth operator and not a
+    replacement for the carrier-neutral method
 - [`S0`](./KSODI_Operator-S_Observable-Structural-Coherence_V350.md) — Observable Structural Coherence
   - [`S0` Implementation Companion](./KSODI_Operator-S_Implementation-Companion_V350.md) — conditional
     profile-oriented operationalization; not a sixth operator and not a
