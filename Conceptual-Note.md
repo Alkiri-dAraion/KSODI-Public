@@ -7,10 +7,14 @@
 This file provides public conceptual orientation. Canonical definitions remain
 in the linked, versioned method files.
 
-Public synchronization note: this conceptual orientation and the current
-public Operator I include the retrieval-state clarification adopted on
-2026-08-19. Other linked public operator files remain the file-level public
-definitions until each separately reviewed replacement is explicitly released.
+Synchronization status, 2026-08-26: the current Layer-1 operator packages are
+reviewed public method/companion checkpoints. Public Z, IK, R0 and IK_rel remain
+their separately released reference states; newer reader-first private
+revisions do not silently override them. This note states only the shared
+topology and result boundaries supported by the linked public methods. Its
+summaries do not replace those typed contracts or authorize transfer of a
+private revision. The public repository currently has no root v3.50 glossary;
+any private glossary remains a subordinate alignment surface.
 
 ### KSODI-Light: Human-Facing Entry Layer
 
@@ -46,19 +50,28 @@ vector `Z_A(k)`. The current public v3.5 KSODI-Standard-Eval line continues
 from `Z_A(k)` to the Layer-3 monadic interaction-coherence projection
 `IK_A(k)` and ends with `IK_A(k)`.
 
+Every successful applicable finite Layer-1 calculation emits the common result
+status `numeric` with a value in `[0,1]`. The retained non-numeric statuses are
+`not_selected`, `not_observable` and `not_applicable`; they are distinct from
+numeric zero. Invalid identity, profile, policy, configuration, attribution,
+weights or calculation is a processing failure and produces no valid operator
+result. Operator-specific gate states and reasons remain visible but do not
+become additional Z statuses.
+
 This is the product boundary: **KSODI-Standard-Eval is monadic trajectory
-observation through and including `IK_A(k)`. KSODI-Full begins with dyadic
-observation at `R_0`.** It compares two distinguishable monadic
-`Z`-trajectories without merging their event, entity or trajectory identities.
+observation through and including `IK_A(k)`. KSODI-Full begins with relational
+observation at `R_0`.** The R0 gate may evaluate an explicitly declared dyad or
+n-adic constellation without merging event, entity or trajectory identities.
 
 After `Z`, the architecture therefore branches. The KSODI-Full Layer 4 gate
-`R_0` evaluates whether the two distinguishable `Z`-trajectories support
-relational observation, in parallel to their monadic `IK_A(k_A)` and
-`IK_B(k_B)` projections. Only after a stable `R_0` does the KSODI-Full Layer 5
-projection `IK_rel` open. Both `R_0` and `IK_rel` are dyadic and belong to
-KSODI-Full, not KSODI-Standard-Eval. The further R-family follows within the
-KSODI-Full branch and remains staged until separate release decisions are
-complete.
+`R_0` evaluates whether distinguishable `Z` trajectories under an explicit
+dyadic pairing or n-adic constellation map support relational observation, in
+parallel to their monadic IK projections. Only an open numeric canonical
+complete `R_0` gate under the exact required profile admits a compatible
+downstream construct. Current Layer-5 `IK_rel` is dyadic; an n-adic R0 gate does
+not silently open it. R0 and IK_rel belong to KSODI-Full, not
+KSODI-Standard-Eval. The further R-family follows within the KSODI-Full branch
+and remains staged until separate release decisions are complete.
 
 Current public architecture orientation:
 [`KSODI-Architecture_V350.md`](./KSODI-Architecture_V350.md)
@@ -79,8 +92,10 @@ trajectory. Static Operator `I` measures observable information impulse
 relative to its declared visible reference baseline. A direct
 event-to-predecessor information comparison is an optional source-local
 diagnostic, not a competing I coordinate and not `Delta I`. Dyadic or n-adic
-comparison opens only after an explicit pairing and the `R0` gate. Shared
-context does not imply a shared internal state or a merged event trajectory.
+comparison opens only after an explicit pairing or constellation map and an
+open numeric canonical complete `R0` gate under the exact required profile. A
+downstream method must match the admitted cardinality. Shared context does not
+imply a shared internal state or a merged event trajectory.
 
 Terminology note:
 Current public v3.5 wording distinguishes between didactic KSODI-Light labels
@@ -144,9 +159,11 @@ drift observation and, where methodically justified, relational comparison.
 Layer boundary:
 KSODI-Light is a local, human-facing orientation layer. KSODI-Standard-Eval is
 the complete monadic line `K/S/O/D/I -> Z_A(k) -> IK_A(k)` and ends with
-`IK_A(k)`. KSODI-Full begins with dyadic observation at `R_0`; its relational
-projection `IK_rel` opens only after `R_0` is stable. Dyadic analysis must not
-be assumed merely because an interaction took place.
+`IK_A(k)`. KSODI-Full begins with relational observation at `R_0`; the current
+dyadic projection `IK_rel` opens only after an explicit dyadic pairing and an
+open numeric canonical complete `R_0` gate under the exact required profile.
+Relational analysis must not be assumed merely because an interaction took
+place.
 
 ⸻
 
@@ -268,7 +285,9 @@ A shared work area does not create one mixed Z_AB.
 The robots may match execution timing while their KSODI state-space
 trajectories diverge, or show similar state-space movement under different
 timing patterns. This is why relational coherence, geometric coupling and pace
-remain separate parallel questions after stable `R0`. Physical position is
+remain separate parallel questions after an open numeric canonical complete
+`R0` gate under the exact required profile and a cardinality-compatible branch
+contract. Physical position is
 not automatically `R_geom`; it becomes relevant only where an application
 profile explicitly maps spatial observation into the relational feature basis.
 
@@ -337,7 +356,8 @@ e_B(k_B) -> K_B/S_B/O_B/D_B/I_B -> Z_B(k_B) -> IK_B(k_B)
 T_A ----\
          +--> R0(j | pi, p_R0)
 T_B ----/          |
-                   | if stable
+                   | if numeric canonical complete and open
+                   | under the exact required profile
                    +--> IK_rel(j)
                    +--> R_geom(j)  [staged]
                    +--> R_pace(j)  [staged, optional]
@@ -361,7 +381,7 @@ systems A/B or to n-agent constellations.
 
 For each side, the Observer reconstructs a state vector:
 
-Z_H(k_H), \quad Z_M(k_M)
+`Z_H(k_H)`, `Z_M(k_M)`
 
 These vectors do not represent internal cognitive, semantic or model states.
 They summarize what is observable under the declared operator definitions,
@@ -371,7 +391,7 @@ The user interface (UI) is neither a cognitive space nor a direct coupling
 between internal states. Interaction becomes observable through exchanged
 signals and subsequent events:
 
-U_{H\rightarrow M}(j), \quad U_{M\rightarrow H}(j)
+`U_H->M(j)`, `U_M->H(j)`
 
 When a new source-attributed event becomes observable, its static state is
 reconstructed from event-bound, operator-specific measurement bases and
@@ -390,10 +410,12 @@ Previous comparable states enter only when explicitly calculating source-local
 differences, trajectory windows or other declared diagnostics.
 
 The exchanged sequence forms a shared observation corpus or declared window,
-not a shared state and not a shared mind. Individual signals remain
-attributable to their emitting side. Shared material may be visible in the
+not a shared state and not a shared mind. Individual signals retain their
+stable or provisional source attribution; an emitting entity is recorded only
+when established. Shared material may be visible in the
 measurement basis without merging target events or trajectories. Only after
-explicit pairing and stable `R0` may the longitudinal ordering created
+explicit pairing and an open numeric canonical complete `R0` gate under the
+exact required profile may the longitudinal ordering created
 through response, reconstruction and supplementation be investigated as a
 relational pattern that is not reducible to either trajectory alone. Private
 thoughts and internal states remain separate and unobserved.
@@ -413,7 +435,7 @@ Only observable state evolution under a declared observation profile.
 To avoid symbol collision with derived quantities such as `IK` or the
 R-family, KSODI defines the observer-side state vector:
 
-\mathbf{Z}_A(k) = (K_A(k), S_A(k), O_A(k), D_A(k), I_A(k))
+`Z_A(k) = (K_A(k), S_A(k), O_A(k), D_A(k), I_A(k))`
 
 This is not a new operator and not a representation of an internal semantic
 state. It is the reconstructed state of one identified event in one declared
@@ -427,12 +449,9 @@ parallel `Z_B(m)` remains a separate state; there is no implicit shared
 
 When observable states are reconstructed over time, the following become
 meaningful:
-	•	Current state:
-\mathbf{Z}_A(k)
-	•	First difference:
-\Delta\mathbf{Z}_A(k)
-	•	Second difference:
-\Delta^2\mathbf{Z}_A(k)
+	•	Current state: `Z_A(k)`
+	•	First difference: `Delta Z_A(k)`
+	•	Second difference: `Delta2 Z_A(k)`
 
 These are descriptions of observable change, not physical claims and not
 measurements of hidden cognition. The predecessor used by each difference must
@@ -582,14 +601,16 @@ Additional v3.5 boundary:
 	•	KSODI-Light does not contain the KSODI Handshake as an implementation layer
 	•	KSODI Standard-Eval comprises the monadic line `K/S/O/D/I -> Z -> IK`
 	•	Relational, dyadic or n-adic observation begins separately with the `R0` gate and does not belong to Standard-Eval
-	•	`R0` is the numeric Handshake boundary of relational observation;
+	•	`R0` has a typed result status and a separate open/closed/not-evaluable
+		gate state; its open numeric canonical complete gate under the exact
+		required profile is the Handshake boundary of relational observation;
 		a SYN/ACK analogy is functional, not a literal TCP or OSI mapping, and
 		a technical acknowledgement of receipt is not identical with the
 		Z-trajectory comparability gate
 	•	The Handshake is not a sixth operator or a separate score beside `R0`
-	•	`R0` is not coupling; sustained strong coupling requires high
-		`IK_rel` together with high branch-specific R-family evidence across a
-		declared observation window
+	•	`R0` is not coupling; any later coupling claim requires a separately
+		defined conjunction of branch-appropriate evidence, window policy and
+		application profile; one open gate or high branch value is insufficient
 	•	In turn-taking, the receiver may become the next sender; KSODI therefore
 		distinguishes sender-side `K -> S -> O -> D -> I` formation from the
 		receiver-side preferred `I -> D -> O -> S -> K` reconstruction
@@ -615,7 +636,7 @@ Observer architecture:
 Layer 1 - Operators
   K0 / S0 / O0 / D0 / I0
   optional source-local per-operator Delta, Delta2, Sigma and Hangar views
-  S0 may additionally use optional S0_ext / P_dup where explicitly enabled
+  S0 may additionally use optional S0_ext / P_disrupt where explicitly enabled
   partial K0_observable is separately labelled and never complete K0 or complete-Z K
 
 Layer 2 - Z
@@ -631,7 +652,8 @@ Layer 4 - R0 / R_0 gate
   gate based on Z-trajectories for dyadic or n-adic relational observation
 
 Layer 5 - IK_rel
-  dyadic / n-adic relational coherence projection after stable R0
+  current dyadic relational coherence projection after an open numeric
+  canonical complete dyadic R0 under the exact required profile
 
 Layer 6 - R_geom
   staged geometric-coupling branch; not an active public v3.5 formula
@@ -682,7 +704,12 @@ not expected / not required, optional or required and whether the declared
 reference space is available, visible to the evaluator and admissible for the
 evaluation. Missing, invisible, inadmissible or non-required states must not
 collapse into the same `O = 0` reading. The preferred cross-operator visibility
-state is `not_visible_to_evaluator`.
+result is `not_observable`; `not_visible_to_evaluator` remains a retained
+gate-specific reason. Required-but-unavailable, evaluator-invisible or
+evidence-undetermined support maps to `not_observable`. A basis that is not
+expected, optional and absent, inadmissible or empty after admission maps to
+`not_applicable`. Invalid identity, source-need policy, gate state, O profile or
+calculation is a processing failure and produces no valid operator result.
 See the public companion note:
 [`KSODI_Operator-O_Source-Need-Gate_V350.md`](./KSODI-Standard-Eval/Layer-1_KSODI-Operators_V350/KSODI_Operator-O_Source-Need-Gate_V350.md).
 
@@ -697,10 +724,13 @@ admitted reference material.
 
 If a declared I profile requires retrieval, every state other than
 admissible-available interrupts that reference-dependent evaluation path for
-the current event. If no admissible basis can later be reconstructed and no
-separately declared non-retrieval profile applies, the reference-dependent I
-value remains non-reconstructable for that event. It is `not_applicable`, not
-numeric zero, and does not establish that no signal or communication occurred.
+the current event. `missing` and `unavailable` map to `not_observable` because
+the required operation state, channel, result or provenance cannot be
+inspected. `not_requested`, `empty` and `inadmissible` map to `not_applicable`
+because no valid admitted basis exists under that profile. Invalid identity,
+profile, representation or calculation is a processing failure and produces no
+valid operator result. None of these states is numeric zero or evidence that no
+signal or communication occurred.
 
 ⸻
 
@@ -729,7 +759,7 @@ These implications remain hypothetical and are currently under experimental eval
 15.1 Human–Machine and Human–Agent Interaction
 
 If observable interaction trajectories can be described dynamically through
-source-attributed state vectors such as \mathbf{Z}_A(k),
+source-attributed state vectors such as `Z_A(k)`,
 KSODI may provide a structured lens for observing:
 	•	early interaction drift in long conversations
 	•	decreasing context completeness or context provisioning
@@ -790,7 +820,7 @@ One might ask:
 15.4 Governance and Observability
 
 If interaction drift is detectable through first and second differences of
-source-attributed \mathbf{Z}_A(k) trajectories,
+source-attributed `Z_A(k)` trajectories,
 KSODI might provide a minimal formal layer for:
 	•	early anomaly detection
 	•	interaction monitoring
@@ -833,20 +863,24 @@ A visual representation should keep three objects separate:
 
 	•	the distinguishable participants or systems
 	•	the exchanged, observable signals and events
-	•	the Observer that reconstructs separate `Z_i(t)` trajectories
+	•	the Observer that reconstructs separate source-local trajectories such as `Z_H(k_H)` and `Z_M(k_M)`
+
+The Human–AI loop below is one bounded instantiation of the general
+distinguishable-entity schema; H and M label the example and do not define the
+method's entity types.
 
 Compact conceptual sketch:
 
 ```text
               observable turn-taking loop
 
-[ Human H ] -- U_H->M(t) --> [ AI / bot M ]
+[ Human H ] -- U_H->M(j) --> [ AI / bot M ]
      ^                              |
      |                              v
-     '-------- U_M->H(t) -----------'
+     '-------- U_M->H(j) -----------'
 
         external Observer reconstructs:
-        Z_H(t), Z_M(t) as separate trajectories
+        Z_H(k_H), Z_M(k_M) as separate trajectories
 ```
 
 The loop is only a visual metaphor for alternating sender / receiver roles. It
@@ -857,11 +891,11 @@ reconstructions are available to KSODI.
 Historical visual material from the first complete v3.3 Observer
 implementation is preserved here:
 
-- [Historical Observer Assets - v3.3 Implementation / v3.42 Transition Context](./archive/assets-archive/historical-observer-v342/README.md)
-- [score heatmap example](./archive/assets-archive/historical-observer-v342/images/ksodi-metrics-841280d3_Score_Heatmap.png)
-- [operator radar example](./archive/assets-archive/historical-observer-v342/images/ksodi-metrics-841280d3_Operator_Profile__Radar_.png)
-- [scores over time example](./archive/assets-archive/historical-observer-v342/images/ksodi-metrics-841280d3_Scores_Over_Time.png)
-- [3D IK trajectory example](./archive/assets-archive/historical-observer-v342/images/ksodi-metrics-841280d3_3D_IK_Trajectory.png)
+- [Historical Observer Assets - v3.3 Implementation / v3.42 Transition Context](https://github.com/Alkiri-dAraion/KSODI-Public/blob/main/archive/assets-archive/historical-observer-v342/README.md)
+- [score heatmap example](https://github.com/Alkiri-dAraion/KSODI-Public/blob/main/archive/assets-archive/historical-observer-v342/images/ksodi-metrics-841280d3_Score_Heatmap.png)
+- [operator radar example](https://github.com/Alkiri-dAraion/KSODI-Public/blob/main/archive/assets-archive/historical-observer-v342/images/ksodi-metrics-841280d3_Operator_Profile__Radar_.png)
+- [scores over time example](https://github.com/Alkiri-dAraion/KSODI-Public/blob/main/archive/assets-archive/historical-observer-v342/images/ksodi-metrics-841280d3_Scores_Over_Time.png)
+- [3D IK trajectory example](https://github.com/Alkiri-dAraion/KSODI-Public/blob/main/archive/assets-archive/historical-observer-v342/images/ksodi-metrics-841280d3_3D_IK_Trajectory.png)
 
 These images are historical work artifacts, not current v3.5 diagrams. They
 are valuable because observing the first full infrastructure helped clarify why
@@ -881,9 +915,11 @@ Minimal observer-side representation:
 
 The minimal description is:
 
-U_{H\rightarrow M}(t), U_{M\rightarrow H}(t)
-\longrightarrow Observer
-\longrightarrow Z_H(t), Z_M(t)
+```text
+U_H->M(j), U_M->H(j)
+  -> external Observer
+  -> Z_H(k_H), Z_M(k_M)
+```
 
 The trajectories remain monadic at this point. Relational evaluation opens only
 through the separately defined gate `R0`, followed where justified by

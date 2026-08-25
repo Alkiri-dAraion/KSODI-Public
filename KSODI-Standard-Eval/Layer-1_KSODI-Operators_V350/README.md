@@ -1,9 +1,11 @@
 # Layer 1 — KSODI Operators
 
-Status: canonical public v3.50 KSODI-Standard-Eval operator line. All five operator
-files are released as public method documentation. Release status does not
-turn optional views into mandatory calculations or make staged later research
-operational.
+Status: canonical public v3.50 KSODI-Standard-Eval operator line. All five
+current method/implementation-companion packages are released; O additionally
+includes its Source-Need Gate. Each method remains authoritative and
+carrier-neutral, while every implementation companion remains conditional and
+subordinate. Release status does not turn optional views into mandatory
+calculations or make staged later research operational.
 
 ## What this folder contains
 
@@ -36,9 +38,9 @@ they do not change the source identity or layer of the static value.
 
 Entity `A` and Entity `B` remain distinguishable. Sender and receiver are
 roles inside a declared exchange, not stable entity types. Relational
-comparison begins only at the separately declared `R_0` gate after sufficiently
-established, distinguishable monadic `Z` trajectories under a declared
-observation window and an explicit pairing rule are available.
+comparison begins only after an explicit dyadic pairing or n-adic constellation
+map and an open numeric canonical complete `R_0` gate under the exact required
+profile. Every downstream construct must match the admitted cardinality.
 
 ## Operators and companion
 
@@ -64,6 +66,42 @@ observation window and an explicit pairing rule are available.
   - [`I0` Implementation Companion](./KSODI_Operator-I_Implementation-Companion_V350.md) — conditional
     Conversation-/Retrieval-oriented operationalization; not a sixth operator
     and not a replacement for the carrier-neutral method
+
+## Shared measurement and result discipline
+
+Each operator uses its own declared, versioned measurement basis:
+
+| Operator | Required basis | Boundary |
+| --- | --- | --- |
+| `K` | non-empty expected context-requirement set, admissible scope and selected availability relation | stored or visible context is not automatically target- or receiver-accessible context |
+| `S` | structural profile, segmenter, required relations, active components and weights | structure is not grounding, meaning or receiver understanding |
+| `O` | Source-Need Gate and, where numeric O may open, a visible admissible non-empty reference space | required-but-unavailable support is not low O |
+| `D` | carrier, segmentation, detector, local-support/dispersion and normalization profile | clarity is not grounding, context fit or Shannon capacity |
+| `I` | visible admitted static information baseline and representation profile | retrieval is profile-dependent; a predecessor diagnostic is not canonical I or `Delta I` |
+
+The common external Layer-1 result handed toward Z is:
+
+```text
+operator_result_status in {
+  numeric,
+  not_selected,
+  not_observable,
+  not_applicable
+}
+```
+
+Every successful applicable finite calculation emits `numeric` with
+`result_value in [0,1]`. Required basis or evidence that exists or is expected
+but cannot be inspected maps to `not_observable`. Absence of a valid
+operator-domain basis maps to `not_applicable`; elective omission maps to
+`not_selected`. Invalid identity, profile, policy, configuration, attribution,
+weights or calculation is a processing failure and produces no valid operator
+result. None of these conditions may be encoded as numeric zero merely to fill
+a coordinate.
+
+This is the current Layer-1 output contract. The separately released public
+Layer-2 Z file remains authoritative for its own public reference state; this
+README does not silently replace that file with a newer private revision.
 
 ## Reader path inside each operator
 
@@ -147,8 +185,10 @@ itself prove acknowledgement, meaning, intent, attack or causal coupling.
 Two robots may exchange well-formed signals while their spatial trajectories
 diverge, or remain geometrically close while their response pace separates.
 This motivates keeping staged `R_geom` and optional staged `R_pace` as
-parallel later research branches after stable `R_0`. Neither is a Layer-1
-operator, motion controller or physical safety system.
+parallel later research branches after an open numeric canonical complete
+`R_0` gate under the exact required profile and a cardinality-compatible
+branch contract. Neither is a Layer-1 operator, motion controller or physical
+safety system.
 
 ## Indices, comparability and optional views
 
@@ -186,9 +226,11 @@ Read together with:
 Layer 1 ends with attributable operator observations. The complete monadic
 KSODI-Standard-Eval line continues through `Z` and monadic `IK`. `R_0` is a
 separate gate based on distinguishable `Z` trajectories plus an explicit
-pairing or constellation rule. After stable `R_0`, `IK_rel`, staged
-`R_geom` and optional staged `R_pace` remain parallel branch calculations
-with their own bases and profiles.
+dyadic pairing or n-adic constellation rule. After an open numeric canonical
+complete `R_0` gate under the exact required profile, cardinality-compatible
+relational constructs may open. Current `IK_rel` is dyadic; an n-adic R0 gate
+does not silently open it. `IK_rel`, staged `R_geom` and optional staged
+`R_pace` remain parallel branch calculations with their own bases and profiles.
 
 No Layer-1 operator, single repeated signal, visible shared context or
 operator-specific diagnostic establishes relational coherence, resonance,
