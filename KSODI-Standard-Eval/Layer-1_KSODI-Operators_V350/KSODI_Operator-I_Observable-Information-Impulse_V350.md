@@ -1,9 +1,11 @@
 # KSODI Operator I0 - Observable Information Impulse v3.50
 
-Status: public v3.50 reference release, revised 2026-08-19.
-This file is the current public method definition for Operator I. It remains open to documented review and later versioned refinement.
+Status: public v3.50 reference release, revised 2026-08-19 and clarified by
+identity, editorial and typed-missingness errata on 2026-08-25. This file is
+the current public method definition for Operator I. It remains open to
+documented review and later versioned refinement.
 
-Layer: KSODI Standard-Eval Layer 1. A static `I0` value belongs to one explicitly identified, source-attributed target event. Source-local change, acceleration and window diagnostics remain monadic Observer views. Relational projection or comparison beyond the gate begins only after explicit pairing, stable `R0` and a separately declared later-layer definition.
+Layer: KSODI Standard-Eval Layer 1. A static `I0` value belongs to one explicitly identified, source-attributed target event. Source-local change, acceleration and window diagnostics remain monadic Observer views. Relational projection or comparison beyond the gate begins only after explicit pairing, an open numeric canonical complete `R0` gate under the exact required profile and a separately declared later-layer definition.
 
 Implementation boundary: read the public [KSODI Implementation Guardrails](../../IMPLEMENTATION_GUARDRAILS.md) and the adjacent [Operator I Implementation Companion](./KSODI_Operator-I_Implementation-Companion_V350.md). The companion is conditional implementation guidance; this method file remains authoritative.
 
@@ -41,7 +43,8 @@ Shared context, time, task or environment does not merge source trajectories.
 The formulas below therefore keep the target event and every monadic
 predecessor inside the same declared trajectory.
 
-After stable `R0`, a separately defined relational comparison of
+After an open numeric canonical complete `R0` gate under the exact required
+profile, a separately defined relational comparison of
 distinguishable I trajectories could be specified as a later-layer diagnostic.
 No such operator-specific relational I view is active in this v3.50 operator
 file. It belongs to v3.60 Future Work, does not turn Operator I into a dyadic
@@ -57,7 +60,9 @@ The mathematical form does not create the semantic boundary. The semantic bounda
 
 The formula is only correct if it respects these rules:
 
-- the target event remains attached to one `entity_id` and one `trajectory_id`
+- the target event remains attached to one stable or explicitly provisional
+  `source_entity_id`, one `source_attribution_status` and one `trajectory_id`;
+  `emitting_entity_id` is retained separately only when established
 - local movement is measured only against the same trajectory's predecessor
 - a cross-entity comparison is not silently treated as a monadic difference
 - `not_applicable` is not silently encoded as `0`
@@ -110,16 +115,16 @@ or LLMs.
 ### 1.2 Unknown Morse-like Signal
 
 ```text
-entity_A = signal-emitting system
+observed_source_A = stable or explicitly provisional signal source
 entity_B = receiving or observing system
-target_event = one source-attributed signal burst emitted by entity_A
+target_event = one signal burst attributed to observed_source_A
 observation_unit = one declared segmented burst or symbol group
 measurement_basis = a visible, admissible baseline of prior signals, known code patterns or declared reference material
 trajectory_A and trajectory_B remain distinguishable
 sender and receiver remain roles of one declared transmission edge
 ```
 
-Operator I can evaluate the single signal event without a second trajectory. It asks whether the burst creates observable information difference relative to the declared baseline. Repetition may keep static I low while remaining security-relevant as a recurrence pattern in source-local sequence, window or Hangar views. A second trajectory is required only for a later relational question, such as whether a distinguishable receiver answers in a paired pattern after stable `R0`.
+Operator I can evaluate the single signal event without a second trajectory. It asks whether the burst creates observable information difference relative to the declared baseline. Repetition may keep static I low while remaining security-relevant as a recurrence pattern in source-local sequence, window or Hangar views. A second trajectory is required only for a later relational question, such as whether a distinguishable receiver answers in a paired pattern after an open numeric canonical complete `R0` gate under the exact required profile.
 
 This instantiation requires a declared detector and segmentation rule before the burst can be treated as an event, plus a carrier-appropriate representation, information-unit rule and baseline. I does not automatically discover Morse code, decode an unknown convention or prove meaning. Detectability and reconstructability belong to D; information difference relative to a baseline belongs to I. The example is a bounded instantiation, not empirical validation or domain equivalence.
 
@@ -166,9 +171,11 @@ does not fill the I coordinate of `Z`, and is not the same operation as
 
 ### 2.1 Atomic Evaluation Unit and Identity
 
-The static evaluation target is one source-attributed event emitted by one
-declared entity along one declared trajectory. Where several entities are
-present, their trajectories remain distinguishable.
+The static evaluation target is one event attributed to one stable or
+explicitly provisional source along one declared trajectory. A confirmed
+emitting entity is recorded separately only when established. Where several
+entities or observed sources are present, their trajectories remain
+distinguishable.
 
 Their events may share an interaction space but remain two source-attributed
 monadic trajectories:
@@ -179,14 +186,16 @@ T_B = (e_B(1), e_B(2), ..., e_B(k_B))
 ```
 
 Two corresponding events may share a declared observation or exchange scope.
-They do not share target-event, emitting-entity, trajectory or local-position
-identity.
+They do not share target-event, source-attribution, emitting-entity,
+trajectory or local-position identity.
 
 The canonical evaluation identity distinguishes at least:
 
 - observation or interaction scope;
 - target event;
-- emitting entity;
+- stable or explicitly provisional source identity;
+- source-attribution status;
+- emitting entity, if established;
 - source trajectory and local trajectory position;
 - visible context events;
 - I measurement basis and profile;
@@ -226,7 +235,7 @@ Every predecessor below is local to the same declared trajectory. A timestamp `t
 | `K0` | context completeness | not information impulse |
 | `S0` | structural coherence | not information impulse |
 | `O0` | visible grounding and traceability | its evidence space is not automatically the I baseline |
-| `D0` | detectability and reconstructability | an event must be observable before I can evaluate it |
+| `D0` | discernibility and reconstruction support | D evaluates the carrier conditions of an admitted signal; it does not replace I's reference-relative information question |
 
 Mathematical symbols are declared shorthand for precisely specified semantic objects and operations. KSODI may choose names such as `I_ref`, `J_ref` or `C_seq,I`; mathematics does not prescribe those names. Legitimacy comes from an explicit semantic question, domain, range, applicability rule, versioned profile and reproducible calculation. Familiar constructions do not validate a new application automatically. Method-specific notation does not make a construction arbitrary, exotic or sophisticated by itself.
 
@@ -320,6 +329,22 @@ separately declared non-retrieval profile applies, `I_ref,A(k_A)` remains
 non-reconstructable for that event. None of these states proves that no signal
 or communication occurred.
 
+For a profile that requires retrieval, retain the retrieval reason and map it
+to the common Layer-1 result family as follows:
+
+| Retrieval state | Common I result consequence |
+| --- | --- |
+| `missing` | `not_observable`: the required operation state or provenance cannot be reconstructed by the evaluator |
+| `not_requested` | `not_applicable`: a retrieval required by the selected profile was not performed |
+| `unavailable` | `not_observable`: the required operation, channel or result is unavailable to the evaluator |
+| `empty` | `not_applicable`: the completed operation produced no candidate basis |
+| `inadmissible` | `not_applicable`: no returned candidate may enter the declared baseline |
+| `admissible_available` | the numeric path may open if every remaining basis and representation condition succeeds |
+
+This mapping applies only when retrieval is constitutive for the selected I
+profile. A non-retrieval profile is not made non-numeric by
+`not_requested`.
+
 ### 3.2 Versioned I Profile
 
 ```text
@@ -365,14 +390,40 @@ app_ref,A(k_A)
 
 **Semantic reading.** The gate asks whether any retrieval required by the profile has an admissible result and whether the selected baseline and both vector representations exist in a form on which the declared distance is defined. It does not ask whether the event is correct, useful or valuable. A closed retrieval-dependent gate interrupts this evaluation path; it does not describe a communication-free state.
 
-If the gate is closed:
+The common external Layer-1 result handed to Z is:
 
 ```text
-J_ref,A(k_A) = not_applicable
-I_ref,A(k_A) = not_applicable
+operator_result_status in {
+  numeric,
+  not_selected,
+  not_observable,
+  not_applicable
+}
 ```
 
-`not_applicable` means the required basis or operation is absent. It is distinct from `not_observable`, `not_selected` and numeric zero.
+A successful finite calculation maps to `numeric` and carries
+`result_value in [0,1]`. If the gate is closed, the reason determines the
+common non-numeric result:
+
+```text
+required basis, operation or provenance exists or is expected
+but is unavailable to the evaluator
+  -> J_ref,A(k_A) = not_observable
+  -> I_ref,A(k_A) = not_observable
+
+required basis or operation does not exist under the selected profile,
+or a completed selection/retrieval produces no admissible non-empty basis
+  -> J_ref,A(k_A) = not_applicable
+  -> I_ref,A(k_A) = not_applicable
+
+I coordinate not selected by the declared view
+  -> I_ref,A(k_A) = not_selected
+```
+
+Malformed identity, invalid profile or calculation failure is a processing
+failure and produces no valid operator result. It does not become another Z
+status. `not_applicable`, `not_observable`, `not_selected` and numeric zero
+remain distinct.
 
 Embeddings are one v3.50 vector-compatible profile, not the architecture-independent definition for every carrier. Model, version, preprocessing and chunking changes must remain recoverable.
 
@@ -422,12 +473,17 @@ carrier-appropriate segmentation and equivalence method. In a language
 profile, these units may be semantic equivalence classes rather than raw token
 counts; that example does not define every carrier.
 
-If `N_total(e_A(k_A)) = 0`, the declared count bounds fail, the concept method
-is unavailable or the required baseline is not applicable:
+If `N_total(e_A(k_A)) = 0`, the declared count bounds fail or the required
+count basis does not exist under the selected profile:
 
 ```text
 G_ref,A(k_A) = not_applicable
 ```
+
+If required count evidence exists or is expected but is unavailable to the
+evaluator, `G_ref,A(k_A) = not_observable`. Invalid concept profiles and
+calculation failures remain processing failures rather than operator-result
+states.
 
 ### 4.4 Reference-Relative Formula
 
@@ -441,7 +497,7 @@ I_ref,A(k_A)
 
 with `eta_ref in [0,1]` and `I_ref,A(k_A) in [0,1]`.
 
-**Semantic question.** What information impulse results when declared content share and directional difference are combined? The convex weight preserves `[0,1]` when both components apply. `eta_ref` is a declared and versioned application choice, not a universal constant or a value silently learned from the target event. If either mandatory component is inapplicable, canonical `I_ref` is `not_applicable`; no silent renormalization is active.
+**Semantic question.** What information impulse results when declared content share and directional difference are combined? The convex weight preserves `[0,1]` when both components apply. `eta_ref` is a declared and versioned application choice, not a universal constant or a value silently learned from the target event. If either mandatory component is non-numeric, canonical `I_ref` retains the mapped common result status and its specific reason; no silent renormalization is active.
 
 Conditional retrieval-backed proxies and controlled implementation fallbacks
 belong in separate implementation guidance. They do not redefine this
@@ -473,7 +529,7 @@ not_applicable != 0
 
 ## 5. Edge Cases, Privacy and Retention
 
-Repeated low-I events remain attributable and may form contact-attempt, attack or anomaly patterns in sequence, window or Hangar views. Empty or invisible bases, zero denominators and incompatible representations remain typed non-numeric states; they are not low values.
+Repeated low-I events remain attributable and may form contact-attempt, attack or anomaly patterns in sequence, window or Hangar views. Empty and invisible bases remain distinguishable typed non-numeric states; zero denominators and inapplicable representations are not low values, while invalid profiles or calculations remain processing failures.
 
 ### 5.1 Privacy and Retention Boundary
 
@@ -730,8 +786,6 @@ substitute for applicability status.
 
 ## 7. Sigma and Sigma(Hangar)
 
-)
-
 Windows and aggregations begin here, not inside `C_seq,I`.
 
 **Set semantics.** Each `W_app` formula selects only positions for which the corresponding static, first-difference or second-difference data type is applicable and comparable.
@@ -786,8 +840,9 @@ Standard-Eval can evaluate and monitor one source-attributed signal trajectory w
 `I0`, `C_seq,I`, `Delta I`, `Delta2 I`, `I Sigma(W)` and
 `I Sigma(Hangar)` describe monadic operator behavior. A relational comparison
 requires distinguishable source trajectories, explicit pairing, compatible
-profiles and applicable values, stable `R0` and a separately declared
-later-layer construct.
+profiles and applicable values, an open numeric canonical complete `R0` gate
+under the exact required profile and a separately declared later-layer
+construct.
 
 Operator I does not define coupling, resonance, mutual understanding or
 relational quality. This v3.50 section records the boundary but does not define
@@ -816,6 +871,11 @@ if p_I requires retrieval:
   := ret_status,A(k_A) = admissible_available
 otherwise:
   retrieval_basis_ok,A(k_A) := true
+
+if p_I requires retrieval:
+  missing or unavailable -> operator_result_status = not_observable
+  not_requested, empty or inadmissible
+    -> operator_result_status = not_applicable
 
 # declared static I baseline
 Ref_A(k_A | p_I)
@@ -856,9 +916,10 @@ if J_ref,A(k_A) and G_ref,A(k_A) are applicable:
   I_ref,A(k_A)
   = eta_ref * G_ref,A(k_A)
     + (1 - eta_ref) * J_ref,A(k_A)
+  operator_result_status = numeric
 
 otherwise:
-  I_ref,A(k_A) = not_applicable
+  I_ref,A(k_A) retains the mapped common non-numeric result status and reason
 
 I_A(k_A) := I_ref,A(k_A)
 
@@ -959,7 +1020,7 @@ otherwise:
 | Variable | Semantic role |
 | --- | --- |
 | `n` / `k_A` / `k_B` / `j` | global event, source-local trajectory and relational pairing indices |
-| `e_A(k_A)` | target event at local position `k_A` in entity A's trajectory |
+| `e_A(k_A)` | target event at local position `k_A` in the trajectory of stable or provisional source A |
 | `V_A(k_A)` | visible candidate baseline material before I-profile selection |
 | `RET_A(k_A)` | raw result of a completed retrieval operation where retrieval is used; `empty` is not a communication state |
 | `ret_status,A(k_A)` | typed retrieval outcome: missing, not requested, unavailable, empty, inadmissible or admissible-available |
@@ -967,6 +1028,7 @@ otherwise:
 | `p_I` | versioned I profile, including selection, retrieval and applicability rules |
 | `Ref_A(k_A \| p_I)` | selected, admissible and evaluator-visible I baseline |
 | `app_ref,A(k_A)` | applicability of the admitted I baseline and required representations |
+| `operator_result_status` | common Layer-1 result: numeric, not selected, not observable or not applicable |
 | `emb(.)` | versioned vector-profile embedding function; not universal carrier definition |
 | `emb_Ref_A(k_A)` | admitted reference-space representation under the vector profile |
 | `d_cos` | normalized cosine distance between two applicable vector representations |
