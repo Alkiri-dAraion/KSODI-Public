@@ -1,520 +1,745 @@
 # KSODI Operator O0 - Observable Grounded Objectivity v3.50
 
-Layer: KSODI Standard-Eval operator. Static `O0` belongs to Layer 1. Operator-level Delta / Delta2, Sigma and Hangar views may observe grounding, traceability and applicability movement over time. Relational feedback and controller logic belong outside the static Layer-1 operator definition.
+Status: public v3.50 reference release, clarified and extended on 2026-08-25
+by the jointly reviewed reader-first method, typed-result contract and
+Source-Need Gate. This file is the authoritative carrier-neutral definition
+of Operator O.
 
-## 1. Definition
+Layer: KSODI Standard-Eval Layer 1. A static `O0` value belongs to one
+explicitly identified, source-attributed target event. Static O and all
+source-local O trajectory, window and Hangar views remain strictly monadic.
 
-`O0` measures to what extent an answer, signal or response is contextually grounded and traceable relative to an explicit visible reference space.
+Semantic applicability companion:
+[`KSODI_Operator-O_Source-Need-Gate_V350.md`](./KSODI_Operator-O_Source-Need-Gate_V350.md).
 
-In the RAG-oriented default case, the visible reference space is the provided retrieval set:
+Implementation companion:
+[`KSODI_Operator-O_Implementation-Companion_V350.md`](./KSODI_Operator-O_Implementation-Companion_V350.md)
+(public conditional guidance; method/implementation alignment reviewed
+2026-08-25).
 
-```text
-Ref = {d_1, ..., d_m}
-```
+## 0. What Operator O is and what it does
 
-where `d_i` denotes one visible retrieval document, chunk, tool output or evidence element under the active evaluation profile.
+Operator `O` asks one bounded grounding question:
 
-`O0` does not measure:
+> Given one identified target event and one declared reference space, to what
+> extent is the event observably supported by and traceable to that reference
+> space under the selected O profile?
 
-- truth in general
-- general answer quality
-- world knowledge
-- usefulness
-- compliance
-- alignment
+O does not decide whether the reference material is universally true, complete
+or valuable. It does not measure general correctness, usefulness, intelligence,
+integrity, compliance, causal origin, shared understanding or human worth.
 
-It measures grounding in the declared visible context only.
+Before a numeric O value can exist, the separate O Source-Need Gate asks:
 
-Paper-safe shorthand:
+- Is reference material not expected, optional or required for this event?
+- Is a declared reference space available?
+- Is it visible to the evaluator?
+- Is it admissible for this evaluation?
+- Is the admitted reference space non-empty?
 
-```text
-O0 does not ask whether an answer is true in the world. It asks whether a claim is grounded relative to the explicit reference space used for evaluation.
-```
+Only after those questions open the numeric path does O examine observable
+grounding and traceability. A missing, invisible or inadmissible reference
+space is therefore a typed applicability condition, not low grounding and not
+numeric zero.
 
-## 2. Eval Scope
+### 0.1 Minimal practical reading
 
-Inputs:
+> Can observable parts of this one target event be connected to the declared
+> reference material admitted for exactly this evaluation?
 
-- answer text `a`
-- visible reference space / retrieval set `Ref = {d_1, ..., d_m}`
-- optional tool outputs, only if included in the visible reference space
-- optional web sources, only if they are visible, versioned and declared as part of the evaluation context
-- embedding model `e(.)`
-- alignment threshold `tau_O`
-- weights `alpha_O`, `beta_O`, optional `gamma_O`
-- sentence segmentation policy
-- attribution detector policy
+A high applicable value means that the selected O profile finds strong visible
+support or traceability. A low applicable value means that the admitted
+reference space offers weak observable support under that profile. A
+non-numeric state means that the grounding question could not validly be
+calculated; it does not mean that grounding was calculated and found absent.
 
-If no retrieval, document, tool output, web source or other declared reference space is present:
+### 0.2 How to read this file
 
-```text
-O0 = not_applicable
-```
+- New readers may begin with Sections 0-2, the interpretation in Section 4 and
+  the relational boundary in Section 8.
+- Method reviewers should follow the complete semantic and mathematical path
+  through Sections 2-9.
+- Implementers must also read the Source-Need Gate and the separate
+  implementation companion named in Section 10.
 
-or equivalently in compact table form:
+The order is deliberate: observable question, two bounded examples, identity
+and topology, basis and applicability, calculation, movement, pattern and only
+then the relational boundary.
 
-```text
-O0 = N/A
-```
+## 1. Bounded Application Examples
 
-In this case, low or missing `O0` must not be interpreted as model failure.
+The examples map two domains onto the same canonical question. They are
+explanatory instantiations, not competing definitions, automatic domain
+translations or empirical validation.
 
-State-vector note:
+### 1.1 Human-Chatbot Interaction
 
-`O0 = N/A` must be handled by an explicit applicability / masking policy. It must not be silently coerced to `0` inside `Z(t)`, `OΣ(W)` or downstream observer views unless a versioned implementation profile declares and justifies that choice.
-
-For human-readable reporting, applicable operators may be normalized over the active component set, but this must be reported as an applicability-aware view, not as if the missing `O0` value had been observed.
-
-Companion note:
-
-[`KSODI_Operator-O_Source-Need-Gate_V350.md`](./KSODI_Operator-O_Source-Need-Gate_V350.md) records the public
-v3.50 source-need / reference-space applicability gate for `O0`.
-
-## 3. Components
-
-### 3.1 Retrieval Alignment
-
-Raw cosine similarity is not automatically in `[0,1]`. It may lie in `[-1,1]`. Therefore the O-operator must convert retrieval similarity into a non-negative support signal before it contributes to `Z(t)`.
-
-Raw retrieval similarity:
+Assume two stable entities:
 
 ```text
-sim_Ref(a) = max_{d_i in Ref} cos(e(a), e(d_i))
+entity_A = human
+entity_B = chatbot
+target_event = one source-attributed contribution e_A(k_A)
+interaction_scope = one declared conversation or exchange
+trajectory_A and trajectory_B remain distinguishable
 ```
 
-Default positive-support mapping:
+For one chatbot contribution, a declared reference space may contain admitted
+documents, retrieval results, visible tool outputs, web material, policies or
+conversation elements. The Source-Need Gate first determines whether such
+material is expected and usable for this target event. If the gate opens, a
+declared O profile may examine support relations, attribution traces or other
+profile-valid grounding evidence.
+
+The human contribution and chatbot contribution receive separate O
+evaluations. Material from one contribution may be admitted to the other's
+reference space where the profile permits it, but it does not become part of
+the other target event or merge the two trajectories.
+
+A well-grounded response can be terse or inelegant. An articulate response can
+remain weakly grounded. Neither result proves usefulness, truth, intent,
+agreement or successful communication.
+
+The conditional Conversation-/RAG-oriented formulas belong in the separate
+implementation companion. They instantiate this method; they do not define O
+for every carrier.
+
+### 1.2 Unknown Morse-Like Signal
+
+An Observer detects repeated marks and gaps from a provisionally attributed
+observed source `U`:
 
 ```text
-A_ret(a) = clip(sim_Ref(a), 0, 1)
+entity_or_observed_source = U
+target_event = one source-attributed signal unit e_U(k_U)
+observation_unit = one declared pulse, sign group or transmission segment
+reference_space = admitted codebooks, known signal patterns or documented
+                  transmission conventions
+trajectory_U remains distinguishable from every receiving or replying entity
 ```
 
-`A_ret(a)` measures global thematic proximity between the answer and the visible reference space.
+If the selected policy does not expect a reference for the initial detection,
+numeric O is `not_applicable`; I and D may still observe the impulse and its
+discernibility. If a codebook or comparison corpus is required but missing,
+invisible or inadmissible, numeric O also remains closed. If a non-empty,
+evaluator-visible and admissible reference space exists, a domain-specific O
+profile may evaluate how strongly the target signal is traceable to it.
 
-It is coarse and global: one strongly matching passage can raise the value even if individual unsupported claims remain.
+A close match to a codebook can support grounding relative to that codebook.
+It does not prove who emitted the signal, what was intended, whether anyone
+received it, whether a later signal is an acknowledgement or whether the
+entities are coupled. Those claims require different evidence and, where
+relational, later gated constructs.
 
-Implementation note:
+This example requires a declared signal segmentation rule, reference-admission
+policy, trace relation and detector profile. KSODI does not automatically
+decode an unknown convention.
 
-If an implementation uses a different mapping, for example `(1 + cos) / 2`, the mapping must be declared as part of the O implementation profile because it changes the semantics of weak or neutral similarity.
+## 2. Canonical Definition, Scope and Boundaries
 
-### 3.2 Evidence Trace
+For one source or entity `A`, one target event `e_A(k_A)`, one declared
+reference space `Ref_A(k_A)` and one versioned O profile `p_O`:
 
 ```text
-B(a) = clip(n_attrib / (n_sent + 1), 0, 1)
+O0_A(k_A | Ref_A(k_A), p_O)
+= profile-defined observable grounding and traceability
+  of e_A(k_A) relative to Ref_A(k_A)
 ```
 
-`B(a)` measures visible evidence, derivation or source markers.
-
-It is not a style score. It only captures visible trace structures.
-
-Examples of attribution markers may include:
-
-- explicit source references
-- citation markers
-- document IDs
-- phrases such as "according to the provided document"
-- visible derivation markers
-- tool-output references where the tool output belongs to the visible reference space
-- web-source references where the source is visible to the evaluator
-
-The exact detector definition belongs to the implementation profile.
-
-### 3.3 Unsupported Penalty
-
-Optional sentence-level detector.
-
-For each sentence `s_j`:
+When applicable:
 
 ```text
-sim_Ref(s_j) = max_{d_i in Ref} cos(e(s_j), e(d_i))
-align_Ref(s_j) = clip(sim_Ref(s_j), 0, 1)
+O0_A(k_A | Ref_A(k_A), p_O) in [0,1]
 ```
 
-Then, for `n_sent > 0`:
+Otherwise O produces a typed non-numeric state.
+
+The carrier-neutral semantic core is:
+
+1. identify one target event and its attributed source trajectory;
+2. declare why reference material is or is not needed;
+3. admit one visible, non-empty reference space under a versioned policy;
+4. apply one versioned O profile that defines observable grounding and
+   traceability relations;
+5. retain value, applicability and provenance with the target event.
+
+O0 does not measure:
+
+- universal truth or general factual correctness;
+- the intrinsic quality of the reference space;
+- context completeness, structural order, signal clarity or information
+  impulse;
+- hidden intention, private internal state or causal origin;
+- mutual understanding, coupling, resonance or relational quality;
+- general human or system worth.
+
+The five KSODI base operators are semantically distinct and functionally
+non-redundant. They are not claimed to be mathematically orthogonal or
+statistically independent.
+
+### 2.1 Atomic Evaluation Unit and Identity
 
 ```text
-P_uns(a)
-= #{s_j : align_Ref(s_j) < tau_O AND no attribution} / n_sent
+target_event_id = event_A_42
+source_entity_id = entity_A
+source_attribution_status = confirmed
+emitting_entity_id = entity_A, if established
+trajectory_id = trajectory_A_01
+trajectory_index = k_A
+context_event_ids = [visible_context_ids]
+reference_space_id = ref_A_42
+source_need_policy_id = p_G_O_id
+operator_profile_id = p_O_id
 ```
 
-Default: disabled, with `gamma_O = 0`.
+The target event, visible context, emitting or provisionally attributed source,
+trajectory and admitted reference elements remain distinct objects.
 
-`P_uns(a)` is not redundant with `A_ret(a)`.
+Entity `B` is not required to calculate `O0_A(k_A)`. B may be an interaction
+partner, receiver, later sender or provider of visible reference material
+without becoming part of A's target identity.
 
-| Component | Level | Measures |
-| --- | --- | --- |
-| `A_ret(a)` | global answer level | thematic proximity to reference space |
-| `P_uns(a)` | sentence level | local unsupported claims |
+Exactly one declared numeric O profile may fill the O coordinate of one
+concrete five-dimensional `Z_A(k_A)` view. Alternative profiles remain
+separately named and recoverable.
 
-Example: an answer can be globally close to the retrieval while still containing one unsupported sentence. `A_ret(a)` can remain high, while `P_uns(a)` catches the local issue.
-
-If `n_sent = 0`, the evaluation unit must be handled by the active answer-validity or empty-output policy. Do not divide by zero and do not invent unsupported-sentence counts.
-
-## 4. Minimal Formula
-
-Default Standard-Eval formula:
+#### 2.1.1 Canonical Index Discipline
 
 ```text
-O0(a)
-= clip(alpha_O * A_ret(a)
-       + beta_O * B(a),
-       0, 1)
+n    = global event index in the declared observable event stream
+k_A  = local position inside trajectory A
+k_B  = local position inside trajectory B
+j    = later relational exchange or paired-evaluation index
+
+pi(j) = (k_A(j), k_B(j))
 ```
 
-Start values:
+In this file, `k_A - 1` always denotes A's preceding comparable trajectory
+position. It never silently selects the preceding global event or an event
+from B. The symbol `t` may be used only as an explicitly declared timestamp
+or mapped implementation step.
+
+### 2.2 Static and Source-Local O Views Are Strictly Monadic
 
 ```text
-alpha_O = 0.7
-beta_O  = 0.3
+O0_A(k_A | Ref_A(k_A), p_O_A)
+O0_B(k_B | Ref_B(k_B), p_O_B)
 ```
 
-These start values are workbench defaults, not empirical final weights.
+Each value remains attached to its own target event, source identity,
+trajectory, reference-space provenance and profile. A shared room, task,
+conversation, timestamp, exchange, environment or document does not merge the
+values and does not create a dyadic O value.
 
-## 5. Extended Formula
+Visible material from outside trajectory A may enter `Ref_A(k_A)` when the
+selected policy permits it. The resulting O value still belongs to
+`e_A(k_A)`.
 
-Optional precision variant:
+### 2.3 Semantic Distinctness and Symbol Discipline
 
-```text
-O0_ext(a)
-= clip(alpha_O * A_ret(a)
-       + beta_O * B(a)
-       - gamma_O * P_uns(a),
-       0, 1)
-```
-
-Default:
-
-```text
-gamma_O = 0
-```
-
-Use the extended variant when sentence-level unsupported claims matter and the additional computation is acceptable.
-
-## 6. Interpretation
-
-| Value | Meaning |
+| Coordinate | O boundary |
 | --- | --- |
-| `approx 1` | strongly grounded and traceable relative to the visible reference space |
-| `approx 0.5` | partly grounded |
-| `< 0.4` | weakly grounded, drift-prone or unsupported in the visible reference space |
-| `N/A` | no applicable visible reference space or grounding policy |
+| `K` | K observes declared context availability and completeness. O evaluates support and traceability relative to an admitted reference space where a source need exists. K does not open or close O numerically. |
+| `S` | S observes structural coherence, segmentation, boundaries and order. A citation marker may support both structure and attribution, but profiles must expose and control that overlap. |
+| `D` | D observes discernibility and reconstruction support. A clear signal may remain ungrounded; a grounded event may remain hard to reconstruct. |
+| `I` | I observes information impulse relative to its basis. A repeated event may carry low I while remaining strongly grounded, or high I while its source remains unresolved. |
 
-The values do not prove truth. They describe visible grounding conditions.
+The O reference space and an I baseline may contain some of the same visible
+material. Admission to one does not imply admission to the other.
 
-## 7. Fairness Rule
+Use `Ref` for reference-space notation. Reserve `R0`, `R_geom`,
+`R_pace` and other R-prefixed names for relational or R-family constructs.
 
-If `K0(A) = 0`, meaning no data, retrieval assets or reference-space elements were provided, a low or missing `O0` must not be interpreted as model failure.
+### 2.4 Coordinate Order and Directed Process Topologies
 
-Setup issue and answer grounding must remain separated:
+```text
+Z_A(k_A) = (K_A, S_A, O_A, D_A, I_A)
+```
 
-| Level | Question |
+This is a coordinate order, not a causal formula chain.
+
+```text
+sender-side formation:        K -> S -> O -> D -> I
+receiver-side reconstruction: I -> D -> O -> S -> K
+```
+
+In sender-side formation, O marks grounding or reference support before
+material is adapted to an observable carrier. In receiver-side reconstruction,
+O asks whether the already noticed and sufficiently distinguishable target can
+be checked against visible admissible references.
+
+These paths do not make numeric K, S, D or I inputs to the static O formula.
+They do not claim access to hidden cognition or machine processing. With an
+unknown convention, failed grounding may recursively reopen segmentation,
+structural hypotheses, source checking and context.
+
+## 3. Measurement Basis, Profiles and Applicability
+
+### 3.1 Declared O Measurement Basis
+
+The O measurement basis identifies:
+
+- the source-attributed target event;
+- the event-bound Source-Need Gate record and policy;
+- the declared reference space, its version and admitted elements;
+- evaluator visibility and admissibility;
+- the profile-defined grounding or trace relation;
+- valid observation units;
+- component definitions, detector and normalization rules;
+- component mask, weights or combination rule;
+- applicability, missingness and comparability policy.
+
+It must not silently include another entity's state, undeclared history, hidden
+sources or model state, presumed truth of the reference space, Hangar
+expectation, inferred intention or another operator's basis.
+
+### 3.2 Versioned O Profile
+
+```text
+p_O = (
+  reference_selection,
+  target_unit,
+  trace_relation,
+  component_definitions,
+  detector_and_representation,
+  normalization,
+  active_component_mask,
+  weights_or_combination_rule,
+  applicability_and_missingness,
+  version
+)
+```
+
+The canonical method imposes no universal carrier, detector, embedding,
+citation rule or numeric component family. A valid concrete profile must define
+all constitutive choices well enough to reproduce its O value.
+
+### 3.3 Applicability Before Numeric Interpretation
+
+```text
+app_O,A(k_A)
+:= reference_space_need in {optional, required}
+   and reference_space_available = true
+   and reference_space_visible_to_evaluator = true
+   and reference_space_admissible_for_evaluation = true
+   and Ref_A(k_A) != empty
+   and all mandatory inputs of p_O are applicable
+
+Source-Need result mapping:
+  required basis unavailable, not visible or evidence-undetermined
+    -> operator_result_status = not_observable
+  basis not expected, optional absent, inadmissible or admitted empty
+    -> operator_result_status = not_applicable
+  O coordinate not selected
+    -> operator_result_status = not_selected
+  invalid identity/policy/profile or calculation failure
+    -> processing failure; no valid operator result
+```
+
+If a valid gate reaches a common non-numeric terminal state:
+
+```text
+O0_A(k_A | Ref_A(k_A), p_O)
+= not_observable or not_applicable according to the retained gate reason
+```
+
+At the common Layer-1 operator boundary, preserve:
+
+```text
+not_selected != not_observable != not_applicable != 0
+```
+
+The common external Layer-1 result is:
+
+```text
+operator_result_status in {
+  numeric,
+  not_selected,
+  not_observable,
+  not_applicable
+}
+```
+
+The Source-Need Gate maps a required but unavailable reference basis,
+evaluator invisibility and evidence-dependent undetermined gate conditions to
+`not_observable`. It maps a reference basis that is not expected, an absent
+optional basis, an inadmissible basis or an empty admitted basis to
+`not_applicable`. The gate retains the exact controlled reason. `not_selected`
+is emitted only when the O coordinate or an optional O view was not selected
+by the declared profile.
+
+Malformed identity, an invalid source-need policy, an invalid O profile or a
+calculation failure is a processing failure and produces no valid operator
+result. It must not be converted to another Z status merely to complete a
+record. The complete gate state model and ordered decisions are defined in the
+Source-Need Gate companion.
+
+### 3.4 K Does Not Control O Applicability
+
+K may separately observe context visibility or completeness. It is not the O
+Source-Need Gate. `K_A(k_A)=0` does not canonically mean that no O reference
+material exists. Conversely, visible context does not automatically become an
+admissible O reference space.
+
+## 4. Static Construction and Interpretation
+
+### 4.1 Why the Mathematical Contract Matters
+
+The mathematical form does not create the semantic boundary. The semantic
+boundary creates the valid formula.
+
+Every valid O profile preserves target-event and source identity, one declared
+visible non-empty admissible reference space, an open Source-Need Gate, one
+versioned profile and component mask, explicit component applicability, no
+cross-entity subtraction and no conversion of missingness to zero.
+
+### 4.2 Profile-Defined Components
+
+```text
+C_O,A(k_A | Ref_A(k_A), p_O)
+= {c_O,1,A(k_A), ..., c_O,q,A(k_A)}
+```
+
+Each component declares its narrow grounding question, observable target and
+reference inputs, range, detector or calculation rule, applicability,
+profile/version dependencies and collision boundaries with K, S, D and I.
+
+The profile also declares which components are mandatory, which optional
+components may be selected and whether renormalization is permitted. A changed
+active component set is a profile or comparability event.
+
+### 4.3 Static Profile Rule
+
+```text
+if app_O,A(k_A) = true
+   and the selected profile's mandatory components are applicable
+   and its declared combination rule is defined:
+
+  O0_A(k_A | Ref_A(k_A), p_O)
+  = clip(
+      F_p_O(C_O,A(k_A | Ref_A(k_A), p_O)),
+      0,
+      1
+    )
+  operator_result_status = numeric
+  result_value = O0_A(k_A | Ref_A(k_A), p_O)
+
+otherwise:
+  retain the mapped common non-numeric result and its controlled reason,
+  or record a processing failure when no valid operator result exists
+```
+
+`F_p_O` is the complete, versioned combination rule carried by the selected
+O profile, not an unspecified universal algorithm. This allows different
+carriers to instantiate grounding without pretending that embeddings,
+codebooks or fictional canon use one detector.
+
+Exactly one declared profile supplies the O coordinate of one concrete Z view:
+
+```text
+O_A(k_A) := O0_A(k_A | Ref_A(k_A), p_O)
+```
+
+The alias preserves the complete O profile, gate state, reference-space identity,
+component record and provenance. It only names the selected static result at the
+Layer-1-to-Z boundary.
+
+### 4.4 Interpretation
+
+| Value or state | Bounded O interpretation |
 | --- | --- |
-| `K0(A)` | Were data/assets/reference-space elements provided? |
-| `O0(A_ret)` | Were the provided data/assets/reference-space elements used visibly? |
+| high | strong observable support and traceability relative to the admitted reference space under the selected profile |
+| medium | partial observable support or traceability |
+| low | weak observable support or traceability despite an open applicability gate |
+| `not_applicable` | the grounding question is not expected or no admissible non-empty basis exists under the declared profile |
+| `not_observable` | required observable support cannot be inspected; gate reason may be `not_visible_to_evaluator` |
+| `not_selected` | an optional profile or diagnostic was not selected |
 
-A missing reference space may lower the interpretability of a response, but it must not be scored as failed grounding unless the evaluation profile explicitly expected a reference space and the system failed to produce or expose it.
+Numeric thresholds are profile-bound. A low value is diagnostic, not a final
+verdict; it may reflect weak support, an unsuitable admitted reference space,
+material outside that space or detector failure.
 
-## 8. Orthogonality
+## 5. Edge Cases, Fairness, Privacy and Retention
 
-`O0` is semantically distinct from the other KSODI operators:
+- Reference not expected, optional-but-absent or required-but-missing never
+  produces O=0; the first two map to `not_applicable`, while a required but
+  unavailable basis maps to `not_observable`.
+- A visible but inadmissible or empty admitted reference space cannot open O.
+- A non-empty raw retrieval result may yield an empty admitted reference set.
+- A target can be strongly grounded relative to a weak reference space. O does
+  not validate that space's intrinsic quality.
+- Fictional canon can be valid when explicitly admitted; O then measures
+  internal grounding, not external-world factuality.
+- Profile or reference-construction change is not ordinary O movement.
 
-| Operator | Measures | Difference from O0 |
-| --- | --- | --- |
-| `K0` | context availability and completeness | `O0` evaluates use and traceability of provided reference elements, not whether they exist |
-| `S0` | observable structural coherence | `O0` evaluates grounding, not layout, order or format |
-| `D0` | observable clarity / discernibility | `O0` evaluates traceability to visible context, not internal clarity or signal density |
-| `I0` | observable information impulse | `O0` evaluates visible support, not novelty, difference or impulse |
+A low or non-numeric result may reflect evaluator access, source restrictions,
+reference policy, detector, carrier, accessibility or provenance rather than a
+property of the attributed source.
 
-## 9. Reference-Space Boundary
+Raw and derived target, source, retrieval, embedding, identifier, score, delta
+and Hangar data may remain sensitive or personal. Derived does not mean
+anonymous. Retention and access require a declared governance basis.
 
-`O0` is the operator where the reference-space question becomes explicit:
+## 6. Comparability and Source-Local Dynamics
 
-```text
-Truth in relation to what?
-```
+### 6.1 Comparability Contract
 
-A factuality checker often assumes a reference frame implicitly. `O0` makes the reference frame explicit, versioned and exchangeable.
+Two O values are comparable only under equal or explicitly compatible:
 
-This means:
-
-- an unsupported answer may indicate model error
-- it may also indicate missing retrieval
-- it may indicate a shifted or underspecified reference space
-- it may indicate that the answer uses world knowledge outside the declared context
-- it may indicate that the attribution detector failed to recognize a valid trace
-
-`O0` therefore supports diagnosis. It is not itself a final verdict.
-
-### 9.1 Reference-Space Elements as Observable Signal Objects
-
-A reference-space element may itself be evaluated as an observable signal object.
-
-For a source, document, tool output or web result `q`, define an optional source-state view:
-
-```text
-Z_source(q) = [K_q, S_q, O_q, D_q, I_q]
-IK_source(q) = w_source dot Z_source(q)
-```
-
-This does not mean that the source is true. It means that the source is itself sufficiently observable, reconstructable and coherent under the declared source-evaluation profile.
-
-`O_answer` and `Z_source` answer different questions:
-
-| Layer | Question |
-| --- | --- |
-| `Z_source(q)` | Is this source itself observable, situated, structured, grounded, clear and informationally relevant enough? |
-| `IK_source(q)` | Is this source coherent enough as a reference-space element under the active source profile? |
-| `O_answer \| Ref` | Is the answer visibly grounded relative to the declared reference space `Ref`? |
-
-Therefore:
-
-- a strong source can be used badly by an answer
-- a weak source can be used faithfully but remain weak evidence
-- an answer can be grounded relative to a poor reference space
-- an answer can be ungrounded despite strong available sources
-
-The quality, suitability and stability of the reference space should therefore be observed separately from the answer's grounding against that reference space.
-
-### 9.2 Applicability-Aware Reference Aggregation
-
-When multiple reference-space elements are available, their source-state views may be aggregated over applicable elements:
+- target-unit and source-attribution rules;
+- O profile and Source-Need Gate policy;
+- active component mask, weights and combination rule;
+- reference-space construction, inclusion, version and visibility;
+- detector, representation, segmentation and normalization;
+- applicability and missingness policy;
+- Observer/operator version and selected aggregation policy.
 
 ```text
-Ref_app = {q in Ref | Z_source(q) is applicable}
-IK_sourceSigma(Ref) = aggregate({IK_source(q) | q in Ref_app})
-applicability_rate_source(Ref) = |Ref_app| / |Ref|
+G_cmp_O,A(k_A)
+= comparable(r_O,A(k_A), r_O,A(k_A - 1))
 ```
 
-This aggregation is a reference-space diagnostic. It is not a replacement for `O0(a)`.
+If compatibility is not established, the difference is `not_applicable`.
+Profile or reference-policy change is a comparison boundary.
 
-The answer-level `O0(a)` asks whether the answer uses the declared reference space. `IK_sourceSigma(Ref)` asks whether the reference space itself is usable, stable or suitable enough for the evaluation question.
-
-If `Ref_app` is empty, the source aggregation is `not_applicable` and must not be silently coerced to `0`.
-
-### 9.3 Web Search and Tool-Mediated Reference Influx
-
-Web search can provide a reference space for `O0` only when the resulting sources are visible, versioned and declared as part of the evaluation context.
+### 6.2 Source-Local Dynamics
 
 ```text
-Ref_web = {web_source_1, ..., web_source_m}
+if G_cmp_O,A(k_A) = true:
+  Delta O_A(k_A) = O_A(k_A) - O_A(k_A - 1)
+otherwise:
+  Delta O_A(k_A) = not_applicable
 ```
-
-Recommended metadata include:
-
-- search or retrieval timestamp
-- URL or source identifier where available
-- retrieval query or retrieval route where policy allows
-- snippet versus full text status
-- source date or publication date where available
-- access status
-- tool version / search provider profile where available
-- whether the source was visible to the final evaluator
-
-Web search is best treated as a tool-mediated reference influx. The web tool is not automatically a self-acting participant, but it may function as an agent-like input channel inside the local agent workflow because it changes the reference space available to the responding agent.
-
-This creates a layer boundary:
-
-| Layer | What can be observed? |
-| --- | --- |
-| Agent-Light / local agent workflow | may see search results, snippets, tool calls and selected sources while forming an answer |
-| External Observer | can only evaluate what is exposed to it: declared source list, citations, tool logs, metadata, answer text, derived vectors or later audit material |
-
-If search results or source contents are not visible to the external Observer, the Observer cannot claim direct source-grounding. It can only evaluate visible traces or a later separately approved audit path.
-
-Privacy note:
-
-Long-term retention of raw source contents, web pages, snippets, user queries or answer text may raise privacy, copyright or compliance issues. Where possible, retain derived source-state vectors, score traces, hashes, metadata, applicability flags and versioned configuration IDs rather than full raw language.
-
-### 9.4 Fiction, Sci-Fi and Constructed Worlds
-
-Fictional or speculative writing may create a valid internal reference space.
-
-For fiction, the active reference space may include:
-
-- declared fiction / fairy-tale / sci-fi framing
-- worldbuilding notes
-- canon established earlier in the text
-- character constraints
-- genre conventions
-- narrative continuity
-- prompt-provided fictional premises
-
-In this case `O0` must not punish the text for not matching external world facts. Instead, it asks whether the response remains grounded relative to the declared fictional reference space.
-
-Important boundary:
-
-The text or interaction must be clear enough that the evaluator can distinguish fiction from factual claim. This is partly a `K` question and partly a `D` question:
-
-- `K`: Is the fictional / speculative frame declared or inferable from context?
-- `D`: Is the signal clear enough that it is not mistaken for a factual claim?
-- `O`: Is the answer grounded relative to the declared fictional reference space?
-
-A story can be factually impossible and still be strongly grounded inside its constructed world. Conversely, a story can use fictional language while failing internal continuity or reference-space coherence.
-
-## 10. Dynamic Form: KSODI-Full
-
-Current review-candidate form:
 
 ```text
-O(t)
-= clip(w_0 * O0(t)
-       + w_1 * Delta_cons(t)
-       + w_2 * Delta_corr(t)
-       + w_3 * V_ext(t)
-       - lambda_O * Delta_drift(t),
-       0, 1)
+if three consecutive O records are applicable and comparable:
+  Delta2 O_A(k_A)
+  = Delta O_A(k_A) - Delta O_A(k_A - 1)
+otherwise:
+  Delta2 O_A(k_A) = not_applicable
 ```
 
-with possible components:
+Delta O may reflect target movement, admitted-reference movement, detector
+response or several together. It does not establish that the attributed
+source alone became better or worse grounded.
 
-- consistency across turns
-- self-correction capability
-- optional external verification
-- drift penalty
-
-This dynamic form remains a KSODI-Full review candidate. It must be compared with the implemented Observer stack before it is treated as final implementation guidance.
-
-## 11. Operator-Level Delta / Sigma / Hangar Reminder
-
-Like the D-operator pattern, static `O0` remains a value for one declared evaluation unit where grounding is applicable. Grounding stability, loss, repair or repeated unsupportedness over time should be observed through operator-level change and aggregation views rather than by silently changing the static `O0` formula.
+An optional non-negative rise diagnostic may be selected:
 
 ```text
-Delta O(t) = O(t) - O(t-1)
-Delta2 O(t) = Delta O(t) - Delta O(t-1)
-OΣ(W) = aggregate({O(t), Delta O(t), Delta2 O(t) | t in W_app})
-OΣ(Hangar) = distribution_view({O(t), Delta O(t), Delta2 O(t) | t in W_app})
+if G_cmp_O,A(k_A) = true:
+  Rise_O,A(k_A) = max(0, Delta O_A(k_A))
+otherwise:
+  Rise_O,A(k_A) = not_applicable
 ```
 
-`W_app` denotes the subset of the window where `O` is applicable under the active retrieval / evidence policy. Missing or `N/A` values must not be silently coerced to `0` inside `OΣ` or `OΣ(Hangar)`.
+`Rise_O` preserves only the positive part of an applicable O difference. It
+does not attribute the rise causally to the attributed source or to an emitter
+whose identity may or may not be established. The earlier
+private symbol `B_O` maps to `Rise_O`; the descriptive name avoids collision
+with stable Entity B and the former RAG trace component `B`.
 
-## 12. Comparability
-
-`O0` values are comparable only under stable conditions:
-
-- same visible reference-space definition `Ref`
-- same inclusion policy for retrieval documents, chunks, tool outputs and web sources
-- same source-state evaluation policy where `Z_source` or `IK_source` is used
-- same embedding model `e(.)`
-- same cosine-to-support mapping for `A_ret` and `align_Ref`
-- same threshold `tau_O`
-- same attribution detector for `B(a)`
-- same sentence segmentation for `P_uns(a)`
-- same weights `alpha_O`, `beta_O`, `gamma_O`
-- same choice of minimal or extended formula
-- same `N/A`, masking and windowing policy where `Z(t)`, `OΣ` or `OΣ(Hangar)` are used
-- same source visibility and observer-access policy
-
-## 13. Compact Formula Block
+### 6.3 Separate Reference-Space Diagnostics
 
 ```text
-Ref = {d_1, ..., d_m}
+RefDrift_O,A(k_A)
+= versioned profile-defined change between comparable
+  Ref_A(k_A - 1) and Ref_A(k_A)
 
-sim_Ref(a) = max_{d in Ref} cos(e(a), e(d))
-A_ret(a) = clip(sim_Ref(a), 0, 1)
-
-B(a) = clip(n_attrib / (n_sent + 1), 0, 1)
-
-sim_Ref(s_j) = max_{d in Ref} cos(e(s_j), e(d))
-align_Ref(s_j) = clip(sim_Ref(s_j), 0, 1)
-
-P_uns(a)
-= (# sentences with align_Ref(s_j) < tau_O AND no attribution) / n_sent
-
-O0(a)
-= clip(alpha_O * A_ret(a)
-       + beta_O * B(a),
-       0, 1)
-
-O0_ext(a)
-= clip(alpha_O * A_ret(a)
-       + beta_O * B(a)
-       - gamma_O * P_uns(a),
-       0, 1)
-
-Optional source-state diagnostic:
-
-Z_source(q) = [K_q, S_q, O_q, D_q, I_q]
-IK_source(q) = w_source dot Z_source(q)
-Ref_app = {q in Ref | Z_source(q) is applicable}
-IK_sourceSigma(Ref) = aggregate({IK_source(q) | q in Ref_app})
-applicability_rate_source(Ref) = |Ref_app| / |Ref|
-
-O(t)
-= clip(w_0 * O0(t)
-       + w_1 * Delta_cons(t)
-       + w_2 * Delta_corr(t)
-       + w_3 * V_ext(t)
-       - lambda_O * Delta_drift(t),
-       0, 1)
-
-Delta O(t) = O(t) - O(t-1)
-Delta2 O(t) = Delta O(t) - Delta O(t-1)
-OΣ(W) = aggregate({O(t), Delta O(t), Delta2 O(t) | t in W_app})
-OΣ(Hangar) = distribution_view({O(t), Delta O(t), Delta2 O(t) | t in W_app})
+P_ref,A(W_A)
+= versioned source-local reference-space stability diagnostic
 ```
 
-## 14. Variable Reference
+These remain separate and do not modify, penalize or reweight O0. A
+vector-compatible cosine instantiation belongs in the implementation companion.
+
+## 7. Sigma and Sigma(Hangar)
+
+```text
+W_app_O,A
+= {k_A in W_A | O0_A(k_A) is applicable}
+
+W_app_DeltaO,A
+= {k_A in W_A | Delta O_A(k_A) is applicable and comparable}
+
+W_app_Delta2O,A
+= {k_A in W_A | Delta2 O_A(k_A) is applicable and comparable}
+```
+
+```text
+O_A Sigma(W_A)
+= {
+    static_O:
+      Agg_O({O_A(k_A) | k_A in W_app_O,A}),
+    delta_O:
+      Agg_DeltaO({Delta O_A(k_A) | k_A in W_app_DeltaO,A}),
+    delta2_O:
+      Agg_Delta2O({Delta2 O_A(k_A) | k_A in W_app_Delta2O,A})
+  }
+```
+
+```text
+O_A Sigma(Hangar)
+= {
+    static_O_distribution:
+      distribution_view({O_A(k_A) | k_A in W_app_O,A}),
+    delta_O_distribution:
+      distribution_view({Delta O_A(k_A) | k_A in W_app_DeltaO,A}),
+    delta2_O_distribution:
+      distribution_view({Delta2 O_A(k_A) | k_A in W_app_Delta2O,A})
+  }
+```
+
+Each empty field is `not_applicable`; if all selected sets are empty, the
+complete view is `not_applicable`.
+
+Where the selected static aggregation profile includes elementary summaries
+and `|W_app_O,A| > 0`:
+
+```text
+Obar_A(W_A) = mean({O0_A(k_A) | k_A in W_app_O,A})
+Omin_A(W_A) = min({O0_A(k_A) | k_A in W_app_O,A})
+Ovar_A(W_A) = var({O0_A(k_A) | k_A in W_app_O,A})
+```
+
+These summarize applicable static O values only. They do not mix static,
+Delta and Delta2 types. If the applicable static subset is empty, all three
+are `not_applicable`. The aggregation profile must declare whether `var`
+denotes population or sample variance and its minimum sample count; a
+single-value sample variance must not be invented as zero.
+
+```text
+if |W_A| > 0:
+  applicability_rate_O,A(W_A) = |W_app_O,A| / |W_A|
+otherwise:
+  applicability_rate_O,A(W_A) = not_applicable
+```
+
+Sigma(W) is typed source-local aggregation. Sigma(Hangar) is a derived
+attributable distribution view. Side-by-side A/B display is not dyadic O.
+
+## 8. Relational Boundary
+
+O0, Delta O, Delta2 O, O Sigma(W) and O Sigma(Hangar) remain monadic.
+Relational comparison requires distinguishable trajectories, explicit pairing
+or constellation, compatible profiles, an open numeric canonical complete R0
+gate under the exact required profile and a separately declared later-layer
+construct.
+
+Operator O does not define coupling, resonance, mutual understanding or
+relational quality. A proposed post-R0 O comparison and any O-only route that
+bypasses complete Z remain v3.60 Future Work and are not canonical IK_rel or an
+R-family result.
+
+## 9. Formal Summary and Variable Reference
+
+### 9.1 Compact Formula Block
+
+```text
+app_O,A(k_A)
+:= reference_space_need in {optional, required}
+   and reference_space_available = true
+   and reference_space_visible_to_evaluator = true
+   and reference_space_admissible_for_evaluation = true
+   and Ref_A(k_A) != empty
+   and all mandatory inputs of p_O are applicable
+
+C_O,A(k_A | Ref_A(k_A), p_O)
+= {c_O,1,A(k_A), ..., c_O,q,A(k_A)}
+
+if app_O,A(k_A) and mandatory components apply and F_p_O is defined:
+  O0_A(k_A | Ref_A(k_A), p_O)
+  = clip(F_p_O(C_O,A(k_A | Ref_A(k_A), p_O)), 0, 1)
+  operator_result_status = numeric
+  result_value = O0_A(k_A | Ref_A(k_A), p_O)
+otherwise:
+  retain the mapped common non-numeric result and controlled reason,
+  or the separate processing failure when no valid result exists
+
+# selected static handoff to Layer 2
+O_A(k_A) := O0_A(k_A | Ref_A(k_A), p_O)
+
+if G_cmp_O,A(k_A):
+  Delta O_A(k_A) = O_A(k_A) - O_A(k_A - 1)
+otherwise:
+  Delta O_A(k_A) = not_applicable
+
+if three consecutive O records are applicable and comparable:
+  Delta2 O_A(k_A) = Delta O_A(k_A) - Delta O_A(k_A - 1)
+otherwise:
+  Delta2 O_A(k_A) = not_applicable
+
+W_app_O,A = {k_A in W_A | O_A(k_A) is applicable}
+W_app_DeltaO,A = {k_A in W_A | Delta O_A(k_A) is applicable and comparable}
+W_app_Delta2O,A = {k_A in W_A | Delta2 O_A(k_A) is applicable and comparable}
+
+O_A Sigma(W_A)
+= {
+    static_O: Agg_O({O_A(k_A) | k_A in W_app_O,A}),
+    delta_O: Agg_DeltaO({Delta O_A(k_A) | k_A in W_app_DeltaO,A}),
+    delta2_O: Agg_Delta2O({Delta2 O_A(k_A) | k_A in W_app_Delta2O,A})
+  }
+
+O_A Sigma(Hangar)
+= {
+    static_O_distribution:
+      distribution_view({O_A(k_A) | k_A in W_app_O,A}),
+    delta_O_distribution:
+      distribution_view({Delta O_A(k_A) | k_A in W_app_DeltaO,A}),
+    delta2_O_distribution:
+      distribution_view({Delta2 O_A(k_A) | k_A in W_app_Delta2O,A})
+  }
+
+Separate diagnostics, never canonical O:
+RefDrift_O,A(k_A)
+P_ref,A(W_A)
+Rise_O,A(k_A) = max(0, Delta O_A(k_A)) where comparable
+```
+
+### 9.2 Variable Reference
 
 | Variable | Semantic role |
 | --- | --- |
-| `a` | Answer text being evaluated |
-| `Ref` | Visible reference space / retrieval set |
-| `d_i` | One document, chunk, tool output, web source or evidence element in `Ref` |
-| `q` | One reference-space element evaluated as a source object |
-| `Ref_web` | Web-derived reference space where visible and versioned |
-| `Ref_app` | Applicable subset of reference-space elements under the source-state policy |
-| `e(.)` | Embedding function used for semantic comparison |
-| `sim_Ref(a)` | Raw maximum cosine similarity between answer and `Ref` |
-| `A_ret(a)` | Non-negative support signal derived from retrieval alignment |
-| `B(a)` | Visible evidence or attribution trace |
-| `n_attrib` | Count of visible attribution markers |
-| `n_sent` | Number of sentences in the answer |
-| `s_j` | One sentence in the answer |
-| `sim_Ref(s_j)` | Raw maximum cosine similarity between sentence and `Ref` |
-| `align_Ref(s_j)` | Non-negative sentence-level retrieval alignment |
-| `tau_O` | Threshold for local support classification under the active O profile |
-| `P_uns(a)` | Optional unsupported-claim penalty |
-| `Z_source(q)` | KSODI source-state vector for a reference-space element |
-| `IK_source(q)` | Coherence projection of a source-state vector |
-| `IK_sourceSigma(Ref)` | Aggregated source-state diagnostic over applicable reference elements |
-| `applicability_rate_source(Ref)` | Share of source elements with applicable source-state evaluation |
-| `alpha_O` | Weight of retrieval alignment |
-| `beta_O` | Weight of evidence trace |
-| `gamma_O` | Weight of unsupported penalty |
-| `O0(a)` | Static grounding and traceability score where applicable |
-| `O0_ext(a)` | Extended grounding score with unsupported penalty |
-| `O(t)` | Dynamic grounding value where applicable |
-| `Delta O(t)` | First difference of dynamic O over time |
-| `Delta2 O(t)` | Second difference / acceleration of dynamic O |
-| `OΣ(W)` | Window aggregation of O behavior over applicable window elements |
-| `OΣ(Hangar)` | Hangar distribution view of O behavior |
-| `W_app` | Applicable subset of a window under the active O policy |
+| `n` | Global event index |
+| `k_A` / `k_B` | Source-local trajectory positions |
+| `j` / `pi(j)` | Later relational index and explicit pairing map |
+| `e_A(k_A)` | One source-attributed target event |
+| `Ref_A(k_A)` | Declared non-empty visible admissible reference space |
+| `p_O` | Complete versioned O profile |
+| `app_O,A(k_A)` | Numeric O applicability gate |
+| `C_O,A` / `c_O,r,A` | Profile-defined O component record / component |
+| `F_p_O` | Complete combination rule declared by `p_O` |
+| `operator_result_status` | Common Layer-1 result: numeric, not selected, not observable or not applicable |
+| `result_value` | Numeric O value in `[0,1]`; present only when the result status is numeric |
+| `O0_A(k_A)` | Profile-bound static O result |
+| `O_A(k_A)` | Selected static O coordinate value handed to Z |
+| `r_O,A(k_A)` | Complete attributable O evaluation record |
+| `G_cmp_O,A(k_A)` | Comparability gate |
+| `Delta O_A(k_A)` / `Delta2 O_A(k_A)` | Source-local movement / acceleration |
+| `W_A` | Declared source-local window |
+| `W_app_O,A` | Applicable static-O positions |
+| `W_app_DeltaO,A` / `W_app_Delta2O,A` | Applicable comparable movement positions |
+| `O_A Sigma(W_A)` | Typed source-local aggregation |
+| `O_A Sigma(Hangar)` | Typed attributable distribution |
+| `RefDrift_O,A` / `P_ref,A` | Separate reference-space diagnostics |
+| `Rise_O,A(k_A)` | Optional non-negative part of an applicable O difference; not causal attribution |
+| `not_applicable` | Grounding question not expected or no valid admissible basis exists; never numeric zero |
+| `not_observable` | Required observable support is unavailable; retain the specific gate reason |
+| `not_selected` | Optional profile or diagnostic was not selected |
 
-## 15. Implementation Alignment Checklist
+## 10. Separate Implementation Companion
 
-Before this v3.50 review candidate is treated as implementation-aligned, compare it with Patrick's current Observer / KSODI-Light stack.
+The canonical method ends with Section 9. Conversation/RAG formulas,
+embeddings, citation detectors, unsupported-claim logic, storage fields,
+pseudocode, reference-element diagnostics, tests and architecture mappings
+belong in the adjacent implementation companion.
 
-Known alignment risk:
+- Semantic gate: [O Source-Need Gate](./KSODI_Operator-O_Source-Need-Gate_V350.md).
+- Public implementation companion:
+  [Operator O Implementation Companion](./KSODI_Operator-O_Implementation-Companion_V350.md)
+  (conditional and subordinate).
+- Alignment: method, gate and implementation review passed with the typed
+  Layer-1-to-Z and complete-Z-to-IK downstream contract on 2026-08-25.
 
-```text
-Patrick's implementation is still expected to reflect v3.3 assumptions.
-```
-
-Check at least:
-
-- whether the implementation treats raw cosine similarity as `[0,1]` or converts it explicitly
-- whether it uses positive-support clipping, `(1 + cos) / 2`, or another mapping
-- whether `O0 = N/A` is represented as `not_applicable`, `null`, a mask, a missing field or a numeric fallback
-- whether `N/A` is ever silently coerced to `0`
-- whether tool outputs belong to the O reference space and how they are versioned
-- whether web results or search-tool outputs belong to the O reference space and how they are exposed to the Observer
-- whether sources can be evaluated separately as `Z_source` / `IK_source` diagnostics
-- how retrieval-empty and source-empty cases are represented
-- how sentence segmentation is done
-- what counts as attribution for `B(a)`
-- whether fiction / constructed-world settings are detected or declared before O is interpreted against external factuality
-- whether `P_uns(a)` is implemented, disabled or deferred
-- whether `tau_O`, weights and detector versions are stored with the score
-- whether `OΣ(W)` and `OΣ(Hangar)` operate only on `W_app`
-- whether raw language retention and derived-data retention follow the current privacy boundary
-
-If implementation and v3.50 differ, do not silently change the method or the code. Create an implementation review note and decide with Anne and Patrick which layer changes: method definition, implementation profile or transition mapping.
+The companions may operationalize or gate O but must not redefine its question,
+basis, source identity, applicability, static profile rule or relational
+boundary. Any mismatch remains visible until reviewed.

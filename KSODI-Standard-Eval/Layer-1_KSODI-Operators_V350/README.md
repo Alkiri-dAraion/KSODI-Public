@@ -47,6 +47,9 @@ observation window and an explicit pairing rule are available.
 - [`O0`](./KSODI_Operator-O_Observable-Grounded-Objectivity_V350.md) — Observable Grounded Objectivity
   - [`O` Source-Need Gate](./KSODI_Operator-O_Source-Need-Gate_V350.md) — applicability and
     source-need companion; not a sixth operator
+  - [`O0` Implementation Companion](./KSODI_Operator-O_Implementation-Companion_V350.md) — conditional
+    Conversation-/Retrieval-/RAG-oriented operationalization; not a sixth
+    operator and not a replacement for the carrier-neutral method
 - [`D0`](./KSODI_Operator-D_Observable-Clarity_V350.md) — Observable Clarity
   - [`D0` Implementation Companion](./KSODI_Operator-D_Implementation-Companion_V350.md) — conditional
     profile-oriented implementation contract; not a sixth operator and not a
