@@ -1,8 +1,9 @@
 # KSODI Operator D0 v3.50 - Implementation Companion
 
-Status: public v3.50 implementation companion, reviewed and released 2026-08-21.
-This file provides conditional implementation guidance. It is not the canonical
-method definition and not an executable production implementation.
+Status: public v3.50 implementation companion, reviewed and released
+2026-08-21, with a typed-result erratum on 2026-08-25. This file provides
+conditional implementation guidance. It is not the canonical method
+definition and not an executable production implementation.
 
 Canonical method source:
 [Operator D v3.50](./KSODI_Operator-D_Observable-Clarity_V350.md)
@@ -72,13 +73,15 @@ expected_variation_threshold
 w_L
 w_V
 
-l_status
-l_value, if applicable
-v_status
-v_raw_value, if applicable
-v_value, if applicable
-d_status
-d_value, if applicable
+l_component_status
+l_value, only when l_component_status = applicable
+v_component_status
+v_raw_value, only when v_component_status = applicable
+v_value, only when v_component_status = applicable
+operator_result_status
+d_value, only when operator_result_status = numeric
+status_reason
+processing_status, if validation or calculation fails
 
 comparability_status, if evaluated
 comparability_reason
@@ -95,28 +98,54 @@ numerically unless a future method version explicitly changes the definition.
 
 ## 3. Typed Status Model
 
-At minimum use:
+Keep internal component applicability separate from the common external
+Layer-1 result handed to Z.
+
+Internal component statuses may use:
 
 ```text
 applicable
-not_selected
 not_observable
 not_applicable
-profile_missing
-profile_incompatible
 insufficient_valid_units
 ```
 
-Each component carries its own status. The final D status is derived through
-the declared component mask and fallback policy; it is not inferred from a
-null database field.
+The final operator result uses exactly:
+
+```text
+numeric
+not_selected
+not_observable
+not_applicable
+```
+
+Processing failures remain separate, for example:
+
+```text
+profile_missing
+profile_incompatible
+calculation_error
+```
+
+Each component carries its own status. The final `operator_result_status` is
+derived through the declared component mask and fallback policy; it is not
+inferred from a null database field. A successfully applicable finite D value
+maps to `numeric`. Internal `applicable` is not an additional external result
+status.
 
 Recommended representation:
 
 ```text
-TypedResult<T> = {
-  status: Status,
+ComponentResult<T> = {
+  status: ComponentStatus,
   value: T only when status == applicable,
+  reason_code: versioned reason,
+  evidence_refs: declared provenance
+}
+
+OperatorResult<T> = {
+  status: OperatorResultStatus,
+  value: T only when status == numeric,
   reason_code: versioned reason,
   evidence_refs: declared provenance
 }
@@ -140,7 +169,9 @@ Reject or return a typed non-numeric state before calculation when:
 - `tau_expected_p_V` is outside `[0,1)`;
 - the requested fallback was not predeclared by the profile.
 
-Profile validation failure must not emit `D = 0`.
+Profile validation failure produces no valid operator result unless the
+declared policy maps the concrete reason to one of the common non-numeric
+operator statuses. It must not emit `D = 0` or introduce another Z status.
 
 ## 5. Static Calculation Order
 
@@ -152,33 +183,39 @@ function evaluate_D(event_record, p_D):
     validate_profile(p_D)
 
     if D not selected:
-        return TypedResult(status=not_selected)
+        return OperatorResult(status=not_selected)
 
     L = evaluate_local_support(event_record, p_D.p_L)
 
     if L.status != applicable:
-        return TypedResult(status=derive_D_status_from_L(L.status))
+        return map_component_failure_to_operator_result(L)
 
     if p_D.component_mask == L_only:
-        return TypedResult(status=applicable, value=L.value)
+        return OperatorResult(status=numeric, value=L.value)
 
     if p_D.component_mask != L_plus_V:
-        return TypedResult(status=profile_incompatible)
+        return ProcessingFailure(status=profile_incompatible)
 
     V = evaluate_local_dispersion(event_record, p_D.p_V)
 
     if V.status != applicable:
         if p_D.predeclared_fallback_profile == L_only:
             return evaluate_D(event_record, p_D.predeclared_L_only_profile)
-        return TypedResult(status=derive_D_status_from_V(V.status))
+        return map_component_failure_to_operator_result(V)
 
     D = p_D.w_L * L.value + p_D.w_V * (1 - V.value)
-    return TypedResult(status=applicable, value=clip(D, 0, 1))
+    return OperatorResult(status=numeric, value=clip(D, 0, 1))
 ```
 
 The explicit second call under a predeclared fallback creates a separately
 profiled L-only result. It must retain the fallback provenance and must not be
 stored as though the original L/V profile succeeded.
+
+`map_component_failure_to_operator_result` retains the component reason and
+maps it only to `not_observable` or `not_applicable` under the declared D
+policy. `not_selected` arises only from operator/profile selection, not from a
+failed selected component. Invalid profiles and calculation errors remain
+processing failures rather than additional operator-result states.
 
 ## 6. Component Implementation Notes
 
@@ -284,6 +321,9 @@ Minimum test groups:
   `not_applicable`, never numeric zero;
 - L-only output occurs only under a named L-only profile or declared fallback;
 - profile change blocks naive deltas.
+- every successful finite D calculation emits `operator_result_status = numeric`;
+- internal `applicable` never enters the Layer-1-to-Z result-status field;
+- processing failures never become extra Z statuses.
 
 ### 9.3 Numeric properties
 

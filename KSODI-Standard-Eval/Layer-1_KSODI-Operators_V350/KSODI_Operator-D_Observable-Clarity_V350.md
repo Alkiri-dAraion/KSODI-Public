@@ -1,8 +1,9 @@
 # KSODI Operator D0 - Observable Clarity v3.50
 
-Status: public v3.50 reference release, revised 2026-08-19 and released
-2026-08-21. This file is the current public method definition for Operator D.
-It remains open to documented review and later versioned refinement.
+Status: public v3.50 reference release, revised 2026-08-19, released
+2026-08-21 and clarified by a typed-result erratum on 2026-08-25. This file is
+the current public method definition for Operator D. It remains open to
+documented review and later versioned refinement.
 
 Layer: KSODI Standard-Eval Layer 1. Static D and all source-local D trajectory,
 window and Hangar views remain strictly monadic and source-attributed.
@@ -259,8 +260,21 @@ equal or explicitly compatible profile versions do not establish comparability.
 
 ### 3.3 Applicability before numeric interpretation
 
-Applicability is typed before any numeric D value is calculated. At minimum,
-an implementation distinguishes:
+Applicability is typed before any numeric D value is calculated. Two status
+levels remain distinct.
+
+The common external Layer-1 result handed to Z is:
+
+```text
+operator_result_status in {
+  numeric,
+  not_selected,
+  not_observable,
+  not_applicable
+}
+```
+
+Internal component and processing detail may additionally distinguish:
 
 ```text
 applicable
@@ -271,12 +285,19 @@ profile_missing
 profile_incompatible
 ```
 
+A successfully applicable finite D calculation maps to
+`operator_result_status = numeric` and carries `result_value in [0,1]`.
+`applicable` remains an internal component/applicability state; it is not an
+additional external Layer-1 result status. `profile_missing` and
+`profile_incompatible` remain processing detail and do not become numeric or
+an extra Z status.
+
 These states are not numeric zero. If mandatory local support cannot be
 evaluated, canonical D is `not_applicable`. If D was not selected for a use
 case, it is `not_selected`. If the already admitted event is observable but
-the carrier or detector cannot expose the units required by D, the D component
-is `not_observable` or receives the more specific deployment state declared by
-the profile. This status does not revoke I's earlier admission of the event.
+the carrier or detector cannot expose the units required by D, the common D
+result is `not_observable` and retains the more specific deployment reason.
+This status does not revoke I's earlier admission of the event.
 
 ### 3.4 Conditional L-only profile
 
@@ -724,6 +745,11 @@ D0_A(k_A | p_D_L_only) = L_A(k_A | p_L)
 
 Applicability:
 mandatory component failure or undeclared fallback -> D0_A = not_applicable
+
+Common Layer-1 result handoff:
+successful applicable finite D0_A -> operator_result_status = numeric
+non-numeric D0_A -> operator_result_status in
+  {not_selected, not_observable, not_applicable}, with reason retained
 
 Source-local value:
 D_A(k_A | p_D) = D0_A(k_A | p_D)
