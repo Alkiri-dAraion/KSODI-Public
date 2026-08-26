@@ -35,9 +35,10 @@ interaction-coherence projection `IK_A(k)`.
 
 KSODI-Standard-Eval is the complete monadic line
 `K/S/O/D/I -> Z_A(k) -> IK_A(k)` and ends with `IK_A(k)`. KSODI-Full begins
-with dyadic observation at the public Layer 4 gate `R_0`; the public Layer 5
-projection `IK_rel` opens only after stable `R_0`. Both belong to KSODI-Full,
-not KSODI-Standard-Eval. The Layer 6–8 R-family and signal-media extensions
+with dyadic or explicitly n-adic observation at the public Layer 4 gate `R_0`;
+current dyadic Layer 5 `IK_rel` requires explicit pairing and an open numeric
+canonical complete dyadic `R_0` under the exact required profile. Both belong
+to KSODI-Full, not KSODI-Standard-Eval. The Layer 6–8 R-family and signal-media extensions
 remain staged or future research until their own release status says otherwise.
 
 Earlier v3.3 and v3.42 materials are retained in clearly marked historical
@@ -78,8 +79,9 @@ quality standards.
 Dyadic use at the Light level does not mean formal dyadic measurement.
 KSODI-Light does not calculate `R_0`, `IK_rel` or R-family components. Formal
 monadic trajectory observation through `IK_A(k)` belongs to
-KSODI-Standard-Eval. Dyadic observation begins separately in KSODI-Full at
-`R_0` and includes `IK_rel` only after stable `R_0`.
+KSODI-Standard-Eval. Relational observation begins separately in KSODI-Full at
+`R_0`; current dyadic `IK_rel` requires its exact open canonical complete
+dyadic gate contract.
 
 It supports:
 

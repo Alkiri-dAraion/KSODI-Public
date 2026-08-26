@@ -76,11 +76,12 @@ evaluates whether two distinguishable monadic `Z`-trajectories support
 relational observation. It does not merge them and is not calculated from
 monadic `IK`.
 
-Only after a stable `R_0` does the Layer 5 relational projection `IK_rel`
-open. Both `R_0` and `IK_rel` belong to KSODI-Full, not
-KSODI-Standard-Eval. Further application-specific R-family and signal-media
-extensions occupy Layers 6–8 and remain separately staged in the current
-public release.
+Current dyadic Layer-5 `IK_rel` opens only after explicit dyadic pairing and an
+open numeric canonical complete dyadic `R_0` gate under the exact required
+profile. Reduced or n-adic R0 does not open it. Both `R_0` and `IK_rel` belong
+to KSODI-Full, not KSODI-Standard-Eval. Further application-specific R-family
+and signal-media extensions occupy Layers 6–8 and remain separately staged in
+the current public release.
 
 The existence of an interaction, shared channel or exchange identifier does
 not itself establish `R_0`, relational coherence, coupling, meaning or
@@ -94,7 +95,7 @@ The following root-level references span KSODI-Standard-Eval and KSODI-Full:
 - [KSODI Architecture V350](./KSODI-Architecture_V350.md)
 - [KSODI Hangar V350](./KSODI-Hangar_V350.md)
 - [KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md)
-- [Public implementation-transfer examples](./implementation-examples/README.md)
+- [Public implementation-transfer examples](https://github.com/Alkiri-dAraion/KSODI-Public/tree/main/implementation-examples)
 
 The Hangar is the shared observer-side comparison space for attributable
 states, trajectories, windows, distributions and point clouds. It is not a

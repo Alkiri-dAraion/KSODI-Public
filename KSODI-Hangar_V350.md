@@ -113,7 +113,9 @@ observer-side exchange Hangar for the declared window and profile
 shared mind, merged state or common trajectory. The existence of an exchange
 Hangar also does not by itself authorize relational calculation: dyadic or
 n-adic evaluation still requires explicit pairing or constellation metadata
-and a stable `R_0` gate.
+and an evaluable open `R_0` gate under the declared branch contract. Current
+dyadic `IK_rel` additionally requires open canonical complete dyadic `R_0`
+under the exact required profile.
 
 The term is retained as an explanatory distinction. Formal definitions and
 implementations must use the declared event, entity, trajectory, window and
@@ -247,8 +249,9 @@ calculated from either monadic `IK`. It evaluates whether distinguishable
 trajectories and an explicit pairing or constellation satisfy the selected
 applicability, compatibility and stability policy.
 
-After stable `R0`, `IK_rel`, `R_geom` and `R_pace` are parallel relational
-research branches. None is automatically the numeric input of another. Every
+After their compatible open numeric canonical complete `R0` gate contracts,
+`IK_rel`, `R_geom` and `R_pace` are parallel relational research branches.
+None is automatically the numeric input of another. Every
 branch requires its own complete basis, profile and applicability rules.
 
 Drift, acceleration, Sigma and Hangar are selected typed views within a layer

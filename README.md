@@ -123,10 +123,11 @@ published in successive stages. The five operator definitions `K0`, `S0`,
 `O0`, `D0` and `I0`, the reader-first monadic state-vector method
 `Z_A(k_A)` with its conditional implementation companion, and the monadic
 interaction-coherence projection `IK` have been published and form the current
-KSODI-Standard-Eval release. The relational `R_0` gate has been published
-separately as KSODI-Full Layer 4, and `IK_rel` has been published separately
-as KSODI-Full Layer 5. `R_geom` and `R_pace` are not current public reference
-releases: private method material and large parts of their mathematics exist,
+KSODI-Standard-Eval release. The reader-first relational `R_0` method and its
+conditional implementation companion have been published separately as
+KSODI-Full Layer 4. The existing public `IK_rel` predecessor remains the
+separately released Layer 5 state. `R_geom` and `R_pace` are not current public
+reference releases: private method material and large parts of their mathematics exist,
 but complete public review and renewed validation on the restructured
 infrastructure remain pending. Layer 8 remains a staged research direction
 without a defined architecture.
@@ -209,7 +210,10 @@ Sequence guardrail: after `K/S/O/D/I` form a source-local `Z_A(k_A)`, the
 architecture separates monadic `IK` from relational `R_0`. `R_0` is evaluated
 from distinguishable `Z`-trajectories in parallel to monadic `IK`; it is not
 downstream of `IK`.
-Only stable `R_0` gates `IK_rel`, followed by later R-family layers.
+Current dyadic `IK_rel` requires explicit dyadic pairing and an open numeric
+canonical complete dyadic `R_0` gate under the exact required profile.
+Reduced or n-adic R0 does not open it; later R-family branches retain their own
+contracts.
 
 > [!IMPORTANT]
 > **Architectural-use boundary.** KSODI-Light, the Observer architecture and a
@@ -229,8 +233,8 @@ Only stable `R_0` gates `IK_rel`, followed by later R-family layers.
 | 1 | [KSODI-Standard-Eval](./KSODI-Standard-Eval/README.md) | K/S/O/D/I operators | public | Observer-facing operator definitions for context, structure, grounding, clarity and information impulse. |
 | 2 | [KSODI-Standard-Eval](./KSODI-Standard-Eval/README.md) | `Z_A(k_A)` | public | Monadic state vector over the five operator values for one attributable target event. |
 | 3 | [KSODI-Standard-Eval](./KSODI-Standard-Eval/README.md) | `IK` | public | Monadic interaction-coherence projection; closes KSODI-Standard-Eval. |
-| 4 | [KSODI-Full](./KSODI-Full/README.md) | `R_0` gate | public | Relational comparability gate over distinguishable `Z`-trajectories; not a coupling or resonance score. |
-| 5 | [KSODI-Full](./KSODI-Full/README.md) | `IK_rel` | public | Relational coherence projection after stable `R_0`. |
+| 4 | [KSODI-Full](./KSODI-Full/README.md) | `R_0` gate | public | Availability and bounded-drift gate over distinguishable typed `Z`-trajectory movements; not a coupling or resonance score. |
+| 5 | [KSODI-Full](./KSODI-Full/README.md) | `IK_rel` | public predecessor state | Dyadic relational projection after explicit pairing and its exact open canonical complete dyadic `R_0` gate. |
 | 6 | [KSODI-Full](./KSODI-Full/README.md) | `R_geom` | private; review pending | Geometric coupling in KSODI state space; private material exists and awaits complete public review and infrastructure revalidation. |
 | 7 | [KSODI-Full](./KSODI-Full/README.md) | `R_pace` | private; review pending | Optional pacing overlay where pacing dynamics are explicitly defined; private material exists and awaits complete public review and infrastructure revalidation. |
 | 8 | [KSODI-Full](./KSODI-Full/README.md) | Future signal-media layer | staged research | Voice, rhythm/timing, audio, radio, Morse-like or other signal-media questions without a defined Layer-8 architecture; historical `Takt` labels are not active v3.5 terms. |
@@ -284,9 +288,10 @@ Architecture-agnostic method roles do not make the Observer input-agnostic.
 
 Each attributable signal event and source-local trajectory is evaluated
 monadically before relational comparison. `R_0` establishes only whether
-distinguishable trajectories are stable enough for that comparison. `IK_rel`
-examines relational coherence after stable `R_0`. Observable coupling or
-resonance claims require the applicable branch-specific R-family construct to
+distinguishable typed trajectory movements satisfy one declared availability
+and bounded-drift contract. Current dyadic `IK_rel` additionally requires its
+exact explicit pairing and open canonical complete dyadic R0 gate. Observable
+coupling or resonance claims require the applicable branch-specific R-family construct to
 have been separately released, declared and evaluated across its required
 window. The displayed traces can be inspected. The reconstructed whole remains
 a model.
@@ -721,10 +726,11 @@ monitoring without performing steering or enforcement by themselves.
 KSODI v3.5 is being published in successive stages. The five operator
 definitions, the reader-first monadic state-vector Z method/companion and the
 reader-first monadic IK method/companion form the current public
-KSODI-Standard-Eval release. The relational `R_0` gate is released
-separately as KSODI-Full Layer 4, and `IK_rel` is released as KSODI-Full Layer
-5. `R_geom` and `R_pace` remain outside the current public reference release
-while complete public review and infrastructure revalidation are pending.
+KSODI-Standard-Eval release. The reader-first relational `R_0` method and
+conditional companion are released separately as KSODI-Full Layer 4. The
+existing public `IK_rel` predecessor remains the separately released Layer 5
+state. `R_geom` and `R_pace` remain outside the current public reference
+release while complete public review and infrastructure revalidation are pending.
 Layer 8 remains staged research without a defined architecture.
 → See: [KSODI-Standard-Eval](./KSODI-Standard-Eval/README.md) and
 [KSODI-Full](./KSODI-Full/README.md)

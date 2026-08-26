@@ -1,6 +1,6 @@
 # KSODI-Full Work Notes — V350
 
-Status: public work guidance for the v3.50 KSODI-Full structure
+Status: public release orientation, updated 2026-08-26
 
 Purpose: keep relational, dyadic and n-adic observation separate from monadic
 KSODI-Standard-Eval.
@@ -8,7 +8,7 @@ KSODI-Standard-Eval.
 This folder may describe:
 
 - Layer 4 `R_0` as relational gate
-- Layer 5 `IK_rel` after stable relational comparability
+- Layer 5 current dyadic `IK_rel` after its exact dyadic R0 gate
 - Layer 6 `R_geom`
 - Layer 7 `R_pace`
 - Layer 8 staged signal-media research ideas, including unfinished voice /
@@ -26,9 +26,9 @@ Allowed here:
 
 Guardrail:
 
-Do not collapse coherence back into resonance. `IK` remains monadic and belongs
-to KSODI-Standard-Eval; `R_0`, `IK_rel` and the R-family belong here. Do not present
-KSODI-Full itself as an automated decision system.
+Do not collapse coherence back into resonance. `IK` remains monadic and
+belongs to KSODI-Standard-Eval; `R_0`, `IK_rel` and the R-family belong here.
+Do not present KSODI-Full itself as an automated decision system.
 
 ## Current public boundary
 
@@ -42,15 +42,24 @@ Current architecture correction:
 - Source-local `Z_A(k_A)` is upstream of both monadic `IK_A(k_A)` and the
   relational `R_0` gate.
 - `R_0` is parallel to monadic `IK`; it is not derived from `IK_rel`.
-- Public v3.50 `IK_rel` is the dyadic relational projection after a stable
-  `R_0` gate.
+- The current reader-first Layer-4 R0 method, conditional implementation
+  companion and README are released. Canonical R0 uses complete comparable
+  source-local Z movement from every explicitly paired or grouped trajectory;
+  `R0^[M]` is a named reduced view and remains non-canonical.
+- R0 result status and gate state are separate. Thresholds are finite
+  versioned policy parameters in `[0,1]`; empty/ineligible windows do not
+  manufacture numeric rates; incomparable movement produces no valid R0.
+- Public v3.50 `IK_rel` is the dyadic relational projection after explicit
+  dyadic pairing and an open numeric canonical complete dyadic `R_0` gate
+  under the exact required profile. Reduced and n-adic R0 do not open it.
 - Private method material and large parts of the mathematics for `R_geom` and
   `R_pace` exist, but complete public review and renewed validation on the
   restructured infrastructure remain pending.
 - Voice / audio / wave / signal-media work remains a staged Layer-8 research
   direction without a defined architecture and is not current v3.50 canon.
 
-`KSODI_Observability-to-Controlled-Action_V350.md` belongs under KSODI-Full
-because its action/control orientation cannot be supported by
-KSODI-Standard-Eval alone. Keep Controller logic separate from Observer
-scoring and do not present KSODI-Full as an automated decision system.
+`KSODI_Observability-and-Controlled-Action-Boundary_V350.md` belongs under
+KSODI-Full as an action-adjacent conceptual boundary note. It does not define a
+transition from observation to action: governance and a separately authorized
+Controller stand between Observer records and any permitted response. Do not
+present KSODI-Full as an automated decision system.

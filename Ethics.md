@@ -42,8 +42,9 @@ The ethical boundary follows the method architecture:
   through `K/S/O/D/I`, `Z_A(k)` and optional `IK_A(k)`.
 * **KSODI-Full** begins with dyadic or explicitly declared n-adic observation
   at `R_0`. The contributing trajectories remain distinguishable.
-* A stable `R_0` permits defined relational observation; it does not prove
-  acknowledgement, shared meaning, coupling, intent or causality.
+* An open numeric canonical complete `R_0` gate under the exact required
+  profile permits only a compatible defined relational observation; it does
+  not prove acknowledgement, shared meaning, coupling, intent or causality.
 * An **Observer** reconstructs and reports observable findings. A Controller,
   intervention or other action requires a separate architecture, authority,
   policy and audit trail.

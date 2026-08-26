@@ -8,10 +8,10 @@ This file provides public conceptual orientation. Canonical definitions remain
 in the linked, versioned method files.
 
 Synchronization status, 2026-08-26: the current Layer-1 operator packages and
-the current reader-first Layer-2 Z and Layer-3 IK method/companion packages are
-reviewed public checkpoints and byte-identical with their private counterparts.
-Public R0 and IK_rel remain their separately released predecessor states; their
-newer reader-first private revisions do not silently override them. This note
+the current reader-first Layer-2 Z, Layer-3 IK and Layer-4 R0 method/companion
+packages are reviewed public checkpoints and byte-identical with their private
+counterparts. Public IK_rel remains its separately released predecessor state;
+its newer reader-first private revision does not silently override it. This note
 states only the shared topology and result boundaries supported by the linked
 public methods. Its summaries do not replace those typed contracts or authorize
 transfer of another private revision. The public repository currently has no
@@ -67,13 +67,15 @@ observation at `R_0`.** The R0 gate may evaluate an explicitly declared dyad or
 n-adic constellation without merging event, entity or trajectory identities.
 
 After `Z`, the architecture therefore branches. The KSODI-Full Layer 4 gate
-`R_0` evaluates whether distinguishable `Z` trajectories under an explicit
-dyadic pairing or n-adic constellation map support relational observation, in
-parallel to their monadic IK projections. Only an open numeric canonical
-complete `R_0` gate under the exact required profile admits a compatible
-downstream construct. Current Layer-5 `IK_rel` is dyadic; an n-adic R0 gate does
-not silently open it. R0 and IK_rel belong to KSODI-Full, not
-KSODI-Standard-Eval. The further R-family follows within the KSODI-Full branch
+`R_0` evaluates whether distinguishable typed `Z`-trajectory movements under an
+explicit dyadic pairing or n-adic constellation map satisfy its declared
+availability and bounded-drift contract, in parallel to their monadic IK
+projections. R0 result status and open/closed/not-evaluable gate state remain
+separate; incomparable movement produces no valid R0 result. Only an open
+numeric canonical complete `R_0` gate under the exact required profile admits
+a compatible downstream construct. Current Layer-5 `IK_rel` is dyadic; an
+n-adic R0 gate does not silently open it. R0 and IK_rel belong to KSODI-Full,
+not KSODI-Standard-Eval. The further R-family follows within the KSODI-Full branch
 and remains staged until separate release decisions are complete.
 
 Current public architecture orientation:

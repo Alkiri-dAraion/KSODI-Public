@@ -12,12 +12,13 @@ Read the three KSODI scopes in this order:
 2. **[KSODI-Standard-Eval](./KSODI-Standard-Eval/README.md)** — the formal
    external-Observer line for monadic trajectory observation through
    `K/S/O/D/I -> Z_A(k) -> IK_A(k)`.
-3. **[KSODI-Full](./KSODI-Full/README.md)** — the dyadic Observer extension
-   beginning at `R_0`, including `IK_rel` after stable `R_0` and, where needed
-   for the declared application, the further R-family and signal-media
+3. **[KSODI-Full](./KSODI-Full/README.md)** — the dyadic and explicitly n-adic
+   Observer extension beginning at `R_0`. Current dyadic `IK_rel` requires
+   explicit dyadic pairing and an open numeric canonical complete dyadic `R_0`
+   gate under the exact required profile. The further R-family and signal-media
    extension elements assigned to Layers 6–8. These later elements remain
-   staged in the current public release. KSODI-Full requires two
-   distinguishable monadic trajectories and does not merge them.
+   staged in the current public release. KSODI-Full requires distinguishable
+   monadic trajectories and does not merge them.
 
 For orientation and implementation boundaries, continue with:
 

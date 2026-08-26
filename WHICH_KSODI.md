@@ -74,7 +74,8 @@ For relational evaluation index `j`, the pairing map
 An n-adic setting requires an explicit constellation rather than an implied
 shared trajectory.
 
-After stable `R0`, `IK_rel`, staged `R_geom` and staged optional
+After a compatible open numeric canonical complete `R0` gate under the exact
+required profile, `IK_rel`, staged `R_geom` and staged optional
 `R_pace` are parallel branches with their own bases, profiles, applicability
 rules and weights. One branch does not validate or consume another unless a
 later method definition states so explicitly.

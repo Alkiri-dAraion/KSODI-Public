@@ -29,8 +29,9 @@ A KSODI implementation must preserve the following distinctions:
    inferred by silently aggregating adjacent contributions.
 6. Individual operators remain operator-specific diagnostics until a valid
    state-vector profile has been constructed.
-7. After stable `R0`, `IK_rel`, staged `R_geom` and staged optional `R_pace`
-   remain parallel calculations with separate bases and profiles.
+7. After their compatible open numeric canonical complete `R0` gate contracts,
+   `IK_rel`, staged `R_geom` and staged optional `R_pace` remain parallel
+   calculations with separate bases and profiles.
 8. Graph, vector, Hangar and visualization layers remain typed derived views
    whose outputs can be traced back to original events, evaluations, windows
    and model versions.
@@ -168,7 +169,8 @@ It is not calculated from monadic `IK` and is not a technical handshake
 detector. An open gate does not prove receipt, acknowledgement, contact,
 semantic agreement, coupling or causality.
 
-After stable `R0`, implementations keep the branches separate:
+After their exact compatible open `R0` contracts, implementations keep the
+branches separate:
 
 ```text
 IK_rel(j | p_IK_rel)

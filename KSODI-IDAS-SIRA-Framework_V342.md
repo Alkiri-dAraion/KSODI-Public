@@ -277,8 +277,9 @@ Two robots may exchange formally structured task signals while moving through
 the same environment. Their response pace can align even while their spatial
 trajectories diverge; conversely, they may remain geometrically close while
 their communication pace separates. This is why staged `R_geom` and optional
-staged `R_pace` are parallel research branches after stable `R0`, not synonyms
-and not a serial chain. Neither branch is a motion controller or a physical
+staged `R_pace` are parallel research branches after their exact compatible
+open `R0` gate contracts, not synonyms and not a serial chain. Neither branch
+is a motion controller or a physical
 safety system.
 
 ---

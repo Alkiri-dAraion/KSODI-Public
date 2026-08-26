@@ -25,9 +25,11 @@ line is `K/S/O/D/I -> Z -> IK` and ends with `IK`.
 
 After `Z`, the architecture branches. `R_0` is the relational gate
 evaluated from distinguishable `Z`-trajectories in parallel to monadic `IK`.
-Only after a stable `R_0` does `IK_rel` open the relational projection branch,
-followed by the further R-family. `R_0`, `IK_rel` and the further R-family are
-not part of KSODI-Standard-Eval.
+Current dyadic `IK_rel` opens only after explicit dyadic pairing and an open
+numeric canonical complete dyadic `R_0` gate under the exact required profile.
+Reduced or n-adic R0 does not open it. Later compatible R-family constructs
+remain parallel branches with their own contracts. `R_0`, `IK_rel` and the
+further R-family are not part of KSODI-Standard-Eval.
 
 Without such a gate, relational or resonance-family observations can become
 misleading, because a system may show apparent resonance while losing
@@ -35,7 +37,7 @@ coherence, direction or comparability.
 
 ## Current research direction
 
-The revised private reference line distinguishes monadic observation layers
+The current method line distinguishes monadic observation layers
 from dyadic and n-adic relational observation layers.
 
 KSODI-Full extends the method toward dynamic interaction patterns, transitions
@@ -50,6 +52,11 @@ KSODI-Full is intended to support explainability, observability and
 auditability. Its observations may inform separately governed steering or
 action, but KSODI-Full does not itself decide, steer or replace human
 responsibility and must not be used as an automated decision system.
+
+The action-adjacent
+[Observability and Controlled-Action Boundary](./KSODI_Observability-and-Controlled-Action-Boundary_V350.md)
+explains why Observer records, governance policy, Controller decisions and
+executed actions remain separate authorities.
 
 ## Status
 
@@ -70,6 +77,6 @@ Current public v3.5 release boundary:
 The historical Observer images are preserved as important transition evidence
 for both KSODI-Standard-Eval and KSODI-Full:
 
-[`historical-observer-v342`](../archive/assets-archive/historical-observer-v342/README.md)
+[`historical-observer-v342`](https://github.com/Alkiri-dAraion/KSODI-Public/blob/main/archive/assets-archive/historical-observer-v342/README.md)
 
 Thanks for your understanding.

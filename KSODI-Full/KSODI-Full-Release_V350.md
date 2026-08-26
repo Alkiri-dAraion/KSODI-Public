@@ -1,7 +1,8 @@
 # KSODI-Full v350
 
-Status: public v3.50 KSODI-Full research structure; `R_0` and `IK_rel` are
-released public reference material. `R_geom` and `R_pace` await complete public
+Status: public v3.50 KSODI-Full research structure; the current reader-first
+`R_0` package and the existing public `IK_rel` predecessor are separately
+released reference material. `R_geom` and `R_pace` await complete public
 review and infrastructure revalidation; Layer 8 signal-media work remains
 staged research.
 
@@ -17,11 +18,14 @@ and ends with `IK`:
 [`KSODI-Standard-Eval`](../KSODI-Standard-Eval/README.md)
 
 After `Z`, the architecture branches. KSODI-Full evaluates `R_0` from
-distinguishable `Z`-trajectories in parallel to monadic `IK`. Stable `R_0` gates
-`IK_rel`, followed by the further R-family. `R_0`, `IK_rel` and the further
-R-family are not part of KSODI-Standard-Eval. `R_0` is released here as the Layer 4
-gate; `IK_rel` is released here as Layer 5; `R_geom`, `R_pace` and later
-R-family layers are not current public reference releases.
+distinguishable typed `Z`-trajectory movements in parallel to monadic `IK`.
+Current dyadic `IK_rel` requires explicit dyadic pairing and an open numeric
+canonical complete dyadic `R_0` gate under the exact required profile. It is a
+parallel post-gate branch, not the next number in a serial calculation. `R_0`,
+`IK_rel` and the further R-family are not part of KSODI-Standard-Eval. `R_0`
+is released here as the Layer 4 gate; `IK_rel` is released here as Layer 5;
+`R_geom`, `R_pace` and later R-family layers are not current public reference
+releases.
 
 ## Layers
 
@@ -38,7 +42,7 @@ because controlled intervention requires more than monadic KSODI-Standard-Eval
 observation. It depends on relational gates, governance corridors and a
 separate controller boundary.
 
-- [`KSODI_Observability-to-Controlled-Action_V350.md`](./KSODI_Observability-to-Controlled-Action_V350.md)
+- [`KSODI_Observability-and-Controlled-Action-Boundary_V350.md`](./KSODI_Observability-and-Controlled-Action-Boundary_V350.md)
 
 Architecture overview:
 

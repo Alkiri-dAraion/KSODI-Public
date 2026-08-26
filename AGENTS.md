@@ -99,6 +99,9 @@ question being answered:
 | How may Z be stored or operationalized? | [Z Implementation Companion](./KSODI-Standard-Eval/Layer-2_KSODI-State-Vector-Z_V350/KSODI_State-Vector-Z_Implementation-Companion_V350.md) | conditional public guidance; the adjacent Z method remains authoritative and no production stack is implied |
 | How is monadic IK projected? | [Layer-3 IK entry](./KSODI-Standard-Eval/Layer-3_KSODI-Monadic-Interaction-Coherence-IK_V350/README.md), then [Monadic IK](./KSODI-Standard-Eval/Layer-3_KSODI-Monadic-Interaction-Coherence-IK_V350/KSODI_Monadic-Interaction-Coherence-IK_V350.md) | the versioned IK method controls canonical and reduced projections, dynamics, windows and the relational boundary |
 | How may IK be stored or operationalized? | [IK Implementation Companion](./KSODI-Standard-Eval/Layer-3_KSODI-Monadic-Interaction-Coherence-IK_V350/KSODI_Monadic-Interaction-Coherence-IK_Implementation-Companion_V350.md) | conditional public guidance; the adjacent IK method remains authoritative and no production stack is implied |
+| How is the Layer-4 relational gate evaluated? | [Layer-4 R0 entry](./KSODI-Full/Layer-4_KSODI-Relational-Gate-R_0_V350/README.md), then [R0 method](./KSODI-Full/Layer-4_KSODI-Relational-Gate-R_0_V350/KSODI_Relational-Gate-R_0_V350.md) | the versioned R0 method controls pairing/constellation identity, movement comparability, drift, status, gate policy and windows |
+| How may R0 be stored or operationalized? | [R0 Implementation Companion](./KSODI-Full/Layer-4_KSODI-Relational-Gate-R_0_V350/KSODI_Relational-Gate-R_0_Implementation-Companion_V350.md) | conditional public guidance; the adjacent R0 method remains authoritative and no production stack or Controller is implied |
+| How are observation and controlled action separated? | [Observability and Controlled-Action Boundary](./KSODI-Full/KSODI_Observability-and-Controlled-Action-Boundary_V350.md) | conceptual action-adjacent orientation; it is not a method, policy or Controller specification |
 | How may the method be stored or implemented? | [KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md) | implementation contract; implementation examples do not redefine the method |
 | How may Operator I be operationalized in a Conversation-/Retrieval-oriented profile? | [Operator I Implementation Companion](./KSODI-Standard-Eval/Layer-1_KSODI-Operators_V350/KSODI_Operator-I_Implementation-Companion_V350.md) | conditional public implementation guidance; the adjacent Operator-I method file remains authoritative |
 | How may Operator D be operationalized under a declared detector/carrier profile? | [Operator D Implementation Companion](./KSODI-Standard-Eval/Layer-1_KSODI-Operators_V350/KSODI_Operator-D_Implementation-Companion_V350.md) | conditional public implementation guidance; the adjacent Operator-D method file remains authoritative |
@@ -130,8 +133,12 @@ Superseded root-README snapshots are preserved under
 under `archive/document-snapshots/architecture/`, superseded public agent
 instructions under `archive/document-snapshots/agents/`, and superseded Hangar
 notes under `archive/document-snapshots/hangar/`, the superseded Layer-2 Z
-release under `archive/document-snapshots/state-vector-z/`, and the superseded
-Layer-3 IK release under `archive/document-snapshots/monadic-ik/`, for provenance.
+release under `archive/document-snapshots/state-vector-z/`, the superseded
+Layer-3 IK release under `archive/document-snapshots/monadic-ik/`, the
+superseded Layer-4 R0 release under
+`archive/document-snapshots/relational-gate-r0/`, and the superseded
+action-adjacent note under
+`archive/document-snapshots/controlled-action-boundary/`, for provenance.
 They retain historical wording and
 may contain root-relative links that do not resolve from the archive folder.
 Do not use archived files as current method, release or navigation guidance;
@@ -272,7 +279,8 @@ Current public v3.5 repository material includes:
 - `O0` source-need / reference-space applicability note
 - source-local `Z_A(k_A)`
 - monadic `IK`
-- `R_0` as the Layer 4 relational comparability gate
+- `R_0` as the reader-first Layer 4 availability and bounded-drift gate over
+  distinguishable typed Z-trajectory movements
 - `IK_rel` as the Layer 5 dyadic relational coherence projection after explicit
   dyadic pairing and open numeric canonical complete dyadic `R_0` under the
   exact required profile

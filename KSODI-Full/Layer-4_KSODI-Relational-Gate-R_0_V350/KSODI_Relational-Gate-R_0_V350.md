@@ -1,723 +1,538 @@
-# KSODI R_0 - Relational Gate / Monadic-to-Dyadic Gate v3.50
+# KSODI R_0 - Typed Monadic-to-Relational Comparability Gate v3.50
 
-Status: public v3.50 reference release; lifted from the private canonical
-workbench after the 2026-07-04 Fable review, Fable's 2026-07-19 R0 alignment
-pass and the 2026-07-25 R0 public-release decision.
+> **Status:** public v3.50 reference release - strictly reviewed and released on 2026-08-26.
 
-Layer: KSODI Full Layer 4 gate for monadic-to-dyadic or n-adic comparability after `Z`.
+Status: authoritative reader-first Layer-4 method, strictly reviewed and released 2026-08-26. Mathematical prose
+uses `R_0`; path-safe and implementation notation may use `R0`. This file
+defines the carrier-neutral gate method. Schemas, pseudocode, migration and
+test fixtures belong in the separate companion:
 
-Naming convention: `R_0` is the canonical textual and filename label,
-preserving the original mathematical subscript. The legacy and code-compatible
-form `R0` used throughout existing formulas denotes the same gate and does not
-name a separate method element.
+- [`KSODI_Relational-Gate-R_0_Implementation-Companion_V350.md`](./KSODI_Relational-Gate-R_0_Implementation-Companion_V350.md)
 
-## 1. Definition
+## 0. What R_0 is and what it does
 
-The source boundary before this gate is:
+`R_0` asks one narrow gate question:
+
+> Do the separately observed, explicitly paired trajectories satisfy one
+> declared availability and bounded-drift contract strongly enough for a
+> relational comparison to be opened?
+
+`R_0` uses source-local Z movement. It does not compare semantic direction,
+movement direction, projection agreement or coupling. The v3.50 reference
+profile summarizes the normalized movement magnitudes of the declared
+trajectories by their arithmetic mean.
+
+The essential distinction is:
 
 ```text
-e_A(k)
-  -> K_A / S_A / O_A / D_A / I_A
-  -> Z_A(k)
-       |-> IK_A(k)
-       +-> R0(A,B,...) -> IK_rel -> R-family
+declared pair or constellation comes before R_0
+complete comparable Delta Z on every trajectory -> canonical R_0
+one fixed explicit coordinate set M -> named R_0^[M]
+numeric R_0 result -> gate may be open or closed
+non-numeric R_0 result -> gate is not evaluable
+incompatible identity/profile/predecessor contracts -> no valid R_0 result
 ```
 
-All Layer-1 operator values, `Z_A` and `IK_A` remain monadic and
-source-attributed. Temporal comparisons before `R0` use only comparable
-positions within the same declared trajectory. `A` and `B` remain separate;
-their relation is neither imported into an operator nor represented as a
-merged state.
+An open gate is necessary for downstream relational interpretation but is not
+evidence of relation, agreement, shared meaning, coupling or resonance.
 
-`R0` is the minimal relational gate for dyadic or n-adic analysis.
+### 0.1 Minimal practical reading
 
-It checks whether two or more monadic trajectories are stable enough to be meaningfully compared.
+1. Preserve distinguishable monadic trajectories.
+2. Declare an explicit dyadic pairing `pi(j)` or n-adic constellation map.
+3. Resolve each trajectory's source-local predecessor independently.
+4. Preserve typed Z and movement availability; do not zero-fill.
+5. Use all five coordinates for canonical R0.
+6. If a reduced gate is justified, declare one non-empty fixed M and report
+   `R0^[M]`.
+7. Compute normalized per-trajectory drift and then the declared gate profile.
+8. Separate the numeric result status from the derived open/closed gate state.
+9. Compare or aggregate only under one stable identity, M, norm and profile.
 
-`R0` does not measure full resonance. It measures whether relational or resonance-family analysis may be opened at all.
+### 0.2 How to read this file
 
-`R0` is a gate value, not a quality score.
+Sections 1-3 establish examples, identity and typed input. Sections 4-8 define
+result state, normalization, canonical and reduced gates. Sections 9-11 cover
+n-adic use, dynamics and boundaries. Section 12 gives the compact contract and
+tests.
 
-`R0` is a necessary condition for relational analysis, not a sufficient
-condition. An open gate means that declared trajectories are stable enough to
-compare. It does not by itself prove coupling, resonance, shared intention,
-agreement or joint stability.
+## 1. Bounded application examples
 
-The fact that trajectories belong together must be declared by the Observer
-through an `eval_pair_id`, shared scope, shared evaluation unit or other
-versioned pairing metadata. `R0` does not discover the pair. It only checks
-whether the declared pair or group is stable enough for later relational layers.
+### 1.1 Horse and rider
 
-## 1.1 Handshake and Coupling Boundary
+Horse A and rider B are two distinguishable participants in one declared
+observation episode. Their presence together does not establish coupling.
 
-`R0` is the SYN/ACK-like Handshake boundary of relational observation. The
-analogy is functional and bounded: KSODI does not implement TCP and does not
-map `R0` one-to-one onto an OSI layer.
+At relational step `j`, the observer pairs one declared position from each
+trajectory. R0 asks only whether their separately observed movements meet the
+selected stability and availability contract. If the gate opens, later
+branches may ask about movement compatibility, geometry or pacing. The horse
+and rider may still be moving in unrelated directions—or be perfectly stable
+while doing nothing together.
 
-The Observer declares the pair or group independently. `R0` then checks only
-whether the distinguishable trajectories are currently available and stable
-enough for relational observation to be opened.
+### 1.2 Human-chatbot interaction
 
-`R0` is not coupling and does not mark the beginning of coupling. An open or
-persistently open gate establishes only an available comparison basis.
+Human and chatbot events retain separate source identities and source-local
+predecessors. Chronological adjacency in a chat does not create one shared
+Delta Z.
 
-After stable `R0`, `IK_rel` may examine relational projection compatibility.
-Branch-specific R-family components may examine geometric, pacing or other
-explicitly defined relational dynamics. Strong observable coupling requires a
-sustained conjunction across a declared observation window:
+If both complete Z trajectories provide comparable complete movement at the
+paired step, canonical R0 may be evaluated. If only a fixed subset such as
+`M={K,S,D,I}` is admissible on both sides, the result is explicitly
+`R0^[K,S,D,I]`, not canonical R0.
+
+## 2. Architectural position and identity
+
+### 2.1 Position
 
 ```text
-stable R0
-AND sustained high IK_rel
-AND sustained high branch-specific R
--> strong observable coupling
+A: K/S/O/D/I -> Z_A -> Delta Z_A --\
+                                       R0_AB(j)
+B: K/S/O/D/I -> Z_B -> Delta Z_B --/
+                                          |
+                                          +-> IK_rel and parallel R branches
 ```
 
-This is a semantic observation rule, not a new universal scalar formula.
-`IK_rel` alone does not establish strong coupling. A branch-specific R signal
-alone does not establish strong coupling. The active R component, aggregation
-window, applicability policy and thresholds must be declared and versioned.
+Monadic IK is a parallel branch after Z and is not an input to R0.
 
-Coupling strength does not determine whether the coupled movement is desirable,
-correct, safe or aligned with an intended direction. Those questions require
-their own reference frame, corridors and observation criteria.
-
-### Bounded Example: Horse and Rider
-
-Consider a horse and a rider.
-
-The fact that the rider is mounted establishes the concrete dyadic situation:
-two distinguishable participants are present within one declared observation
-episode. This alone does not establish coupling.
-
-`R0` asks whether the distinguishable trajectories of horse and rider are
-sufficiently available and stable for relational observation to be opened. An
-open `R0` therefore means that horse and rider can now be observed as a
-declared and sufficiently stable dyadic constellation. It does not mean that
-they are already coupled.
-
-Only across a sufficiently long observation window can reciprocal adjustments
-become visible as a relational pattern, for example through balance, movement,
-aids and responses. Sustained high `IK_rel` together with sustained high
-branch-specific R-family signals may support the observation of strong
-coupling: horse and rider do not merely occupy the same constellation but
-coordinate closely enough to perform a difficult task together.
-
-They may nevertheless show sustained high `IK_rel` and high branch-specific R
-signals while galloping past the arena exit together. The coupling may be
-strong; the intended direction remains a separate question.
-
-Individual contributions remain attributable where the observation design
-allows it. The longitudinal relational ordering belongs to the shared
-observable interaction space and cannot be reduced to either participant alone.
-Private thoughts and internal states are neither mixed nor transferred.
-
-The analogy is explanatory only. It does not replace the formal `R0`
-definition or define a universal coupling threshold.
-
-## 2. Position in the KSODI Architecture
-
-The five KSODI operators are calculated first:
+### 2.2 Atomic dyadic gate unit
 
 ```text
-K0, S0, O0, D0, I0 -> Z(t)
+rho_AB(j | pi(j))
+pi(j) = (k_A(j), k_B(j))
 ```
 
-`Z(t)` remains monadic. It may be calculated for one participant, one agent, one system, one trajectory or one observed interaction side.
+`k_A(j)` and `k_B(j)` identify the paired current positions. Their monadic
+predecessors are `k_A(j)-1` and `k_B(j)-1` within their own declared
+trajectories, or another explicitly declared source-local predecessor map.
 
-Relational analysis begins only after at least two distinguishable trajectories are available:
+Required identity includes:
+
+- ordered or otherwise explicitly symmetric dyad ID;
+- for each paired event: `target_event_id_E`, stable or provisional
+  `source_entity_id_E`, explicit `source_attribution_status_E`, and
+  `emitting_entity_id_E` only when established;
+- for each monadic trajectory: `trajectory_id_E`, global event index `n_E`
+  and source-local position `k_E`;
+- pairing-map ID and directionality;
+- context/comparison scope;
+- Z, norm, R0 and threshold profile IDs.
+
+R0 does not discover a pair. The Observer declares it.
+
+### 2.3 Coordinate order
 
 ```text
-Z_A(t), Delta Z_A(t)
-Z_B(t), Delta Z_B(t)
+(K,S,O,D,I)
 ```
 
-Canonical gate sequence:
+is the fixed reporting order. It is not a causal chain and does not merge the
+two trajectories.
+
+## 3. Typed Z-movement input
+
+### 3.1 Complete movement
+
+Canonical R0 requires, on both sides:
 
 ```text
-Z_A, Z_B
-Delta Z_A, Delta Z_B
-        |
-        v
-      R0(t)
-        |
-        v
-if R0_clip(t) >= theta_R0_stable:
-    IK_rel(t) may be evaluated
-    R-family components may be evaluated where their own inputs are available
+complete comparable Z at the current source-local position
+complete comparable Z at its source-local predecessor
+complete numeric Delta Z in [-1,1]^5
+```
+
+Each numeric coordinate difference exists only if both static coordinate
+records are numeric and comparable. Typed `T_Z`, categorical `Delta T_Z`,
+profiles, reasons and provenance remain attached.
+
+### 3.2 Movement-result status
+
+For each coordinate X and trajectory E, an implementation must be able to
+distinguish:
+
+```text
+numeric(Delta X_E)
+not_selected
+not_observable
+not_applicable
+incomparable
+```
+
+`incomparable` is a comparison-processing state that blocks a numeric delta;
+it does not overwrite either stored static coordinate result and is not an
+external R0 result status. A required incomparable movement record blocks the
+R0 calculation and produces no valid R0 result; it must not be recoded as
+`not_applicable` or numeric zero.
+
+### 3.3 Fixed partial movement
+
+For one explicit non-empty
+
+```text
+M subset of {K,S,O,D,I}
+```
+
+`Delta Z_E^[M]` exists only when every coordinate in M is numeric and
+comparable on trajectory E. Dyadic `R0^[M]` requires the same M for A and B.
+
+M is selected by a versioned analytic profile, not generated as “whatever is
+numeric at this event.”
+
+## 4. R0 result and gate state
+
+### 4.1 Result type
+
+The external R0 result domain is:
+
+```text
+numeric(value in [0,1])
+not_selected
+not_observable
+not_applicable
+```
+
+Recommended propagation:
+
+| Condition | R0 result status |
+| --- | --- |
+| no R0 profile selected | `not_selected` |
+| required movement cannot be observed | `not_observable` |
+| a valid declared pair/constellation, predecessor, scope or required fixed-M contract is substantively inapplicable | `not_applicable` |
+| all gates and calculations pass | `numeric` |
+| required records exist but identity, profile, axis or predecessor contracts are incompatible | no valid result; `incomparable` processing record |
+| identity, range, threshold, weight or arithmetic failure | no valid result; processing error |
+
+Retain the typed input reasons from every trajectory.
+
+### 4.2 Derived gate state
+
+Gate state is separate:
+
+```text
+if R0.status != numeric:
+    gate_state = not_evaluable
+else if R0.value >= theta_R0_stable:
+    gate_state = open
 else:
-    IK_rel(t) = not_applicable
-    R-family components = not_applicable
+    gate_state = closed
 ```
 
-This prevents KSODI from assigning relational coherence or resonance where no stable shared movement basis has been established.
+`theta_R0_stable` must be finite and lie in `[0,1]`. The threshold is a
+versioned gate-policy parameter, not an empirical fact, a coupling threshold
+or action authority.
 
-After stable `R0`, a method may define operator-specific relational comparison
-views where they are useful. Such a partial view is not canonical `IK_rel` and
-does not by itself establish resonance or a complete R-family result.
+A numeric value below threshold is a valid numeric R0 result with a closed
+gate. It is not `not_applicable`.
 
-## 3. Eval Scope
+## 5. Normalized trajectory drift
 
-`R0` is calculated per paired evaluation step.
+Let E denote A or B.
 
-Typical examples:
-
-- human and model trajectories in a chat interaction
-- two model trajectories in a multi-agent setting
-- two system components whose interaction states are represented as KSODI state vectors
-- n-adic extensions where more than two trajectories are compared
-
-The core description is architecture-agnostic. It does not require natural language, audio, chat UI, tool use or a specific model architecture.
-
-Human-chatbot interaction is one implementation case, not the definition of `R0`.
-
-The Observer must declare:
-
-- `eval_pair_id` or n-adic comparison ID
-- shared evaluation scope
-- trajectory IDs
-- component order and operator versions
-- applicability / masking policy
-- minimum active component policy
-
-## 4. Input Data
-
-For the dyadic case:
+### 5.1 Complete L1 reference norm
 
 ```text
-Z_A(t), Z_B(t) in [0,1]^5 where components are applicable
-Delta Z_A(t) = Z_A(t) - Z_A(t-1)
-Delta Z_B(t) = Z_B(t) - Z_B(t-1)
+d_E,L1(j)
+= (1/5) * sum_(X in {K,S,O,D,I}) |Delta X_E(k_E(j))|
+in [0,1]
 ```
 
-where `A` and `B` denote two distinguishable trajectories.
+L1 is the v3.50 reference norm because every coordinate contribution remains
+directly readable and equally bounded under the complete profile.
 
-`R0` uses only numerical state vectors and their movement.
-
-It does not use raw text, embeddings, voice data, timing data, identity information, personality inference, semantic direction or intent.
-
-Where `Z` components are masked by applicability rules, `R0` must use the
-shared active component set:
+### 5.2 Complete L2 profile
 
 ```text
-A_pair_i(t) = A_delta_A_i(t) AND A_delta_B_i(t)
-A_pair(t) = A_delta_A(t) INTERSECT A_delta_B(t)
-m_pair(t) = sum_i A_pair_i(t)
+d_E,L2(j)
+= sqrt(sum_X Delta X_E(k_E(j))^2) / sqrt(5)
+in [0,1]
 ```
 
-`A_delta_A(t)` and `A_delta_B(t)` denote the components where `Delta Z` is
-valid and comparable for trajectories `A` and `B`.
+L2 is a separate versioned profile and is more sensitive to concentrated
+movement.
 
-`min_components_R0` must be at least `1`. A threshold of `0` would make the
-relational gate applicable even when no shared component is evaluable and is
-therefore invalid.
-
-If:
+### 5.3 Fixed partial norms
 
 ```text
-m_pair(t) < min_components_R0
+d_E,L1^[M](j)
+= (1/|M|) * sum_(X in M) |Delta X_E(k_E(j))|
+
+d_E,L2^[M](j)
+= sqrt(sum_(X in M) Delta X_E(k_E(j))^2) / sqrt(|M|)
 ```
 
-then:
+The denominator is the size of the fixed declared M, never an event-wise
+availability count.
+
+## 6. Canonical dyadic R0
+
+For complete comparable movement and the L1 reference profile:
 
 ```text
-R0(t) = not_applicable
+R0_raw,AB(j)
+= 1 - (d_A,L1(j) + d_B,L1(j)) / 2
+
+R0_AB(j)
+= clip(R0_raw,AB(j), 0, 1)
+in [0,1]
 ```
 
-Masked components must never be silently coerced to `0`.
-
-## 5. Normalized Drift Magnitudes
-
-`R0` must use normalized drift magnitudes in `[0,1]`.
-
-Raw drift magnitudes are named separately from normalized drift magnitudes.
-
-L1 raw drift:
-
-```text
-d_A_L1_raw(t) = sum_i |Delta Z_A_i(t)|
-d_B_L1_raw(t) = sum_i |Delta Z_B_i(t)|
-```
-
-L1 normalized drift, recommended default:
-
-```text
-d_A_norm(t) = d_A_L1_raw(t) / 5
-d_B_norm(t) = d_B_L1_raw(t) / 5
-```
-
-If applicability masks are active, use the shared active pair set:
-
-```text
-d_A_L1_raw_pair(t) = sum_i A_pair_i(t) * |Delta Z_A_i(t)|
-d_B_L1_raw_pair(t) = sum_i A_pair_i(t) * |Delta Z_B_i(t)|
-
-d_A_norm(t) = d_A_L1_raw_pair(t) / m_pair(t)
-d_B_norm(t) = d_B_L1_raw_pair(t) / m_pair(t)
-```
-
-L2 raw drift:
-
-```text
-d_A_L2_raw(t) = ||Delta Z_A(t)||_2
-d_B_L2_raw(t) = ||Delta Z_B(t)||_2
-```
-
-L2 normalized drift, optional geometric analysis norm:
-
-```text
-d_A_norm(t) = d_A_L2_raw(t) / sqrt(5)
-d_B_norm(t) = d_B_L2_raw(t) / sqrt(5)
-```
-
-Masked L2 variant:
-
-```text
-d_A_L2_raw_pair(t) = sqrt(sum_i A_pair_i(t) * Delta Z_A_i(t)^2)
-d_B_L2_raw_pair(t) = sqrt(sum_i A_pair_i(t) * Delta Z_B_i(t)^2)
-
-d_A_norm(t) = d_A_L2_raw_pair(t) / sqrt(m_pair(t))
-d_B_norm(t) = d_B_L2_raw_pair(t) / sqrt(m_pair(t))
-```
-
-The selected norm must be versioned.
-
-Do not insert an unnormalized L2 norm into the `R0` formula. Without normalization, `R0` can leave `[0,1]` and the gate interpretation collapses.
-
-Use `L1_norm` when robust, component-readable monitoring is preferred. Use `L2_norm` when peak-sensitive geometric analysis is preferred.
-
-## 6. Minimal Dyadic Definition
-
-For the default dyadic case:
-
-```text
-R0_raw(t) = 1 - (d_A_norm(t) + d_B_norm(t)) / 2
-```
-
-With clipping:
-
-```text
-R0_clip(t) = clip(R0_raw(t), 0, 1)
-```
-
-Canonical gate value:
-
-```text
-R0(t) := R0_clip(t)
-```
-
-Range:
-
-```text
-R0(t) in [0,1]
-```
+With valid inputs, clipping should not bind; it is a numerical guard.
 
 Interpretation:
 
-| Signal | Meaning |
+| Result | Bounded meaning |
 | --- | --- |
-| `R0 approx 1` | compared trajectories are minimally stable |
-| `R0 medium` | shared comparison may be possible but unstable |
-| `R0 approx 0` | strong movement; relational analysis should be treated cautiously |
-| `R0 < theta_R0_stable` | `IK_rel` and later R-family analysis are not opened |
+| near 1 | low average normalized movement under the declared profile |
+| middle | moderate average normalized movement |
+| near 0 | high average normalized movement |
+| gate open | selected stability threshold is met |
+| gate closed | numeric result exists but threshold is not met |
 
-If both normalized drift magnitudes are `0`, then `R0 = 1`. This means the gate is stable. It does not mean the interaction is resonant in the full sense.
+If both trajectories are static, R0 is 1. This confirms only minimal movement,
+not connection or compatibility.
 
-If two trajectories are static but unrelated, `R0` can still open by design.
-This does not prove connection. It only says that the declared trajectories are
-stable enough for later relational checks. Relational analysis continues later through `IK_rel` and explicitly
-defined R-family components. `IK_rel` examines relational projection
-compatibility; sustained strong coupling requires its conjunction with
-sustained high branch-specific R-family evidence under a declared window and
-policy.
+## 7. Fixed partial dyadic gate
 
-Under the dyadic L1 default with valid normalization, clipping should not bind.
-It is retained as a defensive guard against implementation or policy violations.
-
-## 6.1 Documented Limitation: Mean-Based Aggregation
-
-The default `R0` definition aggregates normalized drift magnitudes by
-averaging. This choice is simple, readable and auditable, but it has a known
-limitation that must not be discovered by accident:
-
-Averaging can mask one-sided instability.
-
-Dyadic example:
+For the same fixed M on both trajectories:
 
 ```text
-d_A_norm(t) = 0.0    (trajectory A is static)
-d_B_norm(t) = 0.8    (trajectory B moves strongly)
-
-R0(t) = 1 - (0.0 + 0.8) / 2 = 0.6
+R0_AB^[M](j)
+= clip(1 - (d_A^[M](j) + d_B^[M](j)) / 2, 0, 1)
 ```
 
-Depending on `theta_R0_stable`, the gate may open although one side of the
-comparison is highly unstable.
+`R0^[M]` is a reduced gate view. It is not canonical R0 and is not comparable
+with another `R0^[N]` or complete R0 unless a separate method explicitly
+defines that comparison.
 
-In the n-adic variant the effect grows with `n`: a single unstable trajectory
-among many stable ones contributes only `1/n` of its drift to the gate value
-and can disappear into the average.
+The former event-wise shared-active-set construction is retired. It may be
+migrated only when its exact M can be recovered. Otherwise the legacy result
+remains non-comparable.
 
-Why this is accepted in v3.50:
+## 8. Mean limitation, weights and asymmetry
 
-- `R0` is a necessary, not a sufficient condition. It opens relational
-  analysis; it does not certify coupling or joint stability.
-- One-sided instability that passes the gate remains visible in the monadic
-  layer of the affected trajectory (`Delta Z`, `Delta2 Z`, drift norms) and in
-  later relational layers.
-- The mean keeps the gate expression minimal, transparent and comparable across
-  dyadic and n-adic cases.
+### 8.1 Mean limitation
 
-Operational consequence:
-
-`R0` gate status must always be read together with the per-trajectory
-normalized drift magnitudes `d_j_norm(t)`, which are part of the recommended
-storage. A gate that opens over strongly asymmetric drift is a signal in itself
-and may be flagged by the implementation profile.
-
-Future work, not active v3.50:
+The arithmetic mean can mask one-sided movement:
 
 ```text
-R0_strict_raw(t) = 1 - max_j d_j_norm(t)
-R0_strict(t) = clip(R0_strict_raw(t), 0, 1)
+d_A = 0.0
+d_B = 0.8
+R0 = 0.6
 ```
 
-`R0_strict` opens the gate only if every compared trajectory is individually
-stable. It is stricter, less forgiving toward asymmetric constellations and
-loses the readable "average movement" semantics. Whether `R0_strict`, the
-weighted variant `R0_w` or a per-trajectory threshold policy is the better
-answer for asymmetric systems is an empirical question and belongs to a later
-version. It must not be inferred as active v3.50 behavior.
+Whether the gate opens depends on the threshold profile. Therefore every R0
+record retains both per-trajectory drift magnitudes.
 
-## 7. Weighted Variant
-
-For asymmetric systems:
+### 8.2 Weighted profile
 
 ```text
-R0_w_raw(t) = 1 - (w_A * d_A_norm(t) + w_B * d_B_norm(t))
-R0_w(t) = clip(R0_w_raw(t), 0, 1)
-```
+R0_w,AB(j)
+= clip(1 - (w_A d_A(j) + w_B d_B(j)), 0, 1)
 
-with:
-
-```text
 w_A >= 0
 w_B >= 0
 w_A + w_B = 1
 ```
 
-This may be useful when one trajectory is expected to move more strongly than the other, for example in human-model interaction.
+This is a separately named profile. Weights declare how each trajectory's
+movement contributes to the gate; they are not empirical facts about either
+entity and require justification and versioning.
 
-Weights must be versioned.
+### 8.3 Asymmetry diagnostic
 
-## 8. N-Adic Variant
-
-For `n` trajectories:
-
-```text
-R0_n_raw(t) = 1 - (1/n) * sum_j d_j_norm(t)
-R0_n(t) = clip(R0_n_raw(t), 0, 1)
-```
-
-where every `d_j_norm(t)` is a normalized drift magnitude in `[0,1]` under the same versioned norm policy.
-
-This supports multi-agent or multi-participant observation.
-
-If applicability masks are active, the shared active set is the intersection
-over all compared trajectories:
+An optional companion diagnostic is:
 
 ```text
-A_group(t) = INTERSECT_j A_delta_j(t)
-m_group(t) = sum_i A_group_i(t)
+a_AB(j) = |d_A(j) - d_B(j)| in [0,1]
 ```
 
-The same lower-bound rule applies here: `min_components_R0` must be at least
-`1`.
+It exposes one-sided movement but does not alter canonical R0. A later strict
+profile may use `1-max(d_A,d_B)`; it is not active canonical v3.50 behavior.
 
-If:
+## 9. N-adic extension
+
+Let one declared constellation at relational step q be:
 
 ```text
-m_group(t) < min_components_R0
+C(q) = {E_1, ..., E_n}
+Pi(q) = {k_E(q) | E in C(q)}
+n >= 2
 ```
 
-then:
+Every trajectory keeps its own source-local predecessor.
+
+For complete comparable movement under one common norm profile:
 
 ```text
-R0_n(t) = not_applicable
+R0_C(q)
+= clip(1 - (1/n) * sum_(E in C(q)) d_E(q), 0, 1)
 ```
 
-The n-adic denominator must use the declared active component count, not the
-full five-component state space unless all five components are applicable for
-all compared trajectories.
-
-## 9. What R0 Does Not Measure
-
-`R0` does not measure:
-
-- semantic agreement
-- resonance in the full sense
-- structural coupling
-- directional coupling
-- future signal-media coupling
-- temporal lag or lead relation
-- pacing
-- voice
-- harmony
-- truth
-- correctness
-- usefulness
-- compliance
-
-Most importantly:
+A separately named weighted constellation profile may use fixed weights:
 
 ```text
-R0 is independent of semantic direction, meaning and coupling.
+R0_w,C(q)
+= clip(1 - sum_(E in C(q)) w_E d_E(q), 0, 1)
+
+w_E >= 0 for every E
+sum_(E in C(q)) w_E = 1
 ```
 
-Directional and geometric coupling belong to `R_geom` or later R-family layers.
+Membership order or stable member identity must bind every weight. Weights are
+governed analytic configuration choices, not observed facts about members.
 
-Readable-language or sign-visible pacing belongs to `R_pace` only where the
-pacing structure is explicitly defined. Audio, radio, Morse-like signals,
-frequency-like patterns and wave/signal forms belong to future signal-media /
-Layer 8 work, not to active v3.50 `R0`.
-
-## 10. Relation to IK_rel
-
-`IK_rel` is gated by `R0`.
-
-Canonical rule:
+For a reduced view, the same fixed M applies to every member:
 
 ```text
-IK_rel is observable only if R0 is stable enough.
+R0_C^[M](q)
+= clip(1 - (1/n) * sum_(E in C(q)) d_E^[M](q), 0, 1)
 ```
 
-Operational form:
+Constellation membership, mapping, symmetry, norm, M and threshold are
+versioned. The entity summation variable is not the relational index.
+
+The mean limitation grows with n; store all individual drifts and optional
+dispersion/asymmetry diagnostics.
+
+## 10. Comparability, dynamics, windows and Hangar
+
+### 10.1 Comparability
+
+R0 results require the same:
+
+- ordered dyad or constellation semantics;
+- pairing/map and relational granularity;
+- source-local predecessor policy;
+- Layer-1 and Z definitions/versions;
+- projection kind: complete or reduced;
+- fixed M where reduced;
+- norm, aggregation, weights, clipping and threshold profiles.
+
+### 10.2 Relational-index dynamics
+
+For consecutive comparable numeric dyadic results:
 
 ```text
-if R0(t) >= theta_R0_stable:
-    IK_rel(t) may be evaluated
-else:
-    IK_rel(t) = not_applicable
+Delta R0_AB(j)
+= R0_AB(j) - R0_AB(j-1)
+in [-1,1]
+
+Delta2 R0_AB(j)
+= Delta R0_AB(j) - Delta R0_AB(j-1)
+in [-2,2]
 ```
 
-This is methodically important because two monadic trajectories may each be internally coherent while no stable shared movement basis exists.
+These are gate-value dynamics over relational index j. Typed input transitions
+or movement between open, closed and not-evaluable states are categorical
+events, not numeric deltas.
 
-Without `R0`, `IK_rel` could falsely assign relational coherence to trajectories that should not yet be compared.
+### 10.3 Windows
 
-## 11. Relation to R_full
-
-`R0` opens the relational branch.
-
-It does not define the R_full family.
-
-After a stable `R0` gate, later layers may observe:
-
-- `IK_rel`: relational projection compatibility
-- `R_geom`: geometric coupling of trajectories
-- `R_pace`: readable-language or sign-visible pacing dynamics where explicitly defined
-- future signal-media extension: audio, radio, Morse-like, frequency-like or
-  wave/signal forms, not active v3.50
-- `R_geomSigma`: aggregated geometric-coupling behavior over windows
-- `R_geomSigma(Hangar)`: distribution of geometric-coupling patterns inside an
-  observation space
-- `R_paceSigma`: optional pacing aggregation where pacing dynamics are
-  explicitly defined
-
-## 12. Sigma and Hangar
-
-`R0Sigma` aggregates applicable `R0` values over an observation window.
+For a declared non-empty relational window `W_AB`:
 
 ```text
-W_app = {t in W | R0(t) != not_applicable}
-R0Sigma(W) = aggregate({R0(t) | t in W_app})
+W_AB^R0
+= {j in W_AB | R0_AB(j) is numeric and comparable}
+
+coverage_R0(W_AB) = |W_AB^R0| / |W_AB|
+gate_open_rate(W_AB)
+= count(gate_state=open) / |W_AB^R0|
 ```
 
-`W_app` excludes samples where the relational comparison is not applicable.
-These samples must be reported through an applicability rate and must not be
-counted as gate closures.
+`|W_AB|` must be positive before coverage is computed. `gate_open_rate` is
+numeric only when `|W_AB^R0| > 0`; otherwise it is non-evaluable, not `0/0` or
+zero. The aggregate additionally requires its declared positive minimum count
+and coverage threshold.
 
-Possible aggregate functions:
+`R0_Sigma` applies one declared aggregator to the eligible values. Store
+minimum count, coverage threshold, result-status counts and gate-state counts.
 
-- mean
-- median
-- percentile profile
-- share of steps above `theta_R0_stable`
-- share of gate closures among applicable samples
+### 10.4 Hangar
 
-The share of gate closures counts only evaluated, applicable `R0` results that
-closed the gate. This distinguishes an applicable-but-closed relation from a
-relation that could not be evaluated because the shared active component set was
-insufficient.
+Hangar stores derived gate distributions, not a shared inner state. Partition
+by dyad/constellation, pairing policy, complete versus fixed-M profile, norm,
+aggregation, threshold and window policy.
 
-`R0Sigma(Hangar)` observes the distribution of such gate patterns across windows, sessions or participant constellations:
+Do not pool complete R0, different `R0^[M]` views or non-numeric statuses into
+one unlabeled numeric distribution. Distribution distance is not signed
+`Delta R0`.
+
+## 11. Handshake and downstream boundaries
+
+The SYN/ACK analogy is functional and bounded. R0 does not implement TCP,
+prove receipt, acknowledgement, shared meaning or successful decoding.
+
+R0 does not use IK and does not measure semantic or directional compatibility.
+After a compatible open gate:
+
+- current dyadic IK_rel may ask about paired canonical IK movement only after
+  explicit dyadic pairing and an open numeric canonical complete dyadic R0
+  under its exact required profile;
+- R_geom may ask about geometric coupling;
+- staged R_pace may ask about defined pacing;
+- future signal-media branches may ask their own questions.
+
+These are parallel post-R0 branches with their own cardinality, input and
+profile contracts. Reduced `R0^[M]` and n-adic `R0_C` do not open the current
+dyadic IK_rel branch. No single value establishes coupling, resonance,
+alignment or a controller action.
+
+Observer declaration and an open gate do not manufacture relation. R0 states
+only that the selected comparison contract is numerically evaluable and meets
+its declared stability threshold.
+
+## 12. Formal summary, privacy and consistency tests
+
+### 12.1 Compact contract
 
 ```text
-R0Sigma(Hangar) = distribution({R0Sigma(W_i)})
+pi(j) = (k_A(j), k_B(j))
+
+complete numeric comparable Delta Z_A and Delta Z_B
+-> canonical normalized d_A, d_B
+-> canonical R0 = 1 - mean(d_A,d_B)
+
+same fixed non-empty M on both sides
+-> R0^[M] = 1 - mean(d_A^[M],d_B^[M])
+
+R0.status = numeric and R0 >= theta
+-> gate_state = open
+
+R0.status = numeric and R0 < theta
+-> gate_state = closed
+
+R0.status != numeric
+-> gate_state = not_evaluable
 ```
 
-`R0Sigma` answers:
+### 12.2 Privacy and retention
 
-```text
-Did dyadic comparability remain open across this window?
-```
+Z movements, pairing maps, constellations and gate trajectories may identify
+participants or reveal behavioral patterns. Pseudonymization is not anonymity.
+Store the minimum needed; protect identities, provenance and mapping records.
+No raw text, embeddings, voice or timing data are required by R0.
 
-`R0Sigma(Hangar)` answers:
+### 12.3 Consistency tests
 
-```text
-How do gate patterns distribute across observation spaces?
-```
+1. no R0 without a declared dyad or constellation;
+2. no shared predecessor across distinct monadic trajectories;
+3. canonical R0 requires complete movement on every trajectory;
+4. every reduced R0 declares one fixed M;
+5. no event-wise active-set intersection or renormalization;
+6. L1 and L2 norms remain in `[0,1]`;
+7. R0 remains in `[0,1]`;
+8. numeric result and gate state remain distinct;
+9. non-numeric reasons are preserved, not zero-filled;
+10. complete and reduced gates are not mixed in dynamics or windows;
+11. n-adic entity index and relational index remain distinct;
+12. mean asymmetry limitation remains visible;
+13. an open gate is not relation, coupling, resonance or alignment;
+14. thresholds are finite, lie in `[0,1]` and remain separate policy choices;
+15. empty windows produce no numeric coverage, open rate or aggregate;
+16. `incomparable` blocks a valid R0 result and is not recoded as a result status;
+17. R0 remains independent of IK and downstream branches.
 
-`Delta R0` and `Delta2 R0` may be used where gate stability itself is monitored:
+## 13. Separate implementation companion
 
-```text
-Delta R0(t) = R0(t) - R0(t-1)
-Delta2 R0(t) = Delta R0(t) - Delta R0(t-1)
-```
-
-When `R0(t)` or `R0(t-1)` is `not_applicable`, the corresponding delta is
-`not_applicable` unless an implementation profile defines a separate gate-state
-transition marker.
-
-For broader Sigma / Hangar policy, use the shared public method note
-[`KSODI-Hangar_V350.md`](../../KSODI-Hangar_V350.md).
-
-## 13. Edge Cases
-
-For the first evaluation step:
-
-```text
-R0(1) = not_applicable
-```
-
-because `Delta Z(1)` is not defined unless a prior state exists.
-
-If one trajectory is missing:
-
-```text
-R0(t) = not_applicable
-```
-
-If one trajectory is present but not comparable because of incompatible scope, version or granularity:
-
-```text
-R0(t) = not_applicable
-```
-
-## 14. Comparability
-
-`R0` values are comparable only under stable conditions:
-
-- same operator definitions
-- same operator versions
-- same ordering of components in `Z`
-- same eval-unit granularity
-- same context scope
-- same norm choice
-- same normalization rule
-- same applicability / masking policy
-- same `min_components_R0` policy
-- same clipping rule
-- same threshold policy for `theta_R0_stable`
-- same weighting configuration where weights are used
-
-## 15. Storage Principle
-
-Recommended storage:
-
-- `eval_pair_id`
-- `context_scope_id`
-- `trajectory_ids`
-- n-adic comparison ID where applicable
-- `operator_version_ids`
-- `Z_A(t)`, `Z_B(t)` or references to stored state vectors
-- `Delta Z_A(t)`, `Delta Z_B(t)` or references to stored state movement
-- applicability masks `A_delta_A(t)`, `A_delta_B(t)`
-- shared active set `A_pair(t)` or `A_group(t)`
-- active component count and applicability rate
-- `min_components_R0`
-- norm choice and normalization rule
-- raw drift magnitudes where useful
-- normalized drift magnitudes `d_A_norm(t)`, `d_B_norm(t)`
-- `R0_raw(t)` where useful
-- `R0(t)` / `R0_clip(t)`
-- `theta_R0_stable`
-- gate status
-- optional `Delta R0(t)` / `Delta2 R0(t)` where gate stability is monitored
-- detector and configuration IDs
-
-Implementation-profile future work:
-
-- gate flapping near `theta_R0_stable`
-- optional hysteresis such as `theta_open > theta_close`
-- asymmetric-drift flags where `R0` opens despite high movement in one
-  trajectory
-
-Avoid storing:
-
-- full prompt text
-- full answer text
-- unnecessary source language
-- embeddings unless explicitly justified
-- voice or timing data in `R0`
-
-## 16. Compact Formula Block
-
-```text
-Delta Z_A(t) = Z_A(t) - Z_A(t-1)
-Delta Z_B(t) = Z_B(t) - Z_B(t-1)
-
-A_pair_i(t) = A_delta_A_i(t) AND A_delta_B_i(t)
-m_pair(t) = sum_i A_pair_i(t)
-
-if m_pair(t) < min_components_R0:
-    R0(t) = not_applicable
-
-d_A_L1_raw_pair(t) = sum_i A_pair_i(t) * |Delta Z_A_i(t)|
-d_B_L1_raw_pair(t) = sum_i A_pair_i(t) * |Delta Z_B_i(t)|
-
-d_A_norm(t) = d_A_L1_raw_pair(t) / m_pair(t)
-d_B_norm(t) = d_B_L1_raw_pair(t) / m_pair(t)
-
-# Optional L2-normalized policy:
-# d_A_norm(t) = sqrt(sum_i A_pair_i(t) * Delta Z_A_i(t)^2) / sqrt(m_pair(t))
-# d_B_norm(t) = sqrt(sum_i A_pair_i(t) * Delta Z_B_i(t)^2) / sqrt(m_pair(t))
-
-R0_raw(t) = 1 - (d_A_norm(t) + d_B_norm(t)) / 2
-R0_clip(t) = clip(R0_raw(t), 0, 1)
-R0(t) := R0_clip(t)
-
-if R0(t) >= theta_R0_stable:
-    IK_rel(t) may be evaluated
-else:
-    IK_rel(t) = not_applicable
-
-W_app = {t in W | R0(t) != not_applicable}
-R0Sigma(W) = aggregate({R0(t) | t in W_app})
-R0Sigma(Hangar) = distribution({R0Sigma(W_i)})
-```
-
-## 17. Variable Reference
-
-| Variable | Semantic role |
-| --- | --- |
-| `t` | Turn or evaluation-unit index |
-| `A`, `B` | Two distinguishable trajectories |
-| `Z_A(t)`, `Z_B(t)` | State vectors of the compared trajectories |
-| `Delta Z_A(t)`, `Delta Z_B(t)` | Movement of each trajectory |
-| `d_A_L1_raw(t)`, `d_B_L1_raw(t)` | Raw L1 drift magnitudes |
-| `d_A_L2_raw(t)`, `d_B_L2_raw(t)` | Raw L2 drift magnitudes |
-| `A_delta_A(t)`, `A_delta_B(t)` | Delta-valid applicability masks for compared trajectories |
-| `A_pair(t)` | Shared active component set for dyadic comparison |
-| `A_group(t)` | Shared active component set for n-adic comparison |
-| `m_pair(t)`, `m_group(t)` | Number of active shared components |
-| `min_components_R0` | Minimum active components required for gate evaluation |
-| `d_A_norm(t)`, `d_B_norm(t)` | Normalized drift magnitudes in `[0,1]` |
-| `R0_raw(t)` | Unclipped gate expression |
-| `R0(t)` / `R0_clip(t)` | Minimal relational gate for dyadic or n-adic comparability |
-| `theta_R0_stable` | Stability threshold for opening relational analysis |
-| `R0_w(t)` | Weighted dyadic R0 variant |
-| `R0_n(t)` | N-adic R0 variant |
-| `Delta R0(t)` | Change in gate value where consecutive applicable values exist |
-| `Delta2 R0(t)` | Acceleration of gate-value movement where comparable deltas exist |
-| `R0Sigma(W)` | Aggregated R0 behavior across a window |
-| `R0Sigma(Hangar)` | Distribution of R0 window patterns |
-| `IK_rel(t)` | Relational projection after stable R0 gate |
+The adjacent companion supplies conditional schemas, pseudocode, migration,
+fixtures and tests. The mathematical method remains authoritative.

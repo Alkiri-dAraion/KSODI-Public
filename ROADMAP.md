@@ -351,7 +351,7 @@ Possible future examples may include:
 - heatmaps,
 - workflow transition views,
 - multi-agent views that preserve source-local trajectories and open
-  relational projections only after stable `R0`,
+  relational projections only after their exact compatible open `R0` contract,
 - or cross-platform communication diagnostics.
 
 These are research directions, not currently announced deliverables.

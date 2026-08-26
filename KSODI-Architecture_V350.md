@@ -12,9 +12,11 @@ while preserving source identity, role-relative process directions and the
 boundary between monadic and relational observation.
 
 Product boundary: KSODI-Standard-Eval is the monadic trajectory-observation
-line through `IK_A(k)`. KSODI-Full begins with dyadic observation at `R_0` and
-contains `IK_rel` after stable `R_0`, followed by the application-specific
-Layer 6–8 extensions. The two source trajectories remain distinguishable.
+line through `IK_A(k)`. KSODI-Full begins with dyadic or explicitly n-adic
+observation at `R_0`; current dyadic `IK_rel` requires explicit dyadic pairing
+and an open numeric canonical complete dyadic R0 under the exact required
+profile. Separately defined application-specific Layer 6–8 extensions follow.
+The source trajectories remain distinguishable.
 
 Read this architecture together with the
 [KSODI-Standard-Eval / KSODI-Full Transition V350](./KSODI-Standard-Eval_Full-Transition_V350.md)
@@ -233,10 +235,10 @@ relevant relational feature space.
 | Component | Required methodological question | Minimum declared basis | Status |
 | --- | --- | --- | --- |
 | `R0` | May these distinguishable trajectories be evaluated relationally under this policy? | trajectories, pairing/constellation, compatible profiles, applicability and normalized stability inputs | public research material |
-| `IK_rel` | What relational coherence projection is visible after the gate opens? | stable `R0` plus its own complete relational projection basis | public research material |
-| `R_geom` | What geometric coupling is visible in KSODI state space? | stable `R0` plus a separately defined geometric feature basis | staged; detailed definition pending |
-| `R_pace` | What explicitly observable pacing or rhythmic coordination is visible? | stable `R0` plus a separately defined pacing basis | staged optional research |
-| signal-media views | What medium-specific patterns are visible in voice, radio, Morse-like or waveform material? | stable `R0` where relation is claimed plus a media-specific observation profile | future research |
+| `IK_rel` | What relational coherence projection is visible after the gate opens? | explicit dyadic pairing, open numeric canonical complete dyadic `R0` under the exact profile, plus its own complete relational projection basis | public predecessor state; separately released after R0 |
+| `R_geom` | What geometric coupling is visible in KSODI state space? | a compatible open canonical complete `R0` gate plus a separately defined geometric feature basis | staged; detailed definition pending |
+| `R_pace` | What explicitly observable pacing or rhythmic coordination is visible? | a compatible open canonical complete `R0` gate plus a separately defined pacing basis | staged optional research |
+| signal-media views | What medium-specific patterns are visible in voice, radio, Morse-like or waveform material? | an exact compatible R0 contract where relation is claimed plus a media-specific observation profile | future research |
 
 Layer numbers 5-8 preserve orientation and research organization. They do not
 turn the parallel branches into a numeric chain.
@@ -292,7 +294,7 @@ Layer 4 - R0 / R_0
   gate over distinguishable trajectories and a declared pairing/constellation
 
 Layer 5 - IK_rel
-  relational coherence projection after stable R0
+  dyadic relational projection after explicit pairing and exact open R0 gate
 
 Layer 6 - R_geom [staged]
   parallel post-R0 geometric-coupling research branch
@@ -424,7 +426,8 @@ acknowledgement, causal influence or coupling.
 ## 14. Optional Diagnostics and Deprecated Identifiers
 
 Layer-1 operators may be inspected individually through source-local
-trajectory, projection or aggregation views. After stable `R0`, separately
+trajectory, projection or aggregation views. After a compatible open numeric
+canonical complete `R0` gate under the exact required profile, separately
 defined operator-specific relational diagnostics may be researched. Such a
 partial view is not complete `Z`, canonical `IK`, `IK_rel` or an R-family
 result.
@@ -491,7 +494,7 @@ pi(j) = (k_A(j), k_B(j))
 T_A ----\
          +--> R0(j | pi, profile_R0)
 T_B ----/          |
-                   | only when the gate is stable
+                   | only under the exact compatible open-gate contract
                    +--> IK_rel(j)
                    +--> R_geom(j)   [staged]
                    +--> R_pace(j)   [staged, optional]
