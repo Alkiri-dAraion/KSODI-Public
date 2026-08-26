@@ -12,10 +12,9 @@ and `I0` are released with their conditional implementation companions; O
 additionally includes its source-need / reference-space applicability gate.
 These companions do not redefine their operators or establish a mandatory
 production stack. The current reader-first Layer-2 state vector `Z_A(k_A)` and
-its conditional implementation companion are released. The earlier public
-Layer-3 monadic interaction-coherence projection `IK` remains released and
-closes the Standard-Eval line; a newer private IK revision is not part of this
-Layer-2 release.
+Layer-3 monadic interaction-coherence projection `IK_A(k_A)`, together with
+their conditional implementation companions, are released and close the
+Standard-Eval line.
 
 After `Z`, the separate relational / Full branch evaluates `R0` from
 distinguishable `Z`-trajectories in parallel to monadic `IK`. Current dyadic

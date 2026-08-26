@@ -1,608 +1,522 @@
-# KSODI IK - Interaction Coherence Projection v3.50
+# KSODI IK - Source-Attributed Monadic Coherence Projection v3.50
 
-Status: public v3.50 reference release; private canonical workbench origin retained. Lifted from the stable v3.42 projection line after Fable IK review, v3.50 Z hardening and Anne's 2026-07-21 public-release decision. Aligned with `KSODI_State-Vector-Z_V350.md`, `KSODI-Hangar_V350.md`, `KSODI-Glossary_V350.md` and the `R0` relational-gate boundary.
+> **Status:** public v3.50 reference release - strictly reviewed and released on 2026-08-26.
 
-Layer: monadic projection branch after `Z`
+Status: authoritative reader-first Layer-3 method, strictly reviewed and released 2026-08-26. This file defines
+the carrier-neutral IK method against the typed Z contract. Storage schemas,
+pseudocode, migration and test fixtures belong in the separate companion:
 
-## 1. Definition
+- [`KSODI_Monadic-Interaction-Coherence-IK_Implementation-Companion_V350.md`](./KSODI_Monadic-Interaction-Coherence-IK_Implementation-Companion_V350.md)
 
-`IK` describes interaction coherence as a scalar projection of the KSODI state vector onto a versioned coherence axis.
+## 0. What IK is and what it does
 
-It is calculated from the already computed numerical state vector:
+IK asks one narrow projection question:
+
+> How strongly does one complete, source-attributed Z state project onto one
+> declared and versioned monadic coherence axis?
+
+For one target event `e_A(k_A)`, IK receives the typed Layer-2 record and, when
+the complete numerical state exists, projects
 
 ```text
-Z(t) = [K0(t), S0(t), O0(t), D0(t), I0(t)]
+Z_A(k_A) = [K_A(k_A), S_A(k_A), O_A(k_A), D_A(k_A), I_A(k_A)]
 ```
 
-`IK` is not a new language object.
+onto one weight vector. IK is therefore not a sixth observation and does not
+repair, impute or reinterpret a Z coordinate.
 
-`IK` is not a time derivative of `Z`.
-
-`IK` is not an independent measurement beside `Z`.
-
-`IK` is not a truth, quality, utility, compliance or alignment score.
-
-It is a projection of the observable interaction state.
-
-## 2. Architectural Position
-
-After `Z`, KSODI separates monadic projection from state-space movement.
+The essential distinction is:
 
 ```text
-K/S/O/D/I
-   |
-   v
-Z(t)
-   |
-   +--> state-space diagnostics
-   |      Delta Z
-   |      Delta2 Z
-   |      Drift_L1 / Drift_L2
-   |
-   +--> IK branch
-          IK
-          Delta IK / Delta2 IK
-          IKSigma
-          IKSigma(Hangar)
+canonical IK uses complete canonical Z
+reduced IK^[M] uses one explicit fixed coordinate set M
+IK^[M] is not canonical IK
+relational coherence begins only after the exact open R0 contract declared by
+its branch; current dyadic IK_rel requires explicit dyadic pairing and open
+numeric canonical complete dyadic R0 under the exact required profile
 ```
 
-`Delta Z` observes movement in the full five-dimensional state space.
+IK is not truth, utility, safety, compliance, alignment, resonance or an
+overall judgment of an entity. A high value means only strong projection onto
+the declared axis.
 
-`IK` observes projection onto a coherence direction.
+### 0.1 Minimal practical reading
 
-These are parallel diagnostic branches. They are not redundant, but they are
-not mathematically independent under stable `w` and stable applicability:
+1. Resolve one typed Z record for one source-attributed target event.
+2. Select one named, versioned IK profile.
+3. Validate non-negative weights whose sum is one.
+4. Construct canonical IK only from complete `Z_A(k_A)`.
+5. If the complete Z state does not exist, preserve `T_Z`; do not substitute
+   zero and do not call a renormalized subset canonical IK.
+6. If a reduced question is justified, declare non-empty `M` and report
+   `IK_A^[M]` with its own profile and coverage.
+7. Compute dynamics and windows only under stable identity, profile and active
+   coordinate contracts.
+
+### 0.2 How to read this file
+
+Sections 1-3 establish the reader bridge, identity and typed input. Sections
+4-5 define canonical and reduced projections. Sections 6-8 define comparable
+dynamics, windows and Hangar views. Sections 9-11 fix downstream, privacy and
+formal boundaries.
+
+## 1. Bounded application examples
+
+### 1.1 Human-chatbot interaction
+
+Let `A` denote the human trajectory and `B` the chatbot trajectory. A response
+from `B` is evaluated first as its own event `e_B(k_B)`. If all five final
+Layer-1 result records are numeric and identity-aligned, canonical `Z_B(k_B)` and
+then canonical `IK_B(k_B)` may be constructed.
+
+The human and chatbot values remain separate. Two scalar IK values do not
+establish shared meaning, acknowledgement, coupling or relational coherence.
+
+### 1.2 Unknown Morse-like signal
+
+An unknown signal may support numeric D and I observations while O is
+`not_observable` and other coordinates are not selected. Then the typed Z
+record exists, but complete Z and canonical IK do not.
+
+A declared diagnostic such as
 
 ```text
-Delta IK(t) = w dot Delta Z(t)
+IK_A^[D,I](k_A)
 ```
 
-## 3. Input Data
+may be computed only if D and I are numeric and its two-coordinate axis is
+named and versioned. It must not be reported as full IK or as evidence about
+the unknown source's total coherence.
 
-For an evaluation unit `u` or turn `t`:
+## 2. Architectural position and identity
+
+### 2.1 Position after Z
 
 ```text
-Z(u) in [0,1]^5 where all components are applicable
-Z(u) = [K0(u), S0(u), O0(u), D0(u), I0(u)]
+Layer 1:  K / S / O / D / I
+                 |
+Layer 2:         Z and T_Z
+                 |\
+                 | \-> KSODI Full: R0 -> relational branches
+                 |
+Layer 3:         IK or named IK^[M]  [monadic Standard-Eval]
 ```
 
-In v3.50, `Z` also carries the applicability mask inherited from the
-operator layer:
+Z-state dynamics and IK-projection dynamics are parallel diagnostics. IK does
+not replace `Delta Z`, and `Delta Z` does not require IK. The R0 branch starts
+from distinguishable typed Z trajectories plus its own explicit pairing or
+constellation contract; it neither consumes IK nor follows from IK.
+
+### 2.2 Atomic IK evaluation unit
+
+The canonical monadic target is:
 
 ```text
-A_Z(u) = [A_K(u), A_S(u), A_O(u), A_D(u), A_I(u)]
+e_A(k_A)
 ```
 
-where `A_X(u) = 1` means component `X` is applicable and numerically observed,
-and `A_X(u) = 0` means that the component is not applicable under the active
-profile.
+where `A` is one stable or explicitly provisional source identity and `k_A`
+is its source-local trajectory position. Global event index `n`, another
+source's `k_B`, relational index `j` and pairing map `pi(j)` remain distinct.
 
-Missing or non-applicable operator values must not be silently coerced to `0`.
-
-Required metadata:
-
-- `context_scope_id`
-- operator version IDs
-- ordering of components in `Z`
-- applicability mask `A_Z(u)`
-- `ik_config_id`
-- weight vector `w`
-- masking / renormalization policy where a masked view is used
-
-No raw text is required after the operator values have been calculated.
-
-## 4. Projection Vector
-
-Let:
+An IK record must inherit the complete Z identity tuple and add:
 
 ```text
-w = [w_K, w_S, w_O, w_D, w_I]
+target_event_id
+source_entity_id
+source_attribution_status
+emitting_entity_id, if established
+trajectory_id
+global_event_index n
+local_trajectory_index k_A
+ik_profile_id
+ik_profile_version
+weight_vector
+projection_kind = canonical | reduced
+active_coordinate_set
+```
+
+No IK calculation may combine coordinates from different source events,
+profiles or trajectory positions.
+
+## 3. Typed input contract
+
+### 3.1 Required Z input
+
+IK consumes the typed Z record, including:
+
+```text
+T_Z,A(k_A)
+= [status_K, status_S, status_O, status_D, status_I]
+```
+
+with each status in:
+
+```text
+numeric(value in [0,1])
+not_selected
+not_observable
+not_applicable
+```
+
+The derived binary `A_Z` may assist filtering, but it cannot replace `T_Z` or
+its reasons and provenance.
+
+### 3.2 Complete-input gate
+
+Canonical IK is eligible only when:
+
+```text
+complete_Z_state = complete
+Z_A(k_A) in [0,1]^5 exists
+all inherited identities and profiles are valid
+```
+
+The presence of five storage fields is insufficient. Every coordinate must be
+numeric under the selected Z view.
+
+### 3.3 IK result type
+
+The external result domain is:
+
+```text
+numeric(value in [0,1])
+not_selected
+not_observable
+not_applicable
+```
+
+Recommended propagation for canonical IK:
+
+| Condition | IK status | Required retention |
+| --- | --- | --- |
+| no IK profile selected | `not_selected` | typed Z reference and selection reason |
+| complete Z and valid profile | `numeric` | Z reference, profile and weights |
+| incomplete Z with any required `not_observable` coordinate | `not_observable` | full `T_Z` and coordinate reasons |
+| incomplete Z only because required coordinates are `not_selected` or `not_applicable` | `not_applicable` | full `T_Z` and coordinate reasons |
+| invalid identity, malformed weights or calculation failure | no valid IK result | processing error separate from result status |
+
+This precedence communicates that a required observation could not be made.
+It does not erase the other coordinate statuses retained in `T_Z`.
+
+## 4. Coherence-axis profile
+
+Let the canonical weight vector be:
+
+```text
+w(p_IK) = [w_K, w_S, w_O, w_D, w_I]
 ```
 
 with:
 
 ```text
-w_j >= 0
-sum_j w_j = 1
+w_X >= 0
+sum_X w_X = 1
 ```
 
-Default:
+The profile `p_IK` defines the projection axis. It must identify the weight
+vector, coordinate order, purpose, version and status.
+
+The transparent equal-weight reference profile is:
 
 ```text
-w_K = w_S = w_O = w_D = w_I = 0.2
+w_ref = [0.2, 0.2, 0.2, 0.2, 0.2]
 ```
 
-The weight vector defines the coherence axis.
+It is a declared reference axis, not an empirical optimum or universal claim.
+Domain, learned or adaptive axes are different profiles and require separate
+validation and comparability rules.
 
-It must be versioned.
+A zero weight does not waive the complete-Z requirement for canonical IK. If a
+profile intentionally excludes coordinates, it is clearer to declare a
+reduced axis and `IK^[M]`.
 
-## 5. Standard Definition
+## 5. Canonical and reduced projections
+
+### 5.1 Canonical IK
+
+For complete Z and a valid profile:
 
 ```text
-IK(t) = w dot Z(t)
+IK_A(k_A | p_IK)
+= w_K K_A(k_A)
++ w_S S_A(k_A)
++ w_O O_A(k_A)
++ w_D D_A(k_A)
++ w_I I_A(k_A)
 ```
 
-Expanded:
+Equivalently:
 
 ```text
-IK(t) = w_K*K0(t) + w_S*S0(t) + w_O*O0(t) + w_D*D0(t) + w_I*I0(t)
+IK_A(k_A | p_IK) = w(p_IK) dot Z_A(k_A)
+IK_A(k_A | p_IK) in [0,1]
 ```
 
-Range:
+Interpretation is relative to the selected axis:
 
-```text
-IK(t) in [0,1]
-```
-
-This full `IK(t)` definition assumes that all components are applicable under
-the active profile.
-
-Applicability-aware variant:
-
-```text
-IK_applicable(t)
-= sum_i(A_Z_i(t) * w_i * Z_i(t)) / sum_i(A_Z_i(t) * w_i)
-```
-
-If the denominator is `0`, the projection is `not_applicable`.
-
-A masked projection must be explicitly named, for example
-`IK_applicable(t)`. It must never be presented as the same thing as full
-`IK(t)`.
-
-Interpretation:
-
-| Signal | Meaning |
+| Signal | Bounded meaning |
 | --- | --- |
-| high `IK` | state projects strongly onto the configured coherence axis |
-| medium `IK` | mixed state relative to the configured coherence axis |
-| low `IK` | weak projection onto the configured coherence axis |
+| high IK | strong projection onto the declared monadic axis |
+| middle IK | mixed projection on that axis |
+| low IK | weak projection on that axis |
 
-This is not a judgment of truth, usefulness or moral quality.
+### 5.2 Declared reduced projection
 
-## 6. Delta IK
-
-Because `IK(t)` is scalar, its first difference is scalar:
+For one fixed, non-empty coordinate set
 
 ```text
-Delta IK(t) = IK(t) - IK(t-1)
+M subset of {K,S,O,D,I}
 ```
 
-Range:
+and only when every coordinate in `M` is numeric:
 
 ```text
-Delta IK(t) in [-1,1]
+IK_A^[M](k_A | p_IK^[M])
+= sum_(X in M) w_tilde_X X_A(k_A)
+
+w_tilde_X >= 0
+sum_(X in M) w_tilde_X = 1
 ```
 
-Under stable `w` and stable applicability:
+If a reduced profile is derived from canonical weights, the derivation is:
 
 ```text
-Delta IK(t) = w dot Delta Z(t)
+w_tilde_X = w_X / sum_(Y in M) w_Y
 ```
 
-Interpretation:
+and requires a positive denominator. Store the original profile, denominator
+and derived profile ID.
 
-| Signal | Meaning |
-| --- | --- |
-| `Delta IK > 0` | projection moves upward along the coherence axis |
-| `Delta IK < 0` | projection moves downward along the coherence axis |
-| `Delta IK approx 0` | projection remains stable |
+`IK^[M]` changes the projection question. It is not a missing-data repair and
+is not interchangeable with canonical IK or another `IK^[N]`.
 
-`Delta IK` describes movement of the projection.
+The former generic label `IK_applicable` is retired because it hides whether
+the active set changed. Legacy values must migrate to an explicit `M` where it
+can be recovered; otherwise they remain legacy, non-comparable records.
 
-It does not describe the full movement of `Z`.
+## 6. Comparability and dynamics
 
-If a masked projection is used, first differences require the same masking /
-renormalization policy across the compared units. Otherwise `Delta IK` is
-`not_applicable` or must be named as a profile-specific masked delta.
+### 6.1 Comparability gate
 
-## 7. Delta2 IK
+Two canonical IK values are comparable only when they preserve:
 
-The second difference describes how the projection movement itself changes:
+- source identity and intended source-local trajectory;
+- evaluation-unit granularity and context scope;
+- Layer-1 and Z definitions, versions and coordinate order;
+- canonical projection kind;
+- identical IK profile and weight vector;
+- complete numeric Z at every required point.
+
+Two reduced values additionally require the same fixed `M` and same reduced
+profile. Canonical and reduced values are not directly comparable.
+
+### 6.2 First and second differences
+
+For comparable canonical values:
 
 ```text
-Delta2 IK(t) = Delta IK(t) - Delta IK(t-1)
+Delta IK_A(k_A)
+= IK_A(k_A) - IK_A(k_A-1)
+in [-1,1]
+
+Delta2 IK_A(k_A)
+= Delta IK_A(k_A) - Delta IK_A(k_A-1)
+in [-2,2]
 ```
 
-Range:
+Under stable weights and complete comparable Z states:
 
 ```text
-Delta2 IK(t) in [-2,2]
+Delta IK_A(k_A) = w dot Delta Z_A(k_A)
 ```
 
-Interpretation:
+The identity does not hold across changing profiles or active sets. A change
+in `T_Z` is a categorical status transition, not numeric IK drift.
 
-| Signal | Meaning |
-| --- | --- |
-| `Delta2 IK approx 0` | steady projection movement |
-| increasing `abs(Delta2 IK)` | changing coherence dynamics; potential early warning |
-| `Delta2 IK > 0` | upward acceleration of projection movement |
-| `Delta2 IK < 0` | deceleration or downward acceleration depending on prior movement |
+Reduced dynamics are named `Delta IK_A^[M]` and `Delta2 IK_A^[M]` and require
+the same fixed `M` and profile at all points.
 
-`Delta2 IK` is an early-warning signal, not a quality score.
+### 6.3 Changing axes
 
-A direction reversal is defined by a sign change in `Delta IK`, not by `Delta2 IK` alone:
+If weights change, do not report a canonical `Delta IK`. An implementation may
+separately diagnose state movement and axis movement, but must name both terms
+and retain both profiles. The companion gives the bounded decomposition.
+
+## 7. Windows and Sigma
+
+For a declared non-empty source-local window `W_A`, define the complete
+compatible subset:
 
 ```text
-Delta IK(t-1) * Delta IK(t) < 0
+W_A^IK
+= {k_A in W_A | canonical IK_A(k_A | p_IK) is numeric and comparable}
+
+coverage_IK(W_A) = |W_A^IK| / |W_A|
 ```
 
-## 8. Why Delta IK Adds Information Beyond Delta Z
+`|W_A|` must be positive. An empty or invalid window produces no valid numeric
+coverage or aggregate; it must not be represented through `0/0`, zero coverage
+or a numeric zero aggregate.
 
-`Delta Z` and `Delta IK` answer different questions.
-
-| Signal | Question |
-| --- | --- |
-| `Delta Z` | How does the full state vector move? |
-| `Delta IK` | How does the projection onto the coherence axis move? |
-| `Delta2 Z` | Is state-space movement accelerating or changing direction? |
-| `Delta2 IK` | Is coherence-axis movement accelerating, slowing or preparing a reversal? |
-
-Example:
+For one declared aggregator `Agg_IK`:
 
 ```text
-Delta Z != 0
-Delta IK approx 0
+IK_Sigma,A(W_A | p_IK)
+= Agg_IK({IK_A(k_A | p_IK) | k_A in W_A^IK})
 ```
 
-The state moves, but mostly outside the configured coherence axis.
+The aggregator, minimum count and coverage threshold are versioned. A numeric
+aggregate without coverage is incomplete reporting.
 
-For stable `w` and stable applicability this follows from the linear
-projection:
+For the arithmetic mean, stable weights and the identical complete subset:
 
 ```text
-Delta IK(t) = w dot Delta Z(t)
+mean(IK_A) = w dot mean(Z_A)
 ```
 
-The diagnostic point is not independence. The diagnostic point is dimensional:
-`Delta Z` preserves the full state-space movement, while `Delta IK` shows the
-movement along the configured coherence axis.
+The equality is linear, not a reason to mix different subsets. Coordinate-wise
+means, imputed Z means and changing profiles do not define canonical
+`IK_Sigma`.
 
-Example:
+Reduced window projections must disclose the same fixed `M`, reduced profile,
+subset and coverage. Deltas between windows require compatible window policy,
+profile and projection kind.
+
+## 8. Sigma(Hangar)
+
+Hangar stores derived distribution views, not a new monadic formula. An IK
+Hangar may contain typed point records, compatible window aggregates and
+declared distribution diagnostics.
+
+Required stratification includes:
+
+- canonical versus reduced projection;
+- `M` for every reduced record;
+- IK profile and version;
+- source/context scope and window policy;
+- numeric coverage and non-numeric status counts;
+- distribution-distance definition for cross-window drift.
+
+Never pool canonical IK, changing `M`, changing weight profiles or categorical
+statuses into one unlabeled numeric distribution. A Hangar distance is
+non-negative distribution movement and must not be confused with signed
+`Delta IK`.
+
+Corridor, learned-axis and adaptive-axis analysis remains research work unless
+its profile, validation and comparison contract is explicitly accepted.
+
+## 9. Downstream boundaries
+
+### 9.1 Relation to R0
+
+`R0` is evaluated on its separate relational branch from distinguishable typed
+monadic Z trajectories and an explicit pairing or constellation contract. It
+is not calculated from IK, does not consume IK as a prerequisite and cannot be
+opened by two high IK values.
+
+### 9.2 Relation to IK_rel and the R-family
+
+Canonical IK is monadic. Current `IK_rel` is dyadic and begins only after an
+explicit dyadic pairing and an open numeric canonical complete dyadic `R0` gate
+under the exact required profile. A reduced or n-adic R0 result does not open
+that branch. `IK_rel` cannot be inferred from, or reduced to, two scalar IK
+values. Any later use of IK, `Delta IK` or reduced projections must satisfy its
+own relational basis, applicability, cardinality and profile contract.
+
+IK does not establish receipt, acknowledgement, shared meaning, successful
+decoding, coupling, causality or resonance.
+
+## 10. Fairness, privacy, retention and implementation boundary
+
+Weights are governed analytic configuration choices, not observed facts. They
+may encode declared priorities, and a changed profile may change rankings
+without any change in observations. Report the profile and avoid
+cross-group or cross-domain interpretation without validation.
+
+IK, reduced projections, dynamics, windows and Hangar views may remain
+identifiable or linkable even without raw text. Retain the minimum data needed
+for the declared purpose; protect source IDs, trajectory maps and provenance;
+do not describe pseudonymized values as anonymous.
+
+The mathematical method is authoritative. The companion is subordinate
+implementation guidance. No storage convention, threshold or software default
+may silently redefine the projection.
+
+## 11. Formal summary and variable reference
+
+### 11.1 Compact contract
 
 ```text
-Delta Z != 0
-Delta IK != 0
+# typed Layer-2 input
+T_Z,A(k_A) preserves numeric / not_selected / not_observable / not_applicable
+
+# canonical profile
+w(p_IK) >= 0
+sum_X w_X = 1
+
+# complete canonical projection
+complete Z_A(k_A) -> IK_A(k_A | p_IK) = w dot Z_A(k_A)
+
+# reduced, visibly non-canonical projection
+M != empty
+all X in M numeric
+IK_A^[M](k_A | p_IK^[M]) = sum_(X in M) w_tilde_X X_A(k_A)
+
+# source-local comparable dynamics
+Delta IK_A(k_A) = IK_A(k_A) - IK_A(k_A-1)
+Delta2 IK_A(k_A) = Delta IK_A(k_A) - Delta IK_A(k_A-1)
+Delta IK_A(k_A) = w dot Delta Z_A(k_A)  # only under stable complete contract
+
+# windows
+IK_Sigma,A(W_A) = Agg_IK({compatible numeric IK_A(k_A)})
+report coverage_IK(W_A)
+
+# relational boundary
+IK is monadic
+R0 does not derive from IK
+current dyadic IK_rel begins only after explicit dyadic pairing and open
+numeric canonical complete dyadic R0 under the exact required profile; it is
+not two scalar IK values
 ```
 
-The state moves and this movement is coherence-relevant under the chosen `w`.
-
-This is the diagnostic gain of the IK branch.
-
-## 9. IKSigma
-
-`IKSigma` aggregates projection behavior over a window.
-
-For a window:
-
-```text
-W = {u_1, ..., u_n}
-```
-
-Applicable window under a stable mask:
-
-```text
-W_app = {u in W | IK_applicable(u) is numerically defined under the declared policy}
-applicability_rate_IK(W) = |W_app| / |W|
-```
-
-Mean state vector:
-
-```text
-Zbar(W) = (1/n) * sum_i Z(u_i)
-```
-
-Canonical window projection:
-
-```text
-IKSigma(W) = w dot Zbar(W)
-```
-
-This is the projection of the mean state vector.
-
-It is not merely an unexamined average of individual `IK(u)` values.
-
-For linear full `IK`, both values are mathematically equivalent under stable
-`w` and stable applicability:
-
-```text
-w dot mean(Z) = mean(w dot Z)
-```
-
-If units inside the window use different applicability masks,
-`IK_applicable` has different denominators. Then the mean of masked
-projections is not automatically equal to the projection of a masked mean.
-The window must declare `W_app`, `applicability_rate_IK(W)` and the active
-masking / renormalization policy.
-
-The canonical expression remains `w dot Zbar(W)` because it preserves the relation to the state-space layer.
-
-## 10. Delta IKSigma and Delta2 IKSigma
-
-Between ordered windows:
-
-```text
-Delta IKSigma(W_i) = IKSigma(W_i) - IKSigma(W_{i-1})
-```
-
-Second difference:
-
-```text
-Delta2 IKSigma(W_i) = Delta IKSigma(W_i) - Delta IKSigma(W_{i-1})
-```
-
-Use case:
-
-- observe stabilization or degradation across windows
-- detect slow coherence drift
-- detect acceleration of projection changes before single-turn signals become obvious
-
-## 11. IKSigma(Hangar)
-
-`IKSigma(Hangar)` observes the distribution of IK-related state windows inside an observation space.
-
-It is not a single score.
-
-A Hangar may contain:
-
-```text
-H_IK = {Z(u) | u in W}
-```
-
-or window summaries:
-
-```text
-H_IKSigma = {Zbar(W_i), IKSigma(W_i)}
-```
-
-Useful Hangar metrics:
-
-- dispersion of state vectors inside a window
-- drift between window centers
-- component-wise corridor deviation
-- anomaly distance from window center
-- distribution of `IKSigma` values across windows
-- frequency of threshold crossings
-
-Minimal examples:
-
-```text
-Disp(W) = mean_u ||Z(u) - Zbar(W)||_2^2
-WindowDrift(W_i, W_j) = ||Zbar(W_i) - Zbar(W_j)||_2
-IKSigmaDrift(W_i, W_j) = |IKSigma(W_i) - IKSigma(W_j)|
-```
-
-## 12. IKSigma(Hangar) Drift and Acceleration
-
-For long-running interaction systems, single points may remain inconspicuous while the distribution of interaction states slowly moves.
-
-`IKSigma(Hangar)` can therefore be observed dynamically.
-
-This is especially useful when:
-
-- two agents work together across long periods
-- a human and a machine interact repeatedly across many sessions
-- a small intervention shifts the interaction corridor gradually
-- a previously stable communication pattern begins to move toward a sensitive or risky region
-
-The relevant signal is not necessarily one anomalous point.
-
-The relevant signal may be corridor drift, cluster migration, dispersion growth or increased pressure at the edge of an established interaction space.
-
-### 12.1 Distribution Delta
-
-For ordered Hangar windows:
-
-```text
-H_i = H_IKSigma(W_i)
-H_{i-1} = H_IKSigma(W_{i-1})
-```
-
-define a distribution movement summary:
-
-```text
-Delta IKSigma(Hangar)_i = D_H(H_i, H_{i-1})
-```
-
-where `D_H` is a versioned distribution-distance function.
-
-This `Delta IKSigma(Hangar)` denotes a nonnegative distribution distance. It is
-therefore not the same kind of signed scalar delta as `Delta IK` or
-`Delta IKSigma(W)`.
-
-Possible choices:
-
-- centroid drift
-- dispersion change
-- corridor deviation
-- cluster migration distance
-- tail-risk or outlier-pressure change
-- threshold crossing frequency change
-
-Minimal centroid form:
-
-```text
-Centroid(H_i) = mean({Zbar(W) | W in H_i})
-
-Delta IKSigma(Hangar)_i =
-    ||Centroid(H_i) - Centroid(H_{i-1})||_2
-```
-
-### 12.2 Distribution Acceleration
-
-The second difference describes whether Hangar drift itself accelerates:
-
-```text
-Delta2 IKSigma(Hangar)_i =
-    Delta IKSigma(Hangar)_i - Delta IKSigma(Hangar)_{i-1}
-```
-
-This can act as an early-warning signal when a stable corridor begins to move faster.
-
-It is not an automatic judgment.
-
-It indicates that the distribution of observed interaction states is changing.
-
-### 12.3 Corridor Research Note
-
-KSODI treats corridor detection as a research layer.
-
-The current standard remains:
-
-```text
-w_fixed
-```
-
-where the projection vector is fixed and versioned.
-
-Future or domain-specific analyses may define:
-
-```text
-w_domain
-w_learned
-w_adaptive
-```
-
-with strict versioning and comparability rules.
-
-The research question is whether different interaction domains form stable corridors in the KSODI state space and whether the coherence axis can be empirically characterized for those domains.
-
-This remains future research and is not treated as a finalized v3.50 method claim.
-
-## 13. Relation to IK_rel
-
-`IK` is monadic.
-
-`IK_rel` is relational and belongs to the relational branch (`KSODI Full`) after
-a stable `R0` gate.
-
-```text
-IK can be evaluated without R0.
-IK_rel requires stable R0.
-```
-
-This distinction prevents KSODI from confusing internal projection coherence with relational compatibility.
-
-## 14. Comparability
-
-`IK`, `Delta IK`, `Delta2 IK`, `IKSigma` and `IKSigma(Hangar)` are comparable only under stable conditions:
-
-- same operator definitions
-- same operator versions
-- same ordering of components in `Z`
-- same context scope
-- same eval-unit granularity
-- same weight vector `w`
-- same `ik_config_id`
-- same applicability / masking and renormalization policy
-- same handling of `IK_applicable(t)` versus full `IK(t)`
-- same windowing policy for Sigma variants
-- same `W_app` and applicability-rate policy where masked windows are used
-- same threshold policy where events are used
-- same Hangar distance function `D_H` where Hangar drift is used
-- same corridor definition where corridor metrics are used
-
-## 15. Storage Principle
-
-Recommended storage per evaluation unit:
-
-- `eval_unit_id`
-- `context_scope_id`
-- operator version IDs
-- `Z(t)` or reference to stored state vector
-- applicability mask `A_Z(t)`
-- applicability rate where a masked projection is used
-- `w` or `ik_config_id`
-- `IK(t)`
-- optional `IK_applicable(t)`
-- optional `Delta IK(t)`
-- optional `Delta2 IK(t)`
-
-Recommended storage per window:
-
-- `window_id`
-- `context_scope_id`
-- `Zbar(W)`
-- `W_app` where masking is used
-- `applicability_rate_IK(W)` where masking is used
-- `IKSigma(W)`
-- optional `Delta IKSigma(W)`
-- optional `Delta2 IKSigma(W)`
-- dispersion and drift metrics where needed
-- optional `Delta IKSigma(Hangar)`
-- optional `Delta2 IKSigma(Hangar)`
-- optional corridor or cluster IDs where defined
-- thresholds version where events are used
-
-Avoid storing:
-
-- full prompt text
-- full answer text
-- unnecessary source language
-- embeddings unless explicitly justified
-
-## 16. Compact Formula Block
-
-```text
-Z(t) = [K0(t), S0(t), O0(t), D0(t), I0(t)]
-A_Z(t) = [A_K(t), A_S(t), A_O(t), A_D(t), A_I(t)]
-w = [w_K, w_S, w_O, w_D, w_I]
-sum_j w_j = 1
-
-IK(t) = w dot Z(t)
-
-IK_applicable(t)
-= sum_i(A_Z_i(t) * w_i * Z_i(t)) / sum_i(A_Z_i(t) * w_i)
-
-Delta IK(t) = IK(t) - IK(t-1)
-Delta IK(t) = w dot Delta Z(t)     # when w and mask are stable
-
-Delta2 IK(t) = Delta IK(t) - Delta IK(t-1)
-
-Zbar(W) = (1/n) * sum_i Z(u_i)
-
-IKSigma(W) = w dot Zbar(W)
-
-Delta IKSigma(W_i) = IKSigma(W_i) - IKSigma(W_{i-1})
-
-Delta2 IKSigma(W_i) = Delta IKSigma(W_i) - Delta IKSigma(W_{i-1})
-
-Disp(W) = mean_u ||Z(u) - Zbar(W)||_2^2
-
-WindowDrift(W_i, W_j) = ||Zbar(W_i) - Zbar(W_j)||_2
-
-Delta IKSigma(Hangar)_i = D_H(H_i, H_{i-1})
-
-Delta2 IKSigma(Hangar)_i =
-    Delta IKSigma(Hangar)_i - Delta IKSigma(Hangar)_{i-1}
-```
-
-## 17. Variable Reference
+### 11.2 Variable reference
 
 | Variable | Semantic role |
 | --- | --- |
-| `Z(t)` | Numerical KSODI state vector |
-| `A_Z(t)` | Applicability mask for the five Z components |
-| `w` | Versioned projection vector / coherence axis |
-| `IK(t)` | Scalar projection of `Z(t)` |
-| `IK_applicable(t)` | Named masked projection when not all Z components are applicable |
-| `Delta IK(t)` | Movement of the projection |
-| `Delta2 IK(t)` | Change of projection movement |
-| `W` | Observation window |
-| `W_app` | Applicable subset of a window under the declared masking policy |
-| `applicability_rate_IK(W)` | Share of a window where IK projection is applicable under the active policy |
-| `Zbar(W)` | Mean state vector of a window |
-| `IKSigma(W)` | Window projection |
-| `Delta IKSigma(W)` | Movement of window projection |
-| `Delta2 IKSigma(W)` | Change of window-projection movement |
-| `H_IK` | Hangar for IK-related state distributions |
-| `Disp(W)` | Dispersion inside a window |
-| `WindowDrift(W_i, W_j)` | Drift between window centers |
-| `Delta IKSigma(Hangar)` | Distribution movement of IK-related Hangar windows |
-| `Delta2 IKSigma(Hangar)` | Acceleration of Hangar distribution movement |
-| `D_H` | Versioned distribution-distance function for Hangar drift |
-| `w_fixed` | Fixed versioned projection vector |
-| `w_domain` | Domain-specific projection vector |
-| `w_learned` | Empirically learned projection vector |
-| `w_adaptive` | Dynamically adapted projection vector; research-only unless strictly versioned |
-| `IK_rel` | Relational coherence projection after stable `R0` gate |
+| `e_A(k_A)` | source-attributed target event |
+| `T_Z,A(k_A)` | mandatory typed five-coordinate status vector |
+| `Z_A(k_A)` | complete canonical numerical state |
+| `p_IK` | named and versioned canonical projection profile |
+| `w(p_IK)` | canonical coherence-axis weights |
+| `IK_A(k_A | p_IK)` | canonical monadic projection |
+| `M` | explicit non-empty coordinate set for a reduced view |
+| `p_IK^[M]` | named reduced projection profile |
+| `IK_A^[M]` | visibly reduced, non-canonical projection |
+| `Delta IK_A`, `Delta2 IK_A` | comparable source-local projection dynamics |
+| `W_A^IK` | complete compatible subset used by a window |
+| `coverage_IK(W_A)` | numeric comparable window coverage |
+| `IK_Sigma,A(W_A)` | declared aggregate over compatible IK values |
+| `R0` | relational comparability gate, independent of IK construction |
+| `IK_rel` | strictly dyadic relational coherence branch after explicit dyadic pairing and open numeric canonical complete dyadic R0 under the exact required profile |
+
+### 11.3 Consistency tests
+
+A conforming method or implementation must satisfy:
+
+1. no canonical IK without complete canonical Z;
+2. no status loss from `T_Z` to a binary mask;
+3. no zero fill or silent subset renormalization;
+4. every reduced value discloses fixed `M` and its profile;
+5. canonical and reduced values are not mixed in dynamics or windows;
+6. the projection identity is claimed only under stable complete conditions;
+7. weights are non-negative, sum to one and are versioned;
+8. windows are non-empty, and coverage plus non-numeric statuses accompany aggregate views;
+9. IK remains monadic and does not open or replace R0;
+10. IK_rel and the R-family remain outside this method.
+
+## 12. Separate implementation companion
+
+The adjacent implementation companion supplies conditional schemas,
+pseudocode, migration rules, examples and tests. It must preserve this method's
+identity, typed-status, projection-kind and relational-boundary contracts.

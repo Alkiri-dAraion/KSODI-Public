@@ -8,12 +8,12 @@ This file provides public conceptual orientation. Canonical definitions remain
 in the linked, versioned method files.
 
 Synchronization status, 2026-08-26: the current Layer-1 operator packages and
-the current reader-first Layer-2 Z method/companion package are reviewed public
-checkpoints and byte-identical with their private counterparts. Public IK, R0
-and IK_rel remain their separately released predecessor states; their newer
-reader-first private revisions do not silently override them. This note states
-only the shared topology and result boundaries supported by the linked public
-methods. Its summaries do not replace those typed contracts or authorize
+the current reader-first Layer-2 Z and Layer-3 IK method/companion packages are
+reviewed public checkpoints and byte-identical with their private counterparts.
+Public R0 and IK_rel remain their separately released predecessor states; their
+newer reader-first private revisions do not silently override them. This note
+states only the shared topology and result boundaries supported by the linked
+public methods. Its summaries do not replace those typed contracts or authorize
 transfer of another private revision. The public repository currently has no
 root v3.50 glossary; any private glossary remains a subordinate alignment
 surface.
@@ -446,6 +446,15 @@ state. It is the reconstructed state of one identified event in one declared
 monadic trajectory within the five-dimensional KSODI observation space. A
 parallel `Z_B(m)` remains a separate state; there is no implicit shared
 `Z_AB`.
+
+Canonical Layer-3 `IK_A(k | p_IK) = w(p_IK) dot Z_A(k)` is a scalar monadic
+projection only when complete canonical Z and one valid named, versioned
+weight profile are present. The non-negative weights sum to one and are
+governed analytic configuration choices, not observed facts. An explicitly
+named `IK_A^[M]` may project one fixed non-empty reduced coordinate set under
+its own profile, but remains non-canonical and cannot silently replace
+complete-Z IK. Two monadic IK values do not constitute a dyad or a relational
+coherence result.
 
 ⸻
 

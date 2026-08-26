@@ -97,6 +97,8 @@ question being answered:
 | How are Layer-1 observations defined? | [Layer-1 operator entry](./KSODI-Standard-Eval/Layer-1_KSODI-Operators_V350/README.md), then the linked versioned operator file | the versioned operator file is authoritative for that operator's formula, profile and applicability |
 | How is the Layer-2 state vector assembled? | [Layer-2 Z entry](./KSODI-Standard-Eval/Layer-2_KSODI-State-Vector-Z_V350/README.md), then [State Vector Z](./KSODI-Standard-Eval/Layer-2_KSODI-State-Vector-Z_V350/KSODI_State-Vector-Z_V350.md) | the versioned Z method controls typed assembly, complete/partial views, dynamics and downstream boundaries |
 | How may Z be stored or operationalized? | [Z Implementation Companion](./KSODI-Standard-Eval/Layer-2_KSODI-State-Vector-Z_V350/KSODI_State-Vector-Z_Implementation-Companion_V350.md) | conditional public guidance; the adjacent Z method remains authoritative and no production stack is implied |
+| How is monadic IK projected? | [Layer-3 IK entry](./KSODI-Standard-Eval/Layer-3_KSODI-Monadic-Interaction-Coherence-IK_V350/README.md), then [Monadic IK](./KSODI-Standard-Eval/Layer-3_KSODI-Monadic-Interaction-Coherence-IK_V350/KSODI_Monadic-Interaction-Coherence-IK_V350.md) | the versioned IK method controls canonical and reduced projections, dynamics, windows and the relational boundary |
+| How may IK be stored or operationalized? | [IK Implementation Companion](./KSODI-Standard-Eval/Layer-3_KSODI-Monadic-Interaction-Coherence-IK_V350/KSODI_Monadic-Interaction-Coherence-IK_Implementation-Companion_V350.md) | conditional public guidance; the adjacent IK method remains authoritative and no production stack is implied |
 | How may the method be stored or implemented? | [KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md) | implementation contract; implementation examples do not redefine the method |
 | How may Operator I be operationalized in a Conversation-/Retrieval-oriented profile? | [Operator I Implementation Companion](./KSODI-Standard-Eval/Layer-1_KSODI-Operators_V350/KSODI_Operator-I_Implementation-Companion_V350.md) | conditional public implementation guidance; the adjacent Operator-I method file remains authoritative |
 | How may Operator D be operationalized under a declared detector/carrier profile? | [Operator D Implementation Companion](./KSODI-Standard-Eval/Layer-1_KSODI-Operators_V350/KSODI_Operator-D_Implementation-Companion_V350.md) | conditional public implementation guidance; the adjacent Operator-D method file remains authoritative |
@@ -127,8 +129,9 @@ Superseded root-README snapshots are preserved under
 `archive/document-snapshots/roadmap/`, superseded root-architecture snapshots
 under `archive/document-snapshots/architecture/`, superseded public agent
 instructions under `archive/document-snapshots/agents/`, and superseded Hangar
-notes under `archive/document-snapshots/hangar/`, and the superseded Layer-2 Z
-release under `archive/document-snapshots/state-vector-z/`, for provenance.
+notes under `archive/document-snapshots/hangar/`, the superseded Layer-2 Z
+release under `archive/document-snapshots/state-vector-z/`, and the superseded
+Layer-3 IK release under `archive/document-snapshots/monadic-ik/`, for provenance.
 They retain historical wording and
 may contain root-relative links that do not resolve from the archive folder.
 Do not use archived files as current method, release or navigation guidance;
@@ -170,8 +173,9 @@ note.
 - Layers 1-3: `KSODI-Standard-Eval`, the public monadic Observer line
   `K/S/O/D/I -> Z -> IK`.
 - Layer 4: `R_0`, the public KSODI-Full relational gate.
-- Layer 5: `IK_rel`, the public relational coherence projection after stable
-  `R_0`.
+- Layer 5: `IK_rel`, the public dyadic relational coherence projection after
+  explicit dyadic pairing and open numeric canonical complete dyadic `R_0`
+  under the exact required profile.
 - Layer 6: `R_geom`, a parallel post-`R_0` geometric research branch whose
   private material awaits complete public review and infrastructure
   revalidation.
@@ -181,8 +185,9 @@ note.
 - Layer 8: staged signal-media research without a defined architecture.
 
 Sequence guardrail: after source-local `Z`, monadic `IK` and relational `R_0`
-are separate branches. Do not rewrite the method as `Z -> IK -> R_0`. Stable
-`R_0` gates access to separately defined parallel relational calculations:
+are separate branches. Do not rewrite the method as `Z -> IK -> R_0`. An open
+numeric canonical complete R0 gate under the exact required profile gates
+access to compatible, separately defined parallel relational calculations:
 `IK_rel`, `R_geom`, `R_pace` and later media-specific views. None of these
 parallel branches is automatically the numeric input of another.
 
@@ -268,7 +273,9 @@ Current public v3.5 repository material includes:
 - source-local `Z_A(k_A)`
 - monadic `IK`
 - `R_0` as the Layer 4 relational comparability gate
-- `IK_rel` as the Layer 5 relational coherence projection after stable `R_0`
+- `IK_rel` as the Layer 5 dyadic relational coherence projection after explicit
+  dyadic pairing and open numeric canonical complete dyadic `R_0` under the
+  exact required profile
 - Hangar / Sigma orientation notes where explicitly published
 
 `R_geom` and `R_pace` are not current public reference releases. Private method
@@ -296,7 +303,7 @@ When describing KSODI, agents may use or closely paraphrase:
 > entry layer, KSODI-Standard-Eval as the complete monadic Observer line
 > `K/S/O/D/I -> Z -> IK`, the separately published KSODI-Full Layer 4 `R_0`
 > relational comparability gate, and the separately published Layer 5
-> `IK_rel` relational coherence projection after stable `R_0`. `R_geom` and
+> `IK_rel` relational coherence projection after its exact dyadic `R_0` gate. `R_geom` and
 > `R_pace` await complete public review and infrastructure revalidation; Layer
 > 8 remains staged research without a defined architecture.
 
@@ -306,7 +313,8 @@ When describing KSODI, agents may use or closely paraphrase:
   intentions.
 - `R_0` is a comparability gate, not coupling, resonance or joint stability.
 - `IK` is monadic interaction coherence and closes KSODI-Standard-Eval.
-- `IK_rel` belongs only after stable `R_0`.
+- Current `IK_rel` belongs only after explicit dyadic pairing and open numeric
+  canonical complete dyadic `R_0` under the exact required profile.
 - The Handshake is not a sixth operator or a separate score beside `R_0`.
   `R_0` operationalizes the bounded SYN/ACK-like Handshake analogy.
 - `Ref` / reference space is separate from the relational `R` family.
@@ -360,7 +368,8 @@ order.
 
 Do not derive relational values from adjacency or shared context. `R_0` requires
 distinguishable trajectories and an explicit pairing or constellation rule.
-After stable `R_0`, `IK_rel`, `R_geom` and optional `R_pace` remain parallel
+After their compatible open numeric canonical complete `R_0` gates, `IK_rel`,
+`R_geom` and optional `R_pace` remain parallel
 branch calculations with their own bases, applicability rules and versioned
 profiles. The latter two are not current public reference releases and await
 complete public review and infrastructure revalidation.

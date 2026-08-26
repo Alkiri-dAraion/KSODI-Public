@@ -303,7 +303,8 @@ v3.5; they are not current v3.5 specification diagrams.
 > and resonance:** One dancer's attributable movements form a source-local
 > trajectory that can be observed monadically. Each attributable target event
 > can be represented by its own five-coordinate `Z_A(k_A)` state, and monadic `IK`
-> projects that complete applicable state. Neither projection determines that
+> projects that complete canonical numeric state under one declared axis.
+> Neither projection determines that
 > the choreography is correct or that the performance fulfils an external task.
 >
 > Sharing a room, time and music does not by itself create an evaluated dyad.
@@ -718,8 +719,9 @@ human decision or Controller layers.
 Designed for numeric observability, drift detection and declared relational
 monitoring without performing steering or enforcement by themselves.
 KSODI v3.5 is being published in successive stages. The five operator
-definitions, the monadic state vector `Z_A(k_A)` and monadic `IK` form the
-current public KSODI-Standard-Eval release. The relational `R_0` gate is released
+definitions, the reader-first monadic state-vector Z method/companion and the
+reader-first monadic IK method/companion form the current public
+KSODI-Standard-Eval release. The relational `R_0` gate is released
 separately as KSODI-Full Layer 4, and `IK_rel` is released as KSODI-Full Layer
 5. `R_geom` and `R_pace` remain outside the current public reference release
 while complete public review and infrastructure revalidation are pending.

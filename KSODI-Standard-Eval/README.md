@@ -61,9 +61,8 @@ The reviewed v350 line is being released into this public repository step by
 step after private review.
 
 As of 2026-08-26, the public v350 Standard-Eval release contains all five
-current Layer-1 method/companion packages, the reader-first Layer-2 Z method
-and conditional implementation companion, and the earlier public Layer-3
-monadic IK projection.
+current Layer-1 method/companion packages and the current reader-first Layer-2
+Z and Layer-3 monadic IK method/companion packages.
 
 - [`KSODI-Standard-Eval-Release_V350.md`](./KSODI-Standard-Eval-Release_V350.md)
   records the active v3.5 release boundary.

@@ -35,9 +35,19 @@ failures produce no valid coordinate result and are never converted into a
 fifth status or numeric zero. Complete canonical `Z_A(k_A) in [0,1]^5` exists
 only when all five aligned coordinate records are numeric.
 
-The public Layer-3 IK method remains its earlier released reference state. A
-newer private reader-first IK method and companion are not part of this
-Layer-2 release and do not silently override the public file.
+The reader-first Layer-3 package released on 2026-08-26 contains:
+
+- `KSODI_Monadic-Interaction-Coherence-IK_V350.md` — authoritative monadic
+  projection method;
+- `KSODI_Monadic-Interaction-Coherence-IK_Implementation-Companion_V350.md` —
+  subordinate conditional implementation guidance;
+- the adjacent Layer-3 README.
+
+Canonical IK consumes only complete canonical numeric Z under one named,
+versioned axis. Any fixed reduced view remains visibly `IK^[M]`. IK is monadic:
+neither one nor two IK values opens relation. Current dyadic `IK_rel` requires
+explicit dyadic pairing and open numeric canonical complete dyadic R0 under the
+exact required profile.
 
 ## Release guardrail
 

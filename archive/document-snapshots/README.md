@@ -9,3 +9,6 @@ Use the active documents in the repository root and current method folders.
 
 The `state-vector-z/` subdirectory preserves the Layer-2 Z predecessor that
 was superseded by the reader-first typed-status release on 2026-08-26.
+
+The `monadic-ik/` subdirectory preserves the Layer-3 IK predecessor that was
+superseded by the reader-first typed-projection release on 2026-08-26.
