@@ -238,13 +238,13 @@ relevant relational feature space.
 
 ### Why each relational calculation exists
 
-| Component | Required methodological question | Minimum declared basis | Status |
+| Component | Required methodological question | Minimum declared basis | Public scope |
 | --- | --- | --- | --- |
-| `R0` | May these distinguishable trajectories be evaluated relationally under this policy? | trajectories, pairing/constellation, compatible complete or fixed-M movement profiles, normalized drift and separate gate policy | current reader-first public v3.50 method/companion release |
-| `IK_rel` | What relational coherence projection is visible after the gate opens? | explicit dyadic pairing, same-pairing open numeric canonical complete dyadic `R0` under the exact profile, plus comparable canonical monadic IK movement | current reader-first public v3.50 method/companion release |
-| `R_geom` | What geometric coupling is visible in KSODI state space? | a compatible R0 contract plus a separately defined geometric feature basis | staged private research; not reviewed in this pass |
-| `R_pace` | What explicitly observable pacing or rhythmic coordination is visible? | a compatible R0 contract plus a separately defined pacing basis | staged optional private research; not reviewed in this pass |
-| signal-media views | What medium-specific patterns are visible in voice, radio, Morse-like or waveform material? | an exact compatible R0 contract where relation is claimed plus a media-specific observation profile | future research |
+| `R0` | May these distinguishable trajectories be evaluated relationally under this policy? | trajectories, pairing/constellation, compatible complete or fixed-M movement profiles, normalized drift and separate gate policy | public v3.50 method and companion |
+| `IK_rel` | What relational coherence projection is visible after the gate opens? | explicit dyadic pairing, same-pairing open numeric canonical complete dyadic `R0` under the exact profile, plus comparable canonical monadic IK movement | public v3.50 method and companion |
+| `R_geom` | What geometric coupling is visible in KSODI state space? | a compatible R0 contract plus a separately defined geometric feature basis | orientation only; no public method definition |
+| `R_pace` | What explicitly observable pacing or rhythmic coordination is visible? | a compatible R0 contract plus a separately defined pacing basis | orientation only; no public method definition |
+| signal-media views | What medium-specific patterns are visible in voice, radio, Morse-like or waveform material? | an exact compatible R0 contract where relation is claimed plus a media-specific observation profile | orientation only; no defined public method architecture |
 
 Layer numbers 5-8 preserve orientation and research organization. They do not
 turn the parallel branches into a numeric chain.
@@ -541,7 +541,7 @@ T_B ----/          |
 - [Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md)
 
 Historical v3.3 and deprecated public drafts remain in the public
-[`method-history-v33`](https://github.com/Alkiri-dAraion/KSODI-Public/tree/main/archive/method-history-v33)
-archive. Historical v3.42 Observer assets remain in the public
-[`historical-observer-v342`](https://github.com/Alkiri-dAraion/KSODI-Public/tree/main/archive/assets-archive/historical-observer-v342)
+[`method-history-v33`](./archive/method-history-v33/README.md) archive.
+Historical v3.42 Observer assets remain in the public
+[`historical-observer-v342`](./archive/assets-archive/historical-observer-v342/README.md)
 archive.

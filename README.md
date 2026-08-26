@@ -388,9 +388,8 @@ v3.5; they are not current v3.5 specification diagrams.
 Implementation shortcuts such as "agent layer" or "observer layer" may appear
 in older notes, but the table above is the current public orientation map.
 
-For a compact visual `KSODI-Standard-Eval` and `KSODI-Full` layer sketch, see
-the [KSODI Architecture V350](./KSODI-Architecture_V350.md).
-For the fuller architecture orientation, see
+For the canonical `KSODI-Standard-Eval` and `KSODI-Full` layer sketch and
+fuller topology orientation, see
 [KSODI Architecture V350](./KSODI-Architecture_V350.md).
 
 Mini note on `Hangar`: in KSODI, a Hangar view is not the whole private mental

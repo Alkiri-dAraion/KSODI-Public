@@ -875,11 +875,11 @@ scalar. Aggregation must remain branch-specific.
 | `K/S/O/D/I` | monadic, source-attributed | optional coordinate diagnostics | active where selected |
 | `Z` | monadic | state-trajectory windows and distributions | active |
 | `IK` | monadic | projection windows and distributions | active where selected |
-| `R0` | dyadic or n-adic relational gate | evaluability and gate-state windows | released reader-first v3.50 method; Hangar view selected where needed |
-| `IK_rel` | strictly dyadic | relational-projection windows | released reader-first v3.50 method after its exact compatible open canonical complete dyadic `R0` |
-| `R_geom` | cardinality defined only by a later profile | branch-specific geometric distributions | staged private research; not reviewed in this pass |
-| `R_pace` | cardinality defined only by a later profile | branch-specific pacing distributions | staged optional private research; not reviewed in this pass |
-| signal-media views | source-local or relational as declared | medium-specific distributions | future research |
+| `R0` | dyadic or n-adic relational gate | evaluability and gate-state windows | public v3.50 method; Hangar view selected where needed |
+| `IK_rel` | strictly dyadic | relational-projection windows | public v3.50 method after its exact compatible open canonical complete dyadic `R0` |
+| `R_geom` | cardinality defined only by a later profile | branch-specific geometric distributions | orientation only; no public method definition |
+| `R_pace` | cardinality defined only by a later profile | branch-specific pacing distributions | orientation only; no public method definition |
+| signal-media views | source-local or relational as declared | medium-specific distributions | orientation only; no defined public method architecture |
 
 Every Delta, Delta2, Sigma or Hangar view requires its own comparable index,
 profile, fixed basis or component contract, typed eligibility/status and
