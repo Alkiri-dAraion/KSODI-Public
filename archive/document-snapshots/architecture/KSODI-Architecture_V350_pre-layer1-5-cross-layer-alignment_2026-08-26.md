@@ -1,8 +1,8 @@
 # KSODI Architecture V350
 
-Status: canonical public architecture for the released KSODI v3.5 / v3.50
-Layer 0–5 method line and the explicitly staged Layer 6–8 research branches;
-strictly reviewed and released 2026-08-26.
+Status: single canonical public architecture for the current KSODI v3.5 / v3.50
+research repository state. Public visibility does not by itself mark a formal
+reference release.
 
 Filename marker: `_V350` denotes KSODI v3.5 / v3.50. It is a path-safe version
 marker, not a separate release or method variant.
@@ -12,12 +12,11 @@ while preserving source identity, role-relative process directions and the
 boundary between monadic and relational observation.
 
 Product boundary: KSODI-Standard-Eval is the monadic trajectory-observation
-line through `IK_A(k)`. KSODI-Full begins with dyadic or n-adic observation at
-`R_0`; current dyadic `IK_rel` requires explicit dyadic pairing and an open
-numeric canonical complete dyadic R0 for the same ordered dyad, paired events,
-pairing map, relational step and exact required profile. Separately defined
-application-specific Layer 6–8 branches remain staged or Future Work rather
-than a serial continuation. All source trajectories remain distinguishable.
+line through `IK_A(k)`. KSODI-Full begins with dyadic or explicitly n-adic
+observation at `R_0`; current dyadic `IK_rel` requires explicit dyadic pairing
+and an open numeric canonical complete dyadic R0 under the exact required
+profile. Separately defined application-specific Layer 6–8 extensions follow.
+The source trajectories remain distinguishable.
 
 Read this architecture together with the
 [KSODI-Standard-Eval / KSODI-Full Transition V350](./KSODI-Standard-Eval_Full-Transition_V350.md)
@@ -31,10 +30,10 @@ input or dependency; parallel branches remain separate calculations.
 ## 1. Independent Entry Points and Dependency Boundary
 
 ```text
-independently usable                      independent of KSODI-Light
+independently usable                      independently usable
 
 +--------------------------+             +----------------------------+
-| KSODI-Light              |             | Observer method entry      |
+| KSODI-Light              |             | Observer method            |
 | local reflection         |             | KSODI-Standard-Eval /      |
 | prompt / agent guidance  |             | KSODI-Full                 |
 +--------------------------+             +----------------------------+
@@ -52,10 +51,9 @@ independently usable                      independent of KSODI-Light
 
 `KSODI-Light -> Observer -> Controller` is not one mandatory pipeline.
 KSODI-Light needs no external Observer calculation. KSODI-Standard-Eval and
-KSODI-Full do not require Light, but KSODI-Full is not standalone: it consumes
-distinguishable typed trajectories from the monadic layers. A future Controller
-requires a separate Observer and governance boundary; it must not collapse
-into the Observer or the observed entity.
+KSODI-Full do not require Light. A future Controller requires a separate
+Observer and governance boundary; it must not collapse into the Observer or
+the observed entity.
 
 ## 2. Entity Identity, Roles and Index Convention
 
@@ -116,16 +114,16 @@ detect an impulse  reconstruct  check sources  infer structure  place in context
 Established conventions may permit immediate decoding, shortcuts or parallel
 checks. Without a sufficient convention, the receiver-side direction may
 recur until reconstruction stabilizes or remains unresolved. Repetition must
-not be discarded automatically; recurring signals may reveal persistence or
-support contact-attempt, attack or anomaly hypotheses requiring interpretation.
+not be discarded automatically; recurring signals may reveal persistence,
+contact attempts, attacks or anomaly.
 
 Correlation, temporal adjacency, a shared room, one chat or one task do not
 establish causality, shared state or relation.
 
 ## 4. Canonical Monadic Source and Trajectory Boundary
 
-Every valid Layer-1 result record belongs to one identified target event
-attributed to one declared entity and trajectory under one versioned profile.
+Every Layer-1 value belongs to one identified target event attributed to one
+declared entity and trajectory under one versioned profile.
 
 ```text
 observable event e_A(k_A)
@@ -136,19 +134,13 @@ K_A / S_A / O_A / D_A / I_A
           |
           | why: retain five distinguishable observable questions
           v
-typed Z assembly record R_Z,A(k_A)
+Z_A(k_A)
           |
-          | only when complete: expose numeric Z_A(k_A)
+          | why: preserve the complete five-coordinate state
           v
 IK_A(k_A)
-             why: selected canonical monadic coherence projection
+             why: optional readable monadic coherence projection
 ```
-
-`R_Z,A` remains valid as a typed `not_complete` assembly record when one or
-more aligned Layer-1 results are non-numeric. It exposes complete numeric
-`Z_A(k_A)` only when all five coordinates are numeric. Canonical IK consumes
-that complete vector; it does not consume a zero-filled or changing partial
-basis.
 
 The same construction remains separate for `B`:
 
@@ -191,10 +183,9 @@ Z_A(k_A) -------------------------------> IK_A(k_A)
 Z_B(k_B) -------------------------------> IK_B(k_B)
 
 R0 inputs:
-  distinguishable typed Z trajectories and source-local predecessors
+  distinguishable T_A and T_B
   explicit pi(j) or n-adic constellation map
-  one complete canonical basis or one fixed named M
-  compatible identities, profiles, norm, aggregation and gate policy
+  compatible profiles, applicability and selected stability policy
 ```
 
 `R0` is not calculated from `IK_A` or `IK_B`. `IK` may remain useful even when
@@ -206,10 +197,9 @@ no relational evaluation is opened.
 T_A ----\
          +--> R0(j | pi, p_R0)
 T_B ----/          |
-                   | only if a valid numeric result exists and its stored
-                   | gate state is open under the exact downstream contract
+                   | if applicable and R0 >= theta_R0_stable
                    |
-                   +--> IK_rel(j | p_IK_rel)      [released, dyadic]
+                   +--> IK_rel(j | p_IK_rel)
                    |      relational coherence projection
                    |
                    +--> R_geom(j | p_geom)       [staged]
@@ -244,22 +234,14 @@ relevant relational feature space.
 
 | Component | Required methodological question | Minimum declared basis | Status |
 | --- | --- | --- | --- |
-| `R0` | May these distinguishable trajectories be evaluated relationally under this policy? | trajectories, pairing/constellation, compatible complete or fixed-M movement profiles, normalized drift and separate gate policy | current reader-first public v3.50 method/companion release |
-| `IK_rel` | What relational coherence projection is visible after the gate opens? | explicit dyadic pairing, same-pairing open numeric canonical complete dyadic `R0` under the exact profile, plus comparable canonical monadic IK movement | current reader-first public v3.50 method/companion release |
-| `R_geom` | What geometric coupling is visible in KSODI state space? | a compatible R0 contract plus a separately defined geometric feature basis | staged private research; not reviewed in this pass |
-| `R_pace` | What explicitly observable pacing or rhythmic coordination is visible? | a compatible R0 contract plus a separately defined pacing basis | staged optional private research; not reviewed in this pass |
+| `R0` | May these distinguishable trajectories be evaluated relationally under this policy? | trajectories, pairing/constellation, compatible profiles, applicability and normalized stability inputs | public research material |
+| `IK_rel` | What relational coherence projection is visible after the gate opens? | explicit dyadic pairing, open numeric canonical complete dyadic `R0` under the exact profile, plus its own complete relational projection basis | current reader-first public v3.50 method/companion release |
+| `R_geom` | What geometric coupling is visible in KSODI state space? | a compatible open canonical complete `R0` gate plus a separately defined geometric feature basis | staged; detailed definition pending |
+| `R_pace` | What explicitly observable pacing or rhythmic coordination is visible? | a compatible open canonical complete `R0` gate plus a separately defined pacing basis | staged optional research |
 | signal-media views | What medium-specific patterns are visible in voice, radio, Morse-like or waveform material? | an exact compatible R0 contract where relation is claimed plus a media-specific observation profile | future research |
 
 Layer numbers 5-8 preserve orientation and research organization. They do not
 turn the parallel branches into a numeric chain.
-
-R0 result status and open/closed/not-evaluable gate state remain separate.
-Incomparable movement is a processing record and produces no valid R0 result.
-Current IK_rel preserves the same ordered dyad, paired events, pairing map and
-relational step as its exact open numeric canonical complete dyadic R0 handoff.
-Joint first-order stillness is `not_applicable`, not zero; extended profiles
-retain `T_G`, use one fixed N from `{gap,move,accel}` and never renormalize
-around unavailable components. Empty rate denominators are non-evaluable.
 
 ## 7. SYN/ACK Analogy, Coupling and Causality Boundary
 
@@ -275,15 +257,15 @@ relational observation.
 - determine correctness, desirability, safety or alignment.
 
 The Observer declares the pair or constellation first. `R0` then evaluates
-whether the distinguishable trajectories satisfy the declared availability,
-comparability and bounded-drift policy. Two unrelated but static declared
+whether the distinguishable trajectories satisfy the selected applicability,
+compatibility and stability policy. Two unrelated but static declared
 trajectories may pass the minimal stability gate. Later relational branches
 must still provide their own evidence.
 
-No current released v3.50 construct reports generic coupling strength. A later
-coupling claim would require a separately released conjunction of appropriate
-relational evidence across a declared window and profile. One open gate, one
-high `IK_rel` or one high future branch-specific R value is insufficient.
+Within the current research architecture, strong observable coupling may be
+reported only from sustained conjunction of appropriate relational evidence
+across a declared window and profile. One open gate, one high `IK_rel` or one
+high branch-specific R value is insufficient.
 
 ## 8. Layer 0-8 Orientation Map
 
@@ -315,9 +297,8 @@ Layer 4 - R0 / R_0
   numeric result separated from open / closed / not-evaluable gate state
 
 Layer 5 - IK_rel
-  dyadic compatibility after explicit pairing and the same-pairing exact open
-  numeric canonical complete dyadic R0 gate under the required profile
-  fixed typed relational component set N for extended views
+  dyadic compatibility after explicit pairing and exact open canonical R0 gate
+  explicit pi(j); fixed typed relational component set N for extended views
 
 Layer 6 - R_geom [staged]
   parallel post-R0 geometric-coupling research branch
@@ -334,10 +315,18 @@ Future Controller
 ```
 
 The current public repository state contains the complete monadic
-KSODI-Standard-Eval line and released reader-first `R0` and `IK_rel` method
-packages. `R_geom`,
+KSODI-Standard-Eval line and public `R0` and `IK_rel` research material. `R_geom`,
 `R_pace` and later signal-media work remain staged or future research unless a
 file-level status explicitly changes. Folder presence is not a release claim.
+
+The released Layer-5 contract requires the same ordered dyad, paired events,
+pairing map and relational step in the exact open canonical complete dyadic R0
+handoff. Upstream incomparable or processing records produce no valid IK_rel
+result. Joint first-order stillness is typed `not_applicable`; extended
+profiles retain `T_G`, use one fixed N from `{gap,move,accel}` and never
+renormalize around unavailable components. Empty rate denominators remain
+non-evaluable. These rules do not establish coupling, resonance or action
+authority.
 
 ## 9. Scope and Application Selection
 
@@ -355,8 +344,8 @@ Common observation focus may include:
 
 In adversarial, safety-sensitive or drift-sensitive settings, operator-level
 movement may become important. For example, `I` stagnation, bursts, recurrence
-or oscillation may support attack, prompt-injection, repetitive-collapse,
-contact-attempt or missing-update hypotheses requiring interpretation.
+or oscillation may reveal attack patterns, prompt-injection pressure,
+repetitive collapse, contact attempts or missing update-relevant information.
 
 Decision rule: do not enable Sigma, Hangar, Delta or Delta2 everywhere by
 default. Do not remove recurrence merely because one event was insufficiently
@@ -380,13 +369,11 @@ Hangar view   -> position or distribution of patterns in an observation space
 ```
 
 Static, Delta and Delta2 aggregates remain separate typed views with their own
-status/eligibility subsets, comparability contracts and provenance.
-The authoritative layer method defines each eligible set, denominator and
-empty-window result; neither this overview nor the Hangar note may redefine
-that contract.
+applicability sets and provenance.
+
 ## 11. Weighting Modes and Future Corridors
 
-For a complete numeric five-operator `Z`, the transparent equal-weight `IK`
+For a complete applicable five-operator `Z`, the transparent initial `IK`
 baseline may use:
 
 ```text
@@ -432,9 +419,7 @@ Human `A` sends a question; chatbot `B` receives it. When `B` answers, the
 roles reverse but entity identities do not. Each contribution receives its own
 source-local operator values, `Z` and optional `IK`. The shared chat is a
 context container, not a mixed `Z_AB`. `R0` uses the separately retained
-trajectories plus a declared pairing. Current `IK_rel` additionally requires the
-same-pairing exact open numeric canonical complete dyadic gate under its
-required profile before its relational projection may be evaluated.
+trajectories plus a declared pairing before any relational branch may open.
 
 ### Two robots
 
@@ -454,9 +439,9 @@ acknowledgement, causal influence or coupling.
 ## 14. Optional Diagnostics and Deprecated Identifiers
 
 Layer-1 operators may be inspected individually through source-local
-trajectory, projection or aggregation views. After a compatible exact R0 gate
-under a separately defined future contract, operator-specific relational
-diagnostics may be researched. Such a
+trajectory, projection or aggregation views. After a compatible open numeric
+canonical complete `R0` gate under the exact required profile, separately
+defined operator-specific relational diagnostics may be researched. Such a
 partial view is not complete `Z`, canonical `IK`, `IK_rel` or an R-family
 result.
 
@@ -522,9 +507,8 @@ pi(j) = (k_A(j), k_B(j))
 T_A ----\
          +--> R0(j | pi, profile_R0)
 T_B ----/          |
-                   | IK_rel only under its same-pairing exact open numeric
-                   | canonical complete dyadic gate and required profile
-                   +--> IK_rel(j)  [released, dyadic]
+                   | only under the same-pairing exact compatible open gate
+                   +--> IK_rel(j)
                    +--> R_geom(j)   [staged]
                    +--> R_pace(j)   [staged, optional]
                    +--> later signal-media views [future research]
@@ -544,8 +528,7 @@ T_B ----/          |
 - [Shared Sigma / Hangar Method Note](./KSODI-Hangar_V350.md)
 - [Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md)
 
-Historical v3.3 and deprecated public drafts remain in the public
-[`method-history-v33`](https://github.com/Alkiri-dAraion/KSODI-Public/tree/main/archive/method-history-v33)
-archive. Historical v3.42 Observer assets remain in the public
-[`historical-observer-v342`](https://github.com/Alkiri-dAraion/KSODI-Public/tree/main/archive/assets-archive/historical-observer-v342)
-archive.
+Historical v3.3 and deprecated public drafts remain under
+[`method-history-v33`](./archive/method-history-v33/README.md).
+Historical v3.42 Observer assets remain under
+[`historical-observer-v342`](./archive/assets-archive/historical-observer-v342/README.md).

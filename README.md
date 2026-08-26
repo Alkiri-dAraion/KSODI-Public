@@ -290,11 +290,12 @@ Each attributable signal event and source-local trajectory is evaluated
 monadically before relational comparison. `R_0` establishes only whether
 distinguishable typed trajectory movements satisfy one declared availability
 and bounded-drift contract. Current dyadic `IK_rel` additionally requires its
-exact explicit pairing and open canonical complete dyadic R0 gate. Observable
-coupling or resonance claims require the applicable branch-specific R-family construct to
-have been separately released, declared and evaluated across its required
-window. The displayed traces can be inspected. The reconstructed whole remains
-a model.
+same-pairing exact open numeric canonical complete dyadic R0 gate under the
+required profile. No currently released Layer-1–5 value alone establishes
+coupling or resonance. Such a claim would require an applicable, separately
+released branch-specific construct, a declared evidence conjunction and its
+required window. The displayed traces can be inspected. The reconstructed
+whole remains a model.
 
 For the formal topology, see the
 [current Layer 0-8 architecture](./KSODI-Architecture_V350.md). For

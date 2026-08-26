@@ -17,7 +17,7 @@ Read the three KSODI scopes in this order:
    explicit dyadic pairing and an open numeric canonical complete dyadic `R_0`
    gate for the same ordered dyad, paired events, pairing map, relational step
    and exact required profile. The further R-family and signal-media
-   extension elements assigned to Layers 6–8. These later elements remain
+   extension elements are assigned to Layers 6–8. These later elements remain
    staged in the current public release. KSODI-Full requires distinguishable
    monadic trajectories and does not merge them.
 

@@ -1,21 +1,15 @@
 # KSODI Hangar, Sigma, Drift and Point Clouds
 
-**Status:** public v3.50 cross-layer reference note; strictly reviewed and
-released 2026-08-26
+**Status:** current public v3.50 research reference note; repository visibility is not by itself a formal release marker  
 **Scope:** KSODI Standard-Eval and KSODI-Full Observer views  
+**Visibility:** public research material; private canonical workbench origin retained  
 **Filename marker:** `_V350` denotes KSODI v3.5 / v3.50
-
-Authority: this note governs cross-layer Sigma/Hangar interpretation only.
-The released Layer 1–5 method files remain authoritative for formulas, result
-types, gates, windows and component contracts.
 
 ---
 
 ## 1. Purpose
 
-This note defines where Sigma, Sigma(Hangar), Drift and Drift Acceleration are
-methodically useful and which comparability, typing and provenance constraints
-their cross-layer use must preserve.
+This note defines where Sigma, Sigma(Hangar), Drift and Drift Acceleration are methodically useful within the KSODI architecture.
 
 KSODI does not only observe isolated source-attributed states. It can also observe how comparable states, trajectories and relational evaluations move, stabilize, diverge or become unstable across declared indices and windows.
 
@@ -62,12 +56,10 @@ it never enters a participant's inner hangar.
 ```
 
 The transient Handshake / interaction space between participants belongs to
-the interaction process. It is not the canonical Hangar. `R0` records whether
-the declared constellation is eligible for a separately defined relational
-observation under the selected gate contract; it does not establish coupling.
+the interaction process. It is not the canonical Hangar. `R0` opens relational
+observation of a declared constellation; it does not establish coupling.
 
-Individual signals retain their declared stable or provisional source
-attribution; an emitting entity is recorded only when established. Across a
+Individual signals remain attributable to their emitting source. Across a
 declared window, their reciprocal ordering may form an observable relational
 pattern that cannot be reduced to either trajectory alone. No single open gate,
 high `IK_rel` value or high branch-specific R value is sufficient to establish
@@ -121,10 +113,9 @@ observer-side exchange Hangar for the declared window and profile
 shared mind, merged state or common trajectory. The existence of an exchange
 Hangar also does not by itself authorize relational calculation: dyadic or
 n-adic evaluation still requires explicit pairing or constellation metadata
-and an open numeric `R_0` gate under the exact contract required by the
-downstream branch. Current `IK_rel` additionally requires the same ordered
-dyad, paired member events, pairing map and relational step in an open numeric
-canonical complete dyadic `R_0` result under the exact required profile.
+and an evaluable open `R_0` gate under the declared branch contract. Current
+dyadic `IK_rel` additionally requires open canonical complete dyadic `R_0`
+under the exact required profile.
 
 The term is retained as an explanatory distinction. Formal definitions and
 implementations must use the declared event, entity, trajectory, window and
@@ -141,8 +132,7 @@ declared set of distinguishable numerical coordinates.
 One normalized value can be shown on a line. Two values locate a point in a
 square, and three values locate a point in a cube. KSODI assigns five
 normalized values to one explicitly identified, source-attributed observable
-event. In the following illustration only, `Phi` names the coordinate assembly
-map; it is not an additional canonical v3.50 method symbol:
+event:
 
 ```text
 Phi(e) = (K(e), S(e), O(e), D(e), I(e)) in [0,1]^5
@@ -163,13 +153,11 @@ The hypercube is the formal value domain. KSODI does not assume that all
 possible coordinate combinations occur empirically. Observed events may occupy
 only a restricted, clustered, correlated or curved region inside that domain.
 
-One source-attributed event whose five aligned coordinate results are numeric
-produces one complete observable point in `[0,1]^5`. A sequence of comparable
-complete points from the same declared trajectory produces a path. Several
-trajectories or observation windows may form point clouds. Typed non-complete
-records remain observable records but do not become five-dimensional numeric
-points. The Hangar is the Observer-side comparison view for these attributable
-points, paths, windows and distributions.
+One source-attributed event produces one observable point. A sequence of
+comparable points from the same declared trajectory produces a path. Several
+trajectories or observation windows may form point clouds. The Hangar is the
+Observer-side comparison view for these attributable points, paths, windows
+and distributions.
 
 Every monadic state change is assigned to one declared entity or trajectory by
 default:
@@ -184,11 +172,9 @@ declared explicitly through exchange, reply, pair or n-adic metadata.
 Relational layers compare or relate distinguishable trajectory-local states
 and movements; they do not create one mixed monadic state.
 
-If one or more operator coordinates are non-numeric—including `not_selected`,
-`not_observable` or `not_applicable`—they must not be replaced by zero. The
-resulting record is typed partial / `not_complete`, not a complete point in the
-five-dimensional hypercube. Complete Z requires all five coordinates to be
-aligned and numeric.
+If one or more operators are not applicable, the missing coordinates must not
+be replaced by zero. The resulting observation is a masked or partial
+projection, not a complete point in the five-dimensional hypercube.
 
 For the cross-layer source-attribution and implementation boundary, see
 [KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md).
@@ -197,7 +183,7 @@ For the cross-layer source-attribution and implementation boundary, see
 
 KSODI distinguishes human-readable projections from richer machine-readable
 observation objects. Every view retains its entity or trajectory identity,
-profile, typed status/eligibility and index kind.
+profile, applicability and index type.
 
 Human-readable monadic views may use:
 
@@ -225,14 +211,10 @@ Machine-side analysis may retain richer typed structures:
 ```text
 T_A = {Z_A(k_A)}
 Delta T_A = {Delta Z_A(k_A)}
-P_rel,AB(j) = (T_G, numeric components, IK_rel result, gate record)
-IK_rel_cloud(W_AB)
-branch-specific geometric or pacing feature records [staged]
+G_rel(j),  IK_rel_cloud(W_j)
+G_geom(j), R_geom_cloud(W_j)     [staged]
+G_pace(j), R_pace_cloud(W_j)     [staged]
 ```
-
-The retired unlabeled active-vector form `G_rel_active` and event-wise
-renormalized relational axes are not current v3.50 structures. `T_G` retains
-all component statuses; a released extended IK_rel profile uses one fixed N.
 
 This is a separation of views, not a loss of precision:
 
@@ -264,16 +246,13 @@ T_B = {Z_B(k_B)} ----/            |
 
 `IK_A` is calculated from `Z_A`; `IK_B` is calculated from `Z_B`. `R0` is not
 calculated from either monadic `IK`. It evaluates whether distinguishable
-typed Z movements and an explicit pairing or constellation satisfy the
-declared availability, comparability and bounded-drift contract.
+trajectories and an explicit pairing or constellation satisfy the selected
+applicability, compatibility and stability policy.
 
-After an open numeric `R0` under the exact contract required by the downstream
-method, `IK_rel`, `R_geom` and `R_pace` are parallel relational research
-branches. Current IK_rel requires the exact compatible open numeric canonical complete
-dyadic gate; Layer 6 and later remain staged and do not acquire a gate or
-formula from this note. No branch is automatically the numeric input of
-another. Every branch requires its own complete basis, profile and
-applicability rules.
+After their compatible open numeric canonical complete `R0` gate contracts,
+`IK_rel`, `R_geom` and `R_pace` are parallel relational research branches.
+None is automatically the numeric input of another. Every
+branch requires its own complete basis, profile and applicability rules.
 
 Drift, acceleration, Sigma and Hangar are selected typed views within a layer
 or branch. They are not mandatory intermediate layers and do not change the
@@ -362,35 +341,16 @@ R_geomΣ(W_j)   [staged]
 `W_A` contains comparable local positions from trajectory A. `W_j` contains
 comparable declared relational evaluations. They are not interchangeable.
 
-Where typed result states or derived numeric-availability masks are used, the
-Sigma view declares its status, fixed basis and coverage policy. The following
-is explanatory schema, not a replacement for layer-specific names:
+Where applicability masks are used, the Sigma view declares its active policy:
 
 ```text
-T_X(q) = common typed result status at q
-W_numeric,X = {q in W_X | T_X(q) = numeric under profile p_X}
-coverage_numeric,X(W_X) = |W_numeric,X| / |W_X|
+W_app,X = {q in W_X | X(q) is applicable under profile p_X}
+applicability_rate_X(W_X) = |W_app,X| / |W_X|
 ```
 
-Canonical reporting uses the names and eligibility sets of the governing
-method: Layer-1 operator windows retain their typed static/Delta/Delta2
-subsets; Z reports `complete_rate_Z` and per-coordinate `numeric_rate_X`; IK
-reports `coverage_IK`; R0 reports `coverage_R0` and `gate_open_rate`; IK_rel
-reports `coverage_rel`, `gate_open_rate` and `static_rate`. Identically named
-rates in different layers still retain their own declared numerator,
-denominator and eligibility rule.
-
-For Z, the mandatory coordinate-status vector `T_Z` remains authoritative and
-the binary `A_Z` numeric-availability mask is derived from it. It is not an
-applicability policy. A mask cannot distinguish
-`not_selected`, `not_observable` and `not_applicable`.
-
 Here `q` is the already declared index type for `X`; it is not a new universal
-time index. A complete Z window uses a shared complete basis. A reduced Z
-window declares one fixed non-empty component set `M` for the whole window;
-an eventwise `A_Z` must not silently generate a changing basis. Partial Z
-points must be stratified by their exact status profile and must not be
-zero-filled into the complete five-dimensional Hangar space.
+time index. Masked or applicability-aware windows must be named and must not be
+presented as complete full-window values.
 
 Sigma is useful when single observations are insufficient. It can show
 stability, drift, oscillation, collapse, convergence or recurrence. Sigma does
@@ -409,7 +369,7 @@ Examples of point or trajectory distributions:
 ```text
 H_Z(W_A | p_Z)        = {Z_A(k_A) | k_A in W_A}
 H_IK(W_A | p_IK)      = {IK_A(k_A) | k_A in W_A}
-H_IK_rel(W_AB | p_rel) = {IK_rel_AB(j) | j in W_AB^rel}
+H_IK_rel(W_j | p_rel) = {IK_rel(j) | j in W_j and R0 is stable}
 ```
 
 Examples of distributions over already aggregated windows:
@@ -426,19 +386,9 @@ declare:
 - the observed object type and layer or branch;
 - entity, source and trajectory identities;
 - index and window policy;
-- evaluation profile, fixed basis, typed status vector and derived
-  numeric-availability mask;
+- evaluation profile, basis and applicability mask;
 - whether it contains single values, trajectories, window aggregates or
   feature-cloud objects.
-
-Every point-cloud distance, clustering rule, corridor and anomaly threshold
-must be declared and versioned. No universal Hangar metric or corridor is
-defined by the existence of the view.
-
-Hangar records may remain personal, confidential, copyrighted, identifiable
-or linkable even without raw interaction text. Retention, access, purpose and
-deletion policies therefore apply to derived distributions and pairing maps as
-well as to their source records.
 
 The Hangar becomes useful when the question changes from “What is the current
 value?” to “Where does this attributable pattern sit among compatible observed
@@ -459,25 +409,17 @@ Delta Z_A(k_A)  = Z_A(k_A)  - Z_A(k_A - 1)
 Delta IK_A(k_A) = IK_A(k_A) - IK_A(k_A - 1)
 ```
 
-For a released relational branch value `X_b` after the exact open `R0`
-contract required by that branch:
+For a relational branch value `X_b` after applicable `R0`:
 
 ```text
 Delta X_b(j) = X_b(j) - X_b(j - 1)
-X_b = IK_rel in current public v3.50
+X_b in {IK_rel, R_geom, R_pace}
 ```
 
-The same typed pattern may be adopted by a later released `R_geom` or
-`R_pace` contract, but this note does not activate those calculations.
-
 The two relational evaluations must use a comparable pairing policy, profile
-and branch basis. Current `IK_rel` is strictly dyadic and requires its
-same-pairing exact open numeric canonical complete dyadic `R0` under the
-required profile; a reduced-R0 opening does not authorize it. `R_geom` and
-`R_pace` remain staged and require their own later branch contracts.
-`Delta R0` uses only consecutive comparable numeric R0 values. Transitions
-among `open`, `closed` and `not_evaluable` are categorical events, not numeric
-deltas.
+and branch basis. `R_geom` and `R_pace` remain staged. A gate-status difference
+may be observed only where the `R0` policy defines an ordered, comparable gate
+value.
 
 Acceleration describes change in that movement:
 
@@ -498,11 +440,6 @@ Drift is needed because interaction is not static.
 
 A single value may look acceptable while the trajectory is already moving away from stability.
 
-Aggregate or projected stability is therefore not evidence that every basis
-operator is healthy. Retain the source-attributed `K/S/O/D/I` traces and their
-typed statuses: one coordinate may deteriorate while `Z`, `IK` or a window
-aggregate still appears stable.
-
 Examples:
 
 - A Z value may still be within a normal range while one operator begins to decline.
@@ -519,18 +456,11 @@ Acceleration is needed because gradual drift and sudden instability are differen
 
 A small but increasing drift may indicate early instability.
 
-A stable value with increasing scalar acceleration magnitude may indicate an
-approaching transition candidate in the observed regime.
+A stable value with rising acceleration may indicate an approaching transition in the observed regime.
 
-For a signed scalar coordinate or projection, strong negative acceleration may
-mark a transition candidate requiring interpretation under the relevant layer,
-branch and application profile. A vector such as `Delta2 Z` has no single
-global negative direction until a component, projection or directional
-functional is declared. Neither case by itself establishes collapse, loss of
-grounding, loss of pacing or semantic divergence.
+A strong negative acceleration may indicate collapse, loss of grounding, loss of pacing or sudden semantic divergence.
 
-Acceleration can therefore contribute to an explicitly governed warning
-profile.
+Acceleration therefore acts as an early warning signal.
 
 It does not judge the interaction.  
 It indicates that the dynamics of change have changed.
@@ -598,28 +528,13 @@ Use case:
 
 For long-running systems, IKΣ(Hangar) drift can show whether a whole interaction corridor, cluster or distribution begins to move even when individual points remain inconspicuous. This is an observation signal, not an automatic judgment.
 
-#### Typed IK distribution boundary
-
-IK-related Hangar records must be stratified by canonical versus reduced
-projection, IK profile and version, source/context scope and window policy.
-Every reduced record additionally discloses one fixed active coordinate set M
-and retains the originating `T_Z`.
-
-Canonical IK, different `IK^[M]` views, changing axes and non-numeric statuses
-must not be pooled into one unlabeled numeric distribution. Coverage and typed
-status counts accompany every aggregate. A Hangar distribution distance is a
-non-negative distribution diagnostic; it is not the signed source-local
-`Delta IK`.
-
 ---
 
 ### 10.3 IK_rel
 
 IK_relΣ is useful.
 
-IK_relΣ aggregates relational coherence over the numeric comparable subset
-`W_AB^rel` after the same-pairing exact open numeric canonical complete dyadic
-R₀ gate required by the released IK_rel profile.
+IK_relΣ aggregates relational coherence over a window after R₀ has established dyadic validity.
 
 IK_relΣ(Hangar) is useful.
 
@@ -640,9 +555,7 @@ Relevant metrics:
 relational distance drift
 corridor deviation
 pairwise dispersion
-coverage_rel
-gate_open_rate
-typed status counts
+applicability rate
 gate-closure frequency
 ```
 
@@ -650,24 +563,7 @@ Use case:
 
 `IK_relΣ` and its compatible Hangar views show how the declared relational coherence projection behaves across comparable paired evaluations.
 
-They must be interpreted together with R₀ gate status. A high IK_relΣ over
-low `coverage_rel` or a low `gate_open_rate` is not equivalent to stable
-relational coherence across the full window. Report typed status counts
-separately so that numeric availability, gate eligibility and
-`not_applicable` are not collapsed into one rate.
-
-#### Typed IK_rel distribution boundary
-
-IK_rel Hangar records remain observer-side relational distributions, not a
-merged inner Hangar of A and B. Partition them by ordered dyad, pairing policy,
-R0 profile, shared monadic IK profile, IK_rel profile and fixed relational
-component set N.
-
-Store `gate_open_rate`, `coverage_rel`, `static_rate` and typed IK_rel /
-component-status counts beside every aggregate. Do not pool changing N,
-changing axes, changing pairings or non-numeric statuses into one numeric
-cloud. Distribution distance remains distinct from signed relational-index
-`Delta IK_rel`.
+They must be interpreted together with R₀ gate status. A high IK_relΣ over a very low applicability rate is not equivalent to stable relational coherence across the full window.
 
 ---
 
@@ -679,8 +575,7 @@ R₀Σ is useful.
 
 R₀Σ(Hangar) may be useful.
 
-It shows how numeric R0 results and their separate gate states vary across
-compatible pairing windows or declared constellations.
+It shows how relational applicability and gate stability vary across compatible pairing windows or declared constellations.
 
 Relevant metrics:
 
@@ -693,22 +588,7 @@ threshold crossings
 
 Use case:
 
-`R0Σ` shows `coverage_R0` and gate behavior across the declared pairing
-window. Numeric evaluability, an open gate and downstream relational evidence
-remain distinct. It does not establish coupling or semantic agreement.
-
-#### Typed R0 distribution boundary
-
-R0 Hangar records are derived gate distributions, not relational proof and not
-a shared inner state. Partition them by dyad/constellation, pairing or member
-map, complete versus fixed-M profile, norm, trajectory aggregation, weights,
-threshold and window policy.
-
-Store `coverage_R0`, typed R0 result-status counts,
-open/closed/not-evaluable gate-state counts, per-trajectory drift and
-asymmetry summaries. Do not pool
-complete R0 with different `R0^[M]` views or allow non-numeric steps to vanish
-silently. Distribution distance is not signed relational-index `Delta R0`.
+`R0Σ` shows whether relational evaluation remains methodically applicable across the declared pairing window. It does not establish coupling or semantic agreement.
 
 ---
 
@@ -841,7 +721,7 @@ composition function has been defined.
 ## 11. Why Sigma Is Selected Rather Than Enabled Everywhere
 
 The five base operators `K`, `S`, `O`, `D` and `I` construct the complete
-source-local state vector `Z` where all five are aligned and numeric. Their individual
+source-local state vector `Z` where all five are applicable. Their individual
 Sigma and Hangar views can be useful diagnostics:
 
 ```text
@@ -859,12 +739,9 @@ question:
 - use operator Sigma views when one coordinate's behavior matters;
 - use `Z_AΣ` when complete source-local state movement matters;
 - use `IK_AΣ` when the monadic projection matters;
-- use `R0Σ` when numeric R0 values, coverage and separate gate-state behavior
-  matter;
-- use branch-specific relational Sigma views only after the exact open `R0`
-  contract required by that branch and only where that branch has its own
-  complete basis; current `IK_rel` requires its same-pairing exact open numeric
-  canonical complete dyadic `R0` under the required profile.
+- use `R0Σ` when relational applicability or gate stability matters;
+- use branch-specific relational Sigma views only after applicable `R0` and
+  only where that branch has its own complete basis.
 
 Do not implement a generic `RΣ` or `RΣ(Hangar)` as though the R-family were one
 scalar. Aggregation must remain branch-specific.
@@ -877,15 +754,14 @@ scalar. Aggregation must remain branch-specific.
 | `K/S/O/D/I` | monadic, source-attributed | optional coordinate diagnostics | active where selected |
 | `Z` | monadic | state-trajectory windows and distributions | active |
 | `IK` | monadic | projection windows and distributions | active where selected |
-| `R0` | dyadic or n-adic relational gate | evaluability and gate-state windows | released reader-first v3.50 method; Hangar view selected where needed |
-| `IK_rel` | strictly dyadic | relational-projection windows | released reader-first v3.50 method after its exact compatible open canonical complete dyadic `R0` |
-| `R_geom` | cardinality defined only by a later profile | branch-specific geometric distributions | staged private research; not reviewed in this pass |
-| `R_pace` | cardinality defined only by a later profile | branch-specific pacing distributions | staged optional private research; not reviewed in this pass |
+| `R0` | relational gate | applicability and gate-stability windows | active research material |
+| `IK_rel` | relational | relational-projection windows | active research material after applicable `R0` |
+| `R_geom` | dyadic / n-adic | branch-specific geometric distributions | staged; basis pending |
+| `R_pace` | dyadic / n-adic | branch-specific pacing distributions | staged optional; basis pending |
 | signal-media views | source-local or relational as declared | medium-specific distributions | future research |
 
 Every Delta, Delta2, Sigma or Hangar view requires its own comparable index,
-profile, fixed basis or component contract, typed eligibility/status and
-provenance.
+profile, applicability set and provenance.
 
 ---
 
@@ -896,10 +772,8 @@ provenance.
 Human `A` submits a question and chatbot `B` answers. The roles reverse in the
 next contribution, but the entity labels do not. The Hangar may store
 source-attributed `Z_A(k_A)` and `Z_B(k_B)` trajectories, their monadic
-projections and—for current `IK_rel`, only after explicit dyadic pairing and
-the same-pairing exact open numeric canonical complete dyadic `R0` under the
-required profile—typed relational observations. The shared chat is a context
-container. It is neither
+projections and—only after explicit pairing and applicable `R0`—typed
+relational observations. The shared chat is a context container. It is neither
 a mixed `Z_AB` nor a store of merged inner states.
 
 ### Unknown Morse-like signal
@@ -921,8 +795,7 @@ observable pattern without pretending that its meaning is already known.
 ## 14. Canonical Summary
 
 The five operators construct one complete source-local observable state vector
-`Z` exactly where all five coordinates are aligned and numeric. Any
-non-numeric coordinate yields a typed partial / `not_complete` record instead.
+`Z` where all five coordinates are applicable.
 
 `Z_A` supports monadic `IK_A` and contributes to trajectory `T_A`. Relational
 observation uses distinguishable trajectories plus explicit pairing or
@@ -959,7 +832,7 @@ e_B(k_B) -> K_B/S_B/O_B/D_B/I_B -> Z_B(k_B) -> IK_B(k_B)
 Relational:
 T_A, T_B, pi(j), profiles
         -> R0(j)
-             +--> IK_rel(j)  [only under its exact compatible open gate]
+             +--> IK_rel(j)
              +--> R_geom(j)   [staged]
              +--> R_pace(j)   [staged, optional]
              +--> signal-media views [future]
@@ -972,14 +845,10 @@ Delta / Delta2 / Sigma / Hangar
 ## 16. One-Line Principle
 
 The operators measure source-attributed coordinates.  
-`Z` is the complete monadic state vector where all five coordinates are
-aligned and numeric.
+`Z` is the complete monadic state vector where all five coordinates apply.  
 `IK` is a monadic projection.  
-`R0` records a typed gate result and, where a valid result exists, its separate
-open/closed/not-evaluable gate state.
-`IK_rel` is the current strictly dyadic branch after its same-pairing exact
-open numeric canonical complete dyadic `R0`; `R_geom` and `R_pace` are separate
-staged relational branches.
+`R0` opens methodically applicable relational observation.  
+`IK_rel`, `R_geom` and `R_pace` are separate parallel relational branches.  
 KSODI-Full is a family label, not a single scalar score.  
 Sigma aggregates declared typed windows.  
 Hangar views compare compatible attributable distributions.  

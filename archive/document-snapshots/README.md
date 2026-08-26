@@ -24,3 +24,7 @@ release on 2026-08-26.
 The `controlled-action-boundary/` subdirectory preserves the action-adjacent
 orientation note superseded by the explicit Observer/governance/Controller
 boundary clarification on 2026-08-26.
+
+The `hangar/`, `conceptual-note/` and `architecture/` subdirectories preserve
+the public root-document predecessors superseded by the reviewed Layer-1–5
+cross-layer alignment release on 2026-08-26.

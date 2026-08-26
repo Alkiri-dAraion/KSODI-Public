@@ -10,13 +10,11 @@ in the linked, versioned method files.
 Synchronization status, 2026-08-26: the current Layer-1 operator packages and
 the current reader-first Layer-2 Z, Layer-3 IK, Layer-4 R0 and Layer-5 IK_rel
 method/companion packages are reviewed public checkpoints and byte-identical
-with their private counterparts. The current root Architecture, Hangar and
-this Conceptual Note are reviewed cross-layer public surfaces and are likewise
-byte-identical with Private. They state only the shared topology, distribution
-discipline and result boundaries supported by the linked public methods. Their
-summaries do not replace those typed contracts or authorize transfer of another
-private revision. The public repository currently has no root v3.50 glossary;
-any private glossary remains a subordinate alignment surface.
+with their private counterparts. This note states only the shared topology and
+result boundaries supported by the linked public methods. Its summaries do not
+replace those typed contracts or authorize transfer of another private
+revision. The public repository currently has no root v3.50 glossary; any
+private glossary remains a subordinate alignment surface.
 
 ### KSODI-Light: Human-Facing Entry Layer
 
@@ -169,8 +167,7 @@ KSODI-Light is a local, human-facing orientation layer. KSODI-Standard-Eval is
 the complete monadic line `K/S/O/D/I -> Z_A(k) -> IK_A(k)` and ends with
 `IK_A(k)`. KSODI-Full begins with relational observation at `R_0`; the current
 dyadic projection `IK_rel` opens only after an explicit dyadic pairing and an
-open numeric canonical complete dyadic `R_0` gate for the same ordered dyad,
-paired member events, pairing map, relational step and exact required profile.
+open numeric canonical complete `R_0` gate under the exact required profile.
 Relational analysis must not be assumed merely because an interaction took
 place.
 
@@ -296,8 +293,7 @@ trajectories diverge, or show similar state-space movement under different
 timing patterns. This is why relational coherence, geometric coupling and pace
 remain separate parallel questions after an open numeric canonical complete
 `R0` gate under the exact required profile and a cardinality-compatible branch
-contract. Current IK_rel additionally requires the same ordered dyad, paired
-events, pairing map and relational step. Physical position is
+contract. Physical position is
 not automatically `R_geom`; it becomes relevant only where an application
 profile explicitly maps spatial observation into the relational feature basis.
 
@@ -315,9 +311,8 @@ KSODI introduces five descriptive axes:
 	•	D — Observable Clarity
 	•	I — Observable Information Impulse
 
-Each axis describes one observable or reconstructable condition of one
-source-attributed target event under its own declared measurement basis and
-profile. Together, five
+Each axis describes one observable property of one source-attributed target
+event under its own declared measurement basis and profile. Together, five
 aligned numeric coordinate results form the complete monadic state vector
 `Z_A(k)`; non-numeric results remain visible in the typed Z assembly record.
 
@@ -431,11 +426,6 @@ exact required profile may the longitudinal ordering created
 through response, reconstruction and supplementation be investigated as a
 relational pattern that is not reducible to either trajectory alone. Private
 thoughts and internal states remain separate and unobserved.
-
-For current IK_rel, that gate must be dyadic and must preserve the same ordered
-dyad, paired events, pairing map and relational step as the downstream
-evaluation. An n-adic R0 result may admit only a separately defined
-cardinality-compatible construct.
 
 The exchanged signals may carry varying degrees of informational difference.
 Their observable information impulse is evaluated through the KSODI operator
@@ -656,7 +646,7 @@ A structural observation method embedded in the IDAS framework.
 Current v3.5 / v350 architecture sketch:
 
 ```text
-Layer 0 - KSODI-Light
+Layer 0 - KSODI-Light-Agent
   local reflective working agreement / prompt orientation
 
 Observer architecture:
@@ -665,8 +655,7 @@ Layer 1 - Operators
   K0 / S0 / O0 / D0 / I0
   optional source-local per-operator Delta, Delta2, Sigma and Hangar views
   S0 may additionally use optional S0_ext / P_disrupt where explicitly enabled
-  every partial K diagnostic is separately labelled and is never complete K0
-  or complete-Z K
+  partial K0_observable is separately labelled and never complete K0 or complete-Z K
 
 Layer 2 - Z
   Z_A(k), Delta Z_A, Delta2 Z_A, Z_A Sigma, Z_A Sigma(Hangar)
@@ -710,9 +699,8 @@ contract.
 Not every application needs every aggregation, Hangar view, drift value or
 second-order drift value. These observations should be selected layer by layer
 for the concrete use case. Many ordinary applications may focus on
-source-attributed `Z_A(k_A)`, `IK`, released `R0` / `IK_rel` views and `O0` /
-reference-space visibility. Later R-family variants remain staged until their
-own release decisions. In adversarial or
+source-attributed `Z_A(k_A)`, `IK`, `IK_rel`, separately released R-family
+variants and `O0` / reference-space visibility. In adversarial or
 drift-sensitive settings, operator-level drift
 may also identify anomaly candidates requiring interpretation. For example,
 `I` stagnation or bursts may accompany repetition, failure to add information
@@ -728,11 +716,6 @@ discarded merely because no predecessor exists for `Delta` or `Delta2`.
 Generic R-family shorthand such as `RΣ` must be resolved into
 branch-specific terms such as `R_geomSigma` or `R_paceSigma` in concrete
 v350 files and implementations.
-
-The cross-layer typing, comparability, coverage, point-cloud and privacy
-boundaries for these views are collected in the root
-[KSODI Hangar V350](./KSODI-Hangar_V350.md). That note does not replace the
-layer-specific window formulas or activate a staged relational branch.
 
 For `O0`, source need and reference-space visibility must be declared before
 grounding is interpreted. The gate distinguishes whether reference material is
@@ -885,9 +868,8 @@ The relevant question is therefore not only:
 
 It is also:
 	•	Which interaction condition changed?
-	•	Which declared corridor was left?
-	•	Where relational analysis is open, which declared relational pattern
-		changed?
+	•	Which corridor was left?
+	•	Where relational analysis is open, which coupling became unstable?
 	•	Which uncertainty became visible or remained hidden?
 
 This is the bridge between KSODI-Light, Standard-Eval, KSODI-Full and IDAS/SIRA.
