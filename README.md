@@ -60,9 +60,11 @@ language. See the [KSODI English Translation Table](./KSODI-Light/KSODI-Light-En
 Within IDAS, KSODI separates explainability, observability and advanced
 interaction analysis into clearly defined layers, such as interaction states,
 interaction coherence and relational R-family observations over time. Any
-intervention, steering or enforcement belongs to a separately governed
-Controller or human decision layer; Observer findings do not trigger action by
-themselves.
+intervention, system-level steering or enforcement based on Observer findings
+belongs to a separately governed Controller or human decision layer; Observer
+findings do not trigger action by themselves. This does not exclude disclosed
+local reflection or self-adjustment within KSODI-Light; such local guidance is
+not Observer-based Controller steering.
 
 KSODI does **not** evaluate people, personalities or intentions.  
 KSODI is designed to separate observable and derived evaluation data from
@@ -138,12 +140,15 @@ summarizing or citing this repository.
 ## Why KSODI Exists
 
 KSODI began with a practical question in sustained work with GPT-3.5: how must
-a question be formed so that a machine can process it well? The first
-receiver-oriented reconstruction view was described as DOSI. KSODI emerged as
-the corresponding sender-side view: an entity exists within its own context,
-forms or selects an idea, gives it structure, may ground it in available source
-material, transforms it into a channel-appropriate form and emits an observable
-signal.
+a question be formed so that a machine can process it well? An early
+four-operator working form was DOSI. At the Light level, D, O, S and I already
+carried the same operator meanings later retained in KSODI-Light; K was not yet
+explicit. During this early formation, Anne had not yet recognized how often
+people leave context implicit or forget to provide it. Repeated observation of
+that omission led her to add K so the method would actively counter missing
+context. This produced KSODI. Later process work distinguished sender-side
+`K -> S -> O -> D -> I` from the preferred receiver-side reconstruction
+direction `I -> D -> O -> S -> K` (IDOSK).
 
 Implementation work made the signal boundary unavoidable. Without an
 observable carrier event, reconstruction cannot begin. The historical Observer
@@ -177,15 +182,19 @@ sender-side formation:        K -> S -> O -> D -> I
 receiver-side reconstruction: I -> D -> O -> S -> K
 ```
 
-The coordinate representation is not a causal or serial calculation chain.
-Each selected and applicable operator value is reconstructed independently
-under its own declared basis and profile.
+The five selected and applicable Layer-1 coordinates remain independently
+evaluable under their own measurement bases and profiles. Their coordinate
+order is not a causal calculation chain.
 
-The sender-side path describes formation and sendability. The receiver-side
-IDOSK path is a preferred recursive direction for reconstruction. A shared,
-pre-agreed convention can make decoding rapid. An unfamiliar convention may
-instead be inferred from repeated observable regularities. Failure at one step
-may reopen earlier segmentation, source, structural or contextual hypotheses.
+The sender-side path describes how context-bound material may be structured,
+grounded, transformed into a channel-appropriate form and emitted as an
+observable information impulse. IDOSK is the receiver-side preferred first
+direction of reconstruction. With an established convention, practical
+decoding may be abbreviated or processed in parallel. Without a shared code,
+failed grounding may reopen segmentation, structural analysis, source checking
+and contextual hypotheses. IDOSK is therefore iterative, inductive and
+recursive rather than a universal one-pass law or a claim about hidden internal
+processing.
 
 For a bounded non-language example, see the Morse and unknown-code example in
 the [Conceptual Note](./Conceptual-Note.md).
@@ -477,29 +486,6 @@ around them:
 
 > Are attributable events reconstructable, and — where pairing has been
 > separately declared — does `R_0` permit relational comparison?
-
-KSODI distinguishes the canonical coordinate representation from two directed,
-role-relative process topologies:
-
-```text
-canonical state coordinates:  Z_A(k_A) = (K_A(k_A), S_A(k_A), O_A(k_A), D_A(k_A), I_A(k_A))
-sender-side formation:        K -> S -> O -> D -> I
-receiver-side reconstruction: I -> D -> O -> S -> K
-```
-
-The five selected and applicable Layer-1 coordinates remain independently
-evaluable under their own measurement bases and profiles. Their coordinate
-order is not a causal calculation chain.
-
-The sender-side path describes how context-bound material may be structured,
-grounded, transformed into a channel-appropriate form and emitted as an
-observable information impulse. IDOSK is the receiver-side preferred first
-direction of reconstruction. With an established convention, practical
-decoding may be abbreviated or processed in parallel. Without a shared code,
-failed grounding may reopen segmentation, structural analysis, source checking
-and contextual hypotheses. IDOSK is therefore iterative, inductive and
-recursive rather than a universal one-pass law or a claim about hidden internal
-processing.
 
 A carrier event is not identical with its `I` value. Encoding, compression or
 channel adaptation may affect `D`, but they are not `D` themselves.

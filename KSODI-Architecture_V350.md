@@ -534,9 +534,9 @@ T_B ----/          |
 - [Layer 3 - Monadic Interaction Coherence IK](./KSODI-Standard-Eval/Layer-3_KSODI-Monadic-Interaction-Coherence-IK_V350/README.md)
 - [Layer 4 - R_0 Relational Gate](./KSODI-Full/Layer-4_KSODI-Relational-Gate-R_0_V350/README.md)
 - [Layer 5 - Dyadic Relational Coherence IK_rel](./KSODI-Full/Layer-5_KSODI-Dyadic-Relational-Coherence-IK_rel_V350/README.md)
-- [Layer 6 - Geometric Coupling R_geom](./KSODI-Full/Layer-6_KSODI-Geometric-Coupling-R_geom_V350/README.md)
-- [Layer 7 - Optional Pacing R_pace Research](./KSODI-Full/Layer-7_KSODI-Pacing-R_pace_V350/README.md)
-- [Layer 8 - Staged Signal-Media Research](./KSODI-Full/Layer-8_KSODI-Signal-Media_Staged-Research/README.md)
+- [Layer 6 - Geometric Coupling R_geom](./KSODI-Full/Layer-6_KSODI-Geometric-Coupling-R_geom_V350/README.md) — orientation only; method outside the current public scope
+- [Layer 7 - Optional Pacing R_pace Research](./KSODI-Full/Layer-7_KSODI-Pacing-R_pace_V350/README.md) — orientation only; method outside the current public scope
+- [Layer 8 - Staged Signal-Media Research](./KSODI-Full/Layer-8_KSODI-Signal-Media_Staged-Research/README.md) — orientation only; research outside the current public method scope
 - [Shared Sigma / Hangar Method Note](./KSODI-Hangar_V350.md)
 - [Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md)
 
