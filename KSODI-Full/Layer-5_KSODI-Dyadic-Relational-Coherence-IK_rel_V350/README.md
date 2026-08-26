@@ -1,10 +1,5 @@
 # Layer 5 — KSODI Dyadic Relational Coherence (`IK_rel`)
 
-> **Status:** public v3.50 reference release - strictly reviewed and released on 2026-08-26.
-
-Status: authoritative reader-first Layer-5 set, strictly reviewed and released
-2026-08-26.
-
 `IK_rel` is a dyadic relational coherence-compatibility projection after an
 open numeric canonical complete dyadic `R0` gate for the same ordered dyad,
 pairing, relational step and exact required profile. The v3.50 primary profile

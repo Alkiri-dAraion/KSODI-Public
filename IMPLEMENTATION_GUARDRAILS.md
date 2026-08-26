@@ -1,8 +1,5 @@
 # KSODI Implementation Guardrails
 
-Status: public cross-layer implementation contract for the current KSODI v3.50
-method line; method guidance, not an executable production implementation.
-
 These guardrails apply to KSODI Standard-Eval and KSODI-Full. They also apply
 when outputs from a KSODI-Light-guided interaction are stored, compared over
 time or evaluated by an external Observer.

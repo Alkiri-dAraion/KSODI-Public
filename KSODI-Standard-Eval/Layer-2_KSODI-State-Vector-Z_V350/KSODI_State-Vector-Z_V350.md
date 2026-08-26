@@ -1,7 +1,6 @@
 # KSODI State Vector Z - Source-Attributed Interaction State v3.50
 
-Status: public v3.50 reference release, strictly reviewed and released on
-2026-08-26. This file is the authoritative carrier-neutral Layer-2 Z method.
+This file defines the authoritative carrier-neutral Layer-2 Z method.
 Implementation storage, pseudocode, migration and test fixtures belong in the
 separate companion:
 

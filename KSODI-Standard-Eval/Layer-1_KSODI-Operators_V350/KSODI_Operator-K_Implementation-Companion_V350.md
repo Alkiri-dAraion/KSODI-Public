@@ -1,8 +1,6 @@
 # KSODI Operator K0 v3.50 - Implementation Companion
 
-Status: public v3.50 conditional implementation companion, reviewed and
-released with the Operator-K package on 2026-08-25. It is subordinate to the
-carrier-neutral
+This conditional implementation companion is subordinate to the carrier-neutral
 [`KSODI_Operator-K_Observable-Context-Completeness_V350.md`](./KSODI_Operator-K_Observable-Context-Completeness_V350.md) method.
 
 Scope: implementation-oriented identity, scope construction, access-relation

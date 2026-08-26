@@ -1,9 +1,5 @@
 # KSODI IK_rel v3.50 - Implementation Companion
 
-> **Status:** public v3.50 implementation companion - subordinate to the released IK_rel method.
-
-Date: strictly reviewed and released 2026-08-26
-
 Authority: implementation guidance only. The mathematical source of truth is
 [`KSODI_Dyadic-Relational-Coherence-IK_rel_V350.md`](./KSODI_Dyadic-Relational-Coherence-IK_rel_V350.md).
 

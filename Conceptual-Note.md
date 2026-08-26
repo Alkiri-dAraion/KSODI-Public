@@ -7,16 +7,15 @@
 This file provides public conceptual orientation. Canonical definitions remain
 in the linked, versioned method files.
 
-Synchronization status, 2026-08-26: the current Layer-1 operator packages and
-the current reader-first Layer-2 Z, Layer-3 IK, Layer-4 R0 and Layer-5 IK_rel
-method/companion packages are reviewed public checkpoints and byte-identical
-with their private counterparts. The current root Architecture, Hangar and
-this Conceptual Note are reviewed cross-layer public surfaces and are likewise
-byte-identical with Private. They state only the shared topology, distribution
-discipline and result boundaries supported by the linked public methods. Their
-summaries do not replace those typed contracts or authorize transfer of another
-private revision. The public repository currently has no root v3.50 glossary;
-any private glossary remains a subordinate alignment surface.
+The current public scope contains the Layer-1 operator packages and the
+reader-first Layer-2 Z, Layer-3 IK, Layer-4 R0 and Layer-5 IK_rel method and
+companion packages. The root Architecture, Hangar and this Conceptual Note
+provide cross-layer orientation. They state only the shared topology,
+distribution discipline and result boundaries supported by the linked public
+methods. Their summaries do not replace those typed contracts or authorize
+transfer of another private revision. The public repository currently has no
+root v3.50 glossary; any private glossary remains a subordinate alignment
+surface.
 
 ### KSODI-Light: Human-Facing Entry Layer
 

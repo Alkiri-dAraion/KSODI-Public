@@ -1,9 +1,7 @@
 # KSODI IK - Source-Attributed Monadic Coherence Projection v3.50
 
-> **Status:** public v3.50 reference release - strictly reviewed and released on 2026-08-26.
-
-Status: authoritative reader-first Layer-3 method, strictly reviewed and released 2026-08-26. This file defines
-the carrier-neutral IK method against the typed Z contract. Storage schemas,
+This file defines the carrier-neutral IK method against the typed Z contract.
+Storage schemas,
 pseudocode, migration and test fixtures belong in the separate companion:
 
 - [`KSODI_Monadic-Interaction-Coherence-IK_Implementation-Companion_V350.md`](./KSODI_Monadic-Interaction-Coherence-IK_Implementation-Companion_V350.md)

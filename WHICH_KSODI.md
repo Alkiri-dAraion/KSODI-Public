@@ -1,8 +1,5 @@
 # Which KSODI Variant Do I Need?
 
-Status: public orientation guide for new readers and external agents; not an
-implementation specification.
-
 KSODI exposes three named variants, but they are not three interchangeable or
 independent products:
 
@@ -148,7 +145,7 @@ robots may show similar pacing while moving apart geometrically, or remain
 geometrically close while their pacing diverges. This is why relational
 coherence, geometry and pace require separate parallel branches.
 
-## Implementation Status
+## Implementation Boundary
 
 This repository documents the KSODI method and gives implementation
 orientation. It is not itself the full executable implementation.

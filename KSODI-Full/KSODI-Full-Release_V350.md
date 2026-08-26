@@ -1,15 +1,10 @@
 # KSODI-Full v350
 
-Status: public v3.50 KSODI-Full research structure; the current reader-first
-`R_0` and `IK_rel` method/companion packages are separately released reference
-material. `R_geom` and `R_pace` await complete public review and infrastructure
-revalidation; Layer 8 signal-media work remains staged research.
-
 This folder maps the intended relational, dyadic and n-adic KSODI-Full research
 structure after the monadic KSODI-Standard-Eval layers. Its public folders and linked
-orientation files do not by themselves mark a layer as released. `R_0` and
-`IK_rel` are released KSODI-Full layers. Later components become current public
-v3.5 method material only when their release status is stated explicitly.
+orientation files do not by themselves place a layer inside the current public
+method scope. That scope contains `R_0` and `IK_rel`; `R_geom`, `R_pace` and
+Layer-8 signal-media work remain outside it.
 
 KSODI-Standard-Eval provides the complete monadic line `K/S/O/D/I -> Z -> IK`
 and ends with `IK`:

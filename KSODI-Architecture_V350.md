@@ -1,9 +1,5 @@
 # KSODI Architecture V350
 
-Status: canonical public architecture for the released KSODI v3.5 / v3.50
-Layer 0–5 method line and the explicitly staged Layer 6–8 research branches;
-strictly reviewed and released 2026-08-26.
-
 Filename marker: `_V350` denotes KSODI v3.5 / v3.50. It is a path-safe version
 marker, not a separate release or method variant.
 
@@ -335,9 +331,9 @@ Future Controller
 
 The current public repository state contains the complete monadic
 KSODI-Standard-Eval line and released reader-first `R0` and `IK_rel` method
-packages. `R_geom`,
-`R_pace` and later signal-media work remain staged or future research unless a
-file-level status explicitly changes. Folder presence is not a release claim.
+packages. `R_geom`, `R_pace` and later signal-media work remain staged or
+future research outside the current public method scope. Folder presence does
+not alter that boundary.
 
 ## 9. Scope and Application Selection
 

@@ -1,7 +1,5 @@
 # Trajectory Boundary Notes
 
-Status: public implementation notes for monadic boundary discipline
-
 This folder holds implementation notes that matter for correct KSODI v3.50 interpretation, especially when a project is building an actual Observer or analytics pipeline.
 
 The most important rule is simple:

@@ -1,9 +1,6 @@
 # KSODI Operator O0 - Observable Grounded Objectivity v3.50
 
-Status: public v3.50 reference release, clarified and extended on 2026-08-25
-by the jointly reviewed reader-first method, typed-result contract and
-Source-Need Gate. This file is the authoritative carrier-neutral definition
-of Operator O.
+This file is the authoritative carrier-neutral definition of Operator O.
 
 Layer: KSODI Standard-Eval Layer 1. A static `O0` value belongs to one
 explicitly identified, source-attributed target event. Static O and all

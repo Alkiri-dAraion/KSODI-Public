@@ -1,9 +1,7 @@
 # KSODI Operator D0 v3.50 - Implementation Companion
 
-Status: public v3.50 implementation companion, reviewed and released
-2026-08-21, with a typed-result erratum on 2026-08-25. This file provides
-conditional implementation guidance. It is not the canonical method
-definition and not an executable production implementation.
+This file provides conditional implementation guidance. It is not the
+canonical method definition and not an executable production implementation.
 
 Canonical method source:
 [Operator D v3.50](./KSODI_Operator-D_Observable-Clarity_V350.md)

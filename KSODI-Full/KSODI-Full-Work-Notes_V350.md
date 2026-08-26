@@ -1,7 +1,5 @@
 # KSODI-Full Work Notes — V350
 
-Status: public release orientation, updated 2026-08-26
-
 Purpose: keep relational, dyadic and n-adic observation separate from monadic
 KSODI-Standard-Eval.
 

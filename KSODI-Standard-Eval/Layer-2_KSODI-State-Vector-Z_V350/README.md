@@ -1,9 +1,5 @@
 # Layer 2 - State Vector Z
 
-Status: public KSODI v3.50 Layer-2 reference package, strictly reviewed and
-released on 2026-08-26; method, companion and README are byte-identical between
-Private and Public at this checkpoint.
-
 Layer 2 composes five already evaluated, source-attributed Layer-1 coordinate
 records. Z is not a sixth score:
 

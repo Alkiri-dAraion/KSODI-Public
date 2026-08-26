@@ -1,8 +1,6 @@
 # KSODI Operator O v3.50 - Implementation Companion
 
-Status: public v3.50 conditional implementation companion, reviewed and
-released with the Operator-O package on 2026-08-25. It is subordinate to the
-carrier-neutral
+This conditional implementation companion is subordinate to the carrier-neutral
 [`KSODI_Operator-O_Observable-Grounded-Objectivity_V350.md`](./KSODI_Operator-O_Observable-Grounded-Objectivity_V350.md) method and the semantic
 [`KSODI_Operator-O_Source-Need-Gate_V350.md`](./KSODI_Operator-O_Source-Need-Gate_V350.md).
 

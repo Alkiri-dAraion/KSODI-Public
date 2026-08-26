@@ -26,7 +26,7 @@ Special thanks to Benjamin Gage-Prater for early RAG testing and feedback, and t
 
 # KSODI-Light
 
-## Publication Status — KSODI v3.5
+## Current Public Scope — KSODI v3.5
 
 KSODI v3.5 is being published to this repository in successive stages. The
 current public KSODI-Standard-Eval release contains all five Layer-1 operator
@@ -38,8 +38,9 @@ KSODI-Standard-Eval is the complete monadic line
 with dyadic or explicitly n-adic observation at the public Layer 4 gate `R_0`;
 current dyadic Layer 5 `IK_rel` requires explicit pairing and an open numeric
 canonical complete dyadic `R_0` under the exact required profile. Both belong
-to KSODI-Full, not KSODI-Standard-Eval. The Layer 6–8 R-family and signal-media extensions
-remain staged or future research until their own release status says otherwise.
+to KSODI-Full, not KSODI-Standard-Eval. The Layer 6–8 R-family and signal-media
+extensions remain staged or future research and are outside the current public
+method scope.
 
 Earlier v3.3 and v3.42 materials are retained in clearly marked historical
 archives. They are not current implementation guidance.

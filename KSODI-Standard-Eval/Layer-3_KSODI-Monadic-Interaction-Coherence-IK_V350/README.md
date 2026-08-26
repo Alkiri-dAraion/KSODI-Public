@@ -1,9 +1,5 @@
 # Layer 3 — KSODI Monadic Interaction Coherence (`IK`)
 
-> **Status:** public v3.50 reference release - strictly reviewed and released on 2026-08-26.
-
-Status: authoritative reader-first Layer-3 set, strictly reviewed and released 2026-08-26.
-
 `IK` is one source-attributed scalar projection of complete canonical Z onto
 one named and versioned monadic coherence axis. It is not resonance, relation,
 truth, utility or a sixth coordinate.

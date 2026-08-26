@@ -1,8 +1,5 @@
 # KSODI IK v3.50 - Implementation Companion
 
-> **Status:** public v3.50 implementation companion - subordinate to the released IK method.
-
-Date: strictly reviewed and released 2026-08-26
 Authority: implementation guidance only. The mathematical source of truth is
 [`KSODI_Monadic-Interaction-Coherence-IK_V350.md`](./KSODI_Monadic-Interaction-Coherence-IK_V350.md).
 

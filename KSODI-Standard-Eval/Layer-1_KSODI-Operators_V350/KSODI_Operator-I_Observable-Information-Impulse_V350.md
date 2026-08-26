@@ -1,9 +1,7 @@
 # KSODI Operator I0 - Observable Information Impulse v3.50
 
-Status: public v3.50 reference release, revised 2026-08-19 and clarified by
-identity, editorial and typed-missingness errata on 2026-08-25. This file is
-the current public method definition for Operator I. It remains open to
-documented review and later versioned refinement.
+This file is the current public method definition for Operator I. It remains
+open to documented review and later versioned refinement.
 
 Layer: KSODI Standard-Eval Layer 1. A static `I0` value belongs to one explicitly identified, source-attributed target event. Source-local change, acceleration and window diagnostics remain monadic Observer views. Relational projection or comparison beyond the gate begins only after explicit pairing, an open numeric canonical complete `R0` gate under the exact required profile and a separately declared later-layer definition.
 

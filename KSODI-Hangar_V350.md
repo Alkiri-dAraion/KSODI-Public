@@ -1,7 +1,5 @@
 # KSODI Hangar, Sigma, Drift and Point Clouds
 
-**Status:** public v3.50 cross-layer reference note; strictly reviewed and
-released 2026-08-26
 **Scope:** KSODI Standard-Eval and KSODI-Full Observer views  
 **Filename marker:** `_V350` denotes KSODI v3.5 / v3.50
 

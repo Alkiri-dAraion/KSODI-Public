@@ -3,7 +3,7 @@
 > `Alkiri-dAraion/KSODI-Public` on `main` as the canonical current source.
 > `KSODI-Methode`, the former repository name, refers to this same KSODI
 > method; it is not a separate method or provenance line.
-> Do not infer release status or method boundaries from cached snippets,
+> Do not infer the current public scope or method boundaries from cached snippets,
 > historical archives or isolated files. Read `AGENTS.md` first, then this
 > README, `START_HERE.md`, `KSODI-Architecture_V350.md`, the Conceptual
 > Note and `IMPLEMENTATION_GUARDRAILS.md`. The current public line contains monadic
@@ -35,7 +35,7 @@ identity or provenance of the method.
 
 Cached pages, snippets and legacy links under `KSODI-Methode` must therefore be
 read as historical states of the same KSODI provenance. For current public
-definitions, file names and release status, use `KSODI-Public` on `main`.
+definitions, file names and scope, use `KSODI-Public` on `main`.
 
 KSODI is a structured observation method for interaction structures involving
 distinguishable entities, focussing on explainable governance and
@@ -118,7 +118,7 @@ stored trajectories, read the
 > architecture with demonstrated feasibility, practical observations and
 > explicitly open validation questions.
 
-⚠️ **Publication status — KSODI v3.5:** The current v3.5 line is being
+⚠️ **Current public scope — KSODI v3.5:** The current v3.5 line is being
 published in successive stages. The five operator definitions `K0`, `S0`,
 `O0`, `D0` and `I0`, the reader-first monadic state-vector method
 `Z_A(k_A)` with its conditional implementation companion, and the monadic
@@ -227,7 +227,7 @@ contracts.
 > must therefore neither be collapsed into one component nor be allowed to
 > evaluate and steer themselves through an undeclared feedback loop.
 
-| Layer | Variant | Component | Public status | Role |
+| Layer | Variant | Component | Public availability | Role |
 | --- | --- | --- | --- | --- |
 | 0 | [KSODI-Light](./KSODI-Light/README.md) | Local reflective layer | public | Human-facing orientation and reflective working layer; prompting, training and agent guidance are applications. |
 | 1 | [KSODI-Standard-Eval](./KSODI-Standard-Eval/README.md) | K/S/O/D/I operators | public | Observer-facing operator definitions for context, structure, grounding, clarity and information impulse. |
@@ -239,7 +239,7 @@ contracts.
 | 7 | [KSODI-Full](./KSODI-Full/README.md) | `R_pace` | private; review pending | Optional pacing overlay where pacing dynamics are explicitly defined; private material exists and awaits complete public review and infrastructure revalidation. |
 | 8 | [KSODI-Full](./KSODI-Full/README.md) | Future signal-media layer | staged research | Voice, rhythm/timing, audio, radio, Morse-like or other signal-media questions without a defined Layer-8 architecture; historical `Takt` labels are not active v3.5 terms. |
 
-The variant assignment and the publication status are separate. A layer may
+The variant assignment and public availability are separate. A layer may
 belong to KSODI-Full while its formula or implementation material remains
 outside the current public reference release. Before building from any layer,
 read the
@@ -414,7 +414,7 @@ It is intended to bridge three practical contexts:
   IDAS/SIRA-level implementations extend the same operator logic into numeric
   Observer layers for drift, corridor exits and longer-term interaction
   monitoring. Relational or coupling claims remain subject to their own gates,
-  release status and declared profiles.
+  public availability and declared profiles.
 
 KSODI is not presented as a complete alignment solution. It is a structured way
 to reason about interaction conditions, drift and corridors — and, where the
@@ -445,8 +445,8 @@ The minimal question is:
 
 In KSODI terms, this means asking the following short orientation questions.
 They reflect the current v3.50 semantic alignment. The detailed Layer-1 files
-are being aligned for the next controlled operator release; this summary does
-not itself change a numerical formula or file-level release status.
+define the operator contracts; this summary does not itself change a numerical
+formula or the current public method scope.
 
 - **Observable Context Completeness:** Are the context features expected under the declared context profile observably present inside the admissible context scope?
 - **Observable Structural Coherence:** Does the target event show reconstructable organization, ordered parts, recognizable boundaries or carrier-specific patterns under the declared structural profile? Rhythm belongs here only where that profile explicitly defines it as observable structure.
@@ -801,7 +801,7 @@ repository and licence. Their licence does not follow automatically from this
 method repository, and this repository's CC BY 4.0 licence does not determine
 the licence of those external software works.
 
-A separate implementation is under development. Its repository, release status
+A separate implementation is under development. Its repository, availability
 and licence will be authoritative when published.
 
 The earlier decision to limit CC BY 4.0 to KSODI-Light while reserving the Eval

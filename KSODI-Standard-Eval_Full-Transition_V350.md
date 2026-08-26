@@ -1,7 +1,5 @@
 # KSODI-Standard-Eval / KSODI-Full Transition V350
 
-**Status:** public structural and method-boundary orientation for KSODI v3.5 / v3.50
-
 **Filename marker:** `_V350` denotes KSODI v3.5 / v3.50. It is a path-safe
 version marker, not a separate release or method variant.
 
@@ -108,8 +106,9 @@ definitions, the Layer-2 monadic state vector `Z_A(k)`, the Layer-3 monadic
 projection `IK_A(k)`, the KSODI-Full Layer 4 gate `R_0` and the KSODI-Full
 Layer 5 relational projection `IK_rel`.
 
-Later R-family and signal-media elements remain staged until their own release
-status says otherwise. Repository visibility alone is not a release marker.
+Later R-family and signal-media elements remain staged and outside the current
+public method scope. Repository visibility alone does not add them to that
+scope.
 
 Earlier v3.3 documents and the v3.42 implementation line are retained for
 provenance, not as current implementation guidance:

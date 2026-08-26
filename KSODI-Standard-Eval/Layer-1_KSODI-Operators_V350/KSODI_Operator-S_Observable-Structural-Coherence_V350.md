@@ -1,8 +1,6 @@
 # KSODI Operator S0 - Observable Structural Coherence v3.50
 
-Status: public v3.50 reference release, reviewed and clarified on 2026-08-25
-through the reader-first method and common typed-result contract. This file is
-the authoritative carrier-neutral definition of Operator S.
+This file is the authoritative carrier-neutral definition of Operator S.
 
 Layer: KSODI Standard-Eval Layer 1. One static `S0` value belongs to one
 explicitly identified, source-attributed target event under one declared and

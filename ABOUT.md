@@ -1,6 +1,6 @@
 # About KSODI and Its Development Context
 
-Canonical public repository:
+Current repository:
 [Alkiri-dAraion/KSODI-Public](https://github.com/Alkiri-dAraion/KSODI-Public).
 Older social or archive links using the former repository name `KSODI-Methode`
 may redirect here; `KSODI-Public` is the current repository name to cite.

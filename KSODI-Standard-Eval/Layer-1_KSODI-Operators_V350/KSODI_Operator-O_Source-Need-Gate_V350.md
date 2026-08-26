@@ -1,8 +1,5 @@
 # KSODI O Source-Need Gate v3.50
 
-Status: public v3.50 semantic applicability companion, reviewed and released
-with the reader-first Operator-O package on 2026-08-25.
-
 Role: operator-specific semantic applicability companion to
 [`KSODI_Operator-O_Observable-Grounded-Objectivity_V350.md`](./KSODI_Operator-O_Observable-Grounded-Objectivity_V350.md). The gate is not a sixth
 operator, not an O score and not an implementation profile.

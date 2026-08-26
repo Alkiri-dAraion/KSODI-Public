@@ -1,7 +1,5 @@
 # Work Notes - KSODI Standard-Eval v3.50
 
-Status: public release orientation, updated 2026-08-26
-
 Purpose: state the current public Standard-Eval package without replacing the
 versioned method files.
 

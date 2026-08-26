@@ -1,7 +1,5 @@
 # KSODI v350 Implementation-Transfer Examples
 
-Status: public orientation examples, not production implementations
-
 This folder keeps public examples that show how the canonical KSODI v350 method
 can be transferred into a concrete observable setting.
 

@@ -1,11 +1,11 @@
 # Layer 1 — KSODI Operators
 
-Status: canonical public v3.50 KSODI-Standard-Eval operator line. All five
-current method/implementation-companion packages are released; O additionally
-includes its Source-Need Gate. Each method remains authoritative and
-carrier-neutral, while every implementation companion remains conditional and
-subordinate. Release status does not turn optional views into mandatory
-calculations or make staged later research operational.
+This folder contains all five current method and implementation-companion
+packages; O additionally includes its Source-Need Gate. Each method remains
+authoritative and carrier-neutral, while every implementation companion
+remains conditional and subordinate. Public availability does not turn
+optional views into mandatory calculations or make staged later research
+operational.
 
 ## What this folder contains
 

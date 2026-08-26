@@ -1,9 +1,6 @@
 # KSODI IK_rel - Dyadic Relational Coherence Compatibility v3.50
 
-> **Status:** public v3.50 reference release - strictly reviewed and released on 2026-08-26.
-
-Status: authoritative reader-first Layer-5 method, strictly reviewed and
-released 2026-08-26. This file defines the carrier-neutral IK_rel method after
+This file defines the carrier-neutral IK_rel method after
 the exact compatible R0 gate. Schemas, pseudocode, migration and test fixtures
 belong in the separate companion:
 

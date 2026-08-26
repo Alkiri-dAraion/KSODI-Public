@@ -1,9 +1,7 @@
 # KSODI Operator I0 v3.50 - Implementation Companion
 
-Status: public v3.50 implementation companion, reviewed and released
-2026-08-21, with identity and typed-missingness errata on 2026-08-25. This file
-provides conditional implementation guidance; it is not the canonical method
-definition or an executable production implementation.
+This file provides conditional implementation guidance; it is not the
+canonical method definition or an executable production implementation.
 
 Canonical method: [`KSODI_Operator-I_Observable-Information-Impulse_V350.md`](./KSODI_Operator-I_Observable-Information-Impulse_V350.md).
 

@@ -1,9 +1,5 @@
 # KSODI R_0 v3.50 - Implementation Companion
 
-> **Status:** public v3.50 implementation companion - subordinate to the released R_0 method.
-
-Date: strictly reviewed and released 2026-08-26
-
 Authority: implementation guidance only. The mathematical source of truth is
 [`KSODI_Relational-Gate-R_0_V350.md`](./KSODI_Relational-Gate-R_0_V350.md).
 

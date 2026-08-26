@@ -1,14 +1,13 @@
 # KSODI Standard-Eval v350
 
-Status: public v350 Standard-Eval structure, released layer by layer after private review
-
 This folder contains the public v350 Standard-Eval Observer structure for
 monadic observation.
 
-Only files explicitly marked as released should be treated as current public method material. Placeholder files mark the intended structure and remain pending until the corresponding private review is complete.
+The current public method material is listed below. Placeholder files, where
+present, describe intended structure and are not method authority.
 
-Current release state, 2026-08-26: Layer 1 operators `K0`, `S0`, `O0`, `D0`
-and `I0` are released with their conditional implementation companions; O
+The current public scope contains Layer 1 operators `K0`, `S0`, `O0`, `D0`
+and `I0` with their conditional implementation companions; O
 additionally includes its source-need / reference-space applicability gate.
 These companions do not redefine their operators or establish a mandatory
 production stack. The current reader-first Layer-2 state vector `Z_A(k_A)` and

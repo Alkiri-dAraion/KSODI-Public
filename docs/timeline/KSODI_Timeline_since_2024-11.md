@@ -1,6 +1,6 @@
 # Redirected Timeline Note
 
-The canonical public development timeline now starts with the documented May
+The current development timeline now starts with the documented May
 2023 origin point:
 
 [KSODI_Timeline_since_2023-05.md](./KSODI_Timeline_since_2023-05.md)

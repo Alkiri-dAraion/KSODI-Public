@@ -1,7 +1,5 @@
 # Chatbot-Human Observer v350 Example
 
-Status: public transfer example, not a production implementation
-
 Purpose: show how the canonical v350 KSODI method can be instantiated for one
 concrete observable setting without turning that setting into the canonical
 method itself.

@@ -1,10 +1,5 @@
 # Layer 4 — KSODI Relational Gate (`R_0` / `R0`)
 
-> **Status:** public v3.50 reference release - strictly reviewed and released on 2026-08-26.
-
-Status: authoritative reader-first Layer-4 set, strictly reviewed and released
-2026-08-26.
-
 `R_0` asks whether explicitly paired or grouped monadic trajectories satisfy
 one declared availability and bounded-drift contract strongly enough for
 relational comparison to be opened. It does not discover relation and does not

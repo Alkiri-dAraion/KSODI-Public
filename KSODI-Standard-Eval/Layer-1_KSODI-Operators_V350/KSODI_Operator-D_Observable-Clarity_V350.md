@@ -1,9 +1,7 @@
 # KSODI Operator D0 - Observable Clarity v3.50
 
-Status: public v3.50 reference release, revised 2026-08-19, released
-2026-08-21 and clarified by a typed-result erratum on 2026-08-25. This file is
-the current public method definition for Operator D. It remains open to
-documented review and later versioned refinement.
+This file is the current public method definition for Operator D. It remains
+open to documented review and later versioned refinement.
 
 Layer: KSODI Standard-Eval Layer 1. Static D and all source-local D trajectory,
 window and Hangar views remain strictly monadic and source-attributed.

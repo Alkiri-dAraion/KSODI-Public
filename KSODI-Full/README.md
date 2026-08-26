@@ -61,7 +61,7 @@ The action-adjacent
 explains why Observer records, governance policy, Controller decisions and
 executed actions remain separate authorities.
 
-## Status
+## Current Public Scope
 
 Public KSODI 3.3 materials and the later v3.42 working / implementation line
 contain or reveal known structural issues and unresolved separations between

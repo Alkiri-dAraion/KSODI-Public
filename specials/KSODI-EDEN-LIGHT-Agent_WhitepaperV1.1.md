@@ -2,8 +2,6 @@
 
 **Ein Reifegradansatz zur Prompt-Optimierung in Unternehmen**
 
-Status: Proof of Concept / Arbeitsfassung
-
 ## Geplantes Tool
 
 **KSODI-Light Agent mit EDEN-Mapping**

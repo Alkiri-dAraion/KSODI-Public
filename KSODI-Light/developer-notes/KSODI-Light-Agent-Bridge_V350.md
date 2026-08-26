@@ -1,7 +1,5 @@
 # KSODI-Light-Agent V350 Bridge
 
-Status: public orientation, not an external Observer calculation layer
-
 KSODI-Light is the local reflective working agreement or prompt-orientation layer. It may run as a human-facing method, as user/account/developer guidance, or on its own agent where available.
 
 In the [KSODI Architecture V350](../../KSODI-Architecture_V350.md), this is

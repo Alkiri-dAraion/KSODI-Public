@@ -1,8 +1,6 @@
 # KSODI Operator S0 v3.50 - Implementation Companion
 
-Status: public v3.50 conditional implementation companion, reviewed and
-released with the Operator-S package on 2026-08-25. It is subordinate to the
-carrier-neutral
+This conditional implementation companion is subordinate to the carrier-neutral
 [`KSODI_Operator-S_Observable-Structural-Coherence_V350.md`](./KSODI_Operator-S_Observable-Structural-Coherence_V350.md) method.
 
 Scope: implementation-oriented identity, typed results, profile validation,

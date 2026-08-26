@@ -1,8 +1,7 @@
 # KSODI — Observability and the Separate Controlled-Action Boundary
 
-Status: public v3.50 conceptual boundary orientation, strictly reviewed and
-released 2026-08-26. This file is not a canonical operator or relational
-method, an implementation profile, a governance policy or a Controller
+This file is conceptual boundary orientation, not a canonical operator or
+relational method, implementation profile, governance policy or Controller
 specification. Its examples are illustrative and do not validate a deployment.
 
 ## 1. Why the boundary matters

@@ -1,6 +1,5 @@
 # KSODI Research Roadmap
 
-> Status: public orientation document  
 > Scope: research direction, not a product announcement or release commitment
 
 ## Why this roadmap exists
@@ -369,7 +368,7 @@ This document may later be extended with explanatory visuals, for example:
 The intention is to make the abstract construct easier to understand without
 reducing the method to a simplistic dashboard metaphor.
 
-## Current status
+## Current Work
 
 The work is ongoing.
 

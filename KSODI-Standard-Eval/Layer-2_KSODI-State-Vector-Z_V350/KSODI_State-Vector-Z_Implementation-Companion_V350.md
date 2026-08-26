@@ -1,8 +1,6 @@
 # KSODI State Vector Z v3.50 - Implementation Companion
 
-Status: public v3.50 conditional implementation companion, strictly reviewed
-and released with the Layer-2 Z package on 2026-08-26. It is subordinate to the
-carrier-neutral
+This conditional implementation companion is subordinate to the carrier-neutral
 [`KSODI_State-Vector-Z_V350.md`](./KSODI_State-Vector-Z_V350.md) method.
 
 Scope: storage schema, validation, typed-status mapping, partial projections,
