@@ -8,15 +8,13 @@ This file provides public conceptual orientation. Canonical definitions remain
 in the linked, versioned method files.
 
 Synchronization status, 2026-08-26: the current Layer-1 operator packages and
-the current reader-first Layer-2 Z, Layer-3 IK and Layer-4 R0 method/companion
-packages are reviewed public checkpoints and byte-identical with their private
-counterparts. Public IK_rel remains its separately released predecessor state;
-its newer reader-first private revision does not silently override it. This note
-states only the shared topology and result boundaries supported by the linked
-public methods. Its summaries do not replace those typed contracts or authorize
-transfer of another private revision. The public repository currently has no
-root v3.50 glossary; any private glossary remains a subordinate alignment
-surface.
+the current reader-first Layer-2 Z, Layer-3 IK, Layer-4 R0 and Layer-5 IK_rel
+method/companion packages are reviewed public checkpoints and byte-identical
+with their private counterparts. This note states only the shared topology and
+result boundaries supported by the linked public methods. Its summaries do not
+replace those typed contracts or authorize transfer of another private
+revision. The public repository currently has no root v3.50 glossary; any
+private glossary remains a subordinate alignment surface.
 
 ### KSODI-Light: Human-Facing Entry Layer
 
@@ -73,9 +71,12 @@ availability and bounded-drift contract, in parallel to their monadic IK
 projections. R0 result status and open/closed/not-evaluable gate state remain
 separate; incomparable movement produces no valid R0 result. Only an open
 numeric canonical complete `R_0` gate under the exact required profile admits
-a compatible downstream construct. Current Layer-5 `IK_rel` is dyadic; an
-n-adic R0 gate does not silently open it. R0 and IK_rel belong to KSODI-Full,
-not KSODI-Standard-Eval. The further R-family follows within the KSODI-Full branch
+a compatible downstream construct. Current Layer-5 `IK_rel` is dyadic and
+requires the same ordered dyad, paired member events, pairing map, relational
+step and exact R0 profile; a reduced or n-adic R0 gate does not silently open
+it. Joint first-order stillness is typed `not_applicable`, not numeric zero or
+positive compatibility evidence. R0 and IK_rel belong to KSODI-Full, not
+KSODI-Standard-Eval. The further R-family follows within the KSODI-Full branch
 and remains staged until separate release decisions are complete.
 
 Current public architecture orientation:
@@ -362,8 +363,8 @@ e_B(k_B) -> K_B/S_B/O_B/D_B/I_B -> Z_B(k_B) -> IK_B(k_B)
 T_A ----\
          +--> R0(j | pi, p_R0)
 T_B ----/          |
-                   | if numeric canonical complete and open
-                   | under the exact required profile
+                   | if numeric canonical complete and open for the same
+                   | dyad, pairing and step under the exact required profile
                    +--> IK_rel(j)
                    +--> R_geom(j)  [staged]
                    +--> R_pace(j)  [staged, optional]

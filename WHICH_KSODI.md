@@ -75,7 +75,9 @@ An n-adic setting requires an explicit constellation rather than an implied
 shared trajectory.
 
 After a compatible open numeric canonical complete `R0` gate under the exact
-required profile, `IK_rel`, staged `R_geom` and staged optional
+required profile, the current dyadic `IK_rel` additionally requires the same
+ordered dyad, paired events, pairing map and relational step. Staged `R_geom`
+and staged optional
 `R_pace` are parallel branches with their own bases, profiles, applicability
 rules and weights. One branch does not validate or consume another unless a
 later method definition states so explicitly.

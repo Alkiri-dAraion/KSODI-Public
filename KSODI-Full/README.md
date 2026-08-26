@@ -1,9 +1,10 @@
 # KSODI-Full
 
-## Public orientation note
+## Reader orientation
 
-This folder is the public orientation entry for the KSODI-Full v350 research
-structure. It supports conceptual review, discussion and version traceability.
+This folder is the reader entry for the KSODI-Full v350 research structure.
+It links the released Layer-4 R0 and Layer-5 IK_rel method packages and keeps
+later research branches visibly separate.
 
 The shared structural and method boundary with KSODI-Standard-Eval is
 documented in the root
@@ -16,7 +17,8 @@ The current architecture separates the following layers:
 - relational comparability
 - resonance-family observation
 
-This public folder should not be treated as an implementation reference.
+The canonical method files are authoritative. Their adjacent implementation
+companions are subordinate guidance, not executable software specifications.
 
 ## Relation to KSODI-Standard-Eval
 
@@ -26,10 +28,11 @@ line is `K/S/O/D/I -> Z -> IK` and ends with `IK`.
 After `Z`, the architecture branches. `R_0` is the relational gate
 evaluated from distinguishable `Z`-trajectories in parallel to monadic `IK`.
 Current dyadic `IK_rel` opens only after explicit dyadic pairing and an open
-numeric canonical complete dyadic `R_0` gate under the exact required profile.
-Reduced or n-adic R0 does not open it. Later compatible R-family constructs
-remain parallel branches with their own contracts. `R_0`, `IK_rel` and the
-further R-family are not part of KSODI-Standard-Eval.
+numeric canonical complete dyadic `R_0` gate for the same ordered dyad, paired
+events, pairing map, relational step and exact required profile. Reduced or
+n-adic R0 does not open it. Later compatible R-family constructs remain
+parallel branches with their own contracts. `R_0`, `IK_rel` and the further
+R-family are not part of KSODI-Standard-Eval.
 
 Without such a gate, relational or resonance-family observations can become
 misleading, because a system may show apparent resonance while losing
@@ -73,6 +76,11 @@ remains staged research.
 Current public v3.5 release boundary:
 
 [`KSODI-Full-Release_V350.md`](./KSODI-Full-Release_V350.md)
+
+Current released method packages:
+
+- [Layer 4 — R0 relational gate](./Layer-4_KSODI-Relational-Gate-R_0_V350/README.md)
+- [Layer 5 — dyadic IK_rel](./Layer-5_KSODI-Dyadic-Relational-Coherence-IK_rel_V350/README.md)
 
 The historical Observer images are preserved as important transition evidence
 for both KSODI-Standard-Eval and KSODI-Full:

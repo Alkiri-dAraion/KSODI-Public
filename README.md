@@ -125,8 +125,8 @@ published in successive stages. The five operator definitions `K0`, `S0`,
 interaction-coherence projection `IK` have been published and form the current
 KSODI-Standard-Eval release. The reader-first relational `R_0` method and its
 conditional implementation companion have been published separately as
-KSODI-Full Layer 4. The existing public `IK_rel` predecessor remains the
-separately released Layer 5 state. `R_geom` and `R_pace` are not current public
+KSODI-Full Layer 4. The reader-first `IK_rel` method and conditional companion
+are released separately as Layer 5. `R_geom` and `R_pace` are not current public
 reference releases: private method material and large parts of their mathematics exist,
 but complete public review and renewed validation on the restructured
 infrastructure remain pending. Layer 8 remains a staged research direction
@@ -234,7 +234,7 @@ contracts.
 | 2 | [KSODI-Standard-Eval](./KSODI-Standard-Eval/README.md) | `Z_A(k_A)` | public | Monadic state vector over the five operator values for one attributable target event. |
 | 3 | [KSODI-Standard-Eval](./KSODI-Standard-Eval/README.md) | `IK` | public | Monadic interaction-coherence projection; closes KSODI-Standard-Eval. |
 | 4 | [KSODI-Full](./KSODI-Full/README.md) | `R_0` gate | public | Availability and bounded-drift gate over distinguishable typed `Z`-trajectory movements; not a coupling or resonance score. |
-| 5 | [KSODI-Full](./KSODI-Full/README.md) | `IK_rel` | public predecessor state | Dyadic relational projection after explicit pairing and its exact open canonical complete dyadic `R_0` gate. |
+| 5 | [KSODI-Full](./KSODI-Full/README.md) | `IK_rel` | public reader-first v3.50 release | Dyadic relational projection after explicit pairing and its same-pairing exact open canonical complete dyadic `R_0` gate. |
 | 6 | [KSODI-Full](./KSODI-Full/README.md) | `R_geom` | private; review pending | Geometric coupling in KSODI state space; private material exists and awaits complete public review and infrastructure revalidation. |
 | 7 | [KSODI-Full](./KSODI-Full/README.md) | `R_pace` | private; review pending | Optional pacing overlay where pacing dynamics are explicitly defined; private material exists and awaits complete public review and infrastructure revalidation. |
 | 8 | [KSODI-Full](./KSODI-Full/README.md) | Future signal-media layer | staged research | Voice, rhythm/timing, audio, radio, Morse-like or other signal-media questions without a defined Layer-8 architecture; historical `Takt` labels are not active v3.5 terms. |
@@ -728,8 +728,8 @@ definitions, the reader-first monadic state-vector Z method/companion and the
 reader-first monadic IK method/companion form the current public
 KSODI-Standard-Eval release. The reader-first relational `R_0` method and
 conditional companion are released separately as KSODI-Full Layer 4. The
-existing public `IK_rel` predecessor remains the separately released Layer 5
-state. `R_geom` and `R_pace` remain outside the current public reference
+reader-first `IK_rel` method and conditional companion are released separately
+as Layer 5. `R_geom` and `R_pace` remain outside the current public reference
 release while complete public review and infrastructure revalidation are pending.
 Layer 8 remains staged research without a defined architecture.
 → See: [KSODI-Standard-Eval](./KSODI-Standard-Eval/README.md) and

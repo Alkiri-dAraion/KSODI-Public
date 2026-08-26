@@ -15,7 +15,8 @@ Read the three KSODI scopes in this order:
 3. **[KSODI-Full](./KSODI-Full/README.md)** — the dyadic and explicitly n-adic
    Observer extension beginning at `R_0`. Current dyadic `IK_rel` requires
    explicit dyadic pairing and an open numeric canonical complete dyadic `R_0`
-   gate under the exact required profile. The further R-family and signal-media
+   gate for the same ordered dyad, paired events, pairing map, relational step
+   and exact required profile. The further R-family and signal-media
    extension elements assigned to Layers 6–8. These later elements remain
    staged in the current public release. KSODI-Full requires distinguishable
    monadic trajectories and does not merge them.

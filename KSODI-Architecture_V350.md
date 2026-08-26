@@ -235,7 +235,7 @@ relevant relational feature space.
 | Component | Required methodological question | Minimum declared basis | Status |
 | --- | --- | --- | --- |
 | `R0` | May these distinguishable trajectories be evaluated relationally under this policy? | trajectories, pairing/constellation, compatible profiles, applicability and normalized stability inputs | public research material |
-| `IK_rel` | What relational coherence projection is visible after the gate opens? | explicit dyadic pairing, open numeric canonical complete dyadic `R0` under the exact profile, plus its own complete relational projection basis | public predecessor state; separately released after R0 |
+| `IK_rel` | What relational coherence projection is visible after the gate opens? | explicit dyadic pairing, open numeric canonical complete dyadic `R0` under the exact profile, plus its own complete relational projection basis | current reader-first public v3.50 method/companion release |
 | `R_geom` | What geometric coupling is visible in KSODI state space? | a compatible open canonical complete `R0` gate plus a separately defined geometric feature basis | staged; detailed definition pending |
 | `R_pace` | What explicitly observable pacing or rhythmic coordination is visible? | a compatible open canonical complete `R0` gate plus a separately defined pacing basis | staged optional research |
 | signal-media views | What medium-specific patterns are visible in voice, radio, Morse-like or waveform material? | an exact compatible R0 contract where relation is claimed plus a media-specific observation profile | future research |
@@ -285,16 +285,20 @@ Layer 2 - Z
   selected views: Z, Delta Z, Delta2 Z, ZSigma, ZSigma(Hangar)
 
 Layer 3 - IK
-  optional monadic coherence projection from one Z
+  canonical monadic coherence projection from one complete typed Z
+  reduced IK^[M] only for one explicit fixed coordinate set and named axis
   selected views: IK, Delta IK, Delta2 IK, IKSigma, IKSigma(Hangar)
 
 Observer method - relational gate and parallel branches
 
 Layer 4 - R0 / R_0
-  gate over distinguishable trajectories and a declared pairing/constellation
+  typed availability and bounded-drift gate over declared trajectories
+  canonical complete movement or fixed named R0^[M]
+  numeric result separated from open / closed / not-evaluable gate state
 
 Layer 5 - IK_rel
-  dyadic relational projection after explicit pairing and exact open R0 gate
+  dyadic compatibility after explicit pairing and exact open canonical R0 gate
+  explicit pi(j); fixed typed relational component set N for extended views
 
 Layer 6 - R_geom [staged]
   parallel post-R0 geometric-coupling research branch
@@ -314,6 +318,15 @@ The current public repository state contains the complete monadic
 KSODI-Standard-Eval line and public `R0` and `IK_rel` research material. `R_geom`,
 `R_pace` and later signal-media work remain staged or future research unless a
 file-level status explicitly changes. Folder presence is not a release claim.
+
+The released Layer-5 contract requires the same ordered dyad, paired events,
+pairing map and relational step in the exact open canonical complete dyadic R0
+handoff. Upstream incomparable or processing records produce no valid IK_rel
+result. Joint first-order stillness is typed `not_applicable`; extended
+profiles retain `T_G`, use one fixed N from `{gap,move,accel}` and never
+renormalize around unavailable components. Empty rate denominators remain
+non-evaluable. These rules do not establish coupling, resonance or action
+authority.
 
 ## 9. Scope and Application Selection
 
@@ -494,7 +507,7 @@ pi(j) = (k_A(j), k_B(j))
 T_A ----\
          +--> R0(j | pi, profile_R0)
 T_B ----/          |
-                   | only under the exact compatible open-gate contract
+                   | only under the same-pairing exact compatible open gate
                    +--> IK_rel(j)
                    +--> R_geom(j)   [staged]
                    +--> R_pace(j)   [staged, optional]

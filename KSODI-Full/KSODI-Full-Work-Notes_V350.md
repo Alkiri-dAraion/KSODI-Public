@@ -49,9 +49,16 @@ Current architecture correction:
 - R0 result status and gate state are separate. Thresholds are finite
   versioned policy parameters in `[0,1]`; empty/ineligible windows do not
   manufacture numeric rates; incomparable movement produces no valid R0.
-- Public v3.50 `IK_rel` is the dyadic relational projection after explicit
-  dyadic pairing and an open numeric canonical complete dyadic `R_0` gate
-  under the exact required profile. Reduced and n-adic R0 do not open it.
+- The current reader-first Layer-5 IK_rel method, conditional implementation
+  companion and README are released. They require the same ordered dyad,
+  paired member events, pairing map, relational step and exact open numeric
+  canonical complete dyadic R0 profile. Reduced and n-adic R0 do not open
+  them; an upstream incomparable/processing record produces no valid IK_rel
+  result.
+- Primary IK_rel compares canonical monadic IK movement. Joint first-order
+  stillness is typed `not_applicable`; extended views retain every status in
+  `T_G` and use one fixed non-empty N from `{gap,move,accel}` with finite
+  component-bound weights. Empty window denominators do not become zero.
 - Private method material and large parts of the mathematics for `R_geom` and
   `R_pace` exist, but complete public review and renewed validation on the
   restructured infrastructure remain pending.

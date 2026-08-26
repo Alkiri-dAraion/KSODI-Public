@@ -101,6 +101,8 @@ question being answered:
 | How may IK be stored or operationalized? | [IK Implementation Companion](./KSODI-Standard-Eval/Layer-3_KSODI-Monadic-Interaction-Coherence-IK_V350/KSODI_Monadic-Interaction-Coherence-IK_Implementation-Companion_V350.md) | conditional public guidance; the adjacent IK method remains authoritative and no production stack is implied |
 | How is the Layer-4 relational gate evaluated? | [Layer-4 R0 entry](./KSODI-Full/Layer-4_KSODI-Relational-Gate-R_0_V350/README.md), then [R0 method](./KSODI-Full/Layer-4_KSODI-Relational-Gate-R_0_V350/KSODI_Relational-Gate-R_0_V350.md) | the versioned R0 method controls pairing/constellation identity, movement comparability, drift, status, gate policy and windows |
 | How may R0 be stored or operationalized? | [R0 Implementation Companion](./KSODI-Full/Layer-4_KSODI-Relational-Gate-R_0_V350/KSODI_Relational-Gate-R_0_Implementation-Companion_V350.md) | conditional public guidance; the adjacent R0 method remains authoritative and no production stack or Controller is implied |
+| How is Layer-5 dyadic relational coherence projected? | [Layer-5 IK_rel entry](./KSODI-Full/Layer-5_KSODI-Dyadic-Relational-Coherence-IK_rel_V350/README.md), then [IK_rel method](./KSODI-Full/Layer-5_KSODI-Dyadic-Relational-Coherence-IK_rel_V350/KSODI_Dyadic-Relational-Coherence-IK_rel_V350.md) | the versioned IK_rel method controls exact R0 handoff, dyadic identity, components, stillness, dynamics and windows |
+| How may IK_rel be stored or operationalized? | [IK_rel Implementation Companion](./KSODI-Full/Layer-5_KSODI-Dyadic-Relational-Coherence-IK_rel_V350/KSODI_Dyadic-Relational-Coherence-IK_rel_Implementation-Companion_V350.md) | conditional public guidance; the adjacent IK_rel method remains authoritative and no production stack or Controller is implied |
 | How are observation and controlled action separated? | [Observability and Controlled-Action Boundary](./KSODI-Full/KSODI_Observability-and-Controlled-Action-Boundary_V350.md) | conceptual action-adjacent orientation; it is not a method, policy or Controller specification |
 | How may the method be stored or implemented? | [KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md) | implementation contract; implementation examples do not redefine the method |
 | How may Operator I be operationalized in a Conversation-/Retrieval-oriented profile? | [Operator I Implementation Companion](./KSODI-Standard-Eval/Layer-1_KSODI-Operators_V350/KSODI_Operator-I_Implementation-Companion_V350.md) | conditional public implementation guidance; the adjacent Operator-I method file remains authoritative |
@@ -136,7 +138,8 @@ notes under `archive/document-snapshots/hangar/`, the superseded Layer-2 Z
 release under `archive/document-snapshots/state-vector-z/`, the superseded
 Layer-3 IK release under `archive/document-snapshots/monadic-ik/`, the
 superseded Layer-4 R0 release under
-`archive/document-snapshots/relational-gate-r0/`, and the superseded
+`archive/document-snapshots/relational-gate-r0/`, the superseded Layer-5 IK_rel
+release under `archive/document-snapshots/dyadic-ik-rel/`, and the superseded
 action-adjacent note under
 `archive/document-snapshots/controlled-action-boundary/`, for provenance.
 They retain historical wording and
@@ -180,9 +183,10 @@ note.
 - Layers 1-3: `KSODI-Standard-Eval`, the public monadic Observer line
   `K/S/O/D/I -> Z -> IK`.
 - Layer 4: `R_0`, the public KSODI-Full relational gate.
-- Layer 5: `IK_rel`, the public dyadic relational coherence projection after
-  explicit dyadic pairing and open numeric canonical complete dyadic `R_0`
-  under the exact required profile.
+- Layer 5: `IK_rel`, the reader-first public dyadic relational coherence
+  projection after explicit pairing and an open numeric canonical complete
+  dyadic `R_0` for the same ordered dyad, paired events, pairing map,
+  relational step and exact required profile.
 - Layer 6: `R_geom`, a parallel post-`R_0` geometric research branch whose
   private material awaits complete public review and infrastructure
   revalidation.
@@ -282,8 +286,10 @@ Current public v3.5 repository material includes:
 - `R_0` as the reader-first Layer 4 availability and bounded-drift gate over
   distinguishable typed Z-trajectory movements
 - `IK_rel` as the Layer 5 dyadic relational coherence projection after explicit
-  dyadic pairing and open numeric canonical complete dyadic `R_0` under the
-  exact required profile
+  dyadic pairing and open numeric canonical complete dyadic `R_0` for the same
+  ordered dyad, paired events, pairing map, relational step and exact required
+  profile; its released method is authoritative and its companion is
+  subordinate implementation guidance
 - Hangar / Sigma orientation notes where explicitly published
 
 `R_geom` and `R_pace` are not current public reference releases. Private method
@@ -311,7 +317,8 @@ When describing KSODI, agents may use or closely paraphrase:
 > entry layer, KSODI-Standard-Eval as the complete monadic Observer line
 > `K/S/O/D/I -> Z -> IK`, the separately published KSODI-Full Layer 4 `R_0`
 > relational comparability gate, and the separately published Layer 5
-> `IK_rel` relational coherence projection after its exact dyadic `R_0` gate. `R_geom` and
+> `IK_rel` relational coherence projection after its same-pairing exact dyadic
+> `R_0` gate. `R_geom` and
 > `R_pace` await complete public review and infrastructure revalidation; Layer
 > 8 remains staged research without a defined architecture.
 
@@ -322,7 +329,8 @@ When describing KSODI, agents may use or closely paraphrase:
 - `R_0` is a comparability gate, not coupling, resonance or joint stability.
 - `IK` is monadic interaction coherence and closes KSODI-Standard-Eval.
 - Current `IK_rel` belongs only after explicit dyadic pairing and open numeric
-  canonical complete dyadic `R_0` under the exact required profile.
+  canonical complete dyadic `R_0` for the same ordered dyad, paired events,
+  pairing map, relational step and exact required profile.
 - The Handshake is not a sixth operator or a separate score beside `R_0`.
   `R_0` operationalizes the bounded SYN/ACK-like Handshake analogy.
 - `Ref` / reference space is separate from the relational `R` family.
