@@ -1,553 +1,725 @@
-# KSODI State Vector Z - Interaction State Representation v3.50
+# KSODI State Vector Z - Source-Attributed Interaction State v3.50
 
-Status: public v3.50 reference release; private canonical workbench origin retained. Lifted from the solid v3.42 state-vector line after Fable Z review, 2026-07-20 hardening and Anne's 2026-07-21 public-release decision.
+Status: public v3.50 reference release, strictly reviewed and released on
+2026-08-26. This file is the authoritative carrier-neutral Layer-2 Z method.
+Implementation storage, pseudocode, migration and test fixtures belong in the
+separate companion:
 
-Layer: KSODI Standard-Eval Layer 2. `Z` is the state-vector layer built from Layer-1 operator values. `Delta Z`, `Delta2 Z`, `ZSigma(W)` and `ZSigma(Hangar)` are state-space views over this layer. `IK` and `R0` are downstream / parallel branches after `Z`, not part of the `Z` definition itself.
+- [`KSODI_State-Vector-Z_Implementation-Companion_V350.md`](./KSODI_State-Vector-Z_Implementation-Companion_V350.md)
 
-Publication note: `Z` is released together with the reviewed public `K0`
-operator, so the state-vector definition no longer points to a pending K
-placeholder.
+## 0. What Z is and what it does
 
-## 1. Definition
+Z asks one narrow compositional question:
 
-Canonical source boundary:
+> Which five Layer-1 coordinate results belong to the same source-attributed
+> target event, and do their result types permit one complete numerical state
+> vector?
 
-```text
-e_A(k)
-  -> K_A / S_A / O_A / D_A / I_A
-  -> Z_A(k)
-       |-> IK_A(k)
-       +-> R0(A,B,...) -> IK_rel -> R-family
-```
-
-Every component of `Z_A(k)` remains attached to the same identified target
-event and declared monadic trajectory. Temporal operator comparisons and
-`Delta Z_A` use only comparable positions within that trajectory. Context or
-reference material admitted by an operator profile does not become another
-source component of `Z_A`.
-
-`Z_A` and `Z_B` remain distinguishable. Their parallel availability does not
-create `Z_AB`; relational interpretation begins only at a separately declared
-`R0` gate.
-
-The state vector `Z_t` describes the observable state of an interaction at turn `t` or evaluation unit `t`.
-
-It is composed of the five normalized KSODI operator values:
+Z does not measure a sixth property. It assembles the five separately defined
+Layer-1 results in canonical coordinate order:
 
 ```text
-Z_t = [K0(t), S0(t), O0(t), D0(t), I0(t)]
+(K, S, O, D, I)
 ```
 
-`Z_t` is not another language object. It is the state representation created from the operators.
+For one target event `e_A(k_A)`, every coordinate keeps its own operator
+profile, basis, status and provenance. Z confirms that the records share the
+same target identity, source identity and trajectory position before it
+constructs a vector.
 
-In v3.50, `Z_t` must also carry an applicability mask because some operator
-values may be `not_applicable` under the active profile:
+The essential distinction is:
 
 ```text
-A_Z(t) = [A_K(t), A_S(t), A_O(t), A_D(t), A_I(t)]
+typed Z record exists for every valid assembly attempt
+complete numeric Z exists only when all five coordinate statuses are numeric
+partial projection is not complete Z
 ```
 
-where `A_X(t) = 1` means that component `X` is applicable and numerically
-observed for this unit, and `A_X(t) = 0` means that the component is not
-applicable under the active profile.
+### 0.1 Minimal practical reading
 
-Missing or non-applicable operator values must not be silently coerced to `0`.
-Any numeric projection, aggregation or dashboard view over `Z_t` must declare
-its masking and renormalization policy.
+1. Resolve one source-attributed target event.
+2. Collect exactly one final static result record for each of K, S, O, D
+   and I.
+3. Preserve each coordinate status:
+   `numeric`, `not_selected`, `not_observable` or `not_applicable`.
+   A processing failure produces no valid coordinate result and therefore no
+   valid Z assembly record.
+4. Derive the binary numeric-availability mask from those statuses.
+5. Construct canonical `Z_A(k_A) in [0,1]^5` only if all five coordinates are
+   numeric and identity-aligned.
+6. Name every reduced coordinate view as a partial projection with its active
+   set and status vector.
+7. Compare states only within the same source trajectory and only after a
+   declared comparability gate passes.
 
-## 2. State Space
+### 0.2 How to read this file
 
-Where applicable, all five components are normalized:
+- Section 1 shows two bounded examples.
+- Sections 2 and 3 define identity, result types and complete/partial Z.
+- Sections 4 and 5 define dynamics, norms and status transitions.
+- Section 6 defines windows and Hangar views.
+- Sections 7 and 8 define downstream and governance boundaries.
+- Section 9 contains the compact contract and variable reference.
+
+## 1. Bounded application examples
+
+The examples demonstrate the same Z assembly contract in different domains.
+They do not claim that language, chatbot systems and unknown signals are
+equivalent.
+
+### 1.1 Human-chatbot interaction
+
+Suppose a human A contributes `e_A(k_A)` and a chatbot B later contributes
+`e_B(k_B)`.
+
+Each event receives its own Layer-1 records:
 
 ```text
-K0(t), S0(t), O0(t), D0(t), I0(t) in [0, 1]
+e_A(k_A) -> K_A, S_A, O_A, D_A, I_A -> typed record R_Z,A(k_A)
+e_B(k_B) -> K_B, S_B, O_B, D_B, I_B -> typed record R_Z,B(k_B)
 ```
 
-Therefore the fully numeric view lies in:
+If all five A coordinates are numeric, Z may construct:
 
 ```text
-Z_t in [0, 1]^5
+Z_A(k_A) = (K_A, S_A, O_A, D_A, I_A)
 ```
 
-The KSODI state space is a five-dimensional unit space when all components are
-applicable. Applicability-aware views preserve the five-component ordering but
-carry `A_Z(t)` so that downstream layers can distinguish observed low values
-from non-applicable values.
-
-## 3. Architectural Role
-
-The operators shape `Z`.
-
-After `Z`, the preferred audit path is numerical:
+If the chatbot used reference material that the evaluator cannot inspect, its O
+record may be `not_observable`. The B status vector then preserves that fact:
 
 ```text
-operators -> Z(t)
-          -> Delta Z / Delta2 Z
-          -> IK branch and R0 gate in parallel
-          -> relational branch after stable R0
-          -> window / Hangar views by layer
+T_Z,B(k_B)
+= (numeric, numeric, not_observable, numeric, numeric)
 ```
 
-This is the governance-relevant transition:
+There is a valid typed B record, but no complete numeric `Z_B(k_B)`. A declared
+four-coordinate diagnostic may be formed, but it must carry its active set and
+must not be called complete Z or canonical IK.
 
-- before `Z`: language, context, retrieval, and answer material may be inspected to compute operator values
-- at `Z`: the interaction becomes a numerical state vector
-- after `Z`: analysis should use vectors, deltas, projections, and metadata whenever possible
+The shared conversation does not create `Z_AB`. A and B remain distinguishable
+until a later method explicitly pairs their trajectories.
 
-This reduces the need to retain language while preserving long-term auditability.
+### 1.2 Unknown Morse-like signal
 
-## 3.1 Simple and Complex Views After Z
-
-`Z_t` is the base numerical state. From this point on, KSODI can support two
-complementary views:
-
-- simple vectors and scalar projections for human-readable observation
-- richer vector, trajectory and point-cloud views for machine-side analysis
-
-The simple view is useful for dashboards, audit communication, corridor
-explanations and responsibility handover.
-
-The complex view preserves more of the observed structure for machines:
+Let `e_U(k_U)` be one observed signal group attributed to provisional source U.
+The observer may obtain numeric I and D values while codebook grounding,
+structure and context remain unavailable or inapplicable:
 
 ```text
-Z trajectories
-Delta Z / Delta2 Z
-IK projections
-IK_rel_cloud(W)
-R_geom_cloud(W)
-R_pace_cloud(W)
-Hangar distributions
+T_Z,U(k_U)
+= (not_observable, not_observable, not_applicable, numeric, numeric)
 ```
 
-This distinction is methodically important. Human-readable projections are not
-intended to erase the full vector space. They are readable views into it.
+This is informative. It states that an impulse and discriminable signal are
+observable without pretending that the observer has reconstructed a complete
+five-dimensional state.
 
-Machines may continue to analyze complete vectors, trajectories, component
-clouds, distributions and corridor movement where this is useful and properly
-versioned.
+Repeated numeric I/D observations may support a separately named partial
+trajectory diagnostic. They do not prove meaning, source identity,
+acknowledgement, coupling or a relational handshake.
 
-## 3.2 Analytical Branches After Z
+## 2. Canonical identity and assembly boundary
 
-After `Z(t)`, KSODI separates into two analytical branches.
+### 2.1 Atomic Z evaluation unit
+
+One Z assembly attempt belongs to exactly one Layer-1 target event:
 
 ```text
-K/S/O/D/I
-   |
-   v
-Z(t)
-   |
-   v
-Delta Z / Delta2 Z
-   |-------------------------------|
-   v                               v
-IK branch                       R0 gate
-  IK                              checks whether distinguishable
-  Delta IK / Delta2 IK            trajectories are stable enough
-  IKSigma                         for relational comparison
-  IKSigma(Hangar)
-                                  |
-                                  v
-                               relational branch
-                                  IK_rel
-                                  R_geom
-                                  R_pace
-                                  future signal-media extension
+e_A(k_A)
+= target_event_id
++ source_entity_id
++ source_attribution_status
++ emitting_entity_id, if established
++ trajectory_id_A
++ local_trajectory_index k_A
++ global_event_index n
 ```
 
-The IK branch observes monadic projection and coherence dynamics.
-
-The `R0` gate and the later relational branch observe dyadic or n-adic trajectory coupling.
-
-The R-family denotes the relational and resonance observation family. It is not a single scalar score.
-
-Individual Layer-1 components may receive optional monadic trajectory,
-projection or aggregation views. After stable `R0`, separately defined
-operator-specific relational comparison views may also be used. None of these
-partial views is complete `Z`, canonical `IK`, `IK_rel` or resonance.
-
-`R0` runs after `Z` and in parallel to monadic `IK`. It is not downstream of
-`IK`. Relational projection begins only after `R0`, because `R0` checks whether
-two or more monadic trajectories can meaningfully be related at all.
-
-## 4. Eval Scope
-
-`Z_t` is calculated per evaluation unit or turn.
-
-Inputs are the already computed operator values:
-
-- `K0(t)`: observable context completeness
-- `S0(t)`: observable structural coherence
-- `O0(t)`: observable grounded objectivity
-- `D0(t)`: observable clarity
-- `I0(t)`: observable information impulse
-
-Typical source material for those operator values may include:
-
-- user chunk `u_t`
-- assistant chunk `a_t`
-- system prompt `SP`
-- tool profile `TP`
-- retrieval set `RET_k(u_t)`
-
-`Z_t` itself stores only the resulting operator values, applicability mask and required metadata.
-
-## 5. State Change
-
-Because the system is turn-based, movement is represented as a discrete difference:
+Canonical indices:
 
 ```text
-Delta Z_t = Z_t - Z_{t-1}
+n        = global observable-event index
+k_A      = local position in source trajectory A
+k_B      = local position in source trajectory B
+j        = later relational pairing or constellation index
+pi(j)    = explicit map from j to source-local positions
 ```
 
-Component-wise:
+An implementation field `t` may represent a timestamp, step or legacy turn
+index only when it is explicitly mapped to the canonical event and trajectory
+identities. It must not imply a global shared predecessor.
+
+### 2.2 Required coordinate records
+
+For every `X in {K,S,O,D,I}`, Z consumes one final static Layer-1 result
+record:
 
 ```text
-Delta Z_{t,i} = Z_{t,i} - Z_{t-1,i}
+r_X,A(k_A)
+= (
+    operator_id,
+    method_version,
+    target_event_id,
+    source_entity_id,
+    source_attribution_status,
+    emitting_entity_id if established,
+    trajectory_id,
+    local_trajectory_index,
+    global_event_index,
+    result_status,
+    result_value if numeric,
+    profile_id and version,
+    basis_id,
+    component or gate provenance
+  )
 ```
 
-`Delta Z_{t,i}` is defined only where component `i` is applicable in both
-compared states under a compatible operator profile. Otherwise the component
-delta is `not_applicable` or skipped according to the declared window policy.
+Z does not recalculate operator values. It validates and composes their records.
 
-`Delta Z_t` describes the direction and magnitude of state movement.
+### 2.3 Assembly gate
 
-It is not a quality judgment.
-
-## 6. Drift Acceleration
-
-The second discrete difference describes how the movement itself changes:
+The identity assembly gate opens only when:
 
 ```text
-Delta2 Z_t = Delta Z_t - Delta Z_{t-1}
+G_Z,identity,A(k_A) = true
 ```
 
-Component-wise:
+where all five coordinate records:
+
+- identify the same target event;
+- identify the same source or provisional source;
+- identify the same trajectory and local position;
+- use the canonical coordinate order;
+- contain exactly one final static result record per operator;
+- retain their own profile, basis, status and provenance.
+
+If the identity gate fails, no valid Z record is produced. This is an assembly
+error, not `not_applicable` and not a numeric zero.
+
+Context events, reference objects, tool outputs and prior events used inside an
+operator basis remain provenance inputs. They do not become additional source
+coordinates or change the target identity of Z.
+
+## 3. Typed Z record, complete vector and partial projections
+
+### 3.1 Common coordinate-result domain
+
+For each coordinate:
 
 ```text
-Delta2 Z_{t,i} = Delta Z_{t,i} - Delta Z_{t-1,i}
+tau_X,A(k_A)
+in {numeric, not_selected, not_observable, not_applicable}
 ```
 
-`Delta2 Z_{t,i}` is defined only where the relevant first-difference values are
-applicable and comparable.
+The typed Z status vector is mandatory:
 
-Interpretation:
+```text
+T_Z,A(k_A)
+= (
+    tau_K,A(k_A),
+    tau_S,A(k_A),
+    tau_O,A(k_A),
+    tau_D,A(k_A),
+    tau_I,A(k_A)
+  )
+```
 
-| Pattern | Meaning |
+Gate-specific reasons such as `not_visible_to_evaluator`, empty expected set,
+missing detector or inadmissible reference space remain inside the coordinate
+record. `T_Z` preserves the common result type; it does not erase the reason.
+
+`processing_failure` is not a fifth coordinate-result status. If a Layer-1
+calculation produces no valid final result record, Z cannot turn that failure
+into `not_applicable`, `not_observable`, a mask bit or numeric zero. The
+assembly fails and no valid `R_Z` is constructed.
+
+### 3.2 Derived numeric-availability mask
+
+The binary mask is derived from `T_Z`:
+
+```text
+A_X,A(k_A) = 1 if tau_X,A(k_A) = numeric, else 0
+
+A_Z,A(k_A)
+= (A_K,A, A_S,A, A_O,A, A_D,A, A_I,A)
+```
+
+`A_Z` answers only whether a numeric coordinate is available. It cannot and
+must not replace `T_Z`, because all three non-numeric states map to zero in the
+mask.
+
+### 3.3 Complete canonical Z
+
+Define:
+
+```text
+G_Z,complete,A(k_A)
+:= G_Z,identity,A(k_A)
+   and A_Z,A(k_A) = (1,1,1,1,1)
+```
+
+Only when this gate is open:
+
+```text
+Z_A(k_A)
+= (K_A(k_A), S_A(k_A), O_A(k_A), D_A(k_A), I_A(k_A))
+
+Z_A(k_A) in [0,1]^5
+```
+
+The complete vector preserves references to every constitutive coordinate
+record. It does not overwrite their profiles or provenance.
+
+If the gate is closed, the typed Z record remains valid but:
+
+```text
+complete_Z_state,A(k_A) = not_complete
+Z_A(k_A) is not constructed
+```
+
+`not_complete` is a Z assembly state, not a fifth Layer-1 result type and not a
+numeric vector.
+
+### 3.4 Typed Z record
+
+The method-level record is:
+
+```text
+R_Z,A(k_A)
+= (
+    identity,
+    ordered coordinate-record references,
+    T_Z,A(k_A),
+    A_Z,A(k_A),
+    G_Z,identity,A(k_A),
+    G_Z,complete,A(k_A),
+    Z_A(k_A) if complete,
+    provenance
+  )
+```
+
+`R_Z` is not itself a sixth coordinate. It is the typed assembly record.
+
+### 3.5 Declared partial projection
+
+Let `M` be a non-empty declared subset of the five coordinates. A partial
+numeric projection is permitted only when every coordinate in `M` is numeric:
+
+```text
+Z_A^{[M]}(k_A)
+= P_M Z_record,A(k_A)
+= (X_A(k_A)) for X in ordered M
+```
+
+The projection must retain:
+
+- `M` and its order;
+- the full `T_Z` and `A_Z` records;
+- the partial-projection profile and reason;
+- coordinate profiles and provenance.
+
+It must be named `Z^{[M]}`, `partial_Z` or another visibly reduced form. It is
+not canonical `Z_A(k_A)`, is not automatically comparable with another mask
+and must not silently fill canonical IK.
+
+No imputation is part of the v3.50 Z method. A separately proposed imputation
+profile would create a derived estimate, not an observed canonical Z.
+
+## 4. Comparability and source-local dynamics
+
+### 4.1 Z comparability gate
+
+Two complete Z records are comparable only when:
+
+```text
+G_cmp_Z,A(k_A) = true
+```
+
+The gate requires at least:
+
+- same source and trajectory identity;
+- consecutive or otherwise explicitly paired local positions;
+- same Z method version and coordinate order;
+- compatible operator method/profile versions for every coordinate;
+- compatible measurement-basis types and visibility conditions;
+- compatible coordinate scales;
+- compatible complete/partial view type;
+- declared predecessor and provenance.
+
+Similarity of timestamps, conversation membership or shared context is not a
+comparability gate.
+
+### 4.2 Complete first difference
+
+If both states are complete and `G_cmp_Z,A(k_A) = true`:
+
+```text
+Delta Z_A(k_A)
+= Z_A(k_A) - Z_A(k_A-1)
+```
+
+Component range:
+
+```text
+Delta Z_X,A(k_A) in [-1,1]
+```
+
+Otherwise complete `Delta Z_A(k_A)` is `not_applicable` with the failed gate
+reason retained. Coordinates are not silently skipped.
+
+### 4.3 Complete second difference
+
+If three consecutive complete states satisfy the required comparability gates:
+
+```text
+Delta2 Z_A(k_A)
+= Delta Z_A(k_A) - Delta Z_A(k_A-1)
+```
+
+Component range:
+
+```text
+Delta2 Z_X,A(k_A) in [-2,2]
+```
+
+Otherwise complete `Delta2 Z_A(k_A)` is `not_applicable`.
+
+### 4.4 Partial dynamics
+
+A partial difference may be calculated only over one fixed declared coordinate
+set `M` that is numeric and comparable in every required state:
+
+```text
+Delta Z_A^{[M]}(k_A)
+= Z_A^{[M]}(k_A) - Z_A^{[M]}(k_A-1)
+```
+
+For `Delta2 Z^{[M]}`, the same `M` must remain valid across all three positions.
+Changing `M` creates a new diagnostic profile and blocks naive comparison.
+
+### 4.5 Status transitions remain categorical
+
+Numeric drift does not describe a change such as `not_observable -> numeric`.
+Store a separate categorical transition record:
+
+```text
+Delta T_Z,A(k_A)
+= (tau_X,A(k_A-1) -> tau_X,A(k_A)) for every coordinate X
+```
+
+A newly observable coordinate may change the available vector dimension without
+implying that its unknown former numeric value moved from zero.
+
+## 5. Drift norms and interpretation
+
+### 5.1 Complete-state norms
+
+For comparable complete states:
+
+```text
+Drift_L1,A(k_A)
+= sum_X |Delta Z_X,A(k_A)|
+
+Drift_L1_norm,A(k_A)
+= Drift_L1,A(k_A) / 5
+
+Drift_L2,A(k_A)
+= sqrt(sum_X (Delta Z_X,A(k_A))^2)
+
+Drift_L2_norm,A(k_A)
+= Drift_L2,A(k_A) / sqrt(5)
+```
+
+Ranges:
+
+```text
+Drift_L1 in [0,5]
+Drift_L1_norm in [0,1]
+Drift_L2 in [0,sqrt(5)]
+Drift_L2_norm in [0,1]
+```
+
+### 5.2 Partial-state norms
+
+For a fixed comparable partial set `M`:
+
+```text
+Drift_L1_norm,A^{[M]}(k_A)
+= sum_{X in M} |Delta Z_X,A(k_A)| / |M|
+
+Drift_L2_norm,A^{[M]}(k_A)
+= sqrt(sum_{X in M} (Delta Z_X,A(k_A))^2) / sqrt(|M|)
+```
+
+These results must display `M` and must not be compared naively with a complete
+five-coordinate norm or another partial mask.
+
+### 5.3 Interpretation boundary
+
+Drift means state-space movement under a declared comparable profile. It does
+not by itself mean improvement, deterioration, causality, intent, instability
+or relational coupling.
+
+`Delta2 Z` describes change in movement and may support early-warning review.
+It is not an evaluation score.
+
+## 6. Sigma, Sigma(Hangar) and coverage
+
+### 6.1 Complete source-local window
+
+For a declared non-empty source-local window `W_A`, define one joint complete
+subset:
+
+```text
+W_complete_Z,A
+= {k_A in W_A |
+   Z_A(k_A) is complete and compatible with p_ZSigma}
+```
+
+A complete window aggregation uses the same positions for all coordinates:
+
+```text
+Z_Σ_A(W_A).value
+= (
+    Agg_K({K_A(k_A) | k_A in W_complete_Z,A}),
+    Agg_S({S_A(k_A) | k_A in W_complete_Z,A}),
+    Agg_O({O_A(k_A) | k_A in W_complete_Z,A}),
+    Agg_D({D_A(k_A) | k_A in W_complete_Z,A}),
+    Agg_I({I_A(k_A) | k_A in W_complete_Z,A})
+  )
+```
+
+Static, Delta and Delta2 window fields remain separate typed records. Empty
+applicable sets are `not_applicable`, not zero.
+
+### 6.2 Coverage and coordinate-wise diagnostics
+
+Store:
+
+```text
+complete_rate_Z,A(W_A)
+= |W_complete_Z,A| / |W_A|
+
+numeric_rate_X,A(W_A)
+= # numeric X statuses in W_A / |W_A|
+```
+
+These numeric rates require `|W_A| > 0`. An empty or invalid window emits a
+typed non-numeric window result under its declared profile; it never evaluates
+`0/0` and never reports zero coverage by convention.
+
+If coordinate summaries use different effective subsets, the result is a
+coordinate-wise diagnostic, not one joint state-vector aggregate. It must
+carry each subset and coverage value.
+
+### 6.3 Hangar view
+
+The complete event-level Hangar set is:
+
+```text
+H_Z,A^(event)
+= {Z_A(k_A) | k_A in W_complete_Z,A}
+```
+
+`Z_Σ_A(Hangar)` is a typed distribution or point-cloud view derived from
+canonical records. Partial points may be retained only in mask/status-stratified
+collections such as `H_Z,A^{[M]}`; they are not silently embedded by zero filling.
+
+Hangar preserves source, event, trajectory, profile, status, mask, window and
+derivation provenance. It does not replace canonical event or Z storage.
+
+## 7. Downstream boundaries
+
+### 7.1 Relation to IK
+
+Canonical monadic IK is a declared projection of complete canonical Z:
+
+```text
+IK_A(k_A) = w dot Z_A(k_A)
+```
+
+where the IK method controls weights, applicability and interpretation. A
+reduced projection from `Z^{[M]}` requires a separately named IK profile and must
+not be reported as canonical IK.
+
+Where weights and complete comparability remain stable:
+
+```text
+Delta IK_A(k_A) = w dot Delta Z_A(k_A)
+```
+
+This is a projection identity, not an independent observation.
+
+### 7.2 Relation to R0 and relational branches
+
+Z_A and Z_B remain separate monadic states and trajectories:
+
+```text
+T_A = {R_Z,A(k_A)}
+T_B = {R_Z,B(k_B)}
+```
+
+R0 receives complete comparable movement derived from distinguishable typed
+trajectory records plus an explicit dyadic pairing or n-adic constellation
+map. It runs after Z and in parallel to monadic IK. Z does not define the R0
+formula, profile or stability threshold.
+
+Only an open numeric canonical complete R0 gate under the exact required
+profile may admit a compatible downstream relational construct. Downstream
+cardinality must match: current IK_rel is dyadic and is not opened by an
+n-adic R0 result. Parallel availability of `Z_A` and `Z_B` does not create
+`Z_AB`, shared state, acknowledgement or coupling.
+
+### 7.3 Coordinate order is not a causal chain
+
+```text
+canonical Z order:             (K, S, O, D, I)
+sender-side formation:          K -> S -> O -> D -> I
+receiver-side reconstruction:   I -> D -> O -> S -> K
+```
+
+The first is a representation order. The latter two are directed process
+topologies. Z does not assert that operators are calculated causally in either
+order.
+
+## 8. Fairness, privacy, retention and implementation boundary
+
+Status and mask patterns may reveal which context, source, detector or access
+basis was available. Profile IDs, event links, embeddings, hashes and
+trajectories may remain identifying even when raw language is deleted.
+
+Retention must therefore be declared for:
+
+- raw target and basis material;
+- coordinate evaluation records;
+- typed status and reason records;
+- complete and partial Z views;
+- trajectory, window and Hangar derivations.
+
+Z does not require indefinite storage of raw language. Auditability may use
+governed references or approved derived evidence where the operator method and
+policy permit it. Derived data is not automatically anonymous.
+
+Implementation-specific schemas, pseudocode, migration mappings, database
+choices, API objects, visualization behavior and test fixtures belong in the
+subordinate companion. They must not redefine complete Z, erase `T_Z`, impute
+missing coordinates or collapse source identities.
+
+## 9. Formal summary and variable reference
+
+### 9.1 Compact contract
+
+```text
+# one source-attributed target event
+e_A(k_A)
+
+# common coordinate statuses
+tau_X,A(k_A)
+in {numeric, not_selected, not_observable, not_applicable}
+
+# mandatory typed status vector
+T_Z,A(k_A) = (tau_K, tau_S, tau_O, tau_D, tau_I)
+
+# derived numeric-availability mask
+A_X,A(k_A) = 1[tau_X,A(k_A) = numeric]
+A_Z,A(k_A) = (A_K, A_S, A_O, A_D, A_I)
+
+# complete canonical state only when identity aligns and all five are numeric
+G_Z,complete,A(k_A)
+= G_Z,identity,A(k_A) and A_Z,A(k_A) = (1,1,1,1,1)
+
+if G_Z,complete,A(k_A):
+  Z_A(k_A) = (K_A, S_A, O_A, D_A, I_A) in [0,1]^5
+else:
+  complete_Z_state,A(k_A) = not_complete
+  Z_A(k_A) is not constructed
+
+# visibly partial diagnostic
+Z_A^{[M]}(k_A) = ordered numeric projection on declared non-empty M
+
+# complete source-local dynamics only after comparability
+Delta Z_A(k_A)  = Z_A(k_A) - Z_A(k_A-1)
+Delta2 Z_A(k_A) = Delta Z_A(k_A) - Delta Z_A(k_A-1)
+
+# categorical status movement remains separate
+Delta T_Z,A(k_A) = coordinate-wise status transitions
+
+# complete normalized norms
+Drift_L1_norm,A = sum_X |Delta Z_X,A| / 5
+Drift_L2_norm,A = sqrt(sum_X Delta Z_X,A^2) / sqrt(5)
+
+# partial norms require one fixed displayed M
+Drift_L1_norm,A^{[M]} = sum_{X in M} |Delta Z_X,A| / |M|
+Drift_L2_norm,A^{[M]} = sqrt(sum_{X in M} Delta Z_X,A^2) / sqrt(|M|)
+
+# complete joint window uses one shared complete subset
+W_complete_Z,A = {k_A in W_A | complete and window-compatible Z_A(k_A)}
+Z_Σ_A(W_A) = typed coordinate aggregation over W_complete_Z,A
+
+# Hangar remains derived and status-aware
+H_Z,A^(event) = {Z_A(k_A) | k_A in W_complete_Z,A}
+
+# downstream branches
+Z_A -> IK_A
+distinguishable typed trajectories + explicit pairing -> R0
+open numeric canonical complete R0 under the exact required profile
+  -> separately defined compatible relational branches
+current IK_rel additionally requires matching dyadic cardinality
+```
+
+### 9.2 Variable reference
+
+| Symbol | Semantic role |
 | --- | --- |
-| `Delta2 Z approx 0` | steady movement; stable drift |
-| increasing `abs(Delta2 Z)` | drift acceleration; potential early warning |
-| decreasing `abs(Delta2 Z)` | drift deceleration |
-| sign change | possible directional reversal |
+| `e_A(k_A)` | one source-attributed target event at local position `k_A` |
+| `n` | global observable-event index |
+| `k_A`, `k_B` | source-local trajectory indices |
+| `j`, `pi(j)` | later relational index and explicit pairing map |
+| `r_X,A(k_A)` | complete static Layer-1 result record for coordinate X |
+| `tau_X,A(k_A)` | common result status of coordinate X |
+| `T_Z,A(k_A)` | mandatory five-coordinate status vector |
+| `A_Z,A(k_A)` | derived binary numeric-availability mask; never a substitute for `T_Z` |
+| `G_Z,identity,A(k_A)` | identity and record-alignment gate |
+| `G_Z,complete,A(k_A)` | gate for complete numeric Z |
+| `R_Z,A(k_A)` | typed Z assembly record; not a sixth coordinate |
+| `Z_A(k_A)` | complete canonical five-dimensional monadic state |
+| `M` | declared ordered coordinate subset for a partial projection |
+| `Z_A^{[M]}(k_A)` | visibly partial numeric coordinate projection |
+| `G_cmp_Z,A(k_A)` | source-local Z comparability gate |
+| `Delta Z_A(k_A)` | complete first source-local state difference |
+| `Delta2 Z_A(k_A)` | complete second source-local state difference |
+| `Delta T_Z,A(k_A)` | categorical coordinate-status transition record |
+| `Drift_L1/L2` | complete raw state-movement norms |
+| `Drift_L1/L2_norm` | normalized complete or explicitly partial movement norms |
+| `W_A` | declared source-local window |
+| `W_complete_Z,A` | shared complete and compatible Z subset of the window |
+| `Z_Σ_A(W_A)` | typed joint window aggregation over one shared complete subset |
+| `complete_rate_Z,A` | share of positions with complete compatible Z |
+| `numeric_rate_X,A` | per-coordinate numeric coverage rate |
+| `H_Z,A^(event)` | complete event-level Z point set for Hangar derivation |
+| `Z_Σ_A(Hangar)` | derived typed Z distribution or point-cloud view |
+| `not_complete` | valid typed Z record without a complete numeric vector |
 
-`Delta2 Z_t` is an early-warning signal, not an evaluation score.
+### 9.3 Consistency tests
 
-## 7. Drift Norms
-
-The movement of `Z_t` can be summarized by norms.
-
-L1 drift:
-
-```text
-Drift_L1(t) = sum_i |Z_{t,i} - Z_{t-1,i}|
-Drift_L1_norm(t) = Drift_L1(t) / 5
-```
-
-L2 drift:
-
-```text
-Drift_L2(t) = ||Z_t - Z_{t-1}||_2
-Drift_L2_norm(t) = Drift_L2(t) / sqrt(5)
-```
-
-For applicability-aware views, compute norms over the active shared component
-set:
-
-```text
-A_delta(t) = {i | A_Z_i(t) = 1 and A_Z_i(t-1) = 1}
-```
-
-and declare the normalization denominator:
-
-```text
-Drift_L1_active_norm(t)
-= sum_{i in A_delta(t)} |Z_{t,i} - Z_{t-1,i}| / |A_delta(t)|
-
-Drift_L2_active_norm(t)
-= sqrt(sum_{i in A_delta(t)} (Z_{t,i} - Z_{t-1,i})^2) / sqrt(|A_delta(t)|)
-```
-
-If `A_delta(t)` is empty, the drift norm is `not_applicable`.
-
-Use both when possible:
-
-| Norm | Useful for |
-| --- | --- |
-| `L1` | stable monitoring and component-readable movement |
-| `L2` | peak-sensitive movement analysis |
-
-## 8. Interpretation
-
-| Signal | Meaning |
-| --- | --- |
-| low drift | stable interaction state |
-| medium drift | moderate state change |
-| high drift | strong state change |
-| increasing acceleration | drift is changing faster |
-
-Drift describes movement in state space, not answer quality.
-
-## 9. Comparability
-
-`Z_t`, `Delta Z_t`, and `Delta2 Z_t` are comparable only under stable conditions:
-
-- same operator definitions
-- same operator versions
-- same embedding model where operators use embeddings
-- same retrieval configuration where relevant
-- same `Ref` definition where reference-space logic is used
-- same [`O0` source-need gate policy](../Layer-1_KSODI-Operators_V350/KSODI_Operator-O_Source-Need-Gate_V350.md)
-- same weighting choices inside operators
-- same evaluation-unit granularity
-- same ordering of components in `Z_t`
-- same applicability / masking and renormalization policy
-
-## 10. Relation to IK
-
-`IK` is a scalar linear projection of the state vector. It is not a time
-derivative and not an independent measurement.
-
-```text
-IK(t) = w dot Z_t
-```
-
-where `w` is a versioned weight vector with:
-
-```text
-w_j >= 0
-sum_j w_j = 1
-```
-
-Under a fully numeric `Z_t in [0,1]^5`, these constraints keep `IK(t)` in
-`[0,1]`. Masked or applicability-aware variants must declare their active
-component set and renormalization policy.
-
-Important distinction:
-
-| Object | Type | Role |
+| Test | Result | Reason |
 | --- | --- | --- |
-| `Z_t` | vector | state |
-| `Delta Z_t` | vector | movement |
-| `Delta2 Z_t` | vector | acceleration of movement |
-| `IK(t)` | scalar | projection onto a coherence axis |
-| `Delta IK(t)` | scalar difference | change in projection |
+| source removal | PASS | removing B does not change the identity or construction of A's Z record |
+| role reversal | PASS | sender/receiver changes do not rewrite stable source identities |
+| status preservation | PASS | `T_Z` distinguishes three non-numeric states that `A_Z` cannot distinguish |
+| partial-view honesty | PASS | a reduced mask is explicitly named and cannot fill complete Z or canonical IK |
+| dynamics | PASS | complete Delta/Delta2 require same-source complete comparable states; partial dynamics require fixed M |
+| layer dependency | PASS | Z consumes Layer-1 records and defines neither operator, IK, R0 nor relational formulas |
+| provenance | PASS | event, source, trajectory, coordinate profile, status, mask and pairing metadata remain distinguishable |
 
-`Delta Z` and `Delta IK` are parallel diagnostic branches, but they are not
-mathematically independent:
+## 10. Separate implementation companion
 
-```text
-Delta IK(t) = w dot Delta Z(t)     # when w and mask are stable
-```
+The subordinate companion is:
 
-The diagnostic gain is dimensional: `Delta Z` preserves full state-space
-movement, while `Delta IK` shows movement along the configured coherence axis.
+- [`KSODI_State-Vector-Z_Implementation-Companion_V350.md`](./KSODI_State-Vector-Z_Implementation-Companion_V350.md)
 
-## 11. Relation to R0, IK_rel and the R-family
-
-`R0` and the R-family operate on trajectories.
-
-```text
-Z_t, Delta Z_t, A_Z(t) -> R0(t)
-R0(t) stable enough -> IK_rel(t)
-Z_t, Delta Z_t, dyadic or n-adic trajectory data -> R-family
-```
-
-`R0` is the numerical pre-check layer for dyadic or n-adic relational analysis.
-It asks whether relational comparison is methodically meaningful at all.
-
-`IK_rel` is not a free early value. It is a relational projection layer and becomes methodically valid only after `R0` has established that dyadic or n-adic comparison is meaningful.
-
-The R-family belongs to the Full layer. In the active v3.50 boundary it may include:
-
-- `R_geom`: geometric coupling of dyadic or n-adic trajectories in the KSODI state space
-- `R_pace`: readable-language or sign-visible pacing dynamics where explicitly defined
-- `R_geomSigma`: aggregated geometric-coupling behavior over an observation window
-- `R_geomSigma(Hangar)`: distribution of geometric-coupling patterns inside an observation space
-- `R_paceSigma`: optional pacing aggregation where pacing dynamics are explicitly defined
-
-Audio, radio, Morse, waveform, `R_takt`, `R_freq` and voice-related terms are
-future signal-media research or historical wording, not active v3.50 core
-terms. The core description remains architecture-agnostic: it observes
-trajectories of interacting entities in the KSODI state space.
-
-The R-family must not be reduced to `IK`.
-
-## 11.1 R0 Gate Rule
-
-Canonical gate:
-
-```text
-IK_rel is observable only if R0 is stable enough.
-```
-
-Operational form:
-
-```text
-if R0(t) >= theta_R0_stable:
-    IK_rel(t) may be evaluated
-else:
-    IK_rel(t) = not_applicable
-```
-
-This prevents KSODI from assigning relational coherence where no stable shared movement has been established.
-
-## 11.2 Window and Hangar Views
-
-Window and Hangar views can be derived from `Z`, but they are not a third main
-branch after `Z`.
-
-The state-space layer defines the numerical state and its movement:
-
-```text
-Z_t
-Delta Z_t
-Delta2 Z_t
-Drift_L1 / Drift_L2
-```
-
-For `Z`, a window summary may be defined as:
-
-```text
-ZSigma(W) = aggregate({Z_t | t in W})
-```
-
-where `aggregate` may be a mean vector, median vector, percentile profile, or
-another versioned window summary.
-
-The window summary must carry its applicability policy:
-
-```text
-W_app = {t in W | Z_t is applicable under the active profile}
-applicability_rate_Z(W) = |W_app| / |W|
-```
-
-For component-wise summaries, each component may have its own active subset:
-
-```text
-W_app_i = {t in W | A_Z_i(t) = 1}
-```
-
-The corresponding Hangar view observes the distribution of such state windows:
-
-```text
-ZSigma(Hangar) = distribution({ZSigma(W_i)})
-```
-
-The terms `ZSigma` and `ZSigma(Hangar)` may be used for these derived state-space
-window views. They should not be read as a separate Sigma layer.
-
-Other window views remain in their own method context:
-
-- `IKSigma` belongs to the projection layer.
-- `IK_relSigma` belongs to the relational projection layer after stable `R0`.
-- `R0Sigma`, `R_geomSigma` and optional `R_paceSigma` belong to the relational
-  / R-family layer.
-
-The released shared Hangar method note is maintained separately at the
-repository root:
-
-[`KSODI-Hangar_V350.md`](../../KSODI-Hangar_V350.md)
-
-## 12. Storage Principle
-
-Recommended storage after operator calculation:
-
-- `eval_unit_id`
-- `context_scope_id`
-- operator version IDs
-- `Z_t`
-- optional `Delta Z_t`
-- optional `Delta2 Z_t`
-- applicability mask `A_Z(t)`
-- optional branch identifiers
-- optional gate status for `R0`
-- `ZSigma(W)` / `ZSigma(Hangar)` summaries where enabled
-- applicability rates for window and Hangar summaries
-- drift norms
-- detector and configuration IDs
-
-Avoid storing:
-
-- full prompt text
-- full answer text
-- unnecessary source language
-- embeddings unless explicitly justified
-
-This supports longer retention of numerical audit traces while reducing language-retention risk.
-
-## 13. Compact Formula Block
-
-```text
-Z_t = [K0(t), S0(t), O0(t), D0(t), I0(t)]
-Z_t in [0, 1]^5 where all components are applicable
-A_Z(t) = [A_K(t), A_S(t), A_O(t), A_D(t), A_I(t)]
-
-Delta Z_t = Z_t - Z_{t-1}
-  where compared components are applicable in both states
-
-Delta2 Z_t = Delta Z_t - Delta Z_{t-1}
-  where first-difference values are applicable and comparable
-
-Drift_L1(t) = sum_i |Z_{t,i} - Z_{t-1,i}|
-Drift_L1_norm(t) = Drift_L1(t) / 5
-
-Drift_L2(t) = ||Z_t - Z_{t-1}||_2
-Drift_L2_norm(t) = Drift_L2(t) / sqrt(5)
-
-A_delta(t) = {i | A_Z_i(t) = 1 and A_Z_i(t-1) = 1}
-Drift_L1_active_norm(t)
-= sum_{i in A_delta(t)} |Z_{t,i} - Z_{t-1,i}| / |A_delta(t)|
-Drift_L2_active_norm(t)
-= sqrt(sum_{i in A_delta(t)} (Z_{t,i} - Z_{t-1,i})^2) / sqrt(|A_delta(t)|)
-
-IK(t) = w dot Z_t
-
-if R0(t) >= theta_R0_stable:
-    IK_rel(t) may be evaluated
-else:
-    IK_rel(t) = not_applicable
-```
-
-## 14. Variable Reference
-
-| Variable | Semantic role |
-| --- | --- |
-| `t` | Turn or evaluation-unit index |
-| `Z_t` | Numerical KSODI interaction state at `t` |
-| `A_Z(t)` | Applicability mask for the five Z components |
-| `A_delta(t)` | Shared active component set for comparing `Z_t` and `Z_{t-1}` |
-| `K0(t)` | Context component of the state |
-| `S0(t)` | Structure component of the state |
-| `O0(t)` | Grounding component of the state |
-| `D0(t)` | Clarity component of the state |
-| `I0(t)` | Information impulse component of the state |
-| `Delta Z_t` | Discrete state movement |
-| `Delta2 Z_t` | Acceleration of state movement |
-| `Z_{t,i}` | Component `i` of the state vector |
-| `Drift_L1(t)` | L1 movement magnitude |
-| `Drift_L2(t)` | L2 movement magnitude |
-| `Drift_L1_active_norm(t)` | Applicability-aware normalized L1 drift |
-| `Drift_L2_active_norm(t)` | Applicability-aware normalized L2 drift |
-| `ZSigma(W)` | Window aggregation of state vectors |
-| `ZSigma(Hangar)` | Distribution view of state-vector window summaries |
-| `applicability_rate_Z(W)` | Share of a window where Z is applicable under the active profile |
-| `w` | Versioned projection vector for IK |
-| `IK(t)` | Scalar projection of `Z_t` |
-| `R0(t)` | Gate for dyadic or n-adic comparability |
-| `theta_R0_stable` | Stability threshold for opening relational analysis |
-| `IK_rel(t)` | Relational projection after stable `R0` |
-| `R-family` | Relational and resonance observation family, not a single scalar score |
-| `R_geom` | Geometric coupling of dyadic or n-adic trajectories |
-| `R_pace` | Pacing dynamics over time |
-| `R_geomSigma` | Window aggregation of geometric coupling where `R_geom` is enabled |
-| `R_geomSigma(Hangar)` | Hangar distribution view of geometric-coupling patterns |
-| `R_paceSigma` | Optional pacing aggregation where pacing dynamics are explicitly defined |
+It may operationalize record schemas, validation, partial views, migration,
+storage and tests. It must not redefine the complete-state gate, treat `A_Z` as
+a replacement for `T_Z`, impute missing coordinates into observed Z or merge
+source trajectories.

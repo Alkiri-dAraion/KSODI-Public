@@ -1,54 +1,50 @@
-# Work Notes - Standard-Eval v350
+# Work Notes - KSODI Standard-Eval v3.50
 
-Status: public work guidance for the v350 Standard-Eval structure
+Status: public release orientation, updated 2026-08-26
 
-Purpose: keep Standard-Eval monadic and distinct from KSODI-Full.
+Purpose: state the current public Standard-Eval package without replacing the
+versioned method files.
 
-This folder may describe how KSODI Standard-Eval is organized for monadic
-observation:
+## Public monadic line
 
-- Layer 1 operators
-- Layer 2 state vector `Z`
-- Layer 3 monadic `IK`
+KSODI Standard-Eval contains:
 
-Allowed here:
+- Layer 1: the five source-attributed operators K, S, O, D and I;
+- Layer 2: the source-attributed state vector `Z_A(k_A)`;
+- Layer 3: the source-attributed monadic projection `IK_A(k_A)`.
 
-- layer placement
-- operator-level Delta / Delta2
-- Sigma and Hangar views
-- monitoring and comparability guardrails
-- notes about monadic Observer infrastructure profiles
-
-Guardrail:
-
-Do not turn Observer-infrastructure choices into canonical method definitions,
-and do not pull relational / R-family layers back into Standard-Eval. When an
-operator meaning changes, update the corresponding Layer 1 operator file here.
-
-## Current Public State - 2026-07-21
-
-The public v350 Standard-Eval structure has been consolidated under this
-folder. Public canonical operator files belong in Layer 1, not in separate
-competing operator folders.
-
-Released in public Layer 1:
-
-- `KSODI_Operator-K_Observable-Context-Completeness_V350.md` - `K0`, Observable Context Completeness
-- `KSODI_Operator-I_Observable-Information-Impulse_V350.md` - `I0`, Observable Information Impulse
-- `KSODI_Operator-D_Observable-Clarity_V350.md` - `D0`, Observable Clarity
-- `KSODI_Operator-O_Observable-Grounded-Objectivity_V350.md` - `O0`, Observable Grounded Objectivity
-- `KSODI_Operator-O_Source-Need-Gate_V350.md` - `O0` source-need / reference-space
-  applicability companion note
-- `KSODI_Operator-S_Observable-Structural-Coherence_V350.md` - `S0`, Observable Structural Coherence
-
-Released in public Layer 2:
-
-- `KSODI_State-Vector-Z_V350.md` - KSODI State Vector Z
-
-Released in public Layer 3:
-
-- `KSODI_Monadic-Interaction-Coherence-IK_V350.md` - monadic Interaction Coherence Projection
-
-Architecture guardrail: Standard-Eval is monadic. `Z(t)` feeds both monadic
-`IK` and the relational `R0` gate, but `R0`, `IK_rel` and the R-family belong in
+Standard-Eval ends at monadic IK. R0, IK_rel and the R-family belong to
 KSODI-Full.
+
+## Current release checkpoint
+
+The current five Layer-1 method/companion packages are released. O additionally
+includes the Source-Need Gate.
+
+The reader-first Layer-2 package released on 2026-08-26 contains:
+
+- `KSODI_State-Vector-Z_V350.md` — authoritative carrier-neutral method;
+- `KSODI_State-Vector-Z_Implementation-Companion_V350.md` — subordinate
+  conditional implementation guidance;
+- the adjacent Layer-2 README.
+
+The Layer-2 package preserves the four valid Layer-1 result statuses
+`numeric`, `not_selected`, `not_observable` and `not_applicable` in mandatory
+`T_Z`. Its binary `A_Z` is derived numeric availability only. Processing
+failures produce no valid coordinate result and are never converted into a
+fifth status or numeric zero. Complete canonical `Z_A(k_A) in [0,1]^5` exists
+only when all five aligned coordinate records are numeric.
+
+The public Layer-3 IK method remains its earlier released reference state. A
+newer private reader-first IK method and companion are not part of this
+Layer-2 release and do not silently override the public file.
+
+## Release guardrail
+
+Method files remain authoritative and carrier-neutral. Companions are
+conditional implementation guidance. Neither a companion nor an Observer
+profile may invent evidence, impute unavailable coordinates, merge source
+trajectories or assign decision, steering or intervention authority.
+
+This checkpoint creates no GitHub tag, GitHub Release, DOI or Zenodo artifact
+and does not authorize a later private revision.

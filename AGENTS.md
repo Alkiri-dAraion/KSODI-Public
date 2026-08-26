@@ -95,6 +95,8 @@ question being answered:
 | What is the conceptual reasoning behind the method? | [Conceptual Note](./Conceptual-Note.md) | explanatory semantics; it does not replace file-level definitions |
 | What is released, staged or planned next? | [ROADMAP.md](./ROADMAP.md) | development and publication orientation, not a formula source |
 | How are Layer-1 observations defined? | [Layer-1 operator entry](./KSODI-Standard-Eval/Layer-1_KSODI-Operators_V350/README.md), then the linked versioned operator file | the versioned operator file is authoritative for that operator's formula, profile and applicability |
+| How is the Layer-2 state vector assembled? | [Layer-2 Z entry](./KSODI-Standard-Eval/Layer-2_KSODI-State-Vector-Z_V350/README.md), then [State Vector Z](./KSODI-Standard-Eval/Layer-2_KSODI-State-Vector-Z_V350/KSODI_State-Vector-Z_V350.md) | the versioned Z method controls typed assembly, complete/partial views, dynamics and downstream boundaries |
+| How may Z be stored or operationalized? | [Z Implementation Companion](./KSODI-Standard-Eval/Layer-2_KSODI-State-Vector-Z_V350/KSODI_State-Vector-Z_Implementation-Companion_V350.md) | conditional public guidance; the adjacent Z method remains authoritative and no production stack is implied |
 | How may the method be stored or implemented? | [KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md) | implementation contract; implementation examples do not redefine the method |
 | How may Operator I be operationalized in a Conversation-/Retrieval-oriented profile? | [Operator I Implementation Companion](./KSODI-Standard-Eval/Layer-1_KSODI-Operators_V350/KSODI_Operator-I_Implementation-Companion_V350.md) | conditional public implementation guidance; the adjacent Operator-I method file remains authoritative |
 | How may Operator D be operationalized under a declared detector/carrier profile? | [Operator D Implementation Companion](./KSODI-Standard-Eval/Layer-1_KSODI-Operators_V350/KSODI_Operator-D_Implementation-Companion_V350.md) | conditional public implementation guidance; the adjacent Operator-D method file remains authoritative |
@@ -125,7 +127,9 @@ Superseded root-README snapshots are preserved under
 `archive/document-snapshots/roadmap/`, superseded root-architecture snapshots
 under `archive/document-snapshots/architecture/`, superseded public agent
 instructions under `archive/document-snapshots/agents/`, and superseded Hangar
-notes under `archive/document-snapshots/hangar/`, for provenance. They retain historical wording and
+notes under `archive/document-snapshots/hangar/`, and the superseded Layer-2 Z
+release under `archive/document-snapshots/state-vector-z/`, for provenance.
+They retain historical wording and
 may contain root-relative links that do not resolve from the archive folder.
 Do not use archived files as current method, release or navigation guidance;
 the live root `README.md` and `ROADMAP.md` remain canonical.

@@ -120,9 +120,10 @@ stored trajectories, read the
 
 ⚠️ **Publication status — KSODI v3.5:** The current v3.5 line is being
 published in successive stages. The five operator definitions `K0`, `S0`,
-`O0`, `D0` and `I0`, the monadic state vector `Z_A(k_A)` and the
-monadic interaction-coherence projection `IK` have been published and form the
-current KSODI-Standard-Eval release. The relational `R_0` gate has been published
+`O0`, `D0` and `I0`, the reader-first monadic state-vector method
+`Z_A(k_A)` with its conditional implementation companion, and the monadic
+interaction-coherence projection `IK` have been published and form the current
+KSODI-Standard-Eval release. The relational `R_0` gate has been published
 separately as KSODI-Full Layer 4, and `IK_rel` has been published separately
 as KSODI-Full Layer 5. `R_geom` and `R_pace` are not current public reference
 releases: private method material and large parts of their mathematics exist,

@@ -33,14 +33,15 @@ ends with `IK`.
 
 After `Z`, the architecture branches. `R0 / R_0` belongs to KSODI-Full gate
 logic and is evaluated from distinguishable `Z`-trajectories in parallel to
-monadic `IK`. Only after a stable `R0` does `IK_rel` open the relational
-projection branch, followed by the further R-family. `R0`, `IK_rel` and the
-further R-family are not part of Standard-Eval.
+monadic `IK`. Current dyadic `IK_rel` requires an explicit dyadic pairing and
+an open numeric canonical complete `R0` gate under the exact required profile;
+an n-adic R0 result does not open it. `R0`, `IK_rel` and the further R-family
+are not part of Standard-Eval.
 
 ## Current research direction
 
-The revised private reference line distinguishes monadic observation layers
-from dyadic and n-adic relational observation layers.
+The current method line distinguishes monadic observation layers from dyadic
+and n-adic relational observation layers.
 
 This distinction matters for agentic systems: a human-machine, agent-agent or
 n-agent interaction may look active or even resonant while still lacking
@@ -59,9 +60,10 @@ Standard-Eval.
 The reviewed v350 line is being released into this public repository step by
 step after private review.
 
-As of 2026-07-21, the public v350 Standard-Eval release contains all five
-Layer-1 operators, the Layer-2 state vector `Z` and the Layer-3 monadic `IK`
-projection.
+As of 2026-08-26, the public v350 Standard-Eval release contains all five
+current Layer-1 method/companion packages, the reader-first Layer-2 Z method
+and conditional implementation companion, and the earlier public Layer-3
+monadic IK projection.
 
 - [`KSODI-Standard-Eval-Release_V350.md`](./KSODI-Standard-Eval-Release_V350.md)
   records the active v3.5 release boundary.

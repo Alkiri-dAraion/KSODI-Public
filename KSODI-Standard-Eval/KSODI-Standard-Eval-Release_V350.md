@@ -7,18 +7,21 @@ monadic observation.
 
 Only files explicitly marked as released should be treated as current public method material. Placeholder files mark the intended structure and remain pending until the corresponding private review is complete.
 
-Current release state: Layer 1 operators `K0`, `S0`, `O0`, `D0` and `I0`
-are released. The `O0` source-need / reference-space applicability companion
-note and the separately reviewed conditional D0/I0 implementation companions
-are released. These companions do not redefine their operators or establish a
-mandatory production stack. Layer 2, the monadic state vector `Z(t)` (`Z_vec`),
-and Layer 3, the monadic interaction-coherence projection `IK`, are released.
-`IK` closes the Standard-Eval line.
+Current release state, 2026-08-26: Layer 1 operators `K0`, `S0`, `O0`, `D0`
+and `I0` are released with their conditional implementation companions; O
+additionally includes its source-need / reference-space applicability gate.
+These companions do not redefine their operators or establish a mandatory
+production stack. The current reader-first Layer-2 state vector `Z_A(k_A)` and
+its conditional implementation companion are released. The earlier public
+Layer-3 monadic interaction-coherence projection `IK` remains released and
+closes the Standard-Eval line; a newer private IK revision is not part of this
+Layer-2 release.
 
 After `Z`, the separate relational / Full branch evaluates `R0` from
-distinguishable `Z`-trajectories in parallel to monadic `IK`. Stable `R0` gates
-`IK_rel`, followed by the further R-family. `R0`, `IK_rel` and the further
-R-family are not part of Standard-Eval.
+distinguishable `Z`-trajectories in parallel to monadic `IK`. Current dyadic
+`IK_rel` requires an explicit dyadic pairing and an open numeric canonical
+complete `R0` gate under the exact required profile. `R0`, `IK_rel` and the
+further R-family are not part of Standard-Eval.
 
 This release note describes how the canonical operator definitions are placed
 into the monadic KSODI-Standard-Eval Observer structure: Layer 1 operators,

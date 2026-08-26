@@ -7,14 +7,16 @@
 This file provides public conceptual orientation. Canonical definitions remain
 in the linked, versioned method files.
 
-Synchronization status, 2026-08-26: the current Layer-1 operator packages are
-reviewed public method/companion checkpoints. Public Z, IK, R0 and IK_rel remain
-their separately released reference states; newer reader-first private
-revisions do not silently override them. This note states only the shared
-topology and result boundaries supported by the linked public methods. Its
-summaries do not replace those typed contracts or authorize transfer of a
-private revision. The public repository currently has no root v3.50 glossary;
-any private glossary remains a subordinate alignment surface.
+Synchronization status, 2026-08-26: the current Layer-1 operator packages and
+the current reader-first Layer-2 Z method/companion package are reviewed public
+checkpoints and byte-identical with their private counterparts. Public IK, R0
+and IK_rel remain their separately released predecessor states; their newer
+reader-first private revisions do not silently override them. This note states
+only the shared topology and result boundaries supported by the linked public
+methods. Its summaries do not replace those typed contracts or authorize
+transfer of another private revision. The public repository currently has no
+root v3.50 glossary; any private glossary remains a subordinate alignment
+surface.
 
 ### KSODI-Light: Human-Facing Entry Layer
 
@@ -44,11 +46,12 @@ KSODI-Standard-Eval begins with the ordered five-operator tuple
 - `D` — **Observable Clarity**
 - `I` — **Observable Information Impulse**
 
-Each applicable value belongs to one identified event in one declared monadic
-trajectory. Layer 2 represents these Layer-1 operator values as the state
-vector `Z_A(k)`. The current public v3.5 KSODI-Standard-Eval line continues
-from `Z_A(k)` to the Layer-3 monadic interaction-coherence projection
-`IK_A(k)` and ends with `IK_A(k)`.
+Each valid numeric coordinate value belongs to one identified event in one
+declared monadic trajectory. Layer 2 constructs complete `Z_A(k)` only when
+all five aligned Layer-1 result records are numeric; otherwise it preserves a
+typed, non-complete Z assembly record. The current public v3.5
+KSODI-Standard-Eval line continues from `Z_A(k)` to the Layer-3 monadic
+interaction-coherence projection `IK_A(k)` and ends with `IK_A(k)`.
 
 Every successful applicable finite Layer-1 calculation emits the common result
 status `numeric` with a value in `[0,1]`. The retained non-numeric statuses are
@@ -306,8 +309,9 @@ KSODI introduces five descriptive axes:
 	•	I — Observable Information Impulse
 
 Each axis describes one observable property of one source-attributed target
-event under its own declared measurement basis and profile. Together, the five
-applicable values form the monadic state vector `Z_A(k)`.
+event under its own declared measurement basis and profile. Together, five
+aligned numeric coordinate results form the complete monadic state vector
+`Z_A(k)`; non-numeric results remain visible in the typed Z assembly record.
 
 They do not model internal mechanisms, and their coordinate order does not
 impose a causal or serial calculation chain. Their role-relative positions in
@@ -477,7 +481,7 @@ Observation without normative enforcement.
 
 ### 9. Why Five Dimensions Are Legitimate
 
-When all five coordinates are applicable, the ordered tuple
+When all five aligned coordinate results are numeric, the ordered tuple
 
 ```text
 Z_A(k) = (K_A(k), S_A(k), O_A(k), D_A(k), I_A(k))
@@ -488,9 +492,11 @@ defines one point in the normalized five-dimensional coordinate state space
 hypercube representation.
 
 This construction does not imply that the operators are statistically
-independent, mathematically orthogonal or universally sufficient. If one
-coordinate is not applicable, the schema remains five-coordinate, but no
-complete numeric point in `[0,1]^5` exists for that evaluation record.
+independent, mathematically orthogonal or universally sufficient. If any
+coordinate result is non-numeric, the schema remains five-coordinate, but no
+complete numeric point in `[0,1]^5` exists for that evaluation record. The
+exact `not_selected`, `not_observable` or `not_applicable` status remains
+preserved in the typed Z record.
 
 KSODI proposes the five coordinates as a minimal operational basis whose
 sufficiency must be evaluated for the declared observation purpose and
@@ -680,9 +686,10 @@ contract.
 
 Not every application needs every aggregation, Hangar view, drift value or
 second-order drift value. These observations should be selected layer by layer
-for the concrete use case. Many ordinary applications may focus on `Z(t)`,
-`IK`, `IK_rel`, separately released R-family variants and `O0` / reference-space
-visibility. In adversarial or drift-sensitive settings, operator-level drift
+for the concrete use case. Many ordinary applications may focus on
+source-attributed `Z_A(k_A)`, `IK`, `IK_rel`, separately released R-family
+variants and `O0` / reference-space visibility. In adversarial or
+drift-sensitive settings, operator-level drift
 may also identify anomaly candidates requiring interpretation. For example,
 `I` stagnation or bursts may accompany repetition, failure to add information
 relative to the declared baseline or possible adversarial pressure; they do not
