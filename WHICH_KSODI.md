@@ -1,5 +1,12 @@
 # Which KSODI Variant Do I Need?
 
+**This is the second-step scope-selection guide, not the repository's reading
+entry point and not an implementation specification.** If this is your first
+repository page, begin with
+[Start Here — KSODI Reading Order](./START_HERE.md), then return here to choose
+the lowest KSODI scope that answers your question. After choosing, continue to
+the [root README](./README.md) as the third-step public overview.
+
 KSODI exposes three named variants, but they are not three interchangeable or
 independent products:
 
