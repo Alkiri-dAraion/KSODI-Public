@@ -82,12 +82,19 @@ false product names, layers or method boundaries.
 
 ## Read First: Question and Abstraction Map
 
-Do not treat every file as the same kind of authority. Read according to the
-question being answered:
+`AGENTS.md` is the agent preflight, not a competing conceptual entry page.
+After these rules, begin with [START_HERE.md](./START_HERE.md) and use
+[WHICH_KSODI.md](./WHICH_KSODI.md) as the second-step scope guide. Human
+readers then return to the root [README.md](./README.md) for the third-step
+public overview. Agents need only a short README overflight for current version,
+scope and authority before following the relevant method links. Do not treat
+every file as the same kind of authority. After that entry sequence, read
+according to the question being answered:
 
 | Question or level | Read first | Authority boundary |
 | --- | --- | --- |
-| What is KSODI, and what is currently public? | [README.md](./README.md), then [WHICH_KSODI.md](./WHICH_KSODI.md) | public entry, variant selection and release boundary |
+| Where do I begin, and which KSODI scope answers my question? | [START_HERE.md](./START_HERE.md), then [WHICH_KSODI.md](./WHICH_KSODI.md), then the root [README.md](./README.md) | shared picture and reading order, scope selection, then current v3.50 public overview; `AGENTS.md` remains the agent preflight |
+| What is KSODI, and what is currently public? | Briefly check [README.md](./README.md) after the entry sequence | public overview, current version, method continuity and release boundary; not a competing first step |
 | How are the layers and branches arranged? | [KSODI Architecture V350](./KSODI-Architecture_V350.md) | canonical root topology, dependencies and layer order |
 | What is the conceptual reasoning behind the method? | [Conceptual Note](./Conceptual-Note.md) | explanatory semantics; it does not replace file-level definitions |
 | What is released, staged or planned next? | [ROADMAP.md](./ROADMAP.md) | development and publication orientation, not a formula source |
