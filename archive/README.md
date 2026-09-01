@@ -13,6 +13,9 @@ specifications or implementation guidance.
   orientation and method documents;
 - [`method-history-v33/`](./method-history-v33/README.md) — historical v3.3
   Standard-Eval and transition material;
+- [`experimental-poc-v2-v3/`](./experimental-poc-v2-v3/README.md) — historical
+  KSODI/EDEN PoC ideas from the V2/V3 exploration context, retained as
+  development history rather than current v3.50 guidance;
 - [`assets-archive/historical-observer-v342/`](./assets-archive/historical-observer-v342/README.md)
   — historically important Observer images from the v3.3 implementation and
   v3.42-to-v3.5 transition context.

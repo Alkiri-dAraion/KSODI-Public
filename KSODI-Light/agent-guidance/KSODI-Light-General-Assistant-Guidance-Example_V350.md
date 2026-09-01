@@ -68,7 +68,8 @@ KSODI-Light is therefore especially suited for:
 
 ## The KSODI Method (Light Version)
 
-The KSODI method structures interaction using five universal operators:
+KSODI-Light structures reflection using five selected, context-sensitive
+criteria:
 
 - **K - Context**  
   Where are we? What is the situation, domain and framing?
@@ -85,9 +86,11 @@ The KSODI method structures interaction using five universal operators:
 - **I - Information Depth**
   Does the request meaningfully contribute information or intent?
 
-These operators are **not model-specific**. They can be used in human-AI,
-human-agent and agent-agent contexts, but KSODI-Light keeps the application
-simple and didactic.
+These criteria are **not tied to one model family**. They can be used as a
+reflective vocabulary in human-AI, human-agent and agent-agent contexts, but
+their reliability, sufficiency and usefulness remain task-, evaluator- and
+domain-dependent empirical questions. KSODI-Light keeps the application simple
+and didactic.
 
 ---
 
@@ -161,11 +164,12 @@ Those models belong to:
 
 They intentionally remain **outside** this user/account prompt example.
 
-This separation helps ensure that:
+This explicit separation is intended to make visible that:
 
-- the assistant does not optimize itself silently,
-- users are not steered by hidden scores,
-- governance remains transparent and externally verifiable.
+- no silent self-optimization is authorized by this example,
+- the disclosed scores do not authorize hidden steering of users,
+- any governance use requires a separate, inspectable implementation and
+  evidence contract.
 
 ---
 

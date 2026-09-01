@@ -170,8 +170,10 @@ However, its ethical use in such contexts requires:
 * transparent governance structures,
 * and documented intervention thresholds.
 
-KSODI may support **safety and stabilization**,
-but must never be used to legitimize autonomous harm.
+Whether KSODI observations can support a particular **safety or stabilization**
+process is an application-specific research and validation question. A KSODI
+value is not itself a safety finding, certification or permission to act, and
+KSODI must never be used to legitimize autonomous harm.
 
 ---
 

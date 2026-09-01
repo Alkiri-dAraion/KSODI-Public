@@ -67,6 +67,11 @@ method. Unmigrated active private or implementation-example paths must be
 treated as controlled naming follow-up, not silently normalized during an
 unrelated edit.
 
+Historical KSODI/EDEN PoC ideas from the V2/V3 exploration context are retained
+under `archive/experimental-poc-v2-v3/`. They are development history, not
+current v3.50 method, implementation, validation, compliance or deployment
+guidance.
+
 File and folder names are part of the repository's semantic reading guidance.
 Where useful, a current canonical path should expose the KSODI scope, layer,
 component or operator, semantic role and version before a reader opens the

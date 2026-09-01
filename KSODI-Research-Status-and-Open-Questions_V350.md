@@ -331,6 +331,20 @@ No Observer value, gate, trend, aggregate, corridor or alarm selects an action.
 Any later intervention requires a separately declared human or Controller
 decision, independent authority, policy and audit trail.
 
+### Outcome and optimization boundary
+
+KSODI observations are not independent outcome measures of truth, learning,
+task success, safety, intention or human value. Those outcomes require their
+own definitions and evidence. A correlation between a KSODI trace and an
+external outcome does not by itself establish causality or generalize across
+profiles, evaluators, models, carriers or domains.
+
+If a KSODI score, gate, corridor or alarm is later used as an optimization
+target or Controller input, the observation setting changes. Strategic
+adaptation to visible metrics, intervention endogeneity, proxy optimization
+and Goodhart-type failure modes then require separate study, governance and
+audit. The current v3.50 Observer definitions do not validate such use.
+
 ## 10. Cross-layer empirical programme
 
 The following work remains necessary before claims stronger than formal method

@@ -120,4 +120,4 @@ $4{,}1 \,|\, 3{,}5 \,|\, 2{,}2 \,|\, 2{,}1 \,|\, 1{,}6$
 Abteilung A befindet sich auf EDEN-Stufe 3 (Hain).  
 Stärken: Objektivität (Ø 1,8)  
 Potenzial: Struktur (Ø 2,6)  
-Empfehlung: Schulungsmaßnahme & Re-Evaluation nach 8 Wochen  
+Empfehlung: Schulungsmaßnahme & Re-Evaluation nach 8 Wochen
