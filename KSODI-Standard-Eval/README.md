@@ -12,7 +12,7 @@ the root
 The public 3.3 files and the later v3.42 working / implementation line are
 historical material. They are not recommended as current implementation
 references. They contain or reveal known structural issues and are superseded
-by the reviewed v350 line.
+by the current public v3.50 line.
 
 ## Role of Standard-Eval
 
@@ -55,14 +55,11 @@ Action-adjacent material such as controlled intervention, policy-defined
 responses or controller boundaries belongs under KSODI-Full, not under
 Standard-Eval.
 
-## v350 Public Release
+## Current v3.50 Public Scope
 
-The reviewed v350 line is being released into this public repository step by
-step after private review.
-
-As of 2026-08-26, the public v350 Standard-Eval release contains all five
-current Layer-1 method/companion packages and the current reader-first Layer-2
-Z and Layer-3 monadic IK method/companion packages.
+The public v3.50 Standard-Eval scope contains all five current Layer-1
+method/companion packages and the current reader-first Layer-2 Z and Layer-3
+monadic IK method/companion packages.
 
 - [`KSODI-Standard-Eval-Release_V350.md`](./KSODI-Standard-Eval-Release_V350.md)
   records the active v3.5 release boundary.

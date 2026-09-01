@@ -8,7 +8,7 @@ versioned S profile. Source-local movement and aggregation remain monadic.
 
 Implementation companion:
 [`KSODI_Operator-S_Implementation-Companion_V350.md`](./KSODI_Operator-S_Implementation-Companion_V350.md)
-(public conditional guidance; method/companion alignment reviewed 2026-08-25).
+(public conditional guidance subordinate to this method definition).
 
 ## 0. What Operator S is and what it does
 
@@ -844,9 +844,6 @@ configuration belong in:
 
 - Public implementation companion:
   [`KSODI_Operator-S_Implementation-Companion_V350.md`](./KSODI_Operator-S_Implementation-Companion_V350.md)
-- Alignment status: method and companion review passed on 2026-08-25;
-  alignment with Patrick's current Observer and KSODI-Light implementation
-  remains a separate implementation-side task.
 
 The companion may operationalize S but must not redefine its semantic question,
 measurement basis, applicability, source identity, static formula or layer

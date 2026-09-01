@@ -98,15 +98,16 @@ coherence or recovery feedback meaningfully if the earlier K/S/O/D/I operator
 inputs have been defined with sufficient care.
 
 The revised KSODI v3.5 line provides a clearer public method boundary for this
-operator filling in a chatbot scenario. The reviewed public guidance is
+operator filling in a chatbot scenario. The applicable public guidance is
 available under KSODI-Standard-Eval and KSODI-Full.
 
 The corresponding full implementation work, including microservices per
 operator and Kubernetes-based infrastructure, is currently maintained outside
 this public repository and is not yet public.
 
-This implementation line is being reviewed against the v3.5 method boundary.
-The carrier architecture is not discarded. The v3.5 transition makes
+Any comparison of that implementation line with v3.5 requires a separately
+declared baseline and scope. The carrier architecture is not discarded merely
+because the method boundary changes. The v3.5 transition makes
 `Z_A(k)` explicit, separates monadic `IK_A(k)` from the R-family because
 coherence is not resonance, introduces `R_0` as the relational gate, and
 treats source / reference-space visibility more carefully than the v3.3 to

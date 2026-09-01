@@ -457,8 +457,10 @@ development timelines aligned with these reader boundaries:
   universal human-versus-machine laws and not the fixed coordinate order.
 - Relational research names and interaction-level patterns do not merge model
   contexts, source identities or monadic trajectories.
-- The planned implementation alignment uses Anne's fork and method-alignment
-  branch as a contribution path. Patrick controls implementation-side merge,
-  software release and licence; Anne controls released method definitions.
-- Record the late-July/August 2026 entity and abstraction repair loop before the
-  formal GitHub Release, DOI / Zenodo package and subsequent paper publication.
+- Any future method-to-implementation comparison must be separately scoped.
+  Patrick controls implementation-side merge, software release and licence;
+  Anne controls released method definitions.
+- Never expose internal team review or audit dates, calendars, attendance,
+  cadence or reconstructable work-session sequences. Public Release, tag and
+  DOI dates and separately authorized historical method milestones are
+  distinct publication facts.

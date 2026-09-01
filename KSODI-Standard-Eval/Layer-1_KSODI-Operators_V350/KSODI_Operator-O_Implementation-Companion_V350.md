@@ -639,13 +639,11 @@ target, steer the attributed source or trigger action by itself. Any future
 Controller requires separate governance corridors, feedback policy, authority
 and audit trail.
 
-## 11. Current Implementation Alignment Status
+## 11. External Implementation Comparison Boundary
 
-Patrick's current Observer / KSODI-Light implementation is expected to retain
-older v3.3 assumptions. This expectation is not verified software evidence.
-
-Before implementation alignment is claimed, compare the selected code baseline
-against:
+No external implementation is presumed to match this companion. Before
+implementation alignment is claimed, declare and compare the selected code
+baseline against:
 
 - stable/provisional source identity;
 - canonical `n`, `k_A/k_B` and `j` indices;

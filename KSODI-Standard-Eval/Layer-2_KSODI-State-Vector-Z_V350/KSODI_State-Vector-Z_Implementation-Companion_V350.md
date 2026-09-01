@@ -30,8 +30,8 @@ serialization, migration and display behavior. It must not:
 - infer relational pairing from timestamps or conversation membership;
 - define IK, R0 or a relational formula.
 
-Implementation alignment with Patrick's current Observer / KSODI-Light stack
-is pending and remains a separate review.
+Any comparison with an external implementation requires its own declared
+baseline and scope and must preserve the method/implementation boundary.
 
 ## 1. Canonical identity mapping
 

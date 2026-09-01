@@ -611,5 +611,5 @@ configuration, test fixtures and Patrick implementation alignment belong in
 The implementation companion may operationalize this gate but must not
 redefine its ordered decision, need states, controlled reasons, non-empty
 reference requirement or N/A-to-zero prohibition. This gate is publicly
-released only as part of the jointly reviewed Operator-O package and remains
-subordinate to the canonical method.
+released as part of the Operator-O package and remains subordinate to the
+canonical method.

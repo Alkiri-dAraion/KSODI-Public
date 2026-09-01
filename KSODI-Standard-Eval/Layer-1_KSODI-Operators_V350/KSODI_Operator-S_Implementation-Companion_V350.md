@@ -23,9 +23,9 @@ This companion may select concrete carriers, detectors, component masks,
 weights and storage mappings. It must not make marker count, document length,
 one software stack or one language profile part of the universal S definition.
 
-Implementation alignment with Patrick's current Observer / KSODI-Light stack
-is pending. Any mismatch remains visible until that implementation has been
-reviewed separately.
+Any comparison with an external implementation requires its own declared
+baseline and scope. A mismatch must remain visible rather than being silently
+resolved in favor of either the implementation or this conditional companion.
 
 ## 1. Identity and Index Mapping
 

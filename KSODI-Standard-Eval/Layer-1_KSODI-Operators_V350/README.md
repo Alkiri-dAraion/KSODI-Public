@@ -99,11 +99,10 @@ weights or calculation is a processing failure and produces no valid operator
 result. None of these conditions may be encoded as numeric zero merely to fill
 a coordinate.
 
-This is the current Layer-1 output contract. The reader-first Layer-2 Z method
-and its conditional implementation companion were separately reviewed and
-released on 2026-08-26; they preserve this four-state result family beside the
-derived numeric-availability mask. Their versioned method file remains
-authoritative for the Z construction.
+This is the current Layer-1 output contract. The separately published
+reader-first Layer-2 Z method and its conditional implementation companion
+preserve this four-state result family beside the derived numeric-availability
+mask. Their versioned method file remains authoritative for the Z construction.
 
 ## Reader path inside each operator
 

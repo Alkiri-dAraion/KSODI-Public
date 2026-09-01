@@ -169,13 +169,12 @@ including a
 [human-chatbot Observer setting](./implementation-examples/chatbot-human-observer_v350/README.md).
 These examples explain transfer logic but are not production systems.
 
-The next implementation-alignment phase is planned in
-[Patrick Barthelmäs's GitHub context](https://github.com/blackbaddl13). Anne
-will prepare method-alignment contributions with ELKIM through a fork and
-review branch; Patrick retains implementation-side merge, release and
-software-licence control. The implementation repository and its licence will
-be authoritative for executable code; this repository remains authoritative
-for the released method.
+Any future method-to-implementation comparison with
+[Patrick Barthelmäs's GitHub context](https://github.com/blackbaddl13) must be
+separately scoped. Patrick retains implementation-side merge, release and
+software-licence control. The implementation repository and its licence are
+authoritative for executable code; this repository remains authoritative for
+the released method.
 
 ## Minimal Reading Path
 

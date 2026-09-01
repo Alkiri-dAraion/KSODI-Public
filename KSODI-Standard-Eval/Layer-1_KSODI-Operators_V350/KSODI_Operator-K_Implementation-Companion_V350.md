@@ -18,9 +18,9 @@ This companion may map those semantics to prompts, retrieval, files, tools,
 session state, logs or other concrete carriers. It must not make one LLM stack,
 prompt taxonomy, storage field or detector family part of universal K.
 
-Implementation alignment with Patrick's current Observer / KSODI-Light stack
-is pending. A repository-visible object must not be treated as model-visible
-context without evidence from that implementation.
+A repository-visible object must not be treated as model-visible context
+without evidence from the implementation being evaluated. Any comparison with
+an external implementation requires its own declared baseline and scope.
 
 ## 1. Identity, Index and Context-Object Mapping
 

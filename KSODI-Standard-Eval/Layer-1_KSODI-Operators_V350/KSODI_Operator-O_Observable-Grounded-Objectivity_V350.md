@@ -11,8 +11,7 @@ Semantic applicability companion:
 
 Implementation companion:
 [`KSODI_Operator-O_Implementation-Companion_V350.md`](./KSODI_Operator-O_Implementation-Companion_V350.md)
-(public conditional guidance; method/implementation alignment reviewed
-2026-08-25).
+(public conditional guidance subordinate to this method definition).
 
 ## 0. What Operator O is and what it does
 
@@ -737,8 +736,6 @@ belong in the adjacent implementation companion.
 - Public implementation companion:
   [Operator O Implementation Companion](./KSODI_Operator-O_Implementation-Companion_V350.md)
   (conditional and subordinate).
-- Alignment: method, gate and implementation review passed with the typed
-  Layer-1-to-Z and complete-Z-to-IK downstream contract on 2026-08-25.
 
 The companions may operationalize or gate O but must not redefine its question,
 basis, source identity, applicability, static profile rule or relational

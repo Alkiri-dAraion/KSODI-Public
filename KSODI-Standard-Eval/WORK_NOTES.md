@@ -14,12 +14,12 @@ KSODI Standard-Eval contains:
 Standard-Eval ends at monadic IK. R0, IK_rel and the R-family belong to
 KSODI-Full.
 
-## Current release checkpoint
+## Current public scope
 
-The current five Layer-1 method/companion packages are released. O additionally
-includes the Source-Need Gate.
+The current five Layer-1 method/companion packages are publicly available. O
+additionally includes the Source-Need Gate.
 
-The reader-first Layer-2 package released on 2026-08-26 contains:
+The reader-first Layer-2 package contains:
 
 - `KSODI_State-Vector-Z_V350.md` — authoritative carrier-neutral method;
 - `KSODI_State-Vector-Z_Implementation-Companion_V350.md` — subordinate
@@ -33,7 +33,7 @@ failures produce no valid coordinate result and are never converted into a
 fifth status or numeric zero. Complete canonical `Z_A(k_A) in [0,1]^5` exists
 only when all five aligned coordinate records are numeric.
 
-The reader-first Layer-3 package released on 2026-08-26 contains:
+The reader-first Layer-3 package contains:
 
 - `KSODI_Monadic-Interaction-Coherence-IK_V350.md` — authoritative monadic
   projection method;
@@ -54,5 +54,6 @@ conditional implementation guidance. Neither a companion nor an Observer
 profile may invent evidence, impute unavailable coordinates, merge source
 trajectories or assign decision, steering or intervention authority.
 
-This checkpoint creates no GitHub tag, GitHub Release, DOI or Zenodo artifact
-and does not authorize a later private revision.
+Publication of these files does not by itself create a GitHub tag, GitHub
+Release, DOI or Zenodo artifact and does not authorize a later private
+revision.

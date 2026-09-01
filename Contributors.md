@@ -39,7 +39,7 @@ were explored through dialogue with LLMs, checked against Anne's practical
 geometric, spatial and interactional understanding, and then refined through
 human reflection, substantial mathematical-technical checking by Heiko,
 implementation feedback and repository review. This repository publishes the
-current reviewed reference structure and its documented limits; it is not a
+current public reference structure and its documented limits; it is not a
 completed mathematical proof of the method.
 
 Heiko Folkerts is named together with Anne in the repository-level citation and

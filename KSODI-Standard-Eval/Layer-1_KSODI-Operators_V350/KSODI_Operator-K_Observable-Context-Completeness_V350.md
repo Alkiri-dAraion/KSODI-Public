@@ -9,7 +9,7 @@ objects and sources; that multiplicity does not make K dyadic or n-adic.
 
 Implementation companion:
 [`KSODI_Operator-K_Implementation-Companion_V350.md`](./KSODI_Operator-K_Implementation-Companion_V350.md)
-(public conditional guidance; method/companion alignment reviewed 2026-08-25).
+(public conditional guidance subordinate to this method definition).
 
 ## 0. What Operator K is and what it does
 
@@ -822,9 +822,6 @@ weights, data flow and architecture configuration belong in:
 
 - Public implementation companion:
   [`KSODI_Operator-K_Implementation-Companion_V350.md`](./KSODI_Operator-K_Implementation-Companion_V350.md)
-- Alignment status: method and companion review passed on 2026-08-25;
-  alignment with Patrick's current Observer and KSODI-Light implementation
-  remains a separate implementation-side task.
 
 The companion may operationalize K but must not redefine its semantic question,
 availability relation, measurement basis, applicability, source identity,

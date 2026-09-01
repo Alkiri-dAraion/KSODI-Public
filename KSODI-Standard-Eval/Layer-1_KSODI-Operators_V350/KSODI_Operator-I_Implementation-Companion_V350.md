@@ -7,7 +7,7 @@ Canonical method: [`KSODI_Operator-I_Observable-Information-Impulse_V350.md`](./
 
 ## 0. Authority and Alignment Boundary
 
-This file operationalizes the reviewed method. It may define storage mappings, retrieval proxies, data flow, pseudocode, configuration and tests. It must not redefine Operator I's semantic question, measurement basis, applicability, static formula, source identity or layer boundary.
+This file operationalizes the adjacent canonical method. It may define storage mappings, retrieval proxies, data flow, pseudocode, configuration and tests. It must not redefine Operator I's semantic question, measurement basis, applicability, static formula, source identity or layer boundary.
 
 The mappings below illustrate a conversation- and retrieval-oriented profile.
 They do not make Human–Chatbot interaction, text, embeddings or retrieval the

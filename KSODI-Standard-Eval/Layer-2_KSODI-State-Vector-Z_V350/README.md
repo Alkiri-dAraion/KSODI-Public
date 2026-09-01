@@ -62,7 +62,7 @@ Cross-layer implementation identity and storage are controlled by:
 ## Release boundary
 
 This release covers the Layer-2 Z method, its conditional implementation
-companion and this adjacent README. The current Layer-3 IK package was reviewed
-and released separately on 2026-08-26; that later release does not alter this
-Z contract. Neither release authorizes downstream software alignment or
+companion and this adjacent README. The current Layer-3 IK package is published
+separately; its publication does not alter this Z contract. Neither package
+authorizes downstream software alignment or
 creates a GitHub tag, GitHub Release, DOI or Zenodo artifact.

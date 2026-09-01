@@ -22,11 +22,10 @@ We thank Patrick Barthelmäs for substantial technical implementation and
 infrastructure work around KSODI, including the
 [KSODI-Light-Agent PoC](https://github.com/blackbaddl13/r-KSODI-POC), the first
 officially referenced implementation line and important R-family reflection
-around the separation of resonance and interaction coherence. The next
-implementation-alignment phase is planned in Patrick's software repository:
-Anne will prepare method-alignment contributions with ELKIM through a fork and
-review branch; Patrick retains implementation-side merge, release and licence
-control. Detailed contribution roles are described in
+around the separation of resonance and interaction coherence. Any future
+method-to-implementation comparison must be separately scoped. Patrick retains
+implementation-side merge, release and licence control. Detailed contribution
+roles are described in
 [Contributors.md](./Contributors.md).
 
 We also thank Benjamin Gage-Prater for one early private controlled RAG check
