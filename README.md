@@ -150,7 +150,10 @@ infrastructure remain pending. Layer 8 remains a staged research direction
 without a defined architecture.
 
 AI agents and automated tools should read [AGENTS.md](./AGENTS.md) before
-summarizing or citing this repository.
+summarizing or citing this repository. For the explanatory semantics and the
+bounded Hangar image, continue with the [Conceptual Note](./Conceptual-Note.md),
+the [Hangar Origin and Analogy Companion V350](./KSODI-Hangar_Origin-and-Analogy-Companion_V350.md)
+and the formally governing [KSODI Hangar V350](./KSODI-Hangar_V350.md).
 
 ## Why KSODI Exists
 
@@ -686,7 +689,11 @@ reference-space visibility is treated more carefully. Older outputs,
 dashboards or diagrams should therefore be read as historical implementation
 context rather than as current v3.5 method specifications.
 
-This work is ongoing and empirical validation is still in progress.
+This work is ongoing and empirical validation is still in progress. The
+layer-by-layer distinction between defined mathematics, common mathematical
+forms, KSODI-specific choices, open alternatives, validation needs and
+non-claims is recorded in
+[KSODI Research Status and Open Questions V350](./KSODI-Research-Status-and-Open-Questions_V350.md).
 
 ## Roadmap
 

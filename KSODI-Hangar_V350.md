@@ -44,6 +44,12 @@ one entity or one trajectory. The Hangar therefore gathers comparable
 observation objects; it does not merge their identities. What began as a
 spelling error became a stable method term because this boundary proved useful.
 
+The longer origin image, aircraft/tool analogy and its methodological limits
+are documented separately in the
+[KSODI Hangar Origin and Analogy Companion V350](./KSODI-Hangar_Origin-and-Analogy-Companion_V350.md).
+That companion is explanatory; this file and the versioned layer methods retain
+formal authority.
+
 The metaphor has a strict boundary.
 
 An entity may internally process ideas, memories, intentions or impressions in

@@ -25,6 +25,13 @@ is not a final architecture specification.
 
 It is a transparent statement of direction.
 
+The current layer-by-layer research boundary is maintained separately in
+[KSODI Research Status and Open Questions V350](./KSODI-Research-Status-and-Open-Questions_V350.md).
+That note distinguishes what v3.50 defines from common mathematical forms,
+KSODI-specific choices, empirical validation needs, open alternatives and
+explicit non-claims. This roadmap does not convert those open questions into
+completed evidence.
+
 ## Abstraction and dependency boundaries
 
 The roadmap separates five levels that must not be collapsed:
@@ -101,6 +108,13 @@ KSODI is not intended to replace:
   others.
 
 Instead, KSODI is being explored as a complementary layer.
+
+The project has not yet completed a systematic, source-based comparison to
+determine which established, conventional or formally standardized methods
+could support, accompany, test or constrain each KSODI layer and application
+profile. That mapping remains an open methodological research task. Apparent
+similarity alone does not establish compatibility, historical derivation,
+validation or a recommended integration.
 
 Existing platforms may tell an organization:
 
