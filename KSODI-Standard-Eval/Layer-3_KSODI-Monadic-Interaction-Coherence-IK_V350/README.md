@@ -37,6 +37,10 @@ Shared Sigma / Hangar method note:
 
 - [`../../KSODI-Hangar_V350.md`](../../KSODI-Hangar_V350.md)
 
+No IK value, ranking, corridor result, dynamic or Hangar view selects or
+authorizes steering or intervention. Any later action requires a separately
+governed Controller or human decision outside the IK calculation.
+
 This release covers the Layer-3 IK method, its conditional implementation
 companion and this adjacent README. It does not authorize software merge,
 Patrick alignment, a GitHub tag, GitHub Release, DOI or Zenodo artifact.

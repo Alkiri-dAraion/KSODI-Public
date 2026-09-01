@@ -461,7 +461,9 @@ not by itself mean improvement, deterioration, causality, intent, instability
 or relational coupling.
 
 `Delta2 Z` describes change in movement and may support early-warning review.
-It is not an evaluation score.
+It is an Observer-side review signal, not an evaluation score, action
+selection or intervention authority. Any later response requires a separately
+governed Controller or human decision outside the Z calculation.
 
 ## 6. Sigma, Sigma(Hangar) and coverage
 

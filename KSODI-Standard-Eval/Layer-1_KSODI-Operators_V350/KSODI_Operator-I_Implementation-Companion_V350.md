@@ -17,6 +17,12 @@ identities, applicability states and provenance discipline.
 
 If this companion and the canonical operator disagree, the disagreement must remain visible and the canonical method controls until joint review resolves it.
 
+This companion may evaluate, store and report I results and derived
+diagnostics. It must not select an intervention, steer an observed source or
+feed its output back into its own measurement basis. Any later action or
+feedback path requires a separately declared Controller or human decision,
+independent authority, policy and audit trail.
+
 ## 1. Index and Record Discipline
 
 ```text

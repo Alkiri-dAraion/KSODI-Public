@@ -10,3 +10,6 @@ validation on the restructured infrastructure remain pending.
 It is not the old `R_takt`, `R_freq`, voice overlay or phase vocabulary.
 
 Potential views include `Delta R_pace`, `Delta2 R_pace`, `R_paceSigma` and `R_paceSigma(Hangar)`, where the use case requires them.
+
+These names identify possible future Observer views only. They activate
+neither a public calculation nor any authority to control, steer or intervene.

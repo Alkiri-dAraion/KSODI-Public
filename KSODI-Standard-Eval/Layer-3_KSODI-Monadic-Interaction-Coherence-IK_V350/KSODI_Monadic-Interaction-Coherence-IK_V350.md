@@ -432,6 +432,10 @@ may encode declared priorities, and a changed profile may change rankings
 without any change in observations. Report the profile and avoid
 cross-group or cross-domain interpretation without validation.
 
+No IK value, ranking, corridor result, dynamic or Hangar view selects or
+authorizes steering or intervention. Any later action requires a separately
+governed Controller or human decision outside the IK calculation.
+
 IK, reduced projections, dynamics, windows and Hangar views may remain
 identifiable or linkable even without raw text. Retain the minimum data needed
 for the declared purpose; protect source IDs, trajectory maps and provenance;

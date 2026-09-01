@@ -527,7 +527,15 @@ not_applicable != 0
 
 ## 5. Edge Cases, Privacy and Retention
 
-Repeated low-I events remain attributable and may form contact-attempt, attack or anomaly patterns in sequence, window or Hangar views. Empty and invisible bases remain distinguishable typed non-numeric states; zero denominators and inapplicable representations are not low values, while invalid profiles or calculations remain processing failures.
+Repeated low-I events remain attributable and may support a contact-attempt,
+attack or anomaly hypothesis in sequence, window or Hangar views. These are
+Observer-side hypotheses only. No I value or derived pattern establishes
+intent or attack attribution, selects an intervention or authorizes action.
+Any later response requires a separately governed Controller or human decision
+outside the Operator-I calculation. Empty and invisible bases remain
+distinguishable typed non-numeric states; zero denominators and inapplicable
+representations are not low values, while invalid profiles or calculations
+remain processing failures.
 
 ### 5.1 Privacy and Retention Boundary
 

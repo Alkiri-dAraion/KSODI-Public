@@ -51,6 +51,10 @@ typed records used by richer machine-readable trajectory, distribution and
 point-cloud views. Presentation complexity does not create another state-space
 branch and must not erase identity, status, profile or provenance.
 
+No Z state, status transition, drift measure or Hangar view selects or
+authorizes an intervention. Any later action requires a separately governed
+Controller or human decision outside the Z calculation.
+
 The shared Hangar method note is maintained at the repository root:
 
 - [KSODI Hangar](../../KSODI-Hangar_V350.md)
