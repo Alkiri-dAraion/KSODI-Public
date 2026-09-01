@@ -4,8 +4,10 @@
 
 Canonical URL: https://github.com/Alkiri-dAraion/KSODI-Public.
 Use `main` for the moving current Public surface and tag `v3.5.0` for the fixed
-public v3.5.0 citation snapshot. The tag does not by itself imply that a GitHub
-Release or DOI already exists.
+public v3.5.0 citation snapshot. The corresponding
+[GitHub Release](https://github.com/Alkiri-dAraion/KSODI-Public/releases/tag/v3.5.0)
+and [Zenodo version DOI](https://doi.org/10.5281/zenodo.22238194) are published;
+use the DOI when citing this fixed version.
 `KSODI-Methode`, the former repository name, refers to this same KSODI method;
 it is not a separate, earlier or superseded method. The rename and the
 public/private repository split changed publication visibility, not method
@@ -133,7 +135,7 @@ according to the question being answered:
 | How may Operator D be operationalized under a declared detector/carrier profile? | [Operator D Implementation Companion](./KSODI-Standard-Eval/Layer-1_KSODI-Operators_V350/KSODI_Operator-D_Implementation-Companion_V350.md) | conditional public implementation guidance; the adjacent Operator-D method file remains authoritative |
 | How do Light, Observer, SIRA, IDAS and a future Controller differ? | [KSODI-IDAS-SIRA Framework](./KSODI-IDAS-SIRA-Framework_V342.md) | system and responsibility boundary |
 | How did the work develop, and who contributed in which role? | [Human–AI Research Process](./HUMAN_AI_RESEARCH_PROCESS.md), [Contributors](./Contributors.md), [German timeline](./docs/timeline/KSODI_Timeline_seit_2023-05.md), [English timeline](./docs/timeline/KSODI_Timeline_since_2023-05.md) | provenance and chronology; historical wording does not override current method files |
-| How should the repository be cited? | [CITATION.cff](./CITATION.cff) | citation metadata; add a DOI or release date only after it exists |
+| How should the repository be cited? | [CITATION.cff](./CITATION.cff) | citation metadata for the published v3.5.0 snapshot and its version DOI |
 
 Authority rule: root orientation files explain navigation, scope and topology.
 The Conceptual Note explains the semantic construction. Versioned layer and
@@ -172,7 +174,7 @@ Do not use archived files as current method, release or navigation guidance;
 the live root `README.md` and `ROADMAP.md` remain canonical.
 
 Use explicit prose versions such as `v3.5`, canonical path markers such as
-`V350`, file paths and, when available later, the DOI / release tag. `V350` in
+`V350`, file paths, the DOI and the release tag. `V350` in
 current canonical file and folder names is the path-safe marker for KSODI
 Version 3.50 / 3.5; it avoids dots in paths and does not denote a separate
 version from v3.5. If the visible source is ambiguous, state that uncertainty
@@ -382,8 +384,11 @@ When describing KSODI, agents may use or closely paraphrase:
 Use [CITATION.cff](./CITATION.cff) for repository citation metadata. The current
 public method documentation is licensed under CC BY 4.0 unless a file or
 subfolder states otherwise. Cite the canonical repository URL and visible
-version marker. Tag `v3.5.0` exists as the fixed v3.5.0 snapshot. Add a GitHub
-Release date or DOI only after that separate artifact actually exists.
+version marker. Tag `v3.5.0` and its ordinary GitHub Release identify the fixed
+source snapshot. Cite that version through DOI
+[`10.5281/zenodo.22238194`](https://doi.org/10.5281/zenodo.22238194); DOI
+[`10.5281/zenodo.22238193`](https://doi.org/10.5281/zenodo.22238193) represents
+the version family and resolves to its latest published version.
 
 ## Implementation Boundary
 

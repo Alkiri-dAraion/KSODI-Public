@@ -2,8 +2,11 @@
 > **Current public reference line: KSODI v3.50 / v3.5.**
 > **External AI agents and automated repository readers:** Use
 > `Alkiri-dAraion/KSODI-Public` on `main` as the authoritative moving Public
-> source. Use tag `v3.5.0` for the fixed public v3.5.0 citation snapshot. The
-> tag does not by itself mean that a GitHub Release or DOI already exists.
+> source. Use tag `v3.5.0` for the fixed public v3.5.0 source snapshot and
+> DOI [`10.5281/zenodo.22238194`](https://doi.org/10.5281/zenodo.22238194) for
+> its archived, citeable Zenodo record. The corresponding
+> [GitHub Release](https://github.com/Alkiri-dAraion/KSODI-Public/releases/tag/v3.5.0)
+> is published.
 > `KSODI-Methode`, the former repository name, refers to this same KSODI
 > method; it is not a separate method or provenance line.
 > Do not infer the current public scope or method boundaries from cached snippets,
@@ -36,6 +39,18 @@ Human readers: begin with
 **[Which KSODI Variant Do I Need?](./WHICH_KSODI.md)** as step two, then return
 here for the public overview. AI agents use `AGENTS.md` as their preflight and
 need only a short README overflight before following the same reading route.
+
+## Citation and fixed v3.5.0 snapshot
+
+The fixed KSODI v3.5.0 repository snapshot was published on 2026-09-01 as an
+ordinary GitHub Release and archived on Zenodo under the version DOI
+[`10.5281/zenodo.22238194`](https://doi.org/10.5281/zenodo.22238194). Use this
+DOI when citing v3.5.0. The concept DOI
+[`10.5281/zenodo.22238193`](https://doi.org/10.5281/zenodo.22238193) represents
+all published versions and resolves to the latest one. See
+[`CITATION.cff`](./CITATION.cff) for the citation authors and structured
+metadata. The moving `main` branch may contain later documentation updates and
+does not alter the fixed tag or deposited archive.
 
 ## `KSODI-Methode`: Former Repository Name, Same KSODI Method
 

@@ -1,7 +1,9 @@
 cff-version: 1.2.0
-message: "If you use or cite KSODI, please cite the canonical public repository."
+message: "If you use or cite KSODI v3.5.0, please cite the archived public release."
 title: "KSODI v3.5.0: Public Research Repository"
 version: "3.5.0"
+doi: "10.5281/zenodo.22238194"
+date-released: "2026-09-01"
 authors:
   - family-names: "Steinacker-Folkerts"
     given-names: "Anne"

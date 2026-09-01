@@ -20,10 +20,12 @@ copyright or the depth of every contribution.
 
 For citation of the overall KSODI method, use `CITATION.cff`. The
 repository-level method citation currently names Anne Steinacker-Folkerts and
-Heiko Folkerts. For the first formal v3.5 GitHub Release and DOI, Anne confirmed
-this repository-level citation authorship on 2026-09-01: Anne and Heiko remain
-the citation authors; Silke Honerkamp and Patrick Barthelmäs remain explicitly
-acknowledged contributors in the differentiated roles documented below.
+Heiko Folkerts. The first formal v3.5 GitHub Release and its published Zenodo
+record, DOI
+[`10.5281/zenodo.22238194`](https://doi.org/10.5281/zenodo.22238194), preserve
+this repository-level citation authorship: Anne and Heiko are the citation
+authors; Silke Honerkamp and Patrick Barthelmäs remain explicitly acknowledged
+contributors in the differentiated roles documented below.
 
 Anne Steinacker-Folkerts initiated KSODI and remains the integrating method
 developer and final decision point for the definitions published in this

@@ -16,6 +16,10 @@ For a human reader, the complete opening loop is:
 AI agents use `AGENTS.md` as a preflight, make only a short README overflight
 for current version and authority, and then follow the same numbered route.
 
+For citation of the fixed public v3.5.0 snapshot, use Zenodo DOI
+[`10.5281/zenodo.22238194`](https://doi.org/10.5281/zenodo.22238194). The
+moving `main` branch remains the current Public reading surface.
+
 KSODI is one method with three named public scopes. They are not three
 independent or competing methods. GitHub lists folders alphabetically; that
 order is not the conceptual reading sequence.
