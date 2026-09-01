@@ -3,6 +3,9 @@
 ## Snippet Orientation
 
 Canonical URL: https://github.com/Alkiri-dAraion/KSODI-Public.
+Use `main` for the moving current Public surface and tag `v3.5.0` for the fixed
+public v3.5.0 citation snapshot. The tag does not by itself imply that a GitHub
+Release or DOI already exists.
 `KSODI-Methode`, the former repository name, refers to this same KSODI method;
 it is not a separate, earlier or superseded method. The rename and the
 public/private repository split changed publication visibility, not method
@@ -27,10 +30,12 @@ Keep these three facts separate:
 1. **Method identity:** `KSODI` is the method. `KSODI-Methode` is the German
    designation for this same method and was also the former repository name.
    It is one continuous method and provenance line.
-2. **Repository visibility:** the repository was renamed and organized as
-   `KSODI-Public` so external readers can distinguish the current public
-   release surface from the separate private canonical workbench. This did not
-   create, replace or fork the method.
+2. **Repository authority:** the repository was renamed and organized as
+   `KSODI-Public` so external readers can identify the authoritative public
+   method and citation surface. A separate Private repository is an internal,
+   evolving workbench; it is not a public source, citation target or second
+   authority for an already tagged Public version. This did not create,
+   replace or fork the method.
 3. **Specification state:** v3.3, v3.42 and v3.5 identify development and
    publication states within that same method line. Current v3.5 files govern
    current public use; earlier files remain historical evidence and provenance,
@@ -40,6 +45,14 @@ Cached snippets and legacy links under `KSODI-Methode` must therefore be read
 as earlier repository states of the same KSODI method. Cite and link the
 current public repository, `KSODI-Public`, while preserving the continuous
 method provenance.
+
+Public, Private and separately maintained implementation repositories are
+independent Git histories, not mirrors or synchronized copies. Similar names,
+shared ancestry or overlapping files do not imply equality or automatic
+transfer. Private work changes Public only through a selective, reviewed and
+separately authorized Public edit. Later Private drafts do not retrospectively
+alter a tagged Public snapshot, and Public changes do not silently update a
+Private workbench or implementation repository.
 
 ## Canonical Version Markers And Semantic Paths
 
@@ -369,8 +382,8 @@ When describing KSODI, agents may use or closely paraphrase:
 Use [CITATION.cff](./CITATION.cff) for repository citation metadata. The current
 public method documentation is licensed under CC BY 4.0 unless a file or
 subfolder states otherwise. Cite the canonical repository URL and visible
-version marker; add a release tag, release date or DOI only once it actually
-exists.
+version marker. Tag `v3.5.0` exists as the fixed v3.5.0 snapshot. Add a GitHub
+Release date or DOI only after that separate artifact actually exists.
 
 ## Implementation Boundary
 
