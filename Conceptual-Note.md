@@ -532,12 +532,14 @@ They are descriptive variables.
 
 ⸻
 
-### 10. Theoretical Anchoring
+### 10. Candidate Theoretical Points of Contact
 
-The following traditions provide conceptual points of contact. KSODI does not
-claim to operationalize their established constructs directly unless a
-specific operator profile states and validates such a mapping. The references
-named here require a dedicated source and citation check before DOI release.
+The following traditions and names record provisional questions for later
+source-based comparison. They were used as approximate thought examples during
+method reflection; they are not a checked intellectual lineage, direct
+operationalization, formal derivation, validation or endorsement. Their exact
+relation to KSODI remains open and must be tested in a later theory and
+related-method matrix.
 
 Context (K)
 – Pragmatics (Morris)
@@ -565,7 +567,10 @@ Observable Information Impulse (I)
 – Difference, novelty and update description
 – Redundancy analysis
 
-KSODI aligns with these traditions without replacing them.
+KSODI may prove complementary to parts of these traditions, but no alignment
+or compatibility claim is made here. The team has not completed a systematic
+search for similar methods and does not claim that KSODI is first, unique or
+the only approach to these questions.
 
 ⸻
 
@@ -590,9 +595,10 @@ The reported interaction corpora, communication training and human–animal
 experience explain the inductive origin of the five operators; they do not by
 themselves validate the mathematics or establish general empirical efficacy.
 
-KSODI does not claim exclusivity.
-It does not claim completeness.
-It proposes operational sufficiency.
+KSODI does not claim exclusivity, completeness or demonstrated operational
+sufficiency. It tests a working hypothesis that the five coordinates may form
+a useful bounded operational basis under declared profiles; necessity,
+sufficiency and comparative value remain empirically open.
 
 ⸻
 

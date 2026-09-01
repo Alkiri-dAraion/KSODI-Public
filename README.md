@@ -52,7 +52,10 @@ definitions, file names and scope, use `KSODI-Public` on `main`.
 KSODI is a structured observation method for interaction structures involving
 distinguishable entities, focussing on explainable governance and
 observability.
-It is embedded in the IDAS framework.
+The developing IDAS concept is intended to situate KSODI inside a broader
+framework while keeping Light, Observer, interaction protocol and any future
+Controller distinguishable. IDAS/SIRA is an orientation, not a completed
+implementation architecture or validated operational framework.
 
 → See: [KSODI-IDAS-SIRA framework orientation](./KSODI-IDAS-SIRA-Framework_V342.md)
 
@@ -69,9 +72,9 @@ KSODI-Light labels. It is not an alternative method name, a separate English
 version or an independent provenance line. The method remains `KSODI` in every
 language. See the [KSODI English Translation Table](./KSODI-Light/KSODI-Light-English-Translation-Table_V350.md).
 
-Within IDAS, KSODI separates explainability, observability and advanced
-interaction analysis into clearly defined layers, such as interaction states,
-interaction coherence and relational R-family observations over time. Any
+Within the current IDAS orientation, KSODI contributes the defined observation
+layers for interaction states, interaction coherence and relational R-family
+observations over time. The broader IDAS integration remains conceptual. Any
 intervention, system-level steering or enforcement based on Observer findings
 belongs to a separately governed Controller or human decision layer; Observer
 findings do not trigger action by themselves. This does not exclude disclosed
@@ -132,7 +135,8 @@ stored trajectories, read the
 > thresholds, construct validity and application have not yet undergone
 > independent formal review and application-specific empirical validation.
 > The method should therefore be examined as a substantive research-stage
-> architecture with demonstrated feasibility, practical observations and
+> architecture with historical implementation evidence, reported practical
+> observations and
 > explicitly open validation questions.
 
 ⚠️ **Current public scope — KSODI v3.5:** The current v3.5 line is being
@@ -436,11 +440,11 @@ It is intended to bridge three practical contexts:
 - **Prompt-level agent guidance:** KSODI-Light can be embedded into user,
   account, developer or system-prompt settings as a disclosed reflective
   working agreement with lightweight corridors and fallback behavior.
-- **AI observability and governance:** KSODI-Standard-Eval, KSODI-Full and
-  IDAS/SIRA-level implementations extend the same operator logic into numeric
-  Observer layers for drift, corridor exits and longer-term interaction
-  monitoring. Relational or coupling claims remain subject to their own gates,
-  public availability and declared profiles.
+- **AI observability and governance:** KSODI-Standard-Eval and KSODI-Full
+  extend the same operator logic into numeric Observer layers for drift,
+  corridor exits and longer-term interaction monitoring. A future IDAS/SIRA-
+  level integration remains conceptual. Relational or coupling claims remain
+  subject to their own gates, public availability and declared profiles.
 
 KSODI is not presented as a complete alignment solution. It is a structured way
 to reason about interaction conditions, drift and corridors — and, where the
@@ -489,14 +493,17 @@ This does not mean that KSODI explains all communication or defines its only
 possible observational entry point. When the five-operator schema is selected,
 KSODI can establish a structured baseline from which further methods may be
 applied.
-Shannon-oriented models may examine transmission, channel and noise.
-Watzlawick-oriented views may examine relational and behavioral dynamics.
-Schulz von Thun-oriented views may examine message layers and reception sides.
-Luhmann-oriented views may examine Anschlussfähigkeit, selection and
-autopoietic communication. AI observability may examine traces, logs, tool
-calls, retrievals, vector movement, latency or system health. Explainability
-methods may examine why a model generated, selected, routed or acted in a
-certain way.
+
+During method development, Shannon, Watzlawick, Schulz von Thun and Luhmann
+served as approximate orientation labels for questions about signals,
+communication and relational observation. These are thought examples, not
+checked mappings of their theories onto KSODI and not claims of derivation,
+equivalence, validation or endorsement. A systematic comparison with these and
+other approaches has not yet been completed; no claim is made that KSODI is the
+first, only or uniquely sufficient method. It is being investigated as a
+possible complementary observation layer. AI observability and explainability
+are likewise possible neighbouring fields for later comparison, not methods
+that KSODI claims to replace or subsume.
 
 KSODI does not replace these layers. It frames the baseline question before and
 around them:
@@ -517,13 +524,14 @@ open. A SYN/ACK analogy is functional: technical acknowledgement of receipt is
 not identical with the Z-trajectory comparability gate. `R_0` is not coupling
 and does not mark the beginning of coupling.
 
-This makes KSODI especially relevant for human-AI interaction, agent-agent
-communication, multi-agent systems, embodied agents, therapy assistants,
-organizational AI teammates and safety-sensitive or governance-sensitive
-systems. In such contexts, the issue is not merely whether a system produces
-output. The issue is whether attributable target events remain observable and
-reconstructable under their declared operator-specific conditions and whether
-separately paired trajectories remain applicable for relational observation.
+Possible research and application contexts include human-AI interaction,
+agent-agent communication, multi-agent systems, embodied agents, therapy
+assistants, organizational AI teammates and safety-sensitive or
+governance-sensitive systems. This list is not evidence of suitability in each
+domain. In such contexts, one possible question is whether attributable target
+events remain observable and reconstructable under their declared
+operator-specific conditions and whether separately paired trajectories remain
+applicable for relational observation.
 
 For simple automation, such as a narrowly scoped device that only follows a
 local floor map or reports a small number of fixed states, a full KSODI Observer
@@ -531,10 +539,11 @@ may be unnecessary. The communication surface is small, autonomy is limited and
 conventional telemetry may be sufficient.
 
 For systems that interact with humans, other agents, organizations, policies,
-tools, memories or changing environments, the relevance increases. The more
-autonomous, relational, safety-sensitive or context-dependent the system
-becomes, the more important it becomes to observe whether the communicative
-handshake remains intact.
+tools, memories or changing environments, the potential observation surface
+becomes broader. Greater autonomy, relational dependence, safety sensitivity or
+context dependence may justify asking whether declared reconstruction and
+relational-comparability conditions remain satisfied; this does not itself
+establish that KSODI is necessary or effective for the application.
 
 In observer-supported architectures, KSODI-Light may support local agent
 behavior through clarification, uncertainty visibility, corridor awareness and
@@ -680,8 +689,8 @@ v3.3 method state already explored a Kubernetes / microservice-oriented
 architecture with operator and Observer components. Selected historical
 dashboards and visual outputs are preserved in the
 [Historical Observer Assets](./archive/assets-archive/historical-observer-v342/README.md).
-The v3.5 transition does not discard that carrier architecture. It reworks the
-method layer: source-local `Z_A(k_A)` is made explicit, `IK` is separated from
+The v3.5 transition does not by itself adopt or validate that historical
+carrier architecture. It reworks the method layer: source-local `Z_A(k_A)` is made explicit, `IK` is separated from
 the R-family because coherence is not resonance, `R_0` is introduced as a
 relational gate,
 `IK_rel` is separated from later coupling / resonance layers, and source /
@@ -719,7 +728,8 @@ embedded by agent creators in developer/system-prompt configurations.
 KSODI-Light can support reflection on attributable user input, assistant output
 and the observable interaction condition across a turn. It does not create a
 formal merged shared state. Formal observer-based monitoring belongs to
-KSODI-Standard-Eval, KSODI-Full or IDAS/SIRA-level implementations.
+KSODI-Standard-Eval or KSODI-Full; a possible future IDAS/SIRA-level
+integration remains conceptual.
 → See: [KSODI-Light](./KSODI-Light)
 
 Licence: [Creative Commons Attribution 4.0 International (CC BY 4.0)](./LICENSE.md)
@@ -757,7 +767,9 @@ KSODI focuses on structured observation across five operators:
 - Observable Clarity
 - Observable Information Impulse
 
-The broader architectural framework integrating KSODI is referred to as IDAS (Interactive Dialog, Analytics & Steering).
+The broader conceptual framework intended to situate KSODI is referred to as
+IDAS (Interactive Dialog, Analytics & Steering). Its current orientation is not
+a finished implementation architecture.
 
 For a public development and contribution overview, see:
 [KSODI Development Timeline](./docs/timeline/KSODI_Timeline_since_2023-05.md)

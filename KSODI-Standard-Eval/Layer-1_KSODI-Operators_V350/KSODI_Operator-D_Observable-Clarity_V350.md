@@ -130,10 +130,11 @@ D is not:
   persuasion, intent, attack, error or human worth;
 - a structural-order score or a substitute for S.
 
-Its connection to Shannon-style questions is methodological. A signal must be
-observable and discriminable through a bounded carrier before reconstruction
-can be attempted. D remains a KSODI observation coordinate, not a direct
-Shannon measure.
+The phrase "Shannon-style questions" is used only as an approximate signal-path
+analogy: a signal must be observable and discriminable through a bounded
+carrier before reconstruction can be attempted. It is not a checked
+operationalization or derivation of Shannon's theory. D remains a KSODI
+observation coordinate, not a direct Shannon measure.
 
 ### 2.1 Atomic Evaluation Unit and Identity
 

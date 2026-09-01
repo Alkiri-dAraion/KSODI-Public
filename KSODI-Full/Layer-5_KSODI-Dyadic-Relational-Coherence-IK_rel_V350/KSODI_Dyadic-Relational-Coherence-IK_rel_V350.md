@@ -507,7 +507,9 @@ and one shared linear IK axis, projecting the pair mean equals the mean of the
 two monadic IK values and adds no independent relational information.
 
 KSODI does not decide whether communication constitutes an emergent social
-process in a Luhmannian sense. It states only that the observer does not access
+process in a Luhmannian sense. The name is used here only to delimit a possible
+question for later comparison, not to claim a checked mapping, derivation,
+validation or endorsement. KSODI states only that the observer does not access
 a merged inner state. The method compares visible or reconstructable
 contributions, trajectories, statuses, projections and distributions under
 declared contracts.

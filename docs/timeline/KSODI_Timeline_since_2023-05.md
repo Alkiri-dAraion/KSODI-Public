@@ -28,6 +28,11 @@ Mathematical details, implementation details and ongoing paper content may be
 maintained separately in private repositories, internal drafts or later
 publications.
 
+Named theories and thinkers in this timeline record approximate thought
+examples used during team reflection, not checked derivations, equivalence,
+validation or endorsement. The team has not completed a systematic search for
+similar methods and makes no first, only or uniqueness claim.
+
 People are mostly named by first name in this public timeline. Company,
 employer and platform references are named only where necessary for
 understanding this public repository.

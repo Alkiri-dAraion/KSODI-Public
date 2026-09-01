@@ -48,20 +48,25 @@ rather than method-originating or continuous drafting: he discussed the
 KSODI-Light operator separations with Anne, helped clarify why drift
 acceleration is an important measurement dimension in the v3.42 line, checked
 and recalculated substantial parts for mathematical-technical plausibility, and
-gave decisive v3.5 framing input around state-before-comparison and Shannon /
-signal-path reasoning.
+gave decisive v3.5 framing input around state-before-comparison and an
+approximate Shannon-oriented signal-path analogy. This was a thought tool in
+the team process, not a claim that KSODI directly operationalizes or derives
+from Shannon's work.
 
 Silke Honerkamp contributed important pedagogical, communication-theoretical,
 reflective and practical perspectives in early phases in 2023/24 and again
 while preparing the paper. For the public KSODI-Light layer, she is also named
 in the layer-specific licence notice because her early contribution included
 practical discussion and refinement of the operator labels and their use; for
-KSODI-Light, this layer-specific attribution is intentionally retained. Her
-reflection with Anne, including communication-theory perspectives such as
-Luhmann, Watzlawick, Habermas, Rosa and Schulz von Thun, helped sharpen the
-non-linear independence of the operators from a communication perspective. A
-spring 2026 discussion with Silke around a psychologist / patient / chatbot
-setting also helped Anne separate monadic and dyadic observation more clearly.
+KSODI-Light, this layer-specific attribution is intentionally retained. Silke
+brought source suggestions, disciplinary orientation and reflection with Anne
+around communication-theory perspectives associated with Luhmann, Watzlawick,
+Habermas, Rosa and Schulz von Thun. These names mark approximate thought
+examples and possible later points of contact; they do not establish
+derivation, equivalence, validation or endorsement. Anne selected, translated
+and integrated particular distinctions into KSODI. A spring 2026 discussion
+with Silke around a psychologist / patient / chatbot setting also helped Anne
+separate monadic and dyadic observation more clearly.
 
 Other contributors were essential to the emergence and refinement of KSODI, but
 unless a file or concept states otherwise, their role is contribution,

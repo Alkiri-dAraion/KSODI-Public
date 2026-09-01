@@ -19,6 +19,29 @@ claim that KSODI was derived from one particular theory, source or prior
 method. Intellectual lineage, theoretical connection and novelty require
 separate source-based comparison.
 
+### Theory, source and novelty boundary
+
+Names, theories and disciplinary traditions mentioned in this repository are
+currently used only as approximate thought examples or possible points of
+contact unless a file supplies a checked source and an explicit mapping. Such
+mentions do not claim that KSODI was derived from, is equivalent to, validates,
+is validated by, or is endorsed by the named person or tradition.
+
+During the team's work to date, no method was identified that posed and
+combined the KSODI questions in exactly the same way. This is not the result of
+a completed systematic literature or related-method search and therefore does
+not establish that no similar method exists. KSODI makes no claim to be the
+first, only or uniquely sufficient approach. It is being investigated as a
+possible complementary observation method whose relation to existing work
+remains to be mapped with primary or authoritative sources.
+
+Within the documented team process, Silke contributed source suggestions,
+disciplinary orientation and communication-theoretical reflection. Anne
+selected, translated and integrated particular distinctions into the KSODI
+method. This contribution history does not turn the referenced theories into
+formal derivations of KSODI or transfer responsibility for the method to their
+authors.
+
 ## 1. How to read the classifications
 
 | Classification | Meaning in this note |

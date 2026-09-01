@@ -101,12 +101,21 @@ precise. After a period of more sporadic exploration, she resumed the structure
 systematically in **autumn 2024**; adding **K** for context led from DOSI to the
 named **KSODI** method.
 
-Early on, it became clear that interaction does not exist without **context and framing**.  
-Classical communication theory — shaped by thinkers such as Paul Watzlawick, Friedemann Schulz von Thun and Hartmut Rosa — provided important insights, but also revealed its limits when applied to machines.
+Early on, **context and framing** became central to the developing method.
+In reflection with Silke, ideas associated with Paul Watzlawick, Friedemann
+Schulz von Thun and Hartmut Rosa were used as approximate thought examples and
+disciplinary orientation. They were not treated as direct operationalizations,
+formal derivations, validation or endorsement of KSODI.
 
-In discussions with Silke, one key realization crystallized:  
-“*You cannot not communicate*” may hold true for humans — but it does not translate directly to machines.  
-Machines do not begin with meaning; they begin with an **impulse**.
+One productive contrast used the proposition “*You cannot not communicate*”
+from Watzlawick, Beavin and Jackson's *Some Tentative Axioms of Communication*
+([publisher record](https://doi.org/10.4324/9781315080918-7)) as a question
+rather than as a premise transferred into KSODI: does the proposition carry
+over unchanged from human communication to machines? The KSODI development
+line answered this working question by beginning its machine-facing observation
+with an observable **impulse**, not with an assumed inner meaning. A later
+source and related-method matrix must examine the precise theoretical
+connections.
 
 Between 2023 and 2025, the approach evolved iteratively — at first sporadically, then with rapidly increasing intensity from late 2024 and spring 2025 onward — through day and night reflections, practical experimentation, and yes, sometimes even dreams about mathematics.
 The focus shifted toward **observable interaction structure**, rather than content, intention or correctness.
@@ -117,7 +126,10 @@ A central insight during this phase was that meaningful evaluation requires step
 - a purely developer-centric signal perspective, and
 - a purely user-centric communication perspective.
 
-Only by observing interaction *across* the five KSODI operators did the relative nature of reference frames, goal spaces and drift become visible. 
+Within the team's exploratory work, observing interaction *across* the five
+KSODI operators made differences among reference frames, goal spaces and drift
+more visible. This observation does not show that five operators are the only
+or uniquely sufficient way to describe them.
 
 During this phase, parts of the work and related observations were shared with
 OpenAI as product feedback and technical context. Responses received at the
@@ -140,12 +152,15 @@ Known conventions, prior sources and parallel processing can shorten, reorder
 or bypass parts of either path. The fixed KSODI coordinate order
 `(K,S,O,D,I)` remains a reporting convention, not a causal sequence.
 
-This led to a more precise clarification: neither classical communication
-theory nor signal theory alone is sufficient. Their relevant perspectives can
-be combined inside declared source, reference, trajectory and observation
-boundaries. Each entity remains monadically distinguishable through its own
-state reconstruction; relational comparison begins only at a separately
-declared gate.
+This led to a more precise KSODI design decision: the method would not be
+presented as a direct application of either communication theory or signal
+theory. Approximate ideas from both areas were used during team reflection,
+while KSODI's declared source, reference, trajectory and observation boundaries
+were selected and integrated by Anne. Each entity remains monadically
+distinguishable through its own state reconstruction; relational comparison
+begins only at a separately declared gate. Whether and where established
+theories support, constrain or complement that construction remains open
+source-based research.
 
 The next question followed naturally:  
 What if observable direction, constraints and target/reference spaces could be

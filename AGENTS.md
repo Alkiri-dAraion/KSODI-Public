@@ -287,6 +287,15 @@ When relating KSODI to established theory, use cautious wording:
   validation.
 - KSODI claims should remain tied to observable or reconstructable interaction
   material, not hidden cognition or intention.
+- Treat named thinkers, theories and disciplines as approximate thought
+  examples or candidate points of contact unless a checked source and explicit
+  mapping are present. Do not imply derivation, equivalence, validation,
+  endorsement or historical lineage.
+- Do not claim that KSODI is first, only or unique. The systematic search for
+  similar and complementary methods remains open.
+- Preserve the contribution boundary: Silke contributed source orientation and
+  disciplinary reflection; Anne selected, translated and integrated method
+  distinctions into KSODI.
 
 ## Public Repository Boundary
 
@@ -414,6 +423,13 @@ governance.
 Use [`KSODI-IDAS-SIRA-Framework_V342.md`](./KSODI-IDAS-SIRA-Framework_V342.md) as the
 primary orientation note for the relationship among KSODI-Light,
 Observer, SIRA, IDAS and the future Controller.
+
+IDAS and SIRA were developed as broader conceptual orientation during the
+first half of 2025 and kept compatible while v3.42 problems were worked into
+v3.50. They have not yet been developed into a deeply specified implementation
+architecture or independently validated operational framework. Do not infer
+implementation maturity from the conceptual fit or from the retained `V342`
+path; current versioned method files and implementation guardrails govern.
 
 Do not collapse these systems. KSODI-Light is independently usable. The
 KSODI-Standard-Eval / KSODI-Full Observer is separately usable without a

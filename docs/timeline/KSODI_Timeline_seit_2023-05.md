@@ -29,6 +29,12 @@ Mathematische Detailformulierungen, Implementierungsdetails und laufende
 Paper-Inhalte können in privaten Repositories, internen Arbeitsständen oder
 späteren Veröffentlichungen getrennt geführt werden.
 
+Namentlich genannte Theorien und Wissenschaftler markieren in dieser Timeline
+annähernde Denkbeispiele aus der Teamreflexion, keine geprüfte Herleitung,
+Gleichsetzung, Validierung oder Zustimmung. Eine systematische Suche nach
+ähnlichen Methoden ist noch nicht abgeschlossen; ein Anspruch auf erstmalige,
+alleinige oder einzigartige Entwicklung wird nicht erhoben.
+
 Personen werden in dieser öffentlichen Timeline überwiegend mit Vornamen
 genannt. Firmen-, Arbeitgeber- und Plattformbezüge werden nur dort benannt, wo
 sie für das Verständnis des öffentlichen Repositories notwendig sind.

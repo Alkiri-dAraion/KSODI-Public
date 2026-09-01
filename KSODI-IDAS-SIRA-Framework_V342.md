@@ -12,6 +12,24 @@ It explains how KSODI, SIRA and IDAS relate; it does not replace the canonical
 layer files or claim independent mathematical validation of the KSODI
 application profile.
 
+### Development status of IDAS and SIRA
+
+IDAS and SIRA began to be considered and worked on during the first half of
+2025 and were explicitly formulated as KSODI's broader framework and protocol
+orientation by June 2025. They then receded into the background while the team
+concentrated on problems in the v3.42 method line whose resolution led to
+v3.50. The orientation was kept compatible with the developing method, but it
+was not developed further during that period into a deeply specified
+implementation architecture, deployment design or validated operational
+framework.
+
+This file therefore documents a conceptually well-developed orientation, not a
+finished system specification. Its distinctions among Light, Observer, SIRA,
+IDAS and a future Controller guide current interpretation, but deeper protocol,
+implementation, governance and validation questions remain open. Current
+versioned KSODI layer files and implementation guardrails take precedence
+where this older `V342` path marker or conceptual wording is less precise.
+
 The public wording aligns KSODI-Light with the current understanding of a
 **reflective working agreement**: KSODI-Light can reflect user input, assistant
 output and the shared interaction state. Formal numeric Observer layers remain
@@ -31,9 +49,9 @@ function inside KSODI-Light, Standard-Eval or KSODI-Full.
   - Phase 2: productive interaction space
 
 - **Clarified architecture**
-  - IDAS = interaction architecture
+  - IDAS = conceptual interaction architecture
   - KSODI = structural observation method
-  - SIRA = interaction protocol
+  - SIRA = conceptual interaction-practice protocol
   - Controller = separate future-work system based on declared Observer
     findings and approved governance corridors
 
@@ -49,7 +67,7 @@ function inside KSODI-Light, Standard-Eval or KSODI-Full.
 
 # IDAS in One Sentence
 
-**IDAS is an architectural framework for keeping reflective guidance,
+**IDAS is a conceptual architectural framework for keeping reflective guidance,
 structured interaction, formal observation and any later governed steering
 distinguishable over time.**
 
@@ -59,15 +77,15 @@ It relates the following distinguishable components and roles:
 |---|---|
 | KSODI-Light | independently usable reflective working agreement |
 | KSODI Standard-Eval / KSODI-Full | separately usable Observer architecture |
-| SIRA | lightweight interaction-practice protocol |
-| IDAS | architectural integration of the distinguishable systems |
+| SIRA | lightweight conceptual interaction-practice protocol |
+| IDAS | conceptual architectural integration of the distinguishable systems |
 | future Controller | depends on declared Observer findings and governance; not independently usable as KSODI |
 
 ---
 
 # Architectural Principle
 
-IDAS intentionally separates three systems that may meet in one application
+The IDAS concept intentionally separates three systems that may meet in one application
 but must not be collapsed into one another:
 
 1. **KSODI-Light — explainability and reflective working agreement**
@@ -91,23 +109,26 @@ explicit before formal mathematics or observer infrastructure is introduced.
 
 For simple chatbot architectures, this prompt-level working agreement may be
 sufficient. For MoE systems, multi-agent constellations, tool-using agents or
-robotic settings, it is usually not enough to rely on local instructions alone.
-In those settings, Light can provide orientation inside the agent or user
-interaction while Standard-Eval, KSODI-Full or IDAS-level observers provide a
-separate monitoring layer.
+robotic settings, relying on local instructions alone may leave relevant
+observation questions unanswered. Whether an additional Observer is useful is
+an application-specific hypothesis requiring its own purpose, evidence and
+validation. In such a design, Light could provide orientation inside the agent
+or user interaction while Standard-Eval or KSODI-Full supplies a separate
+Observer layer; an IDAS-level integration remains conceptual.
 
 The Observer does more than collect logs. It asks which interaction conditions
 are changing: whether context is drifting, structure is weakening, grounding is
 missing, clarity is collapsing, informational movement is becoming repetitive,
-or relational coupling between entities is leaving a defined corridor.
+or an applicable declared relational measure is leaving a defined corridor.
 
 The entities remain source-attributed. `A` and `B` identify stable entities or
 sources; *sender* and *receiver* describe exchange-relative roles. A human may
 send one event and receive the next. The role change does not exchange the
 entity trajectories.
 
-This makes IDAS a bridge between AI literacy, interaction design and
-governance-oriented AI observability.
+This positions IDAS conceptually as a possible bridge between AI literacy,
+interaction design and governance-oriented AI observability. The bridge has not
+yet been validated as a complete implementation architecture.
 
 ---
 
@@ -115,7 +136,7 @@ governance-oriented AI observability.
 
 IDAS and KSODI do **not replace existing evaluation methodologies**.
 
-The framework intentionally builds on concepts already used in:
+The framework uses broad question areas also encountered in:
 
 - prompt evaluation
 - interaction analysis
@@ -130,13 +151,17 @@ Many mathematical elements therefore rely on established techniques such as:
 - sequence analysis
 - statistical distributions
 
-KSODI primarily contributes **a structured way of combining these techniques into a coherent interaction model.**
+KSODI proposes **one structured way of combining selected techniques into an
+interaction-observation model.** This list is not a claim of historical
+derivation, exact compatibility, validation by those fields or novelty against
+them. A systematic related-method and source comparison remains open, and
+KSODI is positioned as a possible complement rather than a replacement.
 
 ---
 
 # Two Phases of Interaction
 
-IDAS distinguishes two interaction environments.
+The IDAS concept distinguishes two interaction environments.
 
 ## Phase 1 – Reflective Space
 
@@ -345,9 +370,11 @@ approved governance policy.
 
 # SIRA – Interaction Protocol
 
-While KSODI describes interaction structure, SIRA describes **interaction practice**.
+While KSODI describes interaction structure, the SIRA concept describes
+**interaction practice**.
 
-SIRA is a lightweight protocol for structured dialogue.
+SIRA is currently a lightweight conceptual protocol for structured dialogue,
+not a completed or independently validated protocol specification.
 
 Steps:
 

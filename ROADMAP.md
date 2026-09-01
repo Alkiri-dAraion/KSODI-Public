@@ -357,6 +357,34 @@ The following future directions are currently being explored:
 - visualizations for communicative state transitions,
 - and human-readable governance surfaces.
 
+### Planned documentation and validation work
+
+The following items are planned for later research and documentation after the
+first v3.5 Release/DOI. They are not completed notes, current release
+components, validation evidence or dated delivery commitments:
+
+- a **Methodological Note** distinguishing, for every layer and calculation,
+  common mathematical or statistical forms from KSODI-specific selection,
+  composition, profile choices, analogies and open validation needs;
+- an **Evaluation Note** recording what was observed, documented, implemented
+  or tested, under which version and conditions, and which claims that evidence
+  can and cannot support;
+- a primary- or authoritative-source **theory and related-method matrix**
+  separating historical origin, direct operationalization, bounded analogy,
+  compatibility, validation and unresolved novelty questions;
+- continued empirical validation for each released layer, including
+  reliability, calibration, ablation, sensitivity, uncertainty, failure cases
+  and comparison with simpler baselines;
+- further cross-layer Observer/Controller conformance review, especially when
+  future implementation feedback or intervention paths are introduced;
+- separate review and evidence work for staged Layers 6–8. Their orientation
+  in the current repository does not announce completed calculation contracts.
+
+The current public research boundary remains the
+[KSODI Research Status and Open Questions V350](./KSODI-Research-Status-and-Open-Questions_V350.md).
+Future completion or publication of one item does not imply completion of the
+others.
+
 Possible future examples may include:
 
 - operator profiles,
