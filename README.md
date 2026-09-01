@@ -508,8 +508,10 @@ that KSODI claims to replace or subsume.
 KSODI does not replace these layers. It frames the baseline question before and
 around them:
 
-> Are attributable events reconstructable, and — where pairing has been
-> separately declared — does `R_0` permit relational comparison?
+> Are attributable events reconstructable, and — where an explicit pairing and
+> downstream relational branch have been declared — does the exact `R_0`
+> contract required by that branch establish methodological eligibility for
+> its relational evaluation?
 
 A carrier event is not identical with its `I` value. Encoding, compression or
 channel adaptation may affect `D`, but they are not `D` themselves.

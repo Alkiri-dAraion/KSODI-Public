@@ -194,7 +194,8 @@ R0 inputs:
 ```
 
 `R0` is not calculated from `IK_A` or `IK_B`. `IK` may remain useful even when
-no relational evaluation is opened.
+no declared downstream relational branch is methodologically eligible under
+its exact gate contract.
 
 ## 6. R0 Gate and Parallel Relational Research Branches
 

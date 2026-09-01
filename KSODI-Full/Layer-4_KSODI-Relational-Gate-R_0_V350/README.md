@@ -1,9 +1,10 @@
 # Layer 4 — KSODI Relational Gate (`R_0` / `R0`)
 
 `R_0` asks whether explicitly paired or grouped monadic trajectories satisfy
-one declared availability and bounded-drift contract strongly enough for
-relational comparison to be opened. It does not discover relation and does not
-measure coupling, resonance, direction or meaning.
+one declared availability and bounded-drift contract required by a specified
+downstream relational branch. An open gate establishes methodological
+eligibility only for that compatible branch; it does not discover relation and
+does not measure coupling, resonance, direction or meaning.
 
 Active files:
 

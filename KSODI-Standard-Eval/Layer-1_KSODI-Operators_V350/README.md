@@ -37,10 +37,11 @@ views may describe movement or distribution of one operator coordinate, but
 they do not change the source identity or layer of the static value.
 
 Entity `A` and Entity `B` remain distinguishable. Sender and receiver are
-roles inside a declared exchange, not stable entity types. Relational
-comparison begins only after an explicit dyadic pairing or n-adic constellation
-map and an open numeric canonical complete `R_0` gate under the exact required
-profile. Every downstream construct must match the admitted cardinality.
+roles inside a declared exchange, not stable entity types. A downstream
+relational evaluation becomes methodologically eligible only after an explicit
+dyadic pairing or n-adic constellation map and the exact open numeric `R_0`
+contract required by that branch. Every downstream construct must match the
+admitted cardinality and profile.
 
 ## Operators and companion
 

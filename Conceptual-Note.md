@@ -195,7 +195,8 @@ During interaction between two or more distinguishable participants or systems
 a temporary interaction condition may become observable. At the Light level,
 this is primarily a human-facing orientation condition. At the formal observer
 level, each distinguishable side is first treated through its own state
-trajectory before dyadic or n-adic relational observation is opened.
+trajectory before an exact branch-specific `R0` contract may establish
+methodological eligibility for dyadic or n-adic relational observation.
 
 A later relational observation instance:
 	•	is not ontological
@@ -611,7 +612,8 @@ It is:
 	•	temporary
 	•	functional
 	•	model-based
-	•	open to relational analysis only after `R0`
+	•	open to a declared relational analysis only after the exact `R0`
+		contract required by that branch is satisfied
 
 It is not:
 	•	a physical field
@@ -627,7 +629,9 @@ It is part of a structured observation method.
 Clear distinction:
 	•	KSODI-Light → reflective working agreement and didactic orientation inside interaction
 	•	KSODI Standard-Eval / Full → formal observer layers of the method
-	•	Image / Diagram → visualization of attributable trajectories and, after `R0`, possible relational coupling
+	•	Image / Diagram → visualization of attributable trajectories and, after
+		the exact required `R0` contract, a possible branch-specific relational
+		observation
 	•	Mathematics → description of state evolution
 
 Additional v3.5 boundary:
@@ -963,9 +967,10 @@ U_H->M(j), U_M->H(j)
   -> Z_H(k_H), Z_M(k_M)
 ```
 
-The trajectories remain monadic at this point. Relational evaluation opens only
-through the separately defined gate `R0`, followed where justified by
-`IK_rel`.
+The trajectories remain monadic at this point. A declared downstream
+relational evaluation becomes methodologically eligible only through its exact
+separately defined `R0` contract. Current `IK_rel` then applies only where its
+additional dyadic requirements are satisfied.
 
 ⸻
 

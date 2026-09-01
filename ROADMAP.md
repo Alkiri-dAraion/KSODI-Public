@@ -157,8 +157,9 @@ condition. Each role must be declared for the selected use case.
 
 For that reason, KSODI is being developed as a method that first reconstructs
 attributable monadic states and trajectories across architectural layers.
-Relational comparison opens only after the participating trajectories remain
-distinguishable and satisfy the separately declared `R0` gate.
+A downstream relational evaluation becomes methodologically eligible only
+after the participating trajectories remain distinguishable and satisfy the
+exact `R0` contract declared for that branch.
 
 ## Intended future implementation pattern
 

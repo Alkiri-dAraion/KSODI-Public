@@ -43,10 +43,11 @@ The central terms can be read through this picture:
 - **`IK` projection:** a deliberately compressed view of one source's `Z`
   state along a declared axis. *Monadic* means that this view still concerns
   one distinguishable source trajectory.
-- **`R_0` gate:** a checkpoint before relational analysis. It asks whether two
-  or more distinguishable trajectories are comparable under the declared
-  policy. An open gate means only “comparison is methodically allowed”; it
-  does not mean contact, agreement, coupling or resonance.
+- **`R_0` gate:** a checkpoint before a declared downstream relational branch.
+  It asks whether two or more distinguishable trajectories satisfy the exact
+  gate contract required by that branch. An open gate establishes only
+  methodological eligibility for that evaluation; it does not mean contact,
+  agreement, coupling or resonance.
 - **`IK_rel`:** a relational projection available only after its exact gate
   conditions are met. The current public definition is *dyadic*: it compares
   two explicitly paired trajectories without merging them or claiming access

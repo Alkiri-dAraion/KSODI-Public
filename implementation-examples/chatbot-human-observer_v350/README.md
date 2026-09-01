@@ -22,7 +22,8 @@ Example application layer:
 
 - human and chatbot are treated as distinguishable interaction participants
 - Standard-Eval observes monadic operator, `Z` and `IK` trajectories
-- KSODI-Full opens relational observation after `R0`
+- KSODI-Full uses the exact open `R0` contract required by a declared
+  downstream branch to establish methodological eligibility for that branch
 - `IK_rel`, `R_geom` and `R_pace` are interpreted only under the declared
   application profile
 
