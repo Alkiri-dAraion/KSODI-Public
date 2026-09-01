@@ -211,10 +211,12 @@ Handshake / coupling guardrail:
 - `R_0` is SYN/ACK-like only as a bounded analogy for opening relational
   observation. It does not detect a protocol handshake, receipt, contact,
   acknowledgement, semantic agreement, coupling or causality.
-- Strong observable coupling requires sustained high `IK_rel` together with
-  sustained high branch-specific R-family evidence across a declared window.
-- `IK_rel` alone and a branch-specific R signal alone do not establish strong
-  coupling.
+- No current released KSODI construct establishes generic strong coupling. A
+  future coupling claim would require its own separately released construct,
+  declared profile and sustained branch-specific evidence across its required
+  window.
+- `IK_rel` alone, an open `R_0` gate and any single branch-specific R signal do
+  not establish coupling.
 - Coupling strength does not determine intended direction, desirability, safety
   or alignment.
 - The shared observable interaction space contains attributable externalized

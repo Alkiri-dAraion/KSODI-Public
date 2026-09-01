@@ -20,7 +20,10 @@ copyright or the depth of every contribution.
 
 For citation of the overall KSODI method, use `CITATION.cff`. The
 repository-level method citation currently names Anne Steinacker-Folkerts and
-Heiko Folkerts.
+Heiko Folkerts. For the first formal v3.5 GitHub Release and DOI, Anne confirmed
+this repository-level citation authorship on 2026-09-01: Anne and Heiko remain
+the citation authors; Silke Honerkamp and Patrick Barthelmäs remain explicitly
+acknowledged contributors in the differentiated roles documented below.
 
 Anne Steinacker-Folkerts initiated KSODI and remains the integrating method
 developer and final decision point for the definitions published in this
@@ -71,11 +74,12 @@ We thank Patrick Barthelmäs for substantial technical implementation and
 infrastructure work around KSODI, including the
 [KSODI-Light-Agent PoC](https://github.com/blackbaddl13/r-KSODI-POC) and the
 separately versioned implementation line for KSODI Standard-Eval and
-KSODI-Full. The next alignment phase is planned as supervised collaboration:
-Anne will work through a fork and method-alignment branch with ELKIM, while
-Patrick retains implementation-side merge, release and software-licence
-control. Method changes remain subject to Anne's release decision; software
-changes remain subject to Patrick's repository review.
+KSODI-Full. Anne may inspect her fork with model support only under a separately
+opened, concrete task scope, while Patrick retains implementation-side merge,
+release and software-licence control. There is no standing method-alignment
+branch, and implementation alignment is not a dependency of the current method
+Release or DOI. Method changes remain subject to Anne's release decision;
+software changes remain subject to Patrick's repository review.
 
 Patrick is also acknowledged as an important contributor to the R-family
 development context. His developer-side reflection on resonance / tonality, the

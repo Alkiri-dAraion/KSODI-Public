@@ -170,9 +170,12 @@ O0 does not measure:
 - mutual understanding, coupling, resonance or relational quality;
 - general human or system worth.
 
-The five KSODI base operators are semantically distinct and functionally
-non-redundant. They are not claimed to be mathematically orthogonal or
-statistically independent.
+The five KSODI base operators are semantically distinguishable through their
+separate definitions, observation targets, measurement bases and profiles.
+Their functional non-redundancy has not yet been established empirically:
+operator ablation, overlap/correlation analysis and comparison with simpler
+baselines remain open research. They are not claimed to be mathematically
+orthogonal, statistically independent or universally sufficient.
 
 ### 2.1 Atomic Evaluation Unit and Identity
 
