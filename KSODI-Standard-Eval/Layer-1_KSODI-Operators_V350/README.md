@@ -7,10 +7,10 @@ remains conditional and subordinate. Public availability does not turn
 optional views into mandatory calculations or make staged later research
 operational.
 
-Publication is layerwise. Operators K and S are published here as v3.51
-reference methods and companions; O, D and I remain at their v3.50 baseline
-until their separate reviewed v3.51 passes. This is not yet the full tagged
-v3.51 release.
+Publication is layerwise. Operators K, S, O, D and I are now published here as
+v3.51 reference methods and conditional companions; O additionally carries
+its Source-Need Gate. Independent runtime conformance remains outstanding.
+This moving-`main` state is not yet the full tagged v3.51 release.
 
 ## What this folder contains
 
@@ -48,7 +48,7 @@ dyadic pairing or n-adic constellation map and the exact open numeric `R_0`
 contract required by that branch. Every downstream construct must match the
 admitted cardinality and profile.
 
-## Operators and companion
+## Operators and companions
 
 - [`K0` v3.51](./KSODI_Operator-K_Observable-Context-Completeness_V351.md) — Observable Context Completeness
   - [`K0` v3.51 Implementation Companion](./KSODI_Operator-K_Implementation-Companion_V351.md) — conditional
