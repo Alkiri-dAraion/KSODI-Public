@@ -47,6 +47,9 @@ Public explanatory and result-reference companions:
 - [`IK_QUESTION_MEASUREMENT_VIEW_MATRIX_V351.md`](./IK_M2_V351_REFERENCE_REVIEW/IK_QUESTION_MEASUREMENT_VIEW_MATRIX_V351.md)
   — public question-led routing from retained object through calculation and
   view to the permitted claim boundary and evidence return path.
+- [`IK_V351_WINDOW_AGGREGATION_ORDER_CONTRACT_V01.md`](./IK_M2_V351_REFERENCE_REVIEW/IK_V351_WINDOW_AGGREGATION_ORDER_CONTRACT_V01.md)
+  — window identity, eligibility, coverage, processing-order, derived-object,
+  delta and reverse-provenance contract for the v3.51 reference family.
 
 The remaining Phase A–G and window-order reference package is transferred only
 as a closed, reproducible set after its separate file-by-file review.
