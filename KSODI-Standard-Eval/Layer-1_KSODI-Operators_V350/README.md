@@ -72,10 +72,11 @@ admitted cardinality and profile.
     profile-oriented implementation contract; not a sixth operator and not a
     replacement for the carrier-neutral method; independent runtime
     conformance remains outstanding
-- [`I0`](./KSODI_Operator-I_Observable-Information-Impulse_V350.md) — Observable Information Impulse
-  - [`I0` Implementation Companion](./KSODI_Operator-I_Implementation-Companion_V350.md) — conditional
+- [`I0` v3.51](./KSODI_Operator-I_Observable-Information-Impulse_V351.md) — Observable Information Impulse
+  - [`I0` v3.51 Implementation Companion](./KSODI_Operator-I_Implementation-Companion_V351.md) — conditional
     Conversation-/Retrieval-oriented operationalization; not a sixth operator
-    and not a replacement for the carrier-neutral method
+    and not a replacement for the carrier-neutral method; independent runtime
+    conformance remains outstanding
 
 ## Shared measurement and result discipline
 
