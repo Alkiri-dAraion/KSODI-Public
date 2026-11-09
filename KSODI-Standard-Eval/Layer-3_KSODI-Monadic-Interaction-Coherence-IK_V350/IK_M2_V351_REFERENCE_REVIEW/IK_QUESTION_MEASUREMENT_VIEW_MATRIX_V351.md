@@ -13,7 +13,7 @@ It is subordinate to the
 [v3.51 IK method](../KSODI_Monadic-Interaction-Coherence-IK_V351.md), the
 [public concept companion](../IK_M2_AXIS_DEVIATION_DUAL_RESOLUTION_PUBLIC_CONCEPT_V351.md)
 and the
-[reference result contract](./IK_M2_V351_RESULT_CONTRACT_CANDIDATE_V01.md).
+[reference result contract](./IK_M2_V351_RESULT_CONTRACT_V01.md).
 It does not define new formulas, thresholds, runtime fields or action
 authority.
 

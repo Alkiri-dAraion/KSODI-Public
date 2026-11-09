@@ -40,7 +40,7 @@ Public explanatory and result-reference companions:
 - [`IK_M2_AXIS_DEVIATION_DUAL_RESOLUTION_PUBLIC_CONCEPT_V351.md`](./IK_M2_AXIS_DEVIATION_DUAL_RESOLUTION_PUBLIC_CONCEPT_V351.md)
   — general explanation of the fixed-reference geometry, IK-Gesamtbild and
   dual-resolution boundary;
-- [`IK_M2_V351_RESULT_CONTRACT_CANDIDATE_V01.md`](./IK_M2_V351_REFERENCE_REVIEW/IK_M2_V351_RESULT_CONTRACT_CANDIDATE_V01.md)
+- [`IK_M2_V351_RESULT_CONTRACT_V01.md`](./IK_M2_V351_REFERENCE_REVIEW/IK_M2_V351_RESULT_CONTRACT_V01.md)
   — reviewed logical result kinds, identities, ranges, persistence and minimum
   conformance expectations. The historical filename records its review route;
   the authoritative method remains the v3.51 IK method above.

@@ -547,7 +547,7 @@ than redefine expected results from runtime behavior.
 
 ## 12. Claims supported and not supported
 
-This candidate supports the bounded claim:
+This contract supports the bounded claim:
 
 > For one complete typed five-coordinate Z record, v3.51 can reproducibly
 > retain an active weighted projection and a fixed-reference Euclidean

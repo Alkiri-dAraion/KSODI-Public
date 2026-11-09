@@ -792,12 +792,12 @@ conformance for v3.51 is still outstanding.
 
 ## 12. Publication Boundary
 
-This companion is a v3.51 publication candidate beside the carrier-neutral
-method and semantic Source-Need Gate. It remains conditional and visibly subordinate and
-must not be presented as the only valid O implementation or a mandatory
-production stack. Publication does not convert its Conversation-/Retrieval-/
-RAG profile, detector choices or workbench start weights into universal O
-semantics.
+This companion is published as part of the v3.51 method package beside the
+carrier-neutral method and semantic Source-Need Gate. It remains conditional
+and visibly subordinate and must not be presented as the only valid O
+implementation or a mandatory production stack. Publication does not convert
+its Conversation-/Retrieval-/RAG profile, detector choices or workbench start
+weights into universal O semantics.
 
 Reference method and reproducible tests may be published before an independent
 runtime-conformance demonstration. That outstanding demonstration must remain

@@ -8,7 +8,7 @@ authorize implementation or action from a window result.
 
 Basis:
 
-- [result-contract candidate V01](./IK_M2_V351_RESULT_CONTRACT_CANDIDATE_V01.md);
+- [v3.51 result contract V01](./IK_M2_V351_RESULT_CONTRACT_V01.md);
 - [v3.51 public concept companion](../IK_M2_AXIS_DEVIATION_DUAL_RESOLUTION_PUBLIC_CONCEPT_V351.md);
 - current Layer-2 Z and Layer-3 IK window rules;
 - reproducible static and trajectory Phases A–G in this directory;
