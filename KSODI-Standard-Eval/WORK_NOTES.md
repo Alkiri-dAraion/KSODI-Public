@@ -35,9 +35,9 @@ only when all five aligned coordinate records are numeric.
 
 The reader-first Layer-3 package contains:
 
-- `KSODI_Monadic-Interaction-Coherence-IK_V350.md` — authoritative monadic
+- `KSODI_Monadic-Interaction-Coherence-IK_V351.md` — authoritative monadic
   projection method;
-- `KSODI_Monadic-Interaction-Coherence-IK_Implementation-Companion_V350.md` —
+- `KSODI_Monadic-Interaction-Coherence-IK_Implementation-Companion_V351.md` —
   subordinate conditional implementation guidance;
 - the adjacent Layer-3 README.
 

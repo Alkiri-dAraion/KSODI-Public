@@ -61,7 +61,7 @@ The public v3.50 Standard-Eval scope contains all five current Layer-1
 method/companion packages and the current reader-first Layer-2 Z and Layer-3
 monadic IK method/companion packages.
 
-- [`KSODI-Standard-Eval-Release_V350.md`](./KSODI-Standard-Eval-Release_V350.md)
+- [`KSODI-Standard-Eval-Release_V351.md`](./KSODI-Standard-Eval-Release_V351.md)
   records the active v3.5 release boundary.
 - [`Layer-1_KSODI-Operators_V350/`](./Layer-1_KSODI-Operators_V350/README.md),
   [`Layer-2_KSODI-State-Vector-Z_V350/`](./Layer-2_KSODI-State-Vector-Z_V350/README.md) and
