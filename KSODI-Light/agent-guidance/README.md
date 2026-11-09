@@ -1,8 +1,8 @@
 # KSODI-Light Agent Skills and Copy-and-Paste Prompts
 
-Status: `V351_PUBLIC_CANDIDATE / PORTABLE_PROMPT_SKILLS / NOT_FORMAL_OBSERVER`
+Status: `V351_PUBLISHED_ON_PUBLIC_MAIN / PORTABLE_PROMPT_SKILLS / NOT_FORMAL_OBSERVER`
 
-Version: `v3.51 candidate`
+Version: `v3.51`
 
 Licence: `CC BY 4.0`, subject to the repository licence and any explicit
 file-level exception.
@@ -32,10 +32,10 @@ prompts can use the extended guidance:
 - [Coding Agent Guidance — Extended Example v3.51](./KSODI-Light-Coding-Agent-Guidance-Extended-Example_V351.md)
 - [General Assistant Guidance — Extended Example v3.51](./KSODI-Light-General-Assistant-Guidance-Extended-Example_V351.md)
 
-The earlier v3.50 coding-agent and general-assistant examples remain versioned
-predecessor evidence while the v3.51 candidates are reviewed. After verified
-transfer, backlink migration and hash checking, they move to the corresponding
-Private and Public archives rather than remaining active reader entries.
+The earlier v3.50 coding-agent and general-assistant examples are preserved as
+versioned predecessor evidence in the corresponding Private and Public
+archives. The v3.51 templates in this folder are the active published reader
+entries on Public `main`.
 
 ## What all four skills share
 

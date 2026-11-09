@@ -1,6 +1,6 @@
 # KSODI-Light Agent Bridge v3.51
 
-Status: `V351_PUBLIC_CANDIDATE / DEVELOPER_ORIENTATION /
+Status: `V351_PUBLISHED_ON_PUBLIC_MAIN / DEVELOPER_ORIENTATION /
 NOT_IMPLEMENTATION_CONFORMANCE`
 
 ## 1. Purpose
@@ -22,7 +22,7 @@ K/S/O/D/I operator results, complete typed `Z`, `IK`, `R0` or `IK_rel`.
 
 ## 2. Agent-Skills entry
 
-Public-facing, copy-and-paste-ready candidates are collected in the
+Published, copy-and-paste-ready templates are collected in the
 [KSODI-Light Agent Skills hub](../agent-guidance/README.md). The hub separates:
 
 - short prompts for direct use;

@@ -27,48 +27,62 @@ Special thanks to Benjamin Gage-Prater for early RAG testing and feedback, and t
 
 # KSODI-Light
 
-## Current Scope — released v3.5 and v3.51 publication candidate
-
-KSODI v3.5 is being published to this repository in successive stages. The
-current public KSODI-Standard-Eval release contains all five Layer-1 operator
-definitions, the Layer-2 monadic state vector `Z_A(k)` and the Layer-3 monadic
-interaction-coherence projection `IK_A(k)`.
-
-KSODI-Standard-Eval is the complete monadic line
-`K/S/O/D/I -> Z_A(k) -> IK_A(k)` and ends with `IK_A(k)`. KSODI-Full begins
-with dyadic or explicitly n-adic observation at the public Layer 4 gate `R_0`;
-current dyadic Layer 5 `IK_rel` requires explicit pairing and an open numeric
-canonical complete dyadic `R_0` under the exact required profile. Both belong
-to KSODI-Full, not KSODI-Standard-Eval. The Layer 6–8 R-family and signal-media
-extensions remain staged or future research and are outside the current public
-method scope.
-
-The v3.51 publication candidate retains that layer boundary while refining the
-monadic result surface: complete typed `Z` remains available alongside the
-distinguishable `IK_w`, `IK_M2`, `IK_ref` and `AxisDev_ref` views in the
-non-total-score IK-Gesamtbild. Candidate files may appear on Public `main`
-during the layerwise review; this does not change the fixed v3.5.0 release or
-constitute a tagged v3.51 release before separate authorization.
-
-Earlier v3.3 and v3.42 materials are retained in clearly marked historical
-archives. They are not current implementation guidance.
+## What KSODI-Light Is
 
 KSODI-Light is the human-facing entry to communication understanding and to
-the KSODI method. It provides accessible reflective questions without
-collapsing communication into formal scores or requiring the later Observer
-architecture.
+the KSODI method. It offers five accessible questions about context, structure,
+grounding, clarity and information. People and assistants can use them to
+notice what is present, what is missing and what may need clarification before
+continuing.
 
 It can be used as a **reflective working agreement** between user and
-assistant. In that sense, KSODI-Light does not only reflect the user's prompt.
-It can also reflect assistant output, feedback from the user and the visible
-shared working frame across a turn. This does not create a merged interaction
-state.
+assistant. It may reflect a request, an answer, user feedback and the visible
+shared working frame across a turn. It does not evaluate people, reveal hidden
+states or create a merged interaction state.
+
+KSODI-Light normally returns short explanatory feedback. It does not require
+mathematics or formal Observer infrastructure, although it can later be
+combined with them.
+
+## Published KSODI-Light Version and Repository Status
+
+```text
+KSODI-Light version on Public main: v3.51
+publication state: published_on_public_main
+fixed complete KSODI release: v3.5.0
+complete tagged v3.51 release: not_yet_published
+```
+
+The KSODI-Light v3.51 files in this directory are published method and guidance
+materials on the moving Public `main` branch. Their publication state is
+`published_on_public_main`. The repository-wide v3.51 method is being published
+layer by layer, so this Layer-0 publication does not by itself constitute the
+later complete, tagged v3.51 release.
+
+The fixed and citable complete release remains `v3.5.0`. Earlier v3.3 and v3.42
+materials and the displaced v3.50 Light files remain in clearly marked
+historical archives. They are provenance, not current Light guidance.
+
+## Relation to KSODI-Standard-Eval and KSODI-Full
+
+KSODI-Light is Layer 0 and can be used independently. Formal external
+observation begins later.
+
+KSODI-Standard-Eval contains the monadic Observer line from K/S/O/D/I through
+complete typed `Z` to distinguishable IK views. KSODI-Full begins relational
+observation at the Layer-4 gate `R_0`; current dyadic Layer 5 `IK_rel` requires
+explicit pairing and the applicable open numeric gate contract. Later R-family
+and signal-media extensions remain staged or future research.
+
+These later layers provide more detailed machine-readable measurement and
+governance views. They do not replace the simpler purpose of KSODI-Light, and
+KSODI-Light does not calculate their formal results.
 
 ## Copy-and-Paste Agent Skills
 
 Readers looking for a prompt they can use directly should begin with the
 [KSODI-Light Agent Skills and Copy-and-Paste Prompts](./agent-guidance/README.md).
-The hub offers purpose-specific v3.51 candidates for general assistants,
+The hub offers purpose-specific published v3.51 templates for general assistants,
 coding and repository collaboration, reflective research/method review, and
 education or communication contexts.
 
@@ -206,6 +220,7 @@ and lightweight agent prompts without publishing private personal instructions:
   and [Reflection, Local Self-Adjustment and Prompt-Level Steering
   v3.51](./developer-notes/KSODI-Light-Self-Alignment-vs-Steering_V351.md)
 - Method orientation:
+  [KSODI-Light Baseline Meaning and Open Questions v3.51](./KSODI-Light-Baseline-Meaning-and-Open-Questions_V351.md),
   [KSODI-Light Method Comparison and Combination Guide v3.51](./KSODI-Light-Method-Comparison_EN_V351.md)
   and the [KSODI English Translation Table v3.51](./KSODI-Light-English-Translation-Table_V351.md)
 

@@ -1,6 +1,6 @@
 # KSODI-Light Agent Skill — General Assistant
 
-Status: `V351_PUBLIC_CANDIDATE / PORTABLE_PROMPT_SKILL_TEMPLATE`
+Status: `V351_PUBLISHED_ON_PUBLIC_MAIN / PORTABLE_PROMPT_SKILL_TEMPLATE`
 
 Purpose: simple reflective instructions for a general assistant or account.
 

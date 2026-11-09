@@ -1,6 +1,6 @@
 # KSODI-Light Prompt Feedback Example v3.51
 
-Status: `V351_PUBLIC_CANDIDATE / COPY_AND_PASTE_FEEDBACK_EXAMPLE /
+Status: `V351_PUBLISHED_ON_PUBLIC_MAIN / COPY_AND_PASTE_FEEDBACK_EXAMPLE /
 NOT_FORMAL_OBSERVER`
 
 This example is for users who want short, understandable feedback on a

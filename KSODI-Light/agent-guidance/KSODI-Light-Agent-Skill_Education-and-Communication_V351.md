@@ -1,6 +1,6 @@
 # KSODI-Light Agent Skill — Education and Communication
 
-Status: `V351_PUBLIC_CANDIDATE / PORTABLE_PROMPT_SKILL_TEMPLATE`
+Status: `V351_PUBLISHED_ON_PUBLIC_MAIN / PORTABLE_PROMPT_SKILL_TEMPLATE`
 
 Purpose: simple support for teaching, care communication, workshops and AI
 literacy. It is not medical, psychological, legal or educational diagnosis.

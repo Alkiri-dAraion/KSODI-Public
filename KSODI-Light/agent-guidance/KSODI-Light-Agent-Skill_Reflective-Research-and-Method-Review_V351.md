@@ -1,6 +1,6 @@
 # KSODI-Light Agent Skill — Reflective Research and Method Review
 
-Status: `V351_PUBLIC_CANDIDATE / PORTABLE_PROMPT_SKILL_TEMPLATE`
+Status: `V351_PUBLISHED_ON_PUBLIC_MAIN / PORTABLE_PROMPT_SKILL_TEMPLATE`
 
 Purpose: neutral, portable research and method-review guidance derived from a
 long-running human–AI working mode without transferring its personal names,

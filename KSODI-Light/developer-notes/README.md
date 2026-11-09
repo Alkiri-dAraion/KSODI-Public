@@ -1,11 +1,11 @@
 # KSODI-Light Developer Notes v3.51
 
-Status: `V351_PUBLIC_CANDIDATE / DEVELOPER_READING_GUIDE`
+Status: `V351_PUBLISHED_ON_PUBLIC_MAIN / DEVELOPER_READING_GUIDE`
 
 This folder contains developer-facing notes for embedding KSODI-Light guidance
 into assistants, agent instructions and prompt-level interaction systems.
 
-## Active v3.51 candidates
+## Published v3.51 developer notes
 
 1. [KSODI-Light Agent Bridge v3.51](./KSODI-Light-Agent-Bridge_V351.md)
    places portable Agent Skills inside the v3.51 architecture and separates
