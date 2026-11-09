@@ -60,12 +60,13 @@ admitted cardinality and profile.
     profile-oriented operationalization; not a sixth operator and not a
     replacement for the carrier-neutral method; independent runtime
     conformance remains outstanding
-- [`O0`](./KSODI_Operator-O_Observable-Grounded-Objectivity_V350.md) — Observable Grounded Objectivity
-  - [`O` Source-Need Gate](./KSODI_Operator-O_Source-Need-Gate_V350.md) — applicability and
+- [`O0` v3.51](./KSODI_Operator-O_Observable-Grounded-Objectivity_V351.md) — Observable Grounded Objectivity
+  - [`O` v3.51 Source-Need Gate](./KSODI_Operator-O_Source-Need-Gate_V351.md) — applicability and
     source-need companion; not a sixth operator
-  - [`O0` Implementation Companion](./KSODI_Operator-O_Implementation-Companion_V350.md) — conditional
+  - [`O0` v3.51 Implementation Companion](./KSODI_Operator-O_Implementation-Companion_V351.md) — conditional
     Conversation-/Retrieval-/RAG-oriented operationalization; not a sixth
-    operator and not a replacement for the carrier-neutral method
+    operator and not a replacement for the carrier-neutral method; independent
+    runtime conformance remains outstanding
 - [`D0`](./KSODI_Operator-D_Observable-Clarity_V350.md) — Observable Clarity
   - [`D0` Implementation Companion](./KSODI_Operator-D_Implementation-Companion_V350.md) — conditional
     profile-oriented implementation contract; not a sixth operator and not a
