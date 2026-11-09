@@ -231,6 +231,9 @@ Read together with:
 - [conceptual note](../../Conceptual-Note.md)
 - [shared Hangar method note](../../KSODI-Hangar_V350.md)
 - [implementation guardrails](../../IMPLEMENTATION_GUARDRAILS.md)
+- [v3.51 measurement-basis and reference discipline](./LAYER_1_MEASUREMENT_BASIS_AND_REFERENCE_DISCIPLINE_V351.md)
+- [v3.51 shared operator template](./OPERATOR_TEMPLATE_V351.md)
+- [v3.51 bounded operator-distinction research note](./LAYER_1_OPERATOR_DISTINCTION_WORKING_NOTE_V351.md)
 - [public implementation examples](../../implementation-examples/README.md)
 
 ## Layer boundary
