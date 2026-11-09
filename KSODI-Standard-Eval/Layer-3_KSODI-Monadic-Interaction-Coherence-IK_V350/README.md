@@ -31,7 +31,7 @@ current dyadic IK_rel -> explicit dyadic pairing plus open numeric canonical
 
 Shared typed Z method:
 
-- [`../Layer-2_KSODI-State-Vector-Z_V350/KSODI_State-Vector-Z_V350.md`](../Layer-2_KSODI-State-Vector-Z_V350/KSODI_State-Vector-Z_V350.md)
+- [`../Layer-2_KSODI-State-Vector-Z_V350/KSODI_State-Vector-Z_V351.md`](../Layer-2_KSODI-State-Vector-Z_V350/KSODI_State-Vector-Z_V351.md)
 
 Shared Sigma / Hangar method note:
 

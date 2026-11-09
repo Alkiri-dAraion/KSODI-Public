@@ -397,7 +397,7 @@ certifications or production guarantees.
 - Layer 1 definitions:
   [K/S/O/D/I operator entry](./KSODI-Standard-Eval/Layer-1_KSODI-Operators_V350/README.md).
 - Layer 2 definition:
-  [State Vector Z](./KSODI-Standard-Eval/Layer-2_KSODI-State-Vector-Z_V350/KSODI_State-Vector-Z_V350.md).
+  [State Vector Z](./KSODI-Standard-Eval/Layer-2_KSODI-State-Vector-Z_V350/KSODI_State-Vector-Z_V351.md).
 - Layer 3 definition:
   [Monadic IK](./KSODI-Standard-Eval/Layer-3_KSODI-Monadic-Interaction-Coherence-IK_V350/KSODI_Monadic-Interaction-Coherence-IK_V350.md).
 - Layer 4 definition:

@@ -21,8 +21,8 @@ additionally includes the Source-Need Gate.
 
 The reader-first Layer-2 package contains:
 
-- `KSODI_State-Vector-Z_V350.md` — authoritative carrier-neutral method;
-- `KSODI_State-Vector-Z_Implementation-Companion_V350.md` — subordinate
+- `KSODI_State-Vector-Z_V351.md` — authoritative carrier-neutral method;
+- `KSODI_State-Vector-Z_Implementation-Companion_V351.md` — subordinate
   conditional implementation guidance;
 - the adjacent Layer-2 README.
 
