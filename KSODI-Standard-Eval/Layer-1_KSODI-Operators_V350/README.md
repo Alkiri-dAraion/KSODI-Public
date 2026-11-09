@@ -67,10 +67,11 @@ admitted cardinality and profile.
     Conversation-/Retrieval-/RAG-oriented operationalization; not a sixth
     operator and not a replacement for the carrier-neutral method; independent
     runtime conformance remains outstanding
-- [`D0`](./KSODI_Operator-D_Observable-Clarity_V350.md) — Observable Clarity
-  - [`D0` Implementation Companion](./KSODI_Operator-D_Implementation-Companion_V350.md) — conditional
+- [`D0` v3.51](./KSODI_Operator-D_Observable-Clarity_V351.md) — Observable Clarity
+  - [`D0` v3.51 Implementation Companion](./KSODI_Operator-D_Implementation-Companion_V351.md) — conditional
     profile-oriented implementation contract; not a sixth operator and not a
-    replacement for the carrier-neutral method
+    replacement for the carrier-neutral method; independent runtime
+    conformance remains outstanding
 - [`I0`](./KSODI_Operator-I_Observable-Information-Impulse_V350.md) — Observable Information Impulse
   - [`I0` Implementation Companion](./KSODI_Operator-I_Implementation-Companion_V350.md) — conditional
     Conversation-/Retrieval-oriented operationalization; not a sixth operator
