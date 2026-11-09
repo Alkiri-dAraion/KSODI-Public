@@ -756,7 +756,7 @@ expected, optional and absent, inadmissible or empty after admission maps to
 `not_applicable`. Invalid identity, source-need policy, gate state, O profile or
 calculation is a processing failure and produces no valid operator result.
 See the public companion note:
-[`KSODI_Operator-O_Source-Need-Gate_V350.md`](./KSODI-Standard-Eval/Layer-1_KSODI-Operators_V350/KSODI_Operator-O_Source-Need-Gate_V350.md).
+[`KSODI_Operator-O_Source-Need-Gate_V351.md`](./KSODI-Standard-Eval/Layer-1_KSODI-Operators_V350/KSODI_Operator-O_Source-Need-Gate_V351.md).
 
 For `I`, retrieval is one possible reference operation, not communication
 itself and not a prerequisite for every profile. Where retrieval is used,
