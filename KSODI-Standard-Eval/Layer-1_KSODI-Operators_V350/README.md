@@ -115,6 +115,34 @@ reader-first Layer-2 Z method and its conditional implementation companion
 preserve this four-state result family beside the derived numeric-availability
 mask. Their versioned method file remains authoritative for the Z construction.
 
+## How to read measurement basis and operator distinction
+
+A Layer-1 number is not self-explanatory. Its meaning depends on the declared
+operator profile and on the concrete measurement-basis instance used for that
+evaluation: the exact requirement set, structural relation set, admissible
+reference space, detector input or information baseline. Equal numbers do not
+establish equal target events, evidence, profiles or measurement bases. A
+rounded display value is not a replacement for the raw result.
+
+The five operators remain separate because they ask different observable
+questions and use different bases. This semantic distinction is not proof that
+the coordinates are mathematically orthogonal, statistically independent,
+empirically non-redundant or complete for every communication question. Those
+claims—including whether another coordinate is needed—remain open research.
+
+Reader routes are therefore purpose-specific:
+
+- use the five operator methods and the [v3.51 measurement-basis
+  contract](./LAYER_1_MEASUREMENT_BASIS_AND_REFERENCE_DISCIPLINE_V351.md) to
+  interpret or reproduce Layer-1 results;
+- use the [bounded distinction research
+  note](./LAYER_1_OPERATOR_DISTINCTION_WORKING_NOTE_V351.md) to inspect the
+  open non-redundancy, orthogonality and completeness questions;
+- use the [shared operator template](./OPERATOR_TEMPLATE_V351.md) only when
+  authoring or reviewing an operator specification. It is a transparent
+  developer/reviewer resource, not an additional method component and not
+  required merely to apply the released operators.
+
 ## Reader path inside each operator
 
 Each substantive operator file should let a new reader follow the same
