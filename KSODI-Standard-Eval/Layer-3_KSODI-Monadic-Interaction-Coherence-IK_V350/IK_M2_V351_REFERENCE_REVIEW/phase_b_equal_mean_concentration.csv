@@ -1,0 +1,5 @@
+case_id,case_role,K,S,O,D,I,z_tuple,coordinate_sum_exact,ik_equal_exact,ik_equal,m1,mean_square_exact,ik_m2_exact,ik_m2,axis_dev_eq_exact,axis_dev_eq,profile_id
+B01,balanced_minimum,1/2,1/2,1/2,1/2,1/2,"(1/2,1/2,1/2,1/2,1/2)",5/2,1/2,0.500000000000,0.500000000000,1/4,1/2,0.500000000000,0,0.000000000000,ik_equal_reference_v350
+B02,graduated_interior,7/10,3/5,1/2,2/5,3/10,"(7/10,3/5,1/2,2/5,3/10)",5/2,1/2,0.500000000000,0.500000000000,27/100,3*sqrt(3)/10,0.519615242271,sqrt(2)/10,0.141421356237,ik_equal_reference_v350
+B03,boundary_maximum_KS,1,1,1/2,0,0,"(1,1,1/2,0,0)",5/2,1/2,0.500000000000,0.500000000000,9/20,3*sqrt(5)/10,0.670820393250,sqrt(5)/5,0.447213595500,ik_equal_reference_v350
+B04,boundary_maximum_DI_permutation,0,0,1/2,1,1,"(0,0,1/2,1,1)",5/2,1/2,0.500000000000,0.500000000000,9/20,3*sqrt(5)/10,0.670820393250,sqrt(5)/5,0.447213595500,ik_equal_reference_v350
