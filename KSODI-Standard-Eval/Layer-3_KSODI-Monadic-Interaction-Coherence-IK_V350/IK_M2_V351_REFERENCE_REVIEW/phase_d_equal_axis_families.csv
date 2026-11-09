@@ -1,0 +1,10 @@
+case_id,family_id,case_role,K,S,O,D,I,z_tuple,coordinate_sum_exact,ik_equal_exact,ik_equal,mean_square_exact,ik_m2_exact,ik_m2,axis_dev_eq_exact,axis_dev_eq,profile_id
+D01,MU_1_5,balanced_minimum,1/5,1/5,1/5,1/5,1/5,"(1/5,1/5,1/5,1/5,1/5)",1,1/5,0.200000000000,1/25,1/5,0.200000000000,0,0.000000000000,ik_equal_reference_v350
+D02,MU_1_5,graduated_interior,2/5,3/10,1/5,1/10,0,"(2/5,3/10,1/5,1/10,0)",1,1/5,0.200000000000,3/50,sqrt(6)/10,0.244948974278,sqrt(2)/10,0.141421356237,ik_equal_reference_v350
+D03,MU_1_5,boundary_maximum,1,0,0,0,0,"(1,0,0,0,0)",1,1/5,0.200000000000,1/5,sqrt(5)/5,0.447213595500,2/5,0.400000000000,ik_equal_reference_v350
+D04,MU_2_5,balanced_minimum,2/5,2/5,2/5,2/5,2/5,"(2/5,2/5,2/5,2/5,2/5)",2,2/5,0.400000000000,4/25,2/5,0.400000000000,0,0.000000000000,ik_equal_reference_v350
+D05,MU_2_5,graduated_interior,4/5,3/5,2/5,1/5,0,"(4/5,3/5,2/5,1/5,0)",2,2/5,0.400000000000,6/25,sqrt(6)/5,0.489897948557,sqrt(2)/5,0.282842712475,ik_equal_reference_v350
+D06,MU_2_5,boundary_maximum,1,1,0,0,0,"(1,1,0,0,0)",2,2/5,0.400000000000,2/5,sqrt(10)/5,0.632455532034,sqrt(6)/5,0.489897948557,ik_equal_reference_v350
+D07,MU_4_5,balanced_minimum,4/5,4/5,4/5,4/5,4/5,"(4/5,4/5,4/5,4/5,4/5)",4,4/5,0.800000000000,16/25,4/5,0.800000000000,0,0.000000000000,ik_equal_reference_v350
+D08,MU_4_5,graduated_interior,3/5,7/10,4/5,9/10,1,"(3/5,7/10,4/5,9/10,1)",4,4/5,0.800000000000,33/50,sqrt(66)/10,0.812403840464,sqrt(2)/10,0.141421356237,ik_equal_reference_v350
+D09,MU_4_5,boundary_maximum,1,1,1,1,0,"(1,1,1,1,0)",4,4/5,0.800000000000,4/5,2*sqrt(5)/5,0.894427191000,2/5,0.400000000000,ik_equal_reference_v350
