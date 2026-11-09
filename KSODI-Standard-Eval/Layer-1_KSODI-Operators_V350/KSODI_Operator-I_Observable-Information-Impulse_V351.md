@@ -46,13 +46,13 @@ predecessor inside the same declared trajectory.
 After an open numeric canonical complete `R0` gate under the exact required
 profile, a separately defined relational comparison of
 distinguishable I trajectories could be specified as a later-layer diagnostic.
-No such operator-specific relational I view is active in this v3.50 operator
+No such operator-specific relational I view is active in this v3.51 operator
 file. It belongs to v3.60 Future Work, does not turn Operator I into a dyadic
 operator and must not be reported as canonical `IK_rel` or an R-family result.
 
 Any operator-only I path that bypasses complete `Z` requires its own pairing,
 applicability and comparability contract. It is likewise v3.60 Future Work,
-not an implicit shortcut in the v3.50 method line.
+not an implicit shortcut in the v3.51 method line.
 
 ### 0.2 Why the formula matters
 
@@ -84,7 +84,7 @@ without becoming alternative I coordinates or dyadic relations.
 
 - New readers may begin with Sections 0-2, the interpretation in Section 4 and the relational boundary in Section 8.
 - Method reviewers should follow the complete semantic and mathematical path through Sections 2-9.
-- Implementers should read Section 10 and the linked public implementation guardrails without treating implementation choices as method definitions.
+- Implementers should read Section 11 and the linked public implementation guardrails without treating implementation choices as method definitions.
 
 The order is deliberate: observable question, two bounded examples, identity and topology, basis and applicability, calculation, movement, pattern and only then the relational boundary.
 
@@ -460,7 +460,7 @@ failure and produces no valid operator result. It does not become another Z
 status. `not_applicable`, `not_observable`, `not_selected` and numeric zero
 remain distinct.
 
-Embeddings are one v3.50 vector-compatible profile, not the architecture-independent definition for every carrier. Model, version, preprocessing and chunking changes must remain recoverable.
+Embeddings are one retained vector-compatible profile, not the architecture-independent definition for every carrier. Model, version, preprocessing and chunking changes must remain recoverable.
 
 ## 4. Static Components, Calculation and Interpretation
 
@@ -937,7 +937,7 @@ under the exact required profile and a separately declared later-layer
 construct.
 
 Operator I does not define coupling, resonance, mutual understanding or
-relational quality. This v3.50 section records the boundary but does not define
+relational quality. This v3.51 section records the boundary but does not define
 or activate an operator-specific relational I comparison.
 
 A proposed post-`R0` comparison of distinguishable I trajectories would remain
