@@ -13,8 +13,9 @@ The published method documentation and method materials in this repository are l
 This work, *KSODI – Method for Structuring and Optimising Human-AI Interactions* © 2024 by<br>
 Anne Steinacker-Folkerts, Heiko Folkerts, and Silke Honerkamp is licensed under CC BY 4.0.<br>
 To view a copy of this licence, visit [![CC BY 4.0][cc-by-shield]][cc-by].
-The complete repository licence text is available in [LICENSE.md](../LICENSE.md);
-the licence history is documented in [LICENSE_HISTORY.md](../LICENSE_HISTORY.md).
+The complete KSODI-Light licence text is available in
+[LICENSE.md](./LICENSE.md); the transition history is documented in the
+[KSODI licence transition note](../KSODI-License-Transition-Note_V342-to-V350.md).
 
 
 ## Acknowledgements
@@ -26,7 +27,7 @@ Special thanks to Benjamin Gage-Prater for early RAG testing and feedback, and t
 
 # KSODI-Light
 
-## Current Public Scope — KSODI v3.5
+## Current Scope — released v3.5 and v3.51 publication candidate
 
 KSODI v3.5 is being published to this repository in successive stages. The
 current public KSODI-Standard-Eval release contains all five Layer-1 operator
@@ -42,11 +43,20 @@ to KSODI-Full, not KSODI-Standard-Eval. The Layer 6–8 R-family and signal-medi
 extensions remain staged or future research and are outside the current public
 method scope.
 
+The v3.51 publication candidate retains that layer boundary while refining the
+monadic result surface: complete typed `Z` remains available alongside the
+distinguishable `IK_w`, `IK_M2`, `IK_ref` and `AxisDev_ref` views in the
+non-total-score IK-Gesamtbild. Candidate files may appear on Public `main`
+during the layerwise review; this does not change the fixed v3.5.0 release or
+constitute a tagged v3.51 release before separate authorization.
+
 Earlier v3.3 and v3.42 materials are retained in clearly marked historical
 archives. They are not current implementation guidance.
 
-KSODI-Light is the human-facing and prompt-level entry variant of the KSODI
-method.
+KSODI-Light is the human-facing entry to communication understanding and to
+the KSODI method. It provides accessible reflective questions without
+collapsing communication into formal scores or requiring the later Observer
+architecture.
 
 It can be used as a **reflective working agreement** between user and
 assistant. In that sense, KSODI-Light does not only reflect the user's prompt.
@@ -54,9 +64,22 @@ It can also reflect assistant output, feedback from the user and the visible
 shared working frame across a turn. This does not create a merged interaction
 state.
 
-## Reflective, Dyadic and Lightweight-Steering Boundary
+## Copy-and-Paste Agent Skills
 
-KSODI-Light is a reflective, dyadically situated self-alignment layer for
+Readers looking for a prompt they can use directly should begin with the
+[KSODI-Light Agent Skills and Copy-and-Paste Prompts](./agent-guidance/README.md).
+The hub offers purpose-specific v3.51 candidates for general assistants,
+coding and repository collaboration, reflective research/method review, and
+education or communication contexts.
+
+These files are portable prompt templates, not guaranteed vendor-specific
+executable skill packages. They use placeholders for roles and scope; no
+personification is required. KSODI-Light remains one entry point in the wider
+method and does not replace the Standard-Eval or Full Observer layers.
+
+## Reflective, Dyadic and Local Self-Adjustment Boundary
+
+KSODI-Light is a reflective, dyadically situated local-guidance layer for
 human-AI, agent-agent or other distinguishable interaction sides.
 
 It can support lightweight internal steering. For example, a participant may
@@ -65,13 +88,13 @@ contribution when a declared context-specific threshold is not reached.
 
 When both interaction sides know and use the KSODI-Light frame, each side may
 reflect on and adjust its own contribution. This creates reciprocal,
-dyadically situated self-steering within a shared working agreement.
+dyadically situated local self-adjustment within a shared working agreement.
 
 When KSODI-Light is implemented only on the agent side, the steering remains
 local and asymmetric. The interaction is still dyadic, but the reflective
 method is not necessarily shared by both participants. Whether this improves
-interaction quality must be observed empirically and must not be assumed from
-prompt compliance alone.
+task handling or reconstructibility must be observed empirically and must not
+be assumed from prompt compliance alone.
 
 KSODI-Light does not rank or evaluate persons. Its thresholds are
 context-specific orientation, clarification or fallback points, not universal
@@ -79,17 +102,17 @@ quality standards.
 
 Dyadic use at the Light level does not mean formal dyadic measurement.
 KSODI-Light does not calculate `R_0`, `IK_rel` or R-family components. Formal
-monadic trajectory observation through `IK_A(k)` belongs to
-KSODI-Standard-Eval. Relational observation begins separately in KSODI-Full at
-`R_0`; current dyadic `IK_rel` requires its exact open canonical complete
-dyadic gate contract.
+monadic trajectory observation, complete typed `Z` and the applicable IK result
+surface belong to KSODI-Standard-Eval. Relational observation begins separately
+in KSODI-Full at `R_0`; current dyadic `IK_rel` requires its exact open
+canonical complete dyadic gate contract.
 
 It supports:
 
 - clearer prompt formulation
 - explainability
 - AI literacy development
-- structured reflection on interaction quality
+- structured reflection on visible task fit and interaction conditions
 - bidirectional feedback when a request, answer or shared working frame does
   not fit the task
 - beginner-friendly collaboration with coding agents
@@ -168,24 +191,32 @@ The examples below show how users can define reflective collaboration modes
 and lightweight agent prompts without publishing private personal instructions:
 
 - User and account prompts:
-  [Coding Agent Guidance Example](./agent-guidance/KSODI-Light-Coding-Agent-Guidance-Example_V350.md)
-  and [General Assistant Guidance Example](./agent-guidance/KSODI-Light-General-Assistant-Guidance-Example_V350.md)
+  [General Assistant Agent Skill](./agent-guidance/KSODI-Light-Agent-Skill_General-Assistant_V351.md),
+  [Education and Communication Agent Skill](./agent-guidance/KSODI-Light-Agent-Skill_Education-and-Communication_V351.md)
+- Coding, repository and method work:
+  [Coding and Repository Collaboration Agent Skill](./agent-guidance/KSODI-Light-Agent-Skill_Coding-and-Repository-Collaboration_V351.md)
+  and [Reflective Research and Method Review Agent Skill](./agent-guidance/KSODI-Light-Agent-Skill_Reflective-Research-and-Method-Review_V351.md)
+- Extended didactic guidance:
+  [Coding Agent Guidance v3.51](./agent-guidance/KSODI-Light-Coding-Agent-Guidance-Extended-Example_V351.md)
+  and [General Assistant Guidance v3.51](./agent-guidance/KSODI-Light-General-Assistant-Guidance-Extended-Example_V351.md)
 - User feedback:
-  [Prompt Feedback Example](./user-feedback/KSODI-Light-Prompt-Feedback-Example_V350.md)
+  [Prompt Feedback Example v3.51](./user-feedback/KSODI-Light-Prompt-Feedback-Example_V351.md)
 - Developer and system-prompt notes:
-  [KSODI-Light Steering, Self-Alignment and Observer-Based Monitoring](./developer-notes/KSODI-Light-Self-Alignment-vs-Steering_V350.md)
+  [KSODI-Light Agent Bridge v3.51](./developer-notes/KSODI-Light-Agent-Bridge_V351.md)
+  and [Reflection, Local Self-Adjustment and Prompt-Level Steering
+  v3.51](./developer-notes/KSODI-Light-Self-Alignment-vs-Steering_V351.md)
 - Method orientation:
-  [KSODI-Light Method Comparison](./KSODI-Light-Method-Comparison_EN_V350.md)
-  and the [KSODI English Translation Table](./KSODI-Light-English-Translation-Table_V350.md)
+  [KSODI-Light Method Comparison and Combination Guide v3.51](./KSODI-Light-Method-Comparison_EN_V351.md)
+  and the [KSODI English Translation Table v3.51](./KSODI-Light-English-Translation-Table_V351.md)
 
 The guidance examples are not hidden system prompts. They are public,
 copy-and-paste-ready orientation prompts for user accounts, training contexts
 and simple assistant setups. More specialized variants, such as research,
 education, creative writing or child-friendly prompts, can be added separately.
 
-KSODI-Light may support reflective self-alignment patterns in assistants, such
-as asking for clarification, keeping uncertainty visible and adapting K/S/O/D/I
-expectations to the task context.
+KSODI-Light may support reflective local self-adjustment patterns in assistants,
+such as asking for clarification, keeping uncertainty visible and adapting
+K/S/O/D/I expectations to the task context.
 
 When embedded by a user, trainer, developer or agent creator, KSODI-Light can
 also support lightweight steering. Examples include:
@@ -204,23 +235,27 @@ answered the wrong task or moved too quickly.
 These patterns remain prompt-level guidance. They are not the same as formal
 KSODI-Standard-Eval or KSODI-Full monitoring.
 
-## Score Corridors
+## Optional Internal Completeness Estimates
 
-KSODI-Light scores are coarse orientation signals.
+KSODI-Light normally produces short natural-language feedback rather than a
+visible score. An agent may use a rough internal `0..5` estimate for each
+task-relevant K/S/O/D/I dimension to decide whether clarification would help:
 
-The current public KSODI-Light convention uses an ascending usability scale:
-`0` means not usable for the declared task and `5` means fully usable for that
-task. A five-operator total therefore ranges from `0` to `25`. This didactic
-Light scale is not a rescaling of the formal Observer coordinates in `[0,1]`.
-Implementations and adaptations must declare their score polarity explicitly
-and must not import an older or opposite scale without marking the change.
+- `0` means that the visible material is not yet usable for that part of the
+  declared task;
+- `5` means that the task-relevant elements appear sufficiently complete for
+  the requested processing.
 
-A score corridor such as `K=4, S=4, O=3, D=4, I=4` should be read as a
-context-specific expectation, not as a universal quality target.
+If a dimension appears incomplete, the useful response is not merely a number.
+The agent should briefly explain what is missing, why it matters and one way to
+improve the request, answer or visible working frame.
 
-The score may refer to user input, assistant output or the current shared
-interaction state. It should always be interpreted as usability for the current
-task, not as a judgement of a person.
+Numeric estimates are disclosed only when requested. They must be named as
+approximate, task-specific estimates and shown per dimension. A single total
+is not the preferred view because it can hide which dimension needs attention.
+This didactic Light scale is not a rescaling of formal Observer coordinates in
+`[0,1]`, not a formal Layer-1 operator result and not a judgement of a person,
+truth, intelligence or general quality.
 
 Different tasks may need different corridors:
 
@@ -231,10 +266,17 @@ Different tasks may need different corridors:
 - legal, medical, safety or governance contexts may require much stricter
   grounding and source boundaries.
 
-For public examples, score corridors should be disclosed and explained. Hidden
-or automated score-based intervention does not belong to the Observer alone.
-It requires a separately governed human or Controller action boundary and is
-not part of this public KSODI-Light example set.
+If numeric estimates are requested, their task scope, ascending polarity and
+approximate status must be disclosed and explained. Hidden or automated
+score-based intervention does not belong to the Observer alone. It requires a
+separately governed human or Controller action boundary and is not part of this
+public KSODI-Light example set.
+
+Repeated prompt use may affect later visible interaction only under additional
+conditions: the instruction remains available or is reintroduced, the platform
+loads it, its meaning remains sufficiently stable and higher-priority rules or
+context limits do not displace it. **Prompt presence does not prove persistent
+learning, memory, internal-state change or a causal long-term effect.**
 
 ## Observer Boundary
 
@@ -269,8 +311,9 @@ commercially. When licensed material is shared, appropriate attribution must be
 retained, changes must be indicated and the licence and source must be
 referenced as required by CC BY 4.0.
 
-See the repository [LICENSE.md](../LICENSE.md) for the complete legal text and
-[LICENSE_HISTORY.md](../LICENSE_HISTORY.md) for the documented decision change.
+See the KSODI-Light [LICENSE.md](./LICENSE.md) for the complete legal text and
+the [KSODI licence transition note](../KSODI-License-Transition-Note_V342-to-V350.md)
+for the documented decision change.
 
 ---
 

@@ -1,27 +1,41 @@
-# KSODI-Light Developer and System-Prompt Notes
+# KSODI-Light Developer Notes v3.51
 
-This folder contains public notes for developers, trainers and agent creators
-who want to embed KSODI-Light guidance into assistant or system-prompt
-configurations.
+Status: `V351_PUBLIC_CANDIDATE / DEVELOPER_READING_GUIDE`
+
+This folder contains developer-facing notes for embedding KSODI-Light guidance
+into assistants, agent instructions and prompt-level interaction systems.
+
+## Active v3.51 candidates
+
+1. [KSODI-Light Agent Bridge v3.51](./KSODI-Light-Agent-Bridge_V351.md)
+   places portable Agent Skills inside the v3.51 architecture and separates
+   local prompt guidance from external Observer and Controller roles.
+2. [KSODI-Light Reflection, Local Self-Adjustment and Prompt-Level Steering
+   v3.51](./KSODI-Light-Self-Alignment-vs-Steering_V351.md) defines the narrow
+   meaning of self-adjustment, KLANGSAMKEIT, input boundaries, longitudinal
+   uncertainty and the Macro–Micro–Macro developer return.
+3. [KSODI-Light Agent Skills and Copy-and-Paste
+   Prompts](../agent-guidance/README.md) provides the corresponding portable
+   user- and agent-facing instructions.
+
+## Layer boundary
 
 At this level, KSODI-Light may define:
 
-- K/S/O/D/I expectation corridors,
-- task-specific fallback behavior,
-- clarification rules,
-- domain-dependent objectivity or grounding requirements.
-- bidirectional feedback rules for user input, assistant output and the shared
-  visible working frame.
+- reflective K/S/O/D/I questions;
+- short natural-language clarification or improvement feedback;
+- a rough internal task-completeness estimate;
+- activation scope, pause and reset behavior;
+- task-specific fallback behavior;
+- disclosed symbolic protocols with plain-text fallbacks.
 
-This is prompt-level steering. It can guide an assistant from inside its
-instruction frame.
+It does not calculate formal Layer-1 operator results, complete typed `Z`,
+monadic `IK`, relational `R0`, `IK_rel` or R-family values. It does not create
+an external Observer, prove persistent learning or authorize a Controller.
 
-It is not the same as an external KSODI observer. Observer-based monitoring
-evaluates trajectories from outside the prompt, records drift over time and
-belongs to KSODI-Standard-Eval, KSODI-Full or IDAS/SIRA-level implementations.
+## Predecessors
 
-Related developer note:
-
-- [KSODI-Light-Agent V350 Bridge](./KSODI-Light-Agent-Bridge_V350.md) — places
-  the prompt-oriented agent role within the KSODI Architecture V350 and points
-  to the separate public proof-of-concept implementation.
+The v3.50 bridge and self-alignment/steering notes remain versioned predecessor
+evidence until the v3.51 Public package, backlinks, hashes and archive
+disposition are verified. They then move to the versioned Private and Public
+archives rather than remaining active reader entries.

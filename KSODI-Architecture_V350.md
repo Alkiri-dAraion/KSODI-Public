@@ -529,7 +529,7 @@ T_B ----/          |
 
 ## 16. Layer Files
 
-- [Layer 0 - KSODI-Light](./KSODI-Light/developer-notes/KSODI-Light-Agent-Bridge_V350.md)
+- [Layer 0 - KSODI-Light](./KSODI-Light/developer-notes/KSODI-Light-Agent-Bridge_V351.md)
 - [Layer 1 - Operators](./KSODI-Standard-Eval/Layer-1_KSODI-Operators_V350/README.md)
 - [Layer 2 - State Vector Z](./KSODI-Standard-Eval/Layer-2_KSODI-State-Vector-Z_V350/README.md)
 - [Layer 3 - Monadic Interaction Coherence IK](./KSODI-Standard-Eval/Layer-3_KSODI-Monadic-Interaction-Coherence-IK_V350/README.md)

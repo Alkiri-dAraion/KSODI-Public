@@ -98,7 +98,7 @@ the dimensions.
 `CSOCI` may appear only as an English translation mnemonic for the five
 KSODI-Light labels. It is not an alternative method name, a separate English
 version or an independent provenance line. The method remains `KSODI` in every
-language. See the [KSODI English Translation Table](./KSODI-Light/KSODI-Light-English-Translation-Table_V350.md).
+language. See the [KSODI English Translation Table](./KSODI-Light/KSODI-Light-English-Translation-Table_V351.md).
 
 Within the current IDAS orientation, KSODI contributes the defined observation
 layers for interaction states, interaction coherence and relational R-family
