@@ -7,9 +7,10 @@ remains conditional and subordinate. Public availability does not turn
 optional views into mandatory calculations or make staged later research
 operational.
 
-Publication is layerwise. Operator K is published here as the v3.51 reference
-method and companion; S, O, D and I remain at their v3.50 baseline until their
-separate reviewed v3.51 passes. This is not yet the full tagged v3.51 release.
+Publication is layerwise. Operators K and S are published here as v3.51
+reference methods and companions; O, D and I remain at their v3.50 baseline
+until their separate reviewed v3.51 passes. This is not yet the full tagged
+v3.51 release.
 
 ## What this folder contains
 
@@ -54,10 +55,11 @@ admitted cardinality and profile.
     profile-oriented operationalization; not a sixth operator and not a
     replacement for the carrier-neutral method; independent runtime
     conformance remains outstanding
-- [`S0`](./KSODI_Operator-S_Observable-Structural-Coherence_V350.md) — Observable Structural Coherence
-  - [`S0` Implementation Companion](./KSODI_Operator-S_Implementation-Companion_V350.md) — conditional
+- [`S0` v3.51](./KSODI_Operator-S_Observable-Structural-Coherence_V351.md) — Observable Structural Coherence
+  - [`S0` v3.51 Implementation Companion](./KSODI_Operator-S_Implementation-Companion_V351.md) — conditional
     profile-oriented operationalization; not a sixth operator and not a
-    replacement for the carrier-neutral method
+    replacement for the carrier-neutral method; independent runtime
+    conformance remains outstanding
 - [`O0`](./KSODI_Operator-O_Observable-Grounded-Objectivity_V350.md) — Observable Grounded Objectivity
   - [`O` Source-Need Gate](./KSODI_Operator-O_Source-Need-Gate_V350.md) — applicability and
     source-need companion; not a sixth operator

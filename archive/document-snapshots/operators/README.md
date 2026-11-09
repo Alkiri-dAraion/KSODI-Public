@@ -11,6 +11,9 @@ reader-first v3.50 files.
 - [`k-v350-replaced-by-v351-2026-11-09/`](./k-v350-replaced-by-v351-2026-11-09/README.md)
   preserves the two active Public Operator-K v3.50 files replaced by their
   cumulative v3.51 successors.
+- [`s-v350-replaced-by-v351-2026-11-09/`](./s-v350-replaced-by-v351-2026-11-09/README.md)
+  preserves the two active Public Operator-S v3.50 files replaced by their
+  cumulative v3.51 successors.
 
 These files are provenance snapshots, not current method definitions. Use the
 active files under `KSODI-Standard-Eval/Layer-1_KSODI-Operators_V350/`.
