@@ -1,0 +1,8 @@
+case_id,condition,result_status,gate_state,processing_state,numeric_value_present
+S-01,no R0 profile selected,not_selected,not_evaluable,none,false
+S-02,required movement not observable,not_observable,not_evaluable,none,false
+S-03,declared pairing or fixed-M contract not applicable,not_applicable,not_evaluable,none,false
+S-04,identity or profile incomparable,no_valid_result,absent,incomparable,false
+S-05,malformed threshold or arithmetic,no_valid_result,absent,processing_error,false
+S-06,valid numeric result below threshold,numeric,closed,none,true
+S-07,valid numeric result at threshold,numeric,open,none,true

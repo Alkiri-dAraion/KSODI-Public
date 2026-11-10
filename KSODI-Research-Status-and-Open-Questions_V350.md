@@ -401,7 +401,7 @@ certifications or production guarantees.
 - Layer 3 definition:
   [Monadic IK](./KSODI-Standard-Eval/Layer-3_KSODI-Monadic-Interaction-Coherence-IK_V350/KSODI_Monadic-Interaction-Coherence-IK_V351.md).
 - Layer 4 definition:
-  [Relational Gate R_0](./KSODI-Full/Layer-4_KSODI-Relational-Gate-R_0_V350/KSODI_Relational-Gate-R_0_V350.md).
+  [Relational Gate R_0](./KSODI-Full/Layer-4_KSODI-Relational-Gate-R_0_V350/KSODI_Relational-Gate-R_0_V351.md).
 - Layer 5 definition:
   [Dyadic IK_rel](./KSODI-Full/Layer-5_KSODI-Dyadic-Relational-Coherence-IK_rel_V350/KSODI_Dyadic-Relational-Coherence-IK_rel_V350.md).
 - Cross-layer Sigma/Hangar interpretation:

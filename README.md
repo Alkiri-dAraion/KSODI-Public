@@ -379,7 +379,7 @@ v3.5; they are not current v3.5 specification diagrams.
 > whether explicitly paired, distinguishable trajectories provide a stable
 > basis for relational comparison. It does not create the relation, and it is
 > not itself a coupling or resonance score. See the
-> [R_0 relational gate](./KSODI-Full/Layer-4_KSODI-Relational-Gate-R_0_V350/KSODI_Relational-Gate-R_0_V350.md).
+> [R_0 relational gate](./KSODI-Full/Layer-4_KSODI-Relational-Gate-R_0_V350/KSODI_Relational-Gate-R_0_V351.md).
 >
 > In a declared duet, each dancer's attributable movement trajectory may remain
 > structurally coherent under its declared profile while the pair is out of
