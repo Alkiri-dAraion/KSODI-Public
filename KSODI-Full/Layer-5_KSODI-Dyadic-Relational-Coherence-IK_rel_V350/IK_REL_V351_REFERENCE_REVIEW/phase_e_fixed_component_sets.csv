@@ -1,0 +1,8 @@
+case_id,component_set_N,component_count,representative_named_weights,sample_component_values,weighted_result_exact,reversed_serialization,named_weight_reordered_result_exact,wrong_positional_rebinding_result_exact,positional_rebinding_detectably_wrong,profile_kind
+E-SET-01,{gap},1,gap:1,gap:1/4;move:1/2;accel:3/4,1/4,{gap},1/4,1/4,false,test_only_not_canonical_weight_choice
+E-SET-02,{move},1,move:1,gap:1/4;move:1/2;accel:3/4,1/2,{move},1/2,1/2,false,test_only_not_canonical_weight_choice
+E-SET-03,{accel},1,accel:1,gap:1/4;move:1/2;accel:3/4,3/4,{accel},3/4,3/4,false,test_only_not_canonical_weight_choice
+E-SET-04,"{gap,move}",2,gap:1/3;move:2/3,gap:1/4;move:1/2;accel:3/4,5/12,"{move,gap}",5/12,1/3,true,test_only_not_canonical_weight_choice
+E-SET-05,"{gap,accel}",2,gap:1/4;accel:3/4,gap:1/4;move:1/2;accel:3/4,5/8,"{accel,gap}",5/8,3/8,true,test_only_not_canonical_weight_choice
+E-SET-06,"{move,accel}",2,move:2/5;accel:3/5,gap:1/4;move:1/2;accel:3/4,13/20,"{accel,move}",13/20,3/5,true,test_only_not_canonical_weight_choice
+E-SET-07,"{gap,move,accel}",3,gap:1/6;move:1/3;accel:1/2,gap:1/4;move:1/2;accel:3/4,7/12,"{accel,move,gap}",7/12,5/12,true,test_only_not_canonical_weight_choice

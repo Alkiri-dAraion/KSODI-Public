@@ -403,7 +403,7 @@ certifications or production guarantees.
 - Layer 4 definition:
   [Relational Gate R_0](./KSODI-Full/Layer-4_KSODI-Relational-Gate-R_0_V350/KSODI_Relational-Gate-R_0_V351.md).
 - Layer 5 definition:
-  [Dyadic IK_rel](./KSODI-Full/Layer-5_KSODI-Dyadic-Relational-Coherence-IK_rel_V350/KSODI_Dyadic-Relational-Coherence-IK_rel_V350.md).
+  [Dyadic IK_rel](./KSODI-Full/Layer-5_KSODI-Dyadic-Relational-Coherence-IK_rel_V350/KSODI_Dyadic-Relational-Coherence-IK_rel_V351.md).
 - Cross-layer Sigma/Hangar interpretation:
   [KSODI Hangar V350](./KSODI-Hangar_V350.md).
 - Architecture and dependencies:

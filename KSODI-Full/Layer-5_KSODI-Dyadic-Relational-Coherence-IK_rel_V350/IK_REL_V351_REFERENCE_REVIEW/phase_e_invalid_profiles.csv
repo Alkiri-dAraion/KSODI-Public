@@ -1,0 +1,10 @@
+case_id,description,violated_contract,expected_outcome,numeric_result_permitted
+E-INVALID-01,empty_component_set,N is empty,processing_error_invalid_profile,false
+E-INVALID-02,unknown_or_reserved_component,N contains shared,processing_error_invalid_profile,false
+E-INVALID-03,duplicate_component_identity,N contains move twice,processing_error_invalid_profile,false
+E-INVALID-04,missing_named_weight,one selected component has no weight,processing_error_invalid_profile,false
+E-INVALID-05,extra_named_weight,weight supplied for component outside N,processing_error_invalid_profile,false
+E-INVALID-06,negative_weight,one named weight is negative,processing_error_invalid_profile,false
+E-INVALID-07,nonfinite_weight,one named weight is nonfinite,processing_error_invalid_profile,false
+E-INVALID-08,weight_sum_not_one,finite nonnegative weights do not sum to one,processing_error_invalid_profile,false
+E-INVALID-09,unnamed_positional_weights,weights are not bound to component identities,processing_error_invalid_profile,false

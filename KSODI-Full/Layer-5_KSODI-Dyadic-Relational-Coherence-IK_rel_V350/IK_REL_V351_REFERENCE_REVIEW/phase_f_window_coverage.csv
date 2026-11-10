@@ -1,0 +1,6 @@
+case_id,description,total_opportunities,gate_numeric_count,gate_open_count,movement_policy_opportunity_count,movement_epsilon_band_count,eligible_numeric_ik_rel_count,coverage_rel_exact,gate_open_rate_exact,gate_open_rate_status,movement_epsilon_band_rate_exact,movement_epsilon_band_rate_status,eligible_subset_mean_exact,eligible_subset_mean_decimal,test_minimum_count,test_minimum_coverage_exact,aggregate_emission,aggregate_method_status,aggregate_value_exact,excluded_partitions_retained
+F-WIN-01,sustained_numeric,8,8,8,8,0,8,1,1,numeric,0,numeric,87/100,0.870000000000,3,1/2,numeric_emitted,numeric,87/100,true
+F-WIN-02,sparse_high_values,8,8,2,2,0,2,1/4,1/4,numeric,0,numeric,199/200,0.995000000000,3,1/2,not_emitted_minimum_or_coverage,open_contract_not_inferred,,true
+F-WIN-03,no_numeric_gate_denominator,4,0,0,0,0,0,0,,not_evaluable_empty_denominator,,not_evaluable_empty_denominator,,,3,1/2,not_emitted_minimum_or_coverage,open_contract_not_inferred,,true
+F-WIN-04,all_open_inside_movement_epsilon_band,4,4,4,4,4,0,0,1,numeric,1,numeric,,,3,1/2,not_emitted_minimum_or_coverage,open_contract_not_inferred,,true
+F-WIN-05,mixed_gate_and_component_statuses,10,8,6,5,2,3,3/10,3/4,numeric,2/5,numeric,23/30,0.766666666667,3,1/2,not_emitted_minimum_or_coverage,open_contract_not_inferred,,true

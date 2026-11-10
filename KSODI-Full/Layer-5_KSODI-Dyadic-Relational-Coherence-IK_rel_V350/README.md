@@ -1,39 +1,54 @@
-# Layer 5 — KSODI Dyadic Relational Coherence (`IK_rel`)
+# KSODI-Full Layer 5 — dyadic relational coherence `IK_rel` v3.51
 
-`IK_rel` is a dyadic relational coherence-compatibility projection after an
-open numeric canonical complete dyadic `R0` gate for the same ordered dyad,
-pairing, relational step and exact required profile. The v3.50 primary profile
-compares paired movement along one shared canonical monadic IK axis.
+Status: `PUBLIC_V3.51_LAYER_ENTRY / METHOD_AND_REFERENCE_PACKAGE`
 
-Reader order:
+Layer 5 asks one bounded question after an exact compatible Layer-4 handoff:
 
-1. preserve the two monadic trajectories and read their Z/IK contracts;
-2. read R0 as the independent relational comparability gate;
-3. read the IK_rel method for the semantic and mathematical contract;
-4. read the companion only for conditional implementation guidance.
+> How compatible is the observable movement of two distinct, explicitly
+> paired monadic trajectories along one shared, declared `IK_w` axis?
 
-Active files:
+`IK_rel` is not agreement, truth, alignment, causation, coupling, resonance,
+shared meaning or action authority. It does not merge the two trajectories.
 
-- [`KSODI_Dyadic-Relational-Coherence-IK_rel_V350.md`](./KSODI_Dyadic-Relational-Coherence-IK_rel_V350.md) — authoritative method;
-- [`KSODI_Dyadic-Relational-Coherence-IK_rel_Implementation-Companion_V350.md`](./KSODI_Dyadic-Relational-Coherence-IK_rel_Implementation-Companion_V350.md) — subordinate schemas, migration, pseudocode and tests.
+## Read in this order
 
-Core boundary:
+1. [`KSODI_Dyadic-Relational-Coherence-IK_rel_V351.md`](./KSODI_Dyadic-Relational-Coherence-IK_rel_V351.md)
+   — authoritative v3.51 method and result contract;
+2. [`KSODI_Dyadic-Relational-Coherence-IK_rel_Implementation-Companion_V351.md`](./KSODI_Dyadic-Relational-Coherence-IK_rel_Implementation-Companion_V351.md)
+   — subordinate records, pseudocode, migration and acceptance tests;
+3. [`IK_REL_V351_REFERENCE_REVIEW/`](./IK_REL_V351_REFERENCE_REVIEW/)
+   — assertion-checked reports, dependency-free generators, fixtures and
+   integrity manifest.
+
+## Architectural seam
 
 ```text
-distinct A/B trajectories + explicit pi(j)
-+ same-pairing open numeric canonical complete dyadic R0 under exact profile
-+ comparable canonical IK movement under one shared axis
--> primary IK_rel may be numeric
+A: K/S/O/D/I -> typed Z_A -> IK_w,A --\
+                                         +--> IK_rel_AB(j)
+B: K/S/O/D/I -> typed Z_B -> IK_w,B --/
 
-fixed typed relational component set N from gap/move/accel -> named IK_rel^[N]
-changing or hidden N -> no comparable relational projection
+Delta Z_A --\
+              +--> exact R_0,AB(j) handoff
+Delta Z_B --/
 ```
 
-Parallel monadic curves may be displayed before R0, but they are not relational
-evidence. IK_rel is not agreement, alignment, coupling, resonance, causation or
-control.
+`R_0` and monadic `IK_w` are parallel prerequisites. `R_0` is not calculated
+from `IK_w`; `IK_rel` consumes the exact gate decision plus declared monadic
+operands. The primary v3.51 profile is the movement component `{move}`.
 
-This release covers the Layer-5 IK_rel method, its conditional implementation
-companion and this adjacent README. It does not authorize software merge,
-threshold or epsilon choice, Patrick alignment, Controller action, a GitHub
-tag, GitHub Release, DOI or Zenodo artifact.
+## Result and evidence boundary
+
+Every conforming result retains the ordered dyad, pairing map, source-local
+predecessors, exact `R_0` identity, shared `IK_w` profile, raw operands,
+component/profile identity, typed status and complete `Delta Z` reverse path.
+
+The reference package proves the published arithmetic and contract fixtures
+are reproducible. It does not prove runtime conformance, empirical calibration
+or real-world semantic validity.
+
+## Migration
+
+The direct v3.50 method, companion and pre-v3.51 reader are preserved at
+[`archive/document-snapshots/dyadic-ik-rel/v350-replaced-by-v351-2026-11-10/`](../../archive/document-snapshots/dyadic-ik-rel/v350-replaced-by-v351-2026-11-10/).
+Equal numeric values alone do not prove cross-version comparability; use the
+v3.51 migration classes and declared identity/profile evidence.

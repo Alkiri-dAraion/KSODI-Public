@@ -1,0 +1,7 @@
+relational_step_id,status_or_gate_transition,ik_rel_value_exact,delta_ik_rel_exact,delta2_ik_rel_exact,categorical_transition_encoded_as_numeric_delta
+j1,numeric,4/5,,,false
+j2,numeric,9/10,1/10,,false
+j3,gate_closed,,,,false
+j4,numeric,7/10,,,false
+j5,numeric,3/5,-1/10,,false
+j6,numeric,4/5,1/5,3/10,false

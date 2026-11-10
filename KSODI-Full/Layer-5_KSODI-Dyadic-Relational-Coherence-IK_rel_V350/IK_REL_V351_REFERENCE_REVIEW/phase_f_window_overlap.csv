@@ -1,0 +1,6 @@
+case_id,description,member_ids,member_count,profile_id,aggregate_exact,aggregate_decimal,membership_and_overlap_retained
+F-OVER-01,sliding_left,j1;j2;j3;j4,4,profile-A,1/2,0.500000000000,true
+F-OVER-02,sliding_right,j3;j4;j5;j6,4,profile-A,33/40,0.825000000000,true
+F-OVER-03,tumbling_left,j1;j2;j3,3,profile-A,2/5,0.400000000000,true
+F-OVER-04,tumbling_right,j4;j5;j6,3,profile-A,9/10,0.900000000000,true
+F-OVER-05,profile_mismatch_control,j3;j4;j5;j6,4,profile-B,33/40,0.825000000000,true
