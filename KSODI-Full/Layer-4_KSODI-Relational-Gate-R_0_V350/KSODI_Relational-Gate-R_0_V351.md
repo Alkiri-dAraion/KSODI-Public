@@ -435,6 +435,23 @@ a_AB(j) = |d_A(j) - d_B(j)| in [0,1]
 It exposes one-sided movement but does not alter canonical R0. A later strict
 profile may use `1-max(d_A,d_B)`; it is not active canonical v3.51 behavior.
 
+### 8.4 Optional Phase-H coordinate-extreme diagnostic candidate
+
+Phase H may additionally test, per trajectory, the derived pair:
+
+```text
+max_abs_coordinate_delta_E
+max_abs_coordinate_ids_E
+```
+
+The ID field is a set because several coordinates may share the same maximum.
+The active coordinate set, coordinate-metric profile and complete signed
+`Delta Z_E` remain authoritative. This candidate does not alter R0, the gate,
+coordinate weights or the semantic importance of any coordinate. It is not a
+required v3.51 conformance field. Phase H tests single-coordinate movement,
+ties and L1/L2/profile sensitivity before v3.52 decides whether it belongs in
+a controlled record schema.
+
 ## 9. N-adic extension
 
 Let one declared constellation at relational step q be:

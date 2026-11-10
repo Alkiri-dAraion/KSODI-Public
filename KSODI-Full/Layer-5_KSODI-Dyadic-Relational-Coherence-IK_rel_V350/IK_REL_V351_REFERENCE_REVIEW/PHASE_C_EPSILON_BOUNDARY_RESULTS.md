@@ -28,6 +28,10 @@ probe step    = 1/100
 ```
 
 These are fixtures, not selected v3.51 defaults or empirical thresholds.
+Each fixture now carries its distinct policy ID, parameter origin
+`synthetic_reference_fixture` and explicit calibration status
+`set_not_empirically_calibrated`. Formula correctness never upgrades that
+status.
 
 ## 2. Reproducible artifacts
 
@@ -162,6 +166,8 @@ opportunities.
   remains `not_applicable` for the current movement/acceleration question;
 - positive thresholds require a separately identified, versioned basis rather
   than one untyped epsilon default;
+- every positive epsilon retains parameter origin and explicit calibration
+  status; a set/test value is never reported as empirically calibrated;
 - numerical calculation tolerance, measurement-resolution/noise boundary and
   question-specific activity/relevance threshold remain distinct;
 - a measurement-resolution route may require `not_observable`, whereas a

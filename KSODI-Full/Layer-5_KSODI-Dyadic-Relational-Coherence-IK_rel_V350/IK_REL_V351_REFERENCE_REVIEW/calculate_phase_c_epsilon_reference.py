@@ -15,6 +15,12 @@ ORDER_OUTPUT = ROOT / "phase_c_derivative_order_statuses.csv"
 EPSILON_MOVE = Fraction(1, 10)
 EPSILON_ACCEL = Fraction(1, 5)
 PROBE_STEP = Fraction(1, 100)
+EPSILON_POLICY_IDS = {
+    "move": "phase_c_move_test_control_v351",
+    "accel": "phase_c_accel_test_control_v351",
+}
+EPSILON_PARAMETER_ORIGIN = "synthetic_reference_fixture"
+EPSILON_CALIBRATION_STATUS = "set_not_empirically_calibrated"
 
 
 def fraction_text(value: Fraction) -> str:
@@ -77,6 +83,9 @@ def write_boundaries() -> list[dict[str, str]]:
                     "component_kind": kind,
                     "description": description,
                     "epsilon_exact": fraction_text(epsilon),
+                    "epsilon_policy_id": EPSILON_POLICY_IDS[kind],
+                    "epsilon_parameter_origin": EPSILON_PARAMETER_ORIGIN,
+                    "epsilon_calibration_status": EPSILON_CALIBRATION_STATUS,
                     "probe_step_exact": fraction_text(PROBE_STEP),
                     "input_a_exact": fraction_text(value_a),
                     "input_b_exact": fraction_text(value_b),
@@ -145,7 +154,13 @@ def write_derivative_order_cases() -> list[dict[str, str]]:
             "c_accel_raw_exact": fraction_text(component_value("accel", delta2_a, delta2_b)),
             "c_accel_status": accel_status,
             "epsilon_move_exact": fraction_text(EPSILON_MOVE),
+            "epsilon_move_policy_id": EPSILON_POLICY_IDS["move"],
+            "epsilon_move_parameter_origin": EPSILON_PARAMETER_ORIGIN,
+            "epsilon_move_calibration_status": EPSILON_CALIBRATION_STATUS,
             "epsilon_accel_exact": fraction_text(EPSILON_ACCEL),
+            "epsilon_accel_policy_id": EPSILON_POLICY_IDS["accel"],
+            "epsilon_accel_parameter_origin": EPSILON_PARAMETER_ORIGIN,
+            "epsilon_accel_calibration_status": EPSILON_CALIBRATION_STATUS,
         }
         rows.append(row)
 

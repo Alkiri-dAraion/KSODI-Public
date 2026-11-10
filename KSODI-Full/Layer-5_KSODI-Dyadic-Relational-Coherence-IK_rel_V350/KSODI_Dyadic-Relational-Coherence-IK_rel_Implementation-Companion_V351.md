@@ -39,7 +39,9 @@ IKRelProfile {
   epsilon_policies[] {
     component_name, epsilon_kind, epsilon_value
     domain_and_scale, inclusive_boundary_policy
-    evidence_or_rationale, policy_id, version
+    parameter_origin, calibration_status
+    calibration_evidence_reference, evidence_or_rationale
+    policy_id, version
     status_consequence, raw_operand_retention
   }
 }
@@ -124,6 +126,9 @@ handoff from an `R_0` number alone.
 
 ```text
 function evaluate_move_epsilon(operands, policy):
+    require declared parameter_origin and calibration_status
+    require calibration_evidence_reference when status claims calibration
+    reject test/set values labelled as empirically calibrated
     switch policy.kind:
       epsilon_numeric_tolerance:
         if both canonical_zero_under_policy:
@@ -293,7 +298,9 @@ Fixture thresholds and means are test controls, not production recommendations.
 17. raw/display/LLM records remain separate;
 18. migration retains ambiguity and loss;
 19. runtime provenance identifies code/profile versions;
-20. no result is labelled resonance, alignment, causation or control.
+20. no result is labelled resonance, alignment, causation or control;
+21. every positive epsilon records parameter origin and calibration status,
+    and a test/set value is never emitted as empirically calibrated.
 
 ## 12. Boundary
 

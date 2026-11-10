@@ -122,6 +122,12 @@ R0AssistiveInterpretation {
 Display and interpretation records must not overwrite `raw_value`, `value`,
 typed status, gate state or provenance.
 
+The optional Phase-H candidates `max_abs_coordinate_delta_E` and
+`max_abs_coordinate_ids_E` are derived diagnostics, not required v3.51 result
+fields. If emitted experimentally, retain the active coordinate set, metric
+profile and complete signed `Delta Z_E`; represent all tied coordinate IDs and
+never feed the diagnostic back into R0 or the gate.
+
 Malformed identity, range, profile or arithmetic is a processing error.
 
 ## 3. Source-local movement eligibility

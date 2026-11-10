@@ -182,9 +182,13 @@ joint projected zero under recorded `epsilon_method = 0`. The v3.51 record uses
 typed projected-null/band reasons instead.
 
 Each positive profile declares kind, component, value, domain/scale, boundary
-inclusivity, evidence or rationale, version, status consequence and raw-operand
-retention. Movement and acceleration policies remain separate. Display
-rounding and the `R_0` threshold are not epsilon kinds.
+inclusivity, parameter origin, explicit calibration status, evidence or
+rationale, version, status consequence and raw-operand retention. A set or
+test-only value must not be presented as empirically calibrated; for example,
+`calibration_status = set_not_empirically_calibrated` remains distinguishable
+from a later validated calibration record. Movement and acceleration policies
+remain separate. Display rounding and the `R_0` threshold are not epsilon
+kinds.
 
 ## 4. Typed components and fixed profiles
 
