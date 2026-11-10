@@ -1,8 +1,12 @@
-case_id,condition,result_status,gate_state,processing_state,numeric_value_present
-S-01,no R0 profile selected,not_selected,not_evaluable,none,false
-S-02,required movement not observable,not_observable,not_evaluable,none,false
-S-03,declared pairing or fixed-M contract not applicable,not_applicable,not_evaluable,none,false
-S-04,identity or profile incomparable,no_valid_result,absent,incomparable,false
-S-05,malformed threshold or arithmetic,no_valid_result,absent,processing_error,false
-S-06,valid numeric result below threshold,numeric,closed,none,true
-S-07,valid numeric result at threshold,numeric,open,none,true
+case_id,condition,profile_selected,required_statuses,incomparable_present,processing_error_present,numeric_value,threshold,result_status,gate_state,processing_state,numeric_value_present
+S-01,no R0 profile selected,false,numeric,false,false,,,not_selected,not_evaluable,none,false
+S-02,required movement not observable,true,not_observable,false,false,,,not_observable,not_evaluable,none,false
+S-03,declared pairing or fixed-M contract not applicable,true,not_applicable,false,false,,,not_applicable,not_evaluable,none,false
+S-04,identity or profile incomparable,true,numeric,true,false,,,no_valid_result,absent,incomparable,false
+S-05,malformed threshold or arithmetic,true,numeric,false,true,,,no_valid_result,absent,processing_error,false
+S-06,valid numeric result below threshold,true,numeric,false,false,0.4,0.5,numeric,closed,none,true
+S-07,valid numeric result at threshold,true,numeric,false,false,0.5,0.5,numeric,open,none,true
+S-08,not observable takes precedence over inapplicable,true,not_observable|not_applicable,false,false,,,not_observable,not_evaluable,none,false
+S-09,selected profile with not-selected and inapplicable inputs,true,not_selected|not_applicable,false,false,,,not_applicable,not_evaluable,none,false
+S-10,incomparability blocks otherwise unobservable inputs,true,not_observable,true,false,,,no_valid_result,absent,incomparable,false
+S-11,absent R0 profile short-circuits input-status resolution,false,not_observable,false,false,,,not_selected,not_evaluable,none,false

@@ -14,7 +14,7 @@ method, companion and upstream monadic sources used to construct it. It does not
 | `KSODI_State-Vector-Z_V351.md` | `f3ad6674ad8c5a97c3b49f30ee44f9b8b0eb87ce50cdccdc011d0f057d71c846` |
 | `KSODI_Monadic-Interaction-Coherence-IK_V351.md` | `517219d50ac00ddf41836c94af2a66d2d78df4bff250f268a6a82eef5e613d7e` |
 | `KSODI_Relational-Gate-R_0_V351.md` | `6a67e7d27396aa12a6dce7fcef7f27b0bafebc93b015d4535019f79dd7ba5715` |
-| `KSODI_Relational-Gate-R_0_Implementation-Companion_V351.md` | `fcf60e41b074b0a7503f19353f1fa26ad173520a2811219257ac644c385be6b9` |
+| `KSODI_Relational-Gate-R_0_Implementation-Companion_V351.md` | `c5bb0d8ed9ce2e12904635950d403e509e4c50fc26a7c14043c7e9eaaffa5a6d` |
 
 Any byte change to these sources reopens this basis and requires a complete
 generator rerun plus renewed interpretation review.

@@ -179,70 +179,141 @@ def numeric_rows() -> list[dict[str, str]]:
     return rows
 
 
+def resolve_status_case(
+    case_id: str,
+    condition: str,
+    *,
+    profile_selected: bool = True,
+    required_statuses: tuple[str, ...] = ("numeric",),
+    incomparable_present: bool = False,
+    processing_error_present: bool = False,
+    numeric_value: str = "",
+    threshold: str = "",
+) -> dict[str, str]:
+    """Resolve one synthetic status case using the printed v3.51 precedence."""
+
+    allowed = {"numeric", "not_selected", "not_observable", "not_applicable"}
+    assert required_statuses
+    assert set(required_statuses) <= allowed
+
+    if not profile_selected:
+        result_status = "not_selected"
+        gate_state = "not_evaluable"
+        processing_state = "none"
+    elif processing_error_present:
+        result_status = "no_valid_result"
+        gate_state = "absent"
+        processing_state = "processing_error"
+    elif incomparable_present:
+        result_status = "no_valid_result"
+        gate_state = "absent"
+        processing_state = "incomparable"
+    elif "not_observable" in required_statuses:
+        result_status = "not_observable"
+        gate_state = "not_evaluable"
+        processing_state = "none"
+    elif any(status != "numeric" for status in required_statuses):
+        assert set(required_statuses) <= {"numeric", "not_selected", "not_applicable"}
+        result_status = "not_applicable"
+        gate_state = "not_evaluable"
+        processing_state = "none"
+    else:
+        value = D(numeric_value)
+        gate_threshold = D(threshold)
+        assert ZERO <= value <= ONE
+        assert ZERO <= gate_threshold <= ONE
+        result_status = "numeric"
+        gate_state = "open" if value >= gate_threshold else "closed"
+        processing_state = "none"
+
+    return {
+        "case_id": case_id,
+        "condition": condition,
+        "profile_selected": str(profile_selected).lower(),
+        "required_statuses": "|".join(required_statuses),
+        "incomparable_present": str(incomparable_present).lower(),
+        "processing_error_present": str(processing_error_present).lower(),
+        "numeric_value": numeric_value,
+        "threshold": threshold,
+        "result_status": result_status,
+        "gate_state": gate_state,
+        "processing_state": processing_state,
+        "numeric_value_present": str(result_status == "numeric").lower(),
+    }
+
+
 def status_rows() -> list[dict[str, str]]:
-    return [
-        {
-            "case_id": "S-01",
-            "condition": "no R0 profile selected",
-            "result_status": "not_selected",
-            "gate_state": "not_evaluable",
-            "processing_state": "none",
-            "numeric_value_present": "false",
-        },
-        {
-            "case_id": "S-02",
-            "condition": "required movement not observable",
-            "result_status": "not_observable",
-            "gate_state": "not_evaluable",
-            "processing_state": "none",
-            "numeric_value_present": "false",
-        },
-        {
-            "case_id": "S-03",
-            "condition": "declared pairing or fixed-M contract not applicable",
-            "result_status": "not_applicable",
-            "gate_state": "not_evaluable",
-            "processing_state": "none",
-            "numeric_value_present": "false",
-        },
-        {
-            "case_id": "S-04",
-            "condition": "identity or profile incomparable",
-            "result_status": "no_valid_result",
-            "gate_state": "absent",
-            "processing_state": "incomparable",
-            "numeric_value_present": "false",
-        },
-        {
-            "case_id": "S-05",
-            "condition": "malformed threshold or arithmetic",
-            "result_status": "no_valid_result",
-            "gate_state": "absent",
-            "processing_state": "processing_error",
-            "numeric_value_present": "false",
-        },
-        {
-            "case_id": "S-06",
-            "condition": "valid numeric result below threshold",
-            "result_status": "numeric",
-            "gate_state": "closed",
-            "processing_state": "none",
-            "numeric_value_present": "true",
-        },
-        {
-            "case_id": "S-07",
-            "condition": "valid numeric result at threshold",
-            "result_status": "numeric",
-            "gate_state": "open",
-            "processing_state": "none",
-            "numeric_value_present": "true",
-        },
+    rows = [
+        resolve_status_case("S-01", "no R0 profile selected", profile_selected=False),
+        resolve_status_case(
+            "S-02",
+            "required movement not observable",
+            required_statuses=("not_observable",),
+        ),
+        resolve_status_case(
+            "S-03",
+            "declared pairing or fixed-M contract not applicable",
+            required_statuses=("not_applicable",),
+        ),
+        resolve_status_case(
+            "S-04",
+            "identity or profile incomparable",
+            incomparable_present=True,
+        ),
+        resolve_status_case(
+            "S-05",
+            "malformed threshold or arithmetic",
+            processing_error_present=True,
+        ),
+        resolve_status_case(
+            "S-06",
+            "valid numeric result below threshold",
+            numeric_value="0.4",
+            threshold="0.5",
+        ),
+        resolve_status_case(
+            "S-07",
+            "valid numeric result at threshold",
+            numeric_value="0.5",
+            threshold="0.5",
+        ),
+        resolve_status_case(
+            "S-08",
+            "not observable takes precedence over inapplicable",
+            required_statuses=("not_observable", "not_applicable"),
+        ),
+        resolve_status_case(
+            "S-09",
+            "selected profile with not-selected and inapplicable inputs",
+            required_statuses=("not_selected", "not_applicable"),
+        ),
+        resolve_status_case(
+            "S-10",
+            "incomparability blocks otherwise unobservable inputs",
+            required_statuses=("not_observable",),
+            incomparable_present=True,
+        ),
+        resolve_status_case(
+            "S-11",
+            "absent R0 profile short-circuits input-status resolution",
+            profile_selected=False,
+            required_statuses=("not_observable",),
+        ),
     ]
+
+    by_id = {row["case_id"]: row for row in rows}
+    assert by_id["S-08"]["result_status"] == "not_observable"
+    assert by_id["S-09"]["result_status"] == "not_applicable"
+    assert by_id["S-10"]["processing_state"] == "incomparable"
+    assert by_id["S-11"]["result_status"] == "not_selected"
+    return rows
 
 
 def write_csv(path: Path, rows: list[dict[str, str]]) -> None:
     with path.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=list(rows[0]))
+        writer = csv.DictWriter(
+            handle, fieldnames=list(rows[0]), lineterminator="\n"
+        )
         writer.writeheader()
         writer.writerows(rows)
 

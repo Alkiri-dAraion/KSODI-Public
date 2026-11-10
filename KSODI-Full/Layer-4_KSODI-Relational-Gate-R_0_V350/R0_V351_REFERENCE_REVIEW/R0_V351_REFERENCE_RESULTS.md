@@ -14,9 +14,9 @@ Reference execution:
 
 ```text
 verified_numeric_cases=9
-verified_status_cases=7
-numeric_sha256=7cd12c4e27ebcde528bd44c81815397a1087d3a260122c7f9ab0a4d46295d1fe
-status_sha256=b3c927e4ad260d37a3b9ee66a5d0b81ed045ae42f3e977c114f2a28ad1c2017e
+verified_status_cases=11
+numeric_sha256=aacd768555cc7ddde756d9004962f0f6b53df37c75c68d4f31c87bc61c70dd21
+status_sha256=e4d9976dda3a2cb761f68d2cee2516e3bbdac477e24bb3d64894160f2b28b3b3
 ```
 
 The generator uses only Python's standard library. Decimal columns are
@@ -43,7 +43,7 @@ renormalization.
 
 ## Typed status findings
 
-The seven status cases retain these distinctions:
+Seven single-condition status cases retain these distinctions:
 
 - absent profile → `not_selected / not_evaluable`;
 - required unobservable movement → `not_observable / not_evaluable`;
@@ -57,6 +57,17 @@ The seven status cases retain these distinctions:
 
 The result status and gate state are not one enum. A closed gate is not
 missing, failed or not applicable.
+
+Four mixed-condition cases execute the printed precedence rather than merely
+repeat declared rows:
+
+- `not_observable` takes precedence over an otherwise inapplicable required
+  input;
+- under a selected R0 profile, required `not_selected` or `not_applicable`
+  inputs resolve to `not_applicable` when none is unobservable;
+- incomparability blocks a valid result before method-status propagation;
+- an absent R0 profile returns `not_selected` before inspecting downstream
+  required-input statuses.
 
 ## Bounded interpretation
 

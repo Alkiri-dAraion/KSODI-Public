@@ -490,6 +490,11 @@ instruction.
 30. `open` and `closed` remain non-valuative eligibility states;
 31. unresolved apparent movement never becomes numeric without a separately
     identified measurement or reconstruction route and profile.
+32. mixed nonnumeric conditions execute the declared precedence: profile
+    absence short-circuits the attempt, processing/comparability failures stay
+    outside the valid result family, `not_observable` precedes applicable
+    method exclusions, and remaining required `not_selected`/`not_applicable`
+    inputs resolve to `not_applicable` under a selected profile.
 
 ## 12. Release and alignment boundary
 

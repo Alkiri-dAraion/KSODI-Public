@@ -23,16 +23,17 @@ Expected fixture hashes:
 
 ```text
 r0_v351_numeric_reference.csv
-7cd12c4e27ebcde528bd44c81815397a1087d3a260122c7f9ab0a4d46295d1fe
+aacd768555cc7ddde756d9004962f0f6b53df37c75c68d4f31c87bc61c70dd21
 
 r0_v351_status_precedence.csv
-b3c927e4ad260d37a3b9ee66a5d0b81ed045ae42f3e977c114f2a28ad1c2017e
+e4d9976dda3a2cb761f68d2cee2516e3bbdac477e24bb3d64894160f2b28b3b3
 ```
 
 ## Claim boundary
 
-The package verifies the printed synthetic formulas, profile separation and
-status cases. It does not establish empirical calibration, runtime
+The package verifies the printed synthetic formulas, profile separation,
+single-condition statuses and mixed-condition precedence. It does not
+establish empirical calibration, runtime
 conformance, relation, coupling, resonance, safety, action authority or
 universal profile choice. Alternative coordinate weights remain outside this
 package for the later joint R₀/IK_rel sensitivity review.
