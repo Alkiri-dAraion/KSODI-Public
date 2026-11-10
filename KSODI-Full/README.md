@@ -82,6 +82,15 @@ Current released method packages:
 - [Layer 4 — R0 relational gate](./Layer-4_KSODI-Relational-Gate-R_0_V350/README.md)
 - [Layer 5 — dyadic IK_rel](./Layer-5_KSODI-Dyadic-Relational-Coherence-IK_rel_V350/README.md)
 
+### v3.51 Phase-H sensitivity evidence
+
+The [joint R₀ / IK_rel Phase-H sensitivity review](./KSODI_FULL_V351_PHASE_H_SENSITIVITY_REVIEW/README.md)
+publishes 52 deterministic synthetic cases for metric and profile sensitivity,
+coordinate-extreme compression, scalar projection collisions, epsilon
+provenance and the complete R₀-to-IK_rel route. It is a reproducible protection
+and diagnostic package. It introduces no new canonical method profile,
+empirical calibration or runtime-conformance claim.
+
 The historical Observer images are preserved as important transition evidence
 for both KSODI-Standard-Eval and KSODI-Full:
 

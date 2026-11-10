@@ -1,0 +1,8 @@
+case_id,description,delta_z_a,delta_z_b,delta_ik_w_a,delta_ik_w_b,c_move_raw,method_status_epsilon_0,method_value,delta_z_vectors_equal,normalized_delta_z_distance,canonical_r0_value,canonical_r0_gate_state,raw_projection_collision,numeric_projection_collision,full_delta_z_required_for_distinction,finding_class
+H-C-01,equal_projection_different_coordinates,"[0.5,0,0,0,0]","[0,0.5,0,0,0]",0.1,0.1,1,numeric,1,false,0.316227766016838,0.9,open,true,true,true,diagnostic_information_loss
+H-C-02,projected_zero_full_transfer_vs_rest,"[0.5,-0.5,0,0,0]","[0,0,0,0,0]",0,0,1,not_applicable_joint_projected_zero,,false,0.316227766016838,0.9,open,true,false,true,diagnostic_information_loss
+H-C-03,equal_projection_concentrated_vs_distributed,"[1,0,0,0,0]","[0.2,0.2,0.2,0.2,0.2]",0.2,0.2,1,numeric,1,false,0.4,0.8,open,true,true,true,diagnostic_information_loss
+H-C-04,equal_projected_zero_disjoint_transfers,"[0.5,-0.5,0,0,0]","[0,0,0.5,-0.5,0]",0,0,1,not_applicable_joint_projected_zero,,false,0.447213595499958,0.8,open,true,false,true,diagnostic_information_loss
+H-C-05,identical_full_movement,"[0.4,0.1,0,0,0]","[0.4,0.1,0,0,0]",0.1,0.1,1,numeric,1,true,0,0.9,open,false,false,false,contract_confirmed
+H-C-06,opposite_projection_same_canonical_drift,"[0.5,0,0,0,0]","[-0.5,0,0,0,0]",0.1,-0.1,0.9,numeric,0.9,false,0.447213595499958,0.9,open,false,false,true,contract_confirmed
+H-C-07,equal_projection_mixed_sign_vs_small_uniform,"[0.6,-0.2,0,0,0]","[0.08,0.08,0.08,0.08,0.08]",0.08,0.08,1,numeric,1,false,0.271293199325011,0.88,open,true,true,true,diagnostic_information_loss

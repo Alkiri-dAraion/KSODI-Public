@@ -1,0 +1,8 @@
+case_id,description,delta_z_e,max_abs_coordinate_delta_e,max_abs_coordinate_ids_e,tied_maximum_count,canonical_equal_l1_drift,l2_test_control_drift,k_focus_test_control_drift,complete_signed_delta_z_authoritative,diagnostic_changes_r0_or_gate,finding_class
+H-B-01,zero_vector_has_no_extreme_identity,"[0,0,0,0,0]",0,,0,0,0,0,true,false,contract_confirmed
+H-B-02,single_positive_k,"[0.7,0,0,0,0]",0.7,K,1,0.14,0.313049516849971,0.42,true,false,contract_confirmed
+H-B-03,single_negative_s,"[0,-0.7,0,0,0]",0.7,S,1,0.14,0.313049516849971,0.07,true,false,contract_confirmed
+H-B-04,two_way_equal_positive_tie,"[0.7,0.7,0,0,0]",0.7,K|S,2,0.28,0.442718872423573,0.49,true,false,diagnostic_information_loss
+H-B-05,mixed_sign_equal_tie,"[0.7,-0.7,0,0,0]",0.7,K|S,2,0.28,0.442718872423573,0.49,true,false,diagnostic_information_loss
+H-B-06,all_coordinate_tie,"[0.3,-0.3,0.3,-0.3,0.3]",0.3,K|S|O|D|I,5,0.3,0.3,0.3,true,false,diagnostic_information_loss
+H-B-07,one_unique_maximum_with_secondary_motion,"[0.8,0.7,-0.2,0,0]",0.8,K,1,0.34,0.483735464897913,0.57,true,false,diagnostic_information_loss
