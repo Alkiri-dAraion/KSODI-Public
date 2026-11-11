@@ -9,7 +9,12 @@ v3.51 files; the tagged `v3.5.0` release remains the fixed citation snapshot.
 
 The shared structural and method boundary with KSODI-Full is documented in
 the root
-[KSODI-Standard-Eval / KSODI-Full Transition V350](../KSODI-Standard-Eval_Full-Transition_V350.md).
+[KSODI-Standard-Eval / KSODI-Full Transition v3.51](../KSODI-Standard-Eval_Full-Transition_V351.md).
+
+The unchanged
+[v3.50 transition predecessor](../KSODI-Standard-Eval_Full-Transition_V350.md)
+remains available as historical release evidence; it is not the current
+moving-main reader route.
 
 The public 3.3 files and the later v3.42 working / implementation line are
 historical material. They are not recommended as current implementation

@@ -412,4 +412,4 @@ certifications or production guarantees.
   [KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md).
 - Research direction: [KSODI Research Roadmap](./ROADMAP.md).
 - Observation/action separation:
-  [Observability and Controlled-Action Boundary](./KSODI-Full/KSODI_Observability-and-Controlled-Action-Boundary_V350.md).
+  [Observability and Controlled-Action Boundary v3.51](./KSODI-Full/KSODI_Observability-and-Controlled-Action-Boundary_V351.md).

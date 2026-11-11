@@ -1,99 +1,159 @@
 # KSODI-Full
 
-## Reader orientation
+## What KSODI-Full adds
 
-This folder is the reader entry for the KSODI-Full v350 research structure.
-It links the released Layer-4 R0 and Layer-5 IK_rel method packages and keeps
-later research branches visibly separate.
+KSODI-Full is the relational Observer scope of the KSODI Method. It begins
+only after distinguishable monadic trajectories, an explicit relation identity
+and a declared relational question are available.
 
-The shared structural and method boundary with KSODI-Standard-Eval is
-documented in the root
-[KSODI-Standard-Eval / KSODI-Full Transition V350](../KSODI-Standard-Eval_Full-Transition_V350.md).
+The current Public-main v3.51 scope contains:
 
-The current architecture separates the following layers:
+- Layer 4 `R_0`, which evaluates eligibility for one exact compatible
+  downstream relational calculation;
+- Layer 5 `IK_rel`, which evaluates one declared dyadic projected-movement
+  compatibility question after its exact open `R_0` handoff; and
+- a joint Phase-H sensitivity package that exposes expected profile
+  sensitivity and projection loss without defining a new method profile.
 
-- interaction state observation
-- interaction coherence
-- relational comparability
-- resonance-family observation
+KSODI-Full observes. It does not decide, steer, intervene or replace human and
+domain responsibility.
 
-The canonical method files are authoritative. Their adjacent implementation
-companions are subordinate guidance, not executable software specifications.
+## Start with the boundary
 
-## Relation to KSODI-Standard-Eval
+Read the cumulative
+[Standard-Eval / Full Transition v3.51](../KSODI-Standard-Eval_Full-Transition_V351.md)
+before treating a monadic value as relational evidence.
 
-KSODI-Full builds on KSODI-Standard-Eval. The complete monadic KSODI-Standard-Eval
-line is `K/S/O/D/I -> Z -> IK` and ends with `IK`.
+The complete monadic Standard-Eval line is:
 
-After `Z`, the architecture branches. `R_0` is the relational gate
-evaluated from distinguishable `Z`-trajectories in parallel to monadic `IK`.
-Current dyadic `IK_rel` opens only after explicit dyadic pairing and an open
-numeric canonical complete dyadic `R_0` gate for the same ordered dyad, paired
-events, pairing map, relational step and exact required profile. Reduced or
-n-adic R0 does not open it. Later compatible R-family constructs remain
-parallel branches with their own contracts. `R_0`, `IK_rel` and the further
-R-family are not part of KSODI-Standard-Eval.
+```text
+K/S/O/D/I -> complete typed Z -> monadic IK views
+```
 
-Without such a gate, relational or resonance-family observations can become
-misleading, because a system may show apparent resonance while losing
-coherence, direction or comparability.
+After complete typed `Z`, the architecture branches:
 
-## Current research direction
+```text
+complete typed Z trajectories
+  +--> monadic IK views
+  +--> R_0 relational eligibility
+          +--> current primary dyadic IK_rel under its exact contract
+```
 
-The current method line distinguishes monadic observation layers
-from dyadic and n-adic relational observation layers.
+`R_0` is not calculated from monadic IK. `IK_rel` consumes both an exact
+compatible `R_0` handoff and separately declared paired monadic `IK_w`
+operands. The two prerequisites remain reconstructible and distinct.
 
-KSODI-Full extends the method toward dynamic interaction patterns, transitions
-and relational observation over time. Method material and large parts of the
-mathematics for `R_geom` and `R_pace` exist in the private canonical workbench.
-They still require complete public review and renewed validation on the
-restructured infrastructure before they can become current public reference
-releases. Layer 8 signal-media work remains a staged research direction without
-a defined architecture.
+## Current Public-main v3.51 packages
 
-KSODI-Full is intended to support explainability, observability and
-auditability. Its observations may inform separately governed steering or
-action, but KSODI-Full does not itself decide, steer or replace human
-responsibility and must not be used as an automated decision system.
+### Layer 4 — relational eligibility gate
 
-The action-adjacent
-[Observability and Controlled-Action Boundary](./KSODI_Observability-and-Controlled-Action-Boundary_V350.md)
-explains why Observer records, governance policy, Controller decisions and
-executed actions remain separate authorities.
+Begin with the
+[Layer-4 R₀ reader](./Layer-4_KSODI-Relational-Gate-R_0_V350/README.md),
+then read:
 
-## Current Public Scope
+- the [R₀ v3.51 method](./Layer-4_KSODI-Relational-Gate-R_0_V350/KSODI_Relational-Gate-R_0_V351.md);
+- the [conditional implementation companion](./Layer-4_KSODI-Relational-Gate-R_0_V350/KSODI_Relational-Gate-R_0_Implementation-Companion_V351.md); and
+- the [reproducible R₀ reference package](./Layer-4_KSODI-Relational-Gate-R_0_V350/R0_V351_REFERENCE_REVIEW/README.md).
 
-Public KSODI 3.3 materials and the later v3.42 working / implementation line
-contain or reveal known structural issues and unresolved separations between
-`Z`, `IK`, `R_0`, `IK_rel` and the broader R-family. In the current public v3.5
-release, the complete monadic KSODI-Standard-Eval line through `IK` is published.
-`R_0` is also published separately as the KSODI-Full Layer 4 gate, and `IK_rel`
-is published separately as KSODI-Full Layer 5. `R_geom`, `R_pace` and later
-R-family layers are not current public reference releases. `R_geom` and
-`R_pace` await complete public review and infrastructure revalidation; Layer 8
-remains staged research.
+An open gate means only that the exact declared eligibility contract admits a
+compatible downstream calculation. It does not prove relation, acknowledgement,
+agreement, coupling, resonance, stability, success or permission to act.
 
-Current public v3.5 release boundary:
+### Layer 5 — dyadic relational coherence projection
 
-[`KSODI-Full-Release_V350.md`](./KSODI-Full-Release_V350.md)
+Continue with the
+[Layer-5 IK_rel reader](./Layer-5_KSODI-Dyadic-Relational-Coherence-IK_rel_V350/README.md),
+then read:
 
-Current released method packages:
+- the [IK_rel v3.51 method](./Layer-5_KSODI-Dyadic-Relational-Coherence-IK_rel_V350/KSODI_Dyadic-Relational-Coherence-IK_rel_V351.md);
+- the [conditional implementation companion](./Layer-5_KSODI-Dyadic-Relational-Coherence-IK_rel_V350/KSODI_Dyadic-Relational-Coherence-IK_rel_Implementation-Companion_V351.md); and
+- the [reproducible IK_rel reference package](./Layer-5_KSODI-Dyadic-Relational-Coherence-IK_rel_V350/IK_REL_V351_REFERENCE_REVIEW/README.md).
 
-- [Layer 4 — R0 relational gate](./Layer-4_KSODI-Relational-Gate-R_0_V350/README.md)
-- [Layer 5 — dyadic IK_rel](./Layer-5_KSODI-Dyadic-Relational-Coherence-IK_rel_V350/README.md)
+`IK_rel` preserves the ordered dyad, pairing map, predecessor identities,
+shared `IK_w` profile, exact `R_0` identity, selected component profile, typed
+status and the reverse path to both complete monadic `Delta Z` trajectories.
+It is not agreement, truth, alignment, causation, coupling, resonance or
+shared meaning.
 
-### v3.51 Phase-H sensitivity evidence
+### Joint Phase-H protection evidence
 
-The [joint R₀ / IK_rel Phase-H sensitivity review](./KSODI_FULL_V351_PHASE_H_SENSITIVITY_REVIEW/README.md)
-publishes 52 deterministic synthetic cases for metric and profile sensitivity,
+The
+[R₀ / IK_rel Phase-H sensitivity review](./KSODI_FULL_V351_PHASE_H_SENSITIVITY_REVIEW/README.md)
+contains 52 deterministic synthetic cases across metric/profile sensitivity,
 coordinate-extreme compression, scalar projection collisions, epsilon
-provenance and the complete R₀-to-IK_rel route. It is a reproducible protection
-and diagnostic package. It introduces no new canonical method profile,
-empirical calibration or runtime-conformance claim.
+provenance and the complete handoff route.
 
-The historical Observer images are preserved as important transition evidence
-for both KSODI-Standard-Eval and KSODI-Full:
+Phase H is a reproducible protection and diagnostic package. It introduces no
+new canonical formula, threshold, profile or empirical calibration and does
+not establish runtime conformance.
 
-[`historical-observer-v342`](https://github.com/Alkiri-dAraion/KSODI-Public/blob/main/archive/assets-archive/historical-observer-v342/README.md)
+## Three reading channels
 
-Thanks for your understanding.
+Keep three related but non-interchangeable views:
+
+1. the recoverable machine object with exact operands, identities, profiles,
+   statuses, numeric policies, window membership and provenance;
+2. an optional attributable assistive-model interpretation over governed
+   inputs; and
+3. a human/governance display that may simplify or round while preserving a
+   practical drill-down route.
+
+A rounded display is not the stored result and is never fed back as an
+authoritative operand. An assistive interpretation does not fill missing
+evidence, change a status or acquire action authority.
+
+## Observation and action remain separate
+
+The cumulative
+[Observability and Separate Controlled-Action Boundary v3.51](./KSODI_Observability-and-Controlled-Action-Boundary_V351.md)
+distinguishes participant-specific spaces, the transient interaction space,
+the qualified Observer-side Hangar and a separately authorized
+Controller/action space.
+
+An Observer result, gate state, aggregate, corridor or alert may open a
+diagnostic question. It does not select a target or action. Governance policy,
+Controller decision, human approval, execution and resulting feedback remain
+separately attributable stages.
+
+## Later R-family and signal-media work
+
+The following directories are orientation surfaces for separately staged
+research, not current v3.51 Public reference calculations:
+
+- [Layer 6 — R_geom](./Layer-6_KSODI-Geometric-Coupling-R_geom_V350/README.md);
+- [Layer 7 — R_pace](./Layer-7_KSODI-Pacing-R_pace_V350/README.md); and
+- [Layer 8 — staged signal-media research](./Layer-8_KSODI-Signal-Media_Staged-Research/README.md).
+
+Repository presence, historical formulas or a shared `R` prefix do not make a
+branch canonical, compatible with another branch or selected for v3.51. Each
+later branch requires its own question, object, identity, profile, formulas,
+typed statuses, reference suite and cross-relation sensitivity review.
+
+## Publication and citation state
+
+The cumulative Layer-4, Layer-5 and Phase-H packages are published on moving
+Public `main` and selected for the complete v3.51 release. They do not yet
+constitute the tagged v3.51 release snapshot.
+
+The fixed citable complete release remains
+[`v3.5.0`](https://github.com/Alkiri-dAraion/KSODI-Public/releases/tag/v3.5.0).
+Its historical Full boundary remains available in
+[`KSODI-Full-Release_V350.md`](./KSODI-Full-Release_V350.md). The cumulative
+v3.51 release artifact, tag, GitHub Release and DOI remain separate closing
+decisions.
+
+The historical Observer images remain available as transition evidence in the
+[v3.42 Observer archive](../archive/assets-archive/historical-observer-v342/README.md).
+They are not current v3.51 method or implementation authority.
+
+## Non-claims
+
+The current Public package does not claim:
+
+- empirical calibration of thresholds or positive epsilon values;
+- complete semantic interpretation or hidden-state access;
+- production or independent runtime conformance;
+- validation of later R-family calculations;
+- Controller, steering or intervention authority; or
+- that moving Public `main` already equals a tagged v3.51 release or DOI
+  snapshot.

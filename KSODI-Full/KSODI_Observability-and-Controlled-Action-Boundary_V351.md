@@ -279,9 +279,9 @@ choice, intervention, tag, GitHub Release or DOI.
 ## 12. v3.50 compatibility and succession
 
 The released
-[v3.50 boundary predecessor](./KSODI_Observability-and-Controlled-Action-Boundary_V350.md)
-remains valid and unchanged until the final predecessor-disposition pass.
-v3.51 adds explicit
+[archived v3.50 boundary predecessor](../archive/document-snapshots/controlled-action-boundary/v350-replaced-by-v351-2026-11-11/KSODI_Observability-and-Controlled-Action-Boundary_V350.md)
+remains unchanged as historical evidence for the v3.50 publication state.
+The active v3.51 successor adds explicit
 space separation, typed window/aggregate boundaries, the expanded IK view
 family, raw/policy/display separation, assistive-interpretation provenance,
 reverse reconstruction and stronger navigation/non-target guards. These

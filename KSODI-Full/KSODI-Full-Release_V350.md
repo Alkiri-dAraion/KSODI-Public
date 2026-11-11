@@ -36,7 +36,7 @@ because controlled intervention requires more than monadic KSODI-Standard-Eval
 observation. It depends on relational gates, governance corridors and a
 separate controller boundary.
 
-- [`KSODI_Observability-and-Controlled-Action-Boundary_V350.md`](./KSODI_Observability-and-Controlled-Action-Boundary_V350.md)
+- [archived `KSODI_Observability-and-Controlled-Action-Boundary_V350.md`](../archive/document-snapshots/controlled-action-boundary/v350-replaced-by-v351-2026-11-11/KSODI_Observability-and-Controlled-Action-Boundary_V350.md)
 
 Architecture overview:
 

@@ -1,8 +1,5 @@
 # `IK_rel` v3.51 public reference package
 
-Status: `PUBLIC_V3.51_ASSERTION_CHECKED_REFERENCE_PACKAGE /
-NOT_RUNTIME_CONFORMANCE`
-
 ## Purpose
 
 This package makes the retained `IK_rel` formula and the v3.51 identity,

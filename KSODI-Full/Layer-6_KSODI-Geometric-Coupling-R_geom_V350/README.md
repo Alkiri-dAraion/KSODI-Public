@@ -1,9 +1,10 @@
 # Layer 6 — KSODI Geometric Coupling (`R_geom`)
 
-This page provides orientation only. `R_geom` remains outside the current
-public method scope. Method material and large parts of the mathematics exist
-in the private canonical workbench; complete public review and renewed
-validation on the restructured infrastructure remain pending.
+This page provides orientation only. `R_geom` is outside both the fixed
+v3.50 release scope and the selected v3.51 Public method scope. Method
+material and large parts of the mathematics exist in the private canonical
+workbench; complete Public review and renewed validation on the restructured
+infrastructure remain pending.
 
 `R_geom` describes geometric coupling in KSODI state space.
 

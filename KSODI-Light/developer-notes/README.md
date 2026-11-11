@@ -1,7 +1,5 @@
 # KSODI-Light Developer Notes v3.51
 
-Status: `V351_PUBLISHED_ON_PUBLIC_MAIN / DEVELOPER_READING_GUIDE`
-
 This folder contains developer-facing notes for embedding KSODI-Light guidance
 into assistants, agent instructions and prompt-level interaction systems.
 
@@ -35,7 +33,6 @@ an external Observer, prove persistent learning or authorize a Controller.
 
 ## Predecessors
 
-The v3.50 bridge and self-alignment/steering notes remain versioned predecessor
-evidence until the v3.51 Public package, backlinks, hashes and archive
-disposition are verified. They then move to the versioned Private and Public
-archives rather than remaining active reader entries.
+The v3.50 bridge and self-alignment/steering notes are preserved as versioned
+predecessor evidence in the Public archive. The active reader route now uses
+the v3.51 successors above.

@@ -1,8 +1,5 @@
 # KSODI-Full v3.51 — Phase-H Sensitivity Review
 
-Status: `PUBLIC_V351_SYNTHETIC_REFERENCE_REVIEW /
-REPRODUCIBLE_SYNTHETIC_EVIDENCE / NO_NEW_METHOD_PROFILE`
-
 Phase H tests how the frozen v3.51 `R_0` and `IK_rel` contracts respond to
 declared metric, weighting and epsilon choices. It is a protection and
 diagnostic package, not a new method profile, empirical calibration study or

@@ -63,7 +63,7 @@ Current architecture correction:
 - Voice / audio / wave / signal-media work remains a staged Layer-8 research
   direction without a defined architecture and is not current v3.50 canon.
 
-`KSODI_Observability-and-Controlled-Action-Boundary_V350.md` belongs under
+The archived [`KSODI_Observability-and-Controlled-Action-Boundary_V350.md`](../archive/document-snapshots/controlled-action-boundary/v350-replaced-by-v351-2026-11-11/KSODI_Observability-and-Controlled-Action-Boundary_V350.md) belongs under
 KSODI-Full as an action-adjacent conceptual boundary note. It does not define a
 transition from observation to action: governance and a separately authorized
 Controller stand between Observer records and any permitted response. Do not

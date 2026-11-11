@@ -1,7 +1,5 @@
 # KSODI-Light Agent Skills and Copy-and-Paste Prompts
 
-Status: `V351_PUBLISHED_ON_PUBLIC_MAIN / PORTABLE_PROMPT_SKILLS / NOT_FORMAL_OBSERVER`
-
 Version: `v3.51`
 
 Licence: `CC BY 4.0`, subject to the repository licence and any explicit

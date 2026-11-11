@@ -1,7 +1,5 @@
 # KSODI-Full Layer 5 — dyadic relational coherence `IK_rel` v3.51
 
-Status: `PUBLIC_V3.51_LAYER_ENTRY / METHOD_AND_REFERENCE_PACKAGE`
-
 Layer 5 asks one bounded question after an exact compatible Layer-4 handoff:
 
 > How compatible is the observable movement of two distinct, explicitly

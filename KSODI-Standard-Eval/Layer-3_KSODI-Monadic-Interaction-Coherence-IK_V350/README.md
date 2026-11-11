@@ -51,8 +51,8 @@ Public explanatory and result-reference companions:
   — window identity, eligibility, coverage, processing-order, derived-object,
   delta and reverse-provenance contract for the v3.51 reference family.
 
-The remaining Phase A–G and window-order reference package is transferred only
-as a closed, reproducible set after its separate file-by-file review.
+The closed Phase A–G and window-order reference package is published with its
+dependency-free generators, exact fixtures, reports and checksum manifest.
 
 The active input contract is:
 

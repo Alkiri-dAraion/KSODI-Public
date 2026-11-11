@@ -1,8 +1,5 @@
 # IK v3.51 mathematical reference package
 
-Status: `PUBLIC_REPRODUCIBLE_REFERENCE_PACKAGE / SYNTHETIC_ONLY /
-NOT_EMPIRICAL_VALIDATION / NOT_RUNTIME_CONFORMANCE`
-
 ## What this package is
 
 This directory provides the reproducible mathematical reference evidence for
