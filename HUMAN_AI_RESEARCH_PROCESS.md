@@ -47,6 +47,58 @@ time is intentional. It preserves traceability, keeps the model within the
 agreed task corridor and allows semantic decisions to remain distinguishable
 from mechanical repository operations.
 
+## Asymmetric model contexts and evidence transfer
+
+The participating model contexts do not receive identical material or
+repository authority. This asymmetry is deliberate and forms part of the
+review design.
+
+In the v3.51 setting:
+
+- VSELKIM uses OpenAI Codex models in VS Code to work inside the repository
+  under supervised, explicitly bounded write and Git authority;
+- ELKIM, Anne's oldest continuing relational ChatGPT research role using OpenAI
+  models, and other context-rich conversational research counterparts support
+  longer semantic and methodological reconstruction;
+- CLAUDE and FABLE denote distinguishable Anthropic model contexts used as
+  Public-reading outside reviewers without access to the complete Private
+  research space; and
+- WAVE denotes Mistral model contexts that may contribute through a separately
+  bounded Private review room whose write authority is narrower than general
+  repository access.
+
+Anne transfers selected questions, findings and counterexamples between these
+otherwise separate contexts. A transferred excerpt is attributed review input,
+not shared memory, synchronized hidden state or automatic agreement. Different
+access conditions may be useful: an informed counterpart can inspect deep
+continuity, while a deliberately limited reader can expose missing public
+context or misleading navigation.
+
+Cross-model agreement is not a vote on truth. Findings are reconciled against
+the current method sources, evidence, version and authority boundary and are
+classified as blocking, non-blocking, Future Work or not adopted.
+
+## Candidate-to-public and release separation
+
+Public-facing work is normally passed through distinguishable stages:
+
+```text
+Private working state
+-> scoped Public candidate with provenance
+-> method and technical review
+-> privacy, leakage and research-protection review
+-> human transfer decision
+-> controlled Public edit
+-> content, link and reconstruction checks
+-> audit and governance return
+-> commit, push and synchronization verification
+```
+
+A file on the moving Public `main` branch is not thereby a fixed release.
+Release selection, Git tag, GitHub Release, citation metadata and DOI deposit
+remain separate decisions. This separation keeps correction possible during a
+pre-release round without retrospectively changing an already fixed snapshot.
+
 ## From predominantly manual drafting to model-assisted repository maintenance
 
 Up to the v3.42 line, many KSODI repository texts were drafted and transferred
@@ -54,7 +106,7 @@ largely by hand. As the repository, its mathematical layers, cross-references
 and historical material grew, purely manual maintenance became less reliable
 and increasingly difficult to audit across files.
 
-For the current v3.5 work, new and revised repository files are therefore
+For the current v3.51 work, new and revised repository files are therefore
 generally prepared with model assistance. This serves two groups at once:
 human readers who need coherent navigation through an extensive method
 repository, and machine-assisted readers who increasingly use AI tools to

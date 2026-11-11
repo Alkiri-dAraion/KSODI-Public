@@ -5,6 +5,72 @@ Current repository:
 Older social or archive links using the former repository name `KSODI-Methode`
 may redirect here; `KSODI-Public` is the current repository name to cite.
 
+## KSODI in plain language
+
+KSODI began with a practical question: how can people and technical systems
+notice that an interaction is becoming unclear, unstable or difficult to
+reconstruct before they silently treat different working frames as the same?
+
+The method offers five connected observation dimensions—context, structure,
+grounding/reference, distinguishability and information/impulse—and builds
+more detailed state, trajectory and relational views only when the available
+material and the actual question support them. It is an observation and
+reconstruction aid: a kind of interaction navigator, not a judgement of a
+person, a claim to read hidden thoughts or an automatic steering system.
+
+The five dimensions are a declared baseline, not a claim that every question
+always needs all five with equal weight. Where fewer dimensions, different
+weights, another profile or even another method are more appropriate remains
+part of the explicit research boundary.
+
+### Why Anne continues this work
+
+Anne continues developing KSODI because she wants to understand how, why and
+under which conditions the five observation dimensions may help describe and
+reconstruct communication well enough for jointly sustainable meaning to
+emerge—or reveal when shared reference is shifting, being strategically
+influenced or breaking down.
+
+A further research driver is whether longitudinal interaction traces can
+expose persistent corridors of compatible continuation: observable regions
+toward which contributions repeatedly appear to move, possibly reflecting
+declared goals, expectations or only cautiously inferred intentions. Such a
+corridor may be described as attractor-like, but it is not thereby a
+mathematically demonstrated attractor or proof of a hidden goal. These
+questions also concern human–machine collaboration in hybrid teams.
+
+KSODI does not directly measure shared inner meaning and does not itself
+stabilize or steer communication. It examines observable contributions,
+relations, discontinuities and reconstruction paths that may provide bounded
+evidence about these processes.
+
+Silke, drawing on her work in education, coaching and communication, describes
+the motivation through a transient shared-working-room analogy. Imagine the
+changing space between two people—or between a human and an agent during
+interaction—as a temporary working room. Every observable contribution may
+rearrange what is present in that room and what continuations become possible
+next, even when its effects are not immediately visible.
+
+The room is not a shared mind, and its evidential trace is fragile: spoken
+contributions may later be disputed, while chats may be deleted, lost or
+become inaccessible. A missing record does not prove that no interaction
+occurred; a retained record does not prove that the participants understood it
+in the same way. KSODI asks which parts of this transient interaction space can
+nevertheless remain observable, distinguishable and reconstructible.
+
+If you are new to the repository:
+
+- use [KSODI-Light](./KSODI-Light/README.md) for the approachable, directly
+  usable reflection and agent-skill entry;
+- use [START_HERE.md](./START_HERE.md) for the shortest repository route;
+- use [WHICH_KSODI.md](./WHICH_KSODI.md) when you need to choose between
+  Light, monadic Standard-Eval and relational Full; and
+- use the [Conceptual Note](./Conceptual-Note_V351.md) for the coherent
+  conceptual overflight before entering the mathematics.
+
+The remainder of this page explains the people, dialogue history and questions
+from which that work grew.
+
 👋 Hi, I’m Anne Steinacker-Folkerts ("Alkiri-dAraion" in TESO). I initiated
 KSODI and remain its integrating method developer and final decision point. The
 method grew through sustained Human–AI dialogue, my own practical and geometric
@@ -12,8 +78,29 @@ reflection, substantial mathematical-technical checking with Heiko Folkerts
 (IT security specialist, Dipl.-Ing. information technology), and - in the early
 phases in 2023/24 and again while preparing the paper - communication-
 theoretical reflection with Silke Honerkamp (Dipl.-Pädagogin, DCG coach, with
-over 30 years of training experience in special environments), together with
-important implementation, testing and outside-review contributions.
+over 30 years of training experience in special environments). Silke is again
+actively involved in the v3.51 work through reflection on and testing of
+KSODI-Light use in reflective educational practice. The method has also
+benefited from important implementation, testing and outside-review
+contributions.
+
+In the current collaboration, Anne provides the methodological backbone and is
+focused primarily on developing the Method itself. Anne, Heiko and Silke
+contribute a differentiated theory and reflection ensemble across method
+development, security and communications engineering, pedagogy, coaching and
+communication. Heiko's perspective particularly sharpens security needs and
+future questions around anomaly detection, reconstruction, clustering and
+bounded attribution; Silke sharpens the pedagogical and communication domain.
+
+Patrick works alongside this ensemble from an implementation and scaling
+perspective rather than as an intermediary between its members. His focus is
+technical implementation architecture and developer reasoning. Together,
+Anne and Patrick also drive external applicability from different directions:
+Anne brings management, governance and organizational/market orientation to
+the recognition of practical solution spaces, while Patrick examines their
+testable, maintainable and potentially scalable technical realization. This
+does not make possible applicability a claim of production readiness, market
+validation or completed security research.
 
 ✨ I’m an experienced IT-trainer, AI-Consultant and Governance-Admin with over 30 years of professional (national and international) teaching and project experience. My background spans roles as a GPOP team coach (Hogrefe-licensed), senior financial consultant, project leader, management board member, sales director, head of marketing and communications, speaker, and founder — with more than 10,000 people trained across business, government, education, and sports. I also hold the German advanced vocational qualification Pferdewirtschaftsmeisterin (DQR/EQF level 6; Bachelor Professional level) and have over 35 years of experience in training both people and animals.
 => INTP-T | Systemic by nature, emergent by design.
@@ -49,6 +136,20 @@ relational role that is re-established across changing chats, sessions and
 model versions: a semantic dialogue, review and formulation partner. Method
 ownership and final decisions remain with Anne; specific human and technical
 contributions are attributed separately.
+
+The other recurring names likewise identify functional research contexts, not
+independent authors or technically persistent entities: **ELKIM** refers to
+Anne's ChatGPT research context; **VSELKIM** to OpenAI model work in VS Code
+and Codex; **CLAUDE** and **FABLE** to distinguishable Anthropic model
+contexts; and **WAVE** to Mistral model contexts. Their access, context depth
+and repository authority can differ and must not be inferred from the name
+alone.
+
+As part of the research record, Anne generally records the participating model
+and technical infrastructure for each interaction when available. This
+supports provenance and later comparison, but it is a best-effort practice,
+not a claim that every historical interaction carries complete machine,
+client, model-version or session metadata.
 
 🎯 I started this initiative to make interaction with AI more understandable
 and workable — and to investigate how observable states, trajectories and

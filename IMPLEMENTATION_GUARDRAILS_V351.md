@@ -18,7 +18,7 @@ evaluated by an external Observer.
 Read this document together with:
 
 - [KSODI Architecture V351](./KSODI-Architecture_V351.md)
-- [Which KSODI Variant Do I Need?](./WHICH_KSODI.md)
+- [Which KSODI Scope Do I Need?](./WHICH_KSODI.md)
 - [KSODI Conceptual Note v3.51](./Conceptual-Note_V351.md)
 - [KSODI Ethics v3.51](./Ethics_V351.md)
 - [KSODI Glossary V351](./KSODI-Glossary_V351.md)

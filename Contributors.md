@@ -27,14 +27,29 @@ this repository-level citation authorship: Anne and Heiko are the citation
 authors; Silke Honerkamp and Patrick Barthelmäs remain explicitly acknowledged
 contributors in the differentiated roles documented below.
 
-Anne Steinacker-Folkerts initiated KSODI and remains the integrating method
-developer and final decision point for the definitions published in this
-repository. She selected, integrated and formalized the mathematical
-definitions, layer separation, measurement logic, public v3.5 release structure
-and methodological evaluation of the historical Observer images, with dialogic
+Anne Steinacker-Folkerts invented and initiated KSODI during 2024 and 2025,
+building on the DOSI interaction structure she had formulated in 2023. She
+remains the integrating method developer and final decision point for the
+definitions published in this repository. From the early v1.0 line through the
+fixed public v3.5.0 release and the subsequent v3.51 precision work on the
+moving Public `main` branch, she developed, selected, integrated and formalized
+the mathematical definitions, layer separation, measurement logic and the
+methodological evaluation of the historical Observer images, with dialogic
 model support, human reflection and implementation feedback as documented
 below. A proposed formula, wording or repository change becomes part of the
 method only through this human review and release decision.
+
+In the current collaboration, Heiko describes Anne as the methodological
+backbone of the work. Her present primary focus is the Method itself. At the
+same time, her management, governance, training and organizational experience
+helps identify practical problem spaces, feasible solution directions and
+possible market relevance. Together with Patrick, she drives the connection
+between sufficiently specified method work and external applicability, while
+their responsibilities remain different: Anne carries method integration and
+the organizational/management-facing perspective; Patrick carries the
+technical implementation architecture and developer-facing perspective.
+Possible applicability is not yet evidence of production readiness or market
+validation.
 
 KSODI has been developed iteratively and model-assisted: mathematical framings
 were explored through dialogue with LLMs, checked against Anne's practical
@@ -53,11 +68,26 @@ and recalculated substantial parts for mathematical-technical plausibility, and
 gave decisive v3.5 framing input around state-before-comparison and an
 approximate Shannon-oriented signal-path analogy. This was a thought tool in
 the team process, not a claim that KSODI directly operationalizes or derives
-from Shannon's work.
+from Shannon's work. During the v3.51 review, his questions about normalization
+also helped sharpen the separation between profile-native values, normalized
+operator coordinates, derived projections, display rounding and possible
+information loss. This remains reflective mathematical input rather than an
+independent validation claim.
+
+Heiko's security and communications-engineering perspective also opens a
+substantial Future Work terrain around anomaly detection, reconstruction,
+clustering and carefully bounded attribution. This work begins by sharpening
+the questions, observation objects, evidence requirements, profiles,
+uncertainty, provenance, counterexamples and validation conditions. An anomaly
+does not by itself establish an attack; a cluster does not establish common
+meaning or cause; and observable source attribution must remain distinct from
+causal, intentional or responsibility attribution.
 
 Silke Honerkamp contributed important pedagogical, communication-theoretical,
 reflective and practical perspectives in early phases in 2023/24 and again
-while preparing the paper. For the public KSODI-Light layer, she is also named
+while preparing the paper. She is again actively involved in the v3.51 work
+through reflection on and testing of KSODI-Light use in reflective educational
+practice. For the public KSODI-Light layer, she is also named
 in the layer-specific licence notice because her early contribution included
 practical discussion and refinement of the operator labels and their use; for
 KSODI-Light, this layer-specific attribution is intentionally retained. Silke
@@ -75,6 +105,13 @@ unless a file or concept states otherwise, their role is contribution,
 reflection, testing or implementation support rather than repository-level
 method citation authorship.
 
+As a working topology, Anne, Heiko and Silke form a differentiated theory and
+reflection ensemble across method integration, security and communications
+engineering, pedagogy, coaching and communication. This description does not
+merge their roles or imply equal contribution to every KSODI component.
+Patrick works alongside that ensemble from an implementation and scaling
+position rather than as an intermediary between its members.
+
 ## R-Family, Technical Implementation and Infrastructure
 
 We thank Patrick Barthelmäs for substantial technical implementation and
@@ -87,6 +124,25 @@ release and software-licence control. There is no standing method-alignment
 branch, and implementation alignment is not a dependency of the current method
 Release or DOI. Method changes remain subject to Anne's release decision;
 software changes remain subject to Patrick's repository review.
+
+This acknowledgement includes the substantial continuing engineering effort
+needed to translate the layered method into an executable architecture:
+operator-service separation, orchestration, storage and provenance choices,
+interfaces, tests, deployment infrastructure and diagnostic views. That work
+provides valuable implementation questions and operational evidence for the
+method and its Implementation Companions. It does not by itself establish
+conformance to a later versioned method contract; that requires a separate
+comparison and test record.
+
+Patrick's role emphasizes implementation architecture, developer reasoning,
+testability, maintainability and the possibility of scalable solutions for
+practical needs that organizations already face. He does not mediate between
+Anne, Heiko and Silke. His adjacent implementation perspective examines how
+sufficiently specified parts of their work can become technically
+reconstructible requirements and working systems, while returning constraints
+and evidence to the research process. This allows practical development to
+proceed without prematurely closing the deeper security, reconstruction,
+anomaly-detection and attribution questions.
 
 Patrick is also acknowledged as an important contributor to the R-family
 development context. His developer-side reflection on resonance / tonality, the

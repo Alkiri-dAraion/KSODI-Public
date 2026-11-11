@@ -1,4 +1,4 @@
-# Which KSODI Variant Do I Need?
+# Which KSODI Scope Do I Need?
 
 **This is the second-step scope-selection guide, not the repository's reading
 entry point and not an implementation specification.** If this is your first
@@ -7,14 +7,17 @@ repository page, begin with
 the lowest KSODI scope that answers your question. After choosing, continue to
 the [root README](./README.md) as the third-step public overview.
 
-KSODI exposes three named variants, but they are not three interchangeable or
-independent products:
+KSODI exposes three named public scopes, but they are not three interchangeable
+or independent products:
 
 - **KSODI-Light** is an independently usable reflective working method.
-- **KSODI Standard-Eval** is the complete monadic numeric Observer line.
+- **KSODI Standard-Eval** is the complete monadic Observer line; it preserves
+  typed non-numeric states rather than forcing every result to be numeric.
 - **KSODI-Full** is a relational extension of that Observer line and cannot be
-  used without distinguishable monadic source trajectories.
-- A future **Controller** is not a fourth KSODI variant. It may act on Observer
+  used without distinguishable monadic source trajectories. Its current
+  `IK_rel` branch is strictly dyadic even though `R_0` and Future Work may also
+  examine declared constellations.
+- A future **Controller** is not a fourth KSODI scope. It may act on Observer
   findings only through separately declared governance corridors.
 
 Choose the lowest abstraction level that answers the question. Do not infer a
@@ -30,9 +33,9 @@ publication boundary, see the root
 
 | Question / purpose | Start with | Abstraction level | Dependency and infrastructure | What it provides |
 | --- | --- | --- | --- | --- |
-| “How can I formulate, reflect or improve this interaction?” | [KSODI-Light](./KSODI-Light/README.md) | Layer 0: reflective language and local guidance | Independently usable. No external Observer is required; it can be used in one chat, an account prompt or a suitable developer/system prompt. | Prompt improvement, reflective self-alignment, lightweight local steering and a shared K/S/O/D/I vocabulary. No formal state or relational calculation. |
-| “What is observably happening in this one identified source trajectory?” | [KSODI Standard-Eval](./KSODI-Standard-Eval/README.md) | Layers 1-3: monadic numeric observation | Requires a separate Observer architecture, source attribution, event and trajectory records, declared bases and profiles. | Per-source `K/S/O/D/I -> Z_A(k_A) -> IK_A(k_A)`, including optional typed drift, window and Hangar views. |
-| “Are two or more distinguishable trajectories eligible for relational comparison, and what can then be observed?” | [KSODI-Full](./KSODI-Full/README.md) | Layers 4-8: relational Observer extension; currently public through Layer 5 | Not standalone. It consumes distinguishable Layer-1/2 trajectories, an explicit pairing or constellation, reference spaces, windows and policy/profile declarations. | The `R0` comparability gate, then public `IK_rel` and separately staged parallel R-family branches. Passing `R0` does not itself prove coupling, meaning or causality. |
+| “How can I formulate, reflect or improve this interaction?” | [KSODI-Light](./KSODI-Light/README.md); for direct use see [Agent Skills and Copy-and-Paste Prompts](./KSODI-Light/agent-guidance/README.md) | Layer 0: reflective language and local guidance | Independently usable. No external Observer is required; it can be used in one chat, an account prompt or a suitable developer/system prompt. | Prompt improvement, reflective self-alignment, lightweight local steering and a shared K/S/O/D/I vocabulary. No formal state or relational calculation. |
+| “What is observably happening in this one identified source trajectory?” | [KSODI Standard-Eval](./KSODI-Standard-Eval/README.md) | Layers 1-3: monadic typed observation, numeric where applicable | Requires a separate Observer architecture, source attribution, event and trajectory records, declared bases and profiles. | Per-source operator results and complete typed `Z_A(k_A)`; where defined, `IK_w`, `IK_M2`, `IK_ref` and `AxisDev_ref` remain jointly navigable in the non-total-score IK-Gesamtbild, with typed drift, window and Hangar views. |
+| “Are distinguishable trajectories eligible for relational comparison, and—when they form an explicit dyad—what relational coherence projection is defined?” | [KSODI-Full](./KSODI-Full/README.md) | Layers 4-8: relational Observer extension; the moving Public v3.51 line is published through Layer 5 | Not standalone. It consumes distinguishable Layer-1/2 trajectories, an explicit pairing or constellation, reference spaces, windows and policy/profile declarations. Current `IK_rel` additionally requires the exact compatible dyadic gate contract. | The `R_0` comparability gate and, for the eligible ordered dyad, current `IK_rel`. R-family branches remain separately staged/Future Work and are not v3.51 results merely because the gate exists. Passing `R_0` does not itself prove coupling, meaning or causality. |
 
 ## The Four Responsibility Levels
 
@@ -62,29 +65,34 @@ incoming signal may use `I -> D -> O -> S -> K` as a preferred iterative
 reconstruction direction. These are retained process hypotheses where the
 entity, convention, channel and use case support them, not universal laws.
 
-For a source-local position `k_A`, the Observer builds one monadic state
-`Z_A(k_A)` and may project it to monadic coherence `IK_A(k_A)`.
-Standard-Eval ends with `IK`.
+For a source-local position `k_A`, the Observer builds one complete typed
+monadic state `Z_A(k_A)`. Where the declared basis and profiles permit numeric
+derivation, v3.51 distinguishes `IK_w`, `IK_M2`, `IK_ref` and `AxisDev_ref`
+and makes them jointly navigable with complete `Z` in the human-facing
+**IK-Gesamtbild**. That view is not a total score, replacement truth or loss of
+the individual results. Standard-Eval ends with this monadic IK result surface;
+relational results remain outside it.
 
 ### 3. KSODI-Full: compare only after distinction
 
 KSODI-Full begins methodically at Layer 4, but it depends on distinguishable
 `Z` trajectories produced through Layers 1 and 2. After `Z`, the
-architecture branches: monadic `IK` is Layer 3, while relational `R0` is
-evaluated in parallel as Layer 4. `R0` is not calculated from `IK`.
+architecture branches: monadic `IK` is Layer 3, while relational `R_0` is
+evaluated in parallel as Layer 4. `R_0` is not calculated from `IK`.
 
 For relational evaluation index `j`, the pairing map
 `pi(j) = (k_A(j), k_B(j))` declares which source-local positions are compared.
 An n-adic setting requires an explicit constellation rather than an implied
-shared trajectory.
+shared trajectory. An n-adic `R_0` result does not open the current strictly
+dyadic `IK_rel` branch.
 
-After a compatible open numeric canonical complete `R0` gate under the exact
-required profile, the current dyadic `IK_rel` additionally requires the same
-ordered dyad, paired events, pairing map and relational step. Staged `R_geom`
-and staged optional
-`R_pace` are parallel branches with their own bases, profiles, applicability
-rules and weights. One branch does not validate or consume another unless a
-later method definition states so explicitly.
+After a compatible open numeric canonical complete dyadic `R_0` gate under the
+exact required profile, current `IK_rel` may be evaluated for the same ordered
+dyad, paired events, pairing map and relational step. Separately staged
+`R_geom`, optional `R_pace` and later signal-media research are parallel
+candidate branches with their own bases, profiles, applicability rules and
+weights. They are not activated by v3.51, and one branch does not validate or
+consume another unless a later method definition states so explicitly.
 
 ### 4. Future Controller: act under governance
 
@@ -116,7 +124,7 @@ environment or channel.
 
 `Relational` means that KSODI asks whether distinguishable trajectories are
 eligible for a declared comparison and, after the gate, which relational
-projections are defined. It does not mean that `R0` proves contact,
+projections are defined. It does not mean that `R_0` proves contact,
 acknowledgement, shared meaning, coupling or causality.
 
 ## Three Short Examples
@@ -142,12 +150,12 @@ emitter, convention or meaning remain unknown.
 KSODI-Full is not triggered merely because a second trajectory exists. It
 becomes applicable only when the observation question explicitly compares two
 or more distinguishable trajectories through a declared pairing or
-constellation and the `R0` gate. A reply edge is not proof of acknowledgement,
+constellation and the `R_0` gate. A reply edge is not proof of acknowledgement,
 successful decoding, coupling or attack.
 
 ### Robots
 
-Each robot first needs its own source-attributed trajectory. After `R0`, two
+Each robot first needs its own source-attributed trajectory. After `R_0`, two
 robots may show similar pacing while moving apart geometrically, or remain
 geometrically close while their pacing diverges. This is why relational
 coherence, geometry and pace require separate parallel branches.
@@ -161,7 +169,7 @@ Before storing operator values, constructing trajectories or evaluating
 relational layers, read the root
 [KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS_V351.md). They define
 the minimum source-attribution, evaluation-unit, pairing, applicability and
-partial-operator conditions required across the Observer variants.
+partial-operator conditions required across the Observer scopes.
 
 Public implementation-transfer examples are kept under
 [implementation-examples](./implementation-examples/README.md),

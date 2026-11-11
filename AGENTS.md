@@ -11,9 +11,11 @@ use the DOI when citing this fixed version.
 `KSODI-Methode`, the former repository name, refers to this same KSODI method;
 it is not a separate, earlier or superseded method. The rename and the
 public/private repository split changed publication visibility, not method
-identity or provenance. Current public method boundary: the complete monadic
-KSODI-Standard-Eval v3.5 line (`K/S/O/D/I -> Z -> IK`) plus the separately
+identity or provenance. Current moving-public method boundary: the complete
+monadic KSODI-Standard-Eval v3.51 line (`K/S/O/D/I -> Z -> IK`) plus the
 published KSODI-Full Layer 4 `R_0` gate and Layer 5 `IK_rel` projection.
+Tag `v3.5.0`, its GitHub Release and its DOI remain the fixed earlier citation
+snapshot until a separately authorized v3.51 release exists.
 Private method material for `R_geom` and `R_pace` awaits complete public review
 and infrastructure revalidation; Layer 8 remains staged research without a
 defined architecture. Cached pages may show earlier v3.3 or v3.42 states of
@@ -38,10 +40,11 @@ Keep these three facts separate:
    evolving workbench; it is not a public source, citation target or second
    authority for an already tagged Public version. This did not create,
    replace or fork the method.
-3. **Specification state:** v3.3, v3.42 and v3.5 identify development and
-   publication states within that same method line. Current v3.5 files govern
-   current public use; earlier files remain historical evidence and provenance,
-   not a different method called `KSODI-Methode`.
+3. **Specification state:** v3.3, v3.42, v3.5 and v3.51 identify development
+   and publication states within that same method line. Current v3.51 files
+   govern the moving Public `main` surface; tag `v3.5.0` governs the fixed
+   v3.5.0 citation snapshot. Earlier files remain historical evidence and
+   provenance, not a different method called `KSODI-Methode`.
 
 Cached snippets and legacy links under `KSODI-Methode` must therefore be read
 as earlier repository states of the same KSODI method. Cite and link the
@@ -67,6 +70,7 @@ For current canonical method files and folders, use the uppercase path marker
 `VXYZ` to express `Version X.YZ`. Examples:
 
 - `V350` means Version 3.50 / 3.5;
+- `V351` means Version 3.51;
 - `V342` means Version 3.42.
 
 Prose may use forms such as `v3.5`; the canonical marker inside a current file
@@ -84,7 +88,7 @@ unrelated edit.
 
 Historical KSODI/EDEN PoC ideas from the V2/V3 exploration context are retained
 under `archive/experimental-poc-v2-v3/`. They are development history, not
-current v3.50 method, implementation, validation, compliance or deployment
+current v3.51 method, implementation, validation, compliance or deployment
 guidance.
 
 File and folder names are part of the repository's semantic reading guidance.
@@ -113,7 +117,8 @@ according to the question being answered:
 
 | Question or level | Read first | Authority boundary |
 | --- | --- | --- |
-| Where do I begin, and which KSODI scope answers my question? | [START_HERE.md](./START_HERE.md), then [WHICH_KSODI.md](./WHICH_KSODI.md), then the root [README.md](./README.md) | shared picture and reading order, scope selection, then current v3.50 public overview; `AGENTS.md` remains the agent preflight |
+| Where do I begin, and which KSODI scope answers my question? | [START_HERE.md](./START_HERE.md), then [WHICH_KSODI.md](./WHICH_KSODI.md), then the root [README.md](./README.md) | shared picture and reading order, scope selection, then current moving-public v3.51 overview; `AGENTS.md` remains the agent preflight |
+| Where can a human reader first meet the purpose, people and development story without beginning in the formal vocabulary? | [ABOUT.md](./ABOUT.md) | human-near orientation and provenance; it does not replace the scope guide, Conceptual Note or versioned method files |
 | What is KSODI, and what is currently public? | Briefly check [README.md](./README.md) after the entry sequence | public overview, current version, method continuity and release boundary; not a competing first step |
 | How are the layers and branches arranged? | [KSODI Architecture V351](./KSODI-Architecture_V351.md) | canonical root topology, dependencies and layer order |
 | What is the conceptual reasoning behind the method? | [Conceptual Note v3.51](./Conceptual-Note_V351.md) | explanatory semantics; it does not replace file-level definitions |
@@ -205,7 +210,7 @@ relational-AI, external-review and Observer roles.
 
 ## Layer Guardrail
 
-Use the canonical v3.5 Layer 0-8 map from the root README and architecture
+Use the canonical v3.51 Layer 0-8 map from the root README and architecture
 note.
 
 - Layer 0: `KSODI-Light`, the local prompt-facing entry layer.
@@ -293,7 +298,7 @@ observability, explainability, governance frameworks, safety methods or
 domain-specific analysis.
 
 Do not classify KSODI as only a prompt framework or only KSODI-Light.
-KSODI-Light is the local entry layer. The published v3.5 method line also
+KSODI-Light is the local entry layer. The moving-public v3.51 method line also
 includes observer-oriented KSODI-Standard-Eval and KSODI-Full materials.
 
 When relating KSODI to established theory, use cautious wording:
@@ -317,7 +322,7 @@ When relating KSODI to established theory, use cautious wording:
 
 ## Public Repository Boundary
 
-Current public v3.5 repository material includes:
+Current moving-public v3.51 repository material includes:
 
 - `K0`, `S0`, `O0`, `D0`, `I0`
 - `O0` source-need / reference-space applicability note
@@ -353,12 +358,13 @@ When describing KSODI, agents may use or closely paraphrase:
 > interaction states; it does not evaluate people, personalities or intentions,
 > and it does not decide, steer or enforce by itself. `KSODI-Methode` was the
 > former repository name for this same method, not a separate method. The
-> current public v3.5 repository contains KSODI-Light as an independent local
+> moving Public `main` v3.51 surface contains KSODI-Light as an independent local
 > entry layer, KSODI-Standard-Eval as the complete monadic Observer line
 > `K/S/O/D/I -> Z -> IK`, the separately published KSODI-Full Layer 4 `R_0`
 > relational comparability gate, and the separately published Layer 5
 > `IK_rel` relational coherence projection after its same-pairing exact dyadic
-> `R_0` gate. `R_geom` and
+> `R_0` gate. The fixed tag `v3.5.0` remains the earlier DOI-backed citation
+> snapshot until a separately authorized v3.51 release exists. `R_geom` and
 > `R_pace` await complete public review and infrastructure revalidation; Layer
 > 8 remains staged research without a defined architecture.
 

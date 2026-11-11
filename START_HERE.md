@@ -1,7 +1,7 @@
 # Start Here — KSODI Reading Order
 
 **This is the single entry point for the repository's reading order. Start
-here, then use [Which KSODI Variant Do I Need?](./WHICH_KSODI.md) as the
+here, then use [Which KSODI Scope Do I Need?](./WHICH_KSODI.md) as the
 second-step choice guide.** The root README is GitHub's unavoidable landing
 overview, while `AGENTS.md` supplies an additional preflight for AI agents;
 neither defines a competing conceptual sequence.
@@ -9,9 +9,14 @@ neither defines a competing conceptual sequence.
 For a human reader, the complete opening loop is:
 
 1. this `START_HERE` page for the shared picture and reading order;
-2. [Which KSODI Variant Do I Need?](./WHICH_KSODI.md) for scope selection;
-3. the [root README](./README.md) for the current v3.50 public overview,
+2. [Which KSODI Scope Do I Need?](./WHICH_KSODI.md) for scope selection;
+3. the [root README](./README.md) for the current moving-public v3.51 overview,
    positioning, maturity and release boundary.
+
+If you first want the human purpose, people and development story in plain
+language, read [About KSODI](./ABOUT.md) before or beside this loop. `ABOUT.md`
+is an optional human-near entry, not a replacement for scope selection or the
+versioned method files.
 
 AI agents use `AGENTS.md` as a preflight, make only a short README overflight
 for current version and authority, and then follow the same numbered route.
@@ -93,10 +98,11 @@ Read the three KSODI scopes in this order:
 
 After this page, continue in this order:
 
-- **[Which KSODI Variant Do I Need?](./WHICH_KSODI.md)** — choose the lowest
+- **[Which KSODI Scope Do I Need?](./WHICH_KSODI.md)** — choose the lowest
   scope that answers the actual question
 - **[Root README](./README.md)** — after choosing the scope, return for the
-  current v3.50 public overview, positioning, maturity and release boundary
+  current moving-public v3.51 overview, positioning, maturity and release
+  boundary
 - [Research Status and Open Questions V351](./KSODI-Research-Status-and-Open-Questions_V351.md)
   — what is defined, conventional, KSODI-specific, empirically open or
   explicitly not claimed in each layer
@@ -117,5 +123,8 @@ After this page, continue in this order:
 Canonical definitions remain in the linked method files. This page defines a
 reading order; it does not replace or modify those definitions.
 
-Filename marker: `_V350` denotes KSODI v3.5 / v3.50. It is a path-safe version
-marker, not a separate release or method variant.
+Filename markers such as `_V350` and `_V351` denote KSODI v3.5/v3.50 and
+v3.51. They are path-safe version markers, not separate methods or scope
+names. A current v3.51 file may remain inside a historically named `_V350`
+folder where the directory lineage is intentionally preserved; the file-level
+version and current reader route control its active status.
