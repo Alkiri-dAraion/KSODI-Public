@@ -24,7 +24,7 @@
 > Keep entities, target events and trajectories distinguishable, and do not
 > infer hidden internal states or causality from correlation.
 
-[![KSODI + IDAS Concept][banner-image]](https://github.com/Alkiri-dAraion/KSODI-Public)
+[![KSODI Method and Framework][banner-image]](https://github.com/Alkiri-dAraion/KSODI-Public)
 
 [banner-image]: ./assets/ksodi-lab-banner.png
 
@@ -80,12 +80,13 @@ v3.5.0 snapshot, use tag `v3.5.0`.
 KSODI is a structured observation method for interaction structures involving
 distinguishable entities, focussing on explainable governance and
 observability.
-The developing IDAS concept is intended to situate KSODI inside a broader
-framework while keeping Light, Observer, interaction protocol and any future
-Controller distinguishable. IDAS/SIRA is an orientation, not a completed
-implementation architecture or validated operational framework.
+The KSODI Framework situates the versioned Method inside a broader connective
+orientation while keeping Light, Observer, candidate interaction protocol,
+implementation and any future Controller distinguishable. The KSODI Protocol
+remains exploratory; neither term denotes a completed implementation
+architecture or validated operational protocol.
 
-→ See: [KSODI-IDAS-SIRA framework orientation](./KSODI-IDAS-SIRA-Framework_V342.md)
+→ See: [KSODI Framework and Protocol naming transition v3.51](./KSODI-Framework-and-Protocol-Naming-Transition_V351.md)
 
 The name `KSODI` is intentionally retained from the German development
 context. This is not meant as a value judgement between languages. The German
@@ -100,9 +101,10 @@ KSODI-Light labels. It is not an alternative method name, a separate English
 version or an independent provenance line. The method remains `KSODI` in every
 language. See the [KSODI English Translation Table](./KSODI-Light/KSODI-Light-English-Translation-Table_V351.md).
 
-Within the current IDAS orientation, KSODI contributes the defined observation
-layers for interaction states, interaction coherence and relational R-family
-observations over time. The broader IDAS integration remains conceptual. Any
+Within the current KSODI Framework, the versioned Method contributes the
+defined observation layers for interaction states, interaction coherence and
+relational R-family observations over time. Wider framework integration and
+the candidate Protocol remain conceptual. Any
 intervention, system-level steering or enforcement based on Observer findings
 belongs to a separately governed Controller or human decision layer; Observer
 findings do not trigger action by themselves. This does not exclude disclosed
@@ -470,8 +472,8 @@ It is intended to bridge three practical contexts:
   working agreement with lightweight corridors and fallback behavior.
 - **AI observability and governance:** KSODI-Standard-Eval and KSODI-Full
   extend the same operator logic into numeric Observer layers for drift,
-  corridor exits and longer-term interaction monitoring. A future IDAS/SIRA-
-  level integration remains conceptual. Relational or coupling claims remain
+  corridor exits and longer-term interaction monitoring. Wider Framework and
+  Protocol integration remains conceptual. Relational or coupling claims remain
   subject to their own gates, public availability and declared profiles.
 
 KSODI is not presented as a complete alignment solution. It is a structured way
@@ -758,7 +760,7 @@ embedded by agent creators in developer/system-prompt configurations.
 KSODI-Light can support reflection on attributable user input, assistant output
 and the observable interaction condition across a turn. It does not create a
 formal merged shared state. Formal observer-based monitoring belongs to
-KSODI-Standard-Eval or KSODI-Full; a possible future IDAS/SIRA-level
+KSODI-Standard-Eval or KSODI-Full; a possible future Framework/Protocol
 integration remains conceptual.
 → See: [KSODI-Light](./KSODI-Light)
 
@@ -797,9 +799,11 @@ KSODI focuses on structured observation across five operators:
 - Observable Clarity
 - Observable Information Impulse
 
-The broader conceptual framework intended to situate KSODI is referred to as
-IDAS (Interactive Dialog, Analytics & Steering). Its current orientation is not
-a finished implementation architecture.
+The broader connective orientation is called the **KSODI Framework**. The
+**KSODI Protocol** remains a candidate interaction and repair practice, not a
+finished implementation architecture or validated effect. Earlier work used
+the names IDAS and SIRA; see the
+[v3.51 naming transition](./KSODI-Framework-and-Protocol-Naming-Transition_V351.md).
 
 For a public development and contribution overview, see:
 [KSODI Development Timeline](./docs/timeline/KSODI_Timeline_since_2023-05.md)

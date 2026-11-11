@@ -660,7 +660,11 @@ No mysticism.
 No ontology.
 No universal formula.
 
-A structural observation method embedded in the IDAS framework.
+A structural observation method situated within the wider **KSODI Framework**.
+The Framework connects Project, Method, roles, evidence handoffs,
+implementations and separately governed action surfaces; it does not add a
+formula or replace the versioned Method. IDAS remains historical provenance
+for earlier framework work.
 
 Current v3.5 / v350 architecture sketch:
 
@@ -899,7 +903,10 @@ It is also:
 		changed?
 	•	Which uncertainty became visible or remained hidden?
 
-This is the bridge between KSODI-Light, Standard-Eval, KSODI-Full and IDAS/SIRA.
+This is a bridge among KSODI-Light, Standard-Eval, KSODI-Full and the wider
+KSODI Framework. A separately declared **KSODI Protocol** may later support
+interaction, inquiry, repair and handoff, but remains an optional and
+effect-unvalidated candidate rather than part of the versioned Method.
 
 ⸻
 

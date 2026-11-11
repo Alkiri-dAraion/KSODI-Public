@@ -133,7 +133,7 @@ according to the question being answered:
 | How may the method be stored or implemented? | [KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md) | implementation contract; implementation examples do not redefine the method |
 | How may Operator I be operationalized in a Conversation-/Retrieval-oriented profile? | [Operator I v3.51 Implementation Companion](./KSODI-Standard-Eval/Layer-1_KSODI-Operators_V350/KSODI_Operator-I_Implementation-Companion_V351.md) | conditional public implementation guidance; the adjacent Operator-I method remains authoritative and independent runtime conformance remains outstanding |
 | How may Operator D be operationalized under a declared detector/carrier profile? | [Operator D v3.51 Implementation Companion](./KSODI-Standard-Eval/Layer-1_KSODI-Operators_V350/KSODI_Operator-D_Implementation-Companion_V351.md) | conditional public implementation guidance; the adjacent Operator-D method file remains authoritative and independent runtime conformance remains outstanding |
-| How do Light, Observer, SIRA, IDAS and a future Controller differ? | [KSODI-IDAS-SIRA Framework](./KSODI-IDAS-SIRA-Framework_V342.md) | system and responsibility boundary |
+| How do Project, Method, Framework, Protocol, Observer and a future Controller differ? | [KSODI Framework and Protocol naming transition v3.51](./KSODI-Framework-and-Protocol-Naming-Transition_V351.md) | naming, system and responsibility boundary; not a formula source or validated protocol |
 | How did the work develop, and who contributed in which role? | [Human–AI Research Process](./HUMAN_AI_RESEARCH_PROCESS.md), [Contributors](./Contributors.md), [German timeline](./docs/timeline/KSODI_Timeline_seit_2023-05.md), [English timeline](./docs/timeline/KSODI_Timeline_since_2023-05.md) | provenance and chronology; historical wording does not override current method files |
 | How should the repository be cited? | [CITATION.cff](./CITATION.cff) | citation metadata for the published v3.5.0 snapshot and its version DOI |
 
@@ -436,18 +436,16 @@ approved corridors. Reduced vectors, trajectories, graphs and Hangar views may
 still contain sensitive or identifiable information and require normal data
 governance.
 
-## IDAS / SIRA Orientation Boundary
+## KSODI Framework / Protocol Orientation Boundary
 
-Use [`KSODI-IDAS-SIRA-Framework_V342.md`](./KSODI-IDAS-SIRA-Framework_V342.md) as the
-primary orientation note for the relationship among KSODI-Light,
-Observer, SIRA, IDAS and the future Controller.
+Use [`KSODI-Framework-and-Protocol-Naming-Transition_V351.md`](./KSODI-Framework-and-Protocol-Naming-Transition_V351.md)
+for the relationship among the KSODI Project, versioned Method, working mode,
+Framework, candidate Protocol, implementations and future Controller.
 
-IDAS and SIRA were developed as broader conceptual orientation during the
-first half of 2025 and kept compatible while v3.42 problems were worked into
-v3.50. They have not yet been developed into a deeply specified implementation
-architecture or independently validated operational framework. Do not infer
-implementation maturity from the conceptual fit or from the retained `V342`
-path; current versioned method files and implementation guardrails govern.
+Earlier IDAS and SIRA work remains archived historical provenance. The active
+names do not imply a deeply specified implementation architecture or an
+independently validated operational protocol. Current versioned Method files
+and implementation guardrails govern calculations and implementation claims.
 
 Do not collapse these systems. KSODI-Light is independently usable. The
 KSODI-Standard-Eval / KSODI-Full Observer is separately usable without a
@@ -461,10 +459,10 @@ not ontological limits on what can be observed. Any observation requires a
 declared purpose, attributable entities, trajectory boundaries and data
 governance.
 
-In SIRA, Resonance means testing observable response fit. It does not verify
-identical internal meaning, acknowledgement, causality or a later quantitative
-R-family result. Preserve the bounded Human–Chatbot, unknown Morse-like signal
-and robot examples when explaining these distinctions.
+In the candidate KSODI Protocol, observable response or repair evidence does
+not verify identical internal meaning, acknowledgement, causality or a later
+quantitative R-family result. Preserve the bounded Human–Chatbot, unknown
+Morse-like signal and robot examples when explaining these distinctions.
 
 ## Layer-1 Reader and Audit Boundary
 

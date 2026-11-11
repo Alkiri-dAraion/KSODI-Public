@@ -189,7 +189,11 @@ KSODI-Light belongs to the local agent side of the architecture. It may appear a
 
 It can support local reflection, clarification, uncertainty visibility, corridor awareness and fallback behavior. In agentic systems, this local Light layer becomes especially useful when it is paired with a separate Observer layer.
 
-That Observer layer is not part of KSODI-Light. It belongs to KSODI-Standard-Eval, KSODI-Full or IDAS/SIRA-level implementations and is responsible for formal observation of trajectories, drift, acceleration, retrieval behavior, vector movement, relational coherence and corridor exits.
+That Observer layer is not part of KSODI-Light. It belongs to
+KSODI-Standard-Eval, KSODI-Full or an explicitly declared KSODI Framework
+implementation and is responsible for formal observation of trajectories,
+drift, acceleration, retrieval behavior, vector movement, relational coherence
+and corridor exits.
 
 KSODI-Light and the Observer can each be used independently. When combined,
 Light provides local reflective guidance, while KSODI-Standard-Eval or
@@ -299,8 +303,8 @@ An external observer can add an auditable layer around an agent. It can monitor
 drift, compare trajectories over time, report corridor exits and support human
 oversight.
 
-That observer layer belongs to KSODI-Standard-Eval, KSODI-Full or IDAS/SIRA-level
-implementations.
+That observer layer belongs to KSODI-Standard-Eval, KSODI-Full or an explicitly
+declared KSODI Framework implementation.
 
 KSODI-Light may guide an assistant from inside the prompt. Observer-based
 monitoring evaluates behavior from outside the prompt. Both can be useful, but

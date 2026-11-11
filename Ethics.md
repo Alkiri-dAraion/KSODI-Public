@@ -1,12 +1,14 @@
 # ETHICS & INTENDED USE
 
-## KSODI · IDAS · SIRA
+## KSODI Method · Framework · Protocol
 
 ---
 
 ## Purpose of this document
 
-This document defines the **ethical boundaries, intended use and non-use** of the KSODI method and the IDAS Framework.
+This document defines the **ethical boundaries, intended use and non-use** of
+the KSODI Method, the wider KSODI Framework and the still-exploratory KSODI
+Protocol.
 
 It is not a legal policy.
 It is an **explicit statement of responsibility** regarding the observation, evaluation and stabilization of human–AI, human-agent and agentic interaction — especially in contexts involving **autonomous or semi-autonomous agents**.
@@ -17,9 +19,10 @@ It is an **explicit statement of responsibility** regarding the observation, eva
 
 KSODI-Standard-Eval and KSODI-Full are **Observer-oriented method scopes**,
 not control systems. KSODI-Light is a reflective working layer and does not
-perform formal Observer calculations. IDAS and SIRA may frame separately
-governed transitions from observation toward possible action, but neither a
-KSODI finding nor an IDAS/SIRA relation authorizes action by itself.
+perform formal Observer calculations. The KSODI Framework and candidate
+Protocol may frame separately governed transitions from observation toward
+possible action, but neither a KSODI finding nor a Framework/Protocol relation
+authorizes action by itself.
 
 They are designed to:
 
@@ -92,7 +95,7 @@ Autonomous or semi-autonomous agents pose specific ethical challenges:
 * overconfidence without awareness,
 * reduced human oversight over time.
 
-KSODI and IDAS address these risks by:
+The KSODI Method and Framework address these risks by:
 
 * observing interaction structure over time,
 * detecting early signs of drift,
@@ -179,7 +182,7 @@ KSODI must never be used to legitimize autonomous harm.
 
 ## Explicit non-use
 
-KSODI and IDAS are **not compatible** with:
+The KSODI Method, Framework and candidate Protocol are **not compatible** with:
 
 * autonomous lethal decision-making,
 * covert behavioral manipulation,

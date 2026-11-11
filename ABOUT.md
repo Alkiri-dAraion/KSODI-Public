@@ -67,10 +67,11 @@ can be used directly in training, account prompts or simple assistant setups.
 KSODI Standard-Eval is a separate monadic Observer line that reconstructs
 source-attributed states and trajectories; KSODI-Full extends that Observer
 line only after distinguishable trajectories and the relational `R0` gate.
-IDAS supplies the wider governance framework and SIRA the associated
-interaction/review protocol. A future Controller may act on Observer findings
-only through separately declared governance corridors. These are different
-abstraction and responsibility levels, not interchangeable prompt variants.
+The KSODI Framework supplies the wider connective orientation and the
+still-exploratory KSODI Protocol names a possible interaction/review practice.
+A future Controller may act on Observer findings only through separately
+declared governance corridors. These are different abstraction and
+responsibility levels, not interchangeable prompt variants.
 The goal is not to make interaction mechanical, but to make observable
 boundaries and changes inspectable without merging the participating entities.
 
@@ -176,12 +177,16 @@ For governance and compliance?
 Or, more practically:  
 Could it help developers detect early when an autonomous orthopedic purchasing agent suddenly starts ordering chicken feed — or cardiology medication?
 
-This perspective formed the basis for placing KSODI inside the broader
-**IDAS Framework** and the associated **SIRA protocol**: KSODI supplies
-observation, while governance interpretation and any later intervention remain
-separate responsibilities. The intended use includes explainable drift and
-anomaly observation in continuous and agent-based systems; it does not by
-itself establish cause, intent or an automated control decision.
+This perspective formed the basis for situating the versioned KSODI Method
+inside the broader **KSODI Framework** and considering an associated
+**KSODI Protocol**: the Method supplies observation, while interaction
+practice, governance interpretation and any later intervention remain
+separate responsibilities. Earlier work used the names IDAS and SIRA; their
+transition is documented in the
+[v3.51 naming note](./KSODI-Framework-and-Protocol-Naming-Transition_V351.md).
+The intended use includes explainable drift and anomaly observation in
+continuous and agent-based systems; it does not by itself establish cause,
+intent or an automated control decision.
 
 <br>
 
