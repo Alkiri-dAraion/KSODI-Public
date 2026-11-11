@@ -5,15 +5,17 @@ NO_NEW_METHOD_PROFILE`
 
 ## 1. Source identity
 
-The test basis is Public commit
-`0a9238268a24dbad782061680d619c6752f5550e` dated 2026-11-10.
+The formula basis was first published in Public commit
+`0a9238268a24dbad782061680d619c6752f5550e` dated 2026-11-10. The exact source
+bytes used after the external-review reconciliation are identified below; the
+companion change adds a fixture-vocabulary mapping and changes no formula.
 
 | Governed source | SHA-256 |
 | --- | --- |
 | `KSODI_Relational-Gate-R_0_V351.md` | `a2c4052090c3d702556c2ab2d57ad6f85363337bd7cd2add8b39646d45d7c724` |
 | `KSODI_Relational-Gate-R_0_Implementation-Companion_V351.md` | `f2f263e507fadaeb9e3e59e2798335d609862cf2948483b7960a3c158f010425` |
 | `KSODI_Dyadic-Relational-Coherence-IK_rel_V351.md` | `216d3ac5dcfa544bec6e54efd4335980f25cdda06222c6075b9e87630e2edd25` |
-| `KSODI_Dyadic-Relational-Coherence-IK_rel_Implementation-Companion_V351.md` | `a0a993841986e066f21178fd56bf7133a04dae014e5eb9e687b84d93186f2631` |
+| `KSODI_Dyadic-Relational-Coherence-IK_rel_Implementation-Companion_V351.md` | `0bcc215eccc3a64136984927f260b108f92371df644c01b12fb1e923a9e0d346` |
 
 These hashes bind the review to exact Public bytes. The companions remain
 subordinate to their method files.
@@ -82,7 +84,7 @@ identity. They do not alter `R_0`, gate state, coordinate weights, `IK_w` or
 
 ## 6. Finding classes
 
-Phase H can emit four distinct review findings:
+Phase H uses four distinct review findings:
 
 | Finding | Meaning |
 | --- | --- |
@@ -91,8 +93,10 @@ Phase H can emit four distinct review findings:
 | `diagnostic_information_loss` | a valid projection compresses distinctions retained in richer evidence |
 | `contract_contradiction` | calculated behavior conflicts with the frozen contract and may reopen v3.51 |
 
-An observed count of zero does not remove a finding class from the review
-contract.
+The generator's declared expectations cover the first three classes. The
+fourth is reserved for an independent comparison between the method contract
+and generated or runtime evidence; a self-expecting generator cannot establish
+its absence merely by reproducing its own expected labels.
 
 ## 7. Reopening rule
 

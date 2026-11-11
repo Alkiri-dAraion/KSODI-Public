@@ -118,12 +118,13 @@ do not silently open that branch. Later `R_geom`, `R_pace`, voice/signal-media
 or other R-family branches remain separately staged unless their own versioned
 contracts say otherwise.
 
-The published Phase-H v3.51 review confirms the declared R₀/IK_rel contracts
-under 52 synthetic sensitivity cases. It also makes expected profile
-sensitivity and scalar projection loss visible. Neither finding supplies an
-action signal: complete retained operands, typed statuses, profile identities
-and the reverse route remain necessary, and zero observed contract
-contradictions do not create runtime-conformance or Controller authority.
+The published Phase-H v3.51 review makes the declared R₀/IK_rel behavior,
+expected profile sensitivity and scalar projection loss visible across 52
+synthetic reference rows. Its generator checks declared fixture expectations;
+it does not independently exclude a contract contradiction. No finding
+supplies an action signal: complete retained operands, typed statuses, profile
+identities and the reverse route remain necessary, and a passing fixture run
+does not create runtime-conformance or Controller authority.
 
 ## 5. Observer outputs remain observations
 

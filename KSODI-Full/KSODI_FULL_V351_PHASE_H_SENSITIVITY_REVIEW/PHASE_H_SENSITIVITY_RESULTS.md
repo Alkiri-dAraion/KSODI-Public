@@ -5,7 +5,9 @@ EXPECTED_PROFILE_SENSITIVITY_AND_PROJECTION_LOSS_OBSERVED`
 
 ## 1. Result at a glance
 
-The independent generator produced 52 synthetic reference rows:
+The runtime-independent generator produced 52 synthetic reference rows,
+including one declared baseline reuse (`H-E-07`) for its adjacent profile
+control (`H-E-08`):
 
 | Block | Rows | Principal result |
 | --- | ---: | --- |
@@ -20,7 +22,8 @@ Observed finding families across their applicable blocks:
 - `contract_confirmed`;
 - `profile_sensitive_expected`;
 - `diagnostic_information_loss`;
-- zero observed `contract_contradiction` findings.
+- no independently adjudicated `contract_contradiction` finding; the generator
+  does not perform that separate method-to-fixture reconciliation.
 
 No formula, threshold, gate rule, epsilon value or canonical profile was
 changed by this review.
@@ -102,8 +105,9 @@ The fixtures distinguish all three positive-epsilon kinds:
 Across the exact and positive-epsilon cases they produce:
 
 - one exact joint projected-zero result;
-- six positive-band non-applicable results;
-- five numeric results;
+- four positive-band non-applicable results;
+- three `not_observable` results for observation-resolution cases;
+- four numeric results;
 - four processing errors for missing origin, missing calibration status,
   unsupported calibration claim or negative epsilon.
 
@@ -127,7 +131,8 @@ The combined cases confirm:
    projections;
 5. profile and status changes remain reconstructible through the record.
 
-All ten expected finding classes matched the observed classes.
+All ten declared row expectations matched the generated classifications. This
+is an internal generator assertion, not an independent contract audit.
 
 ## 7. Four post-review decision candidates
 
@@ -177,7 +182,8 @@ later review; it does not close it.
 
 ## 9. Bounded conclusion
 
-The frozen v3.51 contracts survive the tested sensitivity pass. The observed
-losses are visible, reproducible and already compatible with the declared
-non-total nature of `R_0` and `IK_rel`. Any v3.52 schema decision and any
-runtime-conformance claim remain separate review steps.
+The corrected fixtures are consistent with the frozen v3.51 contracts under
+the tested sensitivity pass. The observed losses are visible and reproducible;
+the separate reconciliation records whether they remain compatible with the
+declared non-total nature of `R_0` and `IK_rel`. Any v3.52 schema decision and
+any runtime-conformance claim remain separate review steps.

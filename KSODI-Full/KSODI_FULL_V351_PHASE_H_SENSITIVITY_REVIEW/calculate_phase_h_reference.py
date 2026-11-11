@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Generate the joint R0/IK_rel v3.51 Phase-H sensitivity fixtures.
 
-Standard library only. This is independent reference evidence over the frozen
-v3.51 contracts. Alternative metrics, coordinate weights, IK weights and
-positive epsilons are named test controls; the generator does not create a new
-method profile or empirical calibration claim.
+Standard library only. This is runtime-independent reference evidence over the
+frozen v3.51 contracts. It checks declared fixture expectations; it is not an
+independent method-to-fixture reconciliation. Alternative metrics, coordinate
+weights, IK weights and positive epsilons are named test controls; the
+generator does not create a new method profile or empirical calibration claim.
 """
 
 from __future__ import annotations
@@ -25,6 +26,17 @@ COORDINATES = ("K", "S", "O", "D", "I")
 EQUAL_WEIGHTS = (D("0.2"),) * 5
 K_FOCUS_WEIGHTS = (D("0.6"), D("0.1"), D("0.1"), D("0.1"), D("0.1"))
 S_FOCUS_WEIGHTS = (D("0.1"), D("0.6"), D("0.1"), D("0.1"), D("0.1"))
+
+METHOD_STATUS_DOMAIN = {"numeric", "not_selected", "not_observable", "not_applicable"}
+PROCESSING_STATUS_DOMAIN = {"processing_error"}
+FIXTURE_STATUS_TO_METHOD_STATUS = {
+    "numeric": "numeric",
+    "not_observable": "not_observable",
+    "not_applicable": "not_applicable",
+    "not_applicable_joint_projected_zero": "not_applicable",
+    "not_applicable_joint_move_epsilon_band": "not_applicable",
+    "processing_error": "processing_error",
+}
 
 OUTPUTS = {
     "H-A": HERE / "phase_h_r0_profile_sensitivity.csv",
@@ -307,6 +319,8 @@ def phase_h_c() -> list[dict[str, str]]:
     assert by_id["H-C-05"]["delta_z_vectors_equal"] == "true"
     assert by_id["H-C-06"]["c_move_raw"] == "0.9"
     assert all(row["canonical_r0_gate_state"] == "open" for row in rows)
+    for row in rows:
+        assert_fixture_status_domain(row["method_status_epsilon_0"])
     write_rows(OUTPUTS["H-C"], rows)
     return rows
 
@@ -315,6 +329,7 @@ def epsilon_decision(
     value_a: Decimal,
     value_b: Decimal,
     epsilon: Decimal,
+    epsilon_kind: str,
     parameter_origin: str,
     calibration_status: str,
     calibration_evidence_reference: str,
@@ -327,11 +342,34 @@ def epsilon_decision(
         return "processing_error", "calibration_claim_without_evidence_reference"
     if epsilon < ZERO:
         return "processing_error", "negative_epsilon"
-    if epsilon == ZERO and value_a == ZERO and value_b == ZERO:
-        return "not_applicable_joint_projected_zero", "exact_joint_projected_zero"
-    if abs(value_a) <= epsilon and abs(value_b) <= epsilon:
-        return "not_applicable_joint_move_epsilon_band", "joint_projected_band"
-    return "numeric", "outside_joint_projected_band"
+    if epsilon_kind == "epsilon_method_exact_zero":
+        if epsilon != ZERO:
+            return "processing_error", "exact_zero_kind_requires_zero_epsilon"
+        if value_a == ZERO and value_b == ZERO:
+            return "not_applicable_joint_projected_zero", "exact_joint_projected_zero"
+        return "numeric", "outside_exact_joint_projected_zero"
+    if epsilon_kind == "epsilon_numeric_tolerance":
+        if abs(value_a) <= epsilon and abs(value_b) <= epsilon:
+            return "not_applicable_joint_move_epsilon_band", "joint_projected_band"
+        return "numeric", "outside_joint_projected_band"
+    if epsilon_kind == "epsilon_observation_resolution":
+        if abs(value_a) <= epsilon or abs(value_b) <= epsilon:
+            return (
+                "not_observable",
+                "projected_movement_unresolved_at_observation_resolution",
+            )
+        return "numeric", "both_projected_movements_resolved"
+    if epsilon_kind == "epsilon_question_relevance":
+        if abs(value_a) <= epsilon and abs(value_b) <= epsilon:
+            return "not_applicable_joint_move_epsilon_band", "joint_projected_band"
+        return "numeric", "outside_joint_projected_band"
+    return "processing_error", "unknown_or_ambiguous_epsilon_kind"
+
+
+def assert_fixture_status_domain(status: str) -> None:
+    assert status in FIXTURE_STATUS_TO_METHOD_STATUS, f"unknown fixture status: {status}"
+    normalized = FIXTURE_STATUS_TO_METHOD_STATUS[status]
+    assert normalized in METHOD_STATUS_DOMAIN | PROCESSING_STATUS_DOMAIN
 
 
 def phase_h_d() -> list[dict[str, str]]:
@@ -359,7 +397,7 @@ def phase_h_d() -> list[dict[str, str]]:
         value_b = D(b_raw)
         epsilon = D(epsilon_raw)
         method_status, reason = epsilon_decision(
-            value_a, value_b, epsilon, origin, status, evidence
+            value_a, value_b, epsilon, epsilon_kind, origin, status, evidence
         )
         raw_component = c_move(value_a, value_b)
         rows.append(
@@ -385,13 +423,30 @@ def phase_h_d() -> list[dict[str, str]]:
     assert by_id["H-D-02"]["method_status"].startswith("not_applicable")
     assert by_id["H-D-03"]["method_status"].startswith("not_applicable")
     assert by_id["H-D-04"]["method_status"] == "numeric"
-    assert by_id["H-D-06"]["method_status"].startswith("not_applicable")
-    assert by_id["H-D-08"]["method_status"] == "numeric"
+    assert by_id["H-D-06"]["method_status"] == "not_observable"
+    assert by_id["H-D-07"]["method_status"] == "not_observable"
+    assert by_id["H-D-08"]["method_status"] == "not_observable"
     assert by_id["H-D-09"]["method_status"].startswith("not_applicable")
     assert by_id["H-D-11"]["method_status"] == "numeric"
     assert by_id["H-D-12"]["reason"] == "missing_epsilon_parameter_origin"
     assert by_id["H-D-14"]["reason"] == "calibration_claim_without_evidence_reference"
     assert by_id["H-D-15"]["method_status"] == "numeric"
+    assert all(
+        row["reason"] == "projected_movement_unresolved_at_observation_resolution"
+        for row in rows
+        if row["epsilon_kind"] == "epsilon_observation_resolution"
+    )
+    assert epsilon_decision(
+        ZERO,
+        ZERO,
+        ZERO,
+        "unknown_epsilon_kind",
+        "synthetic_schema_test",
+        "set_not_empirically_calibrated",
+        "",
+    ) == ("processing_error", "unknown_or_ambiguous_epsilon_kind")
+    for row in rows:
+        assert_fixture_status_domain(row["method_status"])
     write_rows(OUTPUTS["H-D"], rows)
     return rows
 
@@ -404,6 +459,7 @@ def joint_pipeline_case(
     metric_profile_id: str,
     ik_profile_id: str,
     epsilon_raw: str,
+    epsilon_kind: str,
     origin: str,
     calibration_status: str,
     expected_finding: str,
@@ -415,12 +471,12 @@ def joint_pipeline_case(
     ik_b = delta_ik(delta_b, ik_profile_id)
     epsilon = D(epsilon_raw)
     if r0["gate_state"] != "open":
-        downstream_status = "not_evaluable_r0_closed"
-        reason = "exact_r0_handoff_not_open"
+        downstream_status = "not_applicable"
+        reason = "gate_not_open"
         method_value = ""
     else:
         downstream_status, reason = epsilon_decision(
-            ik_a, ik_b, epsilon, origin, calibration_status, ""
+            ik_a, ik_b, epsilon, epsilon_kind, origin, calibration_status, ""
         )
         method_value = (
             decimal_text(c_move(ik_a, ik_b))
@@ -447,6 +503,7 @@ def joint_pipeline_case(
         "delta_ik_w_a": decimal_text(ik_a),
         "delta_ik_w_b": decimal_text(ik_b),
         "epsilon_move": decimal_text(epsilon),
+        "epsilon_kind": epsilon_kind,
         "epsilon_parameter_origin": origin,
         "epsilon_calibration_status": calibration_status,
         "ik_rel_status": downstream_status,
@@ -467,16 +524,16 @@ def joint_pipeline_case(
 
 def phase_h_e() -> list[dict[str, str]]:
     cases = (
-        ("H-E-01", "static_open_r0_exact_zero_not_applicable", ("0",) * 5, ("0",) * 5, "equal_coordinate_normalized_l1_v351", "ik_w_equal_coordinate_reference", "0", "method_reference", "exact_reference_no_empirical_calibration_required", "contract_confirmed"),
-        ("H-E-02", "same_k_movement_numeric_perfect", ("0.5", "0", "0", "0", "0"), ("0.5", "0", "0", "0", "0"), "equal_coordinate_normalized_l1_v351", "ik_w_equal_coordinate_reference", "0", "method_reference", "exact_reference_no_empirical_calibration_required", "contract_confirmed"),
-        ("H-E-03", "different_axes_equal_projection", ("0.5", "0", "0", "0", "0"), ("0", "0.5", "0", "0", "0"), "equal_coordinate_normalized_l1_v351", "ik_w_equal_coordinate_reference", "0", "method_reference", "exact_reference_no_empirical_calibration_required", "diagnostic_information_loss"),
-        ("H-E-04", "opposite_projection_numeric", ("0.5", "0", "0", "0", "0"), ("-0.5", "0", "0", "0", "0"), "equal_coordinate_normalized_l1_v351", "ik_w_equal_coordinate_reference", "0", "method_reference", "exact_reference_no_empirical_calibration_required", "contract_confirmed"),
-        ("H-E-05", "single_axis_l1_gate_boundary", ("1", "0", "0", "0", "0"), ("1", "0", "0", "0", "0"), "equal_coordinate_normalized_l1_v351", "ik_w_equal_coordinate_reference", "0", "method_reference", "exact_reference_no_empirical_calibration_required", "contract_confirmed"),
-        ("H-E-06", "single_axis_l2_gate_closed", ("1", "0", "0", "0", "0"), ("1", "0", "0", "0", "0"), "equal_coordinate_normalized_l2_test_control", "ik_w_equal_coordinate_reference", "0", "method_reference", "exact_reference_no_empirical_calibration_required", "profile_sensitive_expected"),
-        ("H-E-07", "different_axes_equal_ik_weights", ("0.5", "0", "0", "0", "0"), ("0", "0.5", "0", "0", "0"), "equal_coordinate_normalized_l1_v351", "ik_w_equal_coordinate_reference", "0", "method_reference", "exact_reference_no_empirical_calibration_required", "diagnostic_information_loss"),
-        ("H-E-08", "different_axes_k_focus_ik_control", ("0.5", "0", "0", "0", "0"), ("0", "0.5", "0", "0", "0"), "equal_coordinate_normalized_l1_v351", "ik_w_k_focus_test_control", "0", "method_reference", "exact_reference_no_empirical_calibration_required", "profile_sensitive_expected"),
-        ("H-E-09", "small_equal_projection_positive_epsilon_band", ("0.2", "0", "0", "0", "0"), ("0.2", "0", "0", "0", "0"), "equal_coordinate_normalized_l1_v351", "ik_w_equal_coordinate_reference", "0.05", "synthetic_reference_fixture", "set_not_empirically_calibrated", "contract_confirmed"),
-        ("H-E-10", "small_equal_projection_exact_epsilon", ("0.2", "0", "0", "0", "0"), ("0.2", "0", "0", "0", "0"), "equal_coordinate_normalized_l1_v351", "ik_w_equal_coordinate_reference", "0", "method_reference", "exact_reference_no_empirical_calibration_required", "contract_confirmed"),
+        ("H-E-01", "static_open_r0_exact_zero_not_applicable", ("0",) * 5, ("0",) * 5, "equal_coordinate_normalized_l1_v351", "ik_w_equal_coordinate_reference", "0", "epsilon_method_exact_zero", "method_reference", "exact_reference_no_empirical_calibration_required", "contract_confirmed"),
+        ("H-E-02", "same_k_movement_numeric_perfect", ("0.5", "0", "0", "0", "0"), ("0.5", "0", "0", "0", "0"), "equal_coordinate_normalized_l1_v351", "ik_w_equal_coordinate_reference", "0", "epsilon_method_exact_zero", "method_reference", "exact_reference_no_empirical_calibration_required", "contract_confirmed"),
+        ("H-E-03", "different_axes_equal_projection", ("0.5", "0", "0", "0", "0"), ("0", "0.5", "0", "0", "0"), "equal_coordinate_normalized_l1_v351", "ik_w_equal_coordinate_reference", "0", "epsilon_method_exact_zero", "method_reference", "exact_reference_no_empirical_calibration_required", "diagnostic_information_loss"),
+        ("H-E-04", "opposite_projection_numeric", ("0.5", "0", "0", "0", "0"), ("-0.5", "0", "0", "0", "0"), "equal_coordinate_normalized_l1_v351", "ik_w_equal_coordinate_reference", "0", "epsilon_method_exact_zero", "method_reference", "exact_reference_no_empirical_calibration_required", "contract_confirmed"),
+        ("H-E-05", "single_axis_l1_gate_boundary", ("1", "0", "0", "0", "0"), ("1", "0", "0", "0", "0"), "equal_coordinate_normalized_l1_v351", "ik_w_equal_coordinate_reference", "0", "epsilon_method_exact_zero", "method_reference", "exact_reference_no_empirical_calibration_required", "contract_confirmed"),
+        ("H-E-06", "single_axis_l2_gate_closed", ("1", "0", "0", "0", "0"), ("1", "0", "0", "0", "0"), "equal_coordinate_normalized_l2_test_control", "ik_w_equal_coordinate_reference", "0", "epsilon_method_exact_zero", "method_reference", "exact_reference_no_empirical_calibration_required", "profile_sensitive_expected"),
+        ("H-E-07", "different_axes_equal_ik_weights_baseline_for_h_e_08", ("0.5", "0", "0", "0", "0"), ("0", "0.5", "0", "0", "0"), "equal_coordinate_normalized_l1_v351", "ik_w_equal_coordinate_reference", "0", "epsilon_method_exact_zero", "method_reference", "exact_reference_no_empirical_calibration_required", "diagnostic_information_loss"),
+        ("H-E-08", "different_axes_k_focus_ik_control", ("0.5", "0", "0", "0", "0"), ("0", "0.5", "0", "0", "0"), "equal_coordinate_normalized_l1_v351", "ik_w_k_focus_test_control", "0", "epsilon_method_exact_zero", "method_reference", "exact_reference_no_empirical_calibration_required", "profile_sensitive_expected"),
+        ("H-E-09", "small_equal_projection_positive_epsilon_band", ("0.2", "0", "0", "0", "0"), ("0.2", "0", "0", "0", "0"), "equal_coordinate_normalized_l1_v351", "ik_w_equal_coordinate_reference", "0.05", "epsilon_numeric_tolerance", "synthetic_reference_fixture", "set_not_empirically_calibrated", "contract_confirmed"),
+        ("H-E-10", "small_equal_projection_exact_epsilon", ("0.2", "0", "0", "0", "0"), ("0.2", "0", "0", "0", "0"), "equal_coordinate_normalized_l1_v351", "ik_w_equal_coordinate_reference", "0", "epsilon_method_exact_zero", "method_reference", "exact_reference_no_empirical_calibration_required", "contract_confirmed"),
     )
     rows = [joint_pipeline_case(*case) for case in cases]
     by_id = {row["case_id"]: row for row in rows}
@@ -485,6 +542,8 @@ def phase_h_e() -> list[dict[str, str]]:
     assert by_id["H-E-03"]["projection_collision"] == "true"
     assert by_id["H-E-05"]["r0_gate_state"] == "open"
     assert by_id["H-E-06"]["r0_gate_state"] == "closed"
+    assert by_id["H-E-06"]["ik_rel_status"] == "not_applicable"
+    assert by_id["H-E-06"]["ik_rel_reason"] == "gate_not_open"
     assert by_id["H-E-07"]["ik_rel_value"] == "1"
     assert by_id["H-E-08"]["ik_rel_value"] == "0.875"
     assert by_id["H-E-09"]["ik_rel_status"].startswith("not_applicable")
@@ -493,6 +552,8 @@ def phase_h_e() -> list[dict[str, str]]:
         row["expected_finding_class"] == row["observed_finding_class"]
         for row in rows
     )
+    for row in rows:
+        assert_fixture_status_domain(row["ik_rel_status"])
     write_rows(OUTPUTS["H-E"], rows)
     return rows
 
@@ -506,14 +567,11 @@ def main() -> None:
         "H-E": phase_h_e(),
     }
     all_rows = [row for rows in blocks.values() for row in rows]
-    contradictions = sum(
-        any(value == "contract_contradiction" for value in row.values())
-        for row in all_rows
-    )
     for block_id, rows in blocks.items():
         print(f"verified_{block_id.lower().replace('-', '_')}_rows={len(rows)}")
     print(f"verified_total_rows={len(all_rows)}")
-    print(f"contract_contradictions={contradictions}")
+    print("generator_assertions_passed=true")
+    print("independent_contract_reconciliation_performed=false")
     for block_id, path in OUTPUTS.items():
         print(f"{block_id.lower().replace('-', '_')}_output={path.name}")
 

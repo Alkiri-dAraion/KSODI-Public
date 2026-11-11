@@ -152,6 +152,33 @@ when both are observable. One unresolved operand never becomes zero. Movement
 and acceleration use distinct policies. Learned/adaptive policies require a
 separate validated profile and may not self-confirm against the desired result.
 
+### 4.1 Status and reason vocabulary
+
+The method result domain remains exactly:
+
+```text
+numeric | not_selected | not_observable | not_applicable
+```
+
+`processing_error` is a processing state, not a fifth method result. Compound
+labels retained in the Phase A, Phase C and Phase H reference fixtures are
+historical package shorthand. They do not extend the method domain:
+
+| Fixture label | Method `result_status` | Method `reason_code` or resolution rule |
+| --- | --- | --- |
+| `numeric` | `numeric` | no nonnumeric reason; any fixture diagnostic remains subordinate |
+| `not_applicable_joint_projected_zero` | `not_applicable` | `exact_joint_projected_zero` under the declared exact-zero policy |
+| `not_applicable_joint_move_epsilon_band` | `not_applicable` | resolve through `epsilon_kind`: `joint_projected_zero_under_numeric_policy` or `joint_projected_movement_below_question_relevance`; older Phase-C wording remains fixture provenance |
+| `not_applicable_joint_accel_epsilon_band` | `not_applicable` | `joint_projected_acceleration_within_epsilon` under the separately identified acceleration policy |
+| `not_observable` | `not_observable` | `projected_movement_unresolved_at_observation_resolution` for the movement-resolution branch |
+| `not_applicable` with closed handoff | `not_applicable` | `gate_not_open` |
+| `processing_error` | processing state | retain the specific validation reason; do not coerce it into the method result domain |
+
+Consumers must use the separate typed status and reason fields rather than
+string-matching a compound fixture label. A future package migration may
+harmonize all CSV columns after preserving the published fixture provenance;
+v3.51 does not silently rewrite that evidence.
+
 ## 5. Typed components and fixed-N projection
 
 ```text

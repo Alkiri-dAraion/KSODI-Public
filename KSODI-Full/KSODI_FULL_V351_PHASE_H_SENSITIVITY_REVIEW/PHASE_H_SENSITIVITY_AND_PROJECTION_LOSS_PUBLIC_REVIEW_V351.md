@@ -28,7 +28,8 @@ their relevance for a particular question.
 The review is bound to the v3.51 Public method state at commit
 `0a9238268a24dbad782061680d619c6752f5550e`.
 
-It contains 52 synthetic cases in five blocks:
+It contains 52 synthetic reference rows in five blocks. `H-E-07` is a declared
+baseline reuse for the adjacent profile control `H-E-08`:
 
 | Block | Rows | Scope |
 | --- | ---: | --- |
@@ -107,20 +108,28 @@ missing calibration status, an unsupported empirical-calibration claim or a
 negative epsilon yields a processing error rather than a repaired numeric
 result.
 
+The three observation-resolution fixtures return `not_observable` when either
+required projected movement is unresolved at the declared resolution. They do
+not reuse the numeric-tolerance or question-relevance consequence and do not
+insert an unresolved operand as zero.
+
 The synthetic tests verify contract behavior. They do not empirically
 calibrate an epsilon.
 
-### 3.5 No tested contract contradiction
+### 3.5 Bounded generator result
 
-The complete 52-case suite finds:
+The 52-row suite records:
 
 - confirmed contract behavior;
 - expected profile sensitivity;
 - reproducible diagnostic information loss;
-- zero observed contract contradictions.
+- no independently adjudicated contract contradiction; that finding requires a
+  separate method-to-fixture or runtime reconciliation.
 
-This is a bounded synthetic result, not proof of completeness, semantic
-validity or runtime conformance.
+The generator asserts its own declared expectations and checks the emitted
+status vocabulary. It does not prove the absence of a contradiction. This is a
+bounded synthetic result, not proof of completeness, semantic validity or
+runtime conformance.
 
 ## 4. How to read information loss
 
