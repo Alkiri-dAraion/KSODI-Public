@@ -185,7 +185,7 @@ without a defined architecture.
 
 AI agents and automated tools should read [AGENTS.md](./AGENTS.md) before
 summarizing or citing this repository. For the explanatory semantics and the
-bounded Hangar image, continue with the [Conceptual Note](./Conceptual-Note.md),
+bounded Hangar image, continue with the [Conceptual Note v3.51](./Conceptual-Note_V351.md),
 the [Hangar Origin and Analogy Companion V350](./KSODI-Hangar_Origin-and-Analogy-Companion_V350.md)
 and the formally governing [KSODI Hangar V350](./KSODI-Hangar_V350.md).
 
@@ -249,7 +249,7 @@ recursive rather than a universal one-pass law or a claim about hidden internal
 processing.
 
 For a bounded non-language example, see the Morse and unknown-code example in
-the [Conceptual Note](./Conceptual-Note.md).
+the [Conceptual Note v3.51](./Conceptual-Note_V351.md).
 
 ## KSODI v3.5 Layer Map
 

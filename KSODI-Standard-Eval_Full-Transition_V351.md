@@ -251,7 +251,7 @@ the cumulative
 The following current Public references span Standard-Eval and Full. Their
 own v3.51 successor review remains separately governed where applicable:
 
-- [Conceptual Note](./Conceptual-Note.md);
+- [Conceptual Note v3.51](./Conceptual-Note_V351.md);
 - [KSODI Architecture](./KSODI-Architecture_V350.md);
 - [KSODI Hangar](./KSODI-Hangar_V350.md);
 - [Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md); and

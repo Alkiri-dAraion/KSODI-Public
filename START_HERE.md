@@ -100,7 +100,7 @@ After this page, continue in this order:
 - [Research Status and Open Questions V350](./KSODI-Research-Status-and-Open-Questions_V350.md)
   — what is defined, conventional, KSODI-specific, empirically open or
   explicitly not claimed in each layer
-- [Conceptual Note](./Conceptual-Note.md)
+- [Conceptual Note v3.51](./Conceptual-Note_V351.md)
 - [KSODI-Standard-Eval / KSODI-Full Transition V350](./KSODI-Standard-Eval_Full-Transition_V350.md)
 - [KSODI Licence Transition Note V342 to V350](./KSODI-License-Transition-Note_V342-to-V350.md)
 - [KSODI Architecture V350](./KSODI-Architecture_V350.md)
