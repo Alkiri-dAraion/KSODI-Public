@@ -1,8 +1,5 @@
 # Phase H — Frozen v3.51 Basis
 
-Status: `PUBLIC_FROZEN_TEST_BASIS / PUBLIC_0A92382_BOUND /
-NO_NEW_METHOD_PROFILE`
-
 ## 1. Source identity
 
 The formula basis was first published in Public commit
@@ -14,8 +11,8 @@ companion change adds a fixture-vocabulary mapping and changes no formula.
 | --- | --- |
 | `KSODI_Relational-Gate-R_0_V351.md` | `a2c4052090c3d702556c2ab2d57ad6f85363337bd7cd2add8b39646d45d7c724` |
 | `KSODI_Relational-Gate-R_0_Implementation-Companion_V351.md` | `f2f263e507fadaeb9e3e59e2798335d609862cf2948483b7960a3c158f010425` |
-| `KSODI_Dyadic-Relational-Coherence-IK_rel_V351.md` | `216d3ac5dcfa544bec6e54efd4335980f25cdda06222c6075b9e87630e2edd25` |
-| `KSODI_Dyadic-Relational-Coherence-IK_rel_Implementation-Companion_V351.md` | `0bcc215eccc3a64136984927f260b108f92371df644c01b12fb1e923a9e0d346` |
+| `KSODI_Dyadic-Relational-Coherence-IK_rel_V351.md` | `f6f62404d55e871a535d749019bcc8c7e2db3b4d321d232ed2bf1207ad425677` |
+| `KSODI_Dyadic-Relational-Coherence-IK_rel_Implementation-Companion_V351.md` | `8f594992b4e35bb61fcbcff7fd4b8859357571cf806745fcc7b035537f396c82` |
 
 These hashes bind the review to exact Public bytes. The companions remain
 subordinate to their method files.

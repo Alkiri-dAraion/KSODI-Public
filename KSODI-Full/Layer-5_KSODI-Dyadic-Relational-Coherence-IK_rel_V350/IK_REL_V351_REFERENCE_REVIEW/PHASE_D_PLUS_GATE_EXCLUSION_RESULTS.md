@@ -1,8 +1,5 @@
 # Phase D+ — Complete-Z gate-exclusion regression results
 
-Status: `PUBLIC_V3.51_ASSERTION_CHECKED_REFERENCE_REGRESSION /
-NOT_RUNTIME_CONFORMANCE`
-
 Basis:
 
 - [Phase 0 frozen basis](./PHASE_0_FROZEN_BASIS.md);

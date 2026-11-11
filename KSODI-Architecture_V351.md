@@ -1,8 +1,5 @@
 # KSODI Architecture V351
 
-Status: `PUBLIC_MAIN_V3.51 / V3.50_CARRY_FORWARD_RECONCILED /
-METHOD_FILES_RETAIN_FORMULA_AUTHORITY / RELEASE_SNAPSHOT_PENDING`
-
 This architecture preserves the released v3.50 Layer 0–5 method topology and
 adds the reviewed v3.51 identity, observation-granularity, part-whole,
 dual-resolution, IK-result and window-contract distinctions required by the

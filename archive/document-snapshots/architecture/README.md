@@ -12,7 +12,7 @@ Current canonical file:
 
 The immediate moving-main v3.50 predecessor replaced by this cumulative
 v3.51 architecture is retained under
-[`v350-replaced-by-v351-2026-11-11/`](./v350-replaced-by-v351-2026-11-11/README.md).
+[`v350-replaced-by-v351/`](./v350-replaced-by-v351/README.md).
 
 Earlier separately named root and ASCII architecture surfaces are retained
 only as historical snapshots in this directory:

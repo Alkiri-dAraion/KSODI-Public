@@ -1,8 +1,5 @@
 # KSODI-Light Baseline Meaning and Open Questions v3.51
 
-Status: `V351_PUBLISHED_ON_PUBLIC_MAIN / EXPLANATORY_RESEARCH_NOTE /
-NO_FORMAL_AXIS_OR_ORTHOGONALITY_CLAIM`
-
 Licence: `CC BY 4.0`, subject to the repository licence and any explicit
 file-level exception.
 

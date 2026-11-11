@@ -47,6 +47,6 @@ or real-world semantic validity.
 ## Migration
 
 The direct v3.50 method, companion and pre-v3.51 reader are preserved at
-[`archive/document-snapshots/dyadic-ik-rel/v350-replaced-by-v351-2026-11-10/`](../../archive/document-snapshots/dyadic-ik-rel/v350-replaced-by-v351-2026-11-10/).
+[`archive/document-snapshots/dyadic-ik-rel/v350-replaced-by-v351/`](../../archive/document-snapshots/dyadic-ik-rel/v350-replaced-by-v351/).
 Equal numeric values alone do not prove cross-version comparability; use the
 v3.51 migration classes and declared identity/profile evidence.

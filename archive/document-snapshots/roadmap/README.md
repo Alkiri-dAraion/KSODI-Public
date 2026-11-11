@@ -14,9 +14,9 @@ guidance.
     trajectory boundaries, relational gating and Light / Observer / Controller
     dependency rules
 
-## 2026-11-11
+## Pre-v3.51 compact version route
 
-- [Long-form roadmap before the compact v3.51 version route](./KSODI-Public_ROADMAP_pre-v351-version-route_2026-11-11.md)
+- [Long-form roadmap before the compact v3.51 version route](./KSODI-Public_ROADMAP_pre-v351-version-route.md)
   - reason for supersession: research questions, architecture, ethics,
     implementation guardrails and validation routes now have separate current
     sources; the active root path was reduced to version and navigation

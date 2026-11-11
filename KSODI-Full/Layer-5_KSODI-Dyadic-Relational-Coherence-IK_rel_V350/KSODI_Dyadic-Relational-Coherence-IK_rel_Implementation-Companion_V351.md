@@ -1,8 +1,5 @@
 # KSODI `IK_rel` v3.51 — Conditional Implementation Companion
 
-Status: `PUBLIC_V3.51_SUBORDINATE_IMPLEMENTATION_GUIDANCE /
-NOT_RUNTIME_CONFORMANCE`
-
 Authority: implementation guidance only. The method source is
 [`KSODI_Dyadic-Relational-Coherence-IK_rel_V351.md`](./KSODI_Dyadic-Relational-Coherence-IK_rel_V351.md).
 

@@ -12,7 +12,7 @@ the root
 [KSODI-Standard-Eval / KSODI-Full Transition v3.51](../KSODI-Standard-Eval_Full-Transition_V351.md).
 
 The unchanged
-[archived v3.50 transition predecessor](../archive/document-snapshots/standard-eval-full-transition/v350-replaced-by-v351-2026-11-11/KSODI-Standard-Eval_Full-Transition_V350.md)
+[archived v3.50 transition predecessor](../archive/document-snapshots/standard-eval-full-transition/v350-replaced-by-v351/KSODI-Standard-Eval_Full-Transition_V350.md)
 remains available as historical release evidence; it is not the current
 moving-main reader route.
 
@@ -82,8 +82,9 @@ but it is not yet the tagged release snapshot.
   provides its human/machine reader, generators, exact fixtures, result
   reports and checksum manifest;
 - [`KSODI-Architecture_V351.md`](../KSODI-Architecture_V351.md)
-  remains the architecture document in the fixed v3.5.0 Public line. A
-  cumulative Public v3.51 architecture requires its own later transfer.
+  is the cumulative current Public-main v3.51 architecture. The fixed v3.5.0
+  architecture remains recoverable through its tagged release and Public
+  predecessor archive.
 
 For fixed citation of v3.5.0, use the tagged GitHub Release and its version
 DOI rather than treating later Public-`main` changes as retroactive edits.
@@ -97,4 +98,4 @@ DOI rather than treating later Public-`main` changes as retroactive edits.
 - The historical v3.42 Observer assets are preserved separately under
   [`historical-observer-v342`](../archive/assets-archive/historical-observer-v342/README.md).
   They document implementation and dashboard work from the v3.3 to v3.42 line,
-  not current v350 implementation guidance.
+  not current v3.51 implementation guidance.

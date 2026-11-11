@@ -1,8 +1,5 @@
 # KSODI-Light Agent Bridge v3.51
 
-Status: `V351_PUBLISHED_ON_PUBLIC_MAIN / DEVELOPER_ORIENTATION /
-NOT_IMPLEMENTATION_CONFORMANCE`
-
 ## 1. Purpose
 
 KSODI-Light is the independently usable Layer-0 reflection and prompt-guidance

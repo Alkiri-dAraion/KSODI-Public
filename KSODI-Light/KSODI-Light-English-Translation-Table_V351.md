@@ -1,8 +1,5 @@
 # KSODI English Translation Table v3.51
 
-Status: `V351_PUBLISHED_ON_PUBLIC_MAIN / TERMINOLOGY_BRIDGE /
-NOT_A_VALUE_CONVERSION_TABLE`
-
 ## 1. Naming boundary
 
 **KSODI is the sole name of the method in German and English.**
@@ -71,7 +68,4 @@ This v3.51 table cumulatively supersedes
 v3.50 file remains predecessor evidence and must not be silently rewritten.
 
 For the wider term inventory, object types and layer boundaries, use the
-KSODI v3.51 Glossary and Variable Reference in the applicable repository.
-During a layerwise Public transition, that glossary may follow in a later
-reviewed package; absence of its Public path must not be reconstructed as an
-absence of the controlled term inventory.
+current Public [KSODI v3.51 Glossary and Variable Reference](../KSODI-Glossary_V351.md).

@@ -12,4 +12,4 @@ immediate predecessor of the current reviewed Layer-1–5 cross-layer surface.
 
 The former active root `Conceptual-Note.md` from Public v3.50 is preserved
 with its replacement record under
-[`v350-replaced-by-v351-2026-11-11/`](./v350-replaced-by-v351-2026-11-11/README.md).
+[`v350-replaced-by-v351/`](./v350-replaced-by-v351/README.md).

@@ -1,8 +1,5 @@
 # KSODI-Light Coding Agent Guidance — Extended Example v3.51
 
-Status: `V351_PUBLISHED_ON_PUBLIC_MAIN / EXTENDED_DIDACTIC_GUIDANCE /
-PORTABLE_PROMPT_TEMPLATE`
-
 This is the published detailed successor to the v3.50 Coding Agent Reflective
 Working Agreement Example. Readers who want only a short copy-and-paste prompt
 should use the [concise Coding and Repository Collaboration Agent

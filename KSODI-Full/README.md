@@ -137,10 +137,12 @@ constitute the tagged v3.51 release snapshot.
 
 The fixed citable complete release remains
 [`v3.5.0`](https://github.com/Alkiri-dAraion/KSODI-Public/releases/tag/v3.5.0).
-Its historical Full boundary remains available in
-[`KSODI-Full-Release_V350.md`](./KSODI-Full-Release_V350.md). The cumulative
-v3.51 release artifact, tag, GitHub Release and DOI remain separate closing
-decisions.
+Its historical Full boundary remains available in the
+[v3.50 release-surface archive](../archive/document-snapshots/full-release/v350-replaced-by-v351/KSODI-Full-Release_V350.md).
+The current Public-main selection is summarized in
+[`KSODI-Full-Release_V351.md`](./KSODI-Full-Release_V351.md). The complete
+repository release artifact, tag, GitHub Release and DOI remain separate
+closing decisions.
 
 The historical Observer images remain available as transition evidence in the
 [v3.42 Observer archive](../archive/assets-archive/historical-observer-v342/README.md).

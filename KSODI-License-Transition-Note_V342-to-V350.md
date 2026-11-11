@@ -16,7 +16,7 @@ This licence note accompanies the V342-to-V350 transition but does not define
 the methodological reasons for v3.50. The separation of monadic
 KSODI-Standard-Eval from dyadic KSODI-Full and the resulting architecture are
 explained in the
-[archived KSODI-Standard-Eval / KSODI-Full Transition V350](./archive/document-snapshots/standard-eval-full-transition/v350-replaced-by-v351-2026-11-11/KSODI-Standard-Eval_Full-Transition_V350.md).
+[archived KSODI-Standard-Eval / KSODI-Full Transition V350](./archive/document-snapshots/standard-eval-full-transition/v350-replaced-by-v351/KSODI-Standard-Eval_Full-Transition_V350.md).
 
 A separately published executable Observer implementation is a distinct work
 and may use the MIT License or another software licence defined by its own

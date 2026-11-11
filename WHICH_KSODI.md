@@ -174,7 +174,7 @@ partial-operator conditions required across the Observer scopes.
 Public implementation-transfer examples are kept under
 [implementation-examples](./implementation-examples/README.md),
 including a
-[human-chatbot Observer setting](./implementation-examples/chatbot-human-observer_v350/README.md).
+[human–chatbot Observer setting](./implementation-examples/chatbot-human-observer_V351/README.md).
 These examples explain transfer logic but are not production systems.
 
 Any future method-to-implementation comparison with

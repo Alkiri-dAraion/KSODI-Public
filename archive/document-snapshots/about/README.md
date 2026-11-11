@@ -6,5 +6,5 @@ for the active human-near entry.
 
 - `ABOUT_pre-entity-abstraction-topology_2026-08-19.md` preserves the earlier
   pre-abstraction revision.
-- `ABOUT_pre-v351-human-entry_2026-11-11.md` preserves the exact predecessor
+- `ABOUT_pre-v351-human-entry.md` preserves the exact predecessor
   before the v3.51 plain-language entry and reading route were added.

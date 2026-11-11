@@ -1,8 +1,5 @@
 # ETHICS & INTENDED USE — v3.51
 
-Status: `PUBLIC_V3.51 / V3.50_CARRY_FORWARD_RECONCILED /
-METHOD_AND_ACTION_AUTHORITY_REMAIN_SEPARATE`
-
 This note retains the complete public v3.50 ethical boundary and adds the
 reviewed v3.51 identity, granularity, dual-resolution, typed-status, window,
 reconstruction and interpretation implications. It is not a legal policy,

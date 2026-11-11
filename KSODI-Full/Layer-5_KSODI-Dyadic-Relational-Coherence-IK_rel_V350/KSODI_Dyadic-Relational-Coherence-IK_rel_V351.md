@@ -1,8 +1,5 @@
 # KSODI `IK_rel` — Dyadic Relational Coherence Compatibility v3.51
 
-Status: `PUBLIC_V3.51_METHOD / REFERENCE_FORMULA_AND_CONTRACT /
-NOT_RUNTIME_CONFORMANCE`
-
 Authority: released Public v3.51 method source. Conditional schemas and
 pseudocode belong in the
 [implementation companion](./KSODI_Dyadic-Relational-Coherence-IK_rel_Implementation-Companion_V351.md).

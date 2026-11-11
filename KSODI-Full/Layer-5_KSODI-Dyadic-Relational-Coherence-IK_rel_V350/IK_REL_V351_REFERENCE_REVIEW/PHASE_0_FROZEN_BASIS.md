@@ -1,8 +1,5 @@
 # Phase 0 — frozen `R_0` / `IK_rel` v3.51 reference basis
 
-Status: `PUBLIC_V3.51_ASSERTION_CHECKED_REFERENCE_BASIS /
-NOT_RUNTIME_CONFORMANCE`
-
 This file freezes the formulas, identities and interpretation guards used by
 the adjacent assertion-checked Phases A–F. The package manifest binds the
 published method, companion, generators, fixtures and reports to exact bytes.

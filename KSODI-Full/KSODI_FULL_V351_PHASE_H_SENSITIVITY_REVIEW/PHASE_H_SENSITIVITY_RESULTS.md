@@ -1,8 +1,5 @@
 # Phase H — Joint R₀ / IK_rel Sensitivity Results
 
-Status: `PUBLIC_SYNTHETIC_REFERENCE_RESULT / CONTRACTS_CONFIRMED /
-EXPECTED_PROFILE_SENSITIVITY_AND_PROJECTION_LOSS_OBSERVED`
-
 ## 1. Result at a glance
 
 The runtime-independent generator produced 52 synthetic reference rows,

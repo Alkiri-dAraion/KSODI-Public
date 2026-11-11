@@ -1,10 +1,5 @@
 # KSODI v3.51 Glossary and Variable Reference
 
-Status: `PUBLIC_V3.51_GLOSSARY / SECTIONS_0_TO_8_AND_PUBLIC_APPENDICES /
-METHOD_FILES_RETAIN_FORMULA_AUTHORITY`
-
-Date: 2026-11-11
-
 ## Review and authority boundary
 
 This cumulative Public glossary contains Sections 0–8 and compact reader
@@ -1037,9 +1032,9 @@ evidence, scope, profile, component records, common result status and any
 operator-local applicability or processing state. A numeric coordinate alone
 is insufficient for later Z, IK, relational or governance interpretation.
 
-### 4.11 Section-4 draft decisions and reopening points
+### 4.11 Section-4 reader decisions and reopening points
 
-This first reader integration makes the following reversible drafting choices:
+This reader integration makes the following reversible presentation choices:
 
 - the optional Light `0..5` estimate remains nested in the main Light/formal interface
   because its separation from formal `[0,1]` coordinates is stated directly;
@@ -1346,7 +1341,7 @@ event identities, all five Layer-1 result records, statuses/reasons, profiles,
 transformations, exclusions and provenance. Missing evidence is not recreated
 from a mean, norm, curve or point cloud.
 
-### 5.14 Section-5 draft decisions and reopening points
+### 5.14 Section-5 reader decisions and reopening points
 
 This reader gives `R_Z` priority while retaining `Z_A(k_A)` as a separate,
 equally searchable canonical numeric projection. It keeps `Z_agg(W)` and both

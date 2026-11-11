@@ -1,7 +1,5 @@
 # KSODI Operator K0 - Observable Context Completeness v3.51
 
-Status: `V351_REFERENCE_METHOD / PUBLISHED_ON_PUBLIC_MAIN / INDEPENDENT_RUNTIME_CONFORMANCE_OUTSTANDING`
-
 This file is the authoritative carrier-neutral definition of Operator K.
 
 Layer: KSODI Standard-Eval Layer 1. One static `K0` value belongs to one

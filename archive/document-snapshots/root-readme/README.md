@@ -19,9 +19,9 @@ Relative links inside the preserved snapshot retain their original root-level
 spelling and may not resolve from the archive folder. They are retained as
 source text rather than rewritten historical claims.
 
-## 2026-11-11
+## Pre-v3.51 root reconciliation
 
-- [`README_pre-v351-root-reconciliation_2026-11-11.md`](./README_pre-v351-root-reconciliation_2026-11-11.md)
+- [`README_pre-v351-root-reconciliation.md`](./README_pre-v351-root-reconciliation.md)
   preserves the exact predecessor before the moving-Public v3.51, image,
   analogy, matrix and typed-R0 reconciliation.
   - SHA-256:

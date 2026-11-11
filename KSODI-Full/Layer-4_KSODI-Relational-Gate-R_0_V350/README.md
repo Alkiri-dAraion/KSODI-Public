@@ -22,7 +22,7 @@ action.
 
 The v3.50 active predecessors were preserved in independent Private and Public
 archives when this v3.51 package became active. The Public archive record is
-[available here](../../archive/document-snapshots/relational-gate-r0/v350-replaced-by-v351-2026-11-10/ARCHIVE_RECORD.md).
+[available here](../../archive/document-snapshots/relational-gate-r0/v350-replaced-by-v351/ARCHIVE_RECORD.md).
 
 ## Core contract
 

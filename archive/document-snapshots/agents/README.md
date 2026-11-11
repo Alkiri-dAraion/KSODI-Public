@@ -6,5 +6,5 @@ for current agent orientation.
 
 - `AGENTS_pre-abstraction-authority-map_2026-08-19.md` preserves the earlier
   pre-abstraction instruction state.
-- `AGENTS_pre-v351-current-public-route_2026-11-11.md` preserves the exact
+- `AGENTS_pre-v351-current-public-route.md` preserves the exact
   predecessor before the moving-public v3.51 boundary was reconciled.

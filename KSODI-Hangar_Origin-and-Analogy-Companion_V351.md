@@ -1,9 +1,5 @@
 # KSODI Hangar Origin and Analogy Companion v3.51
 
-Status: `PUBLIC_MAIN_V3.51 / V3.50_ORIGIN_ACCOUNT_PRESERVED /
-EXPLANATORY_COMPANION_ONLY / METHOD_FILES_RETAIN_AUTHORITY /
-RELEASE_SNAPSHOT_PENDING`
-
 This cumulative v3.51 successor preserves the historical origin account of
 the v3.50 companion. It sharpens only the present-day reading boundary,
 current paths and the distinction between origin image, interaction space,

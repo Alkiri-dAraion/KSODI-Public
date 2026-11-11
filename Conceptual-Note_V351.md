@@ -4,9 +4,6 @@
 
 ### Version Note
 
-Status: `PUBLIC_MAIN_V3.51 / V3.50_CARRY_FORWARD_RECONCILED /
-METHOD_FILES_RETAIN_FORMULA_AUTHORITY / RELEASE_SNAPSHOT_PENDING`
-
 This v3.51 note carries forward the complete fixed Public v3.5 conceptual
 structure and integrates the reviewed v3.51 distinctions needed to understand
 the published Layer-0-to-Layer-5 method packages. The fixed Public v3.5 tag,

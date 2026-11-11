@@ -1,8 +1,5 @@
 # KSODI Framework and Protocol — v3.51 Naming Transition
 
-Status: `PUBLIC_DECISION_NOTE / V351 / NON_METHOD_AUTHORITY /
-PROTOCOL_EFFECT_UNVALIDATED`
-
 ## Decision
 
 Current KSODI work uses **KSODI Framework** for the connective orientation
@@ -59,6 +56,6 @@ method scope, one implementation or one publication snapshot.
 ## Historical provenance
 
 The superseded Public orientation remains preserved in the
-[v3.42/v3.50 framework archive](./archive/document-snapshots/framework/idas-sira-v342-replaced-by-ksodi-framework-protocol-v351-2026-11-11/README.md).
+[v3.42/v3.50 framework archive](./archive/document-snapshots/framework/idas-sira-v342-replaced-by-ksodi-framework-protocol-v351/README.md).
 Its earlier claims and terminology remain development history and should not
 be treated as current Method authority.

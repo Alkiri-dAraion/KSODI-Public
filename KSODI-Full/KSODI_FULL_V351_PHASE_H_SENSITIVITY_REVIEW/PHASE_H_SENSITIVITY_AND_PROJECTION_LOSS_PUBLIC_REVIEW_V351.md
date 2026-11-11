@@ -1,8 +1,5 @@
 # KSODI-Full v3.51 Phase H — Sensitivity and Projection-Loss Review
 
-Status: `PUBLIC_V351_REVIEW / SYNTHETIC_REPRODUCIBLE_REVIEW /
-NO_NEW_METHOD_PROFILE`
-
 ## 1. Why this review is public-facing
 
 `R_0` and `IK_rel` answer deliberately bounded questions. Their results depend

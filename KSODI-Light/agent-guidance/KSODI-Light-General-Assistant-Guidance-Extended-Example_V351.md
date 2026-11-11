@@ -1,8 +1,5 @@
 # KSODI-Light General Assistant Guidance — Extended Example v3.51
 
-Status: `V351_PUBLISHED_ON_PUBLIC_MAIN / EXTENDED_DIDACTIC_GUIDANCE /
-PORTABLE_PROMPT_TEMPLATE`
-
 This is the published detailed successor to the v3.50 General Assistant
 Guidance Example. Readers who want a shorter instruction should use the
 [concise General Assistant Agent

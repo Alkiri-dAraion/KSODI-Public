@@ -1,9 +1,5 @@
 # KSODI-Standard-Eval / KSODI-Full Transition V351
 
-**Status:** `PUBLIC_V3.51_CUMULATIVE_STRUCTURAL_AND_METHOD_BOUNDARY /
-V3.50_CARRY_FORWARD_RECONCILED / PUBLIC_LAYER_0_TO_5_VERIFIED /
-RELEASE_NOT_YET_VERIFIED`
-
 **Authority:** Anne Steinacker. This cumulative Public boundary does not change
 the fixed v3.5.0 DOI snapshot and does not authorize implementation,
 Controller action or a new relational branch.
@@ -32,7 +28,7 @@ products. Root-level scope names now carry the intended product boundary
 directly. No valid method material is discarded by that structural transition.
 
 The unchanged
-[v3.50 predecessor](./archive/document-snapshots/standard-eval-full-transition/v350-replaced-by-v351-2026-11-11/KSODI-Standard-Eval_Full-Transition_V350.md)
+[v3.50 predecessor](./archive/document-snapshots/standard-eval-full-transition/v350-replaced-by-v351/KSODI-Standard-Eval_Full-Transition_V350.md)
 is preserved as historical evidence.
 
 ## One KSODI Method, Three Public Scopes

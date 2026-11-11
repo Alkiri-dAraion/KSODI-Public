@@ -1,9 +1,5 @@
 # KSODI — Observability and the Separate Controlled-Action Boundary v3.51
 
-Status: `PUBLIC_V3.51_CUMULATIVE_BOUNDARY / V3.50_CARRY_FORWARD_RECONCILED /
-LAYER_4_5_AND_PHASE_H_RECONCILED / RELEASE_NOT_YET_VERIFIED /
-NOT_A_CONTROLLER_SPECIFICATION`
-
 Authority: Anne Steinacker. This file is the cumulative Public successor. It
 does not authorize intervention, implementation or deployment.
 
@@ -279,7 +275,7 @@ choice, intervention, tag, GitHub Release or DOI.
 ## 12. v3.50 compatibility and succession
 
 The released
-[archived v3.50 boundary predecessor](../archive/document-snapshots/controlled-action-boundary/v350-replaced-by-v351-2026-11-11/KSODI_Observability-and-Controlled-Action-Boundary_V350.md)
+[archived v3.50 boundary predecessor](../archive/document-snapshots/controlled-action-boundary/v350-replaced-by-v351/KSODI_Observability-and-Controlled-Action-Boundary_V350.md)
 remains unchanged as historical evidence for the v3.50 publication state.
 The active v3.51 successor adds explicit
 space separation, typed window/aggregate boundaries, the expanded IK view

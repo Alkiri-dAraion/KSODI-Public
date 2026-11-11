@@ -1,8 +1,5 @@
 # Phase F — relational windows, coverage, overlap and dynamics
 
-Status: `PUBLIC_V3.51_ASSERTION_CHECKED_REFERENCE_RESULTS /
-NOT_RUNTIME_CONFORMANCE`
-
 Basis:
 
 - [Phase 0 frozen basis](./PHASE_0_FROZEN_BASIS.md);

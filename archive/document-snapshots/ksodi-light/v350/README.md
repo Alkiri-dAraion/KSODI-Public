@@ -2,7 +2,8 @@
 
 Status: `SUPERSEDED_PUBLIC_LAYER_0_SNAPSHOT / HISTORICAL_EVIDENCE`
 
-Snapshot date: `2026-11-09`
+Snapshot relation: exact v3.50 predecessor package before the active v3.51
+Light surface.
 
 This directory preserves the exact active Public KSODI-Light files that were
 displaced by the reviewed v3.51 Layer-0 transfer. It is provenance and recovery

@@ -1,7 +1,5 @@
 # KSODI Operator K0 v3.51 - Implementation Companion
 
-Status: `V351_REFERENCE_COMPANION / PUBLISHED_ON_PUBLIC_MAIN / INDEPENDENT_RUNTIME_CONFORMANCE_OUTSTANDING`
-
 This conditional implementation companion is subordinate to the carrier-neutral
 [`KSODI_Operator-K_Observable-Context-Completeness_V351.md`](./KSODI_Operator-K_Observable-Context-Completeness_V351.md) method.
 

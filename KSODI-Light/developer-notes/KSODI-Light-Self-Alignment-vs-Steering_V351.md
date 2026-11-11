@@ -1,8 +1,5 @@
 # KSODI-Light Reflection, Local Self-Adjustment and Prompt-Level Steering v3.51
 
-Status: `V351_PUBLISHED_ON_PUBLIC_MAIN / DEVELOPER_NOTE /
-EMPIRICAL_EFFECT_OPEN`
-
 ## 1. Terminology and claim boundary
 
 KSODI-Light can support **local self-adjustment** in the limited sense that an

@@ -1,8 +1,5 @@
 # KSODI Implementation Guardrails v3.51
 
-Status: `PUBLIC_V3.51 / V3.50_CARRY_FORWARD_RECONCILED /
-METHOD_FILES_RETAIN_FORMULA_AUTHORITY`
-
 These guardrails extend the fixed public v3.50 method basis with the
 reviewed identity, observation-granularity, part-whole, result, window and
 reconstruction contracts. They also retain the reviewed distinctions among
@@ -351,10 +348,10 @@ create an n-adic IK_rel definition.
 The numeric R0 result and derived gate state are separate:
 
 ```text
-R0.status = numeric and R0.value >= profile.theta_r0_stable
+R0.status = numeric and R0.value >= profile.theta_r0_gate_open_min
 -> gate_state = open
 
-R0.status = numeric and R0.value < profile.theta_r0_stable
+R0.status = numeric and R0.value < profile.theta_r0_gate_open_min
 -> gate_state = closed
 
 R0.status != numeric
@@ -365,7 +362,8 @@ R0.status != numeric
 must not be reported as numeric `Delta R0`.
 
 A reduced `R0^[M]` uses the same fixed non-empty M on every member. It is not
-canonical complete R0 and does not open any current v3.50 IK_rel contract.
+canonical complete R0 and does not open the current v3.51 primary IK_rel
+contract.
 
 An open gate records eligibility only. It proves neither receipt,
 acknowledgement, contact, communication, agreement, meaning, causality,
@@ -373,7 +371,7 @@ coupling, resonance, alignment, permission nor action authority.
 
 ## 6. Strictly dyadic IK_rel and parallel later branches
 
-Current v3.50 IK_rel is strictly dyadic. Its primary contract requires:
+Current v3.51 IK_rel is strictly dyadic. Its primary contract requires:
 
 ```text
 one explicit pi(j)

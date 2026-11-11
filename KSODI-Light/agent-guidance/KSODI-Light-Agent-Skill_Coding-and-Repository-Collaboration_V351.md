@@ -1,7 +1,5 @@
 # KSODI-Light Agent Skill — Coding and Repository Collaboration
 
-Status: `V351_PUBLISHED_ON_PUBLIC_MAIN / PORTABLE_PROMPT_SKILL_TEMPLATE`
-
 Purpose: reflective collaboration with a coding or repository agent.
 
 This published generic Public template is separate from project-specific Collaboration

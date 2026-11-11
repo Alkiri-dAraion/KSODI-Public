@@ -1,7 +1,5 @@
 # KSODI Hangar, Sigma, Drift and Point Clouds v3.51
 
-**Status:** `PUBLIC_MAIN_V3.51 / V3.50_CARRY_FORWARD_RECONCILED /
-METHOD_FILES_RETAIN_FORMULA_AUTHORITY / RELEASE_SNAPSHOT_PENDING`
 **Scope:** KSODI Standard-Eval and KSODI-Full Observer views; Layer-1
 operator diagnostics and principal Hangar options across Layers 2–8
 **Basis:** released v3.50 Hangar note and formulas plus reviewed public v3.51

@@ -1,8 +1,5 @@
 # KSODI-Light Method Comparison and Combination Guide v3.51
 
-Status: `V351_PUBLISHED_ON_PUBLIC_MAIN / EXPLANATORY_NOTE /
-OBSERVATION_BASED_COMBINATION_HYPOTHESES`
-
 Licence: `CC BY 4.0`, subject to the repository licence and any explicit
 file-level exception.
 
