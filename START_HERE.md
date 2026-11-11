@@ -104,9 +104,12 @@ After this page, continue in this order:
 - [KSODI-Standard-Eval / KSODI-Full Transition V350](./KSODI-Standard-Eval_Full-Transition_V350.md)
 - [KSODI Licence Transition Note V342 to V350](./KSODI-License-Transition-Note_V342-to-V350.md)
 - [KSODI Architecture V351](./KSODI-Architecture_V351.md)
+- [KSODI Glossary and Variable Reference V351](./KSODI-Glossary_V351.md)
+  — terms, symbols, typed statuses, profiles and reconstruction routes
+- [Ethics and Intended Use V351](./Ethics_V351.md)
 - [KSODI Hangar V351](./KSODI-Hangar_V351.md) — the shared observer-side
   comparison space for trajectories, windows, distributions and point clouds
-- [Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md)
+- [Implementation Guardrails V351](./IMPLEMENTATION_GUARDRAILS_V351.md)
 
 Canonical definitions remain in the linked method files. This page defines a
 reading order; it does not replace or modify those definitions.

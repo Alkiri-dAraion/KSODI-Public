@@ -408,7 +408,7 @@ traceable tools and a separate observation and action chain.
 - Current topology and layer dependencies:
   [KSODI Architecture V351](./KSODI-Architecture_V351.md).
 - State, identity and implementation invariants:
-  [KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md).
+  [KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS_V351.md).
 - Research limitations and open questions:
   [KSODI Research Status and Open Questions V350](./KSODI-Research-Status-and-Open-Questions_V350.md).
 - Recorded development chronology:

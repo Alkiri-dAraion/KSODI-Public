@@ -23,7 +23,7 @@ than a serial continuation. All source trajectories remain distinguishable.
 
 Read this architecture together with the
 [KSODI-Standard-Eval / KSODI-Full Transition V351](./KSODI-Standard-Eval_Full-Transition_V351.md),
-the [current KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md)
+the [current KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS_V351.md)
 and the versioned Layer-1-to-Layer-5 methods and companions linked below.
 
 Reading rule: layer numbers show architectural position and research
@@ -668,7 +668,7 @@ T_B ----/          |
 - [Layer 7 - Optional Pacing R_pace Research](./KSODI-Full/Layer-7_KSODI-Pacing-R_pace_V350/README.md) — orientation only; method outside the current public scope
 - [Layer 8 - Staged Signal-Media Research](./KSODI-Full/Layer-8_KSODI-Signal-Media_Staged-Research/README.md) — orientation only; research outside the current public method scope
 - [KSODI Hangar Method Note V351](./KSODI-Hangar_V351.md)
-- [Current Public Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md)
+- [Current Public Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS_V351.md)
 - [Conceptual Note V351](./Conceptual-Note_V351.md)
 
 Historical v3.3 and deprecated public drafts remain in the public

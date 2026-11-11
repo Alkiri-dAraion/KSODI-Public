@@ -163,7 +163,7 @@ The longer copy later in this note is explanatory and must not override the
 root architecture file or the versioned layer methods.
 
 Before implementing the conceptual model, read the root
-[current KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md)
+[current KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS_V351.md)
 and the versioned Layer-2 through Layer-5 method and implementation-companion
 files. They define the source-attribution, evaluation-unit, trajectory,
 pairing and partial-operator conditions that the conceptual descriptions

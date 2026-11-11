@@ -17,7 +17,7 @@
 > need only a short README overflight for the current version, scope and
 > authority boundaries before following the relevant method links. After
 > choosing the relevant scope, continue with `KSODI-Architecture_V351.md`, the Conceptual
-> Note and `IMPLEMENTATION_GUARDRAILS.md`. The current public line contains monadic
+> Note and `IMPLEMENTATION_GUARDRAILS_V351.md`. The current public line contains monadic
 > KSODI-Standard-Eval through `IK`, plus separately released `R_0` and `IK_rel`.
 > Private method material for `R_geom` and `R_pace` still awaits complete public
 > review and infrastructure revalidation; Layer 8 remains staged research.
@@ -142,9 +142,13 @@ New to KSODI? Begin with
 [Which KSODI Variant Do I Need?](./WHICH_KSODI.md) as the second-step choice
 guide.
 For a compact architecture overview, see
-[KSODI Architecture V351](./KSODI-Architecture_V351.md). Before implementing or evaluating
-stored trajectories, read the
-[KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md).
+[KSODI Architecture V351](./KSODI-Architecture_V351.md). Use the
+[KSODI Glossary and Variable Reference V351](./KSODI-Glossary_V351.md) for
+terms, symbols, statuses, profiles and exact return routes. Before implementing
+or evaluating stored trajectories, read the
+[KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS_V351.md).
+The [Ethics and Intended Use boundary](./Ethics_V351.md) remains separate from
+method calculation and action authority.
 
 > [!NOTE]
 > **Research maturity.** KSODI v3.5 is an active research and working method,
@@ -304,7 +308,7 @@ The variant assignment and public availability are separate. A layer may
 belong to KSODI-Full while its formula or implementation material remains
 outside the current public reference release. Before building from any layer,
 read the
-[KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md).
+[KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS_V351.md).
 
 ## What the Observer Sees — A Conceptual Projection
 

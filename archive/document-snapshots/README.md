@@ -28,3 +28,7 @@ boundary clarification on 2026-08-26.
 The `hangar/`, `conceptual-note/` and `architecture/` subdirectories preserve
 the public root-document predecessors superseded by the reviewed Layer-1–5
 cross-layer alignment release on 2026-08-26.
+
+The `ethics/` and `implementation-guardrails/` subdirectories preserve the
+moving-Public v3.50 predecessors replaced by the cumulative v3.51 Root
+successors on 2026-11-11.

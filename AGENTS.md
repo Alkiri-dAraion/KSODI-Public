@@ -117,6 +117,8 @@ according to the question being answered:
 | What is KSODI, and what is currently public? | Briefly check [README.md](./README.md) after the entry sequence | public overview, current version, method continuity and release boundary; not a competing first step |
 | How are the layers and branches arranged? | [KSODI Architecture V351](./KSODI-Architecture_V351.md) | canonical root topology, dependencies and layer order |
 | What is the conceptual reasoning behind the method? | [Conceptual Note v3.51](./Conceptual-Note_V351.md) | explanatory semantics; it does not replace file-level definitions |
+| Which term, symbol, status or profile is meant? | [KSODI Glossary and Variable Reference v3.51](./KSODI-Glossary_V351.md) | semantic navigation and reconstruction routes; method files retain formula authority |
+| What are the ethical use and non-use boundaries? | [Ethics and Intended Use v3.51](./Ethics_V351.md) | responsibility and interpretation boundary; not a legal policy or action authorization |
 | What is released, staged or planned next? | [ROADMAP.md](./ROADMAP.md) | development and publication orientation, not a formula source |
 | What is mathematically defined, conventional, KSODI-specific or still empirically open? | [Research Status and Open Questions V350](./KSODI-Research-Status-and-Open-Questions_V350.md) | DOI-facing research-boundary matrix; it does not redefine formulas or establish validation |
 | Where did the Hangar image come from, and where does the analogy stop? | [Hangar Origin and Analogy Companion V351](./KSODI-Hangar_Origin-and-Analogy-Companion_V351.md), then [KSODI Hangar V351](./KSODI-Hangar_V351.md) | explanatory origin and analogy boundary first; the formal Hangar note and versioned layer methods retain authority |
@@ -130,7 +132,7 @@ according to the question being answered:
 | How is Layer-5 dyadic relational coherence projected? | [Layer-5 IK_rel entry](./KSODI-Full/Layer-5_KSODI-Dyadic-Relational-Coherence-IK_rel_V350/README.md), then [IK_rel method](./KSODI-Full/Layer-5_KSODI-Dyadic-Relational-Coherence-IK_rel_V350/KSODI_Dyadic-Relational-Coherence-IK_rel_V351.md) | the versioned IK_rel method controls exact R0 handoff, dyadic identity, components, projected-null/band semantics, dynamics and windows |
 | How may IK_rel be stored or operationalized? | [IK_rel Implementation Companion](./KSODI-Full/Layer-5_KSODI-Dyadic-Relational-Coherence-IK_rel_V350/KSODI_Dyadic-Relational-Coherence-IK_rel_Implementation-Companion_V351.md) | conditional public guidance; the adjacent IK_rel method remains authoritative and no production stack or Controller is implied |
 | How are observation and controlled action separated? | [Observability and Controlled-Action Boundary v3.51](./KSODI-Full/KSODI_Observability-and-Controlled-Action-Boundary_V351.md) | conceptual action-adjacent orientation; it is not a method, policy or Controller specification |
-| How may the method be stored or implemented? | [KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md) | implementation contract; implementation examples do not redefine the method |
+| How may the method be stored or implemented? | [KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS_V351.md) | implementation contract; implementation examples do not redefine the method |
 | How may Operator I be operationalized in a Conversation-/Retrieval-oriented profile? | [Operator I v3.51 Implementation Companion](./KSODI-Standard-Eval/Layer-1_KSODI-Operators_V350/KSODI_Operator-I_Implementation-Companion_V351.md) | conditional public implementation guidance; the adjacent Operator-I method remains authoritative and independent runtime conformance remains outstanding |
 | How may Operator D be operationalized under a declared detector/carrier profile? | [Operator D v3.51 Implementation Companion](./KSODI-Standard-Eval/Layer-1_KSODI-Operators_V350/KSODI_Operator-D_Implementation-Companion_V351.md) | conditional public implementation guidance; the adjacent Operator-D method file remains authoritative and independent runtime conformance remains outstanding |
 | How do Project, Method, Framework, Protocol, Observer and a future Controller differ? | [KSODI Framework and Protocol naming transition v3.51](./KSODI-Framework-and-Protocol-Naming-Transition_V351.md) | naming, system and responsibility boundary; not a formula source or validated protocol |
@@ -258,7 +260,7 @@ Do not use older L1-L4 shorthand as the canonical architecture.
 ## Implementation And Composition Guardrail
 
 Before advising on storage, evaluation or implementation, read
-[IMPLEMENTATION_GUARDRAILS.md](./IMPLEMENTATION_GUARDRAILS.md).
+[IMPLEMENTATION_GUARDRAILS_V351.md](./IMPLEMENTATION_GUARDRAILS_V351.md).
 
 Preserve these invariants:
 
@@ -413,7 +415,7 @@ welcome under CC BY 4.0. Contact for method questions: ksodi@thevoid.email.
 ## Implementation Guardrail Contract
 
 For cross-layer implementation work, use
-[`IMPLEMENTATION_GUARDRAILS.md`](./IMPLEMENTATION_GUARDRAILS.md) as the
+[`IMPLEMENTATION_GUARDRAILS_V351.md`](./IMPLEMENTATION_GUARDRAILS_V351.md) as the
 authoritative implementation contract in this repository.
 
 Preserve stable entity identity and store sender / receiver only as

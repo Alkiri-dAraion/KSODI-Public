@@ -159,7 +159,7 @@ orientation. It is not itself the full executable implementation.
 
 Before storing operator values, constructing trajectories or evaluating
 relational layers, read the root
-[KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md). They define
+[KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS_V351.md). They define
 the minimum source-attribution, evaluation-unit, pairing, applicability and
 partial-operator conditions required across the Observer variants.
 
@@ -189,7 +189,7 @@ the released method.
      for the complete monadic Observer line;
    - [KSODI-Full](./KSODI-Full/README.md) only as
      a relational extension of distinguishable monadic trajectories.
-4. Read the [implementation guardrails](./IMPLEMENTATION_GUARDRAILS.md) before
+4. Read the [implementation guardrails](./IMPLEMENTATION_GUARDRAILS_V351.md) before
    storing evaluations or translating the Observer method into code.
 5. Treat historical archives as provenance, not current implementation
    guidance.

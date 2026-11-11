@@ -258,7 +258,7 @@ Read together with:
 - [root architecture](../../KSODI-Architecture_V351.md)
 - [conceptual note v3.51](../../Conceptual-Note_V351.md)
 - [shared Hangar method note](../../KSODI-Hangar_V351.md)
-- [implementation guardrails](../../IMPLEMENTATION_GUARDRAILS.md)
+- [implementation guardrails](../../IMPLEMENTATION_GUARDRAILS_V351.md)
 - [v3.51 measurement-basis and reference discipline](./LAYER_1_MEASUREMENT_BASIS_AND_REFERENCE_DISCIPLINE_V351.md)
 - [v3.51 shared operator template](./OPERATOR_TEMPLATE_V351.md)
 - [v3.51 bounded operator-distinction research note](./LAYER_1_OPERATOR_DISTINCTION_WORKING_NOTE_V351.md)

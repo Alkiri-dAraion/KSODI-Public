@@ -254,8 +254,8 @@ own v3.51 successor review remains separately governed where applicable:
 - [Conceptual Note v3.51](./Conceptual-Note_V351.md);
 - [KSODI Architecture](./KSODI-Architecture_V351.md);
 - [KSODI Hangar](./KSODI-Hangar_V351.md);
-- [Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md); and
-- [Ethics](./Ethics.md).
+- [Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS_V351.md); and
+- [Ethics](./Ethics_V351.md).
 
 Canonical layer definitions and companions remain authoritative for their own
 calculations. Cross-scope notes explain boundaries and navigation; they do not

@@ -7,7 +7,7 @@ to documented review and later versioned refinement.
 
 Layer: KSODI Standard-Eval Layer 1. A static `I0` value belongs to one explicitly identified, source-attributed target event. Source-local change, acceleration and window diagnostics remain monadic Observer views. Relational projection or comparison beyond the gate begins only after explicit pairing, an open numeric canonical complete `R0` gate under the exact required profile and a separately declared later-layer definition.
 
-Implementation boundary: read the [KSODI Implementation Guardrails](../../IMPLEMENTATION_GUARDRAILS.md) and the adjacent [Operator I Implementation Companion](./KSODI_Operator-I_Implementation-Companion_V351.md). The companion is conditional implementation guidance; this method file remains authoritative.
+Implementation boundary: read the [KSODI Implementation Guardrails](../../IMPLEMENTATION_GUARDRAILS_V351.md) and the adjacent [Operator I Implementation Companion](./KSODI_Operator-I_Implementation-Companion_V351.md). The companion is conditional implementation guidance; this method file remains authoritative.
 
 ## 0. What Operator I is and what it does
 
@@ -225,7 +225,7 @@ value or one Z state before monadic state formation. Concrete storage-field
 mappings belong to separate implementation guidance.
 
 The implementation boundary for preserving these identities is described in
-the [KSODI Implementation Guardrails](../../IMPLEMENTATION_GUARDRAILS.md).
+the [KSODI Implementation Guardrails](../../IMPLEMENTATION_GUARDRAILS_V351.md).
 #### 2.1.1 Canonical Index Discipline
 
 ```text
@@ -1189,7 +1189,7 @@ order, window membership, denominator handling and absence of null filling.
 
 The canonical method ends with the formal summary in Section 9. Implementation-specific storage fields, pseudocode, retrieval mappings, data flow and architecture configuration are separate from this operator definition.
 
-- Active boundary: [KSODI Implementation Guardrails](../../IMPLEMENTATION_GUARDRAILS.md).
+- Active boundary: [KSODI Implementation Guardrails](../../IMPLEMENTATION_GUARDRAILS_V351.md).
 - Released conditional implementation companion: [KSODI Operator I Implementation Companion](./KSODI_Operator-I_Implementation-Companion_V351.md).
 
 The companion operationalizes one Conversation-/Retrieval-oriented profile; it does not narrow the carrier-neutral method or make that profile mandatory. An implementation may operationalize Operator I but must not redefine its semantic question, measurement basis, applicability, formula, source identity or layer boundary. If the companion and this method appear to differ, this method controls and the mismatch must remain visible until reviewed.

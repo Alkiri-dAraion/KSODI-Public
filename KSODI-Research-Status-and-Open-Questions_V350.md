@@ -409,7 +409,7 @@ certifications or production guarantees.
 - Architecture and dependencies:
   [KSODI Architecture V351](./KSODI-Architecture_V351.md).
 - Implementation invariants:
-  [KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md).
+  [KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS_V351.md).
 - Research direction: [KSODI Research Roadmap](./ROADMAP.md).
 - Observation/action separation:
   [Observability and Controlled-Action Boundary v3.51](./KSODI-Full/KSODI_Observability-and-Controlled-Action-Boundary_V351.md).

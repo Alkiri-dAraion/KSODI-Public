@@ -30,7 +30,7 @@ Example application layer:
 ## Required Event Separation
 
 This example presupposes the root
-[KSODI Implementation Guardrails](../../IMPLEMENTATION_GUARDRAILS.md).
+[KSODI Implementation Guardrails](../../IMPLEMENTATION_GUARDRAILS_V351.md).
 
 Human-side and chatbot-side contributions are retained as distinguishable
 events before K/S/O/D/I evaluation. They share a conversation and may share an

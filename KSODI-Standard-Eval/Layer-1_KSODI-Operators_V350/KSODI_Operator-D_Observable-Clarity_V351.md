@@ -8,7 +8,7 @@ Layer: KSODI Standard-Eval Layer 1. Static D and all source-local D trajectory,
 window and Hangar views remain strictly monadic and source-attributed.
 
 Implementation boundary: read the public
-[KSODI Implementation Guardrails](../../IMPLEMENTATION_GUARDRAILS.md)
+[KSODI Implementation Guardrails](../../IMPLEMENTATION_GUARDRAILS_V351.md)
 and the adjacent
 [Operator D Implementation Companion](./KSODI_Operator-D_Implementation-Companion_V351.md).
 The companion is conditional implementation guidance; this method file remains

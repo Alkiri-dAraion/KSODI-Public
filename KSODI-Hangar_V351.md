@@ -325,7 +325,7 @@ five-dimensional hypercube. Complete Z requires all five coordinates to be
 aligned and numeric.
 
 For the cross-layer source-attribution and implementation boundary, see the
-[current Public KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md)
+[current Public KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS_V351.md)
 and the versioned Layer-2-to-Layer-5 methods and companions.
 
 ### 1.6 Same Coordinate, Distinct Observation Object
