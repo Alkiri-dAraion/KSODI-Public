@@ -32,3 +32,7 @@ cross-layer alignment release on 2026-08-26.
 The `ethics/` and `implementation-guardrails/` subdirectories preserve the
 moving-Public v3.50 predecessors replaced by the cumulative v3.51 Root
 successors on 2026-11-11.
+
+The `standard-eval-full-transition/` subdirectory preserves the moving-Public
+v3.50 scope-transition predecessor replaced by its cumulative v3.51 successor
+on 2026-11-11.

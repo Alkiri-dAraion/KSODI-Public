@@ -12,7 +12,7 @@ the root
 [KSODI-Standard-Eval / KSODI-Full Transition v3.51](../KSODI-Standard-Eval_Full-Transition_V351.md).
 
 The unchanged
-[v3.50 transition predecessor](../KSODI-Standard-Eval_Full-Transition_V350.md)
+[archived v3.50 transition predecessor](../archive/document-snapshots/standard-eval-full-transition/v350-replaced-by-v351-2026-11-11/KSODI-Standard-Eval_Full-Transition_V350.md)
 remains available as historical release evidence; it is not the current
 moving-main reader route.
 

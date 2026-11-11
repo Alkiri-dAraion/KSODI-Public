@@ -31,8 +31,9 @@ Full look like competing methods or versioned folders look like additional
 products. Root-level scope names now carry the intended product boundary
 directly. No valid method material is discarded by that structural transition.
 
-The unchanged [v3.50 predecessor](./KSODI-Standard-Eval_Full-Transition_V350.md)
-remains adjacent until the final v3.51 predecessor-disposition pass.
+The unchanged
+[v3.50 predecessor](./archive/document-snapshots/standard-eval-full-transition/v350-replaced-by-v351-2026-11-11/KSODI-Standard-Eval_Full-Transition_V350.md)
+is preserved as historical evidence.
 
 ## One KSODI Method, Three Public Scopes
 
@@ -289,8 +290,13 @@ citation/DOI treatment remain separately authorized stages.
 
 Later R-family and signal-media material remains staged. Repository visibility
 alone is not a release marker. Earlier v3.3 and v3.42 implementation material
-remains provenance, not current implementation authority. Public
-implementation examples remain examples rather than method canon.
+remains provenance, not current implementation authority:
+
+- [Historical method material](./archive/method-history-v33/README.md);
+- [Historical Observer visualizations](./archive/assets-archive/historical-observer-v342/README.md); and
+- [Public implementation-transfer examples](./implementation-examples/README.md).
+
+Public implementation examples remain examples rather than method canon.
 
 Reference methods and reproducible tests may be released before independent
 runtime conformance exists, provided that boundary is stated explicitly.

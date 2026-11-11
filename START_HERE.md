@@ -101,7 +101,7 @@ After this page, continue in this order:
   — what is defined, conventional, KSODI-specific, empirically open or
   explicitly not claimed in each layer
 - [Conceptual Note v3.51](./Conceptual-Note_V351.md)
-- [KSODI-Standard-Eval / KSODI-Full Transition V350](./KSODI-Standard-Eval_Full-Transition_V350.md)
+- [KSODI-Standard-Eval / KSODI-Full Transition V351](./KSODI-Standard-Eval_Full-Transition_V351.md)
 - [KSODI Licence Transition Note V342 to V350](./KSODI-License-Transition-Note_V342-to-V350.md)
 - [KSODI Architecture V351](./KSODI-Architecture_V351.md)
 - [KSODI Glossary and Variable Reference V351](./KSODI-Glossary_V351.md)
