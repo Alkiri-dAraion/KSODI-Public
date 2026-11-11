@@ -26,11 +26,17 @@ is not a final architecture specification.
 It is a transparent statement of direction.
 
 The current layer-by-layer research boundary is maintained separately in
-[KSODI Research Status and Open Questions V350](./KSODI-Research-Status-and-Open-Questions_V350.md).
-That note distinguishes what v3.50 defines from common mathematical forms,
+[KSODI Research Status and Open Questions V351](./KSODI-Research-Status-and-Open-Questions_V351.md).
+That note distinguishes what v3.51 defines from common mathematical forms,
 KSODI-specific choices, empirical validation needs, open alternatives and
 explicit non-claims. This roadmap does not convert those open questions into
 completed evidence.
+
+Ten selected method-edge questions and their accepted boundaries are exposed
+separately in
+[Open Research Questions V351](./OPEN_RESEARCH_QUESTIONS_V351.md). Their
+possible investigation routes are neither delivery commitments nor method
+canon.
 
 ## Abstraction and dependency boundaries
 
@@ -382,7 +388,7 @@ components, validation evidence or dated delivery commitments:
   in the current repository does not announce completed calculation contracts.
 
 The current public research boundary remains the
-[KSODI Research Status and Open Questions V350](./KSODI-Research-Status-and-Open-Questions_V350.md).
+[KSODI Research Status and Open Questions V351](./KSODI-Research-Status-and-Open-Questions_V351.md).
 Future completion or publication of one item does not imply completion of the
 others.
 

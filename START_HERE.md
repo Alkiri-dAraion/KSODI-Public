@@ -97,9 +97,12 @@ After this page, continue in this order:
   scope that answers the actual question
 - **[Root README](./README.md)** — after choosing the scope, return for the
   current v3.50 public overview, positioning, maturity and release boundary
-- [Research Status and Open Questions V350](./KSODI-Research-Status-and-Open-Questions_V350.md)
+- [Research Status and Open Questions V351](./KSODI-Research-Status-and-Open-Questions_V351.md)
   — what is defined, conventional, KSODI-specific, empirically open or
   explicitly not claimed in each layer
+- [Open Research Questions V351](./OPEN_RESEARCH_QUESTIONS_V351.md)
+  — ten transparent method-edge questions with accepted boundaries and
+  non-binding investigation routes
 - [Conceptual Note v3.51](./Conceptual-Note_V351.md)
 - [KSODI-Standard-Eval / KSODI-Full Transition V351](./KSODI-Standard-Eval_Full-Transition_V351.md)
 - [KSODI Licence Transition Note V342 to V350](./KSODI-License-Transition-Note_V342-to-V350.md)

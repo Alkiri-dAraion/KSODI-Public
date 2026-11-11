@@ -738,7 +738,11 @@ This work is ongoing and empirical validation is still in progress. The
 layer-by-layer distinction between defined mathematics, common mathematical
 forms, KSODI-specific choices, open alternatives, validation needs and
 non-claims is recorded in
-[KSODI Research Status and Open Questions V350](./KSODI-Research-Status-and-Open-Questions_V350.md).
+[KSODI Research Status and Open Questions V351](./KSODI-Research-Status-and-Open-Questions_V351.md).
+The separately curated
+[Open Research Questions V351](./OPEN_RESEARCH_QUESTIONS_V351.md) disclose ten
+method-edge questions without turning investigation routes into release or
+implementation promises.
 
 ## Roadmap
 

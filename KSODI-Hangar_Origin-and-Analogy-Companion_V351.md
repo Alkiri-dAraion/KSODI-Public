@@ -410,7 +410,7 @@ traceable tools and a separate observation and action chain.
 - State, identity and implementation invariants:
   [KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS_V351.md).
 - Research limitations and open questions:
-  [KSODI Research Status and Open Questions V350](./KSODI-Research-Status-and-Open-Questions_V350.md).
+  [KSODI Research Status and Open Questions V351](./KSODI-Research-Status-and-Open-Questions_V351.md).
 - Recorded development chronology:
   [KSODI Timeline since May 2023](./docs/timeline/KSODI_Timeline_since_2023-05.md).
 - Human-supervised research process:
