@@ -169,7 +169,7 @@ An entity may have several trajectories. Sender and receiver are roles attached
 to a concrete exchange edge, not permanent entity types.
 
 The canonical cross-layer identity boundary is summarized in the active
-[current Public KSODI Architecture](../../KSODI-Architecture_V350.md); this method
+[current Public KSODI Architecture](../../KSODI-Architecture_V351.md); this method
 retains the S-specific required fields explicitly above.
 
 Context may contain a schema, task instruction or convention admitted by

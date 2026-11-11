@@ -6,9 +6,13 @@ They are historical snapshots. They may contain superseded release wording,
 dependency arrows, layer topology or relative links. Do not use them as current
 method, publication or navigation guidance.
 
-Current canonical files:
+Current canonical file:
 
-- [Layer-1–5 cross-layer architecture](../../../KSODI-Architecture_V350.md)
+- [Layer-0–8 cross-layer architecture v3.51](../../../KSODI-Architecture_V351.md)
+
+The immediate moving-main v3.50 predecessor replaced by this cumulative
+v3.51 architecture is retained under
+[`v350-replaced-by-v351-2026-11-11/`](./v350-replaced-by-v351-2026-11-11/README.md).
 
 Earlier separately named root and ASCII architecture surfaces are retained
 only as historical snapshots in this directory:

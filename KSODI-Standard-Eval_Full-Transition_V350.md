@@ -90,8 +90,8 @@ causality.
 The following root-level references span KSODI-Standard-Eval and KSODI-Full:
 
 - [archived v3.50 Conceptual Note](./archive/document-snapshots/conceptual-note/v350-replaced-by-v351-2026-11-11/Conceptual-Note.md)
-- [KSODI Architecture V350](./KSODI-Architecture_V350.md)
-- [KSODI Hangar V350](./KSODI-Hangar_V350.md)
+- [KSODI Architecture V351](./KSODI-Architecture_V351.md)
+- [KSODI Hangar V351](./KSODI-Hangar_V351.md)
 - [KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md)
 - [Public implementation-transfer examples](https://github.com/Alkiri-dAraion/KSODI-Public/tree/main/implementation-examples)
 

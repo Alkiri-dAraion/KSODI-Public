@@ -86,7 +86,7 @@ interaction navigator: its views expose positions, directions, deviations,
 boundaries and return paths without becoming the target communication must
 satisfy. The complete qualification, signal boundary, origin history,
 mathematical view and Layer-2–8 options are defined in
-[current Public KSODI Hangar](./KSODI-Hangar_V350.md).
+[current Public KSODI Hangar](./KSODI-Hangar_V351.md).
 The fuller authority and feedback separation is specified in the
 [Observability and Separate Controlled-Action Boundary v3.51](./KSODI-Full/KSODI_Observability-and-Controlled-Action-Boundary_V351.md).
 
@@ -155,10 +155,10 @@ than silent canonical parameters. Every threshold remains a declared,
 versioned policy parameter whose origin and calibration status are recorded;
 its declaration does not prove empirical calibration.
 
-The current Public root architecture remains
-[`KSODI-Architecture_V350.md`](./KSODI-Architecture_V350.md) while its
-cumulative v3.51 successor is reviewed. The already published versioned layer
-files control the reviewed v3.51 identity, granularity and result contracts.
+The current Public root architecture is
+[`KSODI-Architecture_V351.md`](./KSODI-Architecture_V351.md). The published
+versioned layer files control the reviewed v3.51 identity, granularity and
+result contracts.
 The longer copy later in this note is explanatory and must not override the
 root architecture file or the versioned layer methods.
 
@@ -1119,7 +1119,7 @@ v350 files and implementations.
 
 The cross-layer typing, comparability, coverage, point-cloud and privacy
 boundaries for these views are collected in the root
-[current Public KSODI Hangar](./KSODI-Hangar_V350.md). That note does not replace the
+[current Public KSODI Hangar](./KSODI-Hangar_V351.md). That note does not replace the
 layer-specific window formulas or activate a staged relational branch.
 
 For `O0`, source need and reference-space visibility must be declared before

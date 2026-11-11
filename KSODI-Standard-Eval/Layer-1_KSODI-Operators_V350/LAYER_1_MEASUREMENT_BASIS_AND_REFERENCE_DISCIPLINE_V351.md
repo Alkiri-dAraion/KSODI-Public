@@ -49,9 +49,9 @@ Related public references:
 - [operator-folder orientation](README.md)
 - [Layer-1 operator template](OPERATOR_TEMPLATE_V351.md)
 - [operator-distinction research note](LAYER_1_OPERATOR_DISTINCTION_WORKING_NOTE_V351.md)
-- [public architecture](../../KSODI-Architecture_V350.md)
+- [public architecture](../../KSODI-Architecture_V351.md)
 - [public implementation guardrails](../../IMPLEMENTATION_GUARDRAILS.md)
-- [Hangar, Sigma, drift and point-cloud views](../../KSODI-Hangar_V350.md)
+- [Hangar, Sigma, drift and point-cloud views](../../KSODI-Hangar_V351.md)
 - [O v3.51 Source-Need Gate](KSODI_Operator-O_Source-Need-Gate_V351.md)
 
 ### 1.1 Shared v3.51 result and representation contract

@@ -57,7 +57,7 @@ retained state change entering a declared relational observation space.
 Reconstructible communication, understanding, mutual understanding,
 agreement, resonance and causal influence remain further questions.
 
-The currently published [KSODI Hangar](../KSODI-Hangar_V350.md) provides the
+The currently published [KSODI Hangar](../KSODI-Hangar_V351.md) provides the
 broader Hangar orientation. This file governs only the Observer-to-action
 separation; its four-space distinction is explicit here and does not depend on
 using a Hangar metaphor.

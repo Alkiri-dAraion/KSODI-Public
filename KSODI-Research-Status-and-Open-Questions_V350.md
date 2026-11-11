@@ -405,9 +405,9 @@ certifications or production guarantees.
 - Layer 5 definition:
   [Dyadic IK_rel](./KSODI-Full/Layer-5_KSODI-Dyadic-Relational-Coherence-IK_rel_V350/KSODI_Dyadic-Relational-Coherence-IK_rel_V351.md).
 - Cross-layer Sigma/Hangar interpretation:
-  [KSODI Hangar V350](./KSODI-Hangar_V350.md).
+  [KSODI Hangar V351](./KSODI-Hangar_V351.md).
 - Architecture and dependencies:
-  [KSODI Architecture V350](./KSODI-Architecture_V350.md).
+  [KSODI Architecture V351](./KSODI-Architecture_V351.md).
 - Implementation invariants:
   [KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md).
 - Research direction: [KSODI Research Roadmap](./ROADMAP.md).

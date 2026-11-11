@@ -65,7 +65,7 @@ The central terms can be read through this picture:
   space, placed beside one another and inspected across windows for patterns,
   distributions or drift. The aircraft are not fused, and KSODI never enters
   a participant's imagined inner hangar. The formal boundaries are explained
-  in [KSODI Hangar V350](./KSODI-Hangar_V350.md).
+  in [KSODI Hangar V351](./KSODI-Hangar_V351.md).
 - **Corridor:** a declared expected region or path for comparable observations
   under one profile. Leaving a corridor is a review signal, not an automatic
   diagnosis, judgement or instruction to intervene.
@@ -103,8 +103,8 @@ After this page, continue in this order:
 - [Conceptual Note v3.51](./Conceptual-Note_V351.md)
 - [KSODI-Standard-Eval / KSODI-Full Transition V350](./KSODI-Standard-Eval_Full-Transition_V350.md)
 - [KSODI Licence Transition Note V342 to V350](./KSODI-License-Transition-Note_V342-to-V350.md)
-- [KSODI Architecture V350](./KSODI-Architecture_V350.md)
-- [KSODI Hangar V350](./KSODI-Hangar_V350.md) — the shared observer-side
+- [KSODI Architecture V351](./KSODI-Architecture_V351.md)
+- [KSODI Hangar V351](./KSODI-Hangar_V351.md) — the shared observer-side
   comparison space for trajectories, windows, distributions and point clouds
 - [Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md)
 

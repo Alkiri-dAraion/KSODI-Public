@@ -6,7 +6,7 @@ time or evaluated by an external Observer.
 
 Read this document together with:
 
-- [KSODI Architecture V350](./KSODI-Architecture_V350.md)
+- [KSODI Architecture V351](./KSODI-Architecture_V351.md)
 - [Which KSODI Variant Do I Need?](./WHICH_KSODI.md)
 - [KSODI Conceptual Note v3.51](./Conceptual-Note_V351.md)
 - [Agent Instructions](./AGENTS.md)

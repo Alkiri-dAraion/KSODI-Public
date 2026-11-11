@@ -35,11 +35,11 @@ the active method files and reader routes identify their v3.51 successors.
 
 Architecture overview:
 
-[`../KSODI-Architecture_V350.md`](../KSODI-Architecture_V350.md)
+[`../KSODI-Architecture_V351.md`](../KSODI-Architecture_V351.md)
 
 Shared Sigma / Hangar orientation:
 
-[`../KSODI-Hangar_V350.md`](../KSODI-Hangar_V350.md)
+[`../KSODI-Hangar_V351.md`](../KSODI-Hangar_V351.md)
 
 Independent runtime conformance remains outstanding. This document does not
 authorize a software merge, tag, GitHub Release, DOI or Zenodo artifact.

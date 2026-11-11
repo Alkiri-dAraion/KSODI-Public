@@ -15,7 +15,7 @@ entry. It may be used as:
 
 The current repository architecture keeps this entry independent from the
 formal Observer line. During the layerwise Public transition, consult the
-[published v3.50 architecture](../../KSODI-Architecture_V350.md) until the
+[published v3.50 architecture](../../KSODI-Architecture_V351.md) until the
 reviewed v3.51 architecture package is present. External Observer calculation
 begins with KSODI-Standard-Eval Layer 1; KSODI-Light does not calculate formal
 K/S/O/D/I operator results, complete typed `Z`, `IK`, `R0` or `IK_rel`.

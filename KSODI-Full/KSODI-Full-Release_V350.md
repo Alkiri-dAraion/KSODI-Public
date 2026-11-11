@@ -40,8 +40,8 @@ separate controller boundary.
 
 Architecture overview:
 
-[`../KSODI-Architecture_V350.md`](../KSODI-Architecture_V350.md)
+[`../KSODI-Architecture_V351.md`](../KSODI-Architecture_V351.md)
 
 Shared Sigma / Hangar method note:
 
-[`../KSODI-Hangar_V350.md`](../KSODI-Hangar_V350.md)
+[`../KSODI-Hangar_V351.md`](../KSODI-Hangar_V351.md)

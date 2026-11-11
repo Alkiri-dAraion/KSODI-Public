@@ -16,7 +16,7 @@
 > return to this README for the third-step public overview. Automated readers
 > need only a short README overflight for the current version, scope and
 > authority boundaries before following the relevant method links. After
-> choosing the relevant scope, continue with `KSODI-Architecture_V350.md`, the Conceptual
+> choosing the relevant scope, continue with `KSODI-Architecture_V351.md`, the Conceptual
 > Note and `IMPLEMENTATION_GUARDRAILS.md`. The current public line contains monadic
 > KSODI-Standard-Eval through `IK`, plus separately released `R_0` and `IK_rel`.
 > Private method material for `R_geom` and `R_pace` still awaits complete public
@@ -142,7 +142,7 @@ New to KSODI? Begin with
 [Which KSODI Variant Do I Need?](./WHICH_KSODI.md) as the second-step choice
 guide.
 For a compact architecture overview, see
-[KSODI Architecture V350](./KSODI-Architecture_V350.md). Before implementing or evaluating
+[KSODI Architecture V351](./KSODI-Architecture_V351.md). Before implementing or evaluating
 stored trajectories, read the
 [KSODI Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS.md).
 
@@ -186,8 +186,8 @@ without a defined architecture.
 AI agents and automated tools should read [AGENTS.md](./AGENTS.md) before
 summarizing or citing this repository. For the explanatory semantics and the
 bounded Hangar image, continue with the [Conceptual Note v3.51](./Conceptual-Note_V351.md),
-the [Hangar Origin and Analogy Companion V350](./KSODI-Hangar_Origin-and-Analogy-Companion_V350.md)
-and the formally governing [KSODI Hangar V350](./KSODI-Hangar_V350.md).
+the [Hangar Origin and Analogy Companion V351](./KSODI-Hangar_Origin-and-Analogy-Companion_V351.md)
+and the formally governing [KSODI Hangar V351](./KSODI-Hangar_V351.md).
 
 ## Why KSODI Exists
 
@@ -359,7 +359,7 @@ required window. The displayed traces can be inspected. The reconstructed
 whole remains a model.
 
 For the formal topology, see the
-[current Layer 0-8 architecture](./KSODI-Architecture_V350.md). For
+[current Layer 0-8 architecture](./KSODI-Architecture_V351.md). For
 historical implemented K/S/O/D/I heatmaps, radar profiles, trajectory views and
 drift visualizations, see the
 [Historical Observer Assets](./archive/assets-archive/historical-observer-v342/README.md).
@@ -442,7 +442,7 @@ in older notes, but the table above is the current public orientation map.
 
 For the canonical `KSODI-Standard-Eval` and `KSODI-Full` layer sketch and
 fuller topology orientation, see
-[KSODI Architecture V350](./KSODI-Architecture_V350.md).
+[KSODI Architecture V351](./KSODI-Architecture_V351.md).
 
 Mini note on `Hangar`: in KSODI, a Hangar view is not the whole private mental
 space of a person or agent. It is a method term for the observable or

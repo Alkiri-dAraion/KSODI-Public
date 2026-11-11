@@ -193,7 +193,7 @@ Sender and receiver are exchange-relative roles. An entity may be sender in
 one exchange and receiver in another without changing its stable identity.
 
 The canonical cross-layer identity boundary is summarized in the active
-[`current Public KSODI Architecture`](../../KSODI-Architecture_V350.md); this method
+[`current Public KSODI Architecture`](../../KSODI-Architecture_V351.md); this method
 retains the K-specific required fields explicitly above.
 
 #### 2.1.1 Canonical Index Discipline

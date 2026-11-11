@@ -81,7 +81,7 @@ but it is not yet the tagged release snapshot.
 - the [IK v3.51 mathematical reference package](./Layer-3_KSODI-Monadic-Interaction-Coherence-IK_V350/IK_M2_V351_REFERENCE_REVIEW/README.md)
   provides its human/machine reader, generators, exact fixtures, result
   reports and checksum manifest;
-- [`KSODI-Architecture_V350.md`](../KSODI-Architecture_V350.md)
+- [`KSODI-Architecture_V351.md`](../KSODI-Architecture_V351.md)
   remains the architecture document in the fixed v3.5.0 Public line. A
   cumulative Public v3.51 architecture requires its own later transfer.
 
