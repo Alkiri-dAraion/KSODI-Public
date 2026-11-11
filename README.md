@@ -744,17 +744,15 @@ The separately curated
 method-edge questions without turning investigation routes into release or
 implementation promises.
 
-## Roadmap
+## Version direction and research route
 
-A cautious research roadmap is maintained separately to describe the current
-long-term implementation direction of KSODI, including observer-supported
-architectures, human-AI team integration and possible future enterprise-oriented
-observer components.
+A compact route records the current public-main method line and carefully
+bounded indications for later versions. Detailed research questions,
+architecture and implementation boundaries remain in their dedicated files.
 
-This work is under active research, testing and review. It should not be read as
-a production-ready implementation reference or release commitment.
+The route is not a production reference, priority promise or release schedule.
 
-→ See: [KSODI Research Roadmap](./ROADMAP.md)
+→ See: [KSODI Version Direction and Research Route](./ROADMAP.md)
 
 ## Structure
 

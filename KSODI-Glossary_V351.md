@@ -2147,7 +2147,7 @@ Primary Root routes:
 - [Architecture v3.51](./KSODI-Architecture_V351.md);
 - [Implementation Guardrails v3.51](./IMPLEMENTATION_GUARDRAILS_V351.md);
 - [Hangar v3.51](./KSODI-Hangar_V351.md);
-- [Public Roadmap and open-research route](./ROADMAP.md).
+- [Public version direction and research route](./ROADMAP.md).
 
 Layer routes and exact locators are preserved in the linked public method,
 result-contract, implementation-companion and reference-review files.
