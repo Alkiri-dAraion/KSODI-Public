@@ -51,18 +51,31 @@ The currently visible v3.52 investigation route includes:
 These are research and documentation directions. They are not a complete
 scope, fixed priority order or dated commitment.
 
-## Later-version indications
+## Dependency-led later directions
 
-- v3.53 may investigate scalable time, thread and population views together
-  with separately attributable assistive interpretation.
-- v3.60 and later work may investigate additional R-family questions only
-  under separately reviewed method, evidence, sensitivity and publication
-  boundaries.
-- Still later observation, governance, security, learning or action-adjacent
-  questions require their own declared scope and authority.
+Later work follows evidence and dependency gates rather than a fixed version
+calendar:
+
+```text
+repeatable implementation evidence through typed Z
+-> controlled records, uncertainty and accessible diagnostic views
+-> scalable time, thread, group and population views
+-> deeper longitudinal and relational research under separate contracts
+```
+
+These strands may overlap in practice, but a later view does not validate its
+inputs. Independent runtime conformance, repeatability, declared contrast
+tests and coverage remain necessary before implementation behavior can support
+a method claim.
+
+Additional R-family, observation, governance, security, learning or
+action-adjacent questions require separately reviewed method, evidence,
+sensitivity, publication and authority boundaries. Their exact version
+allocation remains open unless another current Public source states a reviewed
+decision.
 
 This route intentionally does not disclose, predefine or validate the content
-of those later constructs.
+of later constructs.
 
 ## Dependency and authority guardrails
 

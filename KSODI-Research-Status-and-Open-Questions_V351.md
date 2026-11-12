@@ -47,6 +47,21 @@ method. This contribution history does not turn the referenced theories into
 formal derivations of KSODI or transfer responsibility for the method to their
 authors.
 
+### Adjacent methods, infrastructure and application boundary
+
+KSODI is intended to operate alongside domain-specific theories, measurement
+tools, telemetry, evaluation systems and governance processes. The repository
+does not yet contain a systematic, source-checked comparison across those
+categories. Naming a possible neighbour would not by itself establish
+equivalence, derivation, superiority, interoperability, demand or market fit.
+
+A later comparison package must use primary or otherwise authoritative sources,
+identify the compared observation object, input, output, evidence and status,
+and distinguish theory, dataset, telemetry convention, evaluator,
+observability platform, governance method and legal context. Until that work
+is complete, the Public claim is limited to possible complementarity and an
+open invitation for source-based challenge and collaboration.
+
 ## 1. How to read the classifications
 
 | Classification | Meaning in this note |
@@ -75,6 +90,29 @@ KSODI-specific selection, composition, weights, thresholds, construct validity
 and application have not undergone independent formal review and
 application-specific empirical validation. No universal causal performance
 gain is claimed.
+
+### Compact maturity and evidence overview
+
+This table is a navigation view of the more detailed layer sections below. It
+separates kinds of evidence rather than reducing maturity to one binary label.
+`Defined`, `reproduced`, `implemented` and `empirically validated` answer
+different questions.
+
+| Scope | Public v3.51 contract | Reproducible Public evidence | Implementation and empirical evidence | Current boundary |
+| --- | --- | --- | --- | --- |
+| KSODI-Light | Reflective K/S/O/D/I guidance and bounded optional estimates are defined. | Documentation examples and reader guidance are inspectable; no formal Observer vector is created. | Sustained practice observations and confidential professional use are reported. | No controlled study, universal learning effect or calibrated scale. |
+| Layer 1 K/S/O/D/I and Layer 2 typed Z | Operator questions, profiles, typed results and complete/partial Z assembly are defined. | Method contracts and bounded test material are available; the clean v3.51 implementation-evidence programme through Z remains in progress. | The historical Observer calculated operator/state material repeatedly on dialogic material, but used a mixed monadic/dyadic/possible n-adic architecture. | Historical operation supports feasibility, not clean conformance, repeatability or construct validity for the separated v3.51 objects. |
+| Layer 3 IK | Monadic projections, windows and reverse routes to Z are defined. | Synthetic reference generators, fixtures, reports and manifests reproduce the declared arithmetic. | No independently verified runtime conformance or application-specific empirical calibration. | Projection behavior and contract consistency do not establish usefulness, universal weighting or semantic validity. |
+| Layer 4 R_0 | Pairing, movement comparability, profiles, threshold identity and gate outcomes are defined. | Synthetic numeric, status and sensitivity references reproduce the declared gate contract. | Historical relational observations informed the redesign; the separated v3.51 gate has no independent empirical validation. | An open gate permits a declared comparison; it does not prove relation, causality or action permission. |
+| Layer 5 IK_rel | The current dyadic relational projection and its exact R_0 handoff are defined. | Synthetic Phases A–F, D+ and joint Phase-H sensitivity material reproduce the declared contract. | No independently verified runtime conformance or domain calibration. | Projection agreement, collision and information loss remain visible; the result is not shared meaning, truth or causality. |
+
+The historical Observer therefore supplies genuine implementation and
+empirical working evidence for an earlier mixed observation architecture: it
+processed observed material repeatedly and produced states, trajectories and
+views. It did not answer the present questions with the identity separation
+required by v3.51. This is a bounded positive result and a bounded limitation,
+not a claim that the historical work failed or that the current contracts are
+already validated.
 
 ## 2. Layer 0 — KSODI-Light
 
