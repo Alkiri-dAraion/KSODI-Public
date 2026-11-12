@@ -60,9 +60,16 @@ need only a short README overflight before following the same reading route.
 > Continue with the
 > [Layer-1 operator questions and methods](./KSODI-Standard-Eval/Layer-1_KSODI-Operators_V350/README.md).
 >
-> Broad use requires declared domain profiles and, where needed,
-> domain-specific adaptation of the operator calculations under explicit
-> versioned contracts.
+> KSODI does not predefine one universal evaluation for every field. It
+> provides a shared baseline architecture for building and testing
+> question-specific evaluation instruments. Subject-matter specialists
+> identify the relevant questions and help define and test admissible operator
+> profiles, references and expected distinctions. KSODI supplies the
+> reconstructible observation, typed-result, trajectory and provenance
+> framework; each field-specific instantiation retains its own evidence and
+> validation burden. The current reference evaluations demonstrate how such
+> an instrument can be constructed and functionally checked; they do not
+> validate every later instantiation.
 
 ## Choose your reading depth
 
