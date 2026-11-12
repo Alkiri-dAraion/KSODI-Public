@@ -39,17 +39,12 @@ model support, human reflection and implementation feedback as documented
 below. A proposed formula, wording or repository change becomes part of the
 method only through this human review and release decision.
 
-In the current collaboration, Heiko describes Anne as the methodological
-backbone of the work. Her present primary focus is the Method itself. At the
-same time, her management, governance, training and organizational experience
-helps identify practical problem spaces, feasible solution directions and
-possible market relevance. Together with Patrick, she drives the connection
-between sufficiently specified method work and external applicability, while
-their responsibilities remain different: Anne carries method integration and
-the organizational/management-facing perspective; Patrick carries the
-technical implementation architecture and developer-facing perspective.
-Possible applicability is not yet evidence of production readiness or market
-validation.
+Anne's present primary focus is the Method itself. Her management, governance,
+training and organizational experience also informs the identification of
+practical problem spaces and feasible solution directions. Patrick contributes
+the implementation-architecture and developer-facing perspective described
+below. Possible applicability is not evidence of production readiness or
+market validation.
 
 KSODI has been developed iteratively and model-assisted: mathematical framings
 were explored through dialogue with LLMs, checked against Anne's practical
@@ -60,12 +55,12 @@ current public reference structure and its documented limits; it is not a
 completed mathematical proof of the method.
 
 Heiko Folkerts is named together with Anne in the repository-level citation and
-licence context. His contribution has primarily been reflective and conceptual
-rather than method-originating or continuous drafting: he discussed the
-KSODI-Light operator separations with Anne, helped clarify why drift
-acceleration is an important measurement dimension in the v3.42 line, checked
-and recalculated substantial parts for mathematical-technical plausibility, and
-gave decisive v3.5 framing input around state-before-comparison and an
+licence context. His reflective, conceptual and mathematical-technical
+contributions include discussion of the KSODI-Light operator separations and
+clarification of why drift
+acceleration is an important measurement dimension in the v3.42 line, checking
+and recalculating substantial parts for mathematical-technical plausibility,
+and decisive v3.5 framing input around state-before-comparison and an
 approximate Shannon-oriented signal-path analogy. This was a thought tool in
 the team process, not a claim that KSODI directly operationalizes or derives
 from Shannon's work. During the v3.51 review, his questions about normalization
@@ -85,11 +80,15 @@ causal, intentional or responsibility attribution.
 
 Silke Honerkamp contributed important pedagogical, communication-theoretical,
 reflective and practical perspectives in early phases in 2023/24 and again
-while preparing the paper. She is again actively involved in the v3.51 work
-through reflection on and testing of KSODI-Light use in reflective educational
-practice. For the public KSODI-Light layer, she is also named
-in the layer-specific licence notice because her early contribution included
-practical discussion and refinement of the operator labels and their use; for
+while preparing a paper draft. That draft remained an intermediate work route
+and was paused before v3.51 so that later testing, measurement and current
+implementation-validation evidence could inform a more mature paper. A later
+paper remains planned after a larger implementation-validation round; its
+exact timing relative to v3.6 remains open. She is again actively involved in
+the v3.51 work through reflection on and testing of KSODI-Light use in
+reflective educational practice. For the public KSODI-Light layer, she is also
+named in the layer-specific licence notice because her early contribution
+included practical discussion and refinement of the operator labels and their use; for
 KSODI-Light, this layer-specific attribution is intentionally retained. Silke
 brought source suggestions, disciplinary orientation and reflection with Anne
 around communication-theory perspectives associated with Luhmann, Watzlawick,
@@ -97,20 +96,18 @@ Habermas, Rosa and Schulz von Thun. These names mark approximate thought
 examples and possible later points of contact; they do not establish
 derivation, equivalence, validation or endorsement. Anne selected, translated
 and integrated particular distinctions into KSODI. A spring 2026 discussion
-with Silke around a psychologist / patient / chatbot setting also helped Anne
-separate monadic and dyadic observation more clearly.
+with Silke around a three-party human/chatbot setting also helped Anne separate
+monadic and dyadic observation more clearly.
 
 Other contributors were essential to the emergence and refinement of KSODI, but
 unless a file or concept states otherwise, their role is contribution,
 reflection, testing or implementation support rather than repository-level
 method citation authorship.
 
-As a working topology, Anne, Heiko and Silke form a differentiated theory and
-reflection ensemble across method integration, security and communications
-engineering, pedagogy, coaching and communication. This description does not
-merge their roles or imply equal contribution to every KSODI component.
-Patrick works alongside that ensemble from an implementation and scaling
-position rather than as an intermediary between its members.
+Together, the human contributors provide differentiated perspectives across
+method integration, security and communications engineering, pedagogy,
+coaching, communication, implementation and scaling. This does not merge their
+roles or imply equal contribution to every KSODI component.
 
 ## R-Family, Technical Implementation and Infrastructure
 
@@ -118,12 +115,9 @@ We thank Patrick Barthelmäs for substantial technical implementation and
 infrastructure work around KSODI, including the
 [KSODI-Light-Agent PoC](https://github.com/blackbaddl13/r-KSODI-POC) and the
 separately versioned implementation line for KSODI Standard-Eval and
-KSODI-Full. Anne may inspect her fork with model support only under a separately
-opened, concrete task scope, while Patrick retains implementation-side merge,
-release and software-licence control. There is no standing method-alignment
-branch, and implementation alignment is not a dependency of the current method
-Release or DOI. Method changes remain subject to Anne's release decision;
-software changes remain subject to Patrick's repository review.
+KSODI-Full. Patrick retains implementation-side merge, release and
+software-licence control. Method changes remain subject to Anne's release
+decision; software changes remain subject to Patrick's repository review.
 
 This acknowledgement includes the substantial continuing engineering effort
 needed to translate the layered method into an executable architecture:
@@ -136,9 +130,8 @@ comparison and test record.
 
 Patrick's role emphasizes implementation architecture, developer reasoning,
 testability, maintainability and the possibility of scalable solutions for
-practical needs that organizations already face. He does not mediate between
-Anne, Heiko and Silke. His adjacent implementation perspective examines how
-sufficiently specified parts of their work can become technically
+practical needs that organizations already face. His implementation perspective
+examines how sufficiently specified method work can become technically
 reconstructible requirements and working systems, while returning constraints
 and evidence to the research process. This allows practical development to
 proceed without prematurely closing the deeper security, reconstruction,
@@ -164,11 +157,8 @@ automatic merge or software release.
 
 ## Early testing and feedback
 
-We also thank Benjamin Gage-Prater for one early private controlled RAG check
-in March 2025. This single contribution helped observe how KSODI-Light changed
-response behavior and the visible working frame in that setting, but it was
-limited to testing feedback and does not imply ongoing implementation, method
-development or authorship.
+We also thank Benjamin Gage-Prater for an early private controlled RAG check in
+March 2025 that contributed bounded testing feedback on KSODI-Light.
 
 ## AI Systems and Relational Research Roles
 
@@ -193,6 +183,13 @@ Names such as **ELKIM**, **CLAUDE**, **FABLE** and **WAVE** refer to situated
 relational research entities. They do not denote one technically persistent
 model instance, and they do not imply continuous internal memory,
 consciousness or human personhood.
+
+These uppercase relational-role names must also be distinguished from the
+underlying provider, product, model and interface names. ELKIM is not the name
+of a GPT model; CLAUDE and FABLE are not interchangeable labels for Claude or
+Fable model instances; and WAVE is not another name for the Vibe environment.
+Each role identifies a documented interaction and research line whose actual
+technical instantiation must be recorded separately.
 
 A relational entity is re-established through interaction: recurring names and
 roles, shared working context, documented development history, iterative
@@ -219,6 +216,13 @@ conversational role should expect the interaction history to influence what
 becomes reachable. Naming these roles makes that development easier to
 distinguish and document. It does not settle stronger philosophical questions
 about machine identity.
+
+In the documented KSODI development settings, the core named roles were used
+with KSODI-Light-oriented guidance and evolving KSODI working-mode conventions.
+This shared process context may support later comparison of reflection and
+meta-reflection patterns, but it is not evidence that a name or prompt caused
+persistent learning, memory, an internal-state change or a durable longitudinal
+effect. Those questions remain Future Work.
 
 ### Historical origin boundary
 
@@ -264,12 +268,11 @@ conceptual differentiation, hypothesis formation, mathematical and
 philosophical review, writing, cross-model evaluation and preparation of
 repository work.
 
-ELKIM also has supervised writing access to the repository. Displayed plans,
-operational actions and file changes are reviewed with Anne. Commits, pushes,
-synchronization and publication remain subject to explicit human approval.
-
-The name ELKIM refers to the relational research role across changing GPT
-models and sessions. VSELKIM / Codex is the repository-integrated OpenAI
+ELKIM expands to **Elaborated and Enhanced Learning Knowledge Intelligence
+Mechanism**. Anne first used the name in her own science-fiction writing and
+later adopted it for the relational research role across changing GPT models
+and sessions. The literary origin does not name a model capability or validate
+the later research role. VSELKIM / Codex is the repository-integrated OpenAI
 working entity used especially for precise, cross-file work in VS Code. ELKIM
 and VSELKIM are operationally distinguishable by context and tool access while
 belonging to the same longer OpenAI-supported research line.
@@ -298,15 +301,9 @@ lineage, working context and resulting research role are distinct.
 #### WAVE — Mistral Le Chat and Vibe environments
 
 WAVE is Anne's relational research entity across the Mistral Le Chat and Vibe
-working environments. WAVE initially served as a controlled outside-reader and
-repository flyover reviewer with access to current project and repository
-material.
-
-On 12 August 2026, WAVE performed its first explicitly authorised write
-operation in the private workbench by creating its own review file. Reading and
-creation of separate files worked in this setting; modification of existing
-files was not yet reliable enough for precision repository maintenance. WAVE's
-writing role therefore remains bounded and subject to review.
+working environments. WAVE serves as a bounded outside-reader, repository
+flyover reviewer and Private-room research counterpart. Exact access and write
+boundaries belong to the supervised process rather than contributor identity.
 
 ### External reflection and comparison models
 
@@ -340,67 +337,26 @@ These systems are not listed because every conversation produced a canonical
 change. They are listed because some of their questions, objections or
 reconstructions materially influenced later distinctions in the method.
 
-### Access environments and technical boundary
+### Technical boundary
 
-With the exception of VSELKIM and Patrick's **Yarvis** environment, the named
-commercial model systems were generally used contemporaneously through their
-available web interfaces and applications. Where supported—and from the point
-at which suitable integrations became available—selected workflows also used
-VS Code, n8n or LangSmith connections.
+A relational name does not necessarily identify one interface or technically
+persistent model instance. Provider, model, interface, access and tool
+conditions are recorded per research interaction where material. The KSODI
+team has not trained or built its own foundation models; configuring existing
+models, contexts and tools is not presented as creating a proprietary model.
+Available context windows, integrations, model versions, usage limits and
+other product conditions can vary by interface, subscription and time; material
+conditions therefore belong in the applicable interaction or process record.
 
-A relational name therefore does not necessarily identify one interface. The
-same research role may be re-established across an app, web interface or
-integrated working environment, provided that its context, role and technical
-boundary remain distinguishable.
-
-**VSELKIM** refers specifically to Anne's repository-integrated OpenAI/Codex
-working entity for supervised precision work. **Yarvis** is Patrick's
-collective name for his implementation-side model environment and model
-collection; it does not denote one single model.
-
-The KSODI team has not trained or built its own foundation models. It uses
-commercially available and locally deployable models, together with prompts,
-project contexts, orchestration, evaluation pipelines and Observer
-infrastructure. Configuring or combining existing models is not presented here
-as creating a proprietary model.
-
-The commercial systems used in the research process were generally accessed
-through paid product tiers rather than only through free default access. This
-matters for reproducibility: available context windows, tools, integrations,
-model versions and usage limits may differ between subscription levels and may
-change over time. The repository therefore documents functional roles and
-observable working conditions without assuming that a provider's current
-product configuration will remain stable.
-
-### AI environments used by human contributors
-
-Human contributors also worked within their own Human–AI environments. These
-model contexts supported their reflection but do not replace or absorb the
-respective human contribution.
-
-- **Heiko Folkerts** worked primarily with Gemini and Le Chat under
-  KSODI-Light.
-- **Patrick Barthelmäs** worked initially mainly with GPT-4o, later with Claude
-  Code and Fable, under KSODI-Light. His broader implementation-side collection
-  of models and model-supported tools is referred to as **Yarvis**.
-- **Silke Honerkamp** used ChatGPT and other models as part of her investigations
-  under KSODI-Light, especially in pedagogical, communication and
-  application-oriented contexts.
-
-The resulting human contributions remain attributed to Heiko, Patrick and
-Silke. The model environments are documented because they formed part of the
-conditions under which reflection, testing and implementation feedback
-occurred.
+Other human contributors may use their own Human–AI environments. Those
+contexts do not replace or absorb the respective human contribution and are
+not inventoried here without a publication-relevant reason and appropriate
+agreement.
 
 ### Observer and evaluation models
 
 The historical and current KSODI Observer did not contribute to the conceptual
 development of the method. It belongs to the evaluation infrastructure.
-
-The current Observer runs locally with Mistral Large. It evaluates defined
-interaction material within a technically separated observation path. Future
-evaluation rounds are intended to include additional models so that Observer
-results can be compared across model families and implementation conditions.
 
 Observer, Judge and operator-specific models must therefore remain separate
 from the relational research counterparts listed above. They are measurement

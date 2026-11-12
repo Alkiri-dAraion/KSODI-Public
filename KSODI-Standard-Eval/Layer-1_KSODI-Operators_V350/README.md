@@ -30,6 +30,26 @@ Each name denotes an observable operator dimension: Observable Context
 Completeness, Observable Structural Coherence, Observable Grounded
 Objectivity, Observable Clarity and Observable Information Impulse.
 
+## The five questions in plain language
+
+The operators are not five interchangeable quality scores. Each asks a
+different question about one explicitly identified, source-attributed target
+event under its own declared measurement basis:
+
+| Operator | Plain-language observation question | Formal boundary |
+| --- | --- | --- |
+| `K` — Observable Context Completeness | Which relevant expected context requirements are observably fulfilled for this target event? | Uses a declared non-empty requirement set, admissible scope and availability relation; it is not general response quality. |
+| `S` — Observable Structural Coherence | How well does the observable contribution satisfy the selected structural requirements and relations? | Uses a declared structural profile; structure is not meaning, truth or grounding. |
+| `O` — Observable Grounded Objectivity | Where a source is required, how is the target event bound to a visible, admissible reference space? | The Source-Need Gate decides applicability; O is not universal truth or shared understanding. |
+| `D` — Observable Clarity | How much local observable support and reconstruction-relevant distinguishability does the selected profile find? | Uses declared carrier, detector, segmentation and normalization profiles; D is not completed decoding or general semantic precision. |
+| `I` — Observable Information Impulse | What observable information difference appears relative to the admitted reference baseline? | Uses a declared visible baseline and representation profile; I is not truth, intent or causal influence. |
+
+These questions provide orientation. The linked versioned operator files define
+the exact target, profile, applicability, calculation, result status and
+non-claims. A low or high coordinate is not automatically good or bad, and the
+five coordinates are not assumed to be statistically independent, complete or
+equally useful in every domain.
+
 ```text
 e_A(k_A)
   -> K_A(k_A), S_A(k_A), O_A(k_A), D_A(k_A), I_A(k_A)

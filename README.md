@@ -41,13 +41,48 @@ Human readers: begin with
 here for the public overview. AI agents use `AGENTS.md` as their preflight and
 need only a short README overflight before following the same reading route.
 
-**At a glance:** KSODI is a structured observation method for interaction
-structures involving distinguishable entities, focussing on explainable
-governance and observability. **KSODI is intended as a broadly reusable
-baseline instrument for observation, reconstruction and evaluation alongside
-domain-specific tools.** Broad use requires declared domain profiles and,
-where needed, domain-specific adaptation of the operator calculations under
-explicit versioned contracts.
+> [!TIP]
+> **At a glance**
+>
+> KSODI is a structured observation method for communication and interaction
+> structures involving distinguishable entities, with a focus on explainable
+> governance and observability. **It is intended as a broadly reusable
+> baseline instrument for observing, reconstructing and evaluating attributable
+> contributions, interaction states, trajectories and explicitly declared
+> relational comparisons alongside domain-specific tools.**
+>
+> Its five baseline operators ask different observable questions: What relevant
+> context is available (`K`)? How is the contribution structured (`S`)? Where
+> required, to what visible admissible reference is it bound (`O`)? How
+> distinguishable or reconstructibly clear is its observable form (`D`)? What
+> information difference or impulse appears relative to the declared baseline
+> (`I`)? This is a reader orientation, not the formal measurement contract.
+> Continue with the
+> [Layer-1 operator questions and methods](./KSODI-Standard-Eval/Layer-1_KSODI-Operators_V350/README.md).
+>
+> Broad use requires declared domain profiles and, where needed,
+> domain-specific adaptation of the operator calculations under explicit
+> versioned contracts.
+
+## Choose your reading depth
+
+This README keeps its long-form overview, images, analogies and selection
+matrices. You do not need to read it linearly before choosing a useful route.
+
+| Time or question | Suggested route |
+| --- | --- |
+| About one minute: what is this? | Read this `At a glance` block, then [Why KSODI Exists](#why-ksodi-exists). |
+| I first want to understand the five operator questions | Use the [Layer-1 operator overview](./KSODI-Standard-Eval/Layer-1_KSODI-Operators_V350/README.md), then open only the operator methods relevant to your question. |
+| I want a usable reflection aid | Start with [KSODI-Light](./KSODI-Light/README.md); its approximate `0–5` guidance is not formal Observer measurement. |
+| I need to select the right formal scope | Use [START_HERE](./START_HERE.md), then [WHICH_KSODI](./WHICH_KSODI.md). |
+| I want to inspect the mathematics or research maturity | Continue with the [Architecture](./KSODI-Architecture_V351.md), [Research Status](./KSODI-Research-Status-and-Open-Questions_V351.md) and the relevant versioned layer files. |
+| I want to implement or integrate KSODI | Read the [Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS_V351.md), then the relevant method and Implementation Companion. |
+| I am reviewing privacy, security or governance | Begin with [Ethics and Intended Use](./Ethics_V351.md), the [Implementation Guardrails](./IMPLEMENTATION_GUARDRAILS_V351.md) and the [Observability/Controlled-Action Boundary](./KSODI-Full/KSODI_Observability-and-Controlled-Action-Boundary_V351.md). |
+| I need provenance or citation | Use [Contributors](./Contributors.md), the [Human–AI Research Process](./HUMAN_AI_RESEARCH_PROCESS.md), the [Timeline](./docs/timeline/KSODI_Timeline_since_2023-05.md) and [`CITATION.cff`](./CITATION.cff). |
+
+The sections below form the complete Public overview. Short routes are entry
+points, not substitutes for the authoritative method files or their declared
+evidence and applicability contracts.
 
 ## Citation and fixed v3.5.0 snapshot
 
