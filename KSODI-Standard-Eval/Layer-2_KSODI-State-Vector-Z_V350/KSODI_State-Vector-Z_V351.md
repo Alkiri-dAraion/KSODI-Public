@@ -609,6 +609,13 @@ separately named research or later-version routes.
 
 ## 7. Downstream boundaries
 
+**Cross-cutting evidence-object guard.** A later residual-view `Z` must be
+assembled from K/S/O/D/I records already evaluated over the same separately
+identified residual evidence object. It does not replace the corresponding
+raw-view `Z`; raw and residual coordinates are not mixed, and subtracting two
+completed Z vectors does not construct a residual state. The transformation
+and compatibility contract remain Future Work and change no v3.51 formula.
+
 ### 7.1 Relation to IK
 
 Canonical monadic IK begins from complete canonical Z. Its v3.51 evaluation

@@ -3,6 +3,8 @@
 This file freezes the formulas, identities and interpretation guards used by
 the adjacent assertion-checked Phases A–F. The package manifest binds the
 published method, companion, generators, fixtures and reports to exact bytes.
+The 2026-11-12 source reconciliation adds the cross-layer evidence-object
+guard and changes no formula, component or status rule.
 
 ## 1. Atomic observation object
 

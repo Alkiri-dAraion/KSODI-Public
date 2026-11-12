@@ -80,6 +80,14 @@ admitted cardinality and profile.
 
 ## Shared measurement and result discipline
 
+Operator results are bound to their declared observation object. A future
+known-source residualization profile would first preserve and account for
+known-source contributions in the admitted evidence and then evaluate the
+explicitly identified residual object. It would not subtract K/S/O/D/I scores
+after calculation. Raw and residual results remain distinct even when they use
+the same operator family or happen to return equal values. This is a Future
+Work guard, not a v3.51 profile or formula.
+
 Each operator uses its own declared, versioned measurement basis:
 
 | Operator | Required basis | Boundary |

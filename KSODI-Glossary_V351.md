@@ -915,6 +915,18 @@ The reference seam is essential for reconstruction: an identical O number
 does not prove that the same candidates, admitted references or delivered
 subset produced it.
 
+In the formal O family, **grounding means observable source/reference binding
+under the declared O contract**. It does not by itself mean Clark-style shared
+conversational grounding, mutual understanding, agreement or a jointly held
+meaning.
+
+KSODI is intended as a broadly reusable baseline instrument for observation,
+reconstruction and evaluation alongside domain-specific tools. Such use
+requires declared domain profiles and, where needed, domain-specific
+adaptation of the operator calculations under explicit versioned contracts.
+KSODI neither replaces those tools nor by itself supplies complete
+disciplinary conclusions.
+
 Authoritative sources: [Operator O v3.51 method](./KSODI-Standard-Eval/Layer-1_KSODI-Operators_V350/KSODI_Operator-O_Observable-Grounded-Objectivity_V351.md),
 [O v3.51 Source-Need Gate](./KSODI-Standard-Eval/Layer-1_KSODI-Operators_V350/KSODI_Operator-O_Source-Need-Gate_V351.md),
 [O v3.51 implementation companion](./KSODI-Standard-Eval/Layer-1_KSODI-Operators_V350/KSODI_Operator-O_Implementation-Companion_V351.md).

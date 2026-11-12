@@ -779,6 +779,13 @@ must not be numerically implemented or reported as canonical D.
 
 ## 8. Relational Boundary
 
+**Cross-cutting evidence-object guard.** A later known-source residualization
+profile would evaluate D over a separately identified residual evidence object
+before D is calculated. It would not subtract D scores after calculation or
+silently relabel a raw-view result. Raw and residual D records remain distinct;
+the required transformation contract is Future Work and changes no v3.51
+formula.
+
 Operator D ends with source-local views. After distinguishable trajectories
 pass a separately declared `R0` gate, a later operator-specific relational D
 diagnostic may be researched. It requires its own pairing index `j`,

@@ -927,6 +927,13 @@ the return path to the attributable observation, admitted baseline and profile.
 
 ## 8. Relational Boundary
 
+**Cross-cutting evidence-object guard.** A later known-source residualization
+profile would evaluate I over a separately identified residual evidence object
+before I is calculated. It would not subtract I scores after calculation or
+silently relabel a raw-view result. Raw and residual I records remain distinct;
+the required transformation contract is Future Work and changes no v3.51
+formula.
+
 Standard-Eval can evaluate and monitor one source-attributed signal trajectory without a second trajectory.
 
 `I0`, `C_seq,I`, `Delta I`, `Delta2 I`, `I Sigma(W)` and

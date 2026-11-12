@@ -40,6 +40,13 @@ Every conforming result retains the ordered dyad, pairing map, source-local
 predecessors, exact `R_0` identity, shared `IK_w` profile, raw operands,
 component/profile identity, typed status and complete `Delta Z` reverse path.
 
+For a future residual-view calculation, both `IK_w` operands and the exact
+matching `R_0` handoff would additionally need compatible evidence-object and
+residualization identities. `IK_rel` cannot be made residual by subtracting
+relational scores after projection. A residual regularity is not by itself an
+unknown-source, shared-code, meaning or communication result. This is Future
+Work and does not alter the v3.51 contract.
+
 The reference package proves the published arithmetic and contract fixtures
 are reproducible. It does not prove runtime conformance, empirical calibration
 or real-world semantic validity.

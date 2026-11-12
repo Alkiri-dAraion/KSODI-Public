@@ -39,13 +39,13 @@ epsilon, semantic interpretation or third-party runtime.
 
 | Phase | Assertion-checked scope |
 | --- | --- |
-| A | 25 primary grid rows; six open-gate projection collisions |
-| B | 75 component rows; 729 trajectory pairs; four selected collisions |
-| C | 22 epsilon-boundary rows; two derivative-order cases |
-| D | 25 projected-feasibility rows; 25 handoff-precedence rows |
-| D+ | five complete-Z cases; two closed and three open gates |
-| E | seven nonempty sets; 45 status rows; nine invalid profiles |
-| F | five window scenarios; five overlap windows; six dynamic steps |
+| [A](./PHASE_A_PRIMARY_FORMULA_RESULTS.md) | 25 primary grid rows; six open-gate projection collisions |
+| [B](./PHASE_B_COMPONENT_SEPARATION_RESULTS.md) | 75 component rows; 729 trajectory pairs; four selected collisions |
+| [C](./PHASE_C_EPSILON_BOUNDARY_RESULTS.md) | 22 epsilon-boundary rows; two derivative-order cases |
+| [D](./PHASE_D_R0_HANDOFF_IDENTITY_RESULTS.md) | 25 projected-feasibility rows; 25 handoff-precedence rows |
+| [D+](./PHASE_D_PLUS_GATE_EXCLUSION_RESULTS.md) | five complete-Z cases; two closed and three open gates |
+| [E](./PHASE_E_FIXED_COMPONENT_SET_RESULTS.md) | seven nonempty sets; 45 status rows; nine invalid profiles |
+| [F](./PHASE_F_WINDOWS_COVERAGE_RESULTS.md) | five window scenarios; five overlap windows; six dynamic steps |
 
 ## Interpretation guards
 

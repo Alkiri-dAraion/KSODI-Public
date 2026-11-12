@@ -11,6 +11,11 @@ The shared structural and method boundary with KSODI-Full is documented in
 the root
 [KSODI-Standard-Eval / KSODI-Full Transition v3.51](../KSODI-Standard-Eval_Full-Transition_V351.md).
 
+Published method documentation and method materials in this repository are
+licensed under CC BY 4.0 unless a file or subfolder explicitly states
+otherwise. Separately published software implementations are distinct works
+with their own repository licences.
+
 The unchanged
 [archived v3.50 transition predecessor](../archive/document-snapshots/standard-eval-full-transition/v350-replaced-by-v351/KSODI-Standard-Eval_Full-Transition_V350.md)
 remains available as historical release evidence; it is not the current
@@ -59,6 +64,15 @@ observable direction, comparability or stable interaction coherence.
 Public files in this folder should therefore be read as public method
 documentation for the released monadic Standard-Eval line, not as a complete
 software implementation or empirical validation claim.
+
+The present line deliberately evaluates explicitly identified observable
+material before attempting stronger source or meaning reconstruction. A later
+known-source residualization route would first preserve and account for known
+source contributions at the evidence-object level and only then calculate
+K/S/O/D/I, Z and IK over a separately identified residual view. It would not
+subtract operator scores or mix coordinates from raw and residual objects.
+That route remains Future Work; v3.51 defines neither its transformation nor
+its profile.
 
 Relational observation and its gates belong to KSODI-Full. Controlled
 intervention, policy-defined responses and action authority remain in a

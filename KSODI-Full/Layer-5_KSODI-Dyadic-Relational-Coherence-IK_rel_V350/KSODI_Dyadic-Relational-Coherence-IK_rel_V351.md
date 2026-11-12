@@ -1,7 +1,8 @@
 # KSODI `IK_rel` — Dyadic Relational Coherence Compatibility v3.51
 
-Authority: released Public v3.51 method source. Conditional schemas and
-pseudocode belong in the
+Authority: published on moving Public `main` and selected for the v3.51
+release; the fixed release remains separately authorized. Conditional schemas
+and pseudocode belong in the
 [implementation companion](./KSODI_Dyadic-Relational-Coherence-IK_rel_Implementation-Companion_V351.md).
 The assertion-checked basis is retained in
 [`IK_REL_V351_REFERENCE_REVIEW/`](./IK_REL_V351_REFERENCE_REVIEW/).
@@ -258,6 +259,14 @@ Processing failure is not a fifth valid method status. The atomic order is:
 
 Underlying reasons remain visible. A later scalar status never erases its
 path.
+
+For any future residual-view calculation, both paired `IK_w` operands must
+inherit compatible residual evidence-object identities and the exact matching
+`R_0` handoff must preserve that compatibility. Subtracting completed
+relational scores does not construct a residual `IK_rel`. A regular residual
+pattern alone establishes neither an unknown source nor shared code, meaning
+or successful communication. This is Future Work and changes no v3.51
+component or status rule.
 
 ## 6. Diagnostic bundle and Layer-3 return
 

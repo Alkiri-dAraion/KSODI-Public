@@ -1,6 +1,7 @@
 # R₀ v3.51 reference review — Phase 0 frozen basis
 
-Date: `2026-11-10`
+- Initial freeze: `2026-11-10`
+- Evidence-object guard reconciliation: `2026-11-12` (no formula change)
 
 ## Purpose
 
@@ -11,9 +12,9 @@ method, companion and upstream monadic sources used to construct it. It does not
 
 | Source | SHA-256 |
 | --- | --- |
-| `KSODI_State-Vector-Z_V351.md` | `f3ad6674ad8c5a97c3b49f30ee44f9b8b0eb87ce50cdccdc011d0f057d71c846` |
-| `KSODI_Monadic-Interaction-Coherence-IK_V351.md` | `517219d50ac00ddf41836c94af2a66d2d78df4bff250f268a6a82eef5e613d7e` |
-| `KSODI_Relational-Gate-R_0_V351.md` | `a2c4052090c3d702556c2ab2d57ad6f85363337bd7cd2add8b39646d45d7c724` |
+| `KSODI_State-Vector-Z_V351.md` | `63840697ba7a5676329466dc43b90d84bca278167f0b9e9368b7b52b5c756cb9` |
+| `KSODI_Monadic-Interaction-Coherence-IK_V351.md` | `f506800f894b82842d0aebc4be418657a39517efe930049bb1dae6d49865c0aa` |
+| `KSODI_Relational-Gate-R_0_V351.md` | `e7ee08362506a2098debbe74d191d01f0d8ad4975c3004df7c703f54143bb614` |
 | `KSODI_Relational-Gate-R_0_Implementation-Companion_V351.md` | `f2f263e507fadaeb9e3e59e2798335d609862cf2948483b7960a3c158f010425` |
 
 Any byte change to these sources reopens this basis and requires a complete

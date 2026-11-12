@@ -15,6 +15,18 @@ authority.
 
 ## 1. Purpose
 
+### Hangar in one minute
+
+- The transient interaction space is where attributable signals and
+  contributions become observable; it is not the Hangar.
+- The so-called KSODI "Hangar" is the canonical Observer-side retention and
+  comparison view for typed states, trajectories, windows, aggregates and
+  distributions.
+- Every member keeps its source, object, profile, index/window, status and
+  provenance identity; equal displayed values do not merge members.
+- A Hangar view can support reconstruction and diagnostic questions, but it
+  neither exposes private processing nor grants Controller or action authority.
+
 This note explains what the KSODI Hangar is, how the term arose, which
 observation objects it may contain, where Sigma, Hangar views, Drift and
 second differences are methodically useful, and which identity,
@@ -96,8 +108,9 @@ that inner space.
 
 The canonical KSODI Hangar is the Observer-side counterpart: it retains and
 compares traces that became observable under the declared vantage and
-instrumentation. It must not be confused with an imagined "inner hangar" of a
-participant.
+instrumentation. It must not be confused with a participant-specific inner
+processing space, historically described through the image of an “inner
+hangar”.
 
 In the v3.51 development line, Hangar partitions also retain observation
 granularity, observed unit, parent relation, membership map and composition
@@ -107,7 +120,7 @@ distribution or counted repeatedly without disclosure.
 
 ```text
 KSODI brings observable runway traces into the observer-side Hangar;
-it never enters a participant's inner hangar.
+it never enters a participant's inner processing space.
 ```
 
 The transient Handshake / interaction space between participants belongs to
@@ -728,6 +741,11 @@ H_Z(W_A | p_Z)        = {Z_A(k_A) | k_A in W_A}
 H_IK(W_A | p_IK)      = {IK_A(k_A) | k_A in W_A}
 H_IK_rel(W_AB | p_rel) = {IK_rel_AB(j) | j in W_AB^rel}
 ```
+
+The braces denote an identity-indexed family or collection, not a
+value-deduplicating mathematical set. Two members with equal coordinate or
+projection values remain separate members when their source, event,
+trajectory, index, window or profile identities differ.
 
 Examples of distributions over already aggregated windows:
 

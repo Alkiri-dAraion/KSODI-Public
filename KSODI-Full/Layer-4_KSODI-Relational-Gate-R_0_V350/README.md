@@ -76,6 +76,13 @@ replace the raw result or become action authority.
 
 ## Boundaries
 
+A future residualization profile must not ask `R_0` to repair different source
+accounting. Both movement operands need identical or explicitly compatible
+evidence-object and residualization contracts before the gate question is
+well-formed. An open gate over residual views would still establish only the
+declared eligibility result, not an unknown source, relation, meaning or
+communication. This guard changes no v3.51 gate formula or threshold.
+
 This v3.51 package does not authorize software merge, threshold choice,
 runtime-conformance claims, external implementation alignment, Controller
 action, a GitHub tag, GitHub Release, DOI or Zenodo artifact.

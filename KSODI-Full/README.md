@@ -18,6 +18,11 @@ The current Public-main v3.51 scope contains:
 KSODI-Full observes. It does not decide, steer, intervene or replace human and
 domain responsibility.
 
+Published method documentation and method materials in this repository are
+licensed under CC BY 4.0 unless a file or subfolder explicitly states
+otherwise. Separately published software implementations are distinct works
+with their own repository licences.
+
 ## Start with the boundary
 
 Read the cumulative
@@ -86,6 +91,18 @@ provenance and the complete handoff route.
 Phase H is a reproducible protection and diagnostic package. It introduces no
 new canonical formula, threshold, profile or empirical calibration and does
 not establish runtime conformance.
+
+## Evidence-object compatibility before relational comparison
+
+Future raw, known-source-adjusted and residual views must remain separately
+identified observation objects. Their downstream Z trajectories, IK views and
+profiles are not silently interchangeable. `R_0` may compare movement operands
+only under an identical or explicitly compatible evidence-object and
+residualization contract; `IK_rel` must retain that exact handoff and the return
+path to both compatible monadic operands. Neither an open gate nor a regular
+residual pattern proves an unknown source, relation, shared code, meaning or
+successful communication. The residualization contract itself remains Future
+Work and changes no v3.51 formula.
 
 ## Three reading channels
 

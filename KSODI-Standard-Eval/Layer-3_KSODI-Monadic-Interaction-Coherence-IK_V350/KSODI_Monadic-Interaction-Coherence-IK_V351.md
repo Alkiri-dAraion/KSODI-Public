@@ -643,6 +643,13 @@ its profile, validation and comparison contract is explicitly accepted.
 
 ## 9. Downstream boundaries
 
+**Cross-cutting evidence-object guard.** Every IK view inherits the exact
+tagged `Z` observation object from which it is derived. A future residual-view
+IK therefore remains distinct from its raw-view counterpart even under the
+same weights and even when scalar values happen to match. Subtracting finished
+IK scores does not construct a residual IK. The later compatibility contract
+is Future Work and changes no v3.51 formula.
+
 ### 9.1 Relation to R0
 
 `R0` is evaluated on its separate relational branch from distinguishable typed

@@ -254,6 +254,11 @@ answered the wrong task or moved too quickly.
 These patterns remain prompt-level guidance. They are not the same as formal
 KSODI-Standard-Eval or KSODI-Full monitoring.
 
+For implementation-facing boundaries and examples, continue with the
+[KSODI-Light Developer Notes](./developer-notes/README.md). For a bounded
+example of attributable use feedback, see the
+[KSODI-Light User Feedback reader](./user-feedback/README.md).
+
 ## Optional Internal Completeness Estimates
 
 KSODI-Light normally produces short natural-language feedback rather than a

@@ -792,6 +792,13 @@ of A and B does not create a dyadic measure.
 
 ## 8. Relational Boundary
 
+**Cross-cutting evidence-object guard.** A later known-source residualization
+profile would evaluate S over a separately identified residual evidence object
+before S is calculated. It would not subtract S scores after calculation or
+silently relabel a raw-view result. Raw and residual S records remain distinct;
+the required transformation contract is Future Work and changes no v3.51
+formula.
+
 `S0`, Delta S, Delta2 S, `S_Σ(W)` and `S_Σ(Hangar)` describe monadic
 structural behavior. They do not measure structural resonance or coupling.
 

@@ -5,13 +5,15 @@
 The formula basis was first published in Public commit
 `0a9238268a24dbad782061680d619c6752f5550e` dated 2026-11-10. The exact source
 bytes used after the external-review reconciliation are identified below; the
-companion change adds a fixture-vocabulary mapping and changes no formula.
+companion change adds a fixture-vocabulary mapping. The 2026-11-12 method
+reconciliation adds an evidence-object compatibility guard. Neither change
+alters a frozen formula.
 
 | Governed source | SHA-256 |
 | --- | --- |
-| `KSODI_Relational-Gate-R_0_V351.md` | `a2c4052090c3d702556c2ab2d57ad6f85363337bd7cd2add8b39646d45d7c724` |
+| `KSODI_Relational-Gate-R_0_V351.md` | `e7ee08362506a2098debbe74d191d01f0d8ad4975c3004df7c703f54143bb614` |
 | `KSODI_Relational-Gate-R_0_Implementation-Companion_V351.md` | `f2f263e507fadaeb9e3e59e2798335d609862cf2948483b7960a3c158f010425` |
-| `KSODI_Dyadic-Relational-Coherence-IK_rel_V351.md` | `f6f62404d55e871a535d749019bcc8c7e2db3b4d321d232ed2bf1207ad425677` |
+| `KSODI_Dyadic-Relational-Coherence-IK_rel_V351.md` | `6b69140ebf2c78002324354bc80b2f0a8f27ba3c7e0d207cc7478f15a41551b8` |
 | `KSODI_Dyadic-Relational-Coherence-IK_rel_Implementation-Companion_V351.md` | `8f594992b4e35bb61fcbcff7fd4b8859357571cf806745fcc7b035537f396c82` |
 
 These hashes bind the review to exact Public bytes. The companions remain

@@ -80,6 +80,13 @@ partial-mask strata and window aggregates must not be silently mixed.
 
 ## Transition to IK
 
+A later residualization profile would create a separately tagged `Z` from
+operator records evaluated over that residual evidence object. It would not
+replace the raw-view `Z`, mix raw and residual coordinates, or obtain a
+residual state by subtracting two Z vectors after evaluation. The required
+transformation and compatibility contract remain Future Work; the v3.51 Z
+construction is unchanged.
+
 Complete typed Z remains the return object for the jointly reviewed v3.51 IK
 views:
 

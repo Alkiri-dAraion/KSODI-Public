@@ -112,12 +112,14 @@ human readers who need coherent navigation through an extensive method
 repository, and machine-assisted readers who increasingly use AI tools to
 inspect, compare and understand large repositories.
 
-The change does not remove human review. Anne reads every public-facing article
-and file before it becomes part of the accepted method line. Co-authors and
-contributors review relevant material from their respective mathematical,
-technical, pedagogical, communication-theoretical and implementation
-perspectives. Small inconsistencies are regularly found and corrected. The
-commit history is part of this visible iterative review process.
+The change does not remove human review. Anne reviews and authorizes every
+Public change before it becomes part of the accepted method line, using
+diff-level inspection together with focused reading and repeated spot checks
+appropriate to the affected material. Co-authors and contributors review
+relevant material from their respective mathematical, technical, pedagogical,
+communication-theoretical and implementation perspectives. Small
+inconsistencies are regularly found and corrected. The commit history is part
+of this visible iterative review process.
 
 Model-assisted drafting should therefore not be confused with autonomous
 authorship. Models help maintain scale, cross-file consistency and accessible

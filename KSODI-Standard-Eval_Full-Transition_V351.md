@@ -110,6 +110,57 @@ new total score or replacement truth. Standard-Eval ends at monadic
 trajectory observation and these monadic views. It does not establish a
 relation between trajectories.
 
+### Applicability and expected numeric coverage
+
+The upper numeric layers speak only where all five required operator
+coordinates are numeric under the same declared event, basis and profile
+contract. If an operator is `not_applicable`, `not_observable`, failed or
+otherwise nonnumeric, the complete typed record preserves that state; it does
+not fabricate a canonical complete numeric `Z`, `IK`, `R_0` or `IK_rel`
+result. This is an applicability boundary, not a judgement that the event or
+interaction lacks value.
+
+A distinct later O-profile is needed for interaction-internal residual and
+reference reconstruction when observable participants or systems appear to
+exchange logically structured signals although the Observer cannot yet decode
+their language, code or semantics. This route does not begin with
+undifferentiated visible material: attributable contributions from known
+sources are first retained and accounted for and, where a valid common
+representation permits it, subtracted. The remaining visible residual can
+then be examined for recurrence, sequence, transformation or response
+patterns. Current O may already admit visible interaction elements as
+reference material; what remains undefined is this controlled residualization
+and the construction and validation of an interaction-internal reference
+basis. This is a methodically necessary research direction for cross-species
+and cross-protocol observation, not part of v3.51. It must distinguish
+source-local evidence from
+relational contingencies and must not turn pattern regularity into a claim of
+an unknown source, meaning, shared understanding, intent or successful
+communication.
+
+A later, separately identified O-profile for checking external sources not
+present in the observed interaction is a methodically necessary research
+direction for KSODI's broader reconstruction ambition. It is planned research,
+not part of v3.51, and would require its own basis, source-access boundary,
+identity, instrument and validation. Whether it should be developed before
+v3.6 or in parallel remains open and depends in particular on reproducible
+evidence from the preceding implementation line. It would address “a source
+is required but is not visible
+here”, not silently convert “no source is expected for this question” into a
+numeric O result.
+
+### Future cross-layer identity of raw and residual views
+
+Any later known-source residualization occurs at the evidence-object level,
+before operator calculation. K/S/O/D/I results must identify whether they were
+calculated from the admitted raw material or from a separately constructed
+residual view; score subtraction is not a substitute. Raw and residual `Z`
+states are distinct tagged objects, and every IK view inherits that identity.
+`R_0` may compare movements only under the same or an explicitly compatible
+residualization contract. Current `IK_rel` would additionally require both
+compatible `IK_w` operands and the exact matching `R_0` handoff. This is a
+research guard for a later profile, not a v3.51 calculation change.
+
 ### KSODI-Full: dyadic observation from R_0
 
 After complete typed `Z`, the architecture branches. Monadically derived IK

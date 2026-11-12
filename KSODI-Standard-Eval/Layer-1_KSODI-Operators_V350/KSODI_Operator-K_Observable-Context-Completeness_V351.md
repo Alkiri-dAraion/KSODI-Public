@@ -770,6 +770,13 @@ provenance. Side-by-side display of A and B does not create a dyadic K measure.
 
 ## 8. Relational and Controller Boundary
 
+**Cross-cutting evidence-object guard.** A later known-source residualization
+profile would evaluate K over a separately identified residual evidence object
+before K is calculated. It would not subtract K scores after calculation or
+silently relabel a raw-view result. Raw and residual K records remain distinct;
+the required transformation contract is Future Work and changes no v3.51
+formula.
+
 `K0`, Delta K, Delta2 K, `KΣ(W)` and `KΣ(Hangar)` describe monadic context
 provisioning. They do not measure shared context, mutual understanding,
 adaptation, resonance or coupling.

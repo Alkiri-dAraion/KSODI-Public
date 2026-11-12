@@ -2,6 +2,7 @@
 
 - Initial freeze: 2026-11-05
 - Public reconciliation: 2026-11-09
+- Evidence-object guard reconciliation: 2026-11-12 (no formula change)
 
 ## 1. Governed public source basis
 
@@ -11,8 +12,8 @@ they do not imply empirical validation or implementation acceptance.
 
 | Governed source | SHA-256 |
 | --- | --- |
-| [`KSODI_State-Vector-Z_V351.md`](../../Layer-2_KSODI-State-Vector-Z_V350/KSODI_State-Vector-Z_V351.md) | `f3ad6674ad8c5a97c3b49f30ee44f9b8b0eb87ce50cdccdc011d0f057d71c846` |
-| [`KSODI_Monadic-Interaction-Coherence-IK_V351.md`](../KSODI_Monadic-Interaction-Coherence-IK_V351.md) | `517219d50ac00ddf41836c94af2a66d2d78df4bff250f268a6a82eef5e613d7e` |
+| [`KSODI_State-Vector-Z_V351.md`](../../Layer-2_KSODI-State-Vector-Z_V350/KSODI_State-Vector-Z_V351.md) | `63840697ba7a5676329466dc43b90d84bca278167f0b9e9368b7b52b5c756cb9` |
+| [`KSODI_Monadic-Interaction-Coherence-IK_V351.md`](../KSODI_Monadic-Interaction-Coherence-IK_V351.md) | `f506800f894b82842d0aebc4be418657a39517efe930049bb1dae6d49865c0aa` |
 | [`KSODI_Monadic-Interaction-Coherence-IK_Implementation-Companion_V351.md`](../KSODI_Monadic-Interaction-Coherence-IK_Implementation-Companion_V351.md) | `8dbcf9b6e4ff300a8b55eedc6dd114b3151852ed42db8ed36bb7f01424638809` |
 | [`IK_M2_AXIS_DEVIATION_DUAL_RESOLUTION_PUBLIC_CONCEPT_V351.md`](../IK_M2_AXIS_DEVIATION_DUAL_RESOLUTION_PUBLIC_CONCEPT_V351.md) | `d79308b09a120c154529c895809186134443fa69dcacb0fd9231ade83dceae6b` |
 | [`IK_M2_V351_RESULT_CONTRACT_V01.md`](./IK_M2_V351_RESULT_CONTRACT_V01.md) | `295550486f893a4dca32ba1b2a989ee23d39d5510146c8bafeeb88d00fd8befe` |

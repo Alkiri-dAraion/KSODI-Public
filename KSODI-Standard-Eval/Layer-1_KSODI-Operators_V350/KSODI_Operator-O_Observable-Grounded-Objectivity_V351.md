@@ -682,6 +682,13 @@ loss without deleting or relabelling excluded members.
 
 ## 8. Relational Boundary
 
+**Cross-cutting evidence-object guard.** A later known-source residualization
+profile would evaluate O over a separately identified residual evidence object
+before O is calculated. It would not subtract O scores after calculation or
+silently relabel a raw-view result. Raw and residual O records remain distinct;
+constructing an interaction-internal reference from that residual requires its
+own Future Work contract and changes no v3.51 formula.
+
 O0, Delta O, Delta2 O, O Sigma(W) and O Sigma(Hangar) remain monadic.
 Relational comparison requires distinguishable trajectories, explicit pairing
 or constellation, compatible profiles, an open numeric canonical complete R0

@@ -512,7 +512,14 @@ R0 results require the same:
 - coordinate metric, norm family, trajectory aggregation, weights, clipping,
   numeric and threshold profiles;
 - parameter-origin/calibration-state contract;
+- evidence-object kind and identical or explicitly compatible residualization
+  contract where a later residual view is selected;
 - method/result kind and compatible source identities.
+
+`R0` does not repair incompatible source accounting. An open gate over future
+residual views would establish only the declared eligibility result, not an
+unknown source, relation, meaning or communication. This Future Work guard
+changes no v3.51 norm, threshold or gate formula.
 
 ### 10.2 Relational-index dynamics
 

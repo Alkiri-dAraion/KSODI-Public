@@ -41,6 +41,14 @@ Human readers: begin with
 here for the public overview. AI agents use `AGENTS.md` as their preflight and
 need only a short README overflight before following the same reading route.
 
+**At a glance:** KSODI is a structured observation method for interaction
+structures involving distinguishable entities, focussing on explainable
+governance and observability. **KSODI is intended as a broadly reusable
+baseline instrument for observation, reconstruction and evaluation alongside
+domain-specific tools.** Broad use requires declared domain profiles and,
+where needed, domain-specific adaptation of the operator calculations under
+explicit versioned contracts.
+
 ## Citation and fixed v3.5.0 snapshot
 
 The fixed KSODI v3.5.0 repository snapshot was published on 2026-09-01 as an
@@ -55,9 +63,6 @@ does not alter the fixed tag or deposited archive.
 
 ## What KSODI Is
 
-KSODI is a structured observation method for interaction structures involving
-distinguishable entities, focussing on explainable governance and
-observability.
 The KSODI Framework situates the versioned Method inside a broader connective
 orientation while keeping Light, Observer, candidate interaction protocol,
 implementation and any future Controller distinguishable. The KSODI Protocol
@@ -199,11 +204,14 @@ direction `I -> D -> O -> S -> K` (IDOSK).
 
 Implementation work made the signal boundary unavoidable. Without an
 observable carrier event, reconstruction cannot begin. Historical Observer
-work showed that the operator
-logic could be operationalized and made visible through states, trajectories,
-heatmaps and comparison views. It also exposed a methodological weakness:
-where entity, event and trajectory identities are mixed, apparent change cannot
-be attributed responsibly.
+work showed that the operator logic could be calculated repeatedly under its
+implementation conditions and made visible through states, trajectories,
+heatmaps and comparison views. Its evidence nevertheless remained incomplete
+for present questions: monadic, dyadic and possible n-adic objects and their
+identities were not yet cleanly separated. Where entity, event and trajectory
+identities are mixed, apparent change cannot be attributed responsibly. The
+gap is part of the result; repeatable calculation is not by itself current
+method conformance or empirical validation.
 
 A simple metaphor captures the problem. If a princess kisses a frog and the
 frog changes back, an Observer who has not separated the kiss, the frog's own
@@ -237,6 +245,16 @@ Private work reaches Public only through a selective, reviewed and separately
 authorized Public change. Later Private drafts do not retrospectively alter a
 tagged Public snapshot, and Public changes do not silently update Private or an
 implementation repository.
+
+Absence from this Public repository is therefore a publication-state fact, not
+an epistemic conclusion. It does not establish that a question, assumption,
+candidate specification, test or Future Work route is unknown, rejected or
+nonexistent; material may be outside the selected version, privately retained,
+archived, under review or deliberately omitted from the active reader surface.
+The converse guard matters equally: unpublished material is not thereby valid
+or mature, and a published open question is not thereby an accepted method
+requirement. Only the exact declared Public version determines its public
+method and evidence claims.
 
 Cached pages, snippets and legacy links under `KSODI-Methode` must therefore be
 read as historical states of the same KSODI provenance. For current public
@@ -705,11 +723,17 @@ guidance.
 
 Historical Observer evidence: KSODI has already been explored in a complete
 historical v3.3 Observer implementation with dashboards, heatmaps, trajectory
-views and comparison views. The public image archive is useful as evidence that
-the method can be operationalized, while also showing why the v3.5 transition
-and v3.51 precision work separate explicit source-local `Z_A(k_A)`, monadic
-`IK`, `R_0`, `IK_rel`
-and later R-family work more carefully. See the
+views and comparison views. The public image archive is useful evidence of
+repeatable operationalization under that implementation, while the incomplete
+monadic/dyadic/n-adic separation limits what can be reconstructed from its
+results. The v3.5 transition and v3.51 precision work therefore separate
+explicit source-local `Z_A(k_A)`, monadic `IK`, `R_0`, `IK_rel` and later
+R-family work more carefully. The current implementation route deliberately
+starts from this corrected architecture and first measures visible behavior
+reproducibly under declared and varied conditions before making stronger
+relational or semantic claims. The selected public images and provenance carry
+the historical lesson without making the complete legacy implementation corpus
+part of the active reader surface. See the
 [Historical Observer Assets](./archive/assets-archive/historical-observer-v342/README.md).
 
 ## v3.51 Direction: Observer-Supported Agentic Systems
