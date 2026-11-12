@@ -53,30 +53,7 @@ all published versions and resolves to the latest one. See
 metadata. The moving `main` branch may contain later documentation updates and
 does not alter the fixed tag or deposited archive.
 
-## `KSODI-Methode`: Former Repository Name, Same KSODI Method
-
-`KSODI-Methode` was the former repository name and names the same KSODI method
-documented here. It does **not** identify a second, earlier or competing
-method. The repository was renamed to `KSODI-Public` to make the publication
-boundary visible: this repository contains the publicly released method
-materials and is the authoritative public method and citation repository. A
-separate Private repository is an internal, evolving workbench. It is not a
-public source, citation target or second authority for an already tagged Public
-version. The split changed repository visibility and naming, not the identity
-or provenance of the method.
-
-Public, Private and separately maintained implementation repositories are
-independent Git histories, not mirrors or synchronized copies. Shared ancestry,
-similar paths or overlapping files do not imply equality or automatic transfer.
-Private work reaches Public only through a selective, reviewed and separately
-authorized Public change. Later Private drafts do not retrospectively alter a
-tagged Public snapshot, and Public changes do not silently update Private or an
-implementation repository.
-
-Cached pages, snippets and legacy links under `KSODI-Methode` must therefore be
-read as historical states of the same KSODI provenance. For current public
-definitions, file names and scope, use `KSODI-Public` on `main`; for the fixed
-v3.5.0 snapshot, use tag `v3.5.0`.
+## What KSODI Is
 
 KSODI is a structured observation method for interaction structures involving
 distinguishable entities, focussing on explainable governance and
@@ -196,6 +173,17 @@ bounded Hangar image, continue with the [Conceptual Note v3.51](./Conceptual-Not
 the [Hangar Origin and Analogy Companion V351](./KSODI-Hangar_Origin-and-Analogy-Companion_V351.md)
 and the formally governing [KSODI Hangar V351](./KSODI-Hangar_V351.md).
 
+### What still separates moving `main` from the fixed v3.51 release
+
+The v3.51 snapshot is fixed only after the selected reference packages
+reproduce, active links and release metadata pass their checks, Root and scope
+readers agree on the same boundary, affected human attribution has been
+reviewed, and Anne has separately authorized the exact release commit,
+`CITATION.cff`, tag, GitHub Release and Zenodo deposit. Passing one technical
+check does not substitute for the remaining semantic, attribution or
+publication decisions. Until those steps are complete, Public `main` remains
+the moving v3.51 surface rather than the fixed citation snapshot.
+
 ## Why KSODI Exists
 
 KSODI began with a practical question in sustained work with GPT-3.5: how must
@@ -229,6 +217,31 @@ source-attributed events and monadic trajectories before any relational branch
 opens. The longer development chronology is preserved in the
 [KSODI Development Timeline](./docs/timeline/KSODI_Timeline_since_2023-05.md)
 ([German version](./docs/timeline/KSODI_Timeline_seit_2023-05.md)).
+
+## `KSODI-Methode`: Former Repository Name, Same KSODI Method
+
+`KSODI-Methode` was the former repository name and names the same KSODI method
+documented here. It does **not** identify a second, earlier or competing
+method. The repository was renamed to `KSODI-Public` to make the publication
+boundary visible: this repository contains the publicly released method
+materials and is the authoritative public method and citation repository. A
+separate Private repository is an internal, evolving workbench. It is not a
+public source, citation target or second authority for an already tagged Public
+version. The split changed repository visibility and naming, not the identity
+or provenance of the method.
+
+Public, Private and separately maintained implementation repositories are
+independent Git histories, not mirrors or synchronized copies. Shared ancestry,
+similar paths or overlapping files do not imply equality or automatic transfer.
+Private work reaches Public only through a selective, reviewed and separately
+authorized Public change. Later Private drafts do not retrospectively alter a
+tagged Public snapshot, and Public changes do not silently update Private or an
+implementation repository.
+
+Cached pages, snippets and legacy links under `KSODI-Methode` must therefore be
+read as historical states of the same KSODI provenance. For current public
+definitions, file names and scope, use `KSODI-Public` on `main`; for the fixed
+v3.5.0 snapshot, use tag `v3.5.0`.
 
 ## Two Directed Process Topologies
 

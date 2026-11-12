@@ -26,8 +26,10 @@ For citation of the fixed public v3.5.0 snapshot, use Zenodo DOI
 moving `main` branch remains the current Public reading surface.
 
 KSODI is one method with three named public scopes. They are not three
-independent or competing methods. GitHub lists folders alphabetically; that
-order is not the conceptual reading sequence.
+independent or competing methods. Read the hierarchy as one method, three
+scope levels and several layer-specific calculations; a layer, view, formula
+or implementation is not another KSODI method. GitHub lists folders
+alphabetically; that order is not the conceptual reading sequence.
 
 ## A Picture Before the Mathematics
 
@@ -69,8 +71,9 @@ The central terms can be read through this picture:
   source-attributed “runway traces” can be brought into one observer-side
   space, placed beside one another and inspected across windows for patterns,
   distributions or drift. The aircraft are not fused, and KSODI never enters
-  a participant's imagined inner hangar. The formal boundaries are explained
-  in [KSODI Hangar V351](./KSODI-Hangar_V351.md).
+  a participant's private inner processing space (historically pictured as an
+  “inner hangar”). The formal boundaries are explained in
+  [KSODI Hangar V351](./KSODI-Hangar_V351.md).
 - **Corridor:** a declared expected region or path for comparable observations
   under one profile. Leaving a corridor is a review signal, not an automatic
   diagnosis, judgement or instruction to intervene.
