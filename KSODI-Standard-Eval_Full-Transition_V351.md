@@ -112,13 +112,16 @@ relation between trajectories.
 
 ### Applicability and expected numeric coverage
 
-The upper numeric layers speak only where all five required operator
-coordinates are numeric under the same declared event, basis and profile
-contract. If an operator is `not_applicable`, `not_observable`, failed or
-otherwise nonnumeric, the complete typed record preserves that state; it does
-not fabricate a canonical complete numeric `Z`, `IK`, `R_0` or `IK_rel`
-result. This is an applicability boundary, not a judgement that the event or
-interaction lacks value.
+Canonical complete upper-layer results speak only where all five required
+operator coordinates are numeric under the same declared event, basis and
+profile contract. Separately named reduced views such as `IK_w^[M]` and
+`R_0^[M]` may answer a different, explicitly fixed coordinate-subset question;
+they are not missing-data repairs or canonical complete results. Current
+primary `IK_rel` has no reduced form. If an operator is `not_applicable`,
+`not_observable`, failed or otherwise nonnumeric, the complete typed record
+preserves that state; it does not fabricate a canonical complete numeric `Z`,
+`IK`, `R_0` or `IK_rel` result. This is an applicability boundary, not a
+judgement that the event or interaction lacks value.
 
 A distinct later O-profile is needed for interaction-internal residual and
 reference reconstruction when observable participants or systems appear to

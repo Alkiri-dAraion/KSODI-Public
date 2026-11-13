@@ -696,10 +696,11 @@ decision or new evaluation; it does not rewrite what was accessible to the
 earlier run. Evidence excluded from one calculation remains available to
 another admitted profile where its carrier, provenance and retention permit.
 
-Depending on the layer, they may describe a user's input, an assistant's
-output, a local agent event or another attributable entity event. At the formal
-Standard-Eval layer, they never describe a merged shared state. A shared
-interaction condition may be discussed as Light-level orientation or examined
+Depending on the layer, K/S/O/D/I operator records may describe a user's
+input, an assistant's output, a local agent event or another attributable
+entity event. At the formal Standard-Eval layer, they never describe a merged
+shared state. A shared interaction condition may be discussed as Light-level
+orientation or examined
 later through explicitly relational layers, but it is not a Layer-1 operator
 target.
 
@@ -981,7 +982,9 @@ The KSODI observation space is a formal abstraction.
 
 It is:
 	•	trajectory-based at its monadic foundation
-	•	temporary
+	•	instantiated for a declared interaction or observation window; the
+		concrete realization, retained record and access path may each be
+		temporary or lost
 	•	functional
 	•	model-based
 	•	open to a declared relational analysis only after the exact `R0`
@@ -1356,7 +1359,9 @@ additional dyadic requirements are satisfied.
 ### 17. Final Clarification
 
 The KSODI observation space is:
-	•	temporary
+	•	instantiated through declared interaction or observation windows whose
+		concrete realizations, retained records and access paths may be temporary
+		or lost
 	•	functional
 	•	model-based
 	•	monadic before any relational branch is opened

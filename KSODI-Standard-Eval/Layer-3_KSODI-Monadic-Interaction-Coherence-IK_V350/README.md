@@ -41,8 +41,11 @@ choose another order, but that order must not be presented as KSODI v3.51.
 2. Read the companion for conditional records, pseudocode, migration and tests.
 3. Return to complete typed Z whenever a component is non-numeric or a scalar
    hides a relevant coordinate difference.
-4. Treat R0 and IK_rel as separate relational branches with their own gates;
-   neither is a continuation step computed from IK.
+4. Treat `R0` as a separate relational gate calculated from its declared
+   movement operands, not from IK. Current `IK_rel` is a distinct downstream
+   relational projection, not a continuation computed from one monadic IK. It
+   additionally requires the exact compatible `R0` handoff and comparable
+   paired numeric `Delta IK_w` operands without merging the trajectories.
 
 ## Active v3.51 files
 

@@ -97,6 +97,11 @@ For governance and compliance?
 Or, more practically:
 Could it help developers detect early when an autonomous orthopedic purchasing agent suddenly starts ordering chicken feed — or cardiology medication?
 
+That example requires a suitable domain profile: the declared requirement set,
+reference space and admitted evidence must make the procurement mismatch
+observable. A generic profile need not distinguish it, and a KSODI signal is
+not already a domain judgement or authorization to intervene.
+
 This perspective formed the basis for situating the versioned KSODI Method
 inside the broader **KSODI Framework** and considering an associated
 **KSODI Protocol**: the Method supplies observation, while interaction
@@ -299,7 +304,7 @@ boundaries and changes inspectable without merging the participating entities.
 
 💞️ We’re looking to collaborate with professionals from various fields in the development of the KSODI method
 
-📫 How to reach us ( yes, we love horses...🐎 ): ksodi.horse@thevoid.email
+📫 How to reach us: ksodi@thevoid.email
 
 ⚡ "Tealogy Friends" (Quote: ChatGPT 4.5, Deutsch: "Teeologie-Freunde" = “We just love tea”)
 

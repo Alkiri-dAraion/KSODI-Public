@@ -20,9 +20,10 @@ The moving Public `main` branch contains the reviewed v3.51 method line through
 Layer 5:
 
 ```text
-KSODI-Light
-    |
-K / S / O / D / I -> typed Z
+KSODI-Light (independently usable)
+    : optional combination with an observed participant or agent
+    :
+external Observer: K / S / O / D / I -> typed Z
                        |-- monadic IK
                        `-- relational R_0 gate -> dyadic IK_rel
 ```
