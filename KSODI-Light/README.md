@@ -49,17 +49,17 @@ combined with them.
 ```text
 KSODI-Light version on Public main: v3.51
 publication state: published_on_public_main
-fixed complete KSODI release: v3.5.0
-complete tagged v3.51 release: not_yet_published
+fixed complete KSODI release: v3.51
+complete tagged v3.51 release: published
 ```
 
 The KSODI-Light v3.51 files in this directory are published method and guidance
-materials on the moving Public `main` branch. Their publication state is
-`published_on_public_main`. The repository-wide v3.51 method is being published
-layer by layer, so this Layer-0 publication does not by itself constitute the
-later complete, tagged v3.51 release.
+materials on Public `main` and in the fixed tagged v3.51 release. Their
+layerwise publication did not by itself create that complete release; tag
+`v3.51`, its GitHub Release and the version DOI identify the fixed snapshot.
 
-The fixed and citable complete release remains `v3.5.0`. Earlier v3.3 and v3.42
+The current fixed and citeable complete release is `v3.51`; `v3.5.0` remains
+the earlier fixed snapshot. Earlier v3.3 and v3.42
 materials and the displaced v3.50 Light files remain in clearly marked
 historical archives. They are provenance, not current Light guidance.
 

@@ -10,7 +10,7 @@ the published Layer-0-to-Layer-5 method packages. The fixed Public v3.5 tag,
 GitHub Release and DOI remain unchanged; a later Public-main successor does
 not retrospectively alter that citation snapshot.
 
-The current moving Public surface contains the Layer-1 operator packages and
+The fixed v3.51 release contains the Layer-1 operator packages and
 the reader-first Layer-2 Z, Layer-3 IK, Layer-4 R0 and Layer-5 IK_rel method,
 companion and reference packages. The root Architecture, Hangar, Framework
 transition note and this Conceptual Note provide cross-layer orientation.

@@ -1,7 +1,6 @@
 # KSODI `IK_rel` — Dyadic Relational Coherence Compatibility v3.51
 
-Authority: published on moving Public `main` and selected for the v3.51
-release; the fixed release remains separately authorized. Conditional schemas
+Authority: contained in the fixed tagged v3.51 release. Conditional schemas
 and pseudocode belong in the
 [implementation companion](./KSODI_Dyadic-Relational-Coherence-IK_rel_Implementation-Companion_V351.md).
 The assertion-checked basis is retained in

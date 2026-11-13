@@ -12,7 +12,7 @@ method, companion and upstream monadic sources used to construct it. It does not
 
 | Source | SHA-256 |
 | --- | --- |
-| `KSODI_State-Vector-Z_V351.md` | `63840697ba7a5676329466dc43b90d84bca278167f0b9e9368b7b52b5c756cb9` |
+| `KSODI_State-Vector-Z_V351.md` | `bee6b5b63f6557a6cedbea885c8c7e9308170a7daebba156958ced7657c19887` |
 | `KSODI_Monadic-Interaction-Coherence-IK_V351.md` | `5e9e5c640b493c747988fdf130182efba727091d78e8e17db4084e9edd8fc8f4` |
 | `KSODI_Relational-Gate-R_0_V351.md` | `e7ee08362506a2098debbe74d191d01f0d8ad4975c3004df7c703f54143bb614` |
 | `KSODI_Relational-Gate-R_0_Implementation-Companion_V351.md` | `f2f263e507fadaeb9e3e59e2798335d609862cf2948483b7960a3c158f010425` |

@@ -148,18 +148,21 @@ typed statuses, reference suite and cross-relation sensitivity review.
 
 ## Publication and citation state
 
-The cumulative Layer-4, Layer-5 and Phase-H packages are published on moving
-Public `main` and selected for the complete v3.51 release. They do not yet
-constitute the tagged v3.51 release snapshot.
+The cumulative Layer-4, Layer-5 and Phase-H packages are part of the fixed
+tagged v3.51 release snapshot.
 
-The fixed citable complete release remains
-[`v3.5.0`](https://github.com/Alkiri-dAraion/KSODI-Public/releases/tag/v3.5.0).
+The current fixed citeable complete release is
+[`v3.51`](https://github.com/Alkiri-dAraion/KSODI-Public/releases/tag/v3.51),
+with version DOI
+[`10.5281/zenodo.24196705`](https://doi.org/10.5281/zenodo.24196705).
+The earlier [`v3.5.0`](https://github.com/Alkiri-dAraion/KSODI-Public/releases/tag/v3.5.0)
+snapshot remains available under its own tag and DOI.
 Its historical Full boundary remains available in the
 [v3.50 release-surface archive](../archive/document-snapshots/full-release/v350-replaced-by-v351/KSODI-Full-Release_V350.md).
-The current Public-main selection is summarized in
+The current released selection is summarized in
 [`KSODI-Full-Release_V351.md`](./KSODI-Full-Release_V351.md). The complete
-repository release artifact, tag, GitHub Release and DOI remain separate
-closing decisions.
+repository release artifact, tag, GitHub Release and DOI remain distinct
+publication objects even though they identify the same selected source state.
 
 The historical Observer images remain available as transition evidence in the
 [v3.42 Observer archive](../archive/assets-archive/historical-observer-v342/README.md).
@@ -174,5 +177,5 @@ The current Public package does not claim:
 - production or independent runtime conformance;
 - validation of later R-family calculations;
 - Controller, steering or intervention authority; or
-- that moving Public `main` already equals a tagged v3.51 release or DOI
-  snapshot.
+- that later changes on moving Public `main` automatically belong to the fixed
+  v3.51 release or DOI snapshot.

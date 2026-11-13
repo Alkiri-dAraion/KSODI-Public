@@ -12,7 +12,7 @@ they do not imply empirical validation or implementation acceptance.
 
 | Governed source | SHA-256 |
 | --- | --- |
-| [`KSODI_State-Vector-Z_V351.md`](../../Layer-2_KSODI-State-Vector-Z_V350/KSODI_State-Vector-Z_V351.md) | `63840697ba7a5676329466dc43b90d84bca278167f0b9e9368b7b52b5c756cb9` |
+| [`KSODI_State-Vector-Z_V351.md`](../../Layer-2_KSODI-State-Vector-Z_V350/KSODI_State-Vector-Z_V351.md) | `bee6b5b63f6557a6cedbea885c8c7e9308170a7daebba156958ced7657c19887` |
 | [`KSODI_Monadic-Interaction-Coherence-IK_V351.md`](../KSODI_Monadic-Interaction-Coherence-IK_V351.md) | `5e9e5c640b493c747988fdf130182efba727091d78e8e17db4084e9edd8fc8f4` |
 | [`KSODI_Monadic-Interaction-Coherence-IK_Implementation-Companion_V351.md`](../KSODI_Monadic-Interaction-Coherence-IK_Implementation-Companion_V351.md) | `8dbcf9b6e4ff300a8b55eedc6dd114b3151852ed42db8ed36bb7f01424638809` |
 | [`IK_M2_AXIS_DEVIATION_DUAL_RESOLUTION_PUBLIC_CONCEPT_V351.md`](../IK_M2_AXIS_DEVIATION_DUAL_RESOLUTION_PUBLIC_CONCEPT_V351.md) | `d79308b09a120c154529c895809186134443fa69dcacb0fd9231ade83dceae6b` |

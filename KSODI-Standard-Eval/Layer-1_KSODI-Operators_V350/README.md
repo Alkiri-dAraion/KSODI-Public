@@ -10,7 +10,8 @@ operational.
 Publication is layerwise. Operators K, S, O, D and I are now published here as
 v3.51 reference methods and conditional companions; O additionally carries
 its Source-Need Gate. Independent runtime conformance remains outstanding.
-This moving-`main` state is not yet the full tagged v3.51 release.
+These packages are part of the full tagged v3.51 release. Independent runtime
+conformance remains a separate evidence question.
 
 ## What this folder contains
 

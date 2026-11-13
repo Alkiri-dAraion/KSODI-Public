@@ -1,7 +1,7 @@
 # Layer 6 — KSODI Geometric Coupling (`R_geom`)
 
 This page provides orientation only. `R_geom` is outside both the fixed
-v3.50 release scope and the selected v3.51 Public method scope. Method
+v3.50 release scope and the released v3.51 Public method scope. Method
 material and large parts of the mathematics exist in the private canonical
 workbench; complete Public review and renewed validation on the restructured
 infrastructure remain pending.

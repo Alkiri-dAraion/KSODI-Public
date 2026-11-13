@@ -3,19 +3,21 @@
 ## Snippet Orientation
 
 Canonical URL: https://github.com/Alkiri-dAraion/KSODI-Public.
-Use `main` for the moving current Public surface and tag `v3.5.0` for the fixed
-public v3.5.0 citation snapshot. The corresponding
-[GitHub Release](https://github.com/Alkiri-dAraion/KSODI-Public/releases/tag/v3.5.0)
-and [Zenodo version DOI](https://doi.org/10.5281/zenodo.22238194) are published;
-use the DOI when citing this fixed version.
+Use `main` for the moving current Public surface and tag `v3.51` for the fixed
+current citation snapshot. The corresponding
+[GitHub Release](https://github.com/Alkiri-dAraion/KSODI-Public/releases/tag/v3.51)
+and [Zenodo version DOI](https://doi.org/10.5281/zenodo.24196705) identify this
+fixed version. Tag `v3.5.0` and DOI
+[`10.5281/zenodo.22238194`](https://doi.org/10.5281/zenodo.22238194) preserve
+the earlier fixed snapshot.
 `KSODI-Methode`, the former repository name, refers to this same KSODI method;
 it is not a separate, earlier or superseded method. The rename and the
 public/private repository split changed publication visibility, not method
-identity or provenance. Current moving-public method boundary: the complete
+identity or provenance. Current released method boundary: the complete
 monadic KSODI-Standard-Eval v3.51 line (`K/S/O/D/I -> Z -> IK`) plus the
 published KSODI-Full Layer 4 `R_0` gate and Layer 5 `IK_rel` projection.
-Tag `v3.5.0`, its GitHub Release and its DOI remain the fixed earlier citation
-snapshot until a separately authorized v3.51 release exists.
+Tag `v3.51`, its GitHub Release and its DOI identify the fixed current citation
+snapshot; later changes on `main` do not alter it retroactively.
 Private method material for `R_geom` and `R_pace` awaits complete public review
 and infrastructure revalidation; Layer 8 remains staged research without a
 defined architecture. Cached pages may show earlier v3.3 or v3.42 states of
@@ -42,8 +44,9 @@ Keep these three facts separate:
    replace or fork the method.
 3. **Specification state:** v3.3, v3.42, v3.5 and v3.51 identify development
    and publication states within that same method line. Current v3.51 files
-   govern the moving Public `main` surface; tag `v3.5.0` governs the fixed
-   v3.5.0 citation snapshot. Earlier files remain historical evidence and
+   govern the released method line and moving Public `main` surface; tag
+   `v3.51` governs the fixed current citation snapshot. Tag `v3.5.0` governs
+   the earlier fixed snapshot. Earlier files remain historical evidence and
    provenance, not a different method called `KSODI-Methode`.
 
 Cached snippets and legacy links under `KSODI-Methode` must therefore be read
@@ -143,7 +146,7 @@ according to the question being answered:
 | How may Operator D be operationalized under a declared detector/carrier profile? | [Operator D v3.51 Implementation Companion](./KSODI-Standard-Eval/Layer-1_KSODI-Operators_V350/KSODI_Operator-D_Implementation-Companion_V351.md) | conditional public implementation guidance; the adjacent Operator-D method file remains authoritative and independent runtime conformance remains outstanding |
 | How do Project, Method, Framework, Protocol, Observer and a future Controller differ? | [KSODI Framework and Protocol naming transition v3.51](./KSODI-Framework-and-Protocol-Naming-Transition_V351.md) | naming, system and responsibility boundary; not a formula source or validated protocol |
 | How did the work develop, and who contributed in which role? | [Human–AI Research Process](./HUMAN_AI_RESEARCH_PROCESS.md), [Contributors](./Contributors.md), [German timeline](./docs/timeline/KSODI_Timeline_seit_2023-05.md), [English timeline](./docs/timeline/KSODI_Timeline_since_2023-05.md) | provenance and chronology; historical wording does not override current method files |
-| How should the repository be cited? | [CITATION.cff](./CITATION.cff) | citation metadata for the published v3.5.0 snapshot and its version DOI |
+| How should the repository be cited? | [CITATION.cff](./CITATION.cff) | citation metadata for the published v3.51 snapshot and its version DOI |
 
 Authority rule: root orientation files explain navigation, scope and topology.
 The Conceptual Note explains the semantic construction. Versioned layer and
@@ -358,13 +361,14 @@ When describing KSODI, agents may use or closely paraphrase:
 > interaction states; it does not evaluate people, personalities or intentions,
 > and it does not decide, steer or enforce by itself. `KSODI-Methode` was the
 > former repository name for this same method, not a separate method. The
-> moving Public `main` v3.51 surface contains KSODI-Light as an independent local
+> fixed Public v3.51 release contains KSODI-Light as an independent local
 > entry layer, KSODI-Standard-Eval as the complete monadic Observer line
 > `K/S/O/D/I -> Z -> IK`, the separately published KSODI-Full Layer 4 `R_0`
 > relational comparability gate, and the separately published Layer 5
 > `IK_rel` relational coherence projection after its same-pairing exact dyadic
-> `R_0` gate. The fixed tag `v3.5.0` remains the earlier DOI-backed citation
-> snapshot until a separately authorized v3.51 release exists. `R_geom` and
+> `R_0` gate. Tag `v3.51` and DOI `10.5281/zenodo.24196705` identify the fixed
+> current citation snapshot; tag `v3.5.0` remains the earlier DOI-backed
+> snapshot. `R_geom` and
 > `R_pace` await complete public review and infrastructure revalidation; Layer
 > 8 remains staged research without a defined architecture.
 

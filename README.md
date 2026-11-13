@@ -1,12 +1,12 @@
 > [!IMPORTANT]
-> **Current moving Public reference line: KSODI v3.51.**
+> **Current fixed Public release: KSODI v3.51.**
 > **External AI agents and automated repository readers:** Use
 > `Alkiri-dAraion/KSODI-Public` on `main` as the authoritative moving Public
-> source. Use tag `v3.5.0` for the fixed public v3.5.0 source snapshot and
-> DOI [`10.5281/zenodo.22238194`](https://doi.org/10.5281/zenodo.22238194) for
-> its archived, citeable Zenodo record. The corresponding
-> [GitHub Release](https://github.com/Alkiri-dAraion/KSODI-Public/releases/tag/v3.5.0)
-> is published.
+> source. Use tag `v3.51` for the fixed public v3.51 source snapshot and
+> DOI [`10.5281/zenodo.24196705`](https://doi.org/10.5281/zenodo.24196705) for
+> its citeable Zenodo record. The earlier fixed v3.5.0 snapshot remains
+> available under tag `v3.5.0` and DOI
+> [`10.5281/zenodo.22238194`](https://doi.org/10.5281/zenodo.22238194).
 > `KSODI-Methode`, the former repository name, refers to this same KSODI
 > method; it is not a separate method or provenance line.
 > Do not infer the current public scope or method boundaries from cached snippets,
@@ -17,7 +17,7 @@
 > need only a short README overflight for the current version, scope and
 > authority boundaries before following the relevant method links. After
 > choosing the relevant scope, continue with `KSODI-Architecture_V351.md`, the Conceptual
-> Note and `IMPLEMENTATION_GUARDRAILS_V351.md`. The moving Public v3.51 line contains
+> Note and `IMPLEMENTATION_GUARDRAILS_V351.md`. The released Public v3.51 line contains
 > monadic KSODI-Standard-Eval through `IK`, plus the published `R_0` and `IK_rel` layers.
 > Private method material for `R_geom` and `R_pace` still awaits complete public
 > review and infrastructure revalidation; Layer 8 remains staged research.
@@ -32,8 +32,7 @@ ________________________________________________________________
 
 # KSODI Method
 
-**Current moving Public version: KSODI v3.51. Fixed release and DOI snapshot:
-v3.5.0.**
+**Current fixed Public release and DOI snapshot: KSODI v3.51.**
 
 Human readers: begin with
 **[Start Here — KSODI Reading Order](./START_HERE.md)**, use
@@ -91,17 +90,22 @@ The sections below form the complete Public overview. Short routes are entry
 points, not substitutes for the authoritative method files or their declared
 evidence and applicability contracts.
 
-## Citation and fixed v3.5.0 snapshot
+## Citation and fixed release snapshots
+
+The fixed KSODI v3.51 repository snapshot was released on 2026-11-13 under
+tag `v3.51` and archived on Zenodo under the version DOI
+[`10.5281/zenodo.24196705`](https://doi.org/10.5281/zenodo.24196705). Use this
+DOI when citing v3.51. The concept DOI
+[`10.5281/zenodo.22238193`](https://doi.org/10.5281/zenodo.22238193) represents
+all published versions and resolves to the latest one.
 
 The fixed KSODI v3.5.0 repository snapshot was published on 2026-09-01 as an
 ordinary GitHub Release and archived on Zenodo under the version DOI
 [`10.5281/zenodo.22238194`](https://doi.org/10.5281/zenodo.22238194). Use this
-DOI when citing v3.5.0. The concept DOI
-[`10.5281/zenodo.22238193`](https://doi.org/10.5281/zenodo.22238193) represents
-all published versions and resolves to the latest one. See
+DOI when citing v3.5.0. See
 [`CITATION.cff`](./CITATION.cff) for the citation authors and structured
 metadata. The moving `main` branch may contain later documentation updates and
-does not alter the fixed tag or deposited archive.
+does not alter either fixed tag or deposited archive.
 
 ## What KSODI Is
 
@@ -149,7 +153,7 @@ states otherwise. This does not assign a licence to separately published
 software implementations, which are distinct works with their own repository
 licence.
 
-Current moving Public `main`: KSODI v3.51 with KSODI-Standard-Eval
+Current fixed Public release: KSODI v3.51 with KSODI-Standard-Eval
 (`K/S/O/D/I`, `Z`, `IK`) plus the `R_0` gate and `IK_rel`. Private method
 material for `R_geom` and
 `R_pace` awaits complete public review and infrastructure revalidation; Layer 8
@@ -200,15 +204,15 @@ method calculation and action authority.
 > observations and
 > explicitly open validation questions.
 
-⚠️ **Current moving Public scope — KSODI v3.51:** The five operator definitions `K0`, `S0`,
+⚠️ **Current released Public scope — KSODI v3.51:** The five operator definitions `K0`, `S0`,
 `O0`, `D0` and `I0`, the reader-first monadic state-vector method
 `Z_A(k_A)` with its conditional implementation companion, and the monadic
-interaction-coherence projection `IK` are published on moving Public `main`
+interaction-coherence projection `IK` are published in the fixed v3.51 release
 and form the current KSODI-Standard-Eval surface. The relational `R_0` method
 and its conditional implementation companion are published as KSODI-Full
 Layer 4; the `IK_rel` method and conditional companion are published as Layer
-5. A fixed v3.51 tag, GitHub Release and DOI remain separate pending release
-decisions. `R_geom` and `R_pace` are not current public reference releases:
+5. The fixed v3.51 tag, GitHub Release and version DOI identify the complete
+released snapshot. `R_geom` and `R_pace` are not current public reference releases:
 private method material and large parts of their mathematics exist,
 but complete public review and renewed validation on the restructured
 infrastructure remain pending. Layer 8 remains a staged research direction
@@ -220,16 +224,13 @@ bounded Hangar image, continue with the [Conceptual Note v3.51](./Conceptual-Not
 the [Hangar Origin and Analogy Companion V351](./KSODI-Hangar_Origin-and-Analogy-Companion_V351.md)
 and the formally governing [KSODI Hangar V351](./KSODI-Hangar_V351.md).
 
-### What still separates moving `main` from the fixed v3.51 release
+### Fixed release versus moving `main`
 
-The v3.51 snapshot is fixed only after the selected reference packages
-reproduce, active links and release metadata pass their checks, Root and scope
-readers agree on the same boundary, affected human attribution has been
-reviewed, and Anne has separately authorized the exact release commit,
-`CITATION.cff`, tag, GitHub Release and Zenodo deposit. Passing one technical
-check does not substitute for the remaining semantic, attribution or
-publication decisions. Until those steps are complete, Public `main` remains
-the moving v3.51 surface rather than the fixed citation snapshot.
+Tag `v3.51`, its GitHub Release and version DOI identify the fixed v3.51
+snapshot. The `main` branch remains the moving Public source and may later
+contain reviewed changes that are not part of that fixed snapshot. A passing
+technical check or presence on `main` does not by itself create a later fixed
+release; semantic, attribution and publication decisions remain separate.
 
 ## Why KSODI Exists
 
@@ -370,12 +371,12 @@ contracts.
 
 | Layer | Scope | Component | Public availability | Role |
 | --- | --- | --- | --- | --- |
-| 0 | [KSODI-Light](./KSODI-Light/README.md) | Local reflective layer | moving Public `main` v3.51 | Human-facing orientation and reflective working layer; prompting, training and agent guidance are applications. |
-| 1 | [KSODI-Standard-Eval](./KSODI-Standard-Eval/README.md) | K/S/O/D/I operators | moving Public `main` v3.51 | Observer-facing operator definitions for context, structure, grounding, clarity and information impulse. |
-| 2 | [KSODI-Standard-Eval](./KSODI-Standard-Eval/README.md) | `Z_A(k_A)` | moving Public `main` v3.51 | Monadic state vector over the five operator values for one attributable target event. |
-| 3 | [KSODI-Standard-Eval](./KSODI-Standard-Eval/README.md) | `IK` | moving Public `main` v3.51 | Monadic interaction-coherence projection; closes KSODI-Standard-Eval. |
-| 4 | [KSODI-Full](./KSODI-Full/README.md) | `R_0` gate | moving Public `main` v3.51 | Typed availability, comparability and bounded-drift gate over distinguishable `Z`-trajectory movements; not a coupling or resonance score. |
-| 5 | [KSODI-Full](./KSODI-Full/README.md) | `IK_rel` | moving Public `main` v3.51 | Dyadic relational projection after explicit pairing and its same-pairing exact open canonical complete dyadic `R_0` gate. |
+| 0 | [KSODI-Light](./KSODI-Light/README.md) | Local reflective layer | fixed Public release v3.51 | Human-facing orientation and reflective working layer; prompting, training and agent guidance are applications. |
+| 1 | [KSODI-Standard-Eval](./KSODI-Standard-Eval/README.md) | K/S/O/D/I operators | fixed Public release v3.51 | Observer-facing operator definitions for context, structure, grounding, clarity and information impulse. |
+| 2 | [KSODI-Standard-Eval](./KSODI-Standard-Eval/README.md) | `Z_A(k_A)` | fixed Public release v3.51 | Monadic state vector over the five operator values for one attributable target event. |
+| 3 | [KSODI-Standard-Eval](./KSODI-Standard-Eval/README.md) | `IK` | fixed Public release v3.51 | Monadic interaction-coherence projection; closes KSODI-Standard-Eval. |
+| 4 | [KSODI-Full](./KSODI-Full/README.md) | `R_0` gate | fixed Public release v3.51 | Typed availability, comparability and bounded-drift gate over distinguishable `Z`-trajectory movements; not a coupling or resonance score. |
+| 5 | [KSODI-Full](./KSODI-Full/README.md) | `IK_rel` | fixed Public release v3.51 | Dyadic relational projection after explicit pairing and its same-pairing exact open canonical complete dyadic `R_0` gate. |
 | 6 | [KSODI-Full](./KSODI-Full/README.md) | `R_geom` | not public; review pending | Geometric coupling in KSODI state space; private material exists and awaits complete public review and infrastructure revalidation. |
 | 7 | [KSODI-Full](./KSODI-Full/README.md) | `R_pace` | not public; review pending | Optional pacing overlay where pacing dynamics are explicitly defined; private material exists and awaits complete public review and infrastructure revalidation. |
 | 8 | [KSODI-Full](./KSODI-Full/README.md) | Future signal-media layer | staged research | Voice, rhythm/timing, audio, radio, Morse-like or other signal-media questions without a defined Layer-8 architecture; historical `Takt` labels are not active v3.51 terms. |
@@ -880,12 +881,12 @@ Observer-oriented scopes that may provide inputs to separately governed
 human decision or Controller layers.
 Designed for numeric observability, drift detection and declared relational
 monitoring without performing steering or enforcement by themselves.
-On moving Public `main`, KSODI v3.51 contains the five operator definitions,
+The fixed KSODI v3.51 release contains the five operator definitions,
 the reader-first monadic state-vector Z method/companion and the monadic IK
 method/companion as KSODI-Standard-Eval. The relational `R_0` method and
 conditional companion form KSODI-Full Layer 4; the `IK_rel` method and
-conditional companion form Layer 5. A fixed v3.51 tag, GitHub Release and DOI
-remain separate decisions. `R_geom` and `R_pace` remain outside the current
+conditional companion form Layer 5. Tag `v3.51`, its GitHub Release and DOI
+`10.5281/zenodo.24196705` identify this fixed snapshot. `R_geom` and `R_pace` remain outside the current
 public reference surface while complete public review and infrastructure
 revalidation are pending.
 Layer 8 remains staged research without a defined architecture.
@@ -980,5 +981,5 @@ for transparency and provenance. They are not current implementation guidance.
 Moving Public `main` v3.51 extends KSODI-Standard-Eval through the monadic
 interaction-coherence projection `IK`, which closes that line. The relational
 `R_0` gate forms KSODI-Full Layer 4, and `IK_rel` forms KSODI-Full Layer 5. The
-fixed v3.5.0 tag and DOI remain the currently citeable release snapshot until
-a separately authorized v3.51 release exists.
+fixed v3.5.0 tag and DOI remain the earlier citeable release snapshot; the
+current fixed citation snapshot is v3.51.

@@ -22,8 +22,8 @@ The reader route is:
 
 The glossary is not a method amendment, physical runtime schema,
 implementation-conformance result, empirical validation or action authority.
-Its publication on moving Public `main` does not by itself authorize a tag,
-GitHub Release or DOI.
+Its inclusion in the fixed v3.51 release does not turn glossary wording into a
+formula amendment, implementation-conformance result or action authority.
 
 ---
 

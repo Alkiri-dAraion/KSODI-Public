@@ -41,5 +41,7 @@ Shared Sigma / Hangar orientation:
 
 [`../KSODI-Hangar_V351.md`](../KSODI-Hangar_V351.md)
 
-Independent runtime conformance remains outstanding. This document does not
-authorize a software merge, tag, GitHub Release, DOI or Zenodo artifact.
+Independent runtime conformance remains outstanding. This document describes
+the method scope contained in tag `v3.51` and version DOI
+`10.5281/zenodo.24196705`; it does not authorize a software merge or claim
+implementation conformance.

@@ -31,8 +31,8 @@ Anne Steinacker-Folkerts invented and initiated KSODI during 2024 and 2025,
 building on the DOSI interaction structure she had formulated in 2023. She
 remains the integrating method developer and final decision point for the
 definitions published in this repository. From the early v1.0 line through the
-fixed public v3.5.0 release and the subsequent v3.51 precision work on the
-moving Public `main` branch, she developed, selected, integrated and formalized
+fixed public v3.5.0 release and the subsequent fixed v3.51 release, she
+developed, selected, integrated and formalized
 the mathematical definitions, layer separation, measurement logic and the
 methodological evaluation of the historical Observer images, with dialogic
 model support, human reflection and implementation feedback as documented

@@ -3,9 +3,8 @@
 This cumulative successor preserves the v3.50 Z assembly, status, projection,
 dynamics and norm formulas. It adds the identity, representation, derived
 window-object, migration and downstream-view precision established during the
-v3.51 Layer-1 and IK review. It is the published-on-main v3.51 reference
-method; it does not claim independent runtime conformance or a completed
-tagged v3.51 release.
+v3.51 Layer-1 and IK review. It is the released v3.51 reference method; it
+does not claim independent runtime conformance.
 
 This file defines the authoritative carrier-neutral Layer-2 Z method.
 Implementation storage, pseudocode, migration and test fixtures belong in the

@@ -19,9 +19,9 @@ one attributable target event of A
   subordinate schemas, validation, migration, pseudocode and tests.
 
 The v3.50 method and companion are retained in the repository archive as the
-released predecessor evidence. Public `main` may contain later layers still
-under their v3.50 names during the layerwise v3.51 publication run; this does
-not imply a completed tagged v3.51 release.
+released predecessor evidence. Retained `V350` directory names are path-stable
+historical markers; the active files above are part of the tagged v3.51
+release.
 
 ## Human reading route
 
@@ -113,5 +113,5 @@ named profiles.
 The method and companion are published on Public `main` as v3.51 reference
 method and implementation guidance. This does not establish independent
 runtime conformance, approve a specific product architecture or authorize an
-intervention. Selection for the complete release, tag, GitHub Release and DOI
-remain separate human decisions.
+intervention. Selection, tag, GitHub Release and DOI were separate human
+decisions and now identify the same fixed v3.51 source state.

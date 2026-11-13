@@ -4,8 +4,9 @@
 
 This folder contains the Public-`main` KSODI Standard-Eval materials for
 structured monadic observation, implementation-oriented review, discussion
-and version traceability. Public `main` currently contains selected cumulative
-v3.51 files; the tagged `v3.5.0` release remains the fixed citation snapshot.
+and version traceability. The fixed tagged v3.51 release contains the
+cumulative files described here; `v3.5.0` remains the earlier fixed citation
+snapshot.
 
 The shared structural and method boundary with KSODI-Full is documented in
 the root
@@ -79,33 +80,34 @@ intervention, policy-defined responses and action authority remain in a
 separately authorized Controller/action space outside both current Observer
 method scopes.
 
-## Current Public-main scope and fixed citation release
+## Current released scope and fixed citation snapshots
 
-Public `main` contains cumulative v3.51 Layer-1 operator packages, complete
-typed Z, monadic IK and the selected reproducible IK reference package. This
-published moving-main state is selected for the later complete v3.51 release,
-but it is not yet the tagged release snapshot.
+The fixed v3.51 release contains the cumulative Layer-1 operator packages,
+complete typed Z, monadic IK and the selected reproducible IK reference
+package. Tag `v3.51`, its GitHub Release and version DOI
+`10.5281/zenodo.24196705` identify the fixed snapshot.
 
 - [`KSODI-Standard-Eval-Release_V351.md`](./KSODI-Standard-Eval-Release_V351.md)
-  records the current Public-main v3.51 Standard-Eval boundary;
+  records the released v3.51 Standard-Eval boundary;
 - [`Layer-1_KSODI-Operators_V350/`](./Layer-1_KSODI-Operators_V350/README.md),
   [`Layer-2_KSODI-State-Vector-Z_V350/`](./Layer-2_KSODI-State-Vector-Z_V350/README.md) and
   [`Layer-3_KSODI-Monadic-Interaction-Coherence-IK_V350/`](./Layer-3_KSODI-Monadic-Interaction-Coherence-IK_V350/README.md) contain the current
-  layer-based Public-main KSODI-Standard-Eval structure;
+  layer-based released KSODI-Standard-Eval structure;
 - the [IK v3.51 mathematical reference package](./Layer-3_KSODI-Monadic-Interaction-Coherence-IK_V350/IK_M2_V351_REFERENCE_REVIEW/README.md)
   provides its human/machine reader, generators, exact fixtures, result
   reports and checksum manifest;
 - [`KSODI-Architecture_V351.md`](../KSODI-Architecture_V351.md)
-  is the cumulative current Public-main v3.51 architecture. The fixed v3.5.0
+  is the cumulative v3.51 architecture. The fixed v3.5.0
   architecture remains recoverable through its tagged release and Public
   predecessor archive.
 
-For fixed citation of v3.5.0, use the tagged GitHub Release and its version
-DOI rather than treating later Public-`main` changes as retroactive edits.
+For fixed citation of v3.51, use its tagged GitHub Release and version DOI.
+Use the corresponding v3.5.0 tag and DOI only when citing that earlier
+snapshot. Later Public-`main` changes do not retroactively alter either.
 
 ## Related folders
 
-- The Layer 1–3 folders contain the current monadic v3.51 Public-main
+- The Layer 1–3 folders contain the current monadic v3.51 released
   KSODI-Standard-Eval structure.
 - [`method-history-v33`](../archive/method-history-v33/README.md) preserves public 3.3 operator, state-vector,
   projection and deprecated draft material for provenance and transparency.

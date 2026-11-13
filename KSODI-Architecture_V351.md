@@ -424,8 +424,8 @@ Future Controller
   not part of the current v3.51 method material
 ```
 
-The current moving Public repository state contains the complete monadic
-KSODI-Standard-Eval line and released reader-first `R0` and `IK_rel` method
+The fixed v3.51 release contains the complete monadic KSODI-Standard-Eval line
+and the reader-first `R0` and `IK_rel` method
 packages. `R_geom`, `R_pace` and later signal-media work remain staged or
 future research outside the current released method scope. Research material
 or folder presence does not activate formulas or implementation.

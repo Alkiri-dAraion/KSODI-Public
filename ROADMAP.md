@@ -14,10 +14,10 @@ It does not duplicate the complete research programme. Use the linked sources
 for defined method status, open questions, architecture and implementation
 boundaries.
 
-## Current public-main direction — v3.51
+## Current fixed release and public-main direction — v3.51
 
-The moving Public `main` branch contains the reviewed v3.51 method line through
-Layer 5:
+The fixed v3.51 release and the Public `main` state at its release commit
+contain the reviewed method line through Layer 5:
 
 ```text
 KSODI-Light (independently usable)
@@ -33,9 +33,11 @@ routes, window semantics, provenance and the boundary between human-readable
 views and machine-readable records. It does not claim universal validity,
 production readiness or independent runtime conformance.
 
-Public presence on `main` is not the same as a fixed tagged release. Consult
-the root [README](./README.md), [START_HERE](./START_HERE.md) and citation
-metadata for the current release and citation state.
+Tag `v3.51` and DOI
+[`10.5281/zenodo.24196705`](https://doi.org/10.5281/zenodo.24196705) identify
+the fixed snapshot. Later Public presence on `main` is not automatically part
+of that release. Consult the root [README](./README.md),
+[START_HERE](./START_HERE.md) and citation metadata for the current state.
 
 ## Next bounded route — v3.52
 

@@ -1,8 +1,9 @@
 # KSODI-Full v3.51 Release Surface
 
-This document identifies the KSODI-Full material published on Public `main`
-and selected for the complete v3.51 release. It is not itself a Git tag,
-GitHub Release, DOI record or runtime-conformance claim.
+This document identifies the KSODI-Full material contained in the fixed v3.51
+release. Tag `v3.51`, its GitHub Release and version DOI
+`10.5281/zenodo.24196705` identify the complete repository snapshot; this
+scope document is not itself a runtime-conformance claim.
 
 ## Scope
 
@@ -93,7 +94,8 @@ This Public-main release surface does not claim:
 - production or independent runtime conformance;
 - validation of later R-family formulas;
 - Controller, steering or action authority; or
-- that Public `main` already equals the tagged v3.51 Release or DOI snapshot.
+- that later Public-`main` changes automatically belong to the tagged v3.51
+  Release or DOI snapshot.
 
-Tag, GitHub Release, citation metadata, deposit and DOI remain separately
-authorized closing actions.
+Tag, GitHub Release, citation metadata and Zenodo record remain distinct
+publication objects bound to the selected release state.

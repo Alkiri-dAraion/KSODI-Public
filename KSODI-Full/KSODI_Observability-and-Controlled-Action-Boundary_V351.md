@@ -284,6 +284,6 @@ reverse reconstruction and stronger navigation/non-target guards. These
 additions sharpen the route from observation to separately governed action;
 they do not create a new action path.
 
-Publication on Public `main` records this boundary for review and use under its
-declared scope. It does not itself create the final tagged v3.51 Release or a
-runtime-conformance result.
+This boundary is part of the tagged v3.51 release and remains usable only under
+its declared scope. Its release does not create a runtime-conformance result
+or authorize controlled action.

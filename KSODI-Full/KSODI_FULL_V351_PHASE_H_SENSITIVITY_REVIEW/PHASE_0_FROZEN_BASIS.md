@@ -13,7 +13,7 @@ alters a frozen formula.
 | --- | --- |
 | `KSODI_Relational-Gate-R_0_V351.md` | `e7ee08362506a2098debbe74d191d01f0d8ad4975c3004df7c703f54143bb614` |
 | `KSODI_Relational-Gate-R_0_Implementation-Companion_V351.md` | `f2f263e507fadaeb9e3e59e2798335d609862cf2948483b7960a3c158f010425` |
-| `KSODI_Dyadic-Relational-Coherence-IK_rel_V351.md` | `6b69140ebf2c78002324354bc80b2f0a8f27ba3c7e0d207cc7478f15a41551b8` |
+| `KSODI_Dyadic-Relational-Coherence-IK_rel_V351.md` | `5dce903f088dc5707853e99160d3aec89e411446fcfb4eb3b7d6cbe9720262fd` |
 | `KSODI_Dyadic-Relational-Coherence-IK_rel_Implementation-Companion_V351.md` | `8f594992b4e35bb61fcbcff7fd4b8859357571cf806745fcc7b035537f396c82` |
 
 These hashes bind the review to exact Public bytes. The companions remain
