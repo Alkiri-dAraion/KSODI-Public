@@ -797,11 +797,11 @@ grounding.
 | `scope_A(k_A)` | admissible context-object scope; not all stored history or everything visible to the evaluator |
 | `availability_relation_id` | identifies whose/which observable availability is being tested; presence, delivery and use remain distinct |
 | `observer_vantage_id` | visibility boundary of the evaluator/instrument; not target access or complete system state |
-| `E_K,A(k_A | p_K)` | nonempty profile-bound set of expected context requirements; an empty set is `not_applicable`, not perfect context |
-| `a_i,A(k_A | scope_A(k_A), p_K)` | evidence-linked fulfillment value for one declared requirement; unobservable is not silently `0` |
-| `G_K,A(k_A | p_K)` | internal K calculation gate checking whether a valid numeric K path exists; not R0 or action authority |
+| `E_K,A(k_A \| p_K)` | nonempty profile-bound set of expected context requirements; an empty set is `not_applicable`, not perfect context |
+| `a_i,A(k_A \| scope_A(k_A), p_K)` | evidence-linked fulfillment value for one declared requirement; unobservable is not silently `0` |
+| `G_K,A(k_A \| p_K)` | internal K calculation gate checking whether a valid numeric K path exists; not R0 or action authority |
 | `p_K` | complete named K profile binding scope, requirements, relations, weights, evidence and missingness |
-| `K0_A(k_A | scope_A(k_A), p_K)` | canonical static K result under the declared basis |
+| `K0_A(k_A \| scope_A(k_A), p_K)` | canonical static K result under the declared basis |
 | `K_A(k_A)` | selected K coordinate alias used for typed Z; it does not add another result |
 | `G_cmp_K,A(k_A)` | source-local K comparability decision for a requested predecessor comparison |
 | `Delta K_A(k_A)` | first source-local change of comparable K results; not A/B difference |
@@ -833,18 +833,18 @@ explicit disruption component.
 | `structure_resolution_basis` | records whether structural units and relations came from the profile or a declared resolver; it does not by itself select the profile |
 | `semantic_measurement_anchor` | binds the intended S question, method/profile version and requirement instance; not an implementation run fingerprint |
 | `execution_fingerprint` | identifies result-affecting implementation conditions and actual tool/instrument lineage; not comparability permission by itself |
-| `C_req,A(k_A | E_S,p_S)` | requirement-coverage component over declared structural requirements |
-| `M_vis,A(k_A | p_S)` | visible marker/boundary component under the profile |
+| `C_req,A(k_A \| E_S,p_S)` | requirement-coverage component over declared structural requirements |
+| `M_vis,A(k_A \| p_S)` | visible marker/boundary component under the profile |
 | `N_boundary` | denominator/count basis for the declared boundary question; not raw text length |
-| `P_order,A(k_A | StructRef_S,p_S)` | explicit relative-order component; surface order or a bare list does not automatically create a directed edge |
-| `P_disrupt,A(k_A | p_S)` | optional declared disruption component; absent selection is not zero disruption |
+| `P_order,A(k_A \| StructRef_S,p_S)` | explicit relative-order component; surface order or a bare list does not automatically create a directed edge |
+| `P_disrupt,A(k_A \| p_S)` | optional declared disruption component; absent selection is not zero disruption |
 | `gamma_S` | profile-bound influence/weight of the optional disruption component |
 | `C_S,A(k_A)` | declared base-component family for the target event |
 | `M_S(p_S)` | profile-fixed mandatory S component set; mandatory components are not removed event by event |
 | `A_S,A(k_A)` | event's applicable selected component set after typed applicability checks; it does not authorize changing the profile mask |
 | `component_attribution_policy` | declares how overlapping evidence contributes without silent double counting |
-| `S_base,A(k_A | p_S)` | base structural combination before any explicitly selected extension |
-| `S0_A(k_A | p_S)` | canonical static S result for the selected profile |
+| `S_base,A(k_A \| p_S)` | base structural combination before any explicitly selected extension |
+| `S0_A(k_A \| p_S)` | canonical static S result for the selected profile |
 | `S_A(k_A)` | selected S coordinate alias for typed Z |
 | `G_cmp_S,A(k_A)` | S comparability decision for a source-local dynamic comparison |
 | `Delta S_A(k_A)` | first source-local change of comparable S values |
@@ -899,7 +899,7 @@ admitted reference basis have been resolved.
 | `C_O,A` | profile-defined O component record/set; its concrete content is not a universal citation or RAG formula |
 | `c_O,r,A` | evidence-linked result for one declared O component/question |
 | `F_p_O` | profile-bound aggregation/function over the fixed O unit results |
-| `O0_A(k_A | Ref_A,p_O)` | canonical static O result under the admitted reference instance and profile |
+| `O0_A(k_A \| Ref_A,p_O)` | canonical static O result under the admitted reference instance and profile |
 | `O_A(k_A)` | selected O coordinate alias for typed Z |
 | `G_cmp_O` | O comparability decision retaining both concrete reference instances |
 | `Delta O_A` | first source-local change of comparable O values |
@@ -949,9 +949,9 @@ local support separate from excess variation/dispersion.
 | `p_L` | local-support profile |
 | `p_V` | variation/dispersion profile |
 | `q_A(k_A)` | admitted target-signal/carrier representation for D; not decoded meaning |
-| `L_A(k_A | p_L)` | local support/redundancy component under `p_L` |
+| `L_A(k_A \| p_L)` | local support/redundancy component under `p_L` |
 | `N_L` | support-unit denominator/count basis; not arbitrary token length |
-| `U_A(k_A | p_V)` | declared set of local units/representations used by the variation question |
+| `U_A(k_A \| p_V)` | declared set of local units/representations used by the variation question |
 | `m` | cardinality/denominator of that declared set |
 | `d_p_V(u_i,u_j)` | profile-bound pairwise distance; identical arithmetic in another operator does not imply identical meaning |
 | `V_raw_A` | observed raw dispersion before comparison with the expected profile level |
@@ -960,14 +960,14 @@ local support separate from excess variation/dispersion.
 | `p_D_LV` | predeclared D profile using both local-support and variation components |
 | `p_D_L_only` | separately named local-support-only profile; it is not an event-wise fallback when V fails |
 | `w_L`, `w_V` | profile-bound component weights; no silent target-dependent learning or renormalization |
-| `D0_A(k_A | p_D)` | canonical static D result under the selected profile |
-| `D_A(k_A | p_D)` | selected D coordinate alias for typed Z |
+| `D0_A(k_A \| p_D)` | canonical static D result under the selected profile |
+| `D_A(k_A \| p_D)` | selected D coordinate alias for typed Z |
 | `G_cmp_D` | D comparability decision for source-local dynamics |
 | `Delta D_A` | first source-local change of comparable D results |
 | `Delta2 D_A` | change of D movement, not squared delta |
 | `B_D_A(k_A)` | optional positive D-movement diagnostic `max(0, Delta D_A)` where the signed delta is applicable; not reward, causality or a replacement for signed movement |
 | `DΣ_A(W_A)` | typed D window aggregate retaining profile and component/status partitions |
-| `DΣ_A(Hangar | event_level)` | typed event-level D distribution/view |
+| `DΣ_A(Hangar \| event_level)` | typed event-level D distribution/view |
 | `P_D_A(W_A)` | inactive Future-Work interface, not an active canonical v3.51 calculation |
 
 If V is `not_applicable` or unavailable under an L/V profile, it does not
@@ -990,7 +990,7 @@ or stabilization; high I can still be incorrect, unsafe or irrelevant.
 | --- | --- |
 | `p_I` | complete named I profile binding baseline, units/equivalence, representation, retrieval, normalization, weights and missingness |
 | `V_A(k_A)` | visible candidate baseline material for I; not D's excess dispersion `V_A` |
-| `Ref_A(k_A | p_I)` | selected admissible event-bound I baseline; not automatically O's reference instance |
+| `Ref_A(k_A \| p_I)` | selected admissible event-bound I baseline; not automatically O's reference instance |
 | `ret_status,A(k_A)` | typed retrieval outcome where retrieval is constitutive; distinguishes not requested, unavailable, empty, inadmissible and available |
 | `retrieval_basis_ok,A(k_A)` | retrieval-basis applicability predicate for the selected profile; not universal I architecture |
 | `emb` | versioned target/baseline representation function for a vector-compatible profile |
@@ -1411,7 +1411,7 @@ and [v3.51 IK result contract](./KSODI-Standard-Eval/Layer-3_KSODI-Monadic-Inter
 | `p_IK` | named/versioned active monadic projection profile for one intended question |
 | `w(p_IK)` | ordered nonnegative weights summing to one; binds the active projection direction |
 | `w_ref` | transparent equal-weight profile `(0.2,...,0.2)`; not a validated optimum or the fixed unit geometry `u_ref` |
-| `IK_A(k_A | p_IK)` / `IK_w` | profile-relative scalar `w(p_IK) dot Z`; released v3.50 calculation with the distinguishing v3.51 reader label `IK_w` |
+| `IK_A(k_A \| p_IK)` / `IK_w` | profile-relative scalar `w(p_IK) dot Z`; released v3.50 calculation with the distinguishing v3.51 reader label `IK_w` |
 
 The result requires exact complete Z, source/event identity, profile/version,
 unrounded value, typed status and provenance. A zero weight does not waive
@@ -1435,7 +1435,7 @@ are not silently comparable.
 | Term | Reader meaning and boundary |
 | --- | --- |
 | `u_ref` / `z_equal_coordinate_diagonal` | fixed unit direction `(1,1,1,1,1)/sqrt(5)` with stable geometry identity |
-| `IK_M2` / `ik_normalized_l2_magnitude` | `||Z||_2/sqrt(5)`: normalized complete-vector magnitude; not composition or coherence by itself |
+| `IK_M2` / `ik_normalized_l2_magnitude` | `\|\|Z\|\|_2/sqrt(5)`: normalized complete-vector magnitude; not composition or coherence by itself |
 | `IK_ref` / `ik_fixed_reference_axis_position` | fixed-axis position `(u_ref dot Z)/sqrt(5)=mean(Z)`; retained as a first-class laboratory result |
 | `AxisDev_ref` / `ik_fixed_reference_axis_deviation` | normalized Euclidean distance from the fixed diagonal; exposes unequal coordinate composition at the same axis position |
 
@@ -1498,7 +1498,7 @@ reprojection and counterfactual comparisons must be labelled separately.
 | --- | --- |
 | `W_A^IK` | identified source-local IK opportunity window |
 | `coverage_IK(W_A)` | numeric eligibility coverage with explicit numerator, denominator and status |
-| `IK_Σ,A(W_A | p_IK)` | typed aggregate weighted-IK result over one exact eligible member set |
+| `IK_Σ,A(W_A \| p_IK)` | typed aggregate weighted-IK result over one exact eligible member set |
 | IK `Sigma(Hangar)` | profile/status-stratified distribution or trajectory view, not a new method result |
 
 Members, exclusions, overlap, count, coverage, status partitions, aggregator,
@@ -1633,7 +1633,7 @@ means only that the numeric gate threshold was not met.
 | --- | --- |
 | `R0_AB^[M](j)` | visibly reduced dyadic gate over the same predeclared fixed set `M` on both trajectories; does not open current primary IK_rel |
 | `R0_w,AB(j)` | separately named fixed member-weight aggregation; weights are not empirical importance facts |
-| `a_AB(j)` | optional movement-asymmetry diagnostic `|d_A-d_B|`; exposes mean-hidden imbalance without changing canonical R0 |
+| `a_AB(j)` | optional movement-asymmetry diagnostic `\|d_A-d_B\|`; exposes mean-hidden imbalance without changing canonical R0 |
 | `C(q)`, `Pi(q)`, `R0_C(q)` | declared n-adic constellation, member mapping and complete n-adic gate; no automatic n-adic IK_rel follows |
 
 Complete, fixed-partial, weighted and n-adic R0 results retain distinct profile
@@ -1775,7 +1775,7 @@ labels remain searchable aliases, not a second status or reason definition.
 
 | Component | Question and boundary |
 | --- | --- |
-| `C_gap(j)` | compatibility of current positions `1-|IK_w,A-IK_w,B|`; not movement or trajectory similarity |
+| `C_gap(j)` | compatibility of current positions `1-\|IK_w,A-IK_w,B\|`; not movement or trajectory similarity |
 | `C_move(j)` | compatibility of first projected differences; primary current profile |
 | `C_accel(j)` | compatibility of second projected differences; not physical acceleration without a time contract |
 

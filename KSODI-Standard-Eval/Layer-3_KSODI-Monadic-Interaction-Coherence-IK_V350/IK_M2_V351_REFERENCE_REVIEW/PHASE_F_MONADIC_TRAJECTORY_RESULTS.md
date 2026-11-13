@@ -45,7 +45,7 @@ pace, rhythm or physical acceleration is assumed.
 
 ## 2. Summary result
 
-| Trajectory | Net displacement | Path length | `||Δ²Z||_2` | Scalar/path reading |
+| Trajectory | Net displacement | Path length | `\|\|Δ²Z\|\|_2` | Scalar/path reading |
 | --- | ---: | ---: | ---: | --- |
 | stationary | `0` | `0` | `0` | no movement |
 | K/I out-and-back | `0` | `0.565685424949` | `0.565685424949` | non-zero excursion, zero net |

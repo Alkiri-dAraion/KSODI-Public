@@ -13,11 +13,11 @@ they do not imply empirical validation or implementation acceptance.
 | Governed source | SHA-256 |
 | --- | --- |
 | [`KSODI_State-Vector-Z_V351.md`](../../Layer-2_KSODI-State-Vector-Z_V350/KSODI_State-Vector-Z_V351.md) | `63840697ba7a5676329466dc43b90d84bca278167f0b9e9368b7b52b5c756cb9` |
-| [`KSODI_Monadic-Interaction-Coherence-IK_V351.md`](../KSODI_Monadic-Interaction-Coherence-IK_V351.md) | `f506800f894b82842d0aebc4be418657a39517efe930049bb1dae6d49865c0aa` |
+| [`KSODI_Monadic-Interaction-Coherence-IK_V351.md`](../KSODI_Monadic-Interaction-Coherence-IK_V351.md) | `5e9e5c640b493c747988fdf130182efba727091d78e8e17db4084e9edd8fc8f4` |
 | [`KSODI_Monadic-Interaction-Coherence-IK_Implementation-Companion_V351.md`](../KSODI_Monadic-Interaction-Coherence-IK_Implementation-Companion_V351.md) | `8dbcf9b6e4ff300a8b55eedc6dd114b3151852ed42db8ed36bb7f01424638809` |
 | [`IK_M2_AXIS_DEVIATION_DUAL_RESOLUTION_PUBLIC_CONCEPT_V351.md`](../IK_M2_AXIS_DEVIATION_DUAL_RESOLUTION_PUBLIC_CONCEPT_V351.md) | `d79308b09a120c154529c895809186134443fa69dcacb0fd9231ade83dceae6b` |
 | [`IK_M2_V351_RESULT_CONTRACT_V01.md`](./IK_M2_V351_RESULT_CONTRACT_V01.md) | `295550486f893a4dca32ba1b2a989ee23d39d5510146c8bafeeb88d00fd8befe` |
-| [`IK_QUESTION_MEASUREMENT_VIEW_MATRIX_V351.md`](./IK_QUESTION_MEASUREMENT_VIEW_MATRIX_V351.md) | `1b274dc151cef366f0854f6d7251d50a15ba0d9ede999f8c4ab1a106a6d9b74b` |
+| [`IK_QUESTION_MEASUREMENT_VIEW_MATRIX_V351.md`](./IK_QUESTION_MEASUREMENT_VIEW_MATRIX_V351.md) | `7ac54c8766f9b021c3440ac41be741f674f2e775fe1b8dabce405db075deebe4` |
 | [`IK_V351_WINDOW_AGGREGATION_ORDER_CONTRACT_V01.md`](./IK_V351_WINDOW_AGGREGATION_ORDER_CONTRACT_V01.md) | `e4c0e9d1b8187f0d3b298fc75b746eeb3c948d97021a7ef85c5617bd36a7219e` |
 
 The result reports, generators and CSV files in this directory are

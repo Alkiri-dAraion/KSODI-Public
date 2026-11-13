@@ -28,16 +28,16 @@ cross-operator commensurability, truth, intention, safety or causality.
 | --- | --- | --- | --- | --- | --- |
 | Q01 | What is the complete observable monadic state? | complete typed and labelled `Z`, coordinate statuses, evidence, profile and provenance | none | labelled K/S/O/D/I detail or point/cloud with drill-down | not a complete account of communication, cognition or truth |
 | Q02 | Where is the state on the declared weighted axis? | Q01 plus weighting-profile identity | `IK_w = w dot Z` | governance line with profile/version and reverse link | weighted projection only; not magnitude, balance or overall quality |
-| Q03 | How large is the complete normalized state vector? | complete eligible numerical Z and metric identity | `IK_M2 = ||Z||₂/sqrt(5)` | magnitude marker beside the projection | no axial direction, coordinate identity or coherence truth |
+| Q03 | How large is the complete normalized state vector? | complete eligible numerical Z and metric identity | `IK_M2 = \|\|Z\|\|₂/sqrt(5)` | magnitude marker beside the projection | no axial direction, coordinate identity or coherence truth |
 | Q04 | Where is Z on the fixed reference diagonal, and how far is it from that diagonal? | Q01 plus fixed-reference identity | `IK_ref=mean(Z)` and `AxisDev_ref` | fixed reference line, reference position and visible deviation | not active `IK_w`, error, harm or a context-free anomaly score |
 | Q05 | Are the fixed-reference values internally consistent? | exact Q03/Q04 inputs, formulas and numeric policy | verify `IK_M2²=IK_ref²+AxisDev_ref²` | QA indicator | mathematical consistency, not communication quality |
 | Q06 | Which coordinates produced a displayed value? | complete labelled Z and coordinate evidence | no scalar inverse exists | coordinate profile and evidence drill-down | equal scalar values do not imply equal states |
 | Q07 | What changed and in which coordinate direction? | comparable ordered `Z_start`, `Z_target` and identities | signed `Delta Z` | coordinate arrows plus both endpoint states | no cause, intention or improvement claim |
-| Q08 | How large was one transition? | Q07 plus declared metric | `||Delta Z||` with declared normalization | step-size marker linked to signed `Delta Z` | size does not identify direction or affected coordinate |
+| Q08 | How large was one transition? | Q07 plus declared metric | `\|\|Delta Z\|\|` with declared normalization | step-size marker linked to signed `Delta Z` | size does not identify direction or affected coordinate |
 | Q09 | How much of a transition was visible on the active weighted axis? | Q07 plus stable comparable weighting profile | `Delta IK_w` | arrow on the weighted governance line | zero axial movement can hide off-axis movement |
 | Q10 | Did magnitude or fixed-reference deviation change? | ordered comparable Q03/Q04 states | `Delta IK_M2`, `Delta IK_ref`, `Delta AxisDev_ref` | paired before/after markers with signed `Delta Z` | increase/decrease is diagnostic, not good/bad |
 | Q11 | Where did a trajectory end relative to its beginning? | comparable ordered endpoints and identities | net `Delta Z` and net component changes | explicitly labelled start/end connector | endpoint difference does not reveal the path |
-| Q12 | How much path occurred between endpoints? | all ordered comparable states and steps | `sum_j ||Delta Z_j||` | path trace beside net displacement | no direction, elapsed-time pace or causal mechanism |
+| Q12 | How much path occurred between endpoints? | all ordered comparable states and steps | `sum_j \|\|Delta Z_j\|\|` | path trace beside net displacement | no direction, elapsed-time pace or causal mechanism |
 | Q13 | Did the step vector change across ordinal positions? | at least three comparable ordered states | ordinal `Delta²Z` | turn/change marker with signed-vector drill-down | not physical acceleration, rhythm or R-family Pace without a time contract |
 | Q14 | Can identical scalar histories hide different coordinate paths? | complete labelled state and transition sequences | compare scalar and labelled-Z sequences separately | synchronized scalar and coordinate views | scalar equality is not trajectory identity |
 | Q15 | What changes when results are derived before aggregation rather than after it? | exact window membership, complete eligible Z records, aggregator and order identity | compare `derive_then_aggregate` with `aggregate_then_derive` | paired window summaries plus member drill-down | an order gap is not automatically semantic conflict or error |
@@ -72,7 +72,7 @@ confirmation of `IK_M2` or `AxisDev_ref`.
 | `IK_ref` / `AxisDev_ref` | fixed-reference position and deviation | active weighted position, error, harm or universal anomaly threshold |
 | IK-Gesamtbild | the required monadic views can be inspected together with reverse links | independent multiple confirmation or replacement of complete Z |
 | signed `Delta Z` | labelled movement between comparable states | cause, intention or improvement |
-| `||Delta Z||` | unsigned movement size under the declared metric | direction, affected coordinate or progress |
+| `\|\|Delta Z\|\|` | unsigned movement size under the declared metric | direction, affected coordinate or progress |
 | net displacement | endpoint difference over the declared window | path, monotonicity or absence of detours |
 | path length | accumulated movement over ordered positions | direction, elapsed-time pace or usefulness |
 | ordinal `Delta²Z` | change between consecutive step vectors | physical acceleration or R-family result without a time contract |

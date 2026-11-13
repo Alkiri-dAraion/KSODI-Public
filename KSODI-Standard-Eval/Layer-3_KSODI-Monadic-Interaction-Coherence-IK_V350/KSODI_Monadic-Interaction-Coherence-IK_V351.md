@@ -783,7 +783,7 @@ not two scalar `IK_w` values
 | `Z_A(k_A)` | complete canonical numerical state |
 | `p_IK` | named and versioned canonical projection profile |
 | `w(p_IK)` | canonical coherence-axis weights |
-| `IK_w,A(k_A | p_IK)` | canonical monadic projection |
+| `IK_w,A(k_A \| p_IK)` | canonical monadic projection |
 | `IK_M2` | normalized complete-vector L2 magnitude |
 | `IK_ref` | fixed-reference-axis position; arithmetic mean of complete Z |
 | `AxisDev_ref` | normalized Euclidean deviation from the fixed diagonal; population standard deviation |
