@@ -232,6 +232,19 @@ contain reviewed changes that are not part of that fixed snapshot. A passing
 technical check or presence on `main` does not by itself create a later fixed
 release; semantic, attribution and publication decisions remain separate.
 
+
+> [!NOTE]
+> **Longer-term research direction — reconstructive macrostates.**
+> Work on the later R-family has brought the underlying question of the observed
+> KSODI macro-object into sharper focus. KSODI is now examining whether
+> transient interaction events can become source-linked, formally comparable
+> state and trajectory descriptions without losing the route back to their
+> evidence and observation conditions. A possible scaffold is
+> (M_t=(Z_t,P_t)), combining state and provenance. This remains a
+> non-canonical research hypothesis: it does not redefine v3.51, extend the
+> bounded v3.52 route or establish a finished provenance schema.
+> [Read the Research Note.](./KSODI-Reconstructive-Macrostate-Research-Note.md)
+
 ## Why KSODI Exists
 
 KSODI began with a practical question in sustained work with GPT-3.5: how must
