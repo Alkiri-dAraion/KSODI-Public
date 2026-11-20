@@ -54,6 +54,24 @@ The currently visible v3.52 investigation route includes:
 These are research and documentation directions. They are not a complete
 scope, fixed priority order or dated commitment.
 
+
+## Longer-term research direction — reconstructive macrostates
+
+Work on the later R-family has made the underlying identity of the observed
+KSODI macro-object a more explicit research question. A longer-term direction
+therefore examines whether transient interaction events can be represented as
+source-linked, formally comparable state and trajectory descriptions while
+preserving an inspectable route to their evidence, observation conditions and
+construction rules.
+
+A candidate scaffold is `M_t=(Z_t,P_t)`: a state description paired with the
+provenance needed to inspect its reconstruction. This scaffold is non-canonical.
+It does not redefine `Z`, add a released layer, specify the still-open raw-state
+or provenance schemas, or allocate the work to a fixed version.
+
+The research direction, testable questions and explicit non-claims are recorded
+in the [Reconstructive Macrostate Research Note](./KSODI-Reconstructive-Macrostate-Research-Note.md).
+
 ## Dependency-led later directions
 
 Later work follows evidence and dependency gates rather than a fixed version
