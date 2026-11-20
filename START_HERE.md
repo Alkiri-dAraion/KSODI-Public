@@ -114,6 +114,9 @@ After this page, continue in this order:
 - [Open Research Questions V351](./OPEN_RESEARCH_QUESTIONS_V351.md)
   — ten transparent method-edge questions with accepted boundaries and
   non-binding investigation routes
+- [Reconstructive Macrostate Research Note](./KSODI-Reconstructive-Macrostate-Research-Note.md)
+  — optional longer-term hypothesis on source-linked macro-objects; non-canonical
+  and not a redefinition of v3.51, the bounded v3.52 route or released formulas
 - [Conceptual Note v3.51](./Conceptual-Note_V351.md)
 - [KSODI-Standard-Eval / KSODI-Full Transition V351](./KSODI-Standard-Eval_Full-Transition_V351.md)
 - [KSODI Licence Transition Note V342 to V350](./KSODI-License-Transition-Note_V342-to-V350.md)
