@@ -240,7 +240,7 @@ release; semantic, attribution and publication decisions remain separate.
 > transient interaction events can become source-linked, formally comparable
 > state and trajectory descriptions without losing the route back to their
 > evidence and observation conditions. A possible scaffold is
-> (M_t=(Z_t,P_t)), combining state and provenance. This remains a
+> `M_t=(Z_t,P_t)`, combining state and provenance. This remains a
 > non-canonical research hypothesis: it does not redefine v3.51, extend the
 > bounded v3.52 route or establish a finished provenance schema.
 > [Read the Research Note.](./KSODI-Reconstructive-Macrostate-Research-Note.md)
